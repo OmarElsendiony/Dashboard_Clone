@@ -10,7 +10,7 @@ def get_claude_client():
     return Anthropic(api_key=api_key)
 
 # Helper function to call Claude
-def call_claude(prompt, model="claude-3-5-sonnet-20241022", max_tokens=4000, temperature=0.1):
+def call_claude(prompt, model="claude-sonnet-4-20250514", max_tokens=4000, temperature=0.1):
     """
     Call Claude API with the given prompt
     

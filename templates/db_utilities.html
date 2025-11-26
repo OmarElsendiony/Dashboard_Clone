@@ -6,6 +6,7 @@
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
     <title>Database Creation Utilities - Turing Tooling</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/db_utilities.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="{{ url_for('static', filename='scripts/db_utilities.js') }}"></script>
 </head>
 <body>
@@ -106,6 +107,12 @@
                 <div class="utility-icon">✅</div>
                 <div class="utility-title">Policy Validator</div>
                 <div class="utility-description">Validate policy structure, completeness, and compliance against example policies</div>
+            </div>
+
+            <div class="analytics-card" data-utility="sop-task-creator">
+                <div class="utility-icon">📝</div>
+                <div class="utility-title">SOP-based Task Creator</div>
+                <div class="utility-description">Generate task prompts based on policy, database records, interface tools, and example tasks</div>
             </div>
         </div>
 
