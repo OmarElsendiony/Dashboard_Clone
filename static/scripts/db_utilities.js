@@ -938,6 +938,9 @@
     // ==========================================
     // 4. SHARED ZIP PROCESSING LOGIC
     // ==========================================
+    // ==========================================
+    // 4. SHARED ZIP PROCESSING LOGIC (UPDATED)
+    // ==========================================
     const processZipFile = async (file) => {
         if (!file) return;
 
@@ -977,10 +980,21 @@
                     try {
                         const jsonText = await entry.async("string");
                         const jsonData = JSON.parse(jsonText);
+
+                        // --- NEW LOGIC START ---
+                        // 1. Get the "last name" (filename only, no path)
+                        const cleanFileName = path.split('/').pop();
+
+                        // 2. Get total number of entries
+                        const totalEntries = Array.isArray(jsonData) ? jsonData.length : Object.keys(jsonData).length;
+                        // --- NEW LOGIC END ---
+
                         let sample = (Array.isArray(jsonData)) 
                             ? jsonData.slice(0, 10) 
                             : Object.keys(jsonData).slice(0, 10).reduce((obj, k) => { obj[k] = jsonData[k]; return obj; }, {});
-                        extractedData += `FILE: ${path}\n` + JSON.stringify(sample, null, 2) + "\n\n";
+                        
+                        // 3. Updated Output Format
+                        extractedData += `FILE: ${cleanFileName} (Total entries: ${totalEntries})\n` + JSON.stringify(sample, null, 2) + "\n\n";
                     } catch (e) { console.warn(`Skipping ${path}`); }
                 }
 

@@ -629,6 +629,80 @@
         #visualizationArea {
             display: none;
         }
+
+        /* --- NEW STYLES FOR ACTION GAP ANALYSIS --- */
+        .gap-analysis-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .gap-header {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e1e5e9;
+            padding-bottom: 10px;
+        }
+
+        .gap-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .gap-column h4 {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .gap-list {
+            list-style: none;
+        }
+
+        .gap-item {
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            font-family: monospace;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        /* Specific Colors */
+        .missing-col h4 {
+            color: #e74a3b;
+        }
+
+        /* Red for missing */
+        .missing-item {
+            background: #fee2e2;
+            color: #b91c1c;
+            border-left: 4px solid #e74a3b;
+        }
+
+        .extra-col h4 {
+            color: #f6c23e;
+        }
+
+        /* Yellow/Orange for extra */
+        .extra-item {
+            background: #fef3c7;
+            color: #b45309;
+            border-left: 4px solid #f6c23e;
+        }
+
+        .match-item {
+            background: #d1fae5;
+            color: #065f46;
+            border-left: 4px solid #1cc88a;
+        }
     </style>
 </head>
 
@@ -677,7 +751,7 @@
                     <div class="input-group">
                         <label class="input-label">Response Data</label>
                         <textarea id="resultOutput" class="form-input form-textarea" style="height: 340px;"
-                            placeholder="API response will appear here..."></textarea>
+                            placeholder="In case you are running a task, API response will appear here or you can just paste the response and view trajectory directly "></textarea>
                     </div>
                     <button id="viewBtn" class="btn btn-view">Visualize Trajectory ↓</button>
                 </div>
@@ -699,24 +773,24 @@
                             <div class="stat-number" id="totalCount">0</div>
                             <div class="stat-label">Total</div>
                         </div>
-<!-- 
+                        <!-- 
                         <div class="stat-item">
                             <div class="stat-number" id="incompleteCount" style="color: #e74a3b;">0</div>
                             <div class="stat-label">Incomplete</div>
                         </div> -->
                     </div>
                     <div class="complexity-label">Incomplete Trajectories</div>
-                <div class="complexity-stats">
-                    <div class="stat-item">
-                        <div class="stat-number" id="incompleteCount">0</div>
-                        <div class="stat-label">Incomplete</div>
+                    <div class="complexity-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" id="incompleteCount">0</div>
+                            <div class="stat-label">Incomplete</div>
+                        </div>
+                        <div style="color: rgba(255, 255, 255, 0.4);">of</div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="totalCountIncomplete">0</div>
+                            <div class="stat-label">Total</div>
+                        </div>
                     </div>
-                    <div style="color: rgba(255, 255, 255, 0.4);">of</div>
-                    <div class="stat-item">
-                        <div class="stat-number">16</div>
-                        <div class="stat-label">Total</div>
-                    </div>
-                </div>
 
                     <div id="complexityBadge" class="complexity-badge"></div>
                 </div>
@@ -739,12 +813,11 @@
 
             </div>
         </main>
-
-        <div class="savePageContainer">
+        <!-- <div class="savePageContainer">
             <button class="save-button" onclick="saveFilteredHTML()">
                 💾 Save Trajectory
             </button>
-        </div>
+        </div> -->
     </div>
 
     <script>
@@ -759,7 +832,6 @@
         const resultOutput = document.getElementById('resultOutput');
         const apiUrlInput = document.getElementById('apiUrl');
         const numTrialsInput = document.getElementById('numTrials');
-        const taskFileNameInput = document.getElementById('taskFileName');
 
         // UI Sections
         const visualizationArea = document.getElementById('visualizationArea');
@@ -767,13 +839,12 @@
         const trialNavigation = document.getElementById('trialNavigation');
         const complexitySection = document.getElementById('complexitySection');
 
-        // --- PART 1: RUN TASK LOGIC (Fetch API) ---
+        // --- PART 1: RUN TASK LOGIC ---
         if (runBtn) {
             runBtn.onclick = async function () {
                 const taskJsonStr = taskInput.value.trim();
                 const apiUrl = apiUrlInput.value.trim();
                 const numTrials = parseInt(numTrialsInput.value) || 1;
-                // const fileName = taskFileNameInput.value.trim();
 
                 if (!taskJsonStr) { alert("Please enter the Task JSON first."); return; }
 
@@ -784,13 +855,10 @@
                 resultOutput.value = "Requesting...";
 
                 try {
-                    // Prepare Payload
                     let payload = JSON.parse(taskJsonStr);
-                    // payload['task_file_name'] = fileName;
                     payload['num_trials'] = numTrials;
                     if (payload['task']) payload['task']['outputs'] = [];
 
-                    // Fetch
                     const response = await fetch(apiUrl, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
@@ -801,13 +869,11 @@
 
                     const resultData = await response.json();
                     resultOutput.value = JSON.stringify(resultData, null, 2);
-
-                    // Auto-Visualize
                     visualizeData(resultData);
 
                 } catch (e) {
                     resultOutput.value = "Error: " + e.message;
-                    alert("Failed to run task. Ensure API is running and CORS is enabled.");
+                    alert("Failed to run task.");
                 } finally {
                     runBtn.innerHTML = originalText;
                     runBtn.disabled = false;
@@ -831,13 +897,12 @@
 
         // --- PART 3: DATA PROCESSING ---
         function visualizeData(data) {
-            // Normalize Data Structure
             if (data.hasOwnProperty("response_data")) {
                 trialsData = data['response_data']['results'];
             } else if (Array.isArray(data)) {
                 trialsData = data;
             } else {
-                trialsData = [data]; // Handle single object
+                trialsData = [data];
             }
 
             if (!trialsData || trialsData.length === 0) {
@@ -845,31 +910,25 @@
                 return;
             }
 
-            // Reset and Show Visualization Area
             currentTrialIndex = 0;
 
-            // Show UI elements (Using IDs from your HTML)
             if (visualizationArea) visualizationArea.style.display = 'block';
             if (complexitySection) complexitySection.style.display = 'block';
             if (trialNavigation) trialNavigation.style.display = 'flex';
 
-            // Show save button
             const saveContainer = document.querySelector('.savePageContainer');
             if (saveContainer) {
                 const saveBtn = saveContainer.querySelector('.save-button');
                 if (saveBtn) saveBtn.style.visibility = "visible";
             }
 
-            // Call render functions
             updateSummary();
             displayTrial(currentTrialIndex);
 
-            // Scroll to view
             if (visualizationArea) visualizationArea.scrollIntoView({ behavior: 'smooth' });
         }
 
         // --- PART 4: HELPER FUNCTIONS ---
-
         function isPassed(reward) {
             if (reward === true) return true;
             if (reward === false || reward === 0 || reward === 'fail' || reward === 'failed') return false;
@@ -885,40 +944,25 @@
         }
 
         function updateSummary() {
-            // 1. Safety Check
-            if (!trialsData || !Array.isArray(trialsData)) {
-                console.warn("trialsData is invalid or empty");
-                return;
-            }
+            if (!trialsData || !Array.isArray(trialsData)) return;
 
             const total = trialsData.length;
-
-            // 2. Calculate Passed
             const passed = trialsData.reduce((acc, t) => acc + (isPassed(t['reward']) ? 1 : 0), 0);
-
-            // 3. Calculate Incomplete
-            // We count a trial as "Complete" if ANY turn contains "###STOP###"
+            
             let incompleteCount = 0;
-
             trialsData.forEach(trial => {
                 let isComplete = false;
-
                 if (trial['traj'] && Array.isArray(trial['traj'])) {
                     for (let turn of trial['traj']) {
-                        // Check if content exists and contains the stop token
                         if (turn.content && typeof turn.content === 'string' && turn.content.includes("###STOP###")) {
                             isComplete = true;
-                            break; // Found stop, move to next trial
+                            break;
                         }
                     }
                 }
-
-                if (!isComplete) {
-                    incompleteCount++;
-                }
+                if (!isComplete) incompleteCount++;
             });
 
-            // 4. Update DOM Elements
             const passEl = document.getElementById('passCount');
             if (passEl) passEl.innerText = passed;
 
@@ -928,7 +972,9 @@
             const incompleteEl = document.getElementById('incompleteCount');
             if (incompleteEl) incompleteEl.innerText = incompleteCount;
 
-            // 5. Update Badge
+            const totalIncompleteEl = document.getElementById('totalCountIncomplete');
+            if (totalIncompleteEl) totalIncompleteEl.innerText = total;
+
             const complexity = getComplexity(passed);
             const badge = document.getElementById('complexityBadge');
             if (badge) {
@@ -949,6 +995,125 @@
             pill.textContent = passed ? 'PASSED' : 'FAILED';
         }
 
+        // --- ACTION COMPARISON LOGIC (UPDATED) ---
+
+        function getActionSignature(name, args) {
+            let parsedArgs = args;
+
+            // 1. Handle JSON strings
+            if (typeof args === 'string') {
+                try {
+                    parsedArgs = JSON.parse(args);
+                } catch (e) {
+                    // console.warn("Could not parse arguments string:", args);
+                    parsedArgs = args; 
+                }
+            }
+
+            // 2. Sort keys recursively
+            const sortObject = (obj) => {
+                if (obj === null || typeof obj !== 'object') return obj;
+                if (Array.isArray(obj)) return obj.map(sortObject);
+                
+                return Object.keys(obj).sort().reduce((result, key) => {
+                    result[key] = sortObject(obj[key]);
+                    return result;
+                }, {});
+            };
+
+            const normalizedArgs = JSON.stringify(sortObject(parsedArgs));
+            return `${name}(${normalizedArgs})`;
+        }
+
+        function renderActionGapAnalysis(trialIndex) {
+            const trial = trialsData[trialIndex];
+            
+            // 1. Extract Ground Truth Actions from the Trial Info
+            // Looking into trial.info.task.actions (based on your JSON)
+            let gtActionsRaw = [];
+            if (trial.info && trial.info.task && trial.info.task.actions) {
+                gtActionsRaw = trial.info.task.actions;
+            } else if (trial.info && trial.info.actions) {
+                gtActionsRaw = trial.info.actions; // Fallback
+            } else if (trial.actions) {
+                gtActionsRaw = trial.actions; // Fallback
+            }
+
+            // If no GT found, return null (don't show box)
+            if (!gtActionsRaw || gtActionsRaw.length === 0) return null;
+
+            const gtActions = gtActionsRaw.map(a => {
+                // Handle 'kwargs' (from your JSON) or 'arguments'
+                const args = a.kwargs || a.arguments; 
+                return {
+                    raw: a,
+                    args: args,
+                    sig: getActionSignature(a.name, args)
+                };
+            });
+
+            // 2. Extract Model Actions from Trajectory
+            let modelActions = [];
+            if (trial.traj) {
+                trial.traj.forEach(turn => {
+                    if (turn.tool_calls) {
+                        turn.tool_calls.forEach(tc => {
+                            modelActions.push({
+                                raw: tc,
+                                // Model output usually uses 'function.arguments' (string)
+                                args: tc.function.arguments,
+                                sig: getActionSignature(tc.function.name, tc.function.arguments)
+                            });
+                        });
+                    }
+                });
+            }
+
+            // 3. Compare
+            const gtSignatures = new Set(gtActions.map(x => x.sig));
+            const modelSignatures = new Set(modelActions.map(x => x.sig));
+
+            // Missing: In GT but not Model
+            const missingActions = gtActions.filter(x => !modelSignatures.has(x.sig));
+            
+            // Extra: In Model but not GT
+            const extraActions = modelActions.filter(x => !gtSignatures.has(x.sig));
+
+            // 4. Build HTML
+            const container = document.createElement('div');
+            container.className = 'gap-analysis-container';
+            
+            let html = `
+                <div class="gap-header">Action Difference between ground truth and model</div>
+                <div class="gap-grid">
+                    <div class="gap-column missing-col">
+                        <h4>Missing Actions (Expected but not called) - ${missingActions.length}</h4>
+                        <ul class="gap-list">
+                            ${missingActions.length === 0 ? '<li class="gap-item match-item">All expected actions present!</li>' : ''}
+                            ${missingActions.map(x => 
+                                `<li class="gap-item missing-item"><strong>${x.raw.name}</strong><br>${JSON.stringify(x.args)}</li>`
+                            ).join('')}
+                        </ul>
+                    </div>
+                    <div class="gap-column extra-col">
+                        <h4>Extra/Hallucinated Actions (Called but not expected) - ${extraActions.length}</h4>
+                        <ul class="gap-list">
+                            ${extraActions.length === 0 ? '<li class="gap-item" style="color:#aaa">No extra actions.</li>' : ''}
+                            ${extraActions.map(x => {
+                                let displayArgs = x.args;
+                                if(typeof displayArgs === 'string') displayArgs = displayArgs;
+                                else displayArgs = JSON.stringify(displayArgs);
+                                return `<li class="gap-item extra-item"><strong>${x.raw.function.name}</strong><br>${displayArgs}</li>`;
+                            }).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = html;
+            return container;
+        }
+
         function displayTrial(index) {
             if (!trajectoryContainer) return;
             trajectoryContainer.innerHTML = '';
@@ -961,14 +1126,14 @@
             let isComplete = false;
             if (trial['traj']) {
                 for (let turn of trial['traj']) {
-                    if (turn.content && turn.content.includes("###STOP###")) {
+                    if (turn.content && typeof turn.content === 'string' && turn.content.includes("###STOP###")) {
                         isComplete = true;
                         break;
                     }
                 }
             }
 
-            // Status Badge (Complete/Incomplete)
+            // Status Badge
             const statusDiv = document.createElement('div');
             statusDiv.className = 'traj-status ' + (isComplete ? 'traj-complete' : 'traj-incomplete');
             statusDiv.textContent = isComplete ? '✅ Complete Trajectory' : '❌ Incomplete Trajectory';
@@ -979,6 +1144,12 @@
             banner.className = `trial-banner ${passed ? 'pass' : 'fail'}`;
             banner.textContent = passed ? 'This trial PASSED' : 'This trial FAILED';
             trajectoryContainer.appendChild(banner);
+
+            // --- Inject Gap Analysis ---
+            const gapAnalysisElement = renderActionGapAnalysis(index);
+            if (gapAnalysisElement) {
+                trajectoryContainer.appendChild(gapAnalysisElement);
+            }
 
             // Render Turns
             if (trial['traj']) {
@@ -994,7 +1165,6 @@
                     else if (turn.role == "user") trajectoryTurn.classList.add('role-user');
                     else trajectoryTurn.classList.add('role-system');
 
-                    // Render Content Keys
                     for (let key in turn) {
                         if (turn.hasOwnProperty(key)) {
                             let keyElement = document.createElement('strong');
@@ -1027,7 +1197,6 @@
                         }
                     }
 
-                    // Icons
                     let turnIcon = document.createElement('div');
                     if (turn.role == "assistant") {
                         turnIcon.innerHTML = "<img src={{ url_for('static', filename='images/chatbot.png') }} alt='Assistant' style='width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;'>";
@@ -1043,18 +1212,16 @@
                 }
             }
 
-            // Update Navigation UI
             setStatusPill(index);
             updateNavigationButtons();
         }
 
-        // --- PART 5: NAVIGATION ---
+        // --- NAVIGATION ---
         function changeTrialNav(direction) {
             const newIndex = currentTrialIndex + direction;
             if (newIndex >= 0 && newIndex < trialsData.length) {
                 currentTrialIndex = newIndex;
                 displayTrial(currentTrialIndex);
-                // Note: updateSummary relies on global stats, no need to recall unless data changed
             }
         }
 
@@ -1068,7 +1235,7 @@
             if (counter) counter.innerText = `Trial ${currentTrialIndex + 1} of ${trialsData.length}`;
         }
 
-        // --- PART 6: SAVE & UTILS ---
+        // --- SAVE UTILS ---
         function showMessage(text) {
             const message = document.createElement('div');
             message.textContent = text;
@@ -1083,19 +1250,11 @@
 
         function saveFilteredHTML() {
             const clonedDoc = document.cloneNode(true);
-
-            // Remove interactive elements for static report
-            const elementsToRemove = [
-                '.save-button',
-                '.controls-grid', // Hide the configuration panel
-                '.query-btn'
-            ];
-
+            const elementsToRemove = ['.save-button', '.controls-grid', '.query-btn'];
             elementsToRemove.forEach(selector => {
                 const els = clonedDoc.querySelectorAll(selector);
                 els.forEach(el => el.remove());
             });
-
             const htmlContent = clonedDoc.documentElement.outerHTML;
             const blob = new Blob([htmlContent], { type: 'text/html' });
             const url = URL.createObjectURL(blob);
