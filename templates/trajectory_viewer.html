@@ -704,6 +704,18 @@
             border-left: 4px solid #1cc88a;
         }
     </style>
+
+    <style>
+        .form-input.error {
+            border-color: #e74a3b;
+            background: #fee2e2;
+        }
+
+        .form-input.success {
+            border-color: #1cc88a;
+            background: #d1fae5;
+        }
+    </style>
 </head>
 
 <body>
@@ -726,15 +738,26 @@
                         <input type="text" id="apiUrl" class="form-input" value="https://tau-bench.turing.com/run-task">
                     </div>
 
+                    <!-- <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 10px;">
+                        <div class="input-group">
+                            <label class="input-label">Trials</label>
+                            <input type="number" id="numTrials" class="form-input" value="1" min="1">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label">Task Filename</label>
+                            <input type="text" id="taskFileName" class="form-input" value="example/task.json">
+                        </div>
+                    </div> -->
+
                     <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 10px;">
                         <div class="input-group">
                             <label class="input-label">Trials</label>
                             <input type="number" id="numTrials" class="form-input" value="1" min="1">
                         </div>
-                        <!-- <div class="input-group">
-                            <label class="input-label">Task Filename</label>
-                            <input type="text" id="taskFileName" class="form-input" value="example/task.json">
-                        </div> -->
+                        <div class="input-group">
+                            <label class="input-label">Access Code</label>
+                            <input type="password" id="accessCode" class="form-input" placeholder="Enter access code">
+                        </div>
                     </div>
 
                     <div class="input-group">
@@ -821,6 +844,43 @@
     </div>
 
     <script>
+        // ============================================
+        // HASH-BASED ACCESS CONTROL (FRONTEND ONLY)
+        // ============================================
+
+        // SHA-256 hash function
+        async function hashCode(code) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(code);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return hashHex;
+        }
+
+        // List of valid hashes - add multiple authorized codes here
+        // To generate: Open console and run: hashCode("your-code").then(h => console.log(h))
+        const VALID_HASHES = [
+            "978ac51e937c28722e8507ffc21f710341f0f4b51efa5af3f2d4472ceb8af314", 
+            // Add more hashes here as needed
+        ];
+
+        async function verifyAccessCode(code) {
+            if (!code) {
+                return { valid: false, message: "Please enter an access code." };
+            }
+
+            const inputHash = await hashCode(code);
+
+            if (VALID_HASHES.includes(inputHash)) {
+                return { valid: true, message: "Access granted." };
+            } else {
+                return { valid: false, message: "Invalid access code. Access denied." };
+            }
+        }
+    
+    </script>
+    <script>
         // --- GLOBAL VARIABLES ---
         let trialsData = [];
         let currentTrialIndex = 0;
@@ -845,8 +905,19 @@
                 const taskJsonStr = taskInput.value.trim();
                 const apiUrl = apiUrlInput.value.trim();
                 const numTrials = parseInt(numTrialsInput.value) || 1;
+                const accessCode = document.getElementById('accessCode').value;
 
-                if (!taskJsonStr) { alert("Please enter the Task JSON first."); return; }
+                if (!taskJsonStr) {
+                    alert("Please enter the Task JSON first.");
+                    return;
+                }
+
+                // VERIFY ACCESS CODE (FRONTEND ONLY)
+                const verification = await verifyAccessCode(accessCode);
+                if (!verification.valid) {
+                    alert(verification.message);
+                    return;
+                }
 
                 // UI Loading State
                 const originalText = runBtn.innerHTML;
@@ -948,7 +1019,7 @@
 
             const total = trialsData.length;
             const passed = trialsData.reduce((acc, t) => acc + (isPassed(t['reward']) ? 1 : 0), 0);
-            
+
             let incompleteCount = 0;
             trialsData.forEach(trial => {
                 let isComplete = false;
@@ -1006,7 +1077,7 @@
                     parsedArgs = JSON.parse(args);
                 } catch (e) {
                     // console.warn("Could not parse arguments string:", args);
-                    parsedArgs = args; 
+                    parsedArgs = args;
                 }
             }
 
@@ -1014,7 +1085,7 @@
             const sortObject = (obj) => {
                 if (obj === null || typeof obj !== 'object') return obj;
                 if (Array.isArray(obj)) return obj.map(sortObject);
-                
+
                 return Object.keys(obj).sort().reduce((result, key) => {
                     result[key] = sortObject(obj[key]);
                     return result;
@@ -1027,7 +1098,7 @@
 
         function renderActionGapAnalysis(trialIndex) {
             const trial = trialsData[trialIndex];
-            
+
             // 1. Extract Ground Truth Actions from the Trial Info
             // Looking into trial.info.task.actions (based on your JSON)
             let gtActionsRaw = [];
@@ -1044,7 +1115,7 @@
 
             const gtActions = gtActionsRaw.map(a => {
                 // Handle 'kwargs' (from your JSON) or 'arguments'
-                const args = a.kwargs || a.arguments; 
+                const args = a.kwargs || a.arguments;
                 return {
                     raw: a,
                     args: args,
@@ -1075,14 +1146,14 @@
 
             // Missing: In GT but not Model
             const missingActions = gtActions.filter(x => !modelSignatures.has(x.sig));
-            
+
             // Extra: In Model but not GT
             const extraActions = modelActions.filter(x => !gtSignatures.has(x.sig));
 
             // 4. Build HTML
             const container = document.createElement('div');
             container.className = 'gap-analysis-container';
-            
+
             let html = `
                 <div class="gap-header">Action Difference between ground truth and model</div>
                 <div class="gap-grid">
@@ -1090,9 +1161,9 @@
                         <h4>Missing Actions (Expected but not called) - ${missingActions.length}</h4>
                         <ul class="gap-list">
                             ${missingActions.length === 0 ? '<li class="gap-item match-item">All expected actions present!</li>' : ''}
-                            ${missingActions.map(x => 
-                                `<li class="gap-item missing-item"><strong>${x.raw.name}</strong><br>${JSON.stringify(x.args)}</li>`
-                            ).join('')}
+                            ${missingActions.map(x =>
+                `<li class="gap-item missing-item"><strong>${x.raw.name}</strong><br>${JSON.stringify(x.args)}</li>`
+            ).join('')}
                         </ul>
                     </div>
                     <div class="gap-column extra-col">
@@ -1100,11 +1171,11 @@
                         <ul class="gap-list">
                             ${extraActions.length === 0 ? '<li class="gap-item" style="color:#aaa">No extra actions.</li>' : ''}
                             ${extraActions.map(x => {
-                                let displayArgs = x.args;
-                                if(typeof displayArgs === 'string') displayArgs = displayArgs;
-                                else displayArgs = JSON.stringify(displayArgs);
-                                return `<li class="gap-item extra-item"><strong>${x.raw.function.name}</strong><br>${displayArgs}</li>`;
-                            }).join('')}
+                let displayArgs = x.args;
+                if (typeof displayArgs === 'string') displayArgs = displayArgs;
+                else displayArgs = JSON.stringify(displayArgs);
+                return `<li class="gap-item extra-item"><strong>${x.raw.function.name}</strong><br>${displayArgs}</li>`;
+            }).join('')}
                         </ul>
                     </div>
                 </div>
