@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="{{ url_for('static', filename='scripts/db_utilities.js') }}"></script>
 </head>
+
 <body>
     <header class="dashboard-header">
-            <a href='/'> <div class="logo">
-                <img src="{{ url_for('static', filename='images/turing_logo.svg') }}" alt="turing image" style="width: 100px; scale: 1.5; display: block; margin: 0 auto;">
-        </div></a>
+        <a href='/'>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/turing_logo.svg') }}" alt="turing image"
+                    style="width: 100px; scale: 1.5; display: block; margin: 0 auto;">
+            </div>
+        </a>
     </header>
 
     <!-- Task Tracker Section -->
@@ -28,29 +33,31 @@
                                 <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
                             </linearGradient>
                             <filter id="glow">
-                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                                <feMerge> 
-                                    <feMergeNode in="coloredBlur"/>
-                                    <feMergeNode in="SourceGraphic"/>
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="SourceGraphic" />
                                 </feMerge>
                             </filter>
                         </defs>
                         <!-- Database cylinder layers -->
-                        <ellipse cx="60" cy="25" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.8" filter="url(#glow)"/>
-                        <rect x="25" y="25" width="70" height="15" fill="url(#dbGradient)" opacity="0.6"/>
-                        <ellipse cx="60" cy="40" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.9"/>
-                        
-                        <ellipse cx="60" cy="50" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.7"/>
-                        <rect x="25" y="50" width="70" height="15" fill="url(#dbGradient)" opacity="0.5"/>
-                        <ellipse cx="60" cy="65" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.8"/>
-                        
-                        <ellipse cx="60" cy="75" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.6"/>
-                        <rect x="25" y="75" width="70" height="15" fill="url(#dbGradient)" opacity="0.4"/>
-                        <ellipse cx="60" cy="90" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.9"/>
-                        
+                        <ellipse cx="60" cy="25" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.8"
+                            filter="url(#glow)" />
+                        <rect x="25" y="25" width="70" height="15" fill="url(#dbGradient)" opacity="0.6" />
+                        <ellipse cx="60" cy="40" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.9" />
+
+                        <ellipse cx="60" cy="50" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.7" />
+                        <rect x="25" y="50" width="70" height="15" fill="url(#dbGradient)" opacity="0.5" />
+                        <ellipse cx="60" cy="65" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.8" />
+
+                        <ellipse cx="60" cy="75" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.6" />
+                        <rect x="25" y="75" width="70" height="15" fill="url(#dbGradient)" opacity="0.4" />
+                        <ellipse cx="60" cy="90" rx="35" ry="8" fill="url(#dbGradient)" opacity="0.9" />
+
                         <!-- Connection lines -->
-                        <line x1="105" y1="60" x2="115" y2="60" stroke="url(#dbGradient)" stroke-width="2" opacity="0.6"/>
-                        <circle cx="118" cy="60" r="2" fill="url(#dbGradient)" opacity="0.8"/>
+                        <line x1="105" y1="60" x2="115" y2="60" stroke="url(#dbGradient)" stroke-width="2"
+                            opacity="0.6" />
+                        <circle cx="118" cy="60" r="2" fill="url(#dbGradient)" opacity="0.8" />
                     </svg>
                 </div>
             </div>
@@ -61,7 +68,7 @@
                 <div class="subtitle-line"></div>
             </div>
             <p class="tracker-description">
-                Streamline your database operations with our comprehensive suite of automation tools. 
+                Streamline your database operations with our comprehensive suite of automation tools.
                 From policy creation to performance monitoring, everything you need to build robust database domains.
             </p>
         </div>
@@ -76,7 +83,8 @@
             <div class="analytics-card" data-utility="api-implementation">
                 <div class="utility-icon">🔌</div>
                 <div class="utility-title">API Implementation</div>
-                <div class="utility-description">Create the prompt needed for implementing the APIs within the interface</div>
+                <div class="utility-description">Create the prompt needed for implementing the APIs within the interface
+                </div>
             </div>
             <div class="analytics-card" data-utility="database-seeding">
                 <div class="utility-icon">🌱</div>
@@ -96,28 +104,40 @@
             <div class="analytics-card" data-utility="extract-policy-schema">
                 <div class="utility-icon">📋</div>
                 <div class="utility-title">Extract Policy Schema</div>
-                <div class="utility-description">Extract database schema information from policies using initial prompts and example schema references</div>
+                <div class="utility-description">Extract database schema information from policies using initial prompts
+                    and example schema references</div>
             </div>
             <div class="analytics-card" data-utility="tune-policy">
                 <div class="utility-icon">🎛️</div>
                 <div class="utility-title">Tune Policy</div>
-                <div class="utility-description">Fine-tune and optimize existing policies using reference examples and best practices</div>
+                <div class="utility-description">Fine-tune and optimize existing policies using reference examples and
+                    best practices</div>
             </div>
             <div class="analytics-card" data-utility="policy-validator">
                 <div class="utility-icon">✅</div>
                 <div class="utility-title">Policy Validator</div>
-                <div class="utility-description">Validate policy structure, completeness, and compliance against example policies</div>
+                <div class="utility-description">Validate policy structure, completeness, and compliance against example
+                    policies</div>
             </div>
 
             <div class="analytics-card" data-utility="sop-task-creator">
                 <div class="utility-icon">📝</div>
                 <div class="utility-title">SOP-based Task Creator</div>
-                <div class="utility-description">Generate task prompts based on policy, database records, interface tools, and example tasks</div>
+                <div class="utility-description">Generate task prompts based on policy, database records, interface
+                    tools, and example tasks</div>
             </div>
+        </div>
+
+        <div class="analytics-card" data-utility="regression-test-creator">
+            <div class="utility-icon">🧪</div>
+            <div class="utility-title">Regression Test Creator</div>
+            <div class="utility-description">Generate regression test prompts based on policy, database schema,
+                interface tools, and database records</div>
         </div>
 
         <div id="content">
         </div>
     </section>
 </body>
+
 </html>

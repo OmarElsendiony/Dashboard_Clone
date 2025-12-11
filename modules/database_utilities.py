@@ -228,6 +228,43 @@ def database_utilities_prompt_generation():
                 'status': 'error',
                 'message': f'Failed to generate SOP task: {str(e)}'
             }), 500
+    elif action == "generate_regression_test_prompt":
+        environment_name = data.get('environment_name', '')
+        interface_number = data.get('interface_number', '')
+        initial_prompt = data.get('initial_prompt', '')
+        policy = data.get('policy', '')
+        db_schema = data.get('db_schema', '')
+        db_records = data.get('db_records', '')
+        interface_tools = data.get('interface_tools', '')
+
+        # Validate required fields
+        if not environment_name:
+            return jsonify({
+                'status': 'error',
+                'message': 'Environment name is required'
+            }), 400
+        
+        if not interface_number:
+            return jsonify({
+                'status': 'error',
+                'message': 'Interface number is required'
+            }), 400
+        
+        # Format the prompt with all variables
+        prompt = initial_prompt.format(
+            environment_name=environment_name,
+            interface_number=interface_number,
+            policy=policy,
+            db_schema=db_schema,
+            db_records=db_records,
+            interface_tools=interface_tools
+        )
+        
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt,
+            'generation_result': ''
+        }), 200
     else:
         return jsonify({
             'status': 'error',
@@ -474,7 +511,25 @@ def database_utilities():
             'initial_prompt': initial_prompt,
             'example_tasks': example_tasks
         }), 200
-    
+    elif action == 'regression_test_creator':
+        initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+        
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+        
+        return jsonify({
+            'status': 'success',
+            'initial_prompt': initial_prompt,
+            'policy': '',
+            'db_schema': '',
+            'db_records': '',
+            'interface_tools': ''
+        }), 200
     else:
         return jsonify({
             'status': 'error',

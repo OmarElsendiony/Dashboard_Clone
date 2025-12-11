@@ -1,0 +1,47 @@
+Assume you are an experienced tester. I am going to give you python functions and you are going to give me the inputs to test this function. The inputs are provided in the form of actions. You have to provide three tests for each function within the same file (not multiple files for the same function) with the most number of parameters as possible (if applicable). However, you have to follow the format that I provide to you below.
+
+# Format:
+{{
+    "env": "{environment_name}",
+    "interface_num": {interface_number},
+    "task": {{
+        "actions": [
+            {{
+                "name": "discover_user_entities",
+                "arguments": {{
+                    "entity_type": "users",
+                    "filters": {{
+                        "email": "sarahcampos144@hotmail.com"
+                    }}
+                }}
+            }},
+            {{
+                "name": "discover_user_entities",
+                "arguments": {{
+                    "entity_type": "users",
+                    "filters": {{
+                        "email": "sarahcampos144@hotmail.com"
+                    }}
+                }}
+            }}
+        ]
+    }}
+}}
+
+where the name of action is the function name and the arguments are the parameters of the function. You have to provide multiple actions for a single file in a single test if applicable. 
+
+# Functions:
+{interface_tools}
+
+# Policy:
+{policy}
+
+# Database Schema:
+{db_schema}
+
+# Database Records:
+{db_records}
+
+You have to provide the json file for each function separately including all the tests for that function in the actions part. You are going to provide the bash script that will create and populate those json files in a folder named tools_regression_tests/interface_{interface_number}/.
+
+Note: ids are just numeric strings "1", "2", ...
