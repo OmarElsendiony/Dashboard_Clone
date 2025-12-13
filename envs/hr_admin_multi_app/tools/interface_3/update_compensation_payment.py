@@ -70,9 +70,9 @@ class UpdateCompensationPayment(Tool):
 
         # Set payment_date when status changes to completed
         if updates.get("status") == "completed" and not payment.get("payment_date"):
-            payment["payment_date"] = "2025-12-12T12:00:00"
+            payment["payment_date"] = "2025-11-16T23:59:00"
 
-        payment["last_updated"] = "2025-12-12T12:00:00"
+        payment["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(payment)
 

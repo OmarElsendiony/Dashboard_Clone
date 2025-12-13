@@ -221,7 +221,7 @@ class UpdateEmployeePayrollData(Tool):
             payroll_input["status"] = status
 
         # Update timestamp
-        payroll_input["last_updated"] = "2025-12-12T12:00:00"
+        payroll_input["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(
             {

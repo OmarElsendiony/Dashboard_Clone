@@ -76,7 +76,7 @@ class UpdateEmployeeBenefitPlan(Tool):
         if current_cost is not None and previous_year_cost is not None and previous_year_cost != 0:
             plan["cost_variance_percent"] = ((float(current_cost) - float(previous_year_cost)) / float(previous_year_cost)) * 100
 
-        plan["last_updated"] = "2025-12-12T12:00:00"
+        plan["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(plan)
 

@@ -60,7 +60,7 @@ class CreateChecklist(Tool):
         if normalized_type == "offboarding" and employee_status != "inactive":
             return json.dumps({"success": False, "error": "Offboarding checklists require an inactive employee"})
 
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         checklist_id = generate_id(checklists)
         record = {
             "checklist_id": checklist_id,

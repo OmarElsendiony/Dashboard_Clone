@@ -55,7 +55,7 @@ class UpdatePayrollDeduction(Tool):
             if key in allowed_fields:
                 deduction[key] = value
 
-        deduction["last_updated"] = "2025-12-12T12:00:00"
+        deduction["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(deduction)
 

@@ -65,7 +65,7 @@ class CreateEmploymentContract(Tool):
         new_contract_id = generate_contract_id(contracts)
         
         # Use the specified timestamp
-        current_time = "2025-12-12T12:00:00"
+        current_time = "2025-11-16T23:59:00"
         
         # Create new contract
         new_contract = {

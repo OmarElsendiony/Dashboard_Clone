@@ -17,7 +17,7 @@ class EnrollWorkerInBenefits(Tool):
         benefit_enrollments = data.get("benefit_enrollments", {})
         employees = data.get("employees", {})
         benefit_plans = data.get("benefit_plans", {})
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Validate required fields
         if not employee_id:

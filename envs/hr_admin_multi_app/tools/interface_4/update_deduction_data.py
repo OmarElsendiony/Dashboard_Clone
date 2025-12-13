@@ -18,7 +18,7 @@ class UpdateDeductionData(Tool):
         """
         deductions = data.get("deductions", {})
         deduction_rules = data.get("deduction_rules", {})
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Validate required parameter
         if not deduction_id:

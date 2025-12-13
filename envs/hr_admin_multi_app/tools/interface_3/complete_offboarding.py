@@ -120,7 +120,7 @@ class CompleteOffboarding(Tool):
                 "uncleared_settlements": uncleared_settlements,
             })
 
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
 
         # Update exit case
         exit_case["exit_clearance_status"] = "cleared"

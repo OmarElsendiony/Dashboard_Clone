@@ -77,7 +77,7 @@ class CreateInputForPayroll(Tool):
         input_id = generate_id(payroll_inputs)
 
         # Create payroll input record
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         new_input = {
             "input_id": input_id,
             "employee_id": employee_id,

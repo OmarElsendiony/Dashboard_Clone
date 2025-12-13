@@ -84,7 +84,7 @@ class CreateCompensationPayment(Tool):
         payment_id = generate_id(payments)
 
         # Create payment record
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         new_payment = {
             "payment_id": payment_id,
             "employee_id": employee_id,

@@ -49,7 +49,7 @@ class AssignWorkerToDepartment(Tool):
         
         # Update department_id
         employee["department_id"] = department_id
-        employee["last_updated"] = "2025-12-12T12:00:00"
+        employee["last_updated"] = "2025-11-16T23:59:00"
         
         # Save back to data
         employees[employee_id] = employee

@@ -96,7 +96,7 @@ class NewEmployee(Tool):
             return json.dumps({"success": False, "error": "role must be admin or non_admin"})
 
         location_value = None
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
 
         new_employee_id = generate_id(employees)
         new_employee = {

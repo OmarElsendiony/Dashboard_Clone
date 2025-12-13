@@ -79,7 +79,7 @@ class AddBenefitPlan(Tool):
         plan_id = generate_id(benefit_plans)
 
         # Create benefit plan record
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         new_plan = {
             "plan_id": plan_id,
             "name": name,

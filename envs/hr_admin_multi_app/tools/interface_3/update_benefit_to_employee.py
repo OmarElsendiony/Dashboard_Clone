@@ -62,7 +62,7 @@ class UpdateBenefitToEmployee(Tool):
         if plan.get("status") == "inactive":
             return json.dumps({"error": f"Cannot enroll in inactive benefit plan '{plan_id}'"})
 
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
 
         # Check for existing enrollment and update it
         for enrollment_id, enrollment in benefit_enrollments.items():

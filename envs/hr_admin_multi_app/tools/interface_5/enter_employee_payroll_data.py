@@ -155,7 +155,7 @@ class EnterEmployeePayrollData(Tool):
 
         new_input_id = generate_id(payroll_inputs_dict)
 
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
 
         # Create new payroll input
         new_input = {

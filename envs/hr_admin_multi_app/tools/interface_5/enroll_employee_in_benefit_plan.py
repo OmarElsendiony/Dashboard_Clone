@@ -63,7 +63,7 @@ class EnrollEmployeeInBenefitPlan(Tool):
             if enrollment.get("employee_id") == employee_id and enrollment.get("plan_id") == plan_id:
                 return json.dumps({"success": False, "error": "Employee already enrolled in this plan"})
 
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         enrollment_id = generate_id(benefit_enrollments)
         record = {
             "enrollment_id": enrollment_id,

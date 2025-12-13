@@ -118,7 +118,7 @@ class ProcessPayrollInput(Tool):
                 }
             )
         
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # UPDATE MODE: If input_id is provided
         if input_id:

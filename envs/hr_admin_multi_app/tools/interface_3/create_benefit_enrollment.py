@@ -75,7 +75,7 @@ class CreateBenefitEnrollment(Tool):
         enrollment_id = generate_id(benefit_enrollments)
 
         # Create benefit enrollment record
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         new_enrollment = {
             "enrollment_id": enrollment_id,
             "employee_id": employee_id,

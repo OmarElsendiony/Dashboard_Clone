@@ -118,7 +118,7 @@ class TerminateEmployeeRecord(Tool):
             if case.get("employee_id") == identifier:
                 return json.dumps({"success": False, "error": f"Exit case already exists for employee '{identifier}'"})
 
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
 
         # employee_record["status"] = "inactive"
         # employee_record["last_updated"] = timestamp

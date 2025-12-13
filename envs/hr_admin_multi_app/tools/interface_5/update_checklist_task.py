@@ -65,7 +65,7 @@ class UpdateChecklistTask(Tool):
         if not updated:
             return json.dumps({"success": False, "error": "No updates provided"})
 
-        task["last_updated"] = "2025-12-12T12:00:00"
+        task["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(
             {

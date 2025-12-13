@@ -18,11 +18,12 @@ class UpdateOnboardChecklist(Tool):
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
-        onboarding_checklists = data.setdefault("onboarding_checklists", {})
+        checklists = data.setdefault("checklists", {})
         checklist_tasks = data.setdefault("checklist_tasks", {})
         employees = data.setdefault("employees", {})
+        
         # Validate checklist exists
-        if str(checklist_id) not in onboarding_checklists:
+        if str(checklist_id) not in checklists:
             return json.dumps(
                 {
                     "success": False,
@@ -30,8 +31,18 @@ class UpdateOnboardChecklist(Tool):
                 }
             )
 
-        checklist = onboarding_checklists[str(checklist_id)]
-        current_time = "2025-11-22T12:00:00"
+        checklist = checklists[str(checklist_id)]
+        
+        # Validate this is an onboarding checklist
+        if checklist.get("checklist_type") != "onboarding":
+            return json.dumps(
+                {
+                    "success": False,
+                    "error": f"Checklist {checklist_id} is not an onboarding checklist",
+                }
+            )
+        
+        current_time = datetime.now().isoformat()
 
         # Update checklist status if provided
         if status is not None:

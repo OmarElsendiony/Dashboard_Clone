@@ -61,7 +61,7 @@ class ReviseEmployee(Tool):
 
         updates_applied = False
         allowed_statuses = {"active", "inactive", "on_leave", "probation"}
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
 
         # Email update
         if "email" in fields:

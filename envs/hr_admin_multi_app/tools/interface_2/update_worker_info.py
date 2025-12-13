@@ -119,7 +119,7 @@ class UpdateWorkerInfo(Tool):
             updated_fields.append("tenure_months")
 
         # Update last_updated timestamp
-        employee["last_updated"] = "2025-12-12T12:00:00"
+        employee["last_updated"] = "2025-11-16T23:59:00"
 
         if not updated_fields:
             return json.dumps(

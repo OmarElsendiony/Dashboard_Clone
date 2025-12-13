@@ -92,6 +92,9 @@ class GeneratePayrollReport(Tool):
         total_deductions = 0.0
         total_net_pay = 0.0
         employee_details = []
+        
+        # Track cycle IDs when filtering by employee_id or department_id
+        collected_cycle_ids = set()
 
         # Create a map of employee payroll data
         employee_payroll_map = {}
@@ -112,6 +115,10 @@ class GeneratePayrollReport(Tool):
 
             total_hours_worked += hours
             total_overtime_hours += overtime
+            
+            # Collect cycle IDs for later use
+            if c_id:
+                collected_cycle_ids.add(c_id)
 
             if emp_id not in employee_payroll_map:
                 employee = employees.get(emp_id, {})
@@ -153,6 +160,10 @@ class GeneratePayrollReport(Tool):
 
             net_pay = float(payslip.get("net_pay_value", 0) or 0)
             total_net_pay += net_pay
+            
+            # Collect cycle IDs for later use
+            if c_id:
+                collected_cycle_ids.add(c_id)
 
             if emp_id not in employee_payroll_map:
                 employee = employees.get(emp_id, {})
@@ -192,6 +203,10 @@ class GeneratePayrollReport(Tool):
 
             amount = float(earning.get("amount", 0) or 0)
             total_earnings += amount
+            
+            # Collect cycle IDs for later use
+            if c_id:
+                collected_cycle_ids.add(c_id)
 
             if emp_id in employee_payroll_map:
                 # Add detailed earning record
@@ -218,6 +233,10 @@ class GeneratePayrollReport(Tool):
 
             amount = float(deduction.get("amount", 0) or 0)
             total_deductions += amount
+            
+            # Collect cycle IDs for later use
+            if c_id:
+                collected_cycle_ids.add(c_id)
 
             if emp_id in employee_payroll_map:
                 # Add detailed deduction record
@@ -237,10 +256,25 @@ class GeneratePayrollReport(Tool):
 
         # Convert map to list
         employee_details = list(employee_payroll_map.values())
+        
+        # Populate cycle_info when filtering by employee_id or department_id (but not cycle_id)
+        # Collect all cycles found in the data
+        if not cycle_id and collected_cycle_ids:
+            # Build a list of all cycle info for the collected cycles
+            cycle_info = []
+            for c_id in sorted(collected_cycle_ids):  # Sort for consistent ordering
+                cycle = payroll_cycles.get(c_id, {})
+                cycle_info.append({
+                    "cycle_id": c_id,
+                    "start_date": cycle.get("start_date"),
+                    "end_date": cycle.get("end_date"),
+                    "frequency": cycle.get("frequency"),
+                    "status": cycle.get("status"),
+                })
 
         report = {
             "report_type": "payroll_report",
-            "generated_at": "2025-12-12T12:00:00",
+            "generated_at": "2025-11-16T23:59:00",
             "filters": {
                 "employee_id": employee_id,
                 "cycle_id": cycle_id,

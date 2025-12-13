@@ -132,7 +132,7 @@ class GenerateExitChecklist(Tool):
             "checklist_status": offboarding_checklist.get("status"),
             "checklist_items": checklist_items,
             "total_tasks": len(checklist_items),
-            "generated_at": "2025-12-12T12:00:00",
+            "generated_at": "2025-11-16T23:59:00",
         }
 
         return json.dumps(checklist)

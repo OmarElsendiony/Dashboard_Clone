@@ -44,7 +44,7 @@ class ApproveCommission(Tool):
             return json.dumps({"error": f"Cannot approve rejected commission '{earning_id}'"})
 
         earning["status"] = "approved"
-        earning["last_updated"] = "2025-12-12T12:00:00"
+        earning["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(earning)
 

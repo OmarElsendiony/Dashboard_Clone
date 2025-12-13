@@ -43,7 +43,7 @@ class UpdateAssetStatus(Tool):
         record["status"] = normalized_status
         if note is not None:
             record["note"] = note
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         record["last_updated"] = timestamp
 
         return json.dumps(

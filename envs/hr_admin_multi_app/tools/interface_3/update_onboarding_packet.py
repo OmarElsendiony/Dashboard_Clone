@@ -51,7 +51,7 @@ class UpdateOnboardingPacket(Tool):
             })
 
         checklist = checklists[checklist_id]
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
 
         # Update checklist fields if provided
         if updates and isinstance(updates, dict):

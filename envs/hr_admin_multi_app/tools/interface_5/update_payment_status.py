@@ -87,10 +87,10 @@ class UpdatePaymentStatus(Tool):
 
         # Set payment_date if status is 'completed'
         if status == "completed":
-            payment["payment_date"] = "2025-12-12T12:00:00"
+            payment["payment_date"] = "2025-11-16T23:59:00"
 
         # Update timestamp
-        payment["last_updated"] = "2025-12-12T12:00:00"
+        payment["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(
             {

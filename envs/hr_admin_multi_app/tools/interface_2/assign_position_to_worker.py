@@ -34,7 +34,7 @@ class AssignPositionToWorker(Tool):
         
         # Update employee record with position
         employees[employee_id]["position"] = position
-        employees[employee_id]["last_updated"] = "2025-12-12T12:00:00"
+        employees[employee_id]["last_updated"] = "2025-11-16T23:59:00"
         
         # Return updated employee data
         updated_employee = employees[employee_id].copy()

@@ -55,7 +55,7 @@ class UpdateEmployeePayrollCycle(Tool):
             if key in allowed_fields:
                 cycle[key] = value
 
-        cycle["last_updated"] = "2025-12-12T12:00:00"
+        cycle["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(cycle)
 

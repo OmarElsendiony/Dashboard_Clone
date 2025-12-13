@@ -15,7 +15,7 @@ class CreatePayrollRun(Tool):
         Create a new payroll cycle/run.
         """
         payroll_cycles = data.get("payroll_cycles", {})
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Validate required fields
         if not start_date:

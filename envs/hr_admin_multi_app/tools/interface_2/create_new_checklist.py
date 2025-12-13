@@ -64,8 +64,8 @@ class CreateNewChecklist(Tool):
             "checklist_type": checklist_type,
             "employee_id": str(employee_id),
             "status": status,
-            "created_at": "2025-12-12T12:00:00",
-            "last_updated": "2025-12-12T12:00:00",
+            "created_at": "2025-11-16T23:59:00",
+            "last_updated": "2025-11-16T23:59:00",
         }
 
         # Add name if provided (although not in the standard schema)
@@ -105,8 +105,8 @@ class CreateNewChecklist(Tool):
                 "name": task_name,
                 "status": "pending",
                 "due_date": None,
-                "created_at": "2025-12-12T12:00:00",
-                "last_updated": "2025-12-12T12:00:00",
+                "created_at": "2025-11-16T23:59:00",
+                "last_updated": "2025-11-16T23:59:00",
             }
 
         # Get tasks associated with this checklist

@@ -188,7 +188,7 @@ class EditPayrollDeduction(Tool):
                 }
             )
         
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Update only the fields that are provided
         if employee_id is not None:

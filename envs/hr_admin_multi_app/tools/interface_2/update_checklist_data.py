@@ -132,7 +132,7 @@ class UpdateChecklistData(Tool):
                         }
                     )
                 task["status"] = task_status
-                task["last_updated"] = "2025-12-12T12:00:00"
+                task["last_updated"] = "2025-11-16T23:59:00"
                 updated_fields.append("status")
                 
 
@@ -147,7 +147,7 @@ class UpdateChecklistData(Tool):
                     )
 
                 task["assigned_manager_id"] = str(assigned_manager_id)
-                task["last_updated"] = "2025-12-12T12:00:00"
+                task["last_updated"] = "2025-11-16T23:59:00"
                 updated_fields.append("assigned_manager_id")
             # Record update metadata
             applied_updates.append({"target": "task", "task_id": task_id, "updated_fields": updated_fields})
@@ -196,7 +196,7 @@ class UpdateChecklistData(Tool):
             updated_fields.append("status")
 
         # Update last_updated timestamp
-        checklist["last_updated"] = "2025-12-12T12:00:00"
+        checklist["last_updated"] = "2025-11-16T23:59:00"
 
         if not applied_updates and not updated_fields:
             return json.dumps(

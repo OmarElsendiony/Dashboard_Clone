@@ -76,7 +76,7 @@ class CreateWorker(Tool):
                 })
         
         # Calculate tenure_months from start_date to timestamp date
-        timestamp_date = date(2025, 12, 12)  # From timestamp "2025-12-12T12:00:00"
+        timestamp_date = date(2025, 12, 12)  # From timestamp "2025-11-16T23:59:00"
         start_date_obj = datetime.strptime(start_date, "%Y-%m-%d").date()
         
         # Calculate months difference
@@ -96,7 +96,7 @@ class CreateWorker(Tool):
         
         # Generate new employee ID
         employee_id = generate_id(employees)
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Create new employee record
         new_employee = {

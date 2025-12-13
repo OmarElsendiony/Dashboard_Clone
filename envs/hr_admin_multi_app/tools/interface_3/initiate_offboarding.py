@@ -91,13 +91,13 @@ class InitiateOffboarding(Tool):
         if reason in ["misconduct", "security_breach", "policy_violation"]:
             employee["flag_high_offboard_risk"] = True
         employee["flag_pending_settlement"] = True
-        employee["last_updated"] = "2025-12-12T12:00:00"
+        employee["last_updated"] = "2025-11-16T23:59:00"
 
         # Generate new exit case ID
         exit_case_id = generate_id(exit_cases)
 
         # Create exit case record
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         new_exit_case = {
             "exit_case_id": exit_case_id,
             "employee_id": employee_id,

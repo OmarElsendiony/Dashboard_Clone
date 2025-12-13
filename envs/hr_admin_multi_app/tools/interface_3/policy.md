@@ -15,19 +15,19 @@ Each SOP is **self-contained**, includes clear procedural steps, and defines hal
 
 You must halt the procedure and immediately initiate a **escalate_to_human** if:
 
-- The acting user is unauthorized or lacks valid HR Admin credentials.  
+- The acting user is unauthorized or lacks valid HR Admin credentials.
 
-- Any mandatory employee data lookup fails (employee, department, manager).  
+- Any mandatory employee data lookup fails (employee, department, manager).
 
-- A required tool operation (create_new_employee, update_employee_info, etc.) fails.  
+- A required tool operation (create_new_employee, update_employee_info, etc.) fails.
 
-- Uploaded documents cannot be verified or are invalid.  
+- Uploaded documents cannot be verified or are invalid.
 
-- Any workflow, integration, or system module returns an error.  
+- Any workflow, integration, or system module returns an error.
 
-- Duplicate employee records are detected.  
+- Duplicate employee records are detected.
 
-- Department or manager entities required for assignment do not exist.  
+- Department or manager entities required for assignment do not exist.
 
 Only when none of these conditions occur may you proceed with executing the SOP.
 
@@ -38,7 +38,8 @@ Only when none of these conditions occur may you proceed with executing the SOP.
 ## **Steps to Follow**
 
 - **Retrieve the employee record for the user conducting action** and verify the user is active and is an admin using get_employee.
-- **Retrieve the employee record for the user for whom the onboarding** initiation is intended, and confirm that the user is active using get_employee.
+- **Retrieve the employee record for the user for whom the onboarding** initiation is intended, and confirm that the user does not exist or is not active using get_employee.
+- **Retrieve the employee record for the manager to the department** that the onboarding initiation is intended, and confirm that the user is active using get_employee.
 - Create the employee profile and contract using create_new_employee.
 - Create an onboarding packet using create_onboarding_packet.
 - Confirm successful assignments and verify record accuracy using get_employee.
@@ -55,8 +56,8 @@ Only when none of these conditions occur may you proceed with executing the SOP.
 
 ## **Steps to Follow**
 
-- **Retrieve the employee record for the user conducting action** and verify the user is active and is an admin using get_employee.
-- **Retrieve the employee record for the user for whom the onboarding checklist** is going to be created, and confirm that the user is active using get_employee**.**
+- **Retrieve the employee record for the user conducting action** if it does not already exist and verify the user is active and is an admin using get_employee.
+- **Retrieve the employee record for the user for whom the onboarding checklist** is going to be created, if it does not already exist, and confirm that the user is active using get_employee**.**
 - Create a new onboarding packet using create_onboarding_packet.
 
 # **SOP 4 - Onboarding Checklist Update**

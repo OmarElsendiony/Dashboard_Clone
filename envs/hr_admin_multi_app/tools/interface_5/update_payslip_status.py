@@ -235,7 +235,7 @@ class UpdatePayslipStatus(Tool):
         payslip["net_pay_value"] = round(net_pay_value, 2)
 
         # Update timestamp
-        payslip["last_updated"] = "2025-12-12T12:00:00"
+        payslip["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(
             {

@@ -27,7 +27,7 @@ class TerminateEmploymentContract(Tool):
             JSON string with success status and updated contract details
         """
         
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         termination_date = "2025-12-12"
         
         # Validate data format

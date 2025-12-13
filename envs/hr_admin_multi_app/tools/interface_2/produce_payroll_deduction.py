@@ -194,7 +194,7 @@ class ProducePayrollDeduction(Tool):
                 }
             )
         
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Check if deduction already exists for this employee, cycle, and rule
         if cycle_id:

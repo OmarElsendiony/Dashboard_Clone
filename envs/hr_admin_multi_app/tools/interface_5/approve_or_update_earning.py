@@ -163,7 +163,7 @@ class ApproveOrUpdateEarning(Tool):
                     earning["status"] = "require_justification"
 
         # Update timestamp
-        earning["last_updated"] = "2025-12-12T12:00:00"
+        earning["last_updated"] = "2025-11-16T23:59:00"
 
         if cycle_id:
             earning["cycle_id"] = cycle_id

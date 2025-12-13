@@ -126,7 +126,7 @@ class UpdateCompensationBenefitPlan(Tool):
         else:
             variance = Decimal("0.00")
         plan["cost_variance_percent"] = f"{variance:.2f}"
-        plan["last_updated"] = "2025-12-12T12:00:00"
+        plan["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps({"success": True, "plan": plan})
 

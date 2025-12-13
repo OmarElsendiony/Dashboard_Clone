@@ -220,7 +220,7 @@ class CreateChecklistTask(Tool):
             if task.get("checklist_id") == checklist_id and task.get("name", "").lower() == canonical_name.lower():
                 return json.dumps({"success": False, "error": "Task already exists for this checklist"})
 
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         task_id = generate_id(checklist_tasks)
         record = {
             "task_id": task_id,

@@ -44,7 +44,7 @@ class UpdateEmployeeOnboardingTask(Tool):
 
         task = checklist_tasks[task_id]
         task["assigned_manager_id"] = new_manager_id
-        task["last_updated"] = "2025-12-12T12:00:00"
+        task["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(task)
 

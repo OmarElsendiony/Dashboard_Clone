@@ -15,7 +15,7 @@ class UpdatePayslipInfo(Tool):
         Only provided fields will be updated.
         """
         payslips = data.get("payslips", {})
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Validate required parameter
         if not payslip_id:

@@ -91,7 +91,7 @@ class ManagePayrollEarning(Tool):
         # Valid statuses
         valid_statuses = ["pending", "approved", "rejected", "require_justification"]
         
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # UPDATE MODE: If earning_id is provided (for approval/denial)
         if earning_id:

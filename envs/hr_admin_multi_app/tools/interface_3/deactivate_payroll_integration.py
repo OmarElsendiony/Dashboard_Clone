@@ -38,7 +38,7 @@ class DeactivatePayrollIntegration(Tool):
             return json.dumps({"error": f"Payroll cycle '{cycle_id}' is already closed"})
 
         cycle["status"] = "closed"
-        cycle["last_updated"] = "2025-12-12T12:00:00"
+        cycle["last_updated"] = "2025-11-16T23:59:00"
 
         return json.dumps(cycle)
 

@@ -20,7 +20,7 @@ class CreateTimecard(Tool):
         payroll_inputs = data.get("payroll_inputs", {})
         employees = data.get("employees", {})
         payroll_cycles = data.get("payroll_cycles", {})
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Validate required fields
         if not employee_id:

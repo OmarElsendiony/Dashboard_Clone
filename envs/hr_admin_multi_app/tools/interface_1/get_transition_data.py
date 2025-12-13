@@ -39,13 +39,13 @@ class GetTransitionData(Tool):
             )
 
         if transition_type == "onboarding_checklist":
-            onboarding_checklists = data.get("onboarding_checklists", {})
+            checklists = data.get("checklists", {})
             checklist_tasks = data.get("checklist_tasks", {})
             
             # Find checklist for this employee
             checklist_data = None
-            for checklist_id, checklist in onboarding_checklists.items():
-                if checklist.get("employee_id") == str(employee_id):
+            for checklist_id, checklist in checklists.items():
+                if checklist.get("employee_id") == str(employee_id) and checklist.get("checklist_type") == "onboarding":
                     checklist_data = checklist.copy()
                     checklist_data["checklist_id"] = checklist_id
                     

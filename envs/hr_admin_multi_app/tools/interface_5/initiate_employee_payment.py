@@ -353,7 +353,7 @@ class InitiateEmployeePayment(Tool):
 
         new_payment_id = generate_id(payments_dict)
 
-        current_timestamp = "2025-12-12T12:00:00"
+        current_timestamp = "2025-11-16T23:59:00"
 
         # Create new payment
         new_payment = {

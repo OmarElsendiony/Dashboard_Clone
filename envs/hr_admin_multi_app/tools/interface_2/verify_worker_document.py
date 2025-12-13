@@ -29,7 +29,7 @@ class VerifyWorkerDocument(Tool):
             JSON string with success status and updated document details
         """
         
-        timestamp = "2025-12-12T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         
         # Validate data format
         if not isinstance(data, dict):
