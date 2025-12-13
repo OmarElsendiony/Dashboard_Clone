@@ -1,0 +1,802 @@
+{
+  "1": {
+    "document_id": "1",
+    "employee_id": "1",
+    "document_url": "https://documents.company.com/employee/1/1.pdf",
+    "title": "Employee Handbook",
+    "document_type": "employee",
+    "target_entity": "1",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "2": {
+    "document_id": "2",
+    "employee_id": "3",
+    "document_url": "https://documents.company.com/employee/3/2.pdf",
+    "title": "Employee Handbook",
+    "document_type": "employee",
+    "target_entity": "3",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "3": {
+    "document_id": "3",
+    "employee_id": "3",
+    "document_url": "https://documents.company.com/payroll_input/3/3.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "3",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "4": {
+    "document_id": "4",
+    "employee_id": "4",
+    "document_url": "https://documents.company.com/payroll_deduction/4/4.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "4",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "5": {
+    "document_id": "5",
+    "employee_id": "6",
+    "document_url": "https://documents.company.com/offboarding/6/5.pdf",
+    "title": "Final Settlement Letter",
+    "document_type": "offboarding",
+    "target_entity": "6",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "6": {
+    "document_id": "6",
+    "employee_id": "6",
+    "document_url": "https://documents.company.com/payslip/6/6.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "6",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "7": {
+    "document_id": "7",
+    "employee_id": "6",
+    "document_url": "https://documents.company.com/offboarding/6/7.pdf",
+    "title": "Exit Clearance Form",
+    "document_type": "offboarding",
+    "target_entity": "6",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "8": {
+    "document_id": "8",
+    "employee_id": "8",
+    "document_url": "https://documents.company.com/payroll_earning/8/8.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "8",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "9": {
+    "document_id": "9",
+    "employee_id": "8",
+    "document_url": "https://documents.company.com/payslip/8/9.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "8",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "10": {
+    "document_id": "10",
+    "employee_id": "8",
+    "document_url": "https://documents.company.com/employee/8/10.pdf",
+    "title": "Benefits Guide",
+    "document_type": "employee",
+    "target_entity": "8",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "11": {
+    "document_id": "11",
+    "employee_id": "12",
+    "document_url": "https://documents.company.com/payslip/12/11.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "12",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "12": {
+    "document_id": "12",
+    "employee_id": "12",
+    "document_url": "https://documents.company.com/onboarding/12/12.pdf",
+    "title": "Offer Letter",
+    "document_type": "onboarding",
+    "target_entity": "12",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "13": {
+    "document_id": "13",
+    "employee_id": "13",
+    "document_url": "https://documents.company.com/employee/13/13.pdf",
+    "title": "Benefits Guide",
+    "document_type": "employee",
+    "target_entity": "13",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "14": {
+    "document_id": "14",
+    "employee_id": "13",
+    "document_url": "https://documents.company.com/onboarding/13/14.pdf",
+    "title": "Contract Agreement",
+    "document_type": "onboarding",
+    "target_entity": "13",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "15": {
+    "document_id": "15",
+    "employee_id": "13",
+    "document_url": "https://documents.company.com/offboarding/13/15.pdf",
+    "title": "Final Settlement Letter",
+    "document_type": "offboarding",
+    "target_entity": "13",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "16": {
+    "document_id": "16",
+    "employee_id": "16",
+    "document_url": "https://documents.company.com/payroll_input/16/16.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "16",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "17": {
+    "document_id": "17",
+    "employee_id": "16",
+    "document_url": "https://documents.company.com/employee/16/17.pdf",
+    "title": "Benefits Guide",
+    "document_type": "employee",
+    "target_entity": "16",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "18": {
+    "document_id": "18",
+    "employee_id": "16",
+    "document_url": "https://documents.company.com/onboarding/16/18.pdf",
+    "title": "Contract Agreement",
+    "document_type": "onboarding",
+    "target_entity": "16",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "19": {
+    "document_id": "19",
+    "employee_id": "17",
+    "document_url": "https://documents.company.com/payroll_earning/17/19.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "17",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "20": {
+    "document_id": "20",
+    "employee_id": "17",
+    "document_url": "https://documents.company.com/payroll_input/17/20.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "17",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "21": {
+    "document_id": "21",
+    "employee_id": "17",
+    "document_url": "https://documents.company.com/payroll_earning/17/21.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "17",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "22": {
+    "document_id": "22",
+    "employee_id": "19",
+    "document_url": "https://documents.company.com/payroll_input/19/22.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "19",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "23": {
+    "document_id": "23",
+    "employee_id": "22",
+    "document_url": "https://documents.company.com/payslip/22/23.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "22",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "24": {
+    "document_id": "24",
+    "employee_id": "22",
+    "document_url": "https://documents.company.com/offboarding/22/24.pdf",
+    "title": "Final Settlement Letter",
+    "document_type": "offboarding",
+    "target_entity": "22",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "25": {
+    "document_id": "25",
+    "employee_id": "24",
+    "document_url": "https://documents.company.com/employee/24/25.pdf",
+    "title": "Employee Handbook",
+    "document_type": "employee",
+    "target_entity": "24",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "26": {
+    "document_id": "26",
+    "employee_id": "24",
+    "document_url": "https://documents.company.com/payslip/24/26.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "24",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "27": {
+    "document_id": "27",
+    "employee_id": "25",
+    "document_url": "https://documents.company.com/payroll_deduction/25/27.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "25",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "28": {
+    "document_id": "28",
+    "employee_id": "25",
+    "document_url": "https://documents.company.com/payslip/25/28.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "25",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "29": {
+    "document_id": "29",
+    "employee_id": "25",
+    "document_url": "https://documents.company.com/payroll_deduction/25/29.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "25",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "30": {
+    "document_id": "30",
+    "employee_id": "26",
+    "document_url": "https://documents.company.com/employee/26/30.pdf",
+    "title": "Employee Handbook",
+    "document_type": "employee",
+    "target_entity": "26",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "31": {
+    "document_id": "31",
+    "employee_id": "26",
+    "document_url": "https://documents.company.com/payroll_input/26/31.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "26",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "32": {
+    "document_id": "32",
+    "employee_id": "28",
+    "document_url": "https://documents.company.com/onboarding/28/32.pdf",
+    "title": "Offer Letter",
+    "document_type": "onboarding",
+    "target_entity": "28",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "33": {
+    "document_id": "33",
+    "employee_id": "29",
+    "document_url": "https://documents.company.com/payroll_deduction/29/33.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "29",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "34": {
+    "document_id": "34",
+    "employee_id": "31",
+    "document_url": "https://documents.company.com/employee/31/34.pdf",
+    "title": "Policy Document",
+    "document_type": "employee",
+    "target_entity": "31",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "35": {
+    "document_id": "35",
+    "employee_id": "31",
+    "document_url": "https://documents.company.com/employee/31/35.pdf",
+    "title": "Employee Handbook",
+    "document_type": "employee",
+    "target_entity": "31",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "36": {
+    "document_id": "36",
+    "employee_id": "32",
+    "document_url": "https://documents.company.com/offboarding/32/36.pdf",
+    "title": "Final Settlement Letter",
+    "document_type": "offboarding",
+    "target_entity": "32",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "37": {
+    "document_id": "37",
+    "employee_id": "33",
+    "document_url": "https://documents.company.com/payslip/33/37.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "33",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "38": {
+    "document_id": "38",
+    "employee_id": "33",
+    "document_url": "https://documents.company.com/payroll_earning/33/38.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "33",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "39": {
+    "document_id": "39",
+    "employee_id": "33",
+    "document_url": "https://documents.company.com/payroll_input/33/39.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "33",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "40": {
+    "document_id": "40",
+    "employee_id": "35",
+    "document_url": "https://documents.company.com/offboarding/35/40.pdf",
+    "title": "Final Settlement Letter",
+    "document_type": "offboarding",
+    "target_entity": "35",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "41": {
+    "document_id": "41",
+    "employee_id": "35",
+    "document_url": "https://documents.company.com/onboarding/35/41.pdf",
+    "title": "Offer Letter",
+    "document_type": "onboarding",
+    "target_entity": "35",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "42": {
+    "document_id": "42",
+    "employee_id": "35",
+    "document_url": "https://documents.company.com/payroll_earning/35/42.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "35",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "43": {
+    "document_id": "43",
+    "employee_id": "37",
+    "document_url": "https://documents.company.com/employee/37/43.pdf",
+    "title": "Benefits Guide",
+    "document_type": "employee",
+    "target_entity": "37",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "44": {
+    "document_id": "44",
+    "employee_id": "38",
+    "document_url": "https://documents.company.com/onboarding/38/44.pdf",
+    "title": "Contract Agreement",
+    "document_type": "onboarding",
+    "target_entity": "38",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "45": {
+    "document_id": "45",
+    "employee_id": "38",
+    "document_url": "https://documents.company.com/payroll_deduction/38/45.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "38",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "46": {
+    "document_id": "46",
+    "employee_id": "38",
+    "document_url": "https://documents.company.com/offboarding/38/46.pdf",
+    "title": "Final Settlement Letter",
+    "document_type": "offboarding",
+    "target_entity": "38",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "47": {
+    "document_id": "47",
+    "employee_id": "39",
+    "document_url": "https://documents.company.com/employee/39/47.pdf",
+    "title": "Benefits Guide",
+    "document_type": "employee",
+    "target_entity": "39",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "48": {
+    "document_id": "48",
+    "employee_id": "40",
+    "document_url": "https://documents.company.com/payroll_input/40/48.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "40",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "49": {
+    "document_id": "49",
+    "employee_id": "40",
+    "document_url": "https://documents.company.com/payroll_earning/40/49.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "40",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "50": {
+    "document_id": "50",
+    "employee_id": "40",
+    "document_url": "https://documents.company.com/payslip/40/50.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "40",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "51": {
+    "document_id": "51",
+    "employee_id": "41",
+    "document_url": "https://documents.company.com/employee/41/51.pdf",
+    "title": "Employee Handbook",
+    "document_type": "employee",
+    "target_entity": "41",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "52": {
+    "document_id": "52",
+    "employee_id": "41",
+    "document_url": "https://documents.company.com/payroll_earning/41/52.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "41",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "53": {
+    "document_id": "53",
+    "employee_id": "42",
+    "document_url": "https://documents.company.com/payroll_deduction/42/53.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "42",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "54": {
+    "document_id": "54",
+    "employee_id": "44",
+    "document_url": "https://documents.company.com/payroll_input/44/54.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "44",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "55": {
+    "document_id": "55",
+    "employee_id": "44",
+    "document_url": "https://documents.company.com/payroll_input/44/55.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "44",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "56": {
+    "document_id": "56",
+    "employee_id": "44",
+    "document_url": "https://documents.company.com/payslip/44/56.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "44",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "57": {
+    "document_id": "57",
+    "employee_id": "45",
+    "document_url": "https://documents.company.com/payroll_input/45/57.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "45",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "58": {
+    "document_id": "58",
+    "employee_id": "45",
+    "document_url": "https://documents.company.com/offboarding/45/58.pdf",
+    "title": "Final Settlement Letter",
+    "document_type": "offboarding",
+    "target_entity": "45",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "59": {
+    "document_id": "59",
+    "employee_id": "47",
+    "document_url": "https://documents.company.com/onboarding/47/59.pdf",
+    "title": "Contract Agreement",
+    "document_type": "onboarding",
+    "target_entity": "47",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "60": {
+    "document_id": "60",
+    "employee_id": "49",
+    "document_url": "https://documents.company.com/payroll_input/49/60.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "49",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "61": {
+    "document_id": "61",
+    "employee_id": "49",
+    "document_url": "https://documents.company.com/payroll_input/49/61.pdf",
+    "title": "Payroll_Input Document",
+    "document_type": "payroll_input",
+    "target_entity": "49",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "62": {
+    "document_id": "62",
+    "employee_id": "50",
+    "document_url": "https://documents.company.com/payslip/50/62.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "50",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "63": {
+    "document_id": "63",
+    "employee_id": "50",
+    "document_url": "https://documents.company.com/employee/50/63.pdf",
+    "title": "Employee Handbook",
+    "document_type": "employee",
+    "target_entity": "50",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "64": {
+    "document_id": "64",
+    "employee_id": "50",
+    "document_url": "https://documents.company.com/employee/50/64.pdf",
+    "title": "Benefits Guide",
+    "document_type": "employee",
+    "target_entity": "50",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "65": {
+    "document_id": "65",
+    "employee_id": "51",
+    "document_url": "https://documents.company.com/payroll_deduction/51/65.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "51",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "66": {
+    "document_id": "66",
+    "employee_id": "51",
+    "document_url": "https://documents.company.com/payslip/51/66.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "51",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "67": {
+    "document_id": "67",
+    "employee_id": "51",
+    "document_url": "https://documents.company.com/payroll_deduction/51/67.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "51",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "68": {
+    "document_id": "68",
+    "employee_id": "52",
+    "document_url": "https://documents.company.com/payroll_earning/52/68.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "52",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "69": {
+    "document_id": "69",
+    "employee_id": "52",
+    "document_url": "https://documents.company.com/employee/52/69.pdf",
+    "title": "Benefits Guide",
+    "document_type": "employee",
+    "target_entity": "52",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "70": {
+    "document_id": "70",
+    "employee_id": "52",
+    "document_url": "https://documents.company.com/payslip/52/70.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "52",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "71": {
+    "document_id": "71",
+    "employee_id": "53",
+    "document_url": "https://documents.company.com/payroll_earning/53/71.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "53",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "72": {
+    "document_id": "72",
+    "employee_id": "53",
+    "document_url": "https://documents.company.com/offboarding/53/72.pdf",
+    "title": "Final Settlement Letter",
+    "document_type": "offboarding",
+    "target_entity": "53",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "73": {
+    "document_id": "73",
+    "employee_id": "53",
+    "document_url": "https://documents.company.com/payslip/53/73.pdf",
+    "title": "Payslip Document",
+    "document_type": "payslip",
+    "target_entity": "53",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "74": {
+    "document_id": "74",
+    "employee_id": "54",
+    "document_url": "https://documents.company.com/onboarding/54/74.pdf",
+    "title": "Contract Agreement",
+    "document_type": "onboarding",
+    "target_entity": "54",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "75": {
+    "document_id": "75",
+    "employee_id": "54",
+    "document_url": "https://documents.company.com/offboarding/54/75.pdf",
+    "title": "Exit Clearance Form",
+    "document_type": "offboarding",
+    "target_entity": "54",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "76": {
+    "document_id": "76",
+    "employee_id": "54",
+    "document_url": "https://documents.company.com/payroll_earning/54/76.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "54",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "77": {
+    "document_id": "77",
+    "employee_id": "56",
+    "document_url": "https://documents.company.com/payroll_deduction/56/77.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "56",
+    "entity_type": "employee",
+    "status": "rejected"
+  },
+  "78": {
+    "document_id": "78",
+    "employee_id": "56",
+    "document_url": "https://documents.company.com/payroll_deduction/56/78.pdf",
+    "title": "Payroll_Deduction Document",
+    "document_type": "payroll_deduction",
+    "target_entity": "56",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "79": {
+    "document_id": "79",
+    "employee_id": "56",
+    "document_url": "https://documents.company.com/payroll_earning/56/79.pdf",
+    "title": "Payroll_Earning Document",
+    "document_type": "payroll_earning",
+    "target_entity": "56",
+    "entity_type": "employee",
+    "status": "accepted"
+  },
+  "80": {
+    "document_id": "80",
+    "employee_id": "60",
+    "document_url": "https://documents.company.com/employee/60/80.pdf",
+    "title": "Employee Handbook",
+    "document_type": "employee",
+    "target_entity": "60",
+    "entity_type": "employee",
+    "status": "rejected"
+  }
+}

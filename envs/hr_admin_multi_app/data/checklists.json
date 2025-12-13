@@ -1,0 +1,122 @@
+{
+  "1": {
+    "checklist_id": "1",
+    "checklist_type": "onboarding",
+    "employee_id": "10",
+    "status": "completed",
+    "created_at": "2025-10-02T06:24:43.447389",
+    "last_updated": "2025-10-08T12:37:43.447389"
+  },
+  "2": {
+    "checklist_id": "2",
+    "checklist_type": "onboarding",
+    "employee_id": "19",
+    "status": "completed",
+    "created_at": "2025-07-23T13:34:50.508223",
+    "last_updated": "2025-08-05T00:06:50.508223"
+  },
+  "3": {
+    "checklist_id": "3",
+    "checklist_type": "onboarding",
+    "employee_id": "41",
+    "status": "pending",
+    "created_at": "2025-05-13T15:54:51.407290",
+    "last_updated": "2025-05-25T19:05:51.407290"
+  },
+  "4": {
+    "checklist_id": "4",
+    "checklist_type": "onboarding",
+    "employee_id": "57",
+    "status": "pending",
+    "created_at": "2025-07-05T06:01:09.615104",
+    "last_updated": "2025-07-28T09:50:09.615104"
+  },
+  "5": {
+    "checklist_id": "5",
+    "checklist_type": "offboarding",
+    "employee_id": "14",
+    "status": "pending",
+    "created_at": "2025-11-07T06:11:38.333674",
+    "last_updated": "2025-12-07T16:25:38.333674"
+  },
+  "6": {
+    "checklist_id": "6",
+    "checklist_type": "offboarding",
+    "employee_id": "24",
+    "status": "completed",
+    "created_at": "2025-05-08T09:44:04.367506",
+    "last_updated": "2025-05-17T12:30:04.367506"
+  },
+  "7": {
+    "checklist_id": "7",
+    "checklist_type": "offboarding",
+    "employee_id": "25",
+    "status": "completed",
+    "created_at": "2025-08-01T08:46:04.573619",
+    "last_updated": "2025-08-30T11:07:04.573619"
+  },
+  "8": {
+    "checklist_id": "8",
+    "checklist_type": "offboarding",
+    "employee_id": "29",
+    "status": "pending",
+    "created_at": "2025-09-23T09:06:01.217005",
+    "last_updated": "2025-09-29T20:24:01.217005"
+  },
+  "9": {
+    "checklist_id": "9",
+    "checklist_type": "offboarding",
+    "employee_id": "31",
+    "status": "completed",
+    "created_at": "2025-03-11T07:42:22.847438",
+    "last_updated": "2025-03-29T15:30:22.847438"
+  },
+  "10": {
+    "checklist_id": "10",
+    "checklist_type": "offboarding",
+    "employee_id": "34",
+    "status": "completed",
+    "created_at": "2025-08-31T09:52:40.155061",
+    "last_updated": "2025-09-27T20:08:40.155061"
+  },
+  "11": {
+    "checklist_id": "11",
+    "checklist_type": "offboarding",
+    "employee_id": "35",
+    "status": "pending",
+    "created_at": "2025-09-20T06:11:17.422548",
+    "last_updated": "2025-09-25T16:49:17.422548"
+  },
+  "12": {
+    "checklist_id": "12",
+    "checklist_type": "offboarding",
+    "employee_id": "37",
+    "status": "completed",
+    "created_at": "2025-03-07T09:28:13.957803",
+    "last_updated": "2025-04-03T17:15:13.957803"
+  },
+  "13": {
+    "checklist_id": "13",
+    "checklist_type": "offboarding",
+    "employee_id": "42",
+    "status": "completed",
+    "created_at": "2025-09-28T15:28:11.912765",
+    "last_updated": "2025-10-15T02:03:11.912765"
+  },
+  "14": {
+    "checklist_id": "14",
+    "checklist_type": "offboarding",
+    "employee_id": "53",
+    "status": "completed",
+    "created_at": "2025-01-25T13:58:08.678818",
+    "last_updated": "2025-02-01T00:49:08.678818"
+  },
+  "15": {
+    "checklist_id": "15",
+    "checklist_type": "offboarding",
+    "employee_id": "58",
+    "status": "completed",
+    "created_at": "2025-06-11T10:41:45.998441",
+    "last_updated": "2025-07-10T22:00:45.998441"
+  }
+}

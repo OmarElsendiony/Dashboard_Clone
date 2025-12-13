@@ -1,0 +1,137 @@
+{
+  "1": {
+    "exit_case_id": "1",
+    "employee_id": "14",
+    "reason": "security_breach",
+    "exit_date": "2025-09-12",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-03-03T16:54:41.796483",
+    "last_updated": "2025-03-05T19:19:41.796483"
+  },
+  "2": {
+    "exit_case_id": "2",
+    "employee_id": "17",
+    "reason": "misconduct",
+    "exit_date": "2026-02-04",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-01-25T17:10:05.524139",
+    "last_updated": "2025-02-23T00:51:05.524139"
+  },
+  "3": {
+    "exit_case_id": "3",
+    "employee_id": "24",
+    "reason": "misconduct",
+    "exit_date": "2025-11-15",
+    "exit_clearance_status": "cleared",
+    "created_at": "2025-11-07T13:17:02.969051",
+    "last_updated": "2025-11-17T12:00:00"
+  },
+  "4": {
+    "exit_case_id": "4",
+    "employee_id": "25",
+    "reason": "layoff",
+    "exit_date": "2025-11-14",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-11-05T16:02:11.973882",
+    "last_updated": "2025-12-03T22:03:11.973882"
+  },
+  "5": {
+    "exit_case_id": "5",
+    "employee_id": "29",
+    "reason": "policy_violation",
+    "exit_date": "2025-08-17",
+    "exit_clearance_status": "cleared",
+    "created_at": "2025-03-01T10:10:36.252153",
+    "last_updated": "2025-11-17T12:00:00"
+  },
+  "6": {
+    "exit_case_id": "6",
+    "employee_id": "31",
+    "reason": "policy_violation",
+    "exit_date": "2025-11-08",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-08-05T18:47:08.828897",
+    "last_updated": "2025-08-29T06:52:08.828897"
+  },
+  "7": {
+    "exit_case_id": "7",
+    "employee_id": "33",
+    "reason": "security_breach",
+    "exit_date": "2026-01-04",
+    "exit_clearance_status": "cleared",
+    "created_at": "2025-09-01T09:53:04.357137",
+    "last_updated": "2025-11-17T12:00:00"
+  },
+  "8": {
+    "exit_case_id": "8",
+    "employee_id": "34",
+    "reason": "policy_violation",
+    "exit_date": "2025-08-16",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-02-05T16:17:50.472436",
+    "last_updated": "2025-02-21T20:39:50.472436"
+  },
+  "9": {
+    "exit_case_id": "9",
+    "employee_id": "35",
+    "reason": "policy_violation",
+    "exit_date": "2025-10-06",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-08-30T08:43:37.692764",
+    "last_updated": "2025-09-12T11:32:37.692764"
+  },
+  "10": {
+    "exit_case_id": "10",
+    "employee_id": "37",
+    "reason": "security_breach",
+    "exit_date": "2025-08-08",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-02-27T07:17:09.398458",
+    "last_updated": "2025-03-22T18:26:09.398458"
+  },
+  "11": {
+    "exit_case_id": "11",
+    "employee_id": "39",
+    "reason": "layoff",
+    "exit_date": "2026-01-18",
+    "exit_clearance_status": "cleared",
+    "created_at": "2025-06-27T13:23:48.282870",
+    "last_updated": "2025-11-17T12:00:00"
+  },
+  "12": {
+    "exit_case_id": "12",
+    "employee_id": "42",
+    "reason": "policy_violation",
+    "exit_date": "2025-09-27",
+    "exit_clearance_status": "cleared",
+    "created_at": "2025-08-17T07:01:05.371106",
+    "last_updated": "2025-11-17T12:00:00"
+  },
+  "13": {
+    "exit_case_id": "13",
+    "employee_id": "44",
+    "reason": "layoff",
+    "exit_date": "2026-02-05",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-08-20T12:49:05.760053",
+    "last_updated": "2025-09-18T22:46:05.760053"
+  },
+  "14": {
+    "exit_case_id": "14",
+    "employee_id": "53",
+    "reason": "misconduct",
+    "exit_date": "2025-06-18",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-04-16T12:17:26.314313",
+    "last_updated": "2025-05-02T14:40:26.314313"
+  },
+  "15": {
+    "exit_case_id": "15",
+    "employee_id": "58",
+    "reason": "policy_violation",
+    "exit_date": "2025-10-30",
+    "exit_clearance_status": "pending",
+    "created_at": "2025-09-12T07:08:19.007096",
+    "last_updated": "2025-09-25T14:01:19.007096"
+  }
+}
