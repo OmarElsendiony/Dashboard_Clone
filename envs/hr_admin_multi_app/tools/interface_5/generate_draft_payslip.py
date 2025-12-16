@@ -148,7 +148,7 @@ class GenerateDraftPayslip(Tool):
                 )
 
         # Get employee's base salary
-        base_salary = employees_dict.get("base_salary")
+        base_salary = employees_dict.get(employee_id_str).get("base_salary")
         if base_salary is None:
             return json.dumps(
                 {

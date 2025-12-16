@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 
@@ -27,7 +27,9 @@ class CreatePayrollInput(Tool):
 
         if not employee_id or not cycle_id:
             return json.dumps(
-                {"error": "Missing required parameters: employee_id and cycle_id are required"}
+                {
+                    "error": "Missing required parameters: employee_id and cycle_id are required"
+                }
             )
 
         # Convert IDs to strings for consistent comparison
@@ -48,9 +50,7 @@ class CreatePayrollInput(Tool):
 
         employees = data.get("employees", {})
         if employee_id not in employees:
-            return json.dumps(
-                {"error": f"Employee with ID '{employee_id}' not found"}
-            )
+            return json.dumps({"error": f"Employee with ID '{employee_id}' not found"})
 
         employee = employees[employee_id]
         base_salary = employee.get("base_salary", 0)
@@ -94,7 +94,7 @@ class CreatePayrollInput(Tool):
             )
 
         payroll_inputs = data.setdefault("payroll_inputs", {})
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         new_input_id = generate_id(payroll_inputs)
 
         new_input = {

@@ -37,11 +37,10 @@
 ## **Steps to Follow**
 
 1. **Retrieve the employee record for the user conducting action** and verify the user is active and is an admin using `get_employee.`
-2. **Retrieve the employee record for the user for whom the onboarding** initiation is intended, and confirm that the user is active using get_employee.
-3. **Retrieve the employee record for the manager to the department** that the onboarding initiation is intended, and confirm that the user is active using get_employee.
-4. Create the employee profile and contract using `create_new_employee.`
-5. Create an onboarding packet using `create_onboarding_packet`.
-6. Confirm successful assignments and verify record accuracy using `get_employee`.
+2. **Retrieve the employee record for the manager of the employee** that the onboarding initiation is intended, and confirm that the user is active using `get_employee`.
+3. Create the employee contract and profile, with the same department as the manager using `create_new_employee.`
+4. Create an onboarding packet using `create_onboarding_packet`.
+5. Confirm successful assignments and verify record accuracy using `get_employee`.
 
 # **SOP 2 -Advanced Employee Data Change Management**
 
@@ -106,10 +105,9 @@
 4. **If the user wants to** update the payroll cycle, then use:
    1. Use `generate_payroll_report` to get the existing cycle-related data for employee
    2. `Use update_employee_payroll_cycle.`
-5. **If the user wants to deactivate payroll integration**, then use 
+5. **If the user wants to deactivate payroll integration**, then use
    1. Use `generate_payroll_report` to get the existing cycle-related data for employee
    2. Use `deactivate_payroll_integration`.
-
 
 # **SOP 8 — Payroll Input Creation**
 

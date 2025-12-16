@@ -44,25 +44,21 @@ class UpdatePayrollCycle(Tool):
         allowed_statuses = ["open", "closed"]
         if status is not None and status not in allowed_statuses:
             return json.dumps(
-                {
-                    "error": "Invalid status. Allowed values: 'open', 'closed'"
-                }
+                {"error": "Invalid status. Allowed values: 'open', 'closed'"}
             )
 
         current_cycle = payroll_cycles[cycle_id]
 
         # Validate uniqueness for updated (start_date, end_date)
-        new_start = start_date if start_date is not None else current_cycle.get(
-            "start_date"
+        new_start = (
+            start_date if start_date is not None else current_cycle.get("start_date")
         )
         new_end = end_date if end_date is not None else current_cycle.get("end_date")
 
         # Validate that start_date is not after end_date
         if new_start > new_end:
             return json.dumps(
-                {
-                    "error": "Invalid date range: start_date cannot be after end_date"
-                }
+                {"error": "Invalid date range: start_date cannot be after end_date"}
             )
 
         for other_id, other_cycle in payroll_cycles.items():
@@ -87,7 +83,7 @@ class UpdatePayrollCycle(Tool):
         if status is not None:
             current_cycle["status"] = status
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         current_cycle["last_updated"] = timestamp
 
         return json.dumps(current_cycle)

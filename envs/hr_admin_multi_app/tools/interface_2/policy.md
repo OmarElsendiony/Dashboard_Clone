@@ -37,9 +37,7 @@ You must halt the procedure and immediately initiate a switch_to_human (escalati
 
 5. Create Employee contract and compensation data using create_employment_contract and link it with the employee created from step 4.
 
-6. To update any document information and url use upload_worker_document.
 
-7. To update the employee profile proceed to To update the employee profile proceed to Employee Data Change Management (SOP 2).
 
 ### **SOP 2: Employee Data Change Management**
 
@@ -52,6 +50,8 @@ You must halt the procedure and immediately initiate a switch_to_human (escalati
 3. Locate the target employee record using get_worker to confirm the employee exists.
 
 4. To update employee data including assigning a new manager, location changes, employee status and personal info use update_worker_info.
+5. To update any document information and url use upload_worker_document.
+
 
 ### **SOP 3: Creationing Onboarding Checklist**
 
@@ -321,8 +321,8 @@ You must halt the procedure and immediately initiate a switch_to_human (escalati
 
 3. Retrieve the details of the existing employee and confirm their status is “active” using get_worker.
 
-4. Use get_exit_case to retrieve the exit case for the user in step 3 and confirm clearance status is “completed”.
+4. Use get_exit_case to retrieve the exit case for the user in step 3 and confirm clearance status is “cleared”.
 
-5. If the exit cases are “completed”, to deactivate and close contract for the employee from step 3:
+5. If the exit cases are “cleared”, to deactivate and close contract for the employee from step 3:
    1. Terminate the employment contract using terminate_employment_contract.
    2. Deactivate the employee using disable_user_account.

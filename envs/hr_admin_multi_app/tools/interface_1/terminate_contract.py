@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 
@@ -21,22 +21,16 @@ class TerminateContract(Tool):
 
         # Validate required field
         if not contract_id:
-            return json.dumps({
-                "error": "Missing required parameter: contract_id"
-            })
-        
+            return json.dumps({"error": "Missing required parameter: contract_id"})
+
         if not termination_date:
-            return json.dumps({
-                "error": "Missing required parameter: termination_date"
-            })
+            return json.dumps({"error": "Missing required parameter: termination_date"})
 
         # Check if contract exists
         if contract_id not in contracts:
-            return json.dumps({
-                "error": f"Contract with ID '{contract_id}' not found"
-            })
+            return json.dumps({"error": f"Contract with ID '{contract_id}' not found"})
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         contract = contracts[contract_id]
 
         # Update the contract before deletion
@@ -47,17 +41,19 @@ class TerminateContract(Tool):
             "is_terminated": True,
             "termination_date": termination_date,
             "created_at": contract.get("created_at"),
-            "last_updated": timestamp
+            "last_updated": timestamp,
         }
 
         # Delete the contract
         del contracts[contract_id]
 
-        return json.dumps({
-            "success": True,
-            "message": f"Contract '{contract_id}' terminated successfully",
-            "deleted_contract": deleted_contract
-        })
+        return json.dumps(
+            {
+                "success": True,
+                "message": f"Contract '{contract_id}' terminated successfully",
+                "deleted_contract": deleted_contract,
+            }
+        )
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -71,14 +67,14 @@ class TerminateContract(Tool):
                     "properties": {
                         "contract_id": {
                             "type": "string",
-                            "description": "ID of the contract to delete (required)"
+                            "description": "ID of the contract to delete (required)",
                         },
                         "termination_date": {
                             "type": "string",
-                            "description": "Contract termination date in YYYY-MM-DD format (required)"
-                        }
+                            "description": "Contract termination date in YYYY-MM-DD format (required)",
+                        },
                     },
-                    "required": ["contract_id", "termination_date"]
-                }
-            }
+                    "required": ["contract_id", "termination_date"],
+                },
+            },
         }

@@ -21,7 +21,7 @@ class UpdateOnboardChecklist(Tool):
         checklists = data.setdefault("checklists", {})
         checklist_tasks = data.setdefault("checklist_tasks", {})
         employees = data.setdefault("employees", {})
-        
+
         # Validate checklist exists
         if str(checklist_id) not in checklists:
             return json.dumps(
@@ -32,7 +32,7 @@ class UpdateOnboardChecklist(Tool):
             )
 
         checklist = checklists[str(checklist_id)]
-        
+
         # Validate this is an onboarding checklist
         if checklist.get("checklist_type") != "onboarding":
             return json.dumps(
@@ -41,8 +41,8 @@ class UpdateOnboardChecklist(Tool):
                     "error": f"Checklist {checklist_id} is not an onboarding checklist",
                 }
             )
-        
-        current_time = datetime.now().isoformat()
+
+        current_time = "2025-11-16T23:59:00"
 
         # Update checklist status if provided
         if status is not None:
@@ -80,7 +80,7 @@ class UpdateOnboardChecklist(Tool):
         if task_updates:
             for task_update in task_updates:
                 task_id = task_update.get("task_id")
-                
+
                 if not task_id:
                     return json.dumps(
                         {
@@ -190,22 +190,22 @@ class UpdateOnboardChecklist(Tool):
                                 "properties": {
                                     "task_id": {
                                         "type": "string",
-                                        "description": "The unique identifier of the task to update. Required for each task update."
+                                        "description": "The unique identifier of the task to update. Required for each task update.",
                                     },
                                     "due_date": {
                                         "type": "string",
-                                        "description": "The due date for the task in YYYY-MM-DD format. Typically set to employee start date per SOP 3."
+                                        "description": "The due date for the task in YYYY-MM-DD format. Typically set to employee start date per SOP 3.",
                                     },
                                     "assigned_manager_id": {
                                         "type": "string",
-                                        "description": "The employee ID of the manager assigned to this task. Manager must exist and have 'active' status."
+                                        "description": "The employee ID of the manager assigned to this task. Manager must exist and have 'active' status.",
                                     },
                                     "status": {
                                         "type": "string",
-                                        "description": "The status of the task. Valid values are 'pending' or 'completed'."
-                                    }
+                                        "description": "The status of the task. Valid values are 'pending' or 'completed'.",
+                                    },
                                 },
-                                "required": ["task_id"]
+                                "required": ["task_id"],
                             },
                             "description": "List of task updates to apply. Each task update must include the task_id and can include due_date, assigned_manager_id, and/or status. Optional field.",
                         },

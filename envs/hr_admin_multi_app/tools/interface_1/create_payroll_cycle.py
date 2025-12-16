@@ -34,17 +34,13 @@ class CreatePayrollCycle(Tool):
         # Validate that start_date is not after end_date
         if start_date > end_date:
             return json.dumps(
-                {
-                    "error": "Invalid date range: start_date cannot be after end_date"
-                }
+                {"error": "Invalid date range: start_date cannot be after end_date"}
             )
 
         allowed_statuses = ["open", "closed"]
         if status not in allowed_statuses:
             return json.dumps(
-                {
-                    "error": "Invalid status. Allowed values: 'open', 'closed'"
-                }
+                {"error": "Invalid status. Allowed values: 'open', 'closed'"}
             )
 
         payroll_cycles = data.setdefault("payroll_cycles", {})
@@ -60,7 +56,7 @@ class CreatePayrollCycle(Tool):
                     }
                 )
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         new_cycle_id = generate_id(payroll_cycles)
         new_cycle = {
             "cycle_id": new_cycle_id,

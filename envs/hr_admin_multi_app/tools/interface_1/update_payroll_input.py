@@ -55,15 +55,15 @@ class UpdatePayrollInput(Tool):
             )
         if allowance_amount is not None and allowance_amount < 0:
             return json.dumps(
-                {"error": "allowance_amount must be a non-negative number when provided"}
+                {
+                    "error": "allowance_amount must be a non-negative number when provided"
+                }
             )
 
         allowed_statuses = ["pending", "review"]
         if status is not None and status not in allowed_statuses:
             return json.dumps(
-                {
-                    "error": "Invalid status. Allowed values: 'pending', 'review'"
-                }
+                {"error": "Invalid status. Allowed values: 'pending', 'review'"}
             )
 
         current_input = payroll_inputs[input_id]
@@ -72,23 +72,31 @@ class UpdatePayrollInput(Tool):
         old_hours = current_input.get("hours_worked", 0)
         old_overtime = current_input.get("overtime_hours", 0)
         old_allowance = current_input.get("allowance_amount", 0)
-        
+
         new_hours = hours_worked if hours_worked is not None else old_hours
         new_overtime = overtime_hours if overtime_hours is not None else old_overtime
-        new_allowance = allowance_amount if allowance_amount is not None else old_allowance
-        
+        new_allowance = (
+            allowance_amount if allowance_amount is not None else old_allowance
+        )
+
         # Calculate total input value (as a proxy for payroll total)
         old_total = old_hours + old_overtime + old_allowance
         new_total = new_hours + new_overtime + new_allowance
-        
+
         # Calculate variance percentage if there's a change in values
         calculated_variance = None
-        if (hours_worked is not None or overtime_hours is not None or allowance_amount is not None):
+        if (
+            hours_worked is not None
+            or overtime_hours is not None
+            or allowance_amount is not None
+        ):
             if old_total > 0:
                 calculated_variance = abs((new_total - old_total) / old_total) * 100
             elif new_total > 0:
-                calculated_variance = 100.0  # If old was 0 and new is not, that's 100% variance
-        
+                calculated_variance = (
+                    100.0  # If old was 0 and new is not, that's 100% variance
+                )
+
         # Auto-enforce variance rule: if variance exceeds 1%, set status to "review"
         auto_status = None
         auto_issue_field = None
@@ -107,19 +115,19 @@ class UpdatePayrollInput(Tool):
             current_input["allowance_amount"] = allowance_amount
         if payroll_variance_percent is not None:
             current_input["payroll_variance_percent"] = payroll_variance_percent
-        
+
         # Apply auto-enforced status/issue_field or user-provided values
         if auto_status is not None:
             current_input["status"] = auto_status
         elif status is not None:
             current_input["status"] = status
-        
+
         if auto_issue_field is not None:
             current_input["issue_field"] = auto_issue_field
         elif issue_field is not None:
             current_input["issue_field"] = issue_field
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         current_input["last_updated"] = timestamp
 
         return json.dumps(current_input)

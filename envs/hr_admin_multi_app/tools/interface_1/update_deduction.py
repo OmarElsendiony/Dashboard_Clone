@@ -21,10 +21,14 @@ class UpdateDeduction(Tool):
 
         deductions = data.get("deductions", {})
         if not isinstance(deductions, dict):
-            return json.dumps({"success": False, "error": "Invalid deductions structure"})
+            return json.dumps(
+                {"success": False, "error": "Invalid deductions structure"}
+            )
 
         if not isinstance(deduction_id, str) or not deduction_id.strip():
-            return json.dumps({"success": False, "error": "deduction_id must be a non-empty string"})
+            return json.dumps(
+                {"success": False, "error": "deduction_id must be a non-empty string"}
+            )
         deduction_id = deduction_id.strip()
 
         record = deductions.get(deduction_id)
@@ -35,17 +39,29 @@ class UpdateDeduction(Tool):
 
         if deduction_rule_id is not None:
             if not isinstance(deduction_rule_id, str) or not deduction_rule_id.strip():
-                return json.dumps({"success": False, "error": "deduction_rule_id must be a non-empty string"})
+                return json.dumps(
+                    {
+                        "success": False,
+                        "error": "deduction_rule_id must be a non-empty string",
+                    }
+                )
             update_fields["deduction_rule_id"] = deduction_rule_id.strip()
 
         if amount is not None:
             if not isinstance(amount, (int, float)) or amount <= 0:
-                return json.dumps({"success": False, "error": "amount must be a positive number"})
+                return json.dumps(
+                    {"success": False, "error": "amount must be a positive number"}
+                )
             update_fields["amount"] = round(float(amount), 2)
 
         if deduction_date is not None:
             if not isinstance(deduction_date, str) or not deduction_date.strip():
-                return json.dumps({"success": False, "error": "deduction_date must be a non-empty string"})
+                return json.dumps(
+                    {
+                        "success": False,
+                        "error": "deduction_date must be a non-empty string",
+                    }
+                )
             update_fields["deduction_date"] = deduction_date.strip()
 
         if status is not None:
@@ -55,9 +71,11 @@ class UpdateDeduction(Tool):
             update_fields["status"] = status
 
         if not update_fields:
-            return json.dumps({"success": False, "error": "No valid fields provided for update"})
+            return json.dumps(
+                {"success": False, "error": "No valid fields provided for update"}
+            )
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         record.update(update_fields)
         record["last_updated"] = timestamp
 
@@ -79,7 +97,10 @@ class UpdateDeduction(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "deduction_id": {"type": "string", "description": "Identifier of the deduction to update."},
+                        "deduction_id": {
+                            "type": "string",
+                            "description": "Identifier of the deduction to update.",
+                        },
                         "deduction_rule_id": {
                             "type": "string",
                             "description": "(Optional) Replacement deduction_rule_id value.",
@@ -88,7 +109,10 @@ class UpdateDeduction(Tool):
                             "type": "number",
                             "description": "New deduction amount (must be positive decimal).",
                         },
-                        "deduction_date": {"type": "string", "description": "New deduction date (YYYY-MM-DD)."},
+                        "deduction_date": {
+                            "type": "string",
+                            "description": "New deduction date (YYYY-MM-DD).",
+                        },
                         "status": {
                             "type": "string",
                             "description": "Lifecycle status to set (allowed values: valid, invalid_limit_exceeded).",

@@ -2,461 +2,491 @@
   "1": {
     "task_id": "1",
     "checklist_id": "1",
-    "name": "IT Equipment Setup",
+    "name": "Mandatory Training Assignments (Security, Compliance, Code of Conduct)",
     "due_date": "2024-11-25",
     "assigned_manager_id": "14",
-    "status": "completed",
-    "created_at": "2025-05-03T18:08:21.751763",
-    "last_updated": "2025-05-06T00:11:21.751763"
+    "status": "pending",
+    "created_at": "2025-08-01T11:34:24.106355",
+    "last_updated": "2025-08-08T20:24:24.106355"
   },
   "2": {
     "task_id": "2",
     "checklist_id": "1",
-    "name": "Sign Policies",
+    "name": "Complete Background Check",
     "due_date": "2024-11-25",
     "assigned_manager_id": "14",
-    "status": "pending",
-    "created_at": "2025-11-13T17:58:09.811982",
-    "last_updated": "2025-11-13T11:04:23"
+    "status": "completed",
+    "created_at": "2025-05-15T08:28:04.838016",
+    "last_updated": "2025-05-22T09:46:04.838016"
   },
   "3": {
     "task_id": "3",
     "checklist_id": "1",
-    "name": "30-Day Check-in",
+    "name": "Required Training Assigned",
     "due_date": "2024-11-25",
     "assigned_manager_id": "14",
-    "status": "pending",
-    "created_at": "2025-08-10T15:06:21.316423",
-    "last_updated": "2025-08-13T18:16:21.316423"
+    "status": "completed",
+    "created_at": "2025-06-02T07:04:21.178368",
+    "last_updated": "2025-06-06T10:50:21.178368"
   },
   "4": {
     "task_id": "4",
     "checklist_id": "2",
-    "name": "30-Day Check-in",
+    "name": "Mandatory Training Assignments (Security, Compliance, Code of Conduct)",
     "due_date": "2024-11-27",
     "assigned_manager_id": "16",
     "status": "pending",
-    "created_at": "2025-04-19T12:19:46.721942",
-    "last_updated": "2025-04-22T15:30:46.721942"
+    "created_at": "2025-03-12T11:13:12.429161",
+    "last_updated": "2025-03-18T20:59:12.429161"
   },
   "5": {
     "task_id": "5",
     "checklist_id": "2",
-    "name": "Assign Equipment",
+    "name": "First Week Tasks",
     "due_date": "2024-11-27",
     "assigned_manager_id": "16",
     "status": "completed",
-    "created_at": "2025-11-09T12:54:49.595048",
-    "last_updated": "2025-11-10T16:32:49.595048"
+    "created_at": "2025-10-23T10:42:18.311847",
+    "last_updated": "2025-10-25T12:45:18.311847"
   },
   "6": {
     "task_id": "6",
     "checklist_id": "2",
-    "name": "Complete Tax Forms (W-4, State)",
+    "name": "Drug Screening",
     "due_date": "2024-11-27",
     "assigned_manager_id": "16",
-    "status": "pending",
-    "created_at": "2025-05-13T16:36:06.982188",
-    "last_updated": "2025-05-17T19:57:06.982188"
+    "status": "completed",
+    "created_at": "2025-10-28T13:09:03.378356",
+    "last_updated": "2025-10-29T20:14:03.378356"
   },
   "7": {
     "task_id": "7",
     "checklist_id": "2",
-    "name": "Set 30/60/90 Day Goals",
+    "name": "Benefits Enrollment Complete",
     "due_date": "2024-11-27",
     "assigned_manager_id": "16",
-    "status": "completed",
-    "created_at": "2025-05-21T11:20:10.667090",
-    "last_updated": "2025-05-23T00:02:10.667090"
+    "status": "pending",
+    "created_at": "2025-09-22T09:06:01.217005",
+    "last_updated": "2025-09-24T20:24:01.217005"
   },
   "8": {
     "task_id": "8",
     "checklist_id": "3",
-    "name": "IT Equipment Setup",
+    "name": "Email Setup",
     "due_date": "2025-06-17",
     "assigned_manager_id": "2",
     "status": "completed",
-    "created_at": "2025-08-05T13:46:26.174418",
-    "last_updated": "2025-08-09T22:42:26.174418"
+    "created_at": "2025-04-24T11:56:24.387345",
+    "last_updated": "2025-04-26T19:58:24.387345"
   },
   "9": {
     "task_id": "9",
     "checklist_id": "3",
-    "name": "Benefits Enrollment Complete",
+    "name": "Complete Benefits Enrollment",
     "due_date": "2025-06-17",
     "assigned_manager_id": "2",
     "status": "pending",
-    "created_at": "2025-10-26T12:06:53.502780",
-    "last_updated": "2025-11-02T22:47:53.502780"
+    "created_at": "2025-09-15T10:14:53.281607",
+    "last_updated": "2025-09-20T11:23:53.281607"
   },
   "10": {
     "task_id": "10",
     "checklist_id": "4",
-    "name": "Remove System Access",
-    "due_date": "2025-09-27",
+    "name": "Collect Resignation Letter",
+    "due_date": "2025-11-16",
     "assigned_manager_id": "9",
     "status": "completed",
-    "created_at": "2025-04-17T12:10:46.078645",
-    "last_updated": "2025-04-22T14:31:46.078645"
+    "created_at": "2025-08-22T14:43:55.981846",
+    "last_updated": "2025-08-27T01:39:55.981846"
   },
   "11": {
     "task_id": "11",
     "checklist_id": "4",
-    "name": "Manager Exit Approval",
-    "due_date": "2025-09-27",
+    "name": "Terminate Benefits",
+    "due_date": "2025-11-16",
     "assigned_manager_id": "9",
-    "status": "pending",
-    "created_at": "2025-09-24T17:01:27.988222",
-    "last_updated": "2025-09-30T20:39:27.988222"
-  },
-  "12": {
-    "task_id": "12",
-    "checklist_id": "4",
-    "name": "Collect Company Equipment",
-    "due_date": "2025-09-27",
-    "assigned_manager_id": "9",
-    "status": "completed",
-    "created_at": "2025-04-10T06:06:21.215535",
-    "last_updated": "2025-04-12T13:50:21.215535"
-  },
-  "13": {
-    "task_id": "13",
-    "checklist_id": "5",
-    "name": "Archive Employee Files",
-    "due_date": "2025-11-16",
-    "assigned_manager_id": "3",
-    "status": "completed",
-    "created_at": "2025-01-21T12:05:18.863918",
-    "last_updated": "2025-01-27T23:43:18.863918"
-  },
-  "14": {
-    "task_id": "14",
-    "checklist_id": "5",
-    "name": "Disable Email",
-    "due_date": "2025-11-16",
-    "assigned_manager_id": "3",
-    "status": "pending",
-    "created_at": "2025-03-10T06:13:10.669191",
-    "last_updated": "2025-03-13T08:43:10.669191"
-  },
-  "15": {
-    "task_id": "15",
-    "checklist_id": "5",
-    "name": "Initiate Termination Request",
-    "due_date": "2025-11-16",
-    "assigned_manager_id": "3",
-    "status": "completed",
-    "created_at": "2025-06-26T18:25:30.512855",
-    "last_updated": "2025-07-02T23:30:30.512855"
-  },
-  "16": {
-    "task_id": "16",
-    "checklist_id": "5",
-    "name": "Collect Company Equipment",
-    "due_date": "2025-11-16",
-    "assigned_manager_id": "3",
-    "status": "completed",
-    "created_at": "2025-08-06T08:23:56.399974",
-    "last_updated": "2025-08-09T11:51:56.399974"
-  },
-  "17": {
-    "task_id": "17",
-    "checklist_id": "6",
-    "name": "Remove System Access",
-    "due_date": "2025-10-31",
-    "assigned_manager_id": "7",
-    "status": "completed",
-    "created_at": "2025-10-24T12:48:37.238564",
-    "last_updated": "2025-10-29T14:41:37.238564"
-  },
-  "18": {
-    "task_id": "18",
-    "checklist_id": "6",
-    "name": "Manager Exit Approval",
-    "due_date": "2025-10-31",
-    "assigned_manager_id": "7",
-    "status": "completed",
-    "created_at": "2025-10-14T12:34:43.909004",
-    "last_updated": "2025-10-18T23:30:43.909004"
-  },
-  "19": {
-    "task_id": "19",
-    "checklist_id": "6",
-    "name": "Final Timesheet Completion",
-    "due_date": "2025-10-31",
-    "assigned_manager_id": "7",
     "status": "completed",
     "created_at": "2025-06-22T07:25:57.895420",
     "last_updated": "2025-06-28T08:57:57.895420"
   },
-  "20": {
-    "task_id": "20",
-    "checklist_id": "6",
-    "name": "Collect Company Equipment",
-    "due_date": "2025-10-31",
-    "assigned_manager_id": "7",
+  "12": {
+    "task_id": "12",
+    "checklist_id": "4",
+    "name": "Final Payroll Processing",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "9",
     "status": "completed",
     "created_at": "2025-10-11T18:36:43.650403",
     "last_updated": "2025-10-13T21:24:43.650403"
   },
-  "21": {
-    "task_id": "21",
-    "checklist_id": "7",
-    "name": "Return Laptop",
-    "due_date": "2025-10-18",
-    "assigned_manager_id": "13",
-    "status": "completed",
-    "created_at": "2025-06-01T11:58:46.958580",
-    "last_updated": "2025-06-08T14:03:46.958580"
+  "13": {
+    "task_id": "13",
+    "checklist_id": "4",
+    "name": "Return Company Phone",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "9",
+    "status": "pending",
+    "created_at": "2025-04-15T09:51:12.132315",
+    "last_updated": "2025-04-16T16:56:12.132315"
   },
-  "22": {
-    "task_id": "22",
-    "checklist_id": "7",
-    "name": "Disable Email",
-    "due_date": "2025-10-18",
-    "assigned_manager_id": "13",
+  "14": {
+    "task_id": "14",
+    "checklist_id": "5",
+    "name": "Manager Exit Approval",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "3",
     "status": "pending",
     "created_at": "2025-08-11T14:20:54.289617",
     "last_updated": "2025-08-16T23:18:54.289617"
   },
-  "23": {
-    "task_id": "23",
-    "checklist_id": "7",
-    "name": "Final Payroll Processing",
-    "due_date": "2025-10-18",
-    "assigned_manager_id": "13",
+  "15": {
+    "task_id": "15",
+    "checklist_id": "5",
+    "name": "Send Exit Confirmation",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "3",
     "status": "pending",
     "created_at": "2025-11-13T14:50:26.117984",
     "last_updated": "2025-11-13T15:37:37"
   },
-  "24": {
-    "task_id": "24",
-    "checklist_id": "8",
-    "name": "Final Payroll Processing",
-    "due_date": "2025-10-18",
-    "assigned_manager_id": "4",
-    "status": "completed",
-    "created_at": "2025-09-25T15:38:30.039285",
-    "last_updated": "2025-09-27T21:03:30.039285"
-  },
-  "25": {
-    "task_id": "25",
-    "checklist_id": "8",
-    "name": "Return Company Phone",
-    "due_date": "2025-10-18",
-    "assigned_manager_id": "4",
-    "status": "completed",
-    "created_at": "2025-08-13T06:25:56.921653",
-    "last_updated": "2025-08-16T18:40:56.921653"
-  },
-  "26": {
-    "task_id": "26",
-    "checklist_id": "8",
+  "16": {
+    "task_id": "16",
+    "checklist_id": "5",
     "name": "Return Laptop",
-    "due_date": "2025-10-18",
-    "assigned_manager_id": "4",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "3",
+    "status": "completed",
+    "created_at": "2025-03-12T07:36:49.105896",
+    "last_updated": "2025-03-19T13:31:49.105896"
+  },
+  "17": {
+    "task_id": "17",
+    "checklist_id": "5",
+    "name": "Return Company Phone",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "3",
+    "status": "completed",
+    "created_at": "2025-07-15T12:16:24.686594",
+    "last_updated": "2025-07-19T22:54:24.686594"
+  },
+  "18": {
+    "task_id": "18",
+    "checklist_id": "6",
+    "name": "Final Timesheet Completion",
+    "due_date": "2025-10-23",
+    "assigned_manager_id": "7",
     "status": "completed",
     "created_at": "2025-09-20T10:57:23.021215",
     "last_updated": "2025-09-23T16:16:23.021215"
   },
+  "19": {
+    "task_id": "19",
+    "checklist_id": "6",
+    "name": "Return Monitor",
+    "due_date": "2025-10-23",
+    "assigned_manager_id": "7",
+    "status": "pending",
+    "created_at": "2025-09-28T17:43:06.911107",
+    "last_updated": "2025-09-30T21:02:06.911107"
+  },
+  "20": {
+    "task_id": "20",
+    "checklist_id": "6",
+    "name": "Initiate Termination Request",
+    "due_date": "2025-10-23",
+    "assigned_manager_id": "7",
+    "status": "completed",
+    "created_at": "2025-09-03T18:52:20.282507",
+    "last_updated": "2025-09-10T02:30:20.282507"
+  },
+  "21": {
+    "task_id": "21",
+    "checklist_id": "7",
+    "name": "Collect Resignation Letter",
+    "due_date": "2025-08-23",
+    "assigned_manager_id": "13",
+    "status": "completed",
+    "created_at": "2025-06-28T17:32:25.142239",
+    "last_updated": "2025-07-06T03:28:25.142239"
+  },
+  "22": {
+    "task_id": "22",
+    "checklist_id": "7",
+    "name": "Collect Company Equipment",
+    "due_date": "2025-08-23",
+    "assigned_manager_id": "13",
+    "status": "completed",
+    "created_at": "2025-04-18T09:56:53.210477",
+    "last_updated": "2025-04-25T11:11:53.210477"
+  },
+  "23": {
+    "task_id": "23",
+    "checklist_id": "7",
+    "name": "Send Exit Confirmation",
+    "due_date": "2025-08-23",
+    "assigned_manager_id": "13",
+    "status": "completed",
+    "created_at": "2025-02-14T11:45:12.287286",
+    "last_updated": "2025-02-17T20:17:12.287286"
+  },
+  "24": {
+    "task_id": "24",
+    "checklist_id": "8",
+    "name": "Retrieve Outstanding Expenses",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "4",
+    "status": "completed",
+    "created_at": "2025-06-01T17:53:44.094782",
+    "last_updated": "2025-06-04T19:17:44.094782"
+  },
+  "25": {
+    "task_id": "25",
+    "checklist_id": "8",
+    "name": "Send Exit Confirmation",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "4",
+    "status": "completed",
+    "created_at": "2025-11-08T18:13:54.232103",
+    "last_updated": "2025-11-13T09:17:41"
+  },
+  "26": {
+    "task_id": "26",
+    "checklist_id": "8",
+    "name": "Manager Exit Approval",
+    "due_date": "2025-11-16",
+    "assigned_manager_id": "4",
+    "status": "completed",
+    "created_at": "2025-01-30T18:49:43.009330",
+    "last_updated": "2025-02-03T22:30:43.009330"
+  },
   "27": {
     "task_id": "27",
     "checklist_id": "9",
-    "name": "Final Timesheet Completion",
-    "due_date": "2025-07-12",
+    "name": "Terminate Benefits",
+    "due_date": "2025-11-16",
     "assigned_manager_id": "25",
-    "status": "pending",
-    "created_at": "2025-08-21T15:41:05.197064",
-    "last_updated": "2025-08-25T20:39:05.197064"
+    "status": "completed",
+    "created_at": "2025-05-29T09:29:19.710091",
+    "last_updated": "2025-06-03T19:54:19.710091"
   },
   "28": {
     "task_id": "28",
     "checklist_id": "9",
-    "name": "Return Company Phone",
-    "due_date": "2025-07-12",
+    "name": "Retrieve Outstanding Expenses",
+    "due_date": "2025-11-16",
     "assigned_manager_id": "25",
-    "status": "pending",
-    "created_at": "2025-09-25T18:33:55.392073",
-    "last_updated": "2025-10-02T20:05:55.392073"
+    "status": "completed",
+    "created_at": "2025-01-23T14:42:53.880152",
+    "last_updated": "2025-01-27T00:23:53.880152"
   },
   "29": {
     "task_id": "29",
     "checklist_id": "9",
-    "name": "Retrieve Outstanding Expenses",
-    "due_date": "2025-07-12",
+    "name": "Return Monitor",
+    "due_date": "2025-11-16",
     "assigned_manager_id": "25",
     "status": "completed",
-    "created_at": "2025-02-22T10:45:32.422979",
-    "last_updated": "2025-02-24T20:41:32.422979"
+    "created_at": "2025-06-13T10:43:06.505139",
+    "last_updated": "2025-06-14T17:00:06.505139"
   },
   "30": {
     "task_id": "30",
     "checklist_id": "10",
-    "name": "Retrieve Outstanding Expenses",
-    "due_date": "2025-07-23",
+    "name": "Collect Resignation Letter",
+    "due_date": "2025-09-15",
     "assigned_manager_id": "20",
     "status": "completed",
-    "created_at": "2025-06-09T11:52:29.529663",
-    "last_updated": "2025-06-13T23:51:29.529663"
+    "created_at": "2025-07-02T16:08:46.026691",
+    "last_updated": "2025-07-09T00:26:46.026691"
   },
   "31": {
     "task_id": "31",
     "checklist_id": "10",
-    "name": "Return Laptop",
-    "due_date": "2025-07-23",
+    "name": "Terminate Benefits",
+    "due_date": "2025-09-15",
     "assigned_manager_id": "20",
-    "status": "completed",
-    "created_at": "2025-02-04T09:23:31.622899",
-    "last_updated": "2025-02-08T13:18:31.622899"
+    "status": "pending",
+    "created_at": "2025-08-22T12:24:47.037034",
+    "last_updated": "2025-08-28T01:00:47.037034"
   },
   "32": {
     "task_id": "32",
     "checklist_id": "11",
-    "name": "Initiate Termination Request",
-    "due_date": "2025-09-25",
+    "name": "Retrieve Outstanding Expenses",
+    "due_date": "2025-09-29",
     "assigned_manager_id": "8",
-    "status": "completed",
-    "created_at": "2025-04-13T15:49:13.898746",
-    "last_updated": "2025-04-16T03:03:13.898746"
+    "status": "pending",
+    "created_at": "2025-11-01T08:18:06.493649",
+    "last_updated": "2025-11-03T20:34:06.493649"
   },
   "33": {
     "task_id": "33",
     "checklist_id": "11",
-    "name": "Terminate Benefits",
-    "due_date": "2025-09-25",
+    "name": "Exit Interview",
+    "due_date": "2025-09-29",
     "assigned_manager_id": "8",
     "status": "completed",
-    "created_at": "2025-06-06T16:26:32.021026",
-    "last_updated": "2025-06-14T03:26:32.021026"
+    "created_at": "2025-11-02T18:58:11.992921",
+    "last_updated": "2025-11-09T01:39:11.992921"
   },
   "34": {
     "task_id": "34",
     "checklist_id": "11",
-    "name": "Send Exit Confirmation",
-    "due_date": "2025-09-25",
+    "name": "Final Payroll Processing",
+    "due_date": "2025-09-29",
     "assigned_manager_id": "8",
     "status": "completed",
-    "created_at": "2025-03-28T16:11:38.839767",
-    "last_updated": "2025-03-29T20:27:38.839767"
+    "created_at": "2025-07-20T09:47:55.322002",
+    "last_updated": "2025-07-24T16:10:55.322002"
   },
   "35": {
     "task_id": "35",
-    "checklist_id": "12",
-    "name": "Return Laptop",
-    "due_date": "2025-08-31",
-    "assigned_manager_id": "31",
-    "status": "pending",
-    "created_at": "2025-10-13T15:25:37.107282",
-    "last_updated": "2025-10-15T01:07:37.107282"
+    "checklist_id": "11",
+    "name": "Manager Exit Approval",
+    "due_date": "2025-09-29",
+    "assigned_manager_id": "8",
+    "status": "completed",
+    "created_at": "2025-06-19T13:54:07.493393",
+    "last_updated": "2025-06-21T01:31:07.493393"
   },
   "36": {
     "task_id": "36",
     "checklist_id": "12",
-    "name": "Issue Final Payslip",
-    "due_date": "2025-08-31",
+    "name": "Collect Resignation Letter",
+    "due_date": "2025-10-22",
     "assigned_manager_id": "31",
-    "status": "completed",
-    "created_at": "2025-07-30T14:41:38.638635",
-    "last_updated": "2025-08-02T20:24:38.638635"
+    "status": "pending",
+    "created_at": "2025-05-02T11:26:36.936215",
+    "last_updated": "2025-05-06T14:46:36.936215"
   },
   "37": {
     "task_id": "37",
     "checklist_id": "12",
     "name": "Disable Email",
-    "due_date": "2025-08-31",
+    "due_date": "2025-10-22",
     "assigned_manager_id": "31",
     "status": "completed",
-    "created_at": "2025-02-21T11:17:40.340930",
-    "last_updated": "2025-02-28T16:33:40.340930"
+    "created_at": "2025-04-22T18:05:31.348787",
+    "last_updated": "2025-04-28T21:25:31.348787"
   },
   "38": {
     "task_id": "38",
-    "checklist_id": "13",
-    "name": "Terminate Benefits",
-    "due_date": "2025-05-07",
-    "assigned_manager_id": "38",
+    "checklist_id": "12",
+    "name": "Manager Exit Approval",
+    "due_date": "2025-10-22",
+    "assigned_manager_id": "31",
     "status": "pending",
-    "created_at": "2025-02-02T16:31:18.272028",
-    "last_updated": "2025-02-06T23:55:18.272028"
+    "created_at": "2025-01-22T13:17:13.798169",
+    "last_updated": "2025-01-29T16:53:13.798169"
   },
   "39": {
     "task_id": "39",
     "checklist_id": "13",
-    "name": "Final Timesheet Completion",
-    "due_date": "2025-05-07",
+    "name": "Final Payroll Processing",
+    "due_date": "2025-09-20",
     "assigned_manager_id": "38",
     "status": "completed",
-    "created_at": "2025-11-13T17:36:52.199140",
-    "last_updated": "2025-11-13T09:43:34"
+    "created_at": "2025-01-22T06:34:12.766151",
+    "last_updated": "2025-01-25T08:31:12.766151"
   },
   "40": {
     "task_id": "40",
     "checklist_id": "13",
     "name": "Archive Employee Files",
-    "due_date": "2025-05-07",
+    "due_date": "2025-09-20",
     "assigned_manager_id": "38",
     "status": "completed",
-    "created_at": "2025-09-20T16:22:32.314777",
-    "last_updated": "2025-09-27T20:15:32.314777"
+    "created_at": "2025-10-18T09:01:43.004324",
+    "last_updated": "2025-10-24T21:16:43.004324"
   },
   "41": {
     "task_id": "41",
     "checklist_id": "13",
-    "name": "Manager Exit Approval",
-    "due_date": "2025-05-07",
+    "name": "Return Laptop",
+    "due_date": "2025-09-20",
     "assigned_manager_id": "38",
-    "status": "pending",
-    "created_at": "2025-11-01T08:18:06.493649",
-    "last_updated": "2025-11-03T20:34:06.493649"
+    "status": "completed",
+    "created_at": "2025-07-15T10:08:06.402181",
+    "last_updated": "2025-07-20T20:27:06.402181"
   },
   "42": {
     "task_id": "42",
     "checklist_id": "14",
-    "name": "Return Monitor",
-    "due_date": "2025-09-16",
+    "name": "Disable Email",
+    "due_date": "2025-09-29",
     "assigned_manager_id": "40",
     "status": "completed",
-    "created_at": "2025-07-08T11:16:37.308334",
-    "last_updated": "2025-07-12T13:46:37.308334"
+    "created_at": "2025-07-22T18:12:10.994138",
+    "last_updated": "2025-07-30T01:13:10.994138"
   },
   "43": {
     "task_id": "43",
     "checklist_id": "14",
-    "name": "Exit Interview",
-    "due_date": "2025-09-16",
+    "name": "Final Timesheet Completion",
+    "due_date": "2025-09-29",
     "assigned_manager_id": "40",
     "status": "completed",
-    "created_at": "2025-11-13T15:39:04.495158",
-    "last_updated": "2025-11-13T16:24:33"
+    "created_at": "2025-03-28T09:46:01.618337",
+    "last_updated": "2025-04-02T12:53:01.618337"
   },
   "44": {
     "task_id": "44",
     "checklist_id": "14",
-    "name": "Return Laptop",
-    "due_date": "2025-09-16",
+    "name": "Issue Final Payslip",
+    "due_date": "2025-09-29",
     "assigned_manager_id": "40",
-    "status": "pending",
-    "created_at": "2025-02-16T08:08:12.359315",
-    "last_updated": "2025-02-20T19:05:12.359315"
+    "status": "completed",
+    "created_at": "2025-02-08T12:56:40.268214",
+    "last_updated": "2025-02-15T22:35:40.268214"
   },
   "45": {
     "task_id": "45",
-    "checklist_id": "15",
-    "name": "Final Timesheet Completion",
-    "due_date": "2025-03-18",
-    "assigned_manager_id": "17",
-    "status": "pending",
-    "created_at": "2025-01-22T13:17:13.798169",
-    "last_updated": "2025-01-29T16:53:13.798169"
+    "checklist_id": "14",
+    "name": "Return Monitor",
+    "due_date": "2025-09-29",
+    "assigned_manager_id": "40",
+    "status": "completed",
+    "created_at": "2025-02-13T16:06:41.876735",
+    "last_updated": "2025-02-14T17:50:41.876735"
   },
   "46": {
     "task_id": "46",
     "checklist_id": "15",
-    "name": "Collect Resignation Letter",
-    "due_date": "2025-03-18",
+    "name": "Initiate Termination Request",
+    "due_date": "2025-10-05",
     "assigned_manager_id": "17",
     "status": "completed",
-    "created_at": "2025-09-27T18:48:49.092318",
-    "last_updated": "2025-09-30T05:15:49.092318"
+    "created_at": "2025-03-12T16:33:17.653050",
+    "last_updated": "2025-03-18T04:41:17.653050"
+  },
+  "47": {
+    "task_id": "47",
+    "checklist_id": "15",
+    "name": "Exit Interview",
+    "due_date": "2025-10-05",
+    "assigned_manager_id": "17",
+    "status": "completed",
+    "created_at": "2025-03-14T14:46:39.123453",
+    "last_updated": "2025-03-17T17:36:39.123453"
+  },
+  "48": {
+    "task_id": "48",
+    "checklist_id": "15",
+    "name": "Return Laptop",
+    "due_date": "2025-10-05",
+    "assigned_manager_id": "17",
+    "status": "completed",
+    "created_at": "2025-05-01T15:12:49.275769",
+    "last_updated": "2025-05-09T00:24:49.275769"
+  },
+  "49": {
+    "task_id": "49",
+    "checklist_id": "15",
+    "name": "Final Timesheet Completion",
+    "due_date": "2025-10-05",
+    "assigned_manager_id": "17",
+    "status": "pending",
+    "created_at": "2025-08-17T10:10:02.574765",
+    "last_updated": "2025-08-21T14:54:02.574765"
   }
 }

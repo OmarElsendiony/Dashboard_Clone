@@ -7,8 +7,8 @@
     "previous_year_cost": 4800.0,
     "enrollment_window": "open",
     "cost_variance_percent": 4.17,
-    "created_at": "2025-08-14T12:30:24.004895",
-    "last_updated": "2025-08-15T21:42:24.004895"
+    "created_at": "2025-07-08T09:00:00.704258",
+    "last_updated": "2025-07-09T11:53:00.704258"
   },
   "2": {
     "plan_id": "2",
@@ -18,8 +18,8 @@
     "previous_year_cost": 4000.0,
     "enrollment_window": "closed",
     "cost_variance_percent": 5.0,
-    "created_at": "2025-01-27T11:48:53.556829",
-    "last_updated": "2025-01-29T13:31:53.556829"
+    "created_at": "2025-09-29T08:05:49.536561",
+    "last_updated": "2025-09-30T20:51:49.536561"
   },
   "3": {
     "plan_id": "3",
@@ -29,8 +29,8 @@
     "previous_year_cost": 2900.0,
     "enrollment_window": "closed",
     "cost_variance_percent": 3.45,
-    "created_at": "2025-05-27T09:44:56.361076",
-    "last_updated": "2025-05-30T12:50:56.361076"
+    "created_at": "2025-05-31T16:14:29.310401",
+    "last_updated": "2025-06-04T00:17:29.310401"
   },
   "4": {
     "plan_id": "4",
@@ -40,8 +40,8 @@
     "previous_year_cost": 1100.0,
     "enrollment_window": "open",
     "cost_variance_percent": 9.09,
-    "created_at": "2025-06-25T08:04:52.047939",
-    "last_updated": "2025-06-28T13:33:52.047939"
+    "created_at": "2025-04-19T06:54:18.377712",
+    "last_updated": "2025-04-26T18:14:18.377712"
   },
   "5": {
     "plan_id": "5",
@@ -49,10 +49,10 @@
     "status": "active",
     "current_cost": 800.0,
     "previous_year_cost": 750.0,
-    "enrollment_window": "open",
+    "enrollment_window": "closed",
     "cost_variance_percent": 6.67,
-    "created_at": "2025-10-15T11:27:56.720141",
-    "last_updated": "2025-10-17T18:24:56.720141"
+    "created_at": "2025-03-20T07:54:48.933538",
+    "last_updated": "2025-03-21T09:48:48.933538"
   },
   "6": {
     "plan_id": "6",
@@ -60,10 +60,10 @@
     "status": "active",
     "current_cost": 600.0,
     "previous_year_cost": 550.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 9.09,
-    "created_at": "2025-04-26T08:58:58.851452",
-    "last_updated": "2025-04-30T10:12:58.851452"
+    "created_at": "2025-04-17T11:22:57.458976",
+    "last_updated": "2025-04-22T17:18:57.458976"
   },
   "7": {
     "plan_id": "7",
@@ -71,10 +71,10 @@
     "status": "active",
     "current_cost": 2000.0,
     "previous_year_cost": 1900.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 5.26,
-    "created_at": "2025-03-28T09:46:01.618337",
-    "last_updated": "2025-04-02T12:53:01.618337"
+    "created_at": "2025-07-29T11:11:07.420245",
+    "last_updated": "2025-08-02T19:28:07.420245"
   },
   "8": {
     "plan_id": "8",
@@ -84,8 +84,8 @@
     "previous_year_cost": 450.0,
     "enrollment_window": "closed",
     "cost_variance_percent": 11.11,
-    "created_at": "2025-02-08T12:56:40.268214",
-    "last_updated": "2025-02-15T22:35:40.268214"
+    "created_at": "2025-09-21T18:26:41.929168",
+    "last_updated": "2025-09-28T21:33:41.929168"
   },
   "9": {
     "plan_id": "9",
@@ -93,10 +93,10 @@
     "status": "active",
     "current_cost": 1500.0,
     "previous_year_cost": 1400.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 7.14,
-    "created_at": "2025-02-13T16:06:41.876735",
-    "last_updated": "2025-02-14T17:50:41.876735"
+    "created_at": "2025-02-19T08:06:26.955490",
+    "last_updated": "2025-02-24T16:57:26.955490"
   },
   "10": {
     "plan_id": "10",
@@ -104,10 +104,10 @@
     "status": "active",
     "current_cost": 2500.0,
     "previous_year_cost": 2400.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 4.17,
-    "created_at": "2025-09-04T12:07:35.265015",
-    "last_updated": "2025-09-09T00:16:35.265015"
+    "created_at": "2025-09-01T08:39:24.817012",
+    "last_updated": "2025-09-04T18:40:24.817012"
   },
   "11": {
     "plan_id": "11",
@@ -115,10 +115,10 @@
     "status": "active",
     "current_cost": 3500.0,
     "previous_year_cost": 3300.0,
-    "enrollment_window": "open",
+    "enrollment_window": "closed",
     "cost_variance_percent": 6.06,
-    "created_at": "2025-01-24T10:26:42.105885",
-    "last_updated": "2025-01-30T19:43:42.105885"
+    "created_at": "2025-03-27T13:58:31.118423",
+    "last_updated": "2025-03-31T22:00:31.118423"
   },
   "12": {
     "plan_id": "12",
@@ -126,10 +126,10 @@
     "status": "active",
     "current_cost": 800.0,
     "previous_year_cost": 700.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 14.29,
-    "created_at": "2025-03-31T12:53:57.110010",
-    "last_updated": "2025-04-06T01:32:57.110010"
+    "created_at": "2025-06-29T06:45:55.710859",
+    "last_updated": "2025-07-04T19:21:55.710859"
   },
   "13": {
     "plan_id": "13",
@@ -137,10 +137,10 @@
     "status": "active",
     "current_cost": 400.0,
     "previous_year_cost": 350.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 14.29,
-    "created_at": "2025-03-19T18:06:31.208296",
-    "last_updated": "2025-03-24T22:55:31.208296"
+    "created_at": "2025-05-14T16:55:21.544315",
+    "last_updated": "2025-05-20T05:39:21.544315"
   },
   "14": {
     "plan_id": "14",
@@ -150,8 +150,8 @@
     "previous_year_cost": 550.0,
     "enrollment_window": "open",
     "cost_variance_percent": 9.09,
-    "created_at": "2025-10-14T09:22:45.429660",
-    "last_updated": "2025-10-17T12:24:45.429660"
+    "created_at": "2025-08-29T16:46:15.505339",
+    "last_updated": "2025-09-02T04:29:15.505339"
   },
   "15": {
     "plan_id": "15",
@@ -159,10 +159,10 @@
     "status": "active",
     "current_cost": 1800.0,
     "previous_year_cost": 1700.0,
-    "enrollment_window": "open",
+    "enrollment_window": "closed",
     "cost_variance_percent": 5.88,
-    "created_at": "2025-05-06T17:59:30.346663",
-    "last_updated": "2025-05-08T18:59:30.346663"
+    "created_at": "2025-04-06T14:57:39.057216",
+    "last_updated": "2025-04-08T02:56:39.057216"
   },
   "16": {
     "plan_id": "16",
@@ -170,10 +170,10 @@
     "status": "active",
     "current_cost": 2000.0,
     "previous_year_cost": 1900.0,
-    "enrollment_window": "open",
+    "enrollment_window": "closed",
     "cost_variance_percent": 5.26,
-    "created_at": "2025-03-17T15:42:31.156389",
-    "last_updated": "2025-03-19T00:46:31.156389"
+    "created_at": "2025-09-17T13:55:10.078501",
+    "last_updated": "2025-09-24T22:15:10.078501"
   },
   "17": {
     "plan_id": "17",
@@ -181,10 +181,10 @@
     "status": "active",
     "current_cost": 1200.0,
     "previous_year_cost": 1100.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 9.09,
-    "created_at": "2025-03-12T10:41:14.478938",
-    "last_updated": "2025-03-15T16:10:14.478938"
+    "created_at": "2025-06-11T06:32:14.577236",
+    "last_updated": "2025-06-17T13:57:14.577236"
   },
   "18": {
     "plan_id": "18",
@@ -194,8 +194,8 @@
     "previous_year_cost": 750.0,
     "enrollment_window": "open",
     "cost_variance_percent": 6.67,
-    "created_at": "2025-04-19T06:54:18.377712",
-    "last_updated": "2025-04-26T18:14:18.377712"
+    "created_at": "2025-03-01T13:28:51.600870",
+    "last_updated": "2025-03-05T16:22:51.600870"
   },
   "19": {
     "plan_id": "19",
@@ -203,10 +203,10 @@
     "status": "active",
     "current_cost": 1500.0,
     "previous_year_cost": 1400.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 7.14,
-    "created_at": "2025-03-20T07:54:48.933538",
-    "last_updated": "2025-03-21T09:48:48.933538"
+    "created_at": "2025-06-30T07:31:47.685111",
+    "last_updated": "2025-07-01T09:56:47.685111"
   },
   "20": {
     "plan_id": "20",
@@ -216,8 +216,8 @@
     "previous_year_cost": 300.0,
     "enrollment_window": "open",
     "cost_variance_percent": 0.0,
-    "created_at": "2025-04-17T11:22:57.458976",
-    "last_updated": "2025-04-22T17:18:57.458976"
+    "created_at": "2025-11-01T14:00:52.095310",
+    "last_updated": "2025-11-09T00:39:52.095310"
   },
   "21": {
     "plan_id": "21",
@@ -227,8 +227,8 @@
     "previous_year_cost": 180.0,
     "enrollment_window": "open",
     "cost_variance_percent": 11.11,
-    "created_at": "2025-07-29T11:11:07.420245",
-    "last_updated": "2025-08-02T19:28:07.420245"
+    "created_at": "2025-10-07T14:13:41.704091",
+    "last_updated": "2025-10-11T20:36:41.704091"
   },
   "22": {
     "plan_id": "22",
@@ -236,10 +236,10 @@
     "status": "active",
     "current_cost": 400.0,
     "previous_year_cost": 350.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 14.29,
-    "created_at": "2025-09-21T18:26:41.929168",
-    "last_updated": "2025-09-28T21:33:41.929168"
+    "created_at": "2025-05-14T13:21:35.804694",
+    "last_updated": "2025-05-19T23:51:35.804694"
   },
   "23": {
     "plan_id": "23",
@@ -247,10 +247,10 @@
     "status": "active",
     "current_cost": 250.0,
     "previous_year_cost": 220.0,
-    "enrollment_window": "open",
+    "enrollment_window": "closed",
     "cost_variance_percent": 13.64,
-    "created_at": "2025-02-19T08:06:26.955490",
-    "last_updated": "2025-02-24T16:57:26.955490"
+    "created_at": "2025-07-25T17:28:07.102170",
+    "last_updated": "2025-08-02T04:42:07.102170"
   },
   "24": {
     "plan_id": "24",
@@ -258,10 +258,10 @@
     "status": "active",
     "current_cost": 300.0,
     "previous_year_cost": 280.0,
-    "enrollment_window": "open",
+    "enrollment_window": "closed",
     "cost_variance_percent": 7.14,
-    "created_at": "2025-09-01T08:39:24.817012",
-    "last_updated": "2025-09-04T18:40:24.817012"
+    "created_at": "2025-07-20T16:51:18.574295",
+    "last_updated": "2025-07-25T23:35:18.574295"
   },
   "25": {
     "plan_id": "25",
@@ -271,8 +271,8 @@
     "previous_year_cost": 230.0,
     "enrollment_window": "closed",
     "cost_variance_percent": 8.7,
-    "created_at": "2025-03-27T13:58:31.118423",
-    "last_updated": "2025-03-31T22:00:31.118423"
+    "created_at": "2025-04-14T13:08:52.751678",
+    "last_updated": "2025-04-21T01:34:52.751678"
   },
   "26": {
     "plan_id": "26",
@@ -282,8 +282,8 @@
     "previous_year_cost": 380.0,
     "enrollment_window": "open",
     "cost_variance_percent": 5.26,
-    "created_at": "2025-06-29T06:45:55.710859",
-    "last_updated": "2025-07-04T19:21:55.710859"
+    "created_at": "2025-04-30T09:07:59.893590",
+    "last_updated": "2025-05-04T13:36:59.893590"
   },
   "27": {
     "plan_id": "27",
@@ -293,8 +293,8 @@
     "previous_year_cost": 320.0,
     "enrollment_window": "open",
     "cost_variance_percent": 9.38,
-    "created_at": "2025-05-14T16:55:21.544315",
-    "last_updated": "2025-05-20T05:39:21.544315"
+    "created_at": "2025-04-27T17:21:06.793928",
+    "last_updated": "2025-05-01T19:20:06.793928"
   },
   "28": {
     "plan_id": "28",
@@ -302,10 +302,10 @@
     "status": "active",
     "current_cost": 200.0,
     "previous_year_cost": 180.0,
-    "enrollment_window": "open",
+    "enrollment_window": "closed",
     "cost_variance_percent": 11.11,
-    "created_at": "2025-08-29T16:46:15.505339",
-    "last_updated": "2025-09-02T04:29:15.505339"
+    "created_at": "2025-03-24T18:57:28.479605",
+    "last_updated": "2025-03-31T05:29:28.479605"
   },
   "29": {
     "plan_id": "29",
@@ -313,10 +313,10 @@
     "status": "active",
     "current_cost": 400.0,
     "previous_year_cost": 380.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 5.26,
-    "created_at": "2025-04-06T14:57:39.057216",
-    "last_updated": "2025-04-08T02:56:39.057216"
+    "created_at": "2025-10-02T06:33:47.050931",
+    "last_updated": "2025-10-07T14:26:47.050931"
   },
   "30": {
     "plan_id": "30",
@@ -324,10 +324,10 @@
     "status": "active",
     "current_cost": 600.0,
     "previous_year_cost": 550.0,
-    "enrollment_window": "closed",
+    "enrollment_window": "open",
     "cost_variance_percent": 9.09,
-    "created_at": "2025-09-17T13:55:10.078501",
-    "last_updated": "2025-09-24T22:15:10.078501"
+    "created_at": "2025-10-07T18:58:58.185810",
+    "last_updated": "2025-10-14T05:09:58.185810"
   },
   "31": {
     "plan_id": "31",
@@ -337,8 +337,8 @@
     "previous_year_cost": 450.0,
     "enrollment_window": "open",
     "cost_variance_percent": 11.11,
-    "created_at": "2025-06-11T06:32:14.577236",
-    "last_updated": "2025-06-17T13:57:14.577236"
+    "created_at": "2025-03-26T07:24:42.629718",
+    "last_updated": "2025-03-31T13:56:42.629718"
   },
   "32": {
     "plan_id": "32",
@@ -348,7 +348,7 @@
     "previous_year_cost": 280.0,
     "enrollment_window": "open",
     "cost_variance_percent": 7.14,
-    "created_at": "2025-03-01T13:28:51.600870",
-    "last_updated": "2025-03-05T16:22:51.600870"
+    "created_at": "2025-08-22T15:58:44.799407",
+    "last_updated": "2025-08-24T21:23:44.799407"
   }
 }

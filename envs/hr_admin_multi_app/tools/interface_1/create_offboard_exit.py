@@ -163,7 +163,7 @@ class CreateOffboardExit(Tool):
             new_exit_case_id = "1"
 
         # Generate timestamps (use static date for consistency)
-        current_time = "2025-11-22T12:00:00"
+        current_time = "2025-11-16T23:59:00"
 
         # Create new exit case record
         new_exit_case = {
@@ -221,4 +221,3 @@ class CreateOffboardExit(Tool):
                 },
             },
         }
-

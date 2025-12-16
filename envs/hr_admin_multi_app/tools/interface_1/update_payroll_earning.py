@@ -45,8 +45,10 @@ class UpdatePayrollEarning(Tool):
         allowed_statuses = ["pending", "approved", "rejected", "require_justification"]
         allowed_earning_types = ["bonus", "incentive", "allowance", "overtime"]
 
-        new_earning_type = earning_type if earning_type is not None else current_earning.get(
-            "earning_type"
+        new_earning_type = (
+            earning_type
+            if earning_type is not None
+            else current_earning.get("earning_type")
         )
         new_amount = amount if amount is not None else current_earning.get("amount")
         new_status = status if status is not None else current_earning.get("status")
@@ -76,7 +78,7 @@ class UpdatePayrollEarning(Tool):
         if status is not None and status in ["approved", "rejected"]:
             employee_id = current_earning.get("employee_id")
             cycle_id = current_earning.get("cycle_id")
-            
+
             for other_id, other_earning in payroll_earnings.items():
                 if other_id == earning_id:
                     continue
@@ -102,7 +104,7 @@ class UpdatePayrollEarning(Tool):
         if status is not None or new_status != current_earning.get("status"):
             current_earning["status"] = new_status
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         current_earning["last_updated"] = timestamp
 
         return json.dumps(current_earning)
@@ -156,4 +158,3 @@ class UpdatePayrollEarning(Tool):
                 },
             },
         }
-

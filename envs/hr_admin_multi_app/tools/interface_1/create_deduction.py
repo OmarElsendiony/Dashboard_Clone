@@ -21,7 +21,9 @@ class CreateDeduction(Tool):
 
         deductions = data.setdefault("deductions", {})
         if not isinstance(deductions, dict):
-            return json.dumps({"success": False, "error": "Invalid deductions structure"})
+            return json.dumps(
+                {"success": False, "error": "Invalid deductions structure"}
+            )
 
         def require_str(value: Optional[str], field: str) -> str:
             if not isinstance(value, str) or not value.strip():
@@ -36,7 +38,9 @@ class CreateDeduction(Tool):
             return json.dumps({"success": False, "error": str(exc)})
 
         if not isinstance(amount, (int, float)) or amount <= 0:
-            return json.dumps({"success": False, "error": "amount must be a positive number"})
+            return json.dumps(
+                {"success": False, "error": "amount must be a positive number"}
+            )
         amount = round(float(amount), 2)
 
         valid_status = {"valid", "invalid_limit_exceeded"}
@@ -50,7 +54,7 @@ class CreateDeduction(Tool):
             return str(max(numeric_ids, default=0) + 1)
 
         deduction_id = generate_id(deductions)
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         record = {
             "deduction_id": deduction_id,
             "employee_id": employee_id,

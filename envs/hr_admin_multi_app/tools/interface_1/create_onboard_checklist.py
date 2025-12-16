@@ -1,6 +1,6 @@
 import json
 from typing import Any, Dict, List
-from datetime import datetime
+
 from tau_bench.envs.tool import Tool
 
 
@@ -19,7 +19,7 @@ class CreateOnboardChecklist(Tool):
             """Generates a new unique ID for a record."""
             if not table:
                 return "1"
-            return str(max(int(k) for k in table.keys()) + 1)        
+            return str(max(int(k) for k in table.keys()) + 1)
 
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
@@ -29,12 +29,14 @@ class CreateOnboardChecklist(Tool):
         checklist_tasks = data.setdefault("checklist_tasks", {})
 
         # Here's a fix for interface 1
-        if not isinstance(task_names, list): 
+        if not isinstance(task_names, list):
             try:
                 task_names = json.loads(task_names)
             except:
-                return json.dumps({"success": False, "error": "task_names must be a list"})
-        
+                return json.dumps(
+                    {"success": False, "error": "task_names must be a list"}
+                )
+
         # Validate employee exists
         if str(employee_id) not in employees:
             return json.dumps(
@@ -46,14 +48,17 @@ class CreateOnboardChecklist(Tool):
 
         # Check if checklist already exists for this employee
         for checklist_id, checklist in checklists.items():
-            if checklist.get("employee_id") == str(employee_id) and checklist.get("checklist_type") == "onboarding":
+            if (
+                checklist.get("employee_id") == str(employee_id)
+                and checklist.get("checklist_type") == "onboarding"
+            ):
                 return json.dumps(
                     {
                         "success": False,
                         "error": f"Onboarding checklist already exists for employee {employee_id}",
                     }
                 )
-            
+
         if not task_names or len(task_names) == 0:
             return json.dumps(
                 {
@@ -118,7 +123,7 @@ class CreateOnboardChecklist(Tool):
 
         # Generate unique checklist ID
         checklist_id = generate_id(checklists)
-        current_time = datetime.now().isoformat()
+        current_time = "2025-11-16T23:59:00"
 
         # Create onboarding checklist (matches schema table 'checklists')
         checklist_data = {
@@ -175,9 +180,7 @@ class CreateOnboardChecklist(Tool):
                         },
                         "task_names": {
                             "type": "array",
-                            "items": {
-                                "type": "string"
-                            },
+                            "items": {"type": "string"},
                             "description": "List of task names to include in the onboarding checklist. Each task name must be one of the predefined valid onboarding checklist task names. Required field.",
                         },
                     },

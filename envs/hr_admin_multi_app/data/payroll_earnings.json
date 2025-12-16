@@ -3,1010 +3,860 @@
     "earning_id": "1",
     "employee_id": "1",
     "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 2794.19,
+    "earning_type": "incentive",
+    "amount": 1671.31,
     "status": "pending",
-    "created_at": "2025-11-08T18:02:17.908533",
-    "last_updated": "2025-11-14T18:31:30.772739"
+    "created_at": "2025-11-11T15:24:19.413869",
+    "last_updated": "2025-11-14T08:57:35.043122"
   },
   "2": {
     "earning_id": "2",
     "employee_id": "1",
     "cycle_id": "6",
-    "earning_type": "allowance",
-    "amount": 961.2,
-    "status": "pending",
-    "created_at": "2025-11-08T07:52:10.732411",
-    "last_updated": "2025-11-13T14:04:22.441314"
+    "earning_type": "bonus",
+    "amount": 9806.65,
+    "status": "require_justification",
+    "created_at": "2025-11-08T13:08:05.332731",
+    "last_updated": "2025-11-14T08:16:07.328486"
   },
   "3": {
     "earning_id": "3",
     "employee_id": "1",
     "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 760.21,
+    "earning_type": "allowance",
+    "amount": 1082.25,
     "status": "pending",
-    "created_at": "2025-11-02T16:41:11.660766",
-    "last_updated": "2025-11-13T18:41:08.003225"
+    "created_at": "2025-11-10T10:47:23.971229",
+    "last_updated": "2025-11-14T10:57:56.276002"
   },
   "4": {
     "earning_id": "4",
     "employee_id": "1",
-    "cycle_id": "6",
-    "earning_type": "allowance",
-    "amount": 957.83,
-    "status": "rejected",
-    "created_at": "2025-11-11T07:07:10.261728",
-    "last_updated": "2025-11-14T15:43:26.831145"
+    "cycle_id": "5",
+    "earning_type": "incentive",
+    "amount": 1324.14,
+    "status": "pending",
+    "created_at": "2025-11-02T16:40:51.461362",
+    "last_updated": "2025-11-02T09:09:03.241026"
   },
   "5": {
     "earning_id": "5",
     "employee_id": "1",
-    "cycle_id": "3",
-    "earning_type": "allowance",
-    "amount": 526.53,
-    "status": "rejected",
-    "created_at": "2025-09-24T07:26:23.190724",
-    "last_updated": "2025-10-02T12:53:56.598097"
+    "cycle_id": "6",
+    "earning_type": "incentive",
+    "amount": 3023.85,
+    "status": "pending",
+    "created_at": "2025-11-10T12:07:57.972246",
+    "last_updated": "2025-11-14T06:28:22.743470"
   },
   "6": {
     "earning_id": "6",
-    "employee_id": "5",
+    "employee_id": "2",
     "cycle_id": "6",
     "earning_type": "allowance",
-    "amount": 423.23,
-    "status": "pending",
-    "created_at": "2025-11-15T08:03:25.648024",
-    "last_updated": "2025-11-15T15:16:09.093387"
+    "amount": 1170.17,
+    "status": "approved",
+    "created_at": "2025-11-16T08:07:22.098123",
+    "last_updated": "2025-11-16T10:11:53.176470"
   },
   "7": {
     "earning_id": "7",
-    "employee_id": "5",
+    "employee_id": "2",
     "cycle_id": "6",
-    "earning_type": "incentive",
-    "amount": 1357.45,
+    "earning_type": "commission",
+    "amount": 2095.34,
     "status": "rejected",
-    "created_at": "2025-11-02T17:33:27.810926",
-    "last_updated": "2025-11-13T16:31:07.235388"
+    "created_at": "2025-11-06T15:00:33.804098",
+    "last_updated": "2025-11-15T12:58:04.258114"
   },
   "8": {
     "earning_id": "8",
-    "employee_id": "5",
+    "employee_id": "2",
     "cycle_id": "6",
-    "earning_type": "incentive",
-    "amount": 4978.43,
-    "status": "pending",
-    "created_at": "2025-11-14T10:18:47.518172",
-    "last_updated": "2025-11-15T08:27:54.216642"
+    "earning_type": "bonus",
+    "amount": 8532.79,
+    "status": "require_justification",
+    "created_at": "2025-11-03T10:43:43.127916",
+    "last_updated": "2025-11-14T11:37:59.997426"
   },
   "9": {
     "earning_id": "9",
-    "employee_id": "5",
+    "employee_id": "2",
     "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 2740.52,
+    "earning_type": "bonus",
+    "amount": 3964.84,
     "status": "pending",
-    "created_at": "2025-11-12T09:26:11.428368",
-    "last_updated": "2025-11-14T06:18:16.246924"
+    "created_at": "2025-11-05T06:05:29.871051",
+    "last_updated": "2025-11-14T13:40:17.623068"
   },
   "10": {
     "earning_id": "10",
     "employee_id": "6",
     "cycle_id": "6",
     "earning_type": "commission",
-    "amount": 2261.09,
+    "amount": 459.14,
     "status": "pending",
-    "created_at": "2025-11-09T08:55:20.726687",
-    "last_updated": "2025-11-13T16:13:45.402124"
+    "created_at": "2025-11-15T16:18:20.836917",
+    "last_updated": "2025-11-16T17:04:35.998139"
   },
   "11": {
     "earning_id": "11",
     "employee_id": "6",
     "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 1048.25,
-    "status": "pending",
-    "created_at": "2025-11-03T14:03:03.349031",
-    "last_updated": "2025-11-14T13:58:22.635829"
+    "earning_type": "commission",
+    "amount": 997.82,
+    "status": "approved",
+    "created_at": "2025-11-06T18:55:25.093520",
+    "last_updated": "2025-11-15T09:10:24.817357"
   },
   "12": {
     "earning_id": "12",
-    "employee_id": "6",
-    "cycle_id": "2",
-    "earning_type": "allowance",
-    "amount": 1768.0,
-    "status": "pending",
-    "created_at": "2025-09-15T06:37:11.272935",
-    "last_updated": "2025-09-19T14:31:59.355652"
+    "employee_id": "7",
+    "cycle_id": "6",
+    "earning_type": "bonus",
+    "amount": 8488.48,
+    "status": "require_justification",
+    "created_at": "2025-11-15T12:47:51.966472",
+    "last_updated": "2025-11-16T16:38:08.376485"
   },
   "13": {
     "earning_id": "13",
-    "employee_id": "6",
+    "employee_id": "7",
     "cycle_id": "6",
-    "earning_type": "allowance",
-    "amount": 1949.41,
+    "earning_type": "commission",
+    "amount": 452.62,
     "status": "pending",
-    "created_at": "2025-11-10T12:09:16.122517",
-    "last_updated": "2025-11-13T06:08:31.914022"
+    "created_at": "2025-11-11T09:31:28.928422",
+    "last_updated": "2025-11-14T13:17:36.629502"
   },
   "14": {
     "earning_id": "14",
     "employee_id": "7",
     "cycle_id": "6",
-    "earning_type": "incentive",
-    "amount": 1919.94,
-    "status": "rejected",
-    "created_at": "2025-11-06T10:39:53.798557",
-    "last_updated": "2025-11-13T14:20:27.936034"
-  },
-  "15": {
-    "earning_id": "15",
-    "employee_id": "7",
-    "cycle_id": "6",
-    "earning_type": "incentive",
-    "amount": 1324.14,
-    "status": "pending",
-    "created_at": "2025-11-14T08:35:54.967681",
-    "last_updated": "2025-11-15T06:12:09.057217"
-  },
-  "16": {
-    "earning_id": "16",
-    "employee_id": "7",
-    "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 1481.73,
-    "status": "pending",
-    "created_at": "2025-11-04T17:29:27.121660",
-    "last_updated": "2025-11-13T06:28:22.743470"
-  },
-  "17": {
-    "earning_id": "17",
-    "employee_id": "8",
-    "cycle_id": "6",
-    "earning_type": "incentive",
-    "amount": 3125.96,
-    "status": "rejected",
-    "created_at": "2025-11-03T09:55:18.189430",
-    "last_updated": "2025-11-14T17:32:52.286042"
-  },
-  "18": {
-    "earning_id": "18",
-    "employee_id": "8",
-    "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 8986.31,
-    "status": "require_justification",
-    "created_at": "2025-11-10T18:36:11.436646",
-    "last_updated": "2025-11-14T09:49:31.709790"
-  },
-  "19": {
-    "earning_id": "19",
-    "employee_id": "8",
-    "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 8532.79,
-    "status": "require_justification",
-    "created_at": "2025-11-02T10:43:43.127916",
-    "last_updated": "2025-11-13T11:37:59.997426"
-  },
-  "20": {
-    "earning_id": "20",
-    "employee_id": "8",
-    "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 2862.51,
-    "status": "pending",
-    "created_at": "2025-11-12T13:29:40.282400",
-    "last_updated": "2025-11-14T11:02:41.652596"
-  },
-  "21": {
-    "earning_id": "21",
-    "employee_id": "10",
-    "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 7694.2,
-    "status": "require_justification",
-    "created_at": "2025-11-14T15:08:13.905213",
-    "last_updated": "2025-11-15T18:41:18.338869"
-  },
-  "22": {
-    "earning_id": "22",
-    "employee_id": "10",
-    "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 449.73,
-    "status": "rejected",
-    "created_at": "2025-11-10T15:24:05.418233",
-    "last_updated": "2025-11-13T08:15:49.907558"
-  },
-  "23": {
-    "earning_id": "23",
-    "employee_id": "10",
-    "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 2260.49,
-    "status": "rejected",
-    "created_at": "2025-11-04T12:49:25.298776",
-    "last_updated": "2025-11-14T07:19:31.840014"
-  },
-  "24": {
-    "earning_id": "24",
-    "employee_id": "10",
-    "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 2679.16,
-    "status": "pending",
-    "created_at": "2025-11-12T15:08:22.697848",
-    "last_updated": "2025-11-14T11:32:12.513406"
-  },
-  "25": {
-    "earning_id": "25",
-    "employee_id": "13",
-    "cycle_id": "6",
     "earning_type": "commission",
     "amount": 2094.03,
     "status": "approved",
-    "created_at": "2025-11-14T11:39:11.455193",
-    "last_updated": "2025-11-15T07:02:32.358345"
+    "created_at": "2025-11-08T15:11:27.661322",
+    "last_updated": "2025-11-14T07:02:32.358345"
   },
-  "26": {
-    "earning_id": "26",
-    "employee_id": "13",
-    "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 1041.1,
-    "status": "rejected",
-    "created_at": "2025-11-13T08:59:31.552891",
-    "last_updated": "2025-11-14T10:29:27.083029"
-  },
-  "27": {
-    "earning_id": "27",
-    "employee_id": "13",
-    "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 9255.72,
-    "status": "require_justification",
-    "created_at": "2025-11-12T10:53:15.548501",
-    "last_updated": "2025-11-13T10:36:03.577759"
-  },
-  "28": {
-    "earning_id": "28",
-    "employee_id": "15",
-    "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 2025.42,
-    "status": "approved",
-    "created_at": "2025-11-03T13:42:46.596092",
-    "last_updated": "2025-11-13T11:16:37.085741"
-  },
-  "29": {
-    "earning_id": "29",
-    "employee_id": "15",
+  "15": {
+    "earning_id": "15",
+    "employee_id": "10",
     "cycle_id": "6",
     "earning_type": "allowance",
-    "amount": 696.5,
+    "amount": 1698.92,
+    "status": "pending",
+    "created_at": "2025-11-07T13:27:05.951276",
+    "last_updated": "2025-11-14T10:09:08.717555"
+  },
+  "16": {
+    "earning_id": "16",
+    "employee_id": "10",
+    "cycle_id": "6",
+    "earning_type": "commission",
+    "amount": 464.56,
     "status": "approved",
-    "created_at": "2025-11-04T18:11:53.412045",
-    "last_updated": "2025-11-14T07:26:56.738594"
+    "created_at": "2025-11-07T15:03:35.080250",
+    "last_updated": "2025-11-15T14:06:32.445554"
   },
-  "30": {
-    "earning_id": "30",
+  "17": {
+    "earning_id": "17",
+    "employee_id": "13",
+    "cycle_id": "6",
+    "earning_type": "incentive",
+    "amount": 4293.09,
+    "status": "pending",
+    "created_at": "2025-11-12T07:49:32.017058",
+    "last_updated": "2025-11-15T17:42:29.188274"
+  },
+  "18": {
+    "earning_id": "18",
+    "employee_id": "13",
+    "cycle_id": "6",
+    "earning_type": "allowance",
+    "amount": 748.54,
+    "status": "rejected",
+    "created_at": "2025-11-09T17:19:20.615732",
+    "last_updated": "2025-11-14T18:42:28.654112"
+  },
+  "19": {
+    "earning_id": "19",
+    "employee_id": "13",
+    "cycle_id": "6",
+    "earning_type": "bonus",
+    "amount": 1052.62,
+    "status": "pending",
+    "created_at": "2025-11-15T08:13:11.082020",
+    "last_updated": "2025-11-16T16:06:27.560333"
+  },
+  "20": {
+    "earning_id": "20",
+    "employee_id": "13",
+    "cycle_id": "6",
+    "earning_type": "commission",
+    "amount": 1210.04,
+    "status": "approved",
+    "created_at": "2025-11-09T16:47:38.761173",
+    "last_updated": "2025-11-14T10:39:52.646703"
+  },
+  "21": {
+    "earning_id": "21",
+    "employee_id": "13",
+    "cycle_id": "3",
+    "earning_type": "commission",
+    "amount": 275.08,
+    "status": "pending",
+    "created_at": "2025-09-23T08:08:00.200070",
+    "last_updated": "2025-10-04T06:44:12.900739"
+  },
+  "22": {
+    "earning_id": "22",
     "employee_id": "15",
-    "cycle_id": "6",
-    "earning_type": "incentive",
-    "amount": 1449.81,
-    "status": "pending",
-    "created_at": "2025-11-14T16:28:39.847075",
-    "last_updated": "2025-11-15T11:58:55.849352"
-  },
-  "31": {
-    "earning_id": "31",
-    "employee_id": "17",
-    "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 1488.46,
-    "status": "pending",
-    "created_at": "2025-11-03T12:34:01.006131",
-    "last_updated": "2025-11-13T07:00:10.687657"
-  },
-  "32": {
-    "earning_id": "32",
-    "employee_id": "17",
-    "cycle_id": "6",
-    "earning_type": "commission",
-    "amount": 2452.99,
-    "status": "pending",
-    "created_at": "2025-11-12T17:38:46.510365",
-    "last_updated": "2025-11-13T15:52:39.378251"
-  },
-  "33": {
-    "earning_id": "33",
-    "employee_id": "17",
-    "cycle_id": "6",
-    "earning_type": "incentive",
-    "amount": 2665.03,
-    "status": "pending",
-    "created_at": "2025-11-04T06:12:07.855604",
-    "last_updated": "2025-11-14T17:12:54.028117"
-  },
-  "34": {
-    "earning_id": "34",
-    "employee_id": "17",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 2632.95,
     "status": "pending",
-    "created_at": "2025-11-05T12:53:40.899876",
-    "last_updated": "2025-11-14T07:19:49.485936"
+    "created_at": "2025-11-09T16:54:50.564744",
+    "last_updated": "2025-11-15T07:19:49.485936"
   },
-  "35": {
-    "earning_id": "35",
-    "employee_id": "17",
-    "cycle_id": "4",
-    "earning_type": "commission",
-    "amount": 2534.75,
+  "23": {
+    "earning_id": "23",
+    "employee_id": "15",
+    "cycle_id": "6",
+    "earning_type": "incentive",
+    "amount": 1406.02,
     "status": "pending",
-    "created_at": "2025-10-12T06:55:28.613654",
-    "last_updated": "2025-10-17T09:18:36.869742"
+    "created_at": "2025-11-05T08:47:44.466895",
+    "last_updated": "2025-11-14T13:01:55.471351"
   },
-  "36": {
-    "earning_id": "36",
-    "employee_id": "18",
+  "24": {
+    "earning_id": "24",
+    "employee_id": "17",
     "cycle_id": "6",
     "earning_type": "allowance",
     "amount": 170.33,
     "status": "pending",
-    "created_at": "2025-11-15T17:27:26.889838",
-    "last_updated": "2025-11-15T17:37:38.766591"
+    "created_at": "2025-11-04T16:54:45.452762",
+    "last_updated": "2025-11-14T13:47:37.624783"
   },
-  "37": {
-    "earning_id": "37",
-    "employee_id": "18",
+  "25": {
+    "earning_id": "25",
+    "employee_id": "17",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 4798.04,
     "status": "pending",
-    "created_at": "2025-11-10T15:46:39.980713",
-    "last_updated": "2025-11-13T09:45:03.553971"
+    "created_at": "2025-11-11T15:46:39.980713",
+    "last_updated": "2025-11-14T09:45:03.553971"
   },
-  "38": {
-    "earning_id": "38",
-    "employee_id": "18",
-    "cycle_id": "6",
-    "earning_type": "allowance",
-    "amount": 951.82,
+  "26": {
+    "earning_id": "26",
+    "employee_id": "17",
+    "cycle_id": "1",
+    "earning_type": "commission",
+    "amount": 738.16,
     "status": "pending",
-    "created_at": "2025-11-03T10:57:41.437400",
-    "last_updated": "2025-11-13T07:31:39.984575"
+    "created_at": "2025-09-01T15:41:22.470103",
+    "last_updated": "2025-09-05T06:10:18.761485"
   },
-  "39": {
-    "earning_id": "39",
-    "employee_id": "18",
-    "cycle_id": "6",
-    "earning_type": "allowance",
-    "amount": 1851.3,
-    "status": "rejected",
-    "created_at": "2025-11-04T10:46:12.492034",
-    "last_updated": "2025-11-13T13:14:32.230374"
-  },
-  "40": {
-    "earning_id": "40",
-    "employee_id": "22",
-    "cycle_id": "6",
+  "27": {
+    "earning_id": "27",
+    "employee_id": "17",
+    "cycle_id": "5",
     "earning_type": "incentive",
-    "amount": 1771.06,
-    "status": "approved",
-    "created_at": "2025-11-15T16:41:47.377755",
-    "last_updated": "2025-11-15T18:54:10.652048"
+    "amount": 3701.23,
+    "status": "rejected",
+    "created_at": "2025-10-23T15:58:43.355627",
+    "last_updated": "2025-10-31T08:56:18.758115"
   },
-  "41": {
-    "earning_id": "41",
-    "employee_id": "22",
+  "28": {
+    "earning_id": "28",
+    "employee_id": "23",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 2840.55,
     "status": "pending",
-    "created_at": "2025-11-12T13:08:11.209174",
-    "last_updated": "2025-11-14T15:31:06.832026"
+    "created_at": "2025-11-04T16:30:08.181708",
+    "last_updated": "2025-11-15T08:38:31.105805"
   },
-  "42": {
-    "earning_id": "42",
-    "employee_id": "22",
+  "29": {
+    "earning_id": "29",
+    "employee_id": "23",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 4225.77,
     "status": "rejected",
-    "created_at": "2025-11-05T09:35:03.019011",
-    "last_updated": "2025-11-13T10:22:43.166309"
+    "created_at": "2025-11-06T09:35:03.019011",
+    "last_updated": "2025-11-14T10:22:43.166309"
   },
-  "43": {
-    "earning_id": "43",
-    "employee_id": "22",
-    "cycle_id": "4",
-    "earning_type": "allowance",
-    "amount": 774.96,
-    "status": "pending",
-    "created_at": "2025-10-06T15:14:07.589280",
-    "last_updated": "2025-10-17T13:16:21.823012"
+  "30": {
+    "earning_id": "30",
+    "employee_id": "23",
+    "cycle_id": "6",
+    "earning_type": "incentive",
+    "amount": 2688.64,
+    "status": "rejected",
+    "created_at": "2025-11-03T18:04:21.451538",
+    "last_updated": "2025-11-15T15:14:07.589280"
   },
-  "44": {
-    "earning_id": "44",
+  "31": {
+    "earning_id": "31",
     "employee_id": "23",
     "cycle_id": "6",
     "earning_type": "bonus",
-    "amount": 8039.41,
+    "amount": 7357.64,
     "status": "require_justification",
-    "created_at": "2025-11-02T13:51:29.882478",
-    "last_updated": "2025-11-14T07:50:39.639270"
+    "created_at": "2025-11-15T11:49:02.807503",
+    "last_updated": "2025-11-16T08:54:44.916136"
   },
-  "45": {
-    "earning_id": "45",
+  "32": {
+    "earning_id": "32",
     "employee_id": "27",
     "cycle_id": "6",
     "earning_type": "incentive",
-    "amount": 2742.76,
+    "amount": 3334.67,
     "status": "rejected",
-    "created_at": "2025-11-03T09:58:23.164660",
-    "last_updated": "2025-11-13T17:28:48.530471"
+    "created_at": "2025-11-04T18:39:39.820150",
+    "last_updated": "2025-11-15T14:02:32.110531"
   },
-  "46": {
-    "earning_id": "46",
+  "33": {
+    "earning_id": "33",
+    "employee_id": "27",
+    "cycle_id": "6",
+    "earning_type": "bonus",
+    "amount": 2388.66,
+    "status": "pending",
+    "created_at": "2025-11-08T08:46:18.742563",
+    "last_updated": "2025-11-14T18:32:31.768136"
+  },
+  "34": {
+    "earning_id": "34",
     "employee_id": "28",
-    "cycle_id": "2",
-    "earning_type": "allowance",
-    "amount": 748.51,
-    "status": "pending",
-    "created_at": "2025-09-08T09:28:26.806584",
-    "last_updated": "2025-09-19T09:53:51.496672"
-  },
-  "47": {
-    "earning_id": "47",
-    "employee_id": "28",
-    "cycle_id": "3",
-    "earning_type": "bonus",
-    "amount": 4795.5,
-    "status": "pending",
-    "created_at": "2025-09-26T17:48:26.378162",
-    "last_updated": "2025-10-03T08:48:48.555378"
-  },
-  "48": {
-    "earning_id": "48",
-    "employee_id": "33",
-    "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 1763.0,
-    "status": "pending",
-    "created_at": "2025-11-15T14:50:43.379347",
-    "last_updated": "2025-11-15T13:09:49.010431"
-  },
-  "49": {
-    "earning_id": "49",
-    "employee_id": "33",
-    "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 9799.6,
-    "status": "require_justification",
-    "created_at": "2025-11-14T08:27:03.412369",
-    "last_updated": "2025-11-15T16:59:41.158284"
-  },
-  "50": {
-    "earning_id": "50",
-    "employee_id": "33",
-    "cycle_id": "6",
-    "earning_type": "allowance",
-    "amount": 1470.95,
-    "status": "pending",
-    "created_at": "2025-11-13T18:42:56.545027",
-    "last_updated": "2025-11-14T12:25:56.713944"
-  },
-  "51": {
-    "earning_id": "51",
-    "employee_id": "33",
-    "cycle_id": "6",
-    "earning_type": "incentive",
-    "amount": 4017.03,
-    "status": "pending",
-    "created_at": "2025-11-08T13:41:13.930694",
-    "last_updated": "2025-11-13T17:22:56.851266"
-  },
-  "52": {
-    "earning_id": "52",
-    "employee_id": "33",
-    "cycle_id": "3",
-    "earning_type": "incentive",
-    "amount": 917.69,
-    "status": "pending",
-    "created_at": "2025-09-22T06:34:21.408937",
-    "last_updated": "2025-10-03T14:34:18.224116"
-  },
-  "53": {
-    "earning_id": "53",
-    "employee_id": "36",
-    "cycle_id": "6",
+    "cycle_id": "4",
     "earning_type": "commission",
-    "amount": 2963.47,
+    "amount": 438.65,
     "status": "pending",
-    "created_at": "2025-11-04T06:01:56.835294",
-    "last_updated": "2025-11-13T09:53:49.318706"
+    "created_at": "2025-10-18T18:00:15.875365",
+    "last_updated": "2025-10-19T11:18:32.179581"
   },
-  "54": {
-    "earning_id": "54",
+  "35": {
+    "earning_id": "35",
+    "employee_id": "32",
+    "cycle_id": "5",
+    "earning_type": "incentive",
+    "amount": 2564.39,
+    "status": "rejected",
+    "created_at": "2025-10-26T18:14:08.840715",
+    "last_updated": "2025-10-31T12:58:26.941689"
+  },
+  "36": {
+    "earning_id": "36",
+    "employee_id": "33",
+    "cycle_id": "2",
+    "earning_type": "commission",
+    "amount": 2949.45,
+    "status": "pending",
+    "created_at": "2025-09-20T06:45:51.542479",
+    "last_updated": "2025-09-21T07:21:20.421161"
+  },
+  "37": {
+    "earning_id": "37",
     "employee_id": "36",
     "cycle_id": "6",
-    "earning_type": "bonus",
-    "amount": 5038.63,
-    "status": "require_justification",
-    "created_at": "2025-11-02T11:16:40.532151",
-    "last_updated": "2025-11-13T07:03:48.682583"
+    "earning_type": "allowance",
+    "amount": 896.68,
+    "status": "rejected",
+    "created_at": "2025-11-13T16:09:57.602466",
+    "last_updated": "2025-11-15T16:45:51.692439"
   },
-  "55": {
-    "earning_id": "55",
+  "38": {
+    "earning_id": "38",
     "employee_id": "36",
+    "cycle_id": "6",
+    "earning_type": "incentive",
+    "amount": 3651.33,
+    "status": "pending",
+    "created_at": "2025-11-14T14:55:19.756601",
+    "last_updated": "2025-11-15T11:00:52.293371"
+  },
+  "39": {
+    "earning_id": "39",
+    "employee_id": "36",
+    "cycle_id": "6",
+    "earning_type": "allowance",
+    "amount": 1477.69,
+    "status": "approved",
+    "created_at": "2025-11-09T18:12:56.316178",
+    "last_updated": "2025-11-15T06:34:21.408937"
+  },
+  "40": {
+    "earning_id": "40",
+    "employee_id": "36",
+    "cycle_id": "5",
+    "earning_type": "incentive",
+    "amount": 1220.12,
+    "status": "pending",
+    "created_at": "2025-10-28T10:13:05.536526",
+    "last_updated": "2025-10-31T14:21:48.666564"
+  },
+  "41": {
+    "earning_id": "41",
+    "employee_id": "38",
+    "cycle_id": "6",
+    "earning_type": "allowance",
+    "amount": 335.24,
+    "status": "approved",
+    "created_at": "2025-11-14T12:32:07.767543",
+    "last_updated": "2025-11-15T11:16:40.532151"
+  },
+  "42": {
+    "earning_id": "42",
+    "employee_id": "38",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 2076.52,
     "status": "pending",
-    "created_at": "2025-11-11T17:00:29.355446",
-    "last_updated": "2025-11-14T18:47:37.593071"
+    "created_at": "2025-11-04T13:19:36.772652",
+    "last_updated": "2025-11-15T13:21:15.844510"
   },
-  "56": {
-    "earning_id": "56",
-    "employee_id": "36",
+  "43": {
+    "earning_id": "43",
+    "employee_id": "38",
     "cycle_id": "6",
     "earning_type": "allowance",
     "amount": 1081.26,
     "status": "pending",
-    "created_at": "2025-11-14T17:36:43.146770",
-    "last_updated": "2025-11-15T14:47:15.110338"
+    "created_at": "2025-11-15T17:36:43.146770",
+    "last_updated": "2025-11-16T14:47:15.110338"
   },
-  "57": {
-    "earning_id": "57",
-    "employee_id": "37",
+  "44": {
+    "earning_id": "44",
+    "employee_id": "39",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 801.4,
     "status": "pending",
-    "created_at": "2025-11-13T12:53:26.085927",
-    "last_updated": "2025-11-14T06:27:56.136381"
+    "created_at": "2025-11-14T12:53:26.085927",
+    "last_updated": "2025-11-15T06:27:56.136381"
   },
-  "58": {
-    "earning_id": "58",
-    "employee_id": "37",
+  "45": {
+    "earning_id": "45",
+    "employee_id": "39",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 2990.23,
     "status": "approved",
-    "created_at": "2025-11-12T14:25:37.586120",
-    "last_updated": "2025-11-13T10:37:31.667377"
+    "created_at": "2025-11-13T14:25:37.586120",
+    "last_updated": "2025-11-14T10:37:31.667377"
   },
-  "59": {
-    "earning_id": "59",
-    "employee_id": "38",
+  "46": {
+    "earning_id": "46",
+    "employee_id": "40",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 7250.24,
     "status": "require_justification",
-    "created_at": "2025-11-15T08:09:32.133299",
-    "last_updated": "2025-11-15T17:29:08.738747"
+    "created_at": "2025-11-16T08:09:32.133299",
+    "last_updated": "2025-11-16T17:29:08.738747"
   },
-  "60": {
-    "earning_id": "60",
-    "employee_id": "38",
+  "47": {
+    "earning_id": "47",
+    "employee_id": "40",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 2087.8,
     "status": "pending",
-    "created_at": "2025-11-09T13:02:47.164458",
-    "last_updated": "2025-11-13T07:38:54.428468"
+    "created_at": "2025-11-10T13:02:47.164458",
+    "last_updated": "2025-11-14T07:38:54.428468"
   },
-  "61": {
-    "earning_id": "61",
-    "employee_id": "38",
+  "48": {
+    "earning_id": "48",
+    "employee_id": "40",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 8120.83,
     "status": "require_justification",
-    "created_at": "2025-11-02T14:09:07.389511",
-    "last_updated": "2025-11-13T11:19:18.509529"
+    "created_at": "2025-11-03T14:09:07.389511",
+    "last_updated": "2025-11-14T11:19:18.509529"
   },
-  "62": {
-    "earning_id": "62",
-    "employee_id": "38",
+  "49": {
+    "earning_id": "49",
+    "employee_id": "40",
     "cycle_id": "3",
     "earning_type": "bonus",
     "amount": 1608.08,
     "status": "pending",
-    "created_at": "2025-09-25T09:11:52.775590",
-    "last_updated": "2025-10-02T06:07:35.365584"
+    "created_at": "2025-09-26T09:11:52.775590",
+    "last_updated": "2025-10-03T06:07:35.365584"
   },
-  "63": {
-    "earning_id": "63",
-    "employee_id": "38",
+  "50": {
+    "earning_id": "50",
+    "employee_id": "40",
     "cycle_id": "5",
     "earning_type": "commission",
     "amount": 1895.99,
     "status": "approved",
-    "created_at": "2025-10-23T15:28:57.354233",
-    "last_updated": "2025-10-30T13:53:46.874180"
+    "created_at": "2025-10-24T15:28:57.354233",
+    "last_updated": "2025-10-31T13:53:46.874180"
   },
-  "64": {
-    "earning_id": "64",
-    "employee_id": "39",
+  "51": {
+    "earning_id": "51",
+    "employee_id": "41",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 1284.26,
     "status": "rejected",
-    "created_at": "2025-11-14T13:42:28.156219",
-    "last_updated": "2025-11-15T07:51:39.696781"
+    "created_at": "2025-11-15T13:42:28.156219",
+    "last_updated": "2025-11-16T07:51:39.696781"
   },
-  "65": {
-    "earning_id": "65",
-    "employee_id": "39",
+  "52": {
+    "earning_id": "52",
+    "employee_id": "41",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 3682.44,
     "status": "pending",
-    "created_at": "2025-11-07T14:02:42.933277",
-    "last_updated": "2025-11-13T17:17:41.092830"
+    "created_at": "2025-11-08T14:02:42.933277",
+    "last_updated": "2025-11-14T17:17:41.092830"
   },
-  "66": {
-    "earning_id": "66",
-    "employee_id": "39",
+  "53": {
+    "earning_id": "53",
+    "employee_id": "41",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 9615.64,
     "status": "require_justification",
-    "created_at": "2025-11-14T18:45:19.588297",
-    "last_updated": "2025-11-15T16:35:05.201774"
+    "created_at": "2025-11-15T18:45:19.588297",
+    "last_updated": "2025-11-16T16:35:05.201774"
   },
-  "67": {
-    "earning_id": "67",
-    "employee_id": "41",
+  "54": {
+    "earning_id": "54",
+    "employee_id": "44",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 437.01,
     "status": "pending",
-    "created_at": "2025-11-10T08:01:17.824974",
-    "last_updated": "2025-11-14T09:53:45.879668"
+    "created_at": "2025-11-11T08:01:17.824974",
+    "last_updated": "2025-11-15T09:53:45.879668"
   },
-  "68": {
-    "earning_id": "68",
-    "employee_id": "41",
+  "55": {
+    "earning_id": "55",
+    "employee_id": "44",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 8736.84,
     "status": "require_justification",
-    "created_at": "2025-11-07T12:37:02.515346",
-    "last_updated": "2025-11-14T11:27:11.435092"
+    "created_at": "2025-11-08T12:37:02.515346",
+    "last_updated": "2025-11-15T11:27:11.435092"
   },
-  "69": {
-    "earning_id": "69",
-    "employee_id": "41",
+  "56": {
+    "earning_id": "56",
+    "employee_id": "44",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 1650.0,
     "status": "pending",
-    "created_at": "2025-11-07T12:16:05.120213",
-    "last_updated": "2025-11-14T14:10:18.151030"
+    "created_at": "2025-11-08T12:16:05.120213",
+    "last_updated": "2025-11-15T14:10:18.151030"
   },
-  "70": {
-    "earning_id": "70",
-    "employee_id": "41",
+  "57": {
+    "earning_id": "57",
+    "employee_id": "44",
     "cycle_id": "6",
     "earning_type": "allowance",
     "amount": 840.89,
     "status": "pending",
-    "created_at": "2025-11-06T12:43:10.061775",
-    "last_updated": "2025-11-13T08:01:45.061343"
+    "created_at": "2025-11-07T12:43:10.061775",
+    "last_updated": "2025-11-14T08:01:45.061343"
   },
-  "71": {
-    "earning_id": "71",
-    "employee_id": "43",
+  "58": {
+    "earning_id": "58",
+    "employee_id": "45",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 2858.2,
     "status": "pending",
-    "created_at": "2025-11-15T07:03:12.251262",
-    "last_updated": "2025-11-15T13:32:48.528924"
+    "created_at": "2025-11-16T07:03:12.251262",
+    "last_updated": "2025-11-16T13:32:48.528924"
   },
-  "72": {
-    "earning_id": "72",
-    "employee_id": "43",
+  "59": {
+    "earning_id": "59",
+    "employee_id": "45",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 3422.44,
     "status": "rejected",
-    "created_at": "2025-11-07T13:35:26.068637",
-    "last_updated": "2025-11-13T06:26:40.245094"
+    "created_at": "2025-11-08T13:35:26.068637",
+    "last_updated": "2025-11-14T06:26:40.245094"
   },
-  "73": {
-    "earning_id": "73",
-    "employee_id": "43",
+  "60": {
+    "earning_id": "60",
+    "employee_id": "45",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 8616.5,
     "status": "require_justification",
-    "created_at": "2025-11-12T07:15:48.581652",
-    "last_updated": "2025-11-14T10:36:26.467646"
+    "created_at": "2025-11-13T07:15:48.581652",
+    "last_updated": "2025-11-15T10:36:26.467646"
   },
-  "74": {
-    "earning_id": "74",
-    "employee_id": "44",
+  "61": {
+    "earning_id": "61",
+    "employee_id": "46",
     "cycle_id": "5",
     "earning_type": "incentive",
     "amount": 502.44,
     "status": "rejected",
-    "created_at": "2025-10-25T14:28:02.001049",
-    "last_updated": "2025-10-30T15:18:41.175512"
+    "created_at": "2025-10-26T14:28:02.001049",
+    "last_updated": "2025-10-31T15:18:41.175512"
   },
-  "75": {
-    "earning_id": "75",
-    "employee_id": "45",
+  "62": {
+    "earning_id": "62",
+    "employee_id": "47",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 2452.75,
     "status": "pending",
-    "created_at": "2025-11-06T16:24:22.883360",
-    "last_updated": "2025-11-14T15:53:32.294976"
+    "created_at": "2025-11-07T16:24:22.883360",
+    "last_updated": "2025-11-15T15:53:32.294976"
   },
-  "76": {
-    "earning_id": "76",
-    "employee_id": "45",
+  "63": {
+    "earning_id": "63",
+    "employee_id": "47",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 790.38,
     "status": "pending",
-    "created_at": "2025-11-03T10:05:25.732356",
-    "last_updated": "2025-11-14T08:46:35.293033"
+    "created_at": "2025-11-04T10:05:25.732356",
+    "last_updated": "2025-11-15T08:46:35.293033"
   },
-  "77": {
-    "earning_id": "77",
-    "employee_id": "45",
+  "64": {
+    "earning_id": "64",
+    "employee_id": "47",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 964.44,
     "status": "approved",
-    "created_at": "2025-11-14T11:56:43.991332",
-    "last_updated": "2025-11-15T16:16:48.742133"
+    "created_at": "2025-11-15T11:56:43.991332",
+    "last_updated": "2025-11-16T16:16:48.742133"
   },
-  "78": {
-    "earning_id": "78",
-    "employee_id": "45",
+  "65": {
+    "earning_id": "65",
+    "employee_id": "47",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 6479.08,
     "status": "require_justification",
-    "created_at": "2025-11-07T11:13:29.628635",
-    "last_updated": "2025-11-13T06:58:44.140221"
+    "created_at": "2025-11-08T11:13:29.628635",
+    "last_updated": "2025-11-14T06:58:44.140221"
   },
-  "79": {
-    "earning_id": "79",
-    "employee_id": "45",
+  "66": {
+    "earning_id": "66",
+    "employee_id": "47",
     "cycle_id": "4",
     "earning_type": "incentive",
     "amount": 3420.94,
     "status": "pending",
-    "created_at": "2025-10-13T17:45:31.799502",
-    "last_updated": "2025-10-16T14:05:50.919307"
+    "created_at": "2025-10-14T17:45:31.799502",
+    "last_updated": "2025-10-17T14:05:50.919307"
   },
-  "80": {
-    "earning_id": "80",
-    "employee_id": "46",
+  "67": {
+    "earning_id": "67",
+    "employee_id": "48",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 2122.87,
     "status": "pending",
-    "created_at": "2025-11-09T16:07:22.852262",
-    "last_updated": "2025-11-13T15:22:24.185793"
+    "created_at": "2025-11-10T16:07:22.852262",
+    "last_updated": "2025-11-14T15:22:24.185793"
   },
-  "81": {
-    "earning_id": "81",
-    "employee_id": "46",
+  "68": {
+    "earning_id": "68",
+    "employee_id": "48",
     "cycle_id": "6",
     "earning_type": "allowance",
     "amount": 463.87,
     "status": "approved",
-    "created_at": "2025-11-05T13:00:14.779243",
-    "last_updated": "2025-11-14T18:17:43.966156"
+    "created_at": "2025-11-06T13:00:14.779243",
+    "last_updated": "2025-11-15T18:17:43.966156"
   },
-  "82": {
-    "earning_id": "82",
-    "employee_id": "46",
+  "69": {
+    "earning_id": "69",
+    "employee_id": "48",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 2732.62,
     "status": "approved",
-    "created_at": "2025-11-12T10:51:45.231890",
-    "last_updated": "2025-11-14T13:23:02.294394"
+    "created_at": "2025-11-13T10:51:45.231890",
+    "last_updated": "2025-11-15T13:23:02.294394"
   },
-  "83": {
-    "earning_id": "83",
-    "employee_id": "46",
+  "70": {
+    "earning_id": "70",
+    "employee_id": "48",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 677.34,
     "status": "pending",
-    "created_at": "2025-11-05T06:12:52.669448",
-    "last_updated": "2025-11-13T07:55:17.596746"
+    "created_at": "2025-11-06T06:12:52.669448",
+    "last_updated": "2025-11-14T07:55:17.596746"
   },
-  "84": {
-    "earning_id": "84",
-    "employee_id": "47",
+  "71": {
+    "earning_id": "71",
+    "employee_id": "50",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 4464.51,
     "status": "approved",
-    "created_at": "2025-11-11T08:04:37.134476",
-    "last_updated": "2025-11-14T08:16:59.597586"
+    "created_at": "2025-11-12T08:04:37.134476",
+    "last_updated": "2025-11-15T08:16:59.597586"
   },
-  "85": {
-    "earning_id": "85",
-    "employee_id": "47",
+  "72": {
+    "earning_id": "72",
+    "employee_id": "50",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 9441.01,
     "status": "require_justification",
-    "created_at": "2025-11-06T09:54:43.024240",
-    "last_updated": "2025-11-13T16:35:56.475976"
+    "created_at": "2025-11-07T09:54:43.024240",
+    "last_updated": "2025-11-14T16:35:56.475976"
   },
-  "86": {
-    "earning_id": "86",
-    "employee_id": "47",
+  "73": {
+    "earning_id": "73",
+    "employee_id": "50",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 7121.56,
     "status": "require_justification",
-    "created_at": "2025-11-12T16:41:03.895336",
-    "last_updated": "2025-11-13T12:54:26.287347"
+    "created_at": "2025-11-13T16:41:03.895336",
+    "last_updated": "2025-11-14T12:54:26.287347"
   },
-  "87": {
-    "earning_id": "87",
-    "employee_id": "47",
+  "74": {
+    "earning_id": "74",
+    "employee_id": "50",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 1690.75,
     "status": "pending",
-    "created_at": "2025-11-09T13:23:33.795891",
-    "last_updated": "2025-11-14T17:14:03.291433"
+    "created_at": "2025-11-10T13:23:33.795891",
+    "last_updated": "2025-11-15T17:14:03.291433"
   },
-  "88": {
-    "earning_id": "88",
-    "employee_id": "47",
+  "75": {
+    "earning_id": "75",
+    "employee_id": "50",
     "cycle_id": "5",
     "earning_type": "bonus",
     "amount": 2480.33,
     "status": "pending",
-    "created_at": "2025-10-31T06:47:14.723044",
-    "last_updated": "2025-11-01T07:58:15.206440"
+    "created_at": "2025-11-01T06:47:14.723044",
+    "last_updated": "2025-11-02T07:58:15.206440"
   },
-  "89": {
-    "earning_id": "89",
-    "employee_id": "47",
+  "76": {
+    "earning_id": "76",
+    "employee_id": "50",
     "cycle_id": "1",
     "earning_type": "bonus",
     "amount": 3145.23,
     "status": "pending",
-    "created_at": "2025-08-31T12:51:01.621313",
-    "last_updated": "2025-09-04T10:15:06.496580"
+    "created_at": "2025-09-01T12:51:01.621313",
+    "last_updated": "2025-09-05T10:15:06.496580"
   },
-  "90": {
-    "earning_id": "90",
-    "employee_id": "48",
+  "77": {
+    "earning_id": "77",
+    "employee_id": "54",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 1769.81,
     "status": "pending",
-    "created_at": "2025-11-10T18:15:04.813432",
-    "last_updated": "2025-11-13T18:06:40.468143"
+    "created_at": "2025-11-11T18:15:04.813432",
+    "last_updated": "2025-11-14T18:06:40.468143"
   },
-  "91": {
-    "earning_id": "91",
-    "employee_id": "48",
+  "78": {
+    "earning_id": "78",
+    "employee_id": "54",
     "cycle_id": "6",
     "earning_type": "commission",
     "amount": 353.41,
     "status": "approved",
-    "created_at": "2025-11-02T12:20:56.888869",
-    "last_updated": "2025-11-14T18:08:03.963762"
+    "created_at": "2025-11-03T12:20:56.888869",
+    "last_updated": "2025-11-15T18:08:03.963762"
   },
-  "92": {
-    "earning_id": "92",
-    "employee_id": "48",
+  "79": {
+    "earning_id": "79",
+    "employee_id": "54",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 6555.72,
     "status": "require_justification",
-    "created_at": "2025-11-08T07:06:43.058500",
-    "last_updated": "2025-11-14T10:54:24.421195"
+    "created_at": "2025-11-09T07:06:43.058500",
+    "last_updated": "2025-11-15T10:54:24.421195"
   },
-  "93": {
-    "earning_id": "93",
-    "employee_id": "54",
+  "80": {
+    "earning_id": "80",
+    "employee_id": "57",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 5086.69,
     "status": "require_justification",
-    "created_at": "2025-11-08T13:50:27.922682",
-    "last_updated": "2025-11-14T11:41:43.820960"
+    "created_at": "2025-11-09T13:50:27.922682",
+    "last_updated": "2025-11-15T11:41:43.820960"
   },
-  "94": {
-    "earning_id": "94",
-    "employee_id": "54",
+  "81": {
+    "earning_id": "81",
+    "employee_id": "57",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 4569.66,
     "status": "pending",
-    "created_at": "2025-11-07T15:12:06.107677",
-    "last_updated": "2025-11-14T15:45:04.621686"
+    "created_at": "2025-11-08T15:12:06.107677",
+    "last_updated": "2025-11-15T15:45:04.621686"
   },
-  "95": {
-    "earning_id": "95",
-    "employee_id": "54",
+  "82": {
+    "earning_id": "82",
+    "employee_id": "57",
     "cycle_id": "6",
     "earning_type": "bonus",
     "amount": 1544.42,
     "status": "pending",
-    "created_at": "2025-11-10T10:22:26.504783",
-    "last_updated": "2025-11-13T08:15:08.835741"
+    "created_at": "2025-11-11T10:22:26.504783",
+    "last_updated": "2025-11-14T08:15:08.835741"
   },
-  "96": {
-    "earning_id": "96",
-    "employee_id": "57",
+  "83": {
+    "earning_id": "83",
+    "employee_id": "60",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 757.93,
     "status": "pending",
-    "created_at": "2025-11-14T08:09:30.323668",
-    "last_updated": "2025-11-15T10:23:00.542827"
+    "created_at": "2025-11-15T08:09:30.323668",
+    "last_updated": "2025-11-16T10:23:00.542827"
   },
-  "97": {
-    "earning_id": "97",
-    "employee_id": "57",
+  "84": {
+    "earning_id": "84",
+    "employee_id": "60",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 4033.69,
     "status": "pending",
-    "created_at": "2025-11-15T14:54:03.442563",
-    "last_updated": "2025-11-15T09:12:40.952631"
+    "created_at": "2025-11-16T14:54:03.442563",
+    "last_updated": "2025-11-16T09:12:40.952631"
   },
-  "98": {
-    "earning_id": "98",
-    "employee_id": "57",
+  "85": {
+    "earning_id": "85",
+    "employee_id": "60",
     "cycle_id": "6",
     "earning_type": "allowance",
     "amount": 895.52,
     "status": "pending",
-    "created_at": "2025-11-12T13:44:44.490106",
-    "last_updated": "2025-11-13T15:36:21.646030"
+    "created_at": "2025-11-13T13:44:44.490106",
+    "last_updated": "2025-11-14T15:36:21.646030"
   },
-  "99": {
-    "earning_id": "99",
-    "employee_id": "57",
+  "86": {
+    "earning_id": "86",
+    "employee_id": "60",
     "cycle_id": "6",
     "earning_type": "incentive",
     "amount": 2599.42,
     "status": "pending",
-    "created_at": "2025-11-09T18:58:02.520021",
-    "last_updated": "2025-11-14T06:40:14.726894"
-  },
-  "100": {
-    "earning_id": "100",
-    "employee_id": "60",
-    "cycle_id": "1",
-    "earning_type": "incentive",
-    "amount": 3341.01,
-    "status": "rejected",
-    "created_at": "2025-08-29T06:04:22.031475",
-    "last_updated": "2025-09-05T08:18:28.203846"
-  },
-  "101": {
-    "earning_id": "101",
-    "employee_id": "60",
-    "cycle_id": "1",
-    "earning_type": "allowance",
-    "amount": 1710.31,
-    "status": "pending",
-    "created_at": "2025-08-24T09:12:18.182605",
-    "last_updated": "2025-09-05T10:46:11.356324"
+    "created_at": "2025-11-10T18:58:02.520021",
+    "last_updated": "2025-11-15T06:40:14.726894"
   }
 }

@@ -23,7 +23,7 @@ class ProcessPayrollInput(Tool):
     ) -> str:
         """
         Process payroll input - create new or update existing.
-        
+
         Args:
             data: Dictionary containing payroll_inputs, employees, and payroll_cycles
             employee_id: ID of the employee (required)
@@ -34,17 +34,20 @@ class ProcessPayrollInput(Tool):
             status: Status of the input ('pending' or 'review')
             issue_field: Issue description if any
             payroll_variance_percent: Variance percentage
-            
+
         Returns:
             JSON string with success status and payroll input details
         """
-        
+
         # Validate data format
         if not isinstance(data, dict):
             return json.dumps(
-                {"success": False, "error": "Invalid data format: 'data' must be a dict"}
+                {
+                    "success": False,
+                    "error": "Invalid data format: 'data' must be a dict",
+                }
             )
-        
+
         payroll_inputs = data.get("payroll_inputs", {})
         if not isinstance(payroll_inputs, dict):
             return json.dumps(
@@ -53,7 +56,7 @@ class ProcessPayrollInput(Tool):
                     "error": "Invalid payroll_inputs container: expected dict at data['payroll_inputs']",
                 }
             )
-        
+
         employees = data.get("employees", {})
         if not isinstance(employees, dict):
             return json.dumps(
@@ -62,7 +65,7 @@ class ProcessPayrollInput(Tool):
                     "error": "Invalid employees container: expected dict at data['employees']",
                 }
             )
-        
+
         payroll_cycles = data.get("payroll_cycles", {})
         if not isinstance(payroll_cycles, dict):
             return json.dumps(
@@ -71,21 +74,17 @@ class ProcessPayrollInput(Tool):
                     "error": "Invalid payroll_cycles container: expected dict at data['payroll_cycles']",
                 }
             )
-        
+
         # Validate required fields
         if not employee_id:
-            return json.dumps(
-                {"success": False, "error": "employee_id is required"}
-            )
-        
+            return json.dumps({"success": False, "error": "employee_id is required"})
+
         if not cycle_id:
-            return json.dumps(
-                {"success": False, "error": "cycle_id is required"}
-            )
-        
+            return json.dumps({"success": False, "error": "cycle_id is required"})
+
         employee_id_str = str(employee_id)
         cycle_id_str = str(cycle_id)
-        
+
         # Validate employee exists
         if employee_id_str not in employees:
             return json.dumps(
@@ -94,9 +93,9 @@ class ProcessPayrollInput(Tool):
                     "error": f"Employee with ID '{employee_id_str}' not found",
                 }
             )
-        
+
         employee = employees[employee_id_str]
-        
+
         # Validate cycle exists
         if cycle_id_str not in payroll_cycles:
             return json.dumps(
@@ -105,9 +104,9 @@ class ProcessPayrollInput(Tool):
                     "error": f"Payroll cycle with ID '{cycle_id_str}' not found",
                 }
             )
-        
+
         cycle = payroll_cycles[cycle_id_str]
-        
+
         # Validate status if provided
         valid_statuses = ["pending", "review"]
         if status and status not in valid_statuses:
@@ -117,23 +116,36 @@ class ProcessPayrollInput(Tool):
                     "error": f"Invalid status value: '{status}'. Must be one of {valid_statuses}",
                 }
             )
-        
+
         timestamp = "2025-11-16T23:59:00"
-        
-        # UPDATE MODE: If input_id is provided
-        if input_id:
-            input_id_str = str(input_id)
-            
-            if input_id_str not in payroll_inputs:
-                return json.dumps(
-                    {
-                        "success": False,
-                        "error": f"Payroll input with ID '{input_id_str}' not found",
-                    }
+
+        # UPDATE MODE:
+        payroll_input = next(
+            (
+                input_
+                for input_ in payroll_inputs.values()
+                if (
+                    (input_id and input_.get("input_id") == input_id)
+                    or (
+                        not input_id
+                        and input_.get("employee_id") == employee_id_str
+                        and input_.get("cycle_id") == cycle_id_str
+                    )
                 )
-            
-            payroll_input = payroll_inputs[input_id_str]
-            
+            ),
+            None,
+        )
+        if not payroll_input and input_id:
+            return json.dumps(
+                {
+                    "success": False,
+                    "error": f"Payroll input with ID '{input_id}' not found",
+                }
+            )
+
+        if payroll_input:
+            input_id_str = str(input_id)
+
             # Check if cycle is closed
             if cycle.get("status") == "closed":
                 return json.dumps(
@@ -142,64 +154,83 @@ class ProcessPayrollInput(Tool):
                         "error": f"Cannot update payroll input. Payroll cycle '{cycle_id_str}' is closed. Please escalate to Payroll Partner.",
                     }
                 )
-            
+
             # Update fields if provided
             if hours_worked is not None:
                 try:
                     hours_worked_float = float(hours_worked)
                     if hours_worked_float < 0:
                         return json.dumps(
-                            {"success": False, "error": "hours_worked must be non-negative"}
+                            {
+                                "success": False,
+                                "error": "hours_worked must be non-negative",
+                            }
                         )
                     payroll_input["hours_worked"] = str(hours_worked_float)
                 except (ValueError, TypeError):
                     return json.dumps(
-                        {"success": False, "error": "hours_worked must be a valid number"}
+                        {
+                            "success": False,
+                            "error": "hours_worked must be a valid number",
+                        }
                     )
-            
+
             if overtime_hours is not None:
                 try:
                     overtime_hours_float = float(overtime_hours)
                     if overtime_hours_float < 0:
                         return json.dumps(
-                            {"success": False, "error": "overtime_hours must be non-negative"}
+                            {
+                                "success": False,
+                                "error": "overtime_hours must be non-negative",
+                            }
                         )
                     payroll_input["overtime_hours"] = str(overtime_hours_float)
                 except (ValueError, TypeError):
                     return json.dumps(
-                        {"success": False, "error": "overtime_hours must be a valid number"}
+                        {
+                            "success": False,
+                            "error": "overtime_hours must be a valid number",
+                        }
                     )
-            
+
             if status:
                 payroll_input["status"] = status
-            
+
             if issue_field is not None:
                 payroll_input["issue_field"] = issue_field
-            
+
             if payroll_variance_percent is not None:
                 try:
                     variance_float = float(payroll_variance_percent)
                     payroll_input["payroll_variance_percent"] = str(variance_float)
                 except (ValueError, TypeError):
                     return json.dumps(
-                        {"success": False, "error": "payroll_variance_percent must be a valid number"}
+                        {
+                            "success": False,
+                            "error": "payroll_variance_percent must be a valid number",
+                        }
                     )
-            
+
             # Recalculate gross_pay if hours changed
             if hours_worked is not None or overtime_hours is not None:
                 base_salary = float(employee.get("base_salary", 0))
                 # Assuming bi-weekly pay period (80 hours), calculate hourly rate
-                hourly_rate = base_salary / 26 / 80  # 26 pay periods per year, 80 hours per period
-                
+                hourly_rate = (
+                    base_salary / 26 / 80
+                )  # 26 pay periods per year, 80 hours per period
+
                 total_hours = float(payroll_input.get("hours_worked", 0))
                 total_overtime = float(payroll_input.get("overtime_hours", 0))
-                
+
                 # Regular pay + overtime pay (typically 1.5x)
-                gross_pay = (total_hours * hourly_rate) + (total_overtime * hourly_rate * 1.5)
+                gross_pay = (total_hours * hourly_rate) + (
+                    total_overtime * hourly_rate * 1.5
+                )
                 payroll_input["gross_pay"] = f"{gross_pay:.2f}"
-            
+
             payroll_input["last_updated"] = timestamp
-            
+
             return json.dumps(
                 {
                     "success": True,
@@ -208,15 +239,18 @@ class ProcessPayrollInput(Tool):
                     "action": "updated",
                 }
             )
-        
+
         # CREATE MODE: If input_id is not provided
         else:
             # Validate required fields for creation
             if hours_worked is None:
                 return json.dumps(
-                    {"success": False, "error": "hours_worked is required for creating a new payroll input"}
+                    {
+                        "success": False,
+                        "error": "hours_worked is required for creating a new payroll input",
+                    }
                 )
-            
+
             # Validate hours_worked
             try:
                 hours_worked_float = float(hours_worked)
@@ -228,7 +262,7 @@ class ProcessPayrollInput(Tool):
                 return json.dumps(
                     {"success": False, "error": "hours_worked must be a valid number"}
                 )
-            
+
             # Validate overtime_hours
             if overtime_hours is None:
                 overtime_hours_float = 0.0
@@ -237,13 +271,19 @@ class ProcessPayrollInput(Tool):
                     overtime_hours_float = float(overtime_hours)
                     if overtime_hours_float < 0:
                         return json.dumps(
-                            {"success": False, "error": "overtime_hours must be non-negative"}
+                            {
+                                "success": False,
+                                "error": "overtime_hours must be non-negative",
+                            }
                         )
                 except (ValueError, TypeError):
                     return json.dumps(
-                        {"success": False, "error": "overtime_hours must be a valid number"}
+                        {
+                            "success": False,
+                            "error": "overtime_hours must be a valid number",
+                        }
                     )
-            
+
             # Check if payroll input already exists for this employee and cycle
             for existing_input in payroll_inputs.values():
                 if (
@@ -256,15 +296,19 @@ class ProcessPayrollInput(Tool):
                             "error": f"Payroll input already exists for employee '{employee_id_str}' in cycle '{cycle_id_str}' (input_id: '{existing_input.get('input_id')}')",
                         }
                     )
-            
+
             # Calculate gross_pay
             base_salary = float(employee.get("base_salary", 0))
             # Assuming bi-weekly pay period (80 hours), calculate hourly rate
-            hourly_rate = base_salary / 26 / 80  # 26 pay periods per year, 80 hours per period
-            
+            hourly_rate = (
+                base_salary / 26 / 80
+            )  # 26 pay periods per year, 80 hours per period
+
             # Regular pay + overtime pay (typically 1.5x)
-            gross_pay = (hours_worked_float * hourly_rate) + (overtime_hours_float * hourly_rate * 1.5)
-            
+            gross_pay = (hours_worked_float * hourly_rate) + (
+                overtime_hours_float * hourly_rate * 1.5
+            )
+
             # Generate new input ID
             def generate_input_id(inputs: Dict[str, Any]) -> str:
                 if not inputs:
@@ -274,9 +318,9 @@ class ProcessPayrollInput(Tool):
                     return str(max_id + 1)
                 except ValueError:
                     return "1"
-            
+
             new_input_id = generate_input_id(payroll_inputs)
-            
+
             # Create new payroll input
             new_input = {
                 "input_id": new_input_id,
@@ -285,15 +329,19 @@ class ProcessPayrollInput(Tool):
                 "hours_worked": str(hours_worked_float),
                 "overtime_hours": str(overtime_hours_float),
                 "gross_pay": f"{gross_pay:.2f}",
-                "payroll_variance_percent": str(payroll_variance_percent) if payroll_variance_percent is not None else None,
+                "payroll_variance_percent": (
+                    str(payroll_variance_percent)
+                    if payroll_variance_percent is not None
+                    else None
+                ),
                 "status": status if status else "pending",
                 "issue_field": issue_field,
                 "created_at": timestamp,
                 "last_updated": timestamp,
             }
-            
+
             payroll_inputs[new_input_id] = new_input
-            
+
             return json.dumps(
                 {
                     "success": True,
@@ -364,4 +412,3 @@ class ProcessPayrollInput(Tool):
                 },
             },
         }
-

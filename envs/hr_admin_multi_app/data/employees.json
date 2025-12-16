@@ -116,7 +116,7 @@
     "start_date": "2024-03-27",
     "full_name": "Jeffery Wagner",
     "email": "jefferywagner@enterprise.io",
-    "status": "active",
+    "status": "inactive",
     "tenure_months": 19,
     "performance_rating": 5,
     "base_salary": 130902.62,
@@ -129,7 +129,7 @@
     "flag_pending_settlement": false,
     "flag_requires_finance_approval": false,
     "created_at": "2025-09-16T14:16:35.902592",
-    "last_updated": "2025-09-18T02:02:35.902592"
+    "last_updated": "2025-11-16T12:00:00"
   },
   "7": {
     "employee_id": "7",
@@ -160,7 +160,7 @@
     "start_date": "2021-11-26",
     "full_name": "Debra Gardner",
     "email": "debragardner@enterprise.io",
-    "status": "active",
+    "status": "inactive",
     "tenure_months": 48,
     "performance_rating": 3,
     "base_salary": 145109.61,
@@ -173,7 +173,7 @@
     "flag_pending_settlement": false,
     "flag_requires_finance_approval": false,
     "created_at": "2025-10-06T15:12:09.392077",
-    "last_updated": "2025-10-13T18:46:09.392077"
+    "last_updated": "2025-11-16T12:00:00"
   },
   "9": {
     "employee_id": "9",
@@ -204,7 +204,7 @@
     "start_date": "2024-05-28",
     "full_name": "Lisa Smith",
     "email": "lisa.smith@enterprise.io",
-    "status": "inactive",
+    "status": "active",
     "tenure_months": 17,
     "performance_rating": 5,
     "base_salary": 65728.81,
@@ -217,7 +217,7 @@
     "flag_pending_settlement": true,
     "flag_requires_finance_approval": false,
     "created_at": "2025-08-12T16:41:23.459381",
-    "last_updated": "2025-11-16T12:00:00"
+    "last_updated": "2025-08-18T00:48:23.459381"
   },
   "11": {
     "employee_id": "11",
@@ -952,7 +952,7 @@
     "start_date": "2022-11-05",
     "full_name": "Whitney Hicks",
     "email": "whicks519@gmail.com",
-    "status": "inactive",
+    "status": "active",
     "tenure_months": 36,
     "performance_rating": 2,
     "base_salary": 113730.92,
@@ -965,7 +965,7 @@
     "flag_pending_settlement": false,
     "flag_requires_finance_approval": false,
     "created_at": "2025-03-25T14:37:21.911946",
-    "last_updated": "2025-11-16T12:00:00"
+    "last_updated": "2025-03-26T22:43:21.911946"
   },
   "45": {
     "employee_id": "45",
@@ -996,7 +996,7 @@
     "start_date": "2022-05-18",
     "full_name": "Daniel Burton",
     "email": "dburton609@gmail.com",
-    "status": "inactive",
+    "status": "active",
     "tenure_months": 42,
     "performance_rating": 2,
     "base_salary": 110958.77,
@@ -1009,7 +1009,7 @@
     "flag_pending_settlement": false,
     "flag_requires_finance_approval": false,
     "created_at": "2025-08-18T15:43:50.188803",
-    "last_updated": "2025-11-16T12:00:00"
+    "last_updated": "2025-08-20T18:48:50.188803"
   },
   "47": {
     "employee_id": "47",

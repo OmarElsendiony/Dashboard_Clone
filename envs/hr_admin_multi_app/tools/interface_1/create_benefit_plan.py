@@ -1,6 +1,6 @@
 import json
 from decimal import Decimal, InvalidOperation
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
 from tau_bench.envs.tool import Tool
 
@@ -43,17 +43,31 @@ class CreateBenefitPlan(Tool):
 
         benefit_plans = data.setdefault("benefit_plans", {})
         if not isinstance(benefit_plans, dict):
-            return json.dumps({"success": False, "error": "Invalid benefit_plans structure"})
+            return json.dumps(
+                {"success": False, "error": "Invalid benefit_plans structure"}
+            )
 
         if not isinstance(name, str) or not name.strip():
-            return json.dumps({"success": False, "error": "name must be a non-empty string"})
+            return json.dumps(
+                {"success": False, "error": "name must be a non-empty string"}
+            )
         plan_name = name.strip()
 
-        if not isinstance(enrollment_window, str) or enrollment_window not in {"open", "closed"}:
-            return json.dumps({"success": False, "error": "enrollment_window must be 'open' or 'closed'"})
+        if not isinstance(enrollment_window, str) or enrollment_window not in {
+            "open",
+            "closed",
+        }:
+            return json.dumps(
+                {
+                    "success": False,
+                    "error": "enrollment_window must be 'open' or 'closed'",
+                }
+            )
 
         if not isinstance(status, str) or status not in {"active", "inactive"}:
-            return json.dumps({"success": False, "error": "status must be 'active' or 'inactive'"})
+            return json.dumps(
+                {"success": False, "error": "status must be 'active' or 'inactive'"}
+            )
 
         try:
             current_dec = ensure_decimal(current_cost, "current_cost")
@@ -69,9 +83,14 @@ class CreateBenefitPlan(Tool):
                 continue
             existing_name = (existing.get("name") or "").strip().lower()
             if existing_name == plan_name.lower():
-                return json.dumps({"success": False, "error": f"Benefit plan with name '{name}' already exists"})
+                return json.dumps(
+                    {
+                        "success": False,
+                        "error": f"Benefit plan with name '{name}' already exists",
+                    }
+                )
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         record = {
             "plan_id": plan_id,
             "name": plan_name,
@@ -85,16 +104,20 @@ class CreateBenefitPlan(Tool):
 
         # Calculate cost variance if previous cost is positive
         if float(previous_dec) > 0:
-            variance = ((float(current_dec) - float(previous_dec)) / float(previous_dec)) * 100
+            variance = (
+                (float(current_dec) - float(previous_dec)) / float(previous_dec)
+            ) * 100
             record["cost_variance_percent"] = round(variance, 2)
 
         benefit_plans[plan_id] = record
 
-        return json.dumps({
-            "success": True,
-            "message": "Benefit plan created",
-            "benefit_plan": record,
-        })
+        return json.dumps(
+            {
+                "success": True,
+                "message": "Benefit plan created",
+                "benefit_plan": record,
+            }
+        )
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -107,12 +130,30 @@ class CreateBenefitPlan(Tool):
                     "type": "object",
                     "properties": {
                         "name": {"type": "string", "description": "Benefit plan name."},
-                        "current_cost": {"type": "number", "description": "Current plan cost as a non-negative decimal."},
-                        "previous_year_cost": {"type": "number", "description": "Previous year plan cost as a non-negative decimal."},
-                        "enrollment_window": {"type": "string", "description": "Enrollment window (allowed values: open, closed)."},
-                        "status": {"type": "string", "description": "Lifecycle status (allowed values: active, inactive).", "default": "active"},
+                        "current_cost": {
+                            "type": "number",
+                            "description": "Current plan cost as a non-negative decimal.",
+                        },
+                        "previous_year_cost": {
+                            "type": "number",
+                            "description": "Previous year plan cost as a non-negative decimal.",
+                        },
+                        "enrollment_window": {
+                            "type": "string",
+                            "description": "Enrollment window (allowed values: open, closed).",
+                        },
+                        "status": {
+                            "type": "string",
+                            "description": "Lifecycle status (allowed values: active, inactive).",
+                            "default": "active",
+                        },
                     },
-                    "required": ["name", "current_cost", "previous_year_cost", "enrollment_window"],
+                    "required": [
+                        "name",
+                        "current_cost",
+                        "previous_year_cost",
+                        "enrollment_window",
+                    ],
                 },
             },
         }

@@ -4,55 +4,55 @@
     "deduction_type": "benefit_contribution",
     "max_percent_of_net_pay": 0.15,
     "status": "active",
-    "created_at": "2025-04-30T06:11:53.274505",
-    "last_updated": "2025-05-01T08:04:53.274505"
+    "created_at": "2025-07-08T18:47:24.215289",
+    "last_updated": "2025-07-12T22:39:24.215289"
   },
   "2": {
     "rule_id": "2",
     "deduction_type": "loan",
     "max_percent_of_net_pay": 0.1,
     "status": "active",
-    "created_at": "2025-08-02T16:50:56.116359",
-    "last_updated": "2025-08-05T21:09:56.116359"
+    "created_at": "2025-07-24T06:04:22.031475",
+    "last_updated": "2025-07-29T08:13:22.031475"
   },
   "3": {
     "rule_id": "3",
     "deduction_type": "retirement",
     "max_percent_of_net_pay": 0.2,
     "status": "active",
-    "created_at": "2025-07-28T18:23:42.179683",
-    "last_updated": "2025-08-03T05:19:42.179683"
+    "created_at": "2025-04-29T16:37:58.802719",
+    "last_updated": "2025-05-02T17:38:58.802719"
   },
   "4": {
     "rule_id": "4",
     "deduction_type": "insurance",
     "max_percent_of_net_pay": 0.08,
     "status": "active",
-    "created_at": "2025-02-22T07:09:56.969047",
-    "last_updated": "2025-02-24T11:21:56.969047"
+    "created_at": "2025-06-14T08:14:56.274725",
+    "last_updated": "2025-06-20T11:35:56.274725"
   },
   "5": {
     "rule_id": "5",
     "deduction_type": "tax",
     "max_percent_of_net_pay": 0.3,
-    "status": "active",
-    "created_at": "2025-07-30T11:38:27.667044",
-    "last_updated": "2025-08-01T13:26:27.667044"
+    "status": "inactive",
+    "created_at": "2025-05-25T08:12:01.184630",
+    "last_updated": "2025-06-01T14:10:01.184630"
   },
   "6": {
     "rule_id": "6",
     "deduction_type": "garnishment",
     "max_percent_of_net_pay": 0.25,
     "status": "active",
-    "created_at": "2025-04-26T14:18:50.155783",
-    "last_updated": "2025-04-29T18:21:50.155783"
+    "created_at": "2025-03-31T12:41:50.928001",
+    "last_updated": "2025-04-01T19:40:50.928001"
   },
   "7": {
     "rule_id": "7",
     "deduction_type": "repayment_of_overpayment",
     "max_percent_of_net_pay": 0.15,
-    "status": "inactive",
-    "created_at": "2025-06-12T08:54:32.612454",
-    "last_updated": "2025-06-16T13:40:32.612454"
+    "status": "active",
+    "created_at": "2025-09-10T09:23:51.390437",
+    "last_updated": "2025-09-16T12:56:51.390437"
   }
 }

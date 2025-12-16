@@ -21,7 +21,9 @@ class CreateEnrollment(Tool):
 
         enrollments = data.setdefault("benefit_enrollments", {})
         if not isinstance(enrollments, dict):
-            return json.dumps({"success": False, "error": "Invalid benefit_enrollments structure"})
+            return json.dumps(
+                {"success": False, "error": "Invalid benefit_enrollments structure"}
+            )
 
         def require_str(value: Optional[str], field: str) -> str:
             if not isinstance(value, str) or not value.strip():
@@ -36,12 +38,16 @@ class CreateEnrollment(Tool):
             return json.dumps({"success": False, "error": str(exc)})
 
         if not isinstance(is_active, bool):
-            return json.dumps({"success": False, "error": "is_active must be a boolean"})
+            return json.dumps(
+                {"success": False, "error": "is_active must be a boolean"}
+            )
 
         try:
             start_dt = datetime.strptime(start_date, "%Y-%m-%d").date()
         except ValueError:
-            return json.dumps({"success": False, "error": "start_date must use YYYY-MM-DD format"})
+            return json.dumps(
+                {"success": False, "error": "start_date must use YYYY-MM-DD format"}
+            )
 
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
@@ -51,10 +57,15 @@ class CreateEnrollment(Tool):
 
         enrollment_id = generate_id(enrollments)
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         creation_dt = datetime.strptime(timestamp.split("T")[0], "%Y-%m-%d").date()
         if start_dt < creation_dt:
-            return json.dumps({"success": False, "error": "start_date cannot be earlier than the creation date"})
+            return json.dumps(
+                {
+                    "success": False,
+                    "error": "start_date cannot be earlier than the creation date",
+                }
+            )
 
         record = {
             "enrollment_id": enrollment_id,
@@ -68,11 +79,13 @@ class CreateEnrollment(Tool):
 
         enrollments[enrollment_id] = record
 
-        return json.dumps({
-            "success": True,
-            "message": "Benefit enrollment created",
-            "benefit_enrollment": record,
-        })
+        return json.dumps(
+            {
+                "success": True,
+                "message": "Benefit enrollment created",
+                "benefit_enrollment": record,
+            }
+        )
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -84,9 +97,18 @@ class CreateEnrollment(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "employee_id": {"type": "string", "description": "Id of Employee to enroll."},
-                        "plan_id": {"type": "string", "description": "Benefit plan id."},
-                        "start_date": {"type": "string", "description": "Coverage start date (YYYY-MM-DD)."},
+                        "employee_id": {
+                            "type": "string",
+                            "description": "Id of Employee to enroll.",
+                        },
+                        "plan_id": {
+                            "type": "string",
+                            "description": "Benefit plan id.",
+                        },
+                        "start_date": {
+                            "type": "string",
+                            "description": "Coverage start date (YYYY-MM-DD).",
+                        },
                         "is_active": {
                             "type": "boolean",
                             "description": "Flag indicating if the enrollment is active (default True).",

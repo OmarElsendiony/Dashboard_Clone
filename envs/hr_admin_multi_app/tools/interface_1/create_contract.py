@@ -8,42 +8,39 @@ class CreateContract(Tool):
     def invoke(
         data: Dict[str, Any],
         employee_id: str = None,
-        document_url: Optional[str] = None
+        document_url: Optional[str] = None,
     ) -> str:
         """
         Creates a new contract record for an employee.
         """
+
         def generate_id(table: Dict[str, Any]) -> str:
             """Generates a new unique ID for a record."""
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
-        
+
         if not isinstance(data, dict):
             return json.dumps({"error": "Invalid data format"})
 
-        timestamp = "2025-11-22T12:00:00"
+        timestamp = "2025-11-16T23:59:00"
         contracts = data.get("contracts", {})
         employees = data.get("employees", {})
 
         # Validate required field
         if not employee_id:
-            return json.dumps({
-                "error": "Missing required parameter: employee_id"
-            })
+            return json.dumps({"error": "Missing required parameter: employee_id"})
 
         # Check if employee exists
         if employee_id not in employees:
-            return json.dumps({
-                "error": f"Employee with ID '{employee_id}' not found"
-            })
+            return json.dumps({"error": f"Employee with ID '{employee_id}' not found"})
 
         # Check if contract already exists for this employee
         for existing_contract in contracts.values():
             if existing_contract.get("employee_id") == employee_id:
-                return json.dumps({
-                    "error": f"Contract already exists for employee '{employee_id}'"
-                })
+                return json.dumps(
+                    {"error": f"Contract already exists for employee '{employee_id}'"}
+                )
 
         # Generate new contract ID
         new_contract_id = generate_id(contracts)
@@ -56,16 +53,16 @@ class CreateContract(Tool):
             "is_terminated": False,
             "termination_date": None,
             "created_at": timestamp,
-            "last_updated": timestamp
+            "last_updated": timestamp,
         }
 
         contracts[new_contract_id] = new_contract
-    
+
         return json.dumps(
             {
                 "success": True,
                 "message": f"Contract {new_contract_id} created successfully",
-                "employee_data": new_contract
+                "employee_data": new_contract,
             }
         )
 
@@ -81,14 +78,14 @@ class CreateContract(Tool):
                     "properties": {
                         "employee_id": {
                             "type": "string",
-                            "description": "ID of the employee (required, must exist in employees table, one contract per employee)"
+                            "description": "ID of the employee (required, must exist in employees table, one contract per employee)",
                         },
                         "document_url": {
                             "type": "string",
-                            "description": "URL link to the digital contract document (optional)"
-                        }
+                            "description": "URL link to the digital contract document (optional)",
+                        },
                     },
-                    "required": []
-                }
-            }
+                    "required": [],
+                },
+            },
         }

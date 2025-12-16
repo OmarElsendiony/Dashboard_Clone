@@ -3,1908 +3,1962 @@
     "payslip_id": "1",
     "employee_id": "1",
     "cycle_id": "1",
-    "net_pay_value": 5829.52,
+    "net_pay_value": 7488.45,
     "status": "released",
-    "created_at": "2025-09-02T16:42:55.498282",
-    "last_updated": "2025-09-04T16:12:00.669068"
+    "created_at": "2025-09-04T11:20:52.251235",
+    "last_updated": "2025-09-05T16:25:24.640479"
   },
   "2": {
     "payslip_id": "2",
     "employee_id": "1",
     "cycle_id": "2",
-    "net_pay_value": 6929.15,
+    "net_pay_value": 3840.6,
     "status": "released",
-    "created_at": "2025-09-12T16:28:14.636237",
-    "last_updated": "2025-09-18T12:47:39.832527"
+    "created_at": "2025-09-19T08:01:38.128864",
+    "last_updated": "2025-09-20T17:48:52.260610"
   },
   "3": {
     "payslip_id": "3",
     "employee_id": "1",
     "cycle_id": "3",
-    "net_pay_value": 5062.81,
-    "status": "updated",
-    "created_at": "2025-09-22T17:24:18.636667",
-    "last_updated": "2025-10-03T17:09:55.545316"
+    "net_pay_value": 7431.22,
+    "status": "released",
+    "created_at": "2025-10-02T11:01:40.377702",
+    "last_updated": "2025-10-04T18:47:20.710860"
   },
   "4": {
     "payslip_id": "4",
     "employee_id": "1",
     "cycle_id": "4",
-    "net_pay_value": 6329.75,
-    "status": "updated",
-    "created_at": "2025-10-18T16:35:55.489478",
-    "last_updated": "2025-10-18T13:07:30.694830"
+    "net_pay_value": 15531.56,
+    "status": "released",
+    "created_at": "2025-10-13T16:54:44.949173",
+    "last_updated": "2025-10-18T17:24:18.636667"
   },
   "5": {
     "payslip_id": "5",
     "employee_id": "1",
     "cycle_id": "5",
-    "net_pay_value": 4114.89,
+    "net_pay_value": 6160.82,
     "status": "released",
-    "created_at": "2025-10-30T06:10:59.974092",
-    "last_updated": "2025-10-31T12:49:17.231081"
+    "created_at": "2025-10-22T13:50:05.315986",
+    "last_updated": "2025-10-31T08:57:28.121297"
   },
   "6": {
     "payslip_id": "6",
     "employee_id": "1",
     "cycle_id": "6",
-    "net_pay_value": 4839.59,
+    "net_pay_value": 4129.07,
     "status": "draft",
-    "created_at": "2025-11-12T17:31:05.834184",
-    "last_updated": "2025-11-13T09:59:36.803562"
+    "created_at": "2025-11-04T12:45:01.168018",
+    "last_updated": "2025-11-14T12:49:17.231081"
   },
   "7": {
     "payslip_id": "7",
     "employee_id": "2",
     "cycle_id": "1",
-    "net_pay_value": 5211.82,
-    "status": "updated",
-    "created_at": "2025-09-04T12:41:41.823218",
-    "last_updated": "2025-09-05T18:14:14.271679"
+    "net_pay_value": 7209.95,
+    "status": "released",
+    "created_at": "2025-09-02T16:46:31.094835",
+    "last_updated": "2025-09-05T09:59:36.803562"
   },
   "8": {
     "payslip_id": "8",
     "employee_id": "2",
     "cycle_id": "2",
-    "net_pay_value": 5038.87,
-    "status": "updated",
-    "created_at": "2025-09-08T07:05:21.776555",
-    "last_updated": "2025-09-19T17:07:36.385600"
+    "net_pay_value": 17087.76,
+    "status": "released",
+    "created_at": "2025-09-19T12:41:41.823218",
+    "last_updated": "2025-09-20T18:14:14.271679"
   },
   "9": {
     "payslip_id": "9",
     "employee_id": "2",
     "cycle_id": "3",
-    "net_pay_value": 4432.92,
+    "net_pay_value": 13417.65,
     "status": "released",
-    "created_at": "2025-09-26T12:36:47.001760",
-    "last_updated": "2025-10-02T06:37:34.199080"
+    "created_at": "2025-10-03T07:36:23.133606",
+    "last_updated": "2025-10-04T12:36:47.001760"
   },
   "10": {
     "payslip_id": "10",
     "employee_id": "2",
     "cycle_id": "4",
-    "net_pay_value": 5873.32,
-    "status": "released",
-    "created_at": "2025-10-11T11:49:23.836258",
-    "last_updated": "2025-10-17T14:42:38.619473"
+    "net_pay_value": 5709.76,
+    "status": "updated",
+    "created_at": "2025-10-18T11:51:43.979291",
+    "last_updated": "2025-10-19T14:42:38.619473"
   },
   "11": {
     "payslip_id": "11",
     "employee_id": "2",
     "cycle_id": "5",
-    "net_pay_value": 5226.02,
+    "net_pay_value": 4583.77,
     "status": "released",
-    "created_at": "2025-10-25T06:34:54.482977",
-    "last_updated": "2025-10-30T08:52:18.877885"
+    "created_at": "2025-10-24T09:31:43.477924",
+    "last_updated": "2025-11-01T15:18:09.783349"
   },
   "12": {
     "payslip_id": "12",
     "employee_id": "3",
     "cycle_id": "1",
-    "net_pay_value": 5191.98,
+    "net_pay_value": 5174.84,
     "status": "released",
-    "created_at": "2025-09-03T13:09:38.297158",
-    "last_updated": "2025-09-05T17:42:54.840215"
+    "created_at": "2025-09-05T07:17:54.740842",
+    "last_updated": "2025-09-06T16:53:13.519071"
   },
   "13": {
     "payslip_id": "13",
     "employee_id": "3",
     "cycle_id": "2",
-    "net_pay_value": 4808.78,
+    "net_pay_value": 5385.97,
     "status": "released",
-    "created_at": "2025-09-07T15:20:19.526781",
-    "last_updated": "2025-09-19T10:54:45.601853"
+    "created_at": "2025-09-14T06:51:21.160119",
+    "last_updated": "2025-09-20T17:59:51.236004"
   },
   "14": {
     "payslip_id": "14",
     "employee_id": "3",
     "cycle_id": "3",
-    "net_pay_value": 5288.63,
+    "net_pay_value": 6501.28,
     "status": "released",
-    "created_at": "2025-10-04T09:31:18.738344",
-    "last_updated": "2025-10-04T06:51:21.160119"
+    "created_at": "2025-09-22T18:11:54.511185",
+    "last_updated": "2025-10-03T10:52:42.956695"
   },
   "15": {
     "payslip_id": "15",
     "employee_id": "3",
     "cycle_id": "4",
-    "net_pay_value": 5554.61,
-    "status": "released",
-    "created_at": "2025-10-08T17:59:51.236004",
-    "last_updated": "2025-10-17T18:11:54.511185"
+    "net_pay_value": 5671.83,
+    "status": "updated",
+    "created_at": "2025-10-06T14:25:21.442957",
+    "last_updated": "2025-10-17T11:48:25.410059"
   },
   "16": {
     "payslip_id": "16",
     "employee_id": "3",
     "cycle_id": "5",
-    "net_pay_value": 5744.49,
-    "status": "released",
-    "created_at": "2025-10-23T16:58:54.166926",
-    "last_updated": "2025-10-31T14:25:21.442957"
+    "net_pay_value": 5208.43,
+    "status": "updated",
+    "created_at": "2025-10-31T10:18:44.967902",
+    "last_updated": "2025-11-01T17:54:35.412900"
   },
   "17": {
     "payslip_id": "17",
-    "employee_id": "4",
-    "cycle_id": "1",
-    "net_pay_value": 4661.85,
-    "status": "released",
-    "created_at": "2025-08-29T18:25:25.075312",
-    "last_updated": "2025-09-04T10:44:59.204568"
+    "employee_id": "3",
+    "cycle_id": "6",
+    "net_pay_value": 5169.36,
+    "status": "draft",
+    "created_at": "2025-11-08T18:50:37.907915",
+    "last_updated": "2025-11-15T17:19:29.686433"
   },
   "18": {
     "payslip_id": "18",
     "employee_id": "4",
-    "cycle_id": "2",
-    "net_pay_value": 4164.48,
+    "cycle_id": "1",
+    "net_pay_value": 4730.56,
     "status": "released",
-    "created_at": "2025-09-15T12:06:08.339128",
-    "last_updated": "2025-09-19T17:19:29.686433"
+    "created_at": "2025-08-27T15:08:28.729762",
+    "last_updated": "2025-09-05T10:57:09.219955"
   },
   "19": {
     "payslip_id": "19",
     "employee_id": "4",
-    "cycle_id": "3",
-    "net_pay_value": 5102.63,
+    "cycle_id": "2",
+    "net_pay_value": 5290.61,
     "status": "released",
-    "created_at": "2025-09-23T13:44:30.305221",
-    "last_updated": "2025-10-03T09:13:51.784735"
+    "created_at": "2025-09-19T09:47:41.009576",
+    "last_updated": "2025-09-20T17:54:36.106900"
   },
   "20": {
     "payslip_id": "20",
     "employee_id": "4",
-    "cycle_id": "4",
-    "net_pay_value": 4375.97,
+    "cycle_id": "3",
+    "net_pay_value": 4865.39,
     "status": "released",
-    "created_at": "2025-10-15T06:23:46.897729",
-    "last_updated": "2025-10-17T16:50:54.154775"
+    "created_at": "2025-10-05T08:24:27.712449",
+    "last_updated": "2025-10-05T06:06:22.496894"
   },
   "21": {
     "payslip_id": "21",
     "employee_id": "4",
-    "cycle_id": "5",
-    "net_pay_value": 5092.91,
+    "cycle_id": "4",
+    "net_pay_value": 5104.9,
     "status": "released",
-    "created_at": "2025-10-25T16:53:10.970966",
-    "last_updated": "2025-10-31T07:22:30.188358"
+    "created_at": "2025-10-06T07:32:41.354928",
+    "last_updated": "2025-10-17T08:40:46.423618"
   },
   "22": {
     "payslip_id": "22",
     "employee_id": "4",
-    "cycle_id": "6",
-    "net_pay_value": 6147.53,
-    "status": "draft",
-    "created_at": "2025-11-03T14:41:21.622217",
-    "last_updated": "2025-11-13T08:40:46.423618"
+    "cycle_id": "5",
+    "net_pay_value": 4962.3,
+    "status": "released",
+    "created_at": "2025-10-21T09:25:31.317393",
+    "last_updated": "2025-11-01T16:47:24.813537"
   },
   "23": {
     "payslip_id": "23",
-    "employee_id": "5",
-    "cycle_id": "1",
-    "net_pay_value": 3961.59,
-    "status": "released",
-    "created_at": "2025-08-27T06:07:15.415912",
-    "last_updated": "2025-09-04T10:44:38.180865"
+    "employee_id": "4",
+    "cycle_id": "6",
+    "net_pay_value": 4630.09,
+    "status": "draft",
+    "created_at": "2025-11-15T16:42:05.815509",
+    "last_updated": "2025-11-16T16:24:17.663049"
   },
   "24": {
     "payslip_id": "24",
     "employee_id": "5",
-    "cycle_id": "2",
-    "net_pay_value": 9973.8,
+    "cycle_id": "1",
+    "net_pay_value": 4010.67,
     "status": "released",
-    "created_at": "2025-09-19T13:55:52.681900",
-    "last_updated": "2025-09-20T10:40:41.466740"
+    "created_at": "2025-09-04T13:23:00.125829",
+    "last_updated": "2025-09-06T07:07:31.672566"
   },
   "25": {
     "payslip_id": "25",
     "employee_id": "5",
-    "cycle_id": "3",
-    "net_pay_value": 4482.2,
+    "cycle_id": "2",
+    "net_pay_value": 3224.16,
     "status": "released",
-    "created_at": "2025-09-29T09:01:37.600815",
-    "last_updated": "2025-10-02T10:44:47.099146"
+    "created_at": "2025-09-16T09:01:37.600815",
+    "last_updated": "2025-09-19T10:44:47.099146"
   },
   "26": {
     "payslip_id": "26",
     "employee_id": "5",
-    "cycle_id": "4",
-    "net_pay_value": 3494.28,
-    "status": "updated",
-    "created_at": "2025-10-14T08:06:20.066582",
-    "last_updated": "2025-10-17T12:52:44.020705"
+    "cycle_id": "3",
+    "net_pay_value": 4281.91,
+    "status": "released",
+    "created_at": "2025-09-24T12:30:41.736873",
+    "last_updated": "2025-10-03T10:36:08.104271"
   },
   "27": {
     "payslip_id": "27",
     "employee_id": "5",
-    "cycle_id": "5",
-    "net_pay_value": 8005.94,
+    "cycle_id": "4",
+    "net_pay_value": 3573.76,
     "status": "released",
-    "created_at": "2025-11-01T15:34:45.858602",
-    "last_updated": "2025-11-01T18:48:13.690573"
+    "created_at": "2025-10-17T18:34:11.425019",
+    "last_updated": "2025-10-18T12:35:52.562473"
   },
   "28": {
     "payslip_id": "28",
     "employee_id": "5",
-    "cycle_id": "6",
-    "net_pay_value": 11312.82,
-    "status": "draft",
-    "created_at": "2025-11-14T11:07:02.135073",
-    "last_updated": "2025-11-15T16:10:05.589820"
+    "cycle_id": "5",
+    "net_pay_value": 4154.79,
+    "status": "released",
+    "created_at": "2025-10-28T13:04:33.877809",
+    "last_updated": "2025-11-01T18:48:13.690573"
   },
   "29": {
     "payslip_id": "29",
-    "employee_id": "6",
+    "employee_id": "7",
     "cycle_id": "1",
-    "net_pay_value": 4956.05,
-    "status": "updated",
-    "created_at": "2025-08-28T11:34:10.443601",
-    "last_updated": "2025-09-05T09:19:02.992177"
+    "net_pay_value": 17392.95,
+    "status": "released",
+    "created_at": "2025-08-27T15:44:11.005582",
+    "last_updated": "2025-09-05T18:20:07.041044"
   },
   "30": {
     "payslip_id": "30",
-    "employee_id": "6",
+    "employee_id": "7",
     "cycle_id": "2",
-    "net_pay_value": 8535.02,
+    "net_pay_value": 8934.91,
     "status": "updated",
-    "created_at": "2025-09-14T17:20:33.955025",
-    "last_updated": "2025-09-18T15:34:32.220032"
+    "created_at": "2025-09-21T18:02:05.130775",
+    "last_updated": "2025-09-21T11:34:10.443601"
   },
   "31": {
     "payslip_id": "31",
-    "employee_id": "6",
+    "employee_id": "7",
     "cycle_id": "3",
-    "net_pay_value": 4495.09,
+    "net_pay_value": 4744.2,
     "status": "released",
-    "created_at": "2025-10-04T09:08:38.578888",
-    "last_updated": "2025-10-04T15:22:17.134733"
+    "created_at": "2025-09-30T18:18:42.560046",
+    "last_updated": "2025-10-03T08:36:31.728866"
   },
   "32": {
     "payslip_id": "32",
-    "employee_id": "6",
+    "employee_id": "7",
     "cycle_id": "4",
-    "net_pay_value": 6319.58,
+    "net_pay_value": 5552.38,
     "status": "released",
-    "created_at": "2025-10-07T12:29:05.990632",
-    "last_updated": "2025-10-16T16:27:44.150202"
+    "created_at": "2025-10-14T09:44:06.694804",
+    "last_updated": "2025-10-18T09:02:12.148548"
   },
   "33": {
     "payslip_id": "33",
-    "employee_id": "6",
+    "employee_id": "7",
     "cycle_id": "5",
-    "net_pay_value": 6703.29,
+    "net_pay_value": 5616.3,
     "status": "updated",
-    "created_at": "2025-10-22T17:23:36.689247",
-    "last_updated": "2025-10-31T12:52:09.331727"
+    "created_at": "2025-10-23T15:22:17.134733",
+    "last_updated": "2025-10-31T07:35:16.273336"
   },
   "34": {
     "payslip_id": "34",
-    "employee_id": "7",
+    "employee_id": "10",
     "cycle_id": "1",
-    "net_pay_value": 5321.83,
+    "net_pay_value": 2485.34,
     "status": "released",
-    "created_at": "2025-08-25T14:07:43.575006",
-    "last_updated": "2025-09-04T07:21:40.093296"
+    "created_at": "2025-08-29T16:27:44.150202",
+    "last_updated": "2025-09-06T07:40:46.282486"
   },
   "35": {
     "payslip_id": "35",
-    "employee_id": "7",
+    "employee_id": "10",
     "cycle_id": "2",
-    "net_pay_value": 8107.0,
-    "status": "released",
-    "created_at": "2025-09-10T10:00:06.395476",
-    "last_updated": "2025-09-19T12:06:50.970599"
+    "net_pay_value": 2451.21,
+    "status": "updated",
+    "created_at": "2025-09-13T15:42:41.860365",
+    "last_updated": "2025-09-20T12:52:09.331727"
   },
   "36": {
     "payslip_id": "36",
-    "employee_id": "7",
+    "employee_id": "10",
     "cycle_id": "3",
-    "net_pay_value": 7942.21,
+    "net_pay_value": 2872.16,
     "status": "released",
-    "created_at": "2025-10-03T13:06:33.365848",
-    "last_updated": "2025-10-04T14:17:38.103878"
+    "created_at": "2025-10-01T09:04:17.130674",
+    "last_updated": "2025-10-04T16:35:26.069163"
   },
   "37": {
     "payslip_id": "37",
-    "employee_id": "7",
+    "employee_id": "10",
     "cycle_id": "4",
-    "net_pay_value": 9335.97,
-    "status": "updated",
-    "created_at": "2025-10-10T18:47:43.827061",
-    "last_updated": "2025-10-16T13:37:08.271645"
+    "net_pay_value": 3029.53,
+    "status": "released",
+    "created_at": "2025-10-18T10:09:55.836865",
+    "last_updated": "2025-10-19T10:00:06.395476"
   },
   "38": {
     "payslip_id": "38",
-    "employee_id": "7",
+    "employee_id": "10",
     "cycle_id": "5",
-    "net_pay_value": 7349.88,
+    "net_pay_value": 3975.07,
     "status": "released",
-    "created_at": "2025-10-25T15:47:17.055432",
-    "last_updated": "2025-10-30T17:49:15.711160"
+    "created_at": "2025-11-01T07:11:33.763706",
+    "last_updated": "2025-11-02T15:52:51.513402"
   },
   "39": {
     "payslip_id": "39",
-    "employee_id": "7",
+    "employee_id": "10",
     "cycle_id": "6",
-    "net_pay_value": 4638.55,
+    "net_pay_value": 4500.58,
     "status": "draft",
-    "created_at": "2025-11-14T13:32:18.289221",
-    "last_updated": "2025-11-15T14:45:56.968687"
+    "created_at": "2025-11-07T14:17:38.103878",
+    "last_updated": "2025-11-15T08:20:48.408486"
   },
   "40": {
     "payslip_id": "40",
-    "employee_id": "8",
+    "employee_id": "13",
     "cycle_id": "1",
-    "net_pay_value": 20107.02,
+    "net_pay_value": 10689.43,
     "status": "released",
-    "created_at": "2025-08-28T12:49:20.886304",
-    "last_updated": "2025-09-05T16:05:04.765411"
+    "created_at": "2025-09-04T18:34:35.623501",
+    "last_updated": "2025-09-05T13:37:08.271645"
   },
   "41": {
     "payslip_id": "41",
-    "employee_id": "8",
+    "employee_id": "13",
     "cycle_id": "2",
-    "net_pay_value": 8033.23,
+    "net_pay_value": 4214.42,
     "status": "released",
-    "created_at": "2025-09-14T18:55:00.994466",
-    "last_updated": "2025-09-18T16:32:59.766296"
+    "created_at": "2025-09-08T17:40:23.741870",
+    "last_updated": "2025-09-20T16:38:26.741119"
   },
   "42": {
     "payslip_id": "42",
-    "employee_id": "8",
+    "employee_id": "13",
     "cycle_id": "3",
-    "net_pay_value": 14688.84,
+    "net_pay_value": 5977.07,
     "status": "released",
-    "created_at": "2025-09-22T12:00:39.199422",
-    "last_updated": "2025-10-03T17:27:44.560280"
+    "created_at": "2025-09-30T17:56:59.853565",
+    "last_updated": "2025-10-04T10:40:54.091165"
   },
   "43": {
     "payslip_id": "43",
-    "employee_id": "8",
+    "employee_id": "13",
     "cycle_id": "4",
-    "net_pay_value": 14753.29,
-    "status": "updated",
-    "created_at": "2025-10-13T16:38:02.636877",
-    "last_updated": "2025-10-16T08:43:59.924771"
+    "net_pay_value": 4740.21,
+    "status": "released",
+    "created_at": "2025-10-07T08:36:03.088693",
+    "last_updated": "2025-10-17T14:59:31.847613"
   },
   "44": {
     "payslip_id": "44",
-    "employee_id": "8",
+    "employee_id": "13",
     "cycle_id": "5",
-    "net_pay_value": 6693.12,
+    "net_pay_value": 3762.8,
     "status": "released",
-    "created_at": "2025-10-24T06:27:31.397509",
-    "last_updated": "2025-10-31T11:07:21.958445"
+    "created_at": "2025-10-28T16:43:56.558271",
+    "last_updated": "2025-11-01T12:00:39.199422"
   },
   "45": {
     "payslip_id": "45",
-    "employee_id": "8",
-    "cycle_id": "6",
-    "net_pay_value": 7911.74,
-    "status": "draft",
-    "created_at": "2025-11-09T10:16:13.002342",
-    "last_updated": "2025-11-13T09:59:19.974241"
+    "employee_id": "15",
+    "cycle_id": "1",
+    "net_pay_value": 4610.66,
+    "status": "released",
+    "created_at": "2025-09-05T16:58:52.923094",
+    "last_updated": "2025-09-06T15:28:10.707287"
   },
   "46": {
     "payslip_id": "46",
-    "employee_id": "13",
-    "cycle_id": "1",
-    "net_pay_value": 5136.94,
+    "employee_id": "15",
+    "cycle_id": "2",
+    "net_pay_value": 6694.41,
     "status": "released",
-    "created_at": "2025-08-31T15:54:31.060289",
-    "last_updated": "2025-09-04T06:39:29.344511"
+    "created_at": "2025-09-10T07:23:53.139794",
+    "last_updated": "2025-09-19T06:27:31.397509"
   },
   "47": {
     "payslip_id": "47",
-    "employee_id": "13",
-    "cycle_id": "2",
-    "net_pay_value": 3634.63,
-    "status": "updated",
-    "created_at": "2025-09-13T11:00:06.451730",
-    "last_updated": "2025-09-18T09:05:33.539302"
+    "employee_id": "15",
+    "cycle_id": "3",
+    "net_pay_value": 5715.87,
+    "status": "released",
+    "created_at": "2025-10-02T09:53:34.892104",
+    "last_updated": "2025-10-04T10:19:30.307804"
   },
   "48": {
     "payslip_id": "48",
-    "employee_id": "13",
-    "cycle_id": "3",
-    "net_pay_value": 4473.78,
+    "employee_id": "15",
+    "cycle_id": "4",
+    "net_pay_value": 4947.45,
     "status": "released",
-    "created_at": "2025-10-03T16:16:14.493563",
-    "last_updated": "2025-10-04T11:19:23.449148"
+    "created_at": "2025-10-12T09:59:19.974241",
+    "last_updated": "2025-10-18T13:57:39.889561"
   },
   "49": {
     "payslip_id": "49",
-    "employee_id": "13",
-    "cycle_id": "4",
-    "net_pay_value": 4678.26,
-    "status": "updated",
-    "created_at": "2025-10-15T13:10:08.370920",
-    "last_updated": "2025-10-16T06:22:56.912800"
+    "employee_id": "15",
+    "cycle_id": "5",
+    "net_pay_value": 7255.82,
+    "status": "released",
+    "created_at": "2025-10-25T10:22:06.005404",
+    "last_updated": "2025-10-31T17:11:25.371754"
   },
   "50": {
     "payslip_id": "50",
-    "employee_id": "13",
-    "cycle_id": "5",
-    "net_pay_value": 5268.13,
-    "status": "released",
-    "created_at": "2025-10-25T17:21:57.033141",
-    "last_updated": "2025-10-31T16:12:30.697557"
+    "employee_id": "15",
+    "cycle_id": "6",
+    "net_pay_value": 5544.44,
+    "status": "draft",
+    "created_at": "2025-11-11T14:57:09.430670",
+    "last_updated": "2025-11-15T13:00:09.806824"
   },
   "51": {
     "payslip_id": "51",
-    "employee_id": "13",
-    "cycle_id": "6",
-    "net_pay_value": 13474.68,
-    "status": "draft",
-    "created_at": "2025-11-12T17:08:20.787574",
-    "last_updated": "2025-11-13T14:46:59.777931"
+    "employee_id": "17",
+    "cycle_id": "1",
+    "net_pay_value": 7470.98,
+    "status": "released",
+    "created_at": "2025-08-31T11:19:23.449148",
+    "last_updated": "2025-09-06T14:51:17.113974"
   },
   "52": {
     "payslip_id": "52",
-    "employee_id": "15",
-    "cycle_id": "1",
-    "net_pay_value": 6554.45,
+    "employee_id": "17",
+    "cycle_id": "2",
+    "net_pay_value": 8121.06,
     "status": "released",
-    "created_at": "2025-08-25T18:01:08.163097",
-    "last_updated": "2025-09-04T14:00:49.717684"
+    "created_at": "2025-09-08T11:56:55.743670",
+    "last_updated": "2025-09-20T07:12:18.042211"
   },
   "53": {
     "payslip_id": "53",
-    "employee_id": "15",
-    "cycle_id": "2",
-    "net_pay_value": 7316.47,
+    "employee_id": "17",
+    "cycle_id": "3",
+    "net_pay_value": 4020.77,
     "status": "released",
-    "created_at": "2025-09-18T06:27:30.303527",
-    "last_updated": "2025-09-19T13:05:48.449788"
+    "created_at": "2025-09-29T16:17:07.441550",
+    "last_updated": "2025-10-03T14:31:51.714852"
   },
   "54": {
     "payslip_id": "54",
-    "employee_id": "15",
-    "cycle_id": "3",
-    "net_pay_value": 5807.25,
+    "employee_id": "17",
+    "cycle_id": "4",
+    "net_pay_value": 4851.38,
     "status": "released",
-    "created_at": "2025-10-03T07:55:16.735005",
-    "last_updated": "2025-10-04T16:52:27.208050"
+    "created_at": "2025-10-17T12:08:07.113119",
+    "last_updated": "2025-10-18T08:09:22.524288"
   },
   "55": {
     "payslip_id": "55",
-    "employee_id": "15",
-    "cycle_id": "4",
-    "net_pay_value": 6574.44,
+    "employee_id": "17",
+    "cycle_id": "5",
+    "net_pay_value": 7840.46,
     "status": "released",
-    "created_at": "2025-10-14T08:12:54.619914",
-    "last_updated": "2025-10-17T09:07:08.420775"
+    "created_at": "2025-10-29T17:00:27.503518",
+    "last_updated": "2025-10-31T10:31:05.797861"
   },
   "56": {
     "payslip_id": "56",
-    "employee_id": "15",
-    "cycle_id": "5",
-    "net_pay_value": 5334.37,
+    "employee_id": "18",
+    "cycle_id": "1",
+    "net_pay_value": 4524.83,
     "status": "released",
-    "created_at": "2025-10-28T09:05:55.053430",
-    "last_updated": "2025-10-30T12:33:19.734169"
+    "created_at": "2025-08-26T10:44:15.698698",
+    "last_updated": "2025-09-05T09:30:45.820738"
   },
   "57": {
     "payslip_id": "57",
-    "employee_id": "17",
-    "cycle_id": "1",
-    "net_pay_value": 9531.57,
-    "status": "updated",
-    "created_at": "2025-09-01T12:41:03.319071",
-    "last_updated": "2025-09-05T10:23:17.988805"
+    "employee_id": "18",
+    "cycle_id": "2",
+    "net_pay_value": 3386.07,
+    "status": "released",
+    "created_at": "2025-09-19T17:32:39.189989",
+    "last_updated": "2025-09-20T15:40:40.155950"
   },
   "58": {
     "payslip_id": "58",
-    "employee_id": "17",
-    "cycle_id": "2",
-    "net_pay_value": 6710.53,
-    "status": "released",
-    "created_at": "2025-09-18T11:13:18.494988",
-    "last_updated": "2025-09-19T15:06:27.193818"
+    "employee_id": "18",
+    "cycle_id": "3",
+    "net_pay_value": 3291.71,
+    "status": "updated",
+    "created_at": "2025-09-24T12:02:17.201512",
+    "last_updated": "2025-10-04T12:01:39.209341"
   },
   "59": {
     "payslip_id": "59",
-    "employee_id": "17",
-    "cycle_id": "3",
-    "net_pay_value": 9191.45,
+    "employee_id": "18",
+    "cycle_id": "4",
+    "net_pay_value": 3796.49,
     "status": "updated",
-    "created_at": "2025-10-03T08:21:23.777301",
-    "last_updated": "2025-10-04T17:49:37.554552"
+    "created_at": "2025-10-06T12:26:33.321331",
+    "last_updated": "2025-10-18T09:21:27.502472"
   },
   "60": {
     "payslip_id": "60",
-    "employee_id": "17",
-    "cycle_id": "4",
-    "net_pay_value": 5032.65,
+    "employee_id": "18",
+    "cycle_id": "5",
+    "net_pay_value": 3664.95,
     "status": "released",
-    "created_at": "2025-10-15T17:38:07.043032",
-    "last_updated": "2025-10-17T09:45:28.970457"
+    "created_at": "2025-10-26T16:03:19.115400",
+    "last_updated": "2025-10-31T11:17:22.746151"
   },
   "61": {
     "payslip_id": "61",
-    "employee_id": "17",
-    "cycle_id": "5",
-    "net_pay_value": 4074.16,
-    "status": "released",
-    "created_at": "2025-10-27T17:09:02.134041",
-    "last_updated": "2025-10-31T12:35:45.264792"
+    "employee_id": "18",
+    "cycle_id": "6",
+    "net_pay_value": 3333.08,
+    "status": "draft",
+    "created_at": "2025-11-08T06:11:02.000561",
+    "last_updated": "2025-11-15T16:47:20.222274"
   },
   "62": {
     "payslip_id": "62",
-    "employee_id": "18",
+    "employee_id": "19",
     "cycle_id": "1",
-    "net_pay_value": 4502.89,
+    "net_pay_value": 4120.02,
     "status": "released",
-    "created_at": "2025-09-03T17:07:58.457311",
-    "last_updated": "2025-09-05T13:26:33.976572"
+    "created_at": "2025-08-29T13:17:58.635984",
+    "last_updated": "2025-09-06T12:11:16.994394"
   },
   "63": {
     "payslip_id": "63",
-    "employee_id": "18",
+    "employee_id": "19",
     "cycle_id": "2",
-    "net_pay_value": 5678.0,
-    "status": "released",
-    "created_at": "2025-09-11T06:36:03.832978",
-    "last_updated": "2025-09-19T17:52:25.519072"
+    "net_pay_value": 3336.0,
+    "status": "updated",
+    "created_at": "2025-09-13T10:07:06.701442",
+    "last_updated": "2025-09-20T16:35:49.903845"
   },
   "64": {
     "payslip_id": "64",
-    "employee_id": "18",
+    "employee_id": "19",
     "cycle_id": "3",
-    "net_pay_value": 4662.78,
+    "net_pay_value": 4495.53,
     "status": "released",
-    "created_at": "2025-09-27T14:49:24.420320",
-    "last_updated": "2025-10-02T09:11:00.167775"
+    "created_at": "2025-09-27T17:51:23.779020",
+    "last_updated": "2025-10-03T09:41:17.220235"
   },
   "65": {
     "payslip_id": "65",
-    "employee_id": "18",
+    "employee_id": "19",
     "cycle_id": "4",
-    "net_pay_value": 11178.49,
-    "status": "updated",
-    "created_at": "2025-10-13T17:46:33.271407",
-    "last_updated": "2025-10-16T09:18:45.281558"
+    "net_pay_value": 3898.66,
+    "status": "released",
+    "created_at": "2025-10-07T07:08:40.778659",
+    "last_updated": "2025-10-18T06:37:58.926984"
   },
   "66": {
     "payslip_id": "66",
-    "employee_id": "18",
+    "employee_id": "19",
     "cycle_id": "5",
-    "net_pay_value": 8830.64,
+    "net_pay_value": 4275.68,
     "status": "released",
-    "created_at": "2025-10-21T10:59:08.283571",
-    "last_updated": "2025-10-31T16:15:52.220172"
+    "created_at": "2025-10-23T09:45:28.970457",
+    "last_updated": "2025-11-01T07:34:39.359554"
   },
   "67": {
     "payslip_id": "67",
-    "employee_id": "18",
+    "employee_id": "19",
     "cycle_id": "6",
-    "net_pay_value": 8613.58,
+    "net_pay_value": 3764.22,
     "status": "draft",
-    "created_at": "2025-11-03T17:56:35.276864",
-    "last_updated": "2025-11-14T12:57:39.309220"
+    "created_at": "2025-11-10T18:12:34.755781",
+    "last_updated": "2025-11-15T06:08:12.438527"
   },
   "68": {
     "payslip_id": "68",
-    "employee_id": "19",
+    "employee_id": "20",
     "cycle_id": "1",
-    "net_pay_value": 4068.47,
-    "status": "released",
-    "created_at": "2025-08-27T17:17:11.268422",
-    "last_updated": "2025-09-05T14:42:55.815987"
+    "net_pay_value": 4503.18,
+    "status": "updated",
+    "created_at": "2025-09-02T17:16:57.919680",
+    "last_updated": "2025-09-05T11:28:40.752170"
   },
   "69": {
     "payslip_id": "69",
-    "employee_id": "19",
+    "employee_id": "20",
     "cycle_id": "2",
-    "net_pay_value": 4815.2,
+    "net_pay_value": 4309.74,
     "status": "released",
-    "created_at": "2025-09-16T07:46:47.721541",
-    "last_updated": "2025-09-18T16:16:55.656649"
+    "created_at": "2025-09-14T07:30:26.549205",
+    "last_updated": "2025-09-20T08:38:17.730549"
   },
   "70": {
     "payslip_id": "70",
-    "employee_id": "19",
+    "employee_id": "20",
     "cycle_id": "3",
-    "net_pay_value": 3569.64,
+    "net_pay_value": 5039.82,
     "status": "released",
-    "created_at": "2025-09-29T09:52:28.231356",
-    "last_updated": "2025-10-02T10:13:37.660393"
+    "created_at": "2025-09-26T06:36:03.832978",
+    "last_updated": "2025-10-04T17:52:25.519072"
   },
   "71": {
     "payslip_id": "71",
-    "employee_id": "19",
+    "employee_id": "20",
     "cycle_id": "4",
-    "net_pay_value": 4920.07,
-    "status": "updated",
-    "created_at": "2025-10-17T12:09:28.242979",
-    "last_updated": "2025-10-18T11:09:57.502275"
+    "net_pay_value": 5066.36,
+    "status": "released",
+    "created_at": "2025-10-19T14:04:10.459008",
+    "last_updated": "2025-10-19T14:49:24.420320"
   },
   "72": {
     "payslip_id": "72",
-    "employee_id": "19",
+    "employee_id": "20",
     "cycle_id": "5",
-    "net_pay_value": 3681.84,
+    "net_pay_value": 4464.85,
     "status": "released",
-    "created_at": "2025-10-21T13:11:52.904241",
-    "last_updated": "2025-10-31T09:36:31.989179"
+    "created_at": "2025-10-23T08:00:10.599678",
+    "last_updated": "2025-11-01T15:44:00.921860"
   },
   "73": {
     "payslip_id": "73",
-    "employee_id": "19",
+    "employee_id": "20",
     "cycle_id": "6",
-    "net_pay_value": 3579.24,
+    "net_pay_value": 4852.95,
     "status": "draft",
-    "created_at": "2025-11-12T10:01:19.170832",
-    "last_updated": "2025-11-14T12:43:38.196972"
+    "created_at": "2025-11-11T13:32:45.755582",
+    "last_updated": "2025-11-14T10:54:14.310759"
   },
   "74": {
     "payslip_id": "74",
-    "employee_id": "20",
+    "employee_id": "21",
     "cycle_id": "1",
-    "net_pay_value": 4660.66,
-    "status": "released",
-    "created_at": "2025-08-25T08:04:27.257167",
-    "last_updated": "2025-09-04T16:25:06.759490"
+    "net_pay_value": 3935.46,
+    "status": "updated",
+    "created_at": "2025-09-05T10:35:07.179420",
+    "last_updated": "2025-09-06T06:34:15.306019"
   },
   "75": {
     "payslip_id": "75",
-    "employee_id": "20",
+    "employee_id": "21",
     "cycle_id": "2",
-    "net_pay_value": 4499.18,
+    "net_pay_value": 3954.39,
     "status": "released",
-    "created_at": "2025-09-18T18:51:00.632599",
-    "last_updated": "2025-09-19T12:24:01.115380"
+    "created_at": "2025-09-10T10:59:08.283571",
+    "last_updated": "2025-09-20T16:15:52.220172"
   },
   "76": {
     "payslip_id": "76",
-    "employee_id": "20",
+    "employee_id": "21",
     "cycle_id": "3",
-    "net_pay_value": 4091.77,
+    "net_pay_value": 4559.08,
     "status": "released",
-    "created_at": "2025-10-03T16:59:02.138599",
-    "last_updated": "2025-10-04T18:05:17.149564"
+    "created_at": "2025-09-22T16:22:40.634555",
+    "last_updated": "2025-10-03T11:05:45.926926"
   },
   "77": {
     "payslip_id": "77",
-    "employee_id": "20",
+    "employee_id": "21",
     "cycle_id": "4",
-    "net_pay_value": 4651.53,
-    "status": "released",
-    "created_at": "2025-10-14T06:50:00.830116",
-    "last_updated": "2025-10-17T14:47:52.354827"
+    "net_pay_value": 4071.97,
+    "status": "updated",
+    "created_at": "2025-10-17T08:26:57.641185",
+    "last_updated": "2025-10-18T11:03:40.855556"
   },
   "78": {
     "payslip_id": "78",
-    "employee_id": "20",
+    "employee_id": "21",
     "cycle_id": "5",
-    "net_pay_value": 4353.11,
+    "net_pay_value": 4147.6,
     "status": "released",
-    "created_at": "2025-10-20T09:08:30.796573",
-    "last_updated": "2025-10-30T08:19:21.502171"
+    "created_at": "2025-10-25T09:46:17.185320",
+    "last_updated": "2025-10-31T06:34:42.910145"
   },
   "79": {
     "payslip_id": "79",
     "employee_id": "21",
-    "cycle_id": "1",
-    "net_pay_value": 3666.49,
-    "status": "released",
-    "created_at": "2025-08-24T14:44:17.657966",
-    "last_updated": "2025-09-05T06:52:02.107809"
+    "cycle_id": "6",
+    "net_pay_value": 4192.7,
+    "status": "draft",
+    "created_at": "2025-11-15T15:06:46.781996",
+    "last_updated": "2025-11-16T16:16:55.656649"
   },
   "80": {
     "payslip_id": "80",
-    "employee_id": "21",
-    "cycle_id": "2",
-    "net_pay_value": 4710.53,
+    "employee_id": "22",
+    "cycle_id": "1",
+    "net_pay_value": 2697.04,
     "status": "released",
-    "created_at": "2025-09-08T14:56:53.435457",
-    "last_updated": "2025-09-19T06:58:14.025166"
+    "created_at": "2025-09-04T15:35:13.856526",
+    "last_updated": "2025-09-05T09:20:17.213824"
   },
   "81": {
     "payslip_id": "81",
-    "employee_id": "21",
-    "cycle_id": "3",
-    "net_pay_value": 4147.05,
-    "status": "released",
-    "created_at": "2025-09-27T08:22:41.300780",
-    "last_updated": "2025-10-03T16:24:43.927175"
+    "employee_id": "22",
+    "cycle_id": "2",
+    "net_pay_value": 2841.58,
+    "status": "updated",
+    "created_at": "2025-09-20T18:25:09.467723",
+    "last_updated": "2025-09-21T17:46:27.386547"
   },
   "82": {
     "payslip_id": "82",
-    "employee_id": "21",
-    "cycle_id": "4",
-    "net_pay_value": 4394.27,
+    "employee_id": "22",
+    "cycle_id": "3",
+    "net_pay_value": 2790.66,
     "status": "released",
-    "created_at": "2025-10-06T13:10:07.235428",
-    "last_updated": "2025-10-17T10:22:04.645604"
+    "created_at": "2025-09-29T07:31:11.481705",
+    "last_updated": "2025-10-04T08:12:36.514345"
   },
   "83": {
     "payslip_id": "83",
-    "employee_id": "21",
-    "cycle_id": "5",
-    "net_pay_value": 4205.51,
+    "employee_id": "22",
+    "cycle_id": "4",
+    "net_pay_value": 2767.43,
     "status": "released",
-    "created_at": "2025-10-24T07:57:02.633870",
-    "last_updated": "2025-10-31T08:27:33.351109"
+    "created_at": "2025-10-08T16:18:01.325226",
+    "last_updated": "2025-10-18T08:52:25.720756"
   },
   "84": {
     "payslip_id": "84",
-    "employee_id": "21",
-    "cycle_id": "6",
-    "net_pay_value": 4917.94,
-    "status": "draft",
-    "created_at": "2025-11-12T12:09:57.699686",
-    "last_updated": "2025-11-13T15:52:18.365308"
+    "employee_id": "22",
+    "cycle_id": "5",
+    "net_pay_value": 2763.33,
+    "status": "released",
+    "created_at": "2025-10-21T08:04:27.257167",
+    "last_updated": "2025-10-31T16:25:06.759490"
   },
   "85": {
     "payslip_id": "85",
-    "employee_id": "22",
+    "employee_id": "23",
     "cycle_id": "1",
-    "net_pay_value": 3033.95,
+    "net_pay_value": 9995.72,
     "status": "released",
-    "created_at": "2025-08-25T10:58:31.693875",
-    "last_updated": "2025-09-04T10:51:58.745859"
+    "created_at": "2025-09-05T18:51:00.632599",
+    "last_updated": "2025-09-06T12:24:01.115380"
   },
   "86": {
     "payslip_id": "86",
-    "employee_id": "22",
+    "employee_id": "23",
     "cycle_id": "2",
-    "net_pay_value": 6866.17,
-    "status": "released",
-    "created_at": "2025-09-09T11:09:24.468394",
-    "last_updated": "2025-09-18T07:07:36.448217"
+    "net_pay_value": 10127.8,
+    "status": "updated",
+    "created_at": "2025-09-09T10:09:40.628765",
+    "last_updated": "2025-09-20T18:00:50.111504"
   },
   "87": {
     "payslip_id": "87",
-    "employee_id": "22",
+    "employee_id": "23",
     "cycle_id": "3",
-    "net_pay_value": 5746.71,
-    "status": "released",
-    "created_at": "2025-09-27T11:20:31.444420",
-    "last_updated": "2025-10-02T17:26:38.832046"
+    "net_pay_value": 5528.3,
+    "status": "updated",
+    "created_at": "2025-10-04T15:57:28.855076",
+    "last_updated": "2025-10-05T10:21:30.162018"
   },
   "88": {
     "payslip_id": "88",
-    "employee_id": "22",
+    "employee_id": "23",
     "cycle_id": "4",
-    "net_pay_value": 2243.16,
+    "net_pay_value": 7540.52,
     "status": "released",
-    "created_at": "2025-10-13T13:34:34.516530",
-    "last_updated": "2025-10-17T12:05:37.749649"
+    "created_at": "2025-10-06T07:34:18.107548",
+    "last_updated": "2025-10-17T08:00:58.235208"
   },
   "89": {
     "payslip_id": "89",
-    "employee_id": "22",
+    "employee_id": "23",
     "cycle_id": "5",
-    "net_pay_value": 5267.3,
-    "status": "released",
-    "created_at": "2025-10-22T11:00:13.891913",
-    "last_updated": "2025-10-31T11:35:30.140082"
+    "net_pay_value": 5503.39,
+    "status": "updated",
+    "created_at": "2025-10-30T12:43:56.749575",
+    "last_updated": "2025-11-01T13:10:07.235428"
   },
   "90": {
     "payslip_id": "90",
     "employee_id": "23",
-    "cycle_id": "1",
-    "net_pay_value": 10505.82,
-    "status": "updated",
-    "created_at": "2025-09-06T08:18:29.151141",
-    "last_updated": "2025-09-06T09:13:52.235496"
+    "cycle_id": "6",
+    "net_pay_value": 6825.05,
+    "status": "draft",
+    "created_at": "2025-11-04T06:38:09.186717",
+    "last_updated": "2025-11-14T14:21:38.190175"
   },
   "91": {
     "payslip_id": "91",
-    "employee_id": "23",
-    "cycle_id": "2",
-    "net_pay_value": 2379.21,
+    "employee_id": "26",
+    "cycle_id": "1",
+    "net_pay_value": 3601.0,
     "status": "released",
-    "created_at": "2025-09-18T17:09:24.768691",
-    "last_updated": "2025-09-19T17:27:23.056710"
+    "created_at": "2025-09-07T10:22:56.108970",
+    "last_updated": "2025-09-07T13:42:23.978197"
   },
   "92": {
     "payslip_id": "92",
-    "employee_id": "23",
-    "cycle_id": "3",
-    "net_pay_value": 10444.49,
+    "employee_id": "26",
+    "cycle_id": "2",
+    "net_pay_value": 3352.28,
     "status": "updated",
-    "created_at": "2025-09-22T13:53:38.912761",
-    "last_updated": "2025-10-03T06:09:23.148140"
+    "created_at": "2025-09-19T18:04:50.002284",
+    "last_updated": "2025-09-20T18:41:09.335812"
   },
   "93": {
     "payslip_id": "93",
-    "employee_id": "23",
-    "cycle_id": "4",
-    "net_pay_value": 2521.02,
+    "employee_id": "26",
+    "cycle_id": "3",
+    "net_pay_value": 3550.03,
     "status": "released",
-    "created_at": "2025-10-14T12:09:48.191285",
-    "last_updated": "2025-10-16T17:08:47.553071"
+    "created_at": "2025-09-29T17:50:50.501672",
+    "last_updated": "2025-10-04T07:36:27.762008"
   },
   "94": {
     "payslip_id": "94",
-    "employee_id": "23",
-    "cycle_id": "5",
-    "net_pay_value": 2656.13,
-    "status": "updated",
-    "created_at": "2025-10-25T17:21:28.819354",
-    "last_updated": "2025-10-31T10:07:09.062915"
+    "employee_id": "26",
+    "cycle_id": "4",
+    "net_pay_value": 3560.81,
+    "status": "released",
+    "created_at": "2025-10-07T11:08:11.804819",
+    "last_updated": "2025-10-17T11:20:31.444420"
   },
   "95": {
     "payslip_id": "95",
-    "employee_id": "23",
-    "cycle_id": "6",
-    "net_pay_value": 2608.54,
-    "status": "draft",
-    "created_at": "2025-11-14T08:32:10.011395",
-    "last_updated": "2025-11-15T12:43:56.476364"
+    "employee_id": "26",
+    "cycle_id": "5",
+    "net_pay_value": 3215.22,
+    "status": "released",
+    "created_at": "2025-10-26T15:50:40.349663",
+    "last_updated": "2025-11-01T18:41:58.257853"
   },
   "96": {
     "payslip_id": "96",
     "employee_id": "26",
-    "cycle_id": "1",
-    "net_pay_value": 3420.8,
-    "status": "released",
-    "created_at": "2025-09-06T10:58:36.526251",
-    "last_updated": "2025-09-06T17:14:27.976696"
+    "cycle_id": "6",
+    "net_pay_value": 3027.46,
+    "status": "draft",
+    "created_at": "2025-11-11T13:34:34.516530",
+    "last_updated": "2025-11-15T12:05:37.749649"
   },
   "97": {
     "payslip_id": "97",
-    "employee_id": "26",
-    "cycle_id": "2",
-    "net_pay_value": 3016.41,
-    "status": "released",
-    "created_at": "2025-09-08T14:24:08.779233",
-    "last_updated": "2025-09-19T12:39:03.229540"
+    "employee_id": "27",
+    "cycle_id": "1",
+    "net_pay_value": 6676.88,
+    "status": "updated",
+    "created_at": "2025-08-31T14:36:49.727186",
+    "last_updated": "2025-09-06T17:05:15.379279"
   },
   "98": {
     "payslip_id": "98",
-    "employee_id": "26",
-    "cycle_id": "3",
-    "net_pay_value": 3493.77,
+    "employee_id": "27",
+    "cycle_id": "2",
+    "net_pay_value": 3339.16,
     "status": "released",
-    "created_at": "2025-10-04T17:35:38.882600",
-    "last_updated": "2025-10-04T17:29:30.328403"
+    "created_at": "2025-09-16T13:08:58.115507",
+    "last_updated": "2025-09-20T11:23:54.890586"
   },
   "99": {
     "payslip_id": "99",
-    "employee_id": "26",
-    "cycle_id": "4",
-    "net_pay_value": 3668.68,
-    "status": "updated",
-    "created_at": "2025-10-11T12:10:03.842362",
-    "last_updated": "2025-10-16T16:27:12.283031"
+    "employee_id": "27",
+    "cycle_id": "3",
+    "net_pay_value": 5811.86,
+    "status": "released",
+    "created_at": "2025-09-24T14:59:58.441531",
+    "last_updated": "2025-10-04T09:52:14.058579"
   },
   "100": {
     "payslip_id": "100",
-    "employee_id": "26",
-    "cycle_id": "5",
-    "net_pay_value": 3559.54,
+    "employee_id": "27",
+    "cycle_id": "4",
+    "net_pay_value": 5875.87,
     "status": "released",
-    "created_at": "2025-10-20T11:38:49.887734",
-    "last_updated": "2025-10-30T06:15:18.170666"
+    "created_at": "2025-10-08T12:46:01.729937",
+    "last_updated": "2025-10-17T11:03:44.111159"
   },
   "101": {
     "payslip_id": "101",
     "employee_id": "27",
-    "cycle_id": "1",
-    "net_pay_value": 3610.08,
-    "status": "released",
-    "created_at": "2025-08-25T09:38:00.793270",
-    "last_updated": "2025-09-04T09:35:12.669399"
+    "cycle_id": "5",
+    "net_pay_value": 3760.11,
+    "status": "updated",
+    "created_at": "2025-11-02T08:01:09.382986",
+    "last_updated": "2025-11-02T07:15:04.013083"
   },
   "102": {
     "payslip_id": "102",
     "employee_id": "27",
-    "cycle_id": "2",
-    "net_pay_value": 3815.91,
-    "status": "updated",
-    "created_at": "2025-09-08T15:36:02.591123",
-    "last_updated": "2025-09-18T06:03:20.097738"
+    "cycle_id": "6",
+    "net_pay_value": 3631.4,
+    "status": "draft",
+    "created_at": "2025-11-05T13:47:08.784447",
+    "last_updated": "2025-11-14T13:26:46.353723"
   },
   "103": {
     "payslip_id": "103",
-    "employee_id": "27",
-    "cycle_id": "3",
-    "net_pay_value": 3991.75,
-    "status": "updated",
-    "created_at": "2025-09-26T18:18:25.524514",
-    "last_updated": "2025-10-03T11:48:25.760939"
+    "employee_id": "28",
+    "cycle_id": "1",
+    "net_pay_value": 4388.49,
+    "status": "released",
+    "created_at": "2025-08-25T10:07:09.062915",
+    "last_updated": "2025-09-06T15:48:11.527743"
   },
   "104": {
     "payslip_id": "104",
-    "employee_id": "27",
-    "cycle_id": "4",
-    "net_pay_value": 6458.79,
+    "employee_id": "28",
+    "cycle_id": "2",
+    "net_pay_value": 4656.69,
     "status": "released",
-    "created_at": "2025-10-15T07:21:26.940060",
-    "last_updated": "2025-10-17T14:51:49.157482"
+    "created_at": "2025-09-14T16:56:29.581074",
+    "last_updated": "2025-09-19T15:32:19.743810"
   },
   "105": {
     "payslip_id": "105",
-    "employee_id": "27",
-    "cycle_id": "5",
-    "net_pay_value": 6678.0,
+    "employee_id": "28",
+    "cycle_id": "3",
+    "net_pay_value": 5012.33,
     "status": "released",
-    "created_at": "2025-10-26T15:55:54.039225",
-    "last_updated": "2025-10-30T08:09:43.485602"
+    "created_at": "2025-09-26T07:33:24.997272",
+    "last_updated": "2025-10-04T17:13:25.649114"
   },
   "106": {
     "payslip_id": "106",
     "employee_id": "28",
-    "cycle_id": "1",
-    "net_pay_value": 4260.36,
+    "cycle_id": "4",
+    "net_pay_value": 4601.14,
     "status": "released",
-    "created_at": "2025-09-04T09:56:13.846699",
-    "last_updated": "2025-09-05T18:45:10.525986"
+    "created_at": "2025-10-19T17:35:38.882600",
+    "last_updated": "2025-10-19T17:29:30.328403"
   },
   "107": {
     "payslip_id": "107",
     "employee_id": "28",
-    "cycle_id": "2",
-    "net_pay_value": 9302.48,
+    "cycle_id": "5",
+    "net_pay_value": 5051.57,
     "status": "released",
-    "created_at": "2025-09-19T11:28:50.137570",
-    "last_updated": "2025-09-20T10:23:39.897531"
+    "created_at": "2025-10-26T08:03:51.389523",
+    "last_updated": "2025-10-31T09:17:06.109471"
   },
   "108": {
     "payslip_id": "108",
-    "employee_id": "28",
-    "cycle_id": "3",
-    "net_pay_value": 10089.1,
+    "employee_id": "32",
+    "cycle_id": "1",
+    "net_pay_value": 2511.14,
     "status": "released",
-    "created_at": "2025-10-01T12:15:13.640037",
-    "last_updated": "2025-10-03T08:36:40.521690"
+    "created_at": "2025-09-07T11:01:15.295915",
+    "last_updated": "2025-09-07T14:06:04.222203"
   },
   "109": {
     "payslip_id": "109",
-    "employee_id": "28",
-    "cycle_id": "4",
-    "net_pay_value": 5046.42,
-    "status": "updated",
-    "created_at": "2025-10-09T14:55:51.819405",
-    "last_updated": "2025-10-17T13:06:29.328957"
+    "employee_id": "32",
+    "cycle_id": "2",
+    "net_pay_value": 2714.3,
+    "status": "released",
+    "created_at": "2025-09-12T09:35:12.669399",
+    "last_updated": "2025-09-20T09:17:05.597817"
   },
   "110": {
     "payslip_id": "110",
-    "employee_id": "28",
-    "cycle_id": "5",
-    "net_pay_value": 4091.93,
+    "employee_id": "32",
+    "cycle_id": "3",
+    "net_pay_value": 2479.3,
     "status": "released",
-    "created_at": "2025-10-28T11:22:05.074589",
-    "last_updated": "2025-10-31T17:49:29.270473"
+    "created_at": "2025-10-04T13:02:03.329861",
+    "last_updated": "2025-10-05T10:00:22.788193"
   },
   "111": {
     "payslip_id": "111",
-    "employee_id": "28",
-    "cycle_id": "6",
-    "net_pay_value": 4168.44,
-    "status": "draft",
-    "created_at": "2025-11-09T16:59:08.985482",
-    "last_updated": "2025-11-14T15:31:02.381128"
+    "employee_id": "32",
+    "cycle_id": "4",
+    "net_pay_value": 2921.15,
+    "status": "released",
+    "created_at": "2025-10-09T11:48:25.760939",
+    "last_updated": "2025-10-17T08:44:43.102110"
   },
   "112": {
     "payslip_id": "112",
     "employee_id": "32",
-    "cycle_id": "1",
-    "net_pay_value": 2693.68,
+    "cycle_id": "5",
+    "net_pay_value": 2951.26,
     "status": "released",
-    "created_at": "2025-09-06T15:58:43.135249",
-    "last_updated": "2025-09-06T11:32:54.654974"
+    "created_at": "2025-10-28T07:32:51.812709",
+    "last_updated": "2025-11-01T06:37:50.400673"
   },
   "113": {
     "payslip_id": "113",
     "employee_id": "32",
-    "cycle_id": "2",
-    "net_pay_value": 2423.33,
-    "status": "updated",
-    "created_at": "2025-09-12T07:43:26.530519",
-    "last_updated": "2025-09-18T10:56:56.715711"
+    "cycle_id": "6",
+    "net_pay_value": 3021.14,
+    "status": "draft",
+    "created_at": "2025-11-03T10:10:09.715520",
+    "last_updated": "2025-11-14T07:56:40.097822"
   },
   "114": {
     "payslip_id": "114",
-    "employee_id": "32",
-    "cycle_id": "3",
-    "net_pay_value": 2527.41,
+    "employee_id": "33",
+    "cycle_id": "1",
+    "net_pay_value": 3116.81,
     "status": "released",
-    "created_at": "2025-10-01T06:47:50.256709",
-    "last_updated": "2025-10-03T08:54:06.304779"
+    "created_at": "2025-08-28T09:51:43.685999",
+    "last_updated": "2025-09-06T18:45:10.525986"
   },
   "115": {
     "payslip_id": "115",
-    "employee_id": "32",
-    "cycle_id": "4",
-    "net_pay_value": 2959.77,
+    "employee_id": "33",
+    "cycle_id": "2",
+    "net_pay_value": 3180.04,
     "status": "released",
-    "created_at": "2025-10-14T12:54:04.233886",
-    "last_updated": "2025-10-16T13:42:05.365887"
+    "created_at": "2025-09-18T14:59:49.357999",
+    "last_updated": "2025-09-19T18:08:21.304969"
   },
   "116": {
     "payslip_id": "116",
-    "employee_id": "32",
-    "cycle_id": "5",
-    "net_pay_value": 2776.81,
+    "employee_id": "33",
+    "cycle_id": "3",
+    "net_pay_value": 6345.8,
     "status": "released",
-    "created_at": "2025-10-29T14:57:52.487433",
-    "last_updated": "2025-10-31T07:11:46.113611"
+    "created_at": "2025-09-28T06:57:45.811781",
+    "last_updated": "2025-10-03T09:13:39.636356"
   },
   "117": {
     "payslip_id": "117",
     "employee_id": "33",
-    "cycle_id": "1",
-    "net_pay_value": 4728.77,
+    "cycle_id": "4",
+    "net_pay_value": 3089.77,
     "status": "released",
-    "created_at": "2025-08-30T18:27:12.421024",
-    "last_updated": "2025-09-04T07:20:21.633727"
+    "created_at": "2025-10-16T13:06:51.015667",
+    "last_updated": "2025-10-18T18:55:19.573713"
   },
   "118": {
     "payslip_id": "118",
     "employee_id": "33",
-    "cycle_id": "2",
-    "net_pay_value": 4614.29,
+    "cycle_id": "5",
+    "net_pay_value": 3298.66,
     "status": "released",
-    "created_at": "2025-09-14T08:40:13.335740",
-    "last_updated": "2025-09-19T15:49:24.065431"
+    "created_at": "2025-10-21T13:06:29.328957",
+    "last_updated": "2025-11-01T10:10:04.293724"
   },
   "119": {
     "payslip_id": "119",
     "employee_id": "33",
-    "cycle_id": "3",
-    "net_pay_value": 3535.9,
-    "status": "released",
-    "created_at": "2025-10-03T16:27:17.264315",
-    "last_updated": "2025-10-04T07:09:04.287210"
+    "cycle_id": "6",
+    "net_pay_value": 3357.97,
+    "status": "draft",
+    "created_at": "2025-11-04T08:45:49.483122",
+    "last_updated": "2025-11-14T13:16:48.919242"
   },
   "120": {
     "payslip_id": "120",
-    "employee_id": "33",
-    "cycle_id": "4",
-    "net_pay_value": 5379.58,
+    "employee_id": "36",
+    "cycle_id": "1",
+    "net_pay_value": 5010.68,
     "status": "released",
-    "created_at": "2025-10-09T08:53:03.096931",
-    "last_updated": "2025-10-16T11:48:19.172525"
+    "created_at": "2025-08-27T07:36:31.041515",
+    "last_updated": "2025-09-05T10:25:26.898630"
   },
   "121": {
     "payslip_id": "121",
-    "employee_id": "33",
-    "cycle_id": "5",
-    "net_pay_value": 13103.06,
+    "employee_id": "36",
+    "cycle_id": "2",
+    "net_pay_value": 6760.69,
     "status": "released",
-    "created_at": "2025-10-25T11:58:44.598020",
-    "last_updated": "2025-10-30T06:35:50.937195"
+    "created_at": "2025-09-13T11:05:43.433265",
+    "last_updated": "2025-09-19T10:56:56.715711"
   },
   "122": {
     "payslip_id": "122",
-    "employee_id": "33",
-    "cycle_id": "6",
-    "net_pay_value": 3892.19,
-    "status": "draft",
-    "created_at": "2025-11-13T17:52:47.768738",
-    "last_updated": "2025-11-14T06:09:57.480938"
+    "employee_id": "36",
+    "cycle_id": "3",
+    "net_pay_value": 7882.2,
+    "status": "released",
+    "created_at": "2025-09-30T06:09:54.110412",
+    "last_updated": "2025-10-03T12:10:36.418675"
   },
   "123": {
     "payslip_id": "123",
     "employee_id": "36",
-    "cycle_id": "1",
-    "net_pay_value": 13174.25,
+    "cycle_id": "4",
+    "net_pay_value": 5514.16,
     "status": "released",
-    "created_at": "2025-08-28T14:46:00.472445",
-    "last_updated": "2025-09-05T16:28:40.606472"
+    "created_at": "2025-10-13T16:34:57.858038",
+    "last_updated": "2025-10-17T07:05:11.767324"
   },
   "124": {
     "payslip_id": "124",
     "employee_id": "36",
-    "cycle_id": "2",
-    "net_pay_value": 5294.61,
+    "cycle_id": "5",
+    "net_pay_value": 9770.59,
     "status": "released",
-    "created_at": "2025-09-09T15:24:13.364994",
-    "last_updated": "2025-09-19T09:43:36.015069"
+    "created_at": "2025-10-21T11:21:38.509917",
+    "last_updated": "2025-11-01T17:47:30.119879"
   },
   "125": {
     "payslip_id": "125",
-    "employee_id": "36",
-    "cycle_id": "3",
-    "net_pay_value": 5180.78,
+    "employee_id": "37",
+    "cycle_id": "1",
+    "net_pay_value": 2270.89,
     "status": "released",
-    "created_at": "2025-09-22T17:31:41.478148",
-    "last_updated": "2025-10-02T12:22:22.868415"
+    "created_at": "2025-08-30T15:02:38.811813",
+    "last_updated": "2025-09-05T06:59:51.379052"
   },
   "126": {
     "payslip_id": "126",
-    "employee_id": "36",
-    "cycle_id": "4",
-    "net_pay_value": 4182.69,
+    "employee_id": "37",
+    "cycle_id": "2",
+    "net_pay_value": 2314.0,
     "status": "released",
-    "created_at": "2025-10-11T11:11:35.623789",
-    "last_updated": "2025-10-17T14:27:24.298873"
+    "created_at": "2025-09-15T09:03:13.910185",
+    "last_updated": "2025-09-20T18:43:27.282956"
   },
   "127": {
     "payslip_id": "127",
-    "employee_id": "36",
-    "cycle_id": "5",
-    "net_pay_value": 9505.83,
+    "employee_id": "37",
+    "cycle_id": "3",
+    "net_pay_value": 2324.78,
     "status": "released",
-    "created_at": "2025-11-01T07:05:51.877904",
-    "last_updated": "2025-11-01T07:41:01.646195"
+    "created_at": "2025-09-24T07:09:04.287210",
+    "last_updated": "2025-10-03T07:19:55.746802"
   },
   "128": {
     "payslip_id": "128",
-    "employee_id": "36",
-    "cycle_id": "6",
-    "net_pay_value": 8108.69,
-    "status": "draft",
-    "created_at": "2025-11-12T13:32:37.845016",
-    "last_updated": "2025-11-14T16:18:54.441073"
+    "employee_id": "37",
+    "cycle_id": "4",
+    "net_pay_value": 2447.24,
+    "status": "released",
+    "created_at": "2025-10-12T14:13:42.936455",
+    "last_updated": "2025-10-17T08:53:03.096931"
   },
   "129": {
     "payslip_id": "129",
     "employee_id": "37",
-    "cycle_id": "1",
-    "net_pay_value": 2273.21,
-    "status": "updated",
-    "created_at": "2025-09-06T13:07:22.832308",
-    "last_updated": "2025-09-06T12:58:52.676184"
+    "cycle_id": "5",
+    "net_pay_value": 2545.14,
+    "status": "released",
+    "created_at": "2025-10-26T11:48:19.172525",
+    "last_updated": "2025-11-01T11:26:30.498597"
   },
   "130": {
     "payslip_id": "130",
     "employee_id": "37",
-    "cycle_id": "2",
-    "net_pay_value": 2455.53,
-    "status": "released",
-    "created_at": "2025-09-12T18:14:32.297380",
-    "last_updated": "2025-09-18T16:16:19.879214"
+    "cycle_id": "6",
+    "net_pay_value": 2746.72,
+    "status": "draft",
+    "created_at": "2025-11-15T08:44:27.371921",
+    "last_updated": "2025-11-16T06:35:50.937195"
   },
   "131": {
     "payslip_id": "131",
-    "employee_id": "37",
-    "cycle_id": "3",
-    "net_pay_value": 2974.22,
-    "status": "released",
-    "created_at": "2025-09-21T12:02:00.027521",
-    "last_updated": "2025-10-03T18:23:53.856379"
+    "employee_id": "38",
+    "cycle_id": "1",
+    "net_pay_value": 3397.96,
+    "status": "updated",
+    "created_at": "2025-09-03T09:04:46.700409",
+    "last_updated": "2025-09-06T11:42:52.984580"
   },
   "132": {
     "payslip_id": "132",
-    "employee_id": "37",
-    "cycle_id": "4",
-    "net_pay_value": 2785.75,
+    "employee_id": "38",
+    "cycle_id": "2",
+    "net_pay_value": 5900.59,
     "status": "released",
-    "created_at": "2025-10-07T15:27:15.582735",
-    "last_updated": "2025-10-16T09:39:41.412423"
+    "created_at": "2025-09-15T08:31:55.331777",
+    "last_updated": "2025-09-20T18:43:26.275568"
   },
   "133": {
     "payslip_id": "133",
-    "employee_id": "37",
-    "cycle_id": "5",
-    "net_pay_value": 3240.03,
-    "status": "updated",
-    "created_at": "2025-10-21T16:24:46.182155",
-    "last_updated": "2025-10-30T11:33:10.458648"
+    "employee_id": "38",
+    "cycle_id": "3",
+    "net_pay_value": 4260.47,
+    "status": "released",
+    "created_at": "2025-09-24T16:28:40.606472",
+    "last_updated": "2025-10-04T06:13:47.196772"
   },
   "134": {
     "payslip_id": "134",
-    "employee_id": "37",
-    "cycle_id": "6",
-    "net_pay_value": 6143.84,
-    "status": "draft",
-    "created_at": "2025-11-03T16:36:50.411054",
-    "last_updated": "2025-11-13T14:10:20.213660"
+    "employee_id": "38",
+    "cycle_id": "4",
+    "net_pay_value": 2932.4,
+    "status": "updated",
+    "created_at": "2025-10-11T09:12:43.604856",
+    "last_updated": "2025-10-18T11:52:23.016977"
   },
   "135": {
     "payslip_id": "135",
     "employee_id": "38",
-    "cycle_id": "1",
-    "net_pay_value": 11393.96,
+    "cycle_id": "5",
+    "net_pay_value": 4410.09,
     "status": "released",
-    "created_at": "2025-08-24T16:49:37.160483",
-    "last_updated": "2025-09-05T15:45:34.965313"
+    "created_at": "2025-10-27T16:29:26.430321",
+    "last_updated": "2025-10-31T11:53:34.446535"
   },
   "136": {
     "payslip_id": "136",
-    "employee_id": "38",
-    "cycle_id": "2",
-    "net_pay_value": 10540.45,
+    "employee_id": "39",
+    "cycle_id": "1",
+    "net_pay_value": 2399.94,
     "status": "released",
-    "created_at": "2025-09-19T11:11:15.684219",
-    "last_updated": "2025-09-20T10:12:34.881282"
+    "created_at": "2025-08-31T11:11:35.623789",
+    "last_updated": "2025-09-06T14:27:24.298873"
   },
   "137": {
     "payslip_id": "137",
-    "employee_id": "38",
-    "cycle_id": "3",
-    "net_pay_value": 16292.92,
+    "employee_id": "39",
+    "cycle_id": "2",
+    "net_pay_value": 6552.47,
     "status": "released",
-    "created_at": "2025-09-23T16:01:40.607497",
-    "last_updated": "2025-10-03T07:29:59.624840"
+    "created_at": "2025-09-12T17:39:59.949886",
+    "last_updated": "2025-09-20T07:51:53.108854"
   },
   "138": {
     "payslip_id": "138",
-    "employee_id": "38",
-    "cycle_id": "4",
-    "net_pay_value": 10145.64,
+    "employee_id": "39",
+    "cycle_id": "3",
+    "net_pay_value": 2390.29,
     "status": "released",
-    "created_at": "2025-10-18T09:25:06.514889",
-    "last_updated": "2025-10-18T12:04:31.656075"
+    "created_at": "2025-09-23T13:47:48.654128",
+    "last_updated": "2025-10-04T16:28:32.609467"
   },
   "139": {
     "payslip_id": "139",
-    "employee_id": "38",
-    "cycle_id": "5",
-    "net_pay_value": 11391.52,
-    "status": "updated",
-    "created_at": "2025-10-21T10:00:57.187356",
-    "last_updated": "2025-10-31T07:21:22.507417"
+    "employee_id": "39",
+    "cycle_id": "4",
+    "net_pay_value": 2470.79,
+    "status": "released",
+    "created_at": "2025-10-09T09:49:29.578381",
+    "last_updated": "2025-10-17T07:12:54.492384"
   },
   "140": {
     "payslip_id": "140",
-    "employee_id": "38",
-    "cycle_id": "6",
-    "net_pay_value": 14780.82,
-    "status": "draft",
-    "created_at": "2025-11-11T06:34:01.543157",
-    "last_updated": "2025-11-14T09:55:23.120364"
+    "employee_id": "39",
+    "cycle_id": "5",
+    "net_pay_value": 2484.21,
+    "status": "released",
+    "created_at": "2025-10-27T12:58:52.676184",
+    "last_updated": "2025-10-31T06:23:50.234814"
   },
   "141": {
     "payslip_id": "141",
     "employee_id": "39",
-    "cycle_id": "1",
-    "net_pay_value": 2313.71,
-    "status": "released",
-    "created_at": "2025-08-26T10:17:30.208915",
-    "last_updated": "2025-09-05T11:45:35.683592"
+    "cycle_id": "6",
+    "net_pay_value": 5915.4,
+    "status": "draft",
+    "created_at": "2025-11-07T18:58:26.706007",
+    "last_updated": "2025-11-15T06:57:58.434694"
   },
   "142": {
     "payslip_id": "142",
-    "employee_id": "39",
-    "cycle_id": "2",
-    "net_pay_value": 2406.27,
+    "employee_id": "40",
+    "cycle_id": "1",
+    "net_pay_value": 19780.8,
     "status": "released",
-    "created_at": "2025-09-13T09:16:11.207488",
-    "last_updated": "2025-09-18T12:06:37.831681"
+    "created_at": "2025-09-06T11:53:52.544172",
+    "last_updated": "2025-09-07T11:10:36.450908"
   },
   "143": {
     "payslip_id": "143",
-    "employee_id": "39",
-    "cycle_id": "3",
-    "net_pay_value": 6424.13,
+    "employee_id": "40",
+    "cycle_id": "2",
+    "net_pay_value": 16833.82,
     "status": "released",
-    "created_at": "2025-09-28T12:56:28.444320",
-    "last_updated": "2025-10-02T11:39:06.636795"
+    "created_at": "2025-09-17T12:08:40.409376",
+    "last_updated": "2025-09-20T12:57:20.542404"
   },
   "144": {
     "payslip_id": "144",
-    "employee_id": "39",
-    "cycle_id": "4",
-    "net_pay_value": 2519.64,
+    "employee_id": "40",
+    "cycle_id": "3",
+    "net_pay_value": 15206.93,
     "status": "released",
-    "created_at": "2025-10-18T07:28:10.932655",
-    "last_updated": "2025-10-18T14:16:37.429715"
+    "created_at": "2025-09-28T18:40:58.272871",
+    "last_updated": "2025-10-04T11:13:05.097795"
   },
   "145": {
     "payslip_id": "145",
-    "employee_id": "39",
-    "cycle_id": "5",
-    "net_pay_value": 7802.31,
-    "status": "updated",
-    "created_at": "2025-10-24T12:01:07.188643",
-    "last_updated": "2025-10-30T12:50:11.375122"
+    "employee_id": "40",
+    "cycle_id": "4",
+    "net_pay_value": 6075.36,
+    "status": "released",
+    "created_at": "2025-10-07T15:24:01.778399",
+    "last_updated": "2025-10-18T13:40:40.815361"
   },
   "146": {
     "payslip_id": "146",
-    "employee_id": "39",
-    "cycle_id": "6",
-    "net_pay_value": 11973.07,
-    "status": "draft",
-    "created_at": "2025-11-07T07:00:20.721726",
-    "last_updated": "2025-11-14T17:21:13.487982"
+    "employee_id": "40",
+    "cycle_id": "5",
+    "net_pay_value": 6521.77,
+    "status": "released",
+    "created_at": "2025-11-01T18:50:24.807814",
+    "last_updated": "2025-11-02T16:03:17.086993"
   },
   "147": {
     "payslip_id": "147",
     "employee_id": "40",
-    "cycle_id": "1",
-    "net_pay_value": 3735.82,
-    "status": "released",
-    "created_at": "2025-08-25T12:18:38.222481",
-    "last_updated": "2025-09-05T07:35:17.751058"
+    "cycle_id": "6",
+    "net_pay_value": 14046.96,
+    "status": "draft",
+    "created_at": "2025-11-12T07:06:09.296183",
+    "last_updated": "2025-11-14T08:05:04.518253"
   },
   "148": {
     "payslip_id": "148",
-    "employee_id": "40",
-    "cycle_id": "2",
-    "net_pay_value": 3832.79,
+    "employee_id": "41",
+    "cycle_id": "1",
+    "net_pay_value": 2879.72,
     "status": "released",
-    "created_at": "2025-09-19T16:04:36.936026",
-    "last_updated": "2025-09-20T16:48:27.333219"
+    "created_at": "2025-08-31T07:31:40.080019",
+    "last_updated": "2025-09-06T16:26:24.932932"
   },
   "149": {
     "payslip_id": "149",
-    "employee_id": "40",
-    "cycle_id": "3",
-    "net_pay_value": 4345.5,
-    "status": "updated",
-    "created_at": "2025-09-24T09:03:51.517927",
-    "last_updated": "2025-10-02T06:17:26.125052"
+    "employee_id": "41",
+    "cycle_id": "2",
+    "net_pay_value": 12449.82,
+    "status": "released",
+    "created_at": "2025-09-08T08:42:36.661875",
+    "last_updated": "2025-09-20T07:21:22.507417"
   },
   "150": {
     "payslip_id": "150",
-    "employee_id": "40",
-    "cycle_id": "4",
-    "net_pay_value": 4123.28,
-    "status": "released",
-    "created_at": "2025-10-07T15:20:37.401455",
-    "last_updated": "2025-10-17T15:01:18.018702"
+    "employee_id": "41",
+    "cycle_id": "3",
+    "net_pay_value": 3812.08,
+    "status": "updated",
+    "created_at": "2025-09-26T07:12:38.030990",
+    "last_updated": "2025-10-04T14:32:48.159746"
   },
   "151": {
     "payslip_id": "151",
-    "employee_id": "40",
-    "cycle_id": "5",
-    "net_pay_value": 4743.33,
+    "employee_id": "41",
+    "cycle_id": "4",
+    "net_pay_value": 2710.32,
     "status": "released",
-    "created_at": "2025-11-01T15:00:58.484202",
-    "last_updated": "2025-11-01T08:53:25.038805"
+    "created_at": "2025-10-08T09:05:46.725196",
+    "last_updated": "2025-10-18T10:17:30.208915"
   },
   "152": {
     "payslip_id": "152",
     "employee_id": "41",
-    "cycle_id": "1",
-    "net_pay_value": 2827.28,
-    "status": "updated",
-    "created_at": "2025-09-01T06:21:41.017062",
-    "last_updated": "2025-09-05T13:06:53.841496"
+    "cycle_id": "5",
+    "net_pay_value": 2739.3,
+    "status": "released",
+    "created_at": "2025-10-31T18:31:27.537559",
+    "last_updated": "2025-11-01T09:16:11.207488"
   },
   "153": {
     "payslip_id": "153",
     "employee_id": "41",
-    "cycle_id": "2",
-    "net_pay_value": 4492.63,
-    "status": "released",
-    "created_at": "2025-09-19T11:31:39.049359",
-    "last_updated": "2025-09-20T10:44:29.517300"
+    "cycle_id": "6",
+    "net_pay_value": 2804.5,
+    "status": "draft",
+    "created_at": "2025-11-12T18:49:37.326720",
+    "last_updated": "2025-11-15T18:13:46.511528"
   },
   "154": {
     "payslip_id": "154",
-    "employee_id": "41",
-    "cycle_id": "3",
-    "net_pay_value": 12817.02,
+    "employee_id": "43",
+    "cycle_id": "1",
+    "net_pay_value": 4784.5,
     "status": "released",
-    "created_at": "2025-09-21T09:03:52.010901",
-    "last_updated": "2025-10-03T07:20:55.720999"
+    "created_at": "2025-08-29T11:39:06.636795",
+    "last_updated": "2025-09-05T12:12:36.370058"
   },
   "155": {
     "payslip_id": "155",
-    "employee_id": "41",
-    "cycle_id": "4",
-    "net_pay_value": 5023.99,
+    "employee_id": "43",
+    "cycle_id": "2",
+    "net_pay_value": 4549.17,
     "status": "released",
-    "created_at": "2025-10-18T14:00:59.721673",
-    "last_updated": "2025-10-18T10:56:50.045168"
+    "created_at": "2025-09-18T07:28:10.932655",
+    "last_updated": "2025-09-20T14:16:37.429715"
   },
   "156": {
     "payslip_id": "156",
-    "employee_id": "41",
-    "cycle_id": "5",
-    "net_pay_value": 11395.41,
+    "employee_id": "43",
+    "cycle_id": "3",
+    "net_pay_value": 4424.23,
     "status": "released",
-    "created_at": "2025-10-31T12:17:44.178612",
-    "last_updated": "2025-11-01T15:29:07.132423"
+    "created_at": "2025-10-05T16:33:22.417654",
+    "last_updated": "2025-10-05T07:11:51.338355"
   },
   "157": {
     "payslip_id": "157",
-    "employee_id": "41",
-    "cycle_id": "6",
-    "net_pay_value": 3678.69,
-    "status": "draft",
-    "created_at": "2025-11-12T13:42:07.547108",
-    "last_updated": "2025-11-14T15:30:42.513911"
+    "employee_id": "43",
+    "cycle_id": "4",
+    "net_pay_value": 4395.7,
+    "status": "updated",
+    "created_at": "2025-10-08T11:15:04.225636",
+    "last_updated": "2025-10-17T11:09:49.329727"
   },
   "158": {
     "payslip_id": "158",
     "employee_id": "43",
-    "cycle_id": "1",
-    "net_pay_value": 13008.21,
-    "status": "updated",
-    "created_at": "2025-08-28T18:18:45.086816",
-    "last_updated": "2025-09-04T14:53:55.254149"
+    "cycle_id": "5",
+    "net_pay_value": 4830.42,
+    "status": "released",
+    "created_at": "2025-10-25T17:00:45.344844",
+    "last_updated": "2025-11-01T13:36:50.337181"
   },
   "159": {
     "payslip_id": "159",
-    "employee_id": "43",
-    "cycle_id": "2",
-    "net_pay_value": 5346.73,
-    "status": "released",
-    "created_at": "2025-09-14T06:13:00.703069",
-    "last_updated": "2025-09-19T13:52:24.197045"
+    "employee_id": "44",
+    "cycle_id": "1",
+    "net_pay_value": 4592.03,
+    "status": "updated",
+    "created_at": "2025-09-02T07:24:18.631035",
+    "last_updated": "2025-09-06T14:13:06.588207"
   },
   "160": {
     "payslip_id": "160",
-    "employee_id": "43",
-    "cycle_id": "3",
-    "net_pay_value": 11036.33,
-    "status": "released",
-    "created_at": "2025-09-29T11:48:19.742929",
-    "last_updated": "2025-10-02T16:09:54.529018"
+    "employee_id": "44",
+    "cycle_id": "2",
+    "net_pay_value": 4485.4,
+    "status": "updated",
+    "created_at": "2025-09-18T12:43:48.456346",
+    "last_updated": "2025-09-19T11:12:12.052072"
   },
   "161": {
     "payslip_id": "161",
-    "employee_id": "43",
-    "cycle_id": "4",
-    "net_pay_value": 7620.16,
+    "employee_id": "44",
+    "cycle_id": "3",
+    "net_pay_value": 4226.22,
     "status": "released",
-    "created_at": "2025-10-12T15:32:12.817911",
-    "last_updated": "2025-10-16T09:04:17.443646"
+    "created_at": "2025-09-24T15:20:37.401455",
+    "last_updated": "2025-10-04T15:01:18.018702"
   },
   "162": {
     "payslip_id": "162",
-    "employee_id": "43",
-    "cycle_id": "5",
-    "net_pay_value": 10967.3,
+    "employee_id": "44",
+    "cycle_id": "4",
+    "net_pay_value": 4040.85,
     "status": "released",
-    "created_at": "2025-10-21T13:56:06.781216",
-    "last_updated": "2025-10-31T09:01:57.483232"
+    "created_at": "2025-10-19T12:02:57.559380",
+    "last_updated": "2025-10-19T11:41:01.072827"
   },
   "163": {
     "payslip_id": "163",
-    "employee_id": "45",
-    "cycle_id": "1",
-    "net_pay_value": 8853.04,
+    "employee_id": "44",
+    "cycle_id": "5",
+    "net_pay_value": 4585.46,
     "status": "released",
-    "created_at": "2025-08-28T07:59:35.088150",
-    "last_updated": "2025-09-04T12:13:09.416209"
+    "created_at": "2025-10-25T12:05:35.812241",
+    "last_updated": "2025-10-31T13:39:03.412433"
   },
   "164": {
     "payslip_id": "164",
     "employee_id": "45",
-    "cycle_id": "2",
-    "net_pay_value": 15303.31,
-    "status": "updated",
-    "created_at": "2025-09-18T12:12:18.198652",
-    "last_updated": "2025-09-19T08:38:17.555286"
+    "cycle_id": "1",
+    "net_pay_value": 7212.94,
+    "status": "released",
+    "created_at": "2025-09-07T11:39:06.030710",
+    "last_updated": "2025-09-07T06:52:00.145473"
   },
   "165": {
     "payslip_id": "165",
     "employee_id": "45",
-    "cycle_id": "3",
-    "net_pay_value": 4877.84,
-    "status": "released",
-    "created_at": "2025-09-22T06:57:02.603172",
-    "last_updated": "2025-10-02T09:04:34.105939"
+    "cycle_id": "2",
+    "net_pay_value": 4158.29,
+    "status": "updated",
+    "created_at": "2025-09-10T07:12:46.946105",
+    "last_updated": "2025-09-19T14:00:59.721673"
   },
   "166": {
     "payslip_id": "166",
     "employee_id": "45",
-    "cycle_id": "4",
-    "net_pay_value": 10750.29,
+    "cycle_id": "3",
+    "net_pay_value": 16281.68,
     "status": "released",
-    "created_at": "2025-10-18T17:17:31.215697",
-    "last_updated": "2025-10-18T18:13:22.667837"
+    "created_at": "2025-09-26T07:16:21.721338",
+    "last_updated": "2025-10-03T10:44:10.969784"
   },
   "167": {
     "payslip_id": "167",
     "employee_id": "45",
-    "cycle_id": "5",
-    "net_pay_value": 7290.84,
+    "cycle_id": "4",
+    "net_pay_value": 7839.22,
     "status": "released",
-    "created_at": "2025-10-26T17:19:54.950710",
-    "last_updated": "2025-10-31T08:20:43.072828"
+    "created_at": "2025-10-18T15:56:54.938975",
+    "last_updated": "2025-10-19T16:28:42.128317"
   },
   "168": {
     "payslip_id": "168",
     "employee_id": "45",
-    "cycle_id": "6",
-    "net_pay_value": 8146.69,
-    "status": "draft",
-    "created_at": "2025-11-02T08:16:56.080716",
-    "last_updated": "2025-11-14T16:48:54.010206"
+    "cycle_id": "5",
+    "net_pay_value": 4080.52,
+    "status": "released",
+    "created_at": "2025-10-24T11:49:46.506154",
+    "last_updated": "2025-11-01T07:16:49.310624"
   },
   "169": {
     "payslip_id": "169",
-    "employee_id": "47",
+    "employee_id": "46",
     "cycle_id": "1",
-    "net_pay_value": 11501.33,
+    "net_pay_value": 4281.75,
     "status": "released",
-    "created_at": "2025-08-25T06:52:01.594822",
-    "last_updated": "2025-09-04T09:33:32.175431"
+    "created_at": "2025-09-04T17:54:13.728723",
+    "last_updated": "2025-09-06T07:31:03.222796"
   },
   "170": {
     "payslip_id": "170",
-    "employee_id": "47",
+    "employee_id": "46",
     "cycle_id": "2",
-    "net_pay_value": 4585.0,
+    "net_pay_value": 4010.32,
     "status": "released",
-    "created_at": "2025-09-15T10:42:31.265852",
-    "last_updated": "2025-09-18T13:00:52.369755"
+    "created_at": "2025-09-21T12:12:31.109612",
+    "last_updated": "2025-09-21T09:52:37.798598"
   },
   "171": {
     "payslip_id": "171",
-    "employee_id": "47",
+    "employee_id": "46",
     "cycle_id": "3",
-    "net_pay_value": 14849.63,
+    "net_pay_value": 4467.95,
     "status": "released",
-    "created_at": "2025-09-25T16:33:46.670879",
-    "last_updated": "2025-10-03T08:26:54.230954"
+    "created_at": "2025-10-04T10:45:29.687120",
+    "last_updated": "2025-10-05T14:06:58.136378"
   },
   "172": {
     "payslip_id": "172",
-    "employee_id": "47",
+    "employee_id": "46",
     "cycle_id": "4",
-    "net_pay_value": 6823.35,
+    "net_pay_value": 5028.12,
     "status": "released",
-    "created_at": "2025-10-16T07:12:58.396129",
-    "last_updated": "2025-10-17T10:56:40.711774"
+    "created_at": "2025-10-13T15:32:12.817911",
+    "last_updated": "2025-10-17T09:04:17.443646"
   },
   "173": {
     "payslip_id": "173",
-    "employee_id": "47",
+    "employee_id": "46",
     "cycle_id": "5",
-    "net_pay_value": 3718.39,
+    "net_pay_value": 4968.9,
     "status": "released",
-    "created_at": "2025-10-24T12:37:26.991183",
-    "last_updated": "2025-10-30T10:12:02.607667"
+    "created_at": "2025-11-02T15:41:06.154444",
+    "last_updated": "2025-11-02T07:47:07.252248"
   },
   "174": {
     "payslip_id": "174",
-    "employee_id": "47",
+    "employee_id": "46",
     "cycle_id": "6",
-    "net_pay_value": 3945.67,
+    "net_pay_value": 3966.04,
     "status": "draft",
-    "created_at": "2025-11-06T07:00:31.972274",
-    "last_updated": "2025-11-14T13:43:09.548600"
+    "created_at": "2025-11-07T06:30:42.556673",
+    "last_updated": "2025-11-14T11:16:07.971954"
   },
   "175": {
     "payslip_id": "175",
-    "employee_id": "48",
+    "employee_id": "47",
     "cycle_id": "1",
-    "net_pay_value": 9224.17,
+    "net_pay_value": 4692.75,
     "status": "released",
-    "created_at": "2025-08-24T13:02:13.296765",
-    "last_updated": "2025-09-05T06:31:19.005337"
+    "created_at": "2025-08-30T12:13:09.416209",
+    "last_updated": "2025-09-05T14:21:03.462779"
   },
   "176": {
     "payslip_id": "176",
-    "employee_id": "48",
+    "employee_id": "47",
     "cycle_id": "2",
-    "net_pay_value": 3398.81,
-    "status": "updated",
-    "created_at": "2025-09-12T10:50:54.526378",
-    "last_updated": "2025-09-19T07:45:17.149573"
+    "net_pay_value": 14996.34,
+    "status": "released",
+    "created_at": "2025-09-14T08:38:17.555286",
+    "last_updated": "2025-09-19T14:27:06.714248"
   },
   "177": {
     "payslip_id": "177",
-    "employee_id": "48",
+    "employee_id": "47",
     "cycle_id": "3",
-    "net_pay_value": 9561.27,
+    "net_pay_value": 5148.62,
     "status": "released",
-    "created_at": "2025-09-24T06:30:59.371858",
-    "last_updated": "2025-10-03T18:43:40.405002"
+    "created_at": "2025-09-25T07:34:06.288840",
+    "last_updated": "2025-10-04T15:44:45.424211"
   },
   "178": {
     "payslip_id": "178",
-    "employee_id": "48",
+    "employee_id": "47",
     "cycle_id": "4",
-    "net_pay_value": 8841.01,
-    "status": "updated",
-    "created_at": "2025-10-09T15:19:11.591299",
-    "last_updated": "2025-10-16T16:56:20.843453"
+    "net_pay_value": 3789.25,
+    "status": "released",
+    "created_at": "2025-10-18T09:22:40.301982",
+    "last_updated": "2025-10-19T17:00:06.194069"
   },
   "179": {
     "payslip_id": "179",
-    "employee_id": "48",
+    "employee_id": "47",
     "cycle_id": "5",
-    "net_pay_value": 2668.99,
+    "net_pay_value": 8787.35,
     "status": "released",
-    "created_at": "2025-10-27T09:19:19.089755",
-    "last_updated": "2025-10-30T15:59:40.483555"
+    "created_at": "2025-10-25T16:04:10.196444",
+    "last_updated": "2025-10-31T13:09:00.698384"
   },
   "180": {
     "payslip_id": "180",
-    "employee_id": "50",
-    "cycle_id": "1",
-    "net_pay_value": 3025.61,
-    "status": "released",
-    "created_at": "2025-08-26T14:28:44.328477",
-    "last_updated": "2025-09-04T13:22:27.489215"
+    "employee_id": "47",
+    "cycle_id": "6",
+    "net_pay_value": 6258.8,
+    "status": "draft",
+    "created_at": "2025-11-16T06:38:22.496846",
+    "last_updated": "2025-11-16T13:55:15.495523"
   },
   "181": {
     "payslip_id": "181",
-    "employee_id": "50",
-    "cycle_id": "2",
-    "net_pay_value": 2630.6,
-    "status": "updated",
-    "created_at": "2025-09-13T13:01:58.586058",
-    "last_updated": "2025-09-19T18:26:05.792572"
+    "employee_id": "48",
+    "cycle_id": "1",
+    "net_pay_value": 3235.31,
+    "status": "released",
+    "created_at": "2025-09-02T14:10:48.153703",
+    "last_updated": "2025-09-06T07:19:51.771947"
   },
   "182": {
     "payslip_id": "182",
-    "employee_id": "50",
-    "cycle_id": "3",
-    "net_pay_value": 3232.59,
+    "employee_id": "48",
+    "cycle_id": "2",
+    "net_pay_value": 3115.22,
     "status": "released",
-    "created_at": "2025-09-25T18:15:37.537087",
-    "last_updated": "2025-10-02T08:39:34.943626"
+    "created_at": "2025-09-12T11:29:00.867958",
+    "last_updated": "2025-09-19T10:45:21.934671"
   },
   "183": {
     "payslip_id": "183",
-    "employee_id": "50",
-    "cycle_id": "4",
-    "net_pay_value": 2642.26,
+    "employee_id": "48",
+    "cycle_id": "3",
+    "net_pay_value": 3726.19,
     "status": "released",
-    "created_at": "2025-10-09T06:48:54.411733",
-    "last_updated": "2025-10-17T12:42:00.485289"
+    "created_at": "2025-09-26T16:33:46.670879",
+    "last_updated": "2025-10-04T08:26:54.230954"
   },
   "184": {
     "payslip_id": "184",
-    "employee_id": "50",
-    "cycle_id": "5",
-    "net_pay_value": 3283.97,
-    "status": "updated",
-    "created_at": "2025-11-01T14:29:53.056986",
-    "last_updated": "2025-11-01T06:17:53.681448"
+    "employee_id": "48",
+    "cycle_id": "4",
+    "net_pay_value": 2343.95,
+    "status": "released",
+    "created_at": "2025-10-12T11:13:47.093610",
+    "last_updated": "2025-10-18T12:40:06.287230"
   },
   "185": {
     "payslip_id": "185",
-    "employee_id": "54",
-    "cycle_id": "1",
-    "net_pay_value": 7046.2,
+    "employee_id": "48",
+    "cycle_id": "5",
+    "net_pay_value": 5358.7,
     "status": "released",
-    "created_at": "2025-09-02T07:52:18.592910",
-    "last_updated": "2025-09-04T17:21:55.063821"
+    "created_at": "2025-10-28T08:16:58.712052",
+    "last_updated": "2025-10-31T11:25:37.437564"
   },
   "186": {
     "payslip_id": "186",
-    "employee_id": "54",
-    "cycle_id": "2",
-    "net_pay_value": 6733.76,
+    "employee_id": "50",
+    "cycle_id": "1",
+    "net_pay_value": 6060.79,
     "status": "released",
-    "created_at": "2025-09-18T09:33:09.589351",
-    "last_updated": "2025-09-19T08:14:57.708502"
+    "created_at": "2025-09-07T15:07:27.833966",
+    "last_updated": "2025-09-07T15:50:50.363853"
   },
   "187": {
     "payslip_id": "187",
-    "employee_id": "54",
-    "cycle_id": "3",
-    "net_pay_value": 8476.72,
+    "employee_id": "50",
+    "cycle_id": "2",
+    "net_pay_value": 18986.21,
     "status": "released",
-    "created_at": "2025-09-21T18:31:39.721184",
-    "last_updated": "2025-10-03T07:04:00.160455"
+    "created_at": "2025-09-17T14:42:10.318395",
+    "last_updated": "2025-09-19T10:04:51.309043"
   },
   "188": {
     "payslip_id": "188",
-    "employee_id": "54",
-    "cycle_id": "4",
-    "net_pay_value": 2173.65,
+    "employee_id": "50",
+    "cycle_id": "3",
+    "net_pay_value": 11810.96,
     "status": "released",
-    "created_at": "2025-10-12T06:53:32.465374",
-    "last_updated": "2025-10-16T06:59:07.314492"
+    "created_at": "2025-10-02T06:03:16.144408",
+    "last_updated": "2025-10-03T10:50:54.526378"
   },
   "189": {
     "payslip_id": "189",
-    "employee_id": "54",
-    "cycle_id": "5",
-    "net_pay_value": 12970.99,
+    "employee_id": "50",
+    "cycle_id": "4",
+    "net_pay_value": 4570.97,
     "status": "released",
-    "created_at": "2025-10-27T10:52:39.714416",
-    "last_updated": "2025-10-30T16:39:07.453355"
+    "created_at": "2025-10-15T07:18:14.033697",
+    "last_updated": "2025-10-17T11:15:51.711459"
   },
   "190": {
     "payslip_id": "190",
-    "employee_id": "54",
-    "cycle_id": "6",
-    "net_pay_value": 1954.09,
-    "status": "draft",
-    "created_at": "2025-11-05T08:32:47.733613",
-    "last_updated": "2025-11-14T13:30:18.303509"
+    "employee_id": "50",
+    "cycle_id": "5",
+    "net_pay_value": 8948.72,
+    "status": "released",
+    "created_at": "2025-10-29T12:43:56.338144",
+    "last_updated": "2025-11-01T16:49:12.262165"
   },
   "191": {
     "payslip_id": "191",
-    "employee_id": "55",
+    "employee_id": "54",
     "cycle_id": "1",
-    "net_pay_value": 3715.01,
-    "status": "updated",
-    "created_at": "2025-09-03T10:25:24.731541",
-    "last_updated": "2025-09-05T13:26:52.445469"
+    "net_pay_value": 2002.08,
+    "status": "released",
+    "created_at": "2025-08-31T18:56:53.458115",
+    "last_updated": "2025-09-06T08:33:28.727851"
   },
   "192": {
     "payslip_id": "192",
-    "employee_id": "55",
+    "employee_id": "54",
     "cycle_id": "2",
-    "net_pay_value": 4300.26,
+    "net_pay_value": 4263.98,
     "status": "released",
-    "created_at": "2025-09-11T13:07:36.408346",
-    "last_updated": "2025-09-19T15:19:02.676445"
+    "created_at": "2025-09-14T13:26:26.483691",
+    "last_updated": "2025-09-20T14:01:49.441365"
   },
   "193": {
     "payslip_id": "193",
-    "employee_id": "55",
+    "employee_id": "54",
     "cycle_id": "3",
-    "net_pay_value": 3487.93,
+    "net_pay_value": 3959.71,
     "status": "released",
-    "created_at": "2025-10-01T15:28:02.952220",
-    "last_updated": "2025-10-02T08:29:56.758188"
+    "created_at": "2025-10-01T14:23:08.651050",
+    "last_updated": "2025-10-03T06:48:54.411733"
   },
   "194": {
     "payslip_id": "194",
-    "employee_id": "55",
+    "employee_id": "54",
     "cycle_id": "4",
-    "net_pay_value": 3291.15,
+    "net_pay_value": 2184.69,
     "status": "released",
-    "created_at": "2025-10-05T08:22:32.897412",
-    "last_updated": "2025-10-17T11:57:45.550560"
+    "created_at": "2025-10-14T13:53:03.088771",
+    "last_updated": "2025-10-18T10:53:41.112248"
   },
   "195": {
     "payslip_id": "195",
-    "employee_id": "55",
+    "employee_id": "54",
     "cycle_id": "5",
-    "net_pay_value": 3725.58,
-    "status": "updated",
-    "created_at": "2025-10-20T08:41:09.368959",
-    "last_updated": "2025-10-30T13:45:54.824911"
+    "net_pay_value": 8581.54,
+    "status": "released",
+    "created_at": "2025-10-25T06:07:47.613015",
+    "last_updated": "2025-11-01T17:13:33.151154"
   },
   "196": {
     "payslip_id": "196",
-    "employee_id": "55",
+    "employee_id": "54",
     "cycle_id": "6",
-    "net_pay_value": 3983.63,
+    "net_pay_value": 10798.67,
     "status": "draft",
-    "created_at": "2025-11-14T18:42:19.968335",
-    "last_updated": "2025-11-15T07:58:53.676472"
+    "created_at": "2025-11-13T08:19:40.325992",
+    "last_updated": "2025-11-15T18:31:39.721184"
   },
   "197": {
     "payslip_id": "197",
-    "employee_id": "57",
+    "employee_id": "55",
     "cycle_id": "1",
-    "net_pay_value": 4332.25,
+    "net_pay_value": 4309.46,
     "status": "released",
-    "created_at": "2025-08-31T12:30:38.690982",
-    "last_updated": "2025-09-05T15:45:59.531607"
+    "created_at": "2025-08-26T14:06:15.214217",
+    "last_updated": "2025-09-06T13:01:53.530374"
   },
   "198": {
     "payslip_id": "198",
-    "employee_id": "57",
+    "employee_id": "55",
     "cycle_id": "2",
-    "net_pay_value": 9187.35,
+    "net_pay_value": 4077.97,
     "status": "released",
-    "created_at": "2025-09-12T15:39:53.423387",
-    "last_updated": "2025-09-19T06:01:54.768477"
+    "created_at": "2025-09-08T07:19:25.507216",
+    "last_updated": "2025-09-20T09:53:54.573276"
   },
   "199": {
     "payslip_id": "199",
-    "employee_id": "57",
+    "employee_id": "55",
     "cycle_id": "3",
-    "net_pay_value": 3642.93,
-    "status": "updated",
-    "created_at": "2025-10-03T09:49:51.961825",
-    "last_updated": "2025-10-04T07:57:56.182450"
+    "net_pay_value": 3768.78,
+    "status": "released",
+    "created_at": "2025-10-01T16:28:54.690130",
+    "last_updated": "2025-10-04T12:09:40.022709"
   },
   "200": {
     "payslip_id": "200",
-    "employee_id": "57",
+    "employee_id": "55",
     "cycle_id": "4",
-    "net_pay_value": 11124.28,
+    "net_pay_value": 3838.4,
     "status": "released",
-    "created_at": "2025-10-09T07:02:54.786363",
-    "last_updated": "2025-10-17T13:48:23.635996"
+    "created_at": "2025-10-19T17:42:15.179071",
+    "last_updated": "2025-10-19T13:30:18.303509"
   },
   "201": {
     "payslip_id": "201",
-    "employee_id": "57",
+    "employee_id": "55",
     "cycle_id": "5",
-    "net_pay_value": 7836.16,
+    "net_pay_value": 3994.91,
     "status": "released",
-    "created_at": "2025-10-21T16:36:35.209436",
-    "last_updated": "2025-10-31T10:31:28.711824"
+    "created_at": "2025-10-29T13:23:42.288548",
+    "last_updated": "2025-10-31T12:44:51.112549"
   },
   "202": {
     "payslip_id": "202",
-    "employee_id": "59",
+    "employee_id": "57",
     "cycle_id": "1",
-    "net_pay_value": 4650.41,
+    "net_pay_value": 8258.12,
     "status": "released",
-    "created_at": "2025-08-27T07:37:01.659675",
-    "last_updated": "2025-09-05T09:02:51.147390"
+    "created_at": "2025-09-07T12:09:01.297189",
+    "last_updated": "2025-09-07T07:36:24.011554"
   },
   "203": {
     "payslip_id": "203",
-    "employee_id": "59",
+    "employee_id": "57",
     "cycle_id": "2",
-    "net_pay_value": 3996.77,
+    "net_pay_value": 3611.41,
     "status": "released",
-    "created_at": "2025-09-12T18:26:36.573131",
-    "last_updated": "2025-09-19T11:11:43.765436"
+    "created_at": "2025-09-15T06:58:58.371958",
+    "last_updated": "2025-09-20T13:56:46.480614"
   },
   "204": {
     "payslip_id": "204",
-    "employee_id": "59",
+    "employee_id": "57",
     "cycle_id": "3",
-    "net_pay_value": 4018.89,
+    "net_pay_value": 8559.76,
     "status": "released",
-    "created_at": "2025-10-02T16:33:31.199372",
-    "last_updated": "2025-10-03T15:52:30.525179"
+    "created_at": "2025-09-30T09:22:57.740530",
+    "last_updated": "2025-10-03T14:04:11.687781"
   },
   "205": {
     "payslip_id": "205",
-    "employee_id": "59",
+    "employee_id": "57",
     "cycle_id": "4",
-    "net_pay_value": 4048.4,
+    "net_pay_value": 3343.04,
     "status": "released",
-    "created_at": "2025-10-14T14:54:08.840534",
-    "last_updated": "2025-10-17T13:27:40.394388"
+    "created_at": "2025-10-19T18:08:17.823091",
+    "last_updated": "2025-10-19T12:04:58.880096"
   },
   "206": {
     "payslip_id": "206",
-    "employee_id": "59",
+    "employee_id": "57",
     "cycle_id": "5",
-    "net_pay_value": 4780.34,
-    "status": "updated",
-    "created_at": "2025-10-28T07:08:50.542372",
-    "last_updated": "2025-10-30T07:07:31.241773"
+    "net_pay_value": 3078.61,
+    "status": "released",
+    "created_at": "2025-10-29T17:59:32.813063",
+    "last_updated": "2025-10-31T08:44:20.617456"
   },
   "207": {
     "payslip_id": "207",
-    "employee_id": "60",
+    "employee_id": "59",
     "cycle_id": "1",
-    "net_pay_value": 6260.3,
+    "net_pay_value": 4551.97,
     "status": "released",
-    "created_at": "2025-09-01T11:01:14.861224",
-    "last_updated": "2025-09-04T10:24:45.375290"
+    "created_at": "2025-08-25T06:54:46.166911",
+    "last_updated": "2025-09-06T07:42:06.523694"
   },
   "208": {
     "payslip_id": "208",
-    "employee_id": "60",
+    "employee_id": "59",
     "cycle_id": "2",
-    "net_pay_value": 4681.48,
+    "net_pay_value": 4128.4,
     "status": "released",
-    "created_at": "2025-09-08T14:36:15.894640",
-    "last_updated": "2025-09-18T12:39:03.572461"
+    "created_at": "2025-09-15T11:48:14.809231",
+    "last_updated": "2025-09-20T07:57:56.182450"
   },
   "209": {
     "payslip_id": "209",
-    "employee_id": "60",
+    "employee_id": "59",
     "cycle_id": "3",
-    "net_pay_value": 4446.46,
+    "net_pay_value": 3429.02,
     "status": "released",
-    "created_at": "2025-09-25T16:01:02.354466",
-    "last_updated": "2025-10-02T10:12:21.931164"
+    "created_at": "2025-09-28T18:26:59.067496",
+    "last_updated": "2025-10-04T15:16:07.039235"
   },
   "210": {
     "payslip_id": "210",
-    "employee_id": "60",
+    "employee_id": "59",
     "cycle_id": "4",
-    "net_pay_value": 2863.78,
+    "net_pay_value": 4862.33,
     "status": "released",
-    "created_at": "2025-10-16T11:59:48.695558",
-    "last_updated": "2025-10-17T09:31:04.844797"
+    "created_at": "2025-10-07T13:48:23.635996",
+    "last_updated": "2025-10-18T08:20:06.732667"
   },
   "211": {
     "payslip_id": "211",
-    "employee_id": "60",
+    "employee_id": "59",
     "cycle_id": "5",
-    "net_pay_value": 6883.96,
+    "net_pay_value": 4717.93,
     "status": "released",
-    "created_at": "2025-10-31T18:02:22.074200",
-    "last_updated": "2025-11-01T15:47:39.974508"
+    "created_at": "2025-10-22T16:36:35.209436",
+    "last_updated": "2025-11-01T10:31:28.711824"
   },
   "212": {
     "payslip_id": "212",
+    "employee_id": "59",
+    "cycle_id": "6",
+    "net_pay_value": 4366.99,
+    "status": "draft",
+    "created_at": "2025-11-06T17:10:27.853370",
+    "last_updated": "2025-11-15T07:37:01.659675"
+  },
+  "213": {
+    "payslip_id": "213",
+    "employee_id": "60",
+    "cycle_id": "1",
+    "net_pay_value": 3143.15,
+    "status": "released",
+    "created_at": "2025-09-04T07:13:02.849355",
+    "last_updated": "2025-09-06T06:23:49.427847"
+  },
+  "214": {
+    "payslip_id": "214",
+    "employee_id": "60",
+    "cycle_id": "2",
+    "net_pay_value": 5246.49,
+    "status": "updated",
+    "created_at": "2025-09-19T16:33:31.199372",
+    "last_updated": "2025-09-20T15:52:30.525179"
+  },
+  "215": {
+    "payslip_id": "215",
+    "employee_id": "60",
+    "cycle_id": "3",
+    "net_pay_value": 4621.12,
+    "status": "updated",
+    "created_at": "2025-09-28T16:24:55.074310",
+    "last_updated": "2025-10-04T08:50:33.312713"
+  },
+  "216": {
+    "payslip_id": "216",
+    "employee_id": "60",
+    "cycle_id": "4",
+    "net_pay_value": 4270.77,
+    "status": "released",
+    "created_at": "2025-10-19T10:59:53.263592",
+    "last_updated": "2025-10-19T17:22:04.914822"
+  },
+  "217": {
+    "payslip_id": "217",
+    "employee_id": "60",
+    "cycle_id": "5",
+    "net_pay_value": 3208.71,
+    "status": "updated",
+    "created_at": "2025-10-29T14:19:25.648696",
+    "last_updated": "2025-11-01T14:44:57.116260"
+  },
+  "218": {
+    "payslip_id": "218",
     "employee_id": "60",
     "cycle_id": "6",
-    "net_pay_value": 2817.08,
+    "net_pay_value": 3072.72,
     "status": "draft",
-    "created_at": "2025-11-06T17:02:06.037329",
-    "last_updated": "2025-11-13T14:14:41.367271"
+    "created_at": "2025-11-09T10:12:21.931164",
+    "last_updated": "2025-11-15T08:13:35.856437"
   }
 }

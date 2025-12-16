@@ -1,6 +1,5 @@
 import json
 from typing import Any, Dict, Optional
-from datetime import datetime
 from tau_bench.envs.tool import Tool
 
 
@@ -32,7 +31,7 @@ class UpdateOffboardExit(Tool):
             )
 
         exit_case = exit_cases[str(exit_case_id)]
-        current_time = "2025-11-22T12:00:00"
+        current_time = "2025-11-16T23:59:00"
 
         # Update exit_clearance_status if provided
         if exit_clearance_status is not None:

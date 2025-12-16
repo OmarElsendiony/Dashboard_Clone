@@ -2,153 +2,121 @@
   "1": {
     "settlement_id": "1",
     "employee_id": "6",
-    "amount": 36464.25,
-    "is_cleared": false,
-    "created_at": "2025-09-09T11:22:32",
-    "last_updated": "2025-09-11T15:02:32"
+    "amount": 30250.81,
+    "is_cleared": true,
+    "created_at": "2025-10-11T11:42:41",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "2": {
     "settlement_id": "2",
-    "employee_id": "10",
-    "amount": 28501.54,
+    "employee_id": "8",
+    "amount": 33219.72,
     "is_cleared": true,
-    "created_at": "2025-11-05T09:41:24",
-    "last_updated": "2025-11-06T10:56:24"
+    "created_at": "2025-11-08T11:09:16",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "3": {
     "settlement_id": "3",
     "employee_id": "11",
-    "amount": 3830.92,
+    "amount": 3591.33,
     "is_cleared": false,
-    "created_at": "2025-09-28T11:45:43",
-    "last_updated": "2025-09-28T13:01:43"
+    "created_at": "2025-11-14T09:41:45",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "4": {
     "settlement_id": "4",
     "employee_id": "14",
-    "amount": 1470.01,
+    "amount": 1643.26,
     "is_cleared": false,
-    "created_at": "2025-11-15T10:15:38",
-    "last_updated": "2025-11-15T10:49:05"
+    "created_at": "2025-11-15T09:33:58",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "5": {
     "settlement_id": "5",
-    "employee_id": "17",
-    "amount": 35567.19,
-    "is_cleared": false,
-    "created_at": "2025-11-13T10:25:45",
-    "last_updated": "2025-11-15T10:58:45"
+    "employee_id": "24",
+    "amount": 2339.3,
+    "is_cleared": true,
+    "created_at": "2025-11-06T10:44:19",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "6": {
     "settlement_id": "6",
-    "employee_id": "24",
-    "amount": 2043.09,
-    "is_cleared": false,
-    "created_at": "2025-11-01T09:53:27",
-    "last_updated": "2025-11-02T12:25:27"
+    "employee_id": "25",
+    "amount": 3869.74,
+    "is_cleared": true,
+    "created_at": "2025-10-02T11:26:48",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "7": {
     "settlement_id": "7",
-    "employee_id": "25",
-    "amount": 3543.66,
+    "employee_id": "29",
+    "amount": 3437.93,
     "is_cleared": false,
-    "created_at": "2025-10-20T10:37:19",
-    "last_updated": "2025-10-22T14:25:19"
+    "created_at": "2025-11-15T09:17:47",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "8": {
     "settlement_id": "8",
-    "employee_id": "29",
-    "amount": 3250.26,
-    "is_cleared": true,
-    "created_at": "2025-10-20T09:06:40",
-    "last_updated": "2025-10-22T11:58:40"
+    "employee_id": "31",
+    "amount": 4103.35,
+    "is_cleared": false,
+    "created_at": "2025-11-09T09:10:52",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "9": {
     "settlement_id": "9",
-    "employee_id": "31",
-    "amount": 5296.36,
-    "is_cleared": false,
-    "created_at": "2025-07-14T09:59:47",
-    "last_updated": "2025-07-15T11:59:47"
+    "employee_id": "34",
+    "amount": 5069.84,
+    "is_cleared": true,
+    "created_at": "2025-09-20T11:26:33",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "10": {
     "settlement_id": "10",
-    "employee_id": "34",
-    "amount": 4143.06,
+    "employee_id": "35",
+    "amount": 2372.49,
     "is_cleared": true,
-    "created_at": "2025-07-24T09:06:04",
-    "last_updated": "2025-07-26T12:39:04"
+    "created_at": "2025-10-27T09:11:23",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "11": {
     "settlement_id": "11",
-    "employee_id": "35",
-    "amount": 1924.23,
-    "is_cleared": false,
-    "created_at": "2025-09-26T11:27:10",
-    "last_updated": "2025-09-26T13:38:10"
+    "employee_id": "42",
+    "amount": 4503.85,
+    "is_cleared": true,
+    "created_at": "2025-11-07T09:32:07",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "12": {
     "settlement_id": "12",
-    "employee_id": "38",
-    "amount": 40107.29,
-    "is_cleared": false,
-    "created_at": "2025-08-13T10:11:32",
-    "last_updated": "2025-08-13T13:47:32"
+    "employee_id": "49",
+    "amount": 4400.48,
+    "is_cleared": true,
+    "created_at": "2025-10-03T09:47:11",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "13": {
     "settlement_id": "13",
-    "employee_id": "41",
-    "amount": 28198.18,
-    "is_cleared": false,
-    "created_at": "2025-10-31T09:03:47",
-    "last_updated": "2025-10-31T10:19:47"
+    "employee_id": "53",
+    "amount": 2573.68,
+    "is_cleared": true,
+    "created_at": "2025-10-26T10:40:58",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "14": {
     "settlement_id": "14",
-    "employee_id": "42",
-    "amount": 3956.2,
-    "is_cleared": false,
-    "created_at": "2025-09-01T10:40:58",
-    "last_updated": "2025-09-03T11:35:58"
+    "employee_id": "58",
+    "amount": 8425.72,
+    "is_cleared": true,
+    "created_at": "2025-11-15T09:05:18",
+    "last_updated": "2025-11-16T12:00:00"
   },
   "15": {
     "settlement_id": "15",
-    "employee_id": "44",
-    "amount": 26880.93,
-    "is_cleared": true,
-    "created_at": "2025-07-29T10:05:24",
-    "last_updated": "2025-07-29T12:09:24"
-  },
-  "16": {
-    "settlement_id": "16",
-    "employee_id": "46",
-    "amount": 30950.09,
-    "is_cleared": true,
-    "created_at": "2025-10-16T09:30:31",
-    "last_updated": "2025-10-18T09:30:31"
-  },
-  "17": {
-    "settlement_id": "17",
-    "employee_id": "49",
-    "amount": 3746.0,
+    "employee_id": "60",
+    "amount": 26701.13,
     "is_cleared": false,
-    "created_at": "2025-05-07T11:37:50",
-    "last_updated": "2025-05-07T11:50:50"
-  },
-  "18": {
-    "settlement_id": "18",
-    "employee_id": "53",
-    "amount": 2336.35,
-    "is_cleared": false,
-    "created_at": "2025-09-16T10:38:33",
-    "last_updated": "2025-09-17T14:08:33"
-  },
-  "19": {
-    "settlement_id": "19",
-    "employee_id": "58",
-    "amount": 2154.65,
-    "is_cleared": false,
-    "created_at": "2025-03-20T10:21:23",
-    "last_updated": "2025-03-22T12:41:23"
+    "created_at": "2025-11-14T09:21:01",
+    "last_updated": "2025-11-16T12:00:00"
   }
 }
