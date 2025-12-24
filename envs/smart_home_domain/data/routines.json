@@ -1,0 +1,3082 @@
+{
+  "1": {
+    "routine_id": "1",
+    "home_id": "1",
+    "created_by_user_id": "1",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-01T08:00:38",
+    "updated_at": "2024-03-12T09:47:32"
+  },
+  "2": {
+    "routine_id": "2",
+    "home_id": "1",
+    "created_by_user_id": "1",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-22T16:30:12",
+    "updated_at": "2025-08-29T14:25:51"
+  },
+  "3": {
+    "routine_id": "3",
+    "home_id": "2",
+    "created_by_user_id": "1",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-27T10:54:15",
+    "updated_at": "2025-06-03T06:29:48"
+  },
+  "4": {
+    "routine_id": "4",
+    "home_id": "2",
+    "created_by_user_id": "1",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-04T23:36:39",
+    "updated_at": "2025-04-08T18:24:56"
+  },
+  "5": {
+    "routine_id": "5",
+    "home_id": "2",
+    "created_by_user_id": "1",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-10-17T21:03:36",
+    "updated_at": "2025-10-28T11:24:42"
+  },
+  "6": {
+    "routine_id": "6",
+    "home_id": "2",
+    "created_by_user_id": "1",
+    "routine_name": "Energy Saver 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-10-30T17:27:03",
+    "updated_at": "2025-11-24T01:56:37"
+  },
+  "7": {
+    "routine_id": "7",
+    "home_id": "2",
+    "created_by_user_id": "1",
+    "routine_name": "Leave Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-01-14T00:55:01",
+    "updated_at": "2025-07-07T04:14:26"
+  },
+  "8": {
+    "routine_id": "8",
+    "home_id": "3",
+    "created_by_user_id": "2",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-05-09T12:04:08",
+    "updated_at": "2025-01-18T08:35:32"
+  },
+  "9": {
+    "routine_id": "9",
+    "home_id": "3",
+    "created_by_user_id": "2",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-08-21T08:49:02",
+    "updated_at": "2024-12-12T20:27:54"
+  },
+  "10": {
+    "routine_id": "10",
+    "home_id": "3",
+    "created_by_user_id": "2",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-11-01T02:23:31",
+    "updated_at": "2024-12-31T22:19:59"
+  },
+  "11": {
+    "routine_id": "11",
+    "home_id": "4",
+    "created_by_user_id": "3",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-10-27T04:29:37",
+    "updated_at": "2025-12-18T19:36:48"
+  },
+  "12": {
+    "routine_id": "12",
+    "home_id": "4",
+    "created_by_user_id": "3",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-01T23:08:01",
+    "updated_at": "2025-11-07T21:50:29"
+  },
+  "13": {
+    "routine_id": "13",
+    "home_id": "4",
+    "created_by_user_id": "3",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-07-08T05:04:32",
+    "updated_at": "2024-12-07T00:24:08"
+  },
+  "14": {
+    "routine_id": "14",
+    "home_id": "5",
+    "created_by_user_id": "3",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-02-09T21:38:11",
+    "updated_at": "2025-07-27T09:49:39"
+  },
+  "15": {
+    "routine_id": "15",
+    "home_id": "5",
+    "created_by_user_id": "3",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-23T07:29:02",
+    "updated_at": "2025-05-28T09:46:00"
+  },
+  "16": {
+    "routine_id": "16",
+    "home_id": "6",
+    "created_by_user_id": "3",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-19T09:02:35",
+    "updated_at": "2025-10-06T06:10:47"
+  },
+  "17": {
+    "routine_id": "17",
+    "home_id": "6",
+    "created_by_user_id": "3",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-07-30T12:43:10",
+    "updated_at": "2025-04-29T12:04:22"
+  },
+  "18": {
+    "routine_id": "18",
+    "home_id": "7",
+    "created_by_user_id": "4",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-03T11:10:22",
+    "updated_at": "2025-12-15T05:00:33"
+  },
+  "19": {
+    "routine_id": "19",
+    "home_id": "7",
+    "created_by_user_id": "4",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-09-16T17:16:11",
+    "updated_at": "2025-09-22T13:53:25"
+  },
+  "20": {
+    "routine_id": "20",
+    "home_id": "7",
+    "created_by_user_id": "4",
+    "routine_name": "Good Night 3",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2023-09-13T20:20:53",
+    "updated_at": "2024-07-31T11:02:38"
+  },
+  "21": {
+    "routine_id": "21",
+    "home_id": "7",
+    "created_by_user_id": "4",
+    "routine_name": "Arrive Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-05T14:56:05",
+    "updated_at": "2023-08-15T00:23:34"
+  },
+  "22": {
+    "routine_id": "22",
+    "home_id": "7",
+    "created_by_user_id": "4",
+    "routine_name": "Leave Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-08-15T17:00:29",
+    "updated_at": "2025-05-04T15:59:02"
+  },
+  "23": {
+    "routine_id": "23",
+    "home_id": "8",
+    "created_by_user_id": "4",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-10-07T13:49:58",
+    "updated_at": "2025-11-21T16:39:52"
+  },
+  "24": {
+    "routine_id": "24",
+    "home_id": "8",
+    "created_by_user_id": "4",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-05-01T20:03:16",
+    "updated_at": "2025-07-15T11:06:25"
+  },
+  "25": {
+    "routine_id": "25",
+    "home_id": "8",
+    "created_by_user_id": "4",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-04T11:25:24",
+    "updated_at": "2024-09-02T07:19:55"
+  },
+  "26": {
+    "routine_id": "26",
+    "home_id": "8",
+    "created_by_user_id": "4",
+    "routine_name": "Good Night 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-09-02T15:08:30",
+    "updated_at": "2025-01-12T13:40:36"
+  },
+  "27": {
+    "routine_id": "27",
+    "home_id": "8",
+    "created_by_user_id": "4",
+    "routine_name": "Leave Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-05T03:33:14",
+    "updated_at": "2025-03-02T03:47:12"
+  },
+  "28": {
+    "routine_id": "28",
+    "home_id": "9",
+    "created_by_user_id": "4",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-05-02T10:38:26",
+    "updated_at": "2024-10-04T13:34:43"
+  },
+  "29": {
+    "routine_id": "29",
+    "home_id": "9",
+    "created_by_user_id": "4",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-06T15:22:46",
+    "updated_at": "2025-06-11T22:14:44"
+  },
+  "30": {
+    "routine_id": "30",
+    "home_id": "10",
+    "created_by_user_id": "5",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-01-12T12:11:55",
+    "updated_at": "2025-08-24T12:08:21"
+  },
+  "31": {
+    "routine_id": "31",
+    "home_id": "10",
+    "created_by_user_id": "5",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-09-22T21:05:38",
+    "updated_at": "2025-09-29T13:08:50"
+  },
+  "32": {
+    "routine_id": "32",
+    "home_id": "10",
+    "created_by_user_id": "5",
+    "routine_name": "Leave Home 3",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2024-09-09T02:39:37",
+    "updated_at": "2025-01-05T11:41:10"
+  },
+  "33": {
+    "routine_id": "33",
+    "home_id": "10",
+    "created_by_user_id": "5",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-02-03T00:59:25",
+    "updated_at": "2025-04-13T14:34:49"
+  },
+  "34": {
+    "routine_id": "34",
+    "home_id": "11",
+    "created_by_user_id": "5",
+    "routine_name": "Leave Home 1",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2023-10-15T10:13:52",
+    "updated_at": "2025-10-09T16:12:02"
+  },
+  "35": {
+    "routine_id": "35",
+    "home_id": "11",
+    "created_by_user_id": "5",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-07-10T00:08:37",
+    "updated_at": "2023-09-26T07:35:36"
+  },
+  "36": {
+    "routine_id": "36",
+    "home_id": "11",
+    "created_by_user_id": "5",
+    "routine_name": "Energy Saver 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-06-27T10:28:43",
+    "updated_at": "2025-06-20T04:06:55"
+  },
+  "37": {
+    "routine_id": "37",
+    "home_id": "11",
+    "created_by_user_id": "5",
+    "routine_name": "Leave Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-05-11T14:35:47",
+    "updated_at": "2024-12-11T05:44:31"
+  },
+  "38": {
+    "routine_id": "38",
+    "home_id": "11",
+    "created_by_user_id": "5",
+    "routine_name": "Energy Saver 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-05-07T04:57:22",
+    "updated_at": "2025-09-05T08:52:31"
+  },
+  "39": {
+    "routine_id": "39",
+    "home_id": "12",
+    "created_by_user_id": "5",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-09-18T03:35:35",
+    "updated_at": "2025-07-08T02:00:35"
+  },
+  "40": {
+    "routine_id": "40",
+    "home_id": "12",
+    "created_by_user_id": "5",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-05-08T02:44:47",
+    "updated_at": "2024-08-25T06:59:31"
+  },
+  "41": {
+    "routine_id": "41",
+    "home_id": "12",
+    "created_by_user_id": "5",
+    "routine_name": "Energy Saver 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-04T23:14:42",
+    "updated_at": "2024-02-12T13:20:42"
+  },
+  "42": {
+    "routine_id": "42",
+    "home_id": "12",
+    "created_by_user_id": "5",
+    "routine_name": "Energy Saver 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-15T20:51:34",
+    "updated_at": "2025-10-11T07:02:33"
+  },
+  "43": {
+    "routine_id": "43",
+    "home_id": "13",
+    "created_by_user_id": "7",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-05-30T01:34:05",
+    "updated_at": "2025-06-22T06:12:11"
+  },
+  "44": {
+    "routine_id": "44",
+    "home_id": "13",
+    "created_by_user_id": "7",
+    "routine_name": "Arrive Home 2",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2023-08-29T15:41:18",
+    "updated_at": "2023-12-25T19:47:44"
+  },
+  "45": {
+    "routine_id": "45",
+    "home_id": "13",
+    "created_by_user_id": "7",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-08-19T11:00:44",
+    "updated_at": "2025-04-20T15:05:00"
+  },
+  "46": {
+    "routine_id": "46",
+    "home_id": "14",
+    "created_by_user_id": "8",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-13T02:00:01",
+    "updated_at": "2024-06-05T04:21:23"
+  },
+  "47": {
+    "routine_id": "47",
+    "home_id": "14",
+    "created_by_user_id": "8",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-06-05T08:15:29",
+    "updated_at": "2025-06-21T10:28:34"
+  },
+  "48": {
+    "routine_id": "48",
+    "home_id": "14",
+    "created_by_user_id": "8",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-01-15T09:22:10",
+    "updated_at": "2024-04-07T06:12:25"
+  },
+  "49": {
+    "routine_id": "49",
+    "home_id": "15",
+    "created_by_user_id": "8",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-08-02T02:40:00",
+    "updated_at": "2025-03-03T08:32:03"
+  },
+  "50": {
+    "routine_id": "50",
+    "home_id": "15",
+    "created_by_user_id": "8",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-04T22:12:26",
+    "updated_at": "2023-11-06T01:38:20"
+  },
+  "51": {
+    "routine_id": "51",
+    "home_id": "15",
+    "created_by_user_id": "8",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-12-08T03:29:14",
+    "updated_at": "2023-12-20T07:27:45"
+  },
+  "52": {
+    "routine_id": "52",
+    "home_id": "15",
+    "created_by_user_id": "8",
+    "routine_name": "Leave Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-24T16:10:56",
+    "updated_at": "2024-01-14T20:51:46"
+  },
+  "53": {
+    "routine_id": "53",
+    "home_id": "15",
+    "created_by_user_id": "8",
+    "routine_name": "Wake Up 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-22T13:50:24",
+    "updated_at": "2024-09-13T04:52:51"
+  },
+  "54": {
+    "routine_id": "54",
+    "home_id": "16",
+    "created_by_user_id": "9",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-09-24T14:43:05",
+    "updated_at": "2025-11-10T00:50:22"
+  },
+  "55": {
+    "routine_id": "55",
+    "home_id": "16",
+    "created_by_user_id": "9",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-11-17T15:01:00",
+    "updated_at": "2025-11-18T23:23:25"
+  },
+  "56": {
+    "routine_id": "56",
+    "home_id": "16",
+    "created_by_user_id": "9",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-08-16T17:38:01",
+    "updated_at": "2025-09-12T13:11:40"
+  },
+  "57": {
+    "routine_id": "57",
+    "home_id": "16",
+    "created_by_user_id": "9",
+    "routine_name": "Good Night 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-01-06T17:34:50",
+    "updated_at": "2025-01-15T20:57:46"
+  },
+  "58": {
+    "routine_id": "58",
+    "home_id": "16",
+    "created_by_user_id": "9",
+    "routine_name": "Arrive Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-20T00:08:40",
+    "updated_at": "2025-07-01T13:59:49"
+  },
+  "59": {
+    "routine_id": "59",
+    "home_id": "17",
+    "created_by_user_id": "9",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-08-09T14:27:28",
+    "updated_at": "2025-11-30T22:43:30"
+  },
+  "60": {
+    "routine_id": "60",
+    "home_id": "17",
+    "created_by_user_id": "9",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-16T22:28:17",
+    "updated_at": "2025-12-18T01:14:37"
+  },
+  "61": {
+    "routine_id": "61",
+    "home_id": "17",
+    "created_by_user_id": "9",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-08T02:19:22",
+    "updated_at": "2025-09-30T18:23:39"
+  },
+  "62": {
+    "routine_id": "62",
+    "home_id": "17",
+    "created_by_user_id": "9",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-25T20:24:38",
+    "updated_at": "2024-08-21T21:16:59"
+  },
+  "63": {
+    "routine_id": "63",
+    "home_id": "17",
+    "created_by_user_id": "9",
+    "routine_name": "Leave Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-09T10:07:48",
+    "updated_at": "2025-12-14T16:40:34"
+  },
+  "64": {
+    "routine_id": "64",
+    "home_id": "18",
+    "created_by_user_id": "10",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-12-02T16:36:01",
+    "updated_at": "2025-02-05T21:28:22"
+  },
+  "65": {
+    "routine_id": "65",
+    "home_id": "18",
+    "created_by_user_id": "10",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-23T03:43:44",
+    "updated_at": "2024-09-25T10:38:38"
+  },
+  "66": {
+    "routine_id": "66",
+    "home_id": "18",
+    "created_by_user_id": "10",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-10T20:07:37",
+    "updated_at": "2023-04-14T01:39:17"
+  },
+  "67": {
+    "routine_id": "67",
+    "home_id": "18",
+    "created_by_user_id": "10",
+    "routine_name": "Arrive Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-14T14:27:48",
+    "updated_at": "2024-08-26T17:29:01"
+  },
+  "68": {
+    "routine_id": "68",
+    "home_id": "18",
+    "created_by_user_id": "10",
+    "routine_name": "Good Night 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-10-19T10:04:38",
+    "updated_at": "2025-11-23T00:02:18"
+  },
+  "69": {
+    "routine_id": "69",
+    "home_id": "19",
+    "created_by_user_id": "10",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-13T14:30:46",
+    "updated_at": "2023-11-23T08:28:15"
+  },
+  "70": {
+    "routine_id": "70",
+    "home_id": "19",
+    "created_by_user_id": "10",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-01-13T18:15:39",
+    "updated_at": "2024-03-26T18:17:12"
+  },
+  "71": {
+    "routine_id": "71",
+    "home_id": "20",
+    "created_by_user_id": "10",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-04T08:07:06",
+    "updated_at": "2025-08-30T02:21:17"
+  },
+  "72": {
+    "routine_id": "72",
+    "home_id": "20",
+    "created_by_user_id": "10",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-08-03T20:22:22",
+    "updated_at": "2024-06-25T10:15:43"
+  },
+  "73": {
+    "routine_id": "73",
+    "home_id": "20",
+    "created_by_user_id": "10",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-18T01:53:06",
+    "updated_at": "2024-10-15T12:15:24"
+  },
+  "74": {
+    "routine_id": "74",
+    "home_id": "20",
+    "created_by_user_id": "10",
+    "routine_name": "Arrive Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-26T13:06:07",
+    "updated_at": "2025-02-24T16:08:25"
+  },
+  "75": {
+    "routine_id": "75",
+    "home_id": "21",
+    "created_by_user_id": "11",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-22T12:47:37",
+    "updated_at": "2025-10-01T07:31:01"
+  },
+  "76": {
+    "routine_id": "76",
+    "home_id": "21",
+    "created_by_user_id": "11",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-04T01:35:56",
+    "updated_at": "2025-10-16T23:48:07"
+  },
+  "77": {
+    "routine_id": "77",
+    "home_id": "21",
+    "created_by_user_id": "11",
+    "routine_name": "Energy Saver 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-23T23:51:48",
+    "updated_at": "2025-09-19T17:48:30"
+  },
+  "78": {
+    "routine_id": "78",
+    "home_id": "21",
+    "created_by_user_id": "11",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-16T13:04:36",
+    "updated_at": "2023-10-04T08:02:12"
+  },
+  "79": {
+    "routine_id": "79",
+    "home_id": "21",
+    "created_by_user_id": "11",
+    "routine_name": "Good Night 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-04-26T20:45:50",
+    "updated_at": "2025-10-20T01:06:57"
+  },
+  "80": {
+    "routine_id": "80",
+    "home_id": "22",
+    "created_by_user_id": "11",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-03T10:09:53",
+    "updated_at": "2025-12-10T22:37:57"
+  },
+  "81": {
+    "routine_id": "81",
+    "home_id": "22",
+    "created_by_user_id": "11",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-07-27T03:23:48",
+    "updated_at": "2025-08-31T18:14:25"
+  },
+  "82": {
+    "routine_id": "82",
+    "home_id": "23",
+    "created_by_user_id": "11",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-13T05:55:34",
+    "updated_at": "2024-07-23T09:32:38"
+  },
+  "83": {
+    "routine_id": "83",
+    "home_id": "23",
+    "created_by_user_id": "11",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-04T02:54:15",
+    "updated_at": "2025-01-15T18:51:34"
+  },
+  "84": {
+    "routine_id": "84",
+    "home_id": "23",
+    "created_by_user_id": "11",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-04-15T07:50:58",
+    "updated_at": "2025-08-04T05:53:57"
+  },
+  "85": {
+    "routine_id": "85",
+    "home_id": "23",
+    "created_by_user_id": "11",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-17T18:46:22",
+    "updated_at": "2024-10-29T04:26:32"
+  },
+  "86": {
+    "routine_id": "86",
+    "home_id": "23",
+    "created_by_user_id": "11",
+    "routine_name": "Energy Saver 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-12-18T04:55:00",
+    "updated_at": "2025-08-26T10:56:21"
+  },
+  "87": {
+    "routine_id": "87",
+    "home_id": "24",
+    "created_by_user_id": "13",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-03-17T11:40:30",
+    "updated_at": "2025-12-02T17:03:08"
+  },
+  "88": {
+    "routine_id": "88",
+    "home_id": "24",
+    "created_by_user_id": "13",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-13T15:28:41",
+    "updated_at": "2025-12-19T05:19:24"
+  },
+  "89": {
+    "routine_id": "89",
+    "home_id": "25",
+    "created_by_user_id": "14",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-04-01T04:17:32",
+    "updated_at": "2025-07-10T10:36:14"
+  },
+  "90": {
+    "routine_id": "90",
+    "home_id": "25",
+    "created_by_user_id": "14",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-04T21:37:10",
+    "updated_at": "2023-12-03T11:15:38"
+  },
+  "91": {
+    "routine_id": "91",
+    "home_id": "25",
+    "created_by_user_id": "14",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-03-01T15:20:43",
+    "updated_at": "2025-10-21T13:56:52"
+  },
+  "92": {
+    "routine_id": "92",
+    "home_id": "25",
+    "created_by_user_id": "14",
+    "routine_name": "Arrive Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-21T15:48:58",
+    "updated_at": "2024-10-18T03:04:03"
+  },
+  "93": {
+    "routine_id": "93",
+    "home_id": "25",
+    "created_by_user_id": "14",
+    "routine_name": "Arrive Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-15T06:49:47",
+    "updated_at": "2024-09-25T15:28:33"
+  },
+  "94": {
+    "routine_id": "94",
+    "home_id": "26",
+    "created_by_user_id": "15",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-21T04:56:14",
+    "updated_at": "2024-11-16T15:31:20"
+  },
+  "95": {
+    "routine_id": "95",
+    "home_id": "26",
+    "created_by_user_id": "15",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-12-13T07:29:41",
+    "updated_at": "2025-01-27T15:28:34"
+  },
+  "96": {
+    "routine_id": "96",
+    "home_id": "27",
+    "created_by_user_id": "15",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-09-24T10:26:53",
+    "updated_at": "2024-11-16T03:16:48"
+  },
+  "97": {
+    "routine_id": "97",
+    "home_id": "27",
+    "created_by_user_id": "15",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-01-30T20:18:56",
+    "updated_at": "2025-11-05T05:49:06"
+  },
+  "98": {
+    "routine_id": "98",
+    "home_id": "28",
+    "created_by_user_id": "16",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-11-22T21:44:12",
+    "updated_at": "2025-11-18T00:48:42"
+  },
+  "99": {
+    "routine_id": "99",
+    "home_id": "28",
+    "created_by_user_id": "16",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-11-11T15:34:54",
+    "updated_at": "2025-12-18T21:34:08"
+  },
+  "100": {
+    "routine_id": "100",
+    "home_id": "28",
+    "created_by_user_id": "16",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-07-14T20:15:53",
+    "updated_at": "2025-07-02T19:10:09"
+  },
+  "101": {
+    "routine_id": "101",
+    "home_id": "28",
+    "created_by_user_id": "16",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-01-12T11:36:11",
+    "updated_at": "2025-05-25T07:25:40"
+  },
+  "102": {
+    "routine_id": "102",
+    "home_id": "29",
+    "created_by_user_id": "16",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-05-08T10:45:42",
+    "updated_at": "2025-03-27T02:16:31"
+  },
+  "103": {
+    "routine_id": "103",
+    "home_id": "29",
+    "created_by_user_id": "16",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-18T13:50:55",
+    "updated_at": "2024-06-20T11:44:14"
+  },
+  "104": {
+    "routine_id": "104",
+    "home_id": "30",
+    "created_by_user_id": "16",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-09-02T08:40:51",
+    "updated_at": "2025-11-09T16:38:46"
+  },
+  "105": {
+    "routine_id": "105",
+    "home_id": "30",
+    "created_by_user_id": "16",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-16T16:11:53",
+    "updated_at": "2025-10-13T08:54:38"
+  },
+  "106": {
+    "routine_id": "106",
+    "home_id": "30",
+    "created_by_user_id": "16",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-22T19:40:39",
+    "updated_at": "2025-12-09T11:18:52"
+  },
+  "107": {
+    "routine_id": "107",
+    "home_id": "30",
+    "created_by_user_id": "16",
+    "routine_name": "Leave Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-11-17T13:39:53",
+    "updated_at": "2024-12-30T11:58:06"
+  },
+  "108": {
+    "routine_id": "108",
+    "home_id": "31",
+    "created_by_user_id": "17",
+    "routine_name": "Wake Up 1",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2024-06-08T02:49:31",
+    "updated_at": "2024-11-18T14:19:14"
+  },
+  "109": {
+    "routine_id": "109",
+    "home_id": "31",
+    "created_by_user_id": "17",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-21T15:52:36",
+    "updated_at": "2025-05-13T23:31:34"
+  },
+  "110": {
+    "routine_id": "110",
+    "home_id": "31",
+    "created_by_user_id": "17",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-12T07:08:29",
+    "updated_at": "2024-05-03T07:59:19"
+  },
+  "111": {
+    "routine_id": "111",
+    "home_id": "31",
+    "created_by_user_id": "17",
+    "routine_name": "Good Night 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-06-29T22:41:57",
+    "updated_at": "2025-09-29T11:09:53"
+  },
+  "112": {
+    "routine_id": "112",
+    "home_id": "32",
+    "created_by_user_id": "17",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-11T18:21:25",
+    "updated_at": "2025-10-11T09:23:30"
+  },
+  "113": {
+    "routine_id": "113",
+    "home_id": "32",
+    "created_by_user_id": "17",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-11-26T15:06:42",
+    "updated_at": "2025-03-05T09:52:59"
+  },
+  "114": {
+    "routine_id": "114",
+    "home_id": "32",
+    "created_by_user_id": "17",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-07-22T14:29:15",
+    "updated_at": "2025-04-14T04:31:14"
+  },
+  "115": {
+    "routine_id": "115",
+    "home_id": "33",
+    "created_by_user_id": "19",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-02-12T17:18:09",
+    "updated_at": "2025-08-13T22:03:45"
+  },
+  "116": {
+    "routine_id": "116",
+    "home_id": "33",
+    "created_by_user_id": "19",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-07-05T19:28:21",
+    "updated_at": "2025-06-05T15:12:04"
+  },
+  "117": {
+    "routine_id": "117",
+    "home_id": "34",
+    "created_by_user_id": "19",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-23T12:20:36",
+    "updated_at": "2024-08-22T10:46:29"
+  },
+  "118": {
+    "routine_id": "118",
+    "home_id": "34",
+    "created_by_user_id": "19",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-23T03:46:28",
+    "updated_at": "2024-08-21T03:00:18"
+  },
+  "119": {
+    "routine_id": "119",
+    "home_id": "34",
+    "created_by_user_id": "19",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-08-28T02:53:39",
+    "updated_at": "2023-10-03T21:24:46"
+  },
+  "120": {
+    "routine_id": "120",
+    "home_id": "34",
+    "created_by_user_id": "19",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-03T12:13:50",
+    "updated_at": "2024-04-29T02:08:42"
+  },
+  "121": {
+    "routine_id": "121",
+    "home_id": "34",
+    "created_by_user_id": "19",
+    "routine_name": "Wake Up 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-05T18:18:53",
+    "updated_at": "2025-11-10T08:48:25"
+  },
+  "122": {
+    "routine_id": "122",
+    "home_id": "35",
+    "created_by_user_id": "21",
+    "routine_name": "Wake Up 1",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2024-06-12T21:05:29",
+    "updated_at": "2024-10-12T08:18:47"
+  },
+  "123": {
+    "routine_id": "123",
+    "home_id": "35",
+    "created_by_user_id": "21",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-02T13:08:46",
+    "updated_at": "2025-12-05T03:23:34"
+  },
+  "124": {
+    "routine_id": "124",
+    "home_id": "35",
+    "created_by_user_id": "21",
+    "routine_name": "Energy Saver 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-13T11:22:04",
+    "updated_at": "2024-11-19T01:21:36"
+  },
+  "125": {
+    "routine_id": "125",
+    "home_id": "35",
+    "created_by_user_id": "21",
+    "routine_name": "Good Night 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-12-27T04:50:18",
+    "updated_at": "2024-12-02T06:38:54"
+  },
+  "126": {
+    "routine_id": "126",
+    "home_id": "35",
+    "created_by_user_id": "21",
+    "routine_name": "Good Night 5",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2023-03-27T08:31:21",
+    "updated_at": "2025-09-03T09:02:58"
+  },
+  "127": {
+    "routine_id": "127",
+    "home_id": "36",
+    "created_by_user_id": "22",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-09T01:05:06",
+    "updated_at": "2025-08-14T13:07:02"
+  },
+  "128": {
+    "routine_id": "128",
+    "home_id": "36",
+    "created_by_user_id": "22",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-08-24T10:41:29",
+    "updated_at": "2025-10-01T08:03:07"
+  },
+  "129": {
+    "routine_id": "129",
+    "home_id": "37",
+    "created_by_user_id": "22",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-18T07:00:33",
+    "updated_at": "2025-07-15T02:32:13"
+  },
+  "130": {
+    "routine_id": "130",
+    "home_id": "37",
+    "created_by_user_id": "22",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-01T20:45:00",
+    "updated_at": "2025-10-30T15:40:04"
+  },
+  "131": {
+    "routine_id": "131",
+    "home_id": "38",
+    "created_by_user_id": "23",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-04-20T10:14:38",
+    "updated_at": "2025-11-08T07:28:18"
+  },
+  "132": {
+    "routine_id": "132",
+    "home_id": "38",
+    "created_by_user_id": "23",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-06-29T15:05:06",
+    "updated_at": "2024-10-05T23:11:22"
+  },
+  "133": {
+    "routine_id": "133",
+    "home_id": "38",
+    "created_by_user_id": "23",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-20T13:53:46",
+    "updated_at": "2025-12-13T16:40:20"
+  },
+  "134": {
+    "routine_id": "134",
+    "home_id": "38",
+    "created_by_user_id": "23",
+    "routine_name": "Good Night 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-12T08:03:46",
+    "updated_at": "2023-04-04T23:35:35"
+  },
+  "135": {
+    "routine_id": "135",
+    "home_id": "39",
+    "created_by_user_id": "23",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-02-02T18:58:03",
+    "updated_at": "2025-07-09T15:41:36"
+  },
+  "136": {
+    "routine_id": "136",
+    "home_id": "39",
+    "created_by_user_id": "23",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-01T21:34:49",
+    "updated_at": "2025-01-21T13:53:02"
+  },
+  "137": {
+    "routine_id": "137",
+    "home_id": "39",
+    "created_by_user_id": "23",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-05-31T01:11:01",
+    "updated_at": "2024-12-14T07:02:21"
+  },
+  "138": {
+    "routine_id": "138",
+    "home_id": "39",
+    "created_by_user_id": "23",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-12-25T06:59:04",
+    "updated_at": "2025-04-26T15:25:13"
+  },
+  "139": {
+    "routine_id": "139",
+    "home_id": "39",
+    "created_by_user_id": "23",
+    "routine_name": "Good Night 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-01-04T10:23:09",
+    "updated_at": "2025-08-21T15:49:39"
+  },
+  "140": {
+    "routine_id": "140",
+    "home_id": "40",
+    "created_by_user_id": "23",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-12T15:52:55",
+    "updated_at": "2024-07-20T16:13:01"
+  },
+  "141": {
+    "routine_id": "141",
+    "home_id": "40",
+    "created_by_user_id": "23",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-12-31T01:24:52",
+    "updated_at": "2024-03-02T16:11:17"
+  },
+  "142": {
+    "routine_id": "142",
+    "home_id": "40",
+    "created_by_user_id": "23",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-26T00:20:38",
+    "updated_at": "2024-06-23T02:30:42"
+  },
+  "143": {
+    "routine_id": "143",
+    "home_id": "40",
+    "created_by_user_id": "23",
+    "routine_name": "Leave Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-02-08T08:44:12",
+    "updated_at": "2025-02-26T11:47:37"
+  },
+  "144": {
+    "routine_id": "144",
+    "home_id": "40",
+    "created_by_user_id": "23",
+    "routine_name": "Arrive Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-11-29T19:48:03",
+    "updated_at": "2025-11-30T22:09:39"
+  },
+  "145": {
+    "routine_id": "145",
+    "home_id": "41",
+    "created_by_user_id": "24",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-08-11T18:37:47",
+    "updated_at": "2025-08-05T21:32:57"
+  },
+  "146": {
+    "routine_id": "146",
+    "home_id": "41",
+    "created_by_user_id": "24",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-17T02:33:39",
+    "updated_at": "2025-09-19T16:00:05"
+  },
+  "147": {
+    "routine_id": "147",
+    "home_id": "41",
+    "created_by_user_id": "24",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-09-13T17:02:44",
+    "updated_at": "2025-09-26T16:38:23"
+  },
+  "148": {
+    "routine_id": "148",
+    "home_id": "42",
+    "created_by_user_id": "24",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-21T05:31:19",
+    "updated_at": "2023-06-28T16:14:54"
+  },
+  "149": {
+    "routine_id": "149",
+    "home_id": "42",
+    "created_by_user_id": "24",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-09T08:35:53",
+    "updated_at": "2025-12-17T03:20:44"
+  },
+  "150": {
+    "routine_id": "150",
+    "home_id": "42",
+    "created_by_user_id": "24",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-04-02T23:58:07",
+    "updated_at": "2025-09-24T20:18:19"
+  },
+  "151": {
+    "routine_id": "151",
+    "home_id": "42",
+    "created_by_user_id": "24",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-03-12T11:19:38",
+    "updated_at": "2025-04-03T17:54:12"
+  },
+  "152": {
+    "routine_id": "152",
+    "home_id": "42",
+    "created_by_user_id": "24",
+    "routine_name": "Leave Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-17T23:04:58",
+    "updated_at": "2023-12-13T15:51:00"
+  },
+  "153": {
+    "routine_id": "153",
+    "home_id": "43",
+    "created_by_user_id": "25",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-19T22:15:07",
+    "updated_at": "2025-01-04T07:17:03"
+  },
+  "154": {
+    "routine_id": "154",
+    "home_id": "43",
+    "created_by_user_id": "25",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-09-13T09:14:02",
+    "updated_at": "2024-04-30T05:03:22"
+  },
+  "155": {
+    "routine_id": "155",
+    "home_id": "43",
+    "created_by_user_id": "25",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-06-05T01:34:08",
+    "updated_at": "2024-07-09T10:11:12"
+  },
+  "156": {
+    "routine_id": "156",
+    "home_id": "44",
+    "created_by_user_id": "26",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-09-09T13:06:10",
+    "updated_at": "2025-03-16T15:11:04"
+  },
+  "157": {
+    "routine_id": "157",
+    "home_id": "44",
+    "created_by_user_id": "26",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-05-04T19:09:33",
+    "updated_at": "2025-10-06T19:14:51"
+  },
+  "158": {
+    "routine_id": "158",
+    "home_id": "45",
+    "created_by_user_id": "26",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-09T00:10:41",
+    "updated_at": "2024-06-02T04:05:56"
+  },
+  "159": {
+    "routine_id": "159",
+    "home_id": "45",
+    "created_by_user_id": "26",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-09-07T04:34:11",
+    "updated_at": "2025-06-18T19:19:07"
+  },
+  "160": {
+    "routine_id": "160",
+    "home_id": "46",
+    "created_by_user_id": "26",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-12-26T14:07:08",
+    "updated_at": "2025-08-10T23:46:11"
+  },
+  "161": {
+    "routine_id": "161",
+    "home_id": "46",
+    "created_by_user_id": "26",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-02T09:19:42",
+    "updated_at": "2025-10-21T05:28:25"
+  },
+  "162": {
+    "routine_id": "162",
+    "home_id": "46",
+    "created_by_user_id": "26",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-07-07T14:31:03",
+    "updated_at": "2024-10-12T06:35:55"
+  },
+  "163": {
+    "routine_id": "163",
+    "home_id": "47",
+    "created_by_user_id": "27",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-08-09T17:30:30",
+    "updated_at": "2025-08-16T11:39:24"
+  },
+  "164": {
+    "routine_id": "164",
+    "home_id": "47",
+    "created_by_user_id": "27",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-08-13T09:29:07",
+    "updated_at": "2024-10-08T23:42:07"
+  },
+  "165": {
+    "routine_id": "165",
+    "home_id": "47",
+    "created_by_user_id": "27",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-08-06T17:11:42",
+    "updated_at": "2025-10-28T16:24:10"
+  },
+  "166": {
+    "routine_id": "166",
+    "home_id": "47",
+    "created_by_user_id": "27",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-05-09T05:26:25",
+    "updated_at": "2025-11-06T02:24:47"
+  },
+  "167": {
+    "routine_id": "167",
+    "home_id": "47",
+    "created_by_user_id": "27",
+    "routine_name": "Arrive Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-16T22:46:16",
+    "updated_at": "2024-07-20T01:23:00"
+  },
+  "168": {
+    "routine_id": "168",
+    "home_id": "48",
+    "created_by_user_id": "27",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-09-17T08:36:31",
+    "updated_at": "2025-06-22T03:55:17"
+  },
+  "169": {
+    "routine_id": "169",
+    "home_id": "48",
+    "created_by_user_id": "27",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-21T01:56:29",
+    "updated_at": "2024-07-17T22:47:31"
+  },
+  "170": {
+    "routine_id": "170",
+    "home_id": "49",
+    "created_by_user_id": "27",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-09-19T13:32:42",
+    "updated_at": "2024-09-22T18:17:07"
+  },
+  "171": {
+    "routine_id": "171",
+    "home_id": "49",
+    "created_by_user_id": "27",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-02T00:02:34",
+    "updated_at": "2025-01-04T08:29:18"
+  },
+  "172": {
+    "routine_id": "172",
+    "home_id": "49",
+    "created_by_user_id": "27",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-09-09T01:33:26",
+    "updated_at": "2024-09-16T12:41:23"
+  },
+  "173": {
+    "routine_id": "173",
+    "home_id": "49",
+    "created_by_user_id": "27",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-07-09T00:19:15",
+    "updated_at": "2024-09-14T03:20:13"
+  },
+  "174": {
+    "routine_id": "174",
+    "home_id": "49",
+    "created_by_user_id": "27",
+    "routine_name": "Leave Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-18T17:36:01",
+    "updated_at": "2024-11-08T06:10:19"
+  },
+  "175": {
+    "routine_id": "175",
+    "home_id": "50",
+    "created_by_user_id": "28",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-01T07:34:35",
+    "updated_at": "2024-07-16T11:12:33"
+  },
+  "176": {
+    "routine_id": "176",
+    "home_id": "50",
+    "created_by_user_id": "28",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-21T17:36:35",
+    "updated_at": "2023-10-17T22:29:10"
+  },
+  "177": {
+    "routine_id": "177",
+    "home_id": "50",
+    "created_by_user_id": "28",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-03-01T04:58:16",
+    "updated_at": "2025-07-10T00:02:14"
+  },
+  "178": {
+    "routine_id": "178",
+    "home_id": "51",
+    "created_by_user_id": "28",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-11-24T18:46:12",
+    "updated_at": "2025-12-16T19:50:27"
+  },
+  "179": {
+    "routine_id": "179",
+    "home_id": "51",
+    "created_by_user_id": "28",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-22T16:05:27",
+    "updated_at": "2025-07-07T15:46:02"
+  },
+  "180": {
+    "routine_id": "180",
+    "home_id": "51",
+    "created_by_user_id": "28",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-08-05T21:17:39",
+    "updated_at": "2024-03-19T10:22:01"
+  },
+  "181": {
+    "routine_id": "181",
+    "home_id": "52",
+    "created_by_user_id": "28",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-06-24T20:00:45",
+    "updated_at": "2025-01-02T11:59:48"
+  },
+  "182": {
+    "routine_id": "182",
+    "home_id": "52",
+    "created_by_user_id": "28",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-05-07T10:31:22",
+    "updated_at": "2025-10-26T12:19:41"
+  },
+  "183": {
+    "routine_id": "183",
+    "home_id": "52",
+    "created_by_user_id": "28",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-01-13T04:17:56",
+    "updated_at": "2025-06-13T17:48:22"
+  },
+  "184": {
+    "routine_id": "184",
+    "home_id": "53",
+    "created_by_user_id": "30",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-11-21T18:40:18",
+    "updated_at": "2025-12-15T07:13:42"
+  },
+  "185": {
+    "routine_id": "185",
+    "home_id": "53",
+    "created_by_user_id": "30",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-06T08:07:33",
+    "updated_at": "2025-12-07T12:26:22"
+  },
+  "186": {
+    "routine_id": "186",
+    "home_id": "53",
+    "created_by_user_id": "30",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-03-19T12:13:51",
+    "updated_at": "2025-06-18T23:44:37"
+  },
+  "187": {
+    "routine_id": "187",
+    "home_id": "53",
+    "created_by_user_id": "30",
+    "routine_name": "Energy Saver 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-02-15T04:20:39",
+    "updated_at": "2025-09-30T11:47:56"
+  },
+  "188": {
+    "routine_id": "188",
+    "home_id": "54",
+    "created_by_user_id": "31",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-03-16T00:33:40",
+    "updated_at": "2025-05-22T03:31:41"
+  },
+  "189": {
+    "routine_id": "189",
+    "home_id": "54",
+    "created_by_user_id": "31",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-30T03:44:56",
+    "updated_at": "2025-11-01T05:37:02"
+  },
+  "190": {
+    "routine_id": "190",
+    "home_id": "54",
+    "created_by_user_id": "31",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-09-14T05:31:02",
+    "updated_at": "2025-09-25T03:23:37"
+  },
+  "191": {
+    "routine_id": "191",
+    "home_id": "54",
+    "created_by_user_id": "31",
+    "routine_name": "Arrive Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-14T06:08:02",
+    "updated_at": "2025-07-19T16:40:44"
+  },
+  "192": {
+    "routine_id": "192",
+    "home_id": "55",
+    "created_by_user_id": "31",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-08-17T06:14:56",
+    "updated_at": "2025-09-23T08:14:54"
+  },
+  "193": {
+    "routine_id": "193",
+    "home_id": "55",
+    "created_by_user_id": "31",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-04T09:04:18",
+    "updated_at": "2025-02-21T02:20:16"
+  },
+  "194": {
+    "routine_id": "194",
+    "home_id": "55",
+    "created_by_user_id": "31",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-06-05T19:18:58",
+    "updated_at": "2024-12-08T02:48:00"
+  },
+  "195": {
+    "routine_id": "195",
+    "home_id": "55",
+    "created_by_user_id": "31",
+    "routine_name": "Arrive Home 4",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2023-10-17T14:04:54",
+    "updated_at": "2024-05-26T21:59:42"
+  },
+  "196": {
+    "routine_id": "196",
+    "home_id": "55",
+    "created_by_user_id": "31",
+    "routine_name": "Good Night 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-01-22T00:04:53",
+    "updated_at": "2025-09-04T18:59:04"
+  },
+  "197": {
+    "routine_id": "197",
+    "home_id": "56",
+    "created_by_user_id": "31",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-12T09:12:41",
+    "updated_at": "2025-03-12T16:58:16"
+  },
+  "198": {
+    "routine_id": "198",
+    "home_id": "56",
+    "created_by_user_id": "31",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-05-20T10:02:15",
+    "updated_at": "2025-06-03T06:21:13"
+  },
+  "199": {
+    "routine_id": "199",
+    "home_id": "57",
+    "created_by_user_id": "32",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-05-16T03:25:52",
+    "updated_at": "2024-06-30T14:17:44"
+  },
+  "200": {
+    "routine_id": "200",
+    "home_id": "57",
+    "created_by_user_id": "32",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-12-02T10:04:47",
+    "updated_at": "2025-08-18T06:36:07"
+  },
+  "201": {
+    "routine_id": "201",
+    "home_id": "57",
+    "created_by_user_id": "32",
+    "routine_name": "Energy Saver 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-02T06:03:17",
+    "updated_at": "2025-11-15T03:27:32"
+  },
+  "202": {
+    "routine_id": "202",
+    "home_id": "57",
+    "created_by_user_id": "32",
+    "routine_name": "Arrive Home 4",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2023-09-30T12:17:10",
+    "updated_at": "2024-05-11T00:32:23"
+  },
+  "203": {
+    "routine_id": "203",
+    "home_id": "57",
+    "created_by_user_id": "32",
+    "routine_name": "Leave Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-02-20T20:30:46",
+    "updated_at": "2025-10-20T10:55:13"
+  },
+  "204": {
+    "routine_id": "204",
+    "home_id": "58",
+    "created_by_user_id": "32",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-08T22:36:02",
+    "updated_at": "2024-06-10T12:15:35"
+  },
+  "205": {
+    "routine_id": "205",
+    "home_id": "58",
+    "created_by_user_id": "32",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-07-15T16:11:38",
+    "updated_at": "2024-08-01T09:49:25"
+  },
+  "206": {
+    "routine_id": "206",
+    "home_id": "58",
+    "created_by_user_id": "32",
+    "routine_name": "Energy Saver 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-10T20:17:38",
+    "updated_at": "2025-11-27T04:49:24"
+  },
+  "207": {
+    "routine_id": "207",
+    "home_id": "58",
+    "created_by_user_id": "32",
+    "routine_name": "Arrive Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-25T14:20:27",
+    "updated_at": "2024-05-18T17:27:45"
+  },
+  "208": {
+    "routine_id": "208",
+    "home_id": "59",
+    "created_by_user_id": "33",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-08-16T13:40:09",
+    "updated_at": "2025-10-22T16:23:45"
+  },
+  "209": {
+    "routine_id": "209",
+    "home_id": "59",
+    "created_by_user_id": "33",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-09-06T15:23:50",
+    "updated_at": "2025-11-26T12:11:10"
+  },
+  "210": {
+    "routine_id": "210",
+    "home_id": "60",
+    "created_by_user_id": "34",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-04T19:04:26",
+    "updated_at": "2025-12-07T00:40:29"
+  },
+  "211": {
+    "routine_id": "211",
+    "home_id": "60",
+    "created_by_user_id": "34",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-02-17T20:45:20",
+    "updated_at": "2025-09-06T14:52:44"
+  },
+  "212": {
+    "routine_id": "212",
+    "home_id": "61",
+    "created_by_user_id": "34",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-13T04:54:14",
+    "updated_at": "2024-02-28T06:47:17"
+  },
+  "213": {
+    "routine_id": "213",
+    "home_id": "61",
+    "created_by_user_id": "34",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-09-04T02:44:42",
+    "updated_at": "2025-01-19T14:10:19"
+  },
+  "214": {
+    "routine_id": "214",
+    "home_id": "62",
+    "created_by_user_id": "34",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-14T08:17:18",
+    "updated_at": "2024-12-26T03:03:54"
+  },
+  "215": {
+    "routine_id": "215",
+    "home_id": "62",
+    "created_by_user_id": "34",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-07-12T07:08:21",
+    "updated_at": "2025-10-23T02:42:28"
+  },
+  "216": {
+    "routine_id": "216",
+    "home_id": "62",
+    "created_by_user_id": "34",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-01-28T21:34:04",
+    "updated_at": "2025-04-29T05:16:16"
+  },
+  "217": {
+    "routine_id": "217",
+    "home_id": "62",
+    "created_by_user_id": "34",
+    "routine_name": "Good Night 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-01-22T10:48:00",
+    "updated_at": "2025-04-02T03:23:12"
+  },
+  "218": {
+    "routine_id": "218",
+    "home_id": "63",
+    "created_by_user_id": "36",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-05-04T21:59:16",
+    "updated_at": "2025-01-30T10:53:49"
+  },
+  "219": {
+    "routine_id": "219",
+    "home_id": "63",
+    "created_by_user_id": "36",
+    "routine_name": "Arrive Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-03-19T23:01:03",
+    "updated_at": "2023-08-16T14:37:55"
+  },
+  "220": {
+    "routine_id": "220",
+    "home_id": "64",
+    "created_by_user_id": "36",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-16T19:03:04",
+    "updated_at": "2025-09-03T07:59:36"
+  },
+  "221": {
+    "routine_id": "221",
+    "home_id": "64",
+    "created_by_user_id": "36",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-05-13T13:52:19",
+    "updated_at": "2025-01-15T14:48:54"
+  },
+  "222": {
+    "routine_id": "222",
+    "home_id": "64",
+    "created_by_user_id": "36",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-17T09:43:29",
+    "updated_at": "2025-02-01T02:07:05"
+  },
+  "223": {
+    "routine_id": "223",
+    "home_id": "65",
+    "created_by_user_id": "36",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-05T02:07:29",
+    "updated_at": "2025-07-09T14:21:57"
+  },
+  "224": {
+    "routine_id": "224",
+    "home_id": "65",
+    "created_by_user_id": "36",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-12-16T02:50:29",
+    "updated_at": "2024-05-18T21:57:45"
+  },
+  "225": {
+    "routine_id": "225",
+    "home_id": "65",
+    "created_by_user_id": "36",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-01-08T05:28:56",
+    "updated_at": "2024-06-20T23:51:41"
+  },
+  "226": {
+    "routine_id": "226",
+    "home_id": "66",
+    "created_by_user_id": "37",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-09-23T09:25:54",
+    "updated_at": "2025-11-18T05:11:25"
+  },
+  "227": {
+    "routine_id": "227",
+    "home_id": "66",
+    "created_by_user_id": "37",
+    "routine_name": "Wake Up 2",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2024-04-18T12:43:52",
+    "updated_at": "2025-04-25T12:07:16"
+  },
+  "228": {
+    "routine_id": "228",
+    "home_id": "66",
+    "created_by_user_id": "37",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-05-26T06:00:04",
+    "updated_at": "2025-07-29T16:05:51"
+  },
+  "229": {
+    "routine_id": "229",
+    "home_id": "67",
+    "created_by_user_id": "38",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-10-19T17:15:08",
+    "updated_at": "2025-10-20T02:09:02"
+  },
+  "230": {
+    "routine_id": "230",
+    "home_id": "67",
+    "created_by_user_id": "38",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-09T16:03:27",
+    "updated_at": "2025-07-02T17:08:49"
+  },
+  "231": {
+    "routine_id": "231",
+    "home_id": "67",
+    "created_by_user_id": "38",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-04-14T17:24:30",
+    "updated_at": "2025-07-25T21:34:34"
+  },
+  "232": {
+    "routine_id": "232",
+    "home_id": "68",
+    "created_by_user_id": "38",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-03-26T05:25:46",
+    "updated_at": "2024-12-23T08:47:00"
+  },
+  "233": {
+    "routine_id": "233",
+    "home_id": "68",
+    "created_by_user_id": "38",
+    "routine_name": "Energy Saver 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-15T17:43:28",
+    "updated_at": "2025-12-19T18:29:12"
+  },
+  "234": {
+    "routine_id": "234",
+    "home_id": "68",
+    "created_by_user_id": "38",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-09T09:53:42",
+    "updated_at": "2024-11-16T22:52:19"
+  },
+  "235": {
+    "routine_id": "235",
+    "home_id": "68",
+    "created_by_user_id": "38",
+    "routine_name": "Leave Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-15T06:05:00",
+    "updated_at": "2025-07-22T09:23:33"
+  },
+  "236": {
+    "routine_id": "236",
+    "home_id": "69",
+    "created_by_user_id": "39",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-16T07:44:35",
+    "updated_at": "2025-09-27T22:26:30"
+  },
+  "237": {
+    "routine_id": "237",
+    "home_id": "69",
+    "created_by_user_id": "39",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-09-22T15:46:20",
+    "updated_at": "2024-11-09T09:08:06"
+  },
+  "238": {
+    "routine_id": "238",
+    "home_id": "70",
+    "created_by_user_id": "39",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-02T19:00:19",
+    "updated_at": "2024-10-26T17:44:33"
+  },
+  "239": {
+    "routine_id": "239",
+    "home_id": "70",
+    "created_by_user_id": "39",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-06-23T18:15:10",
+    "updated_at": "2025-12-08T19:28:58"
+  },
+  "240": {
+    "routine_id": "240",
+    "home_id": "70",
+    "created_by_user_id": "39",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-12-31T06:39:49",
+    "updated_at": "2024-12-15T01:05:39"
+  },
+  "241": {
+    "routine_id": "241",
+    "home_id": "70",
+    "created_by_user_id": "39",
+    "routine_name": "Good Night 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-03T04:30:07",
+    "updated_at": "2024-11-28T13:33:59"
+  },
+  "242": {
+    "routine_id": "242",
+    "home_id": "70",
+    "created_by_user_id": "39",
+    "routine_name": "Good Night 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-10T22:00:26",
+    "updated_at": "2025-03-21T09:34:42"
+  },
+  "243": {
+    "routine_id": "243",
+    "home_id": "71",
+    "created_by_user_id": "40",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-02-11T18:19:54",
+    "updated_at": "2025-08-12T11:38:37"
+  },
+  "244": {
+    "routine_id": "244",
+    "home_id": "71",
+    "created_by_user_id": "40",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-29T17:36:23",
+    "updated_at": "2024-06-23T14:55:43"
+  },
+  "245": {
+    "routine_id": "245",
+    "home_id": "72",
+    "created_by_user_id": "40",
+    "routine_name": "Good Night 1",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2025-11-21T22:03:50",
+    "updated_at": "2025-12-06T13:21:30"
+  },
+  "246": {
+    "routine_id": "246",
+    "home_id": "72",
+    "created_by_user_id": "40",
+    "routine_name": "Good Night 2",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2023-06-17T07:53:40",
+    "updated_at": "2025-07-01T07:41:08"
+  },
+  "247": {
+    "routine_id": "247",
+    "home_id": "72",
+    "created_by_user_id": "40",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-05-24T22:01:50",
+    "updated_at": "2025-11-05T05:31:46"
+  },
+  "248": {
+    "routine_id": "248",
+    "home_id": "73",
+    "created_by_user_id": "41",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-11-20T08:27:21",
+    "updated_at": "2025-04-27T19:20:15"
+  },
+  "249": {
+    "routine_id": "249",
+    "home_id": "73",
+    "created_by_user_id": "41",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-06T19:09:58",
+    "updated_at": "2023-07-25T08:26:11"
+  },
+  "250": {
+    "routine_id": "250",
+    "home_id": "73",
+    "created_by_user_id": "41",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-07-21T13:22:10",
+    "updated_at": "2025-09-14T08:04:15"
+  },
+  "251": {
+    "routine_id": "251",
+    "home_id": "73",
+    "created_by_user_id": "41",
+    "routine_name": "Energy Saver 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-05-22T20:45:26",
+    "updated_at": "2024-06-03T07:33:57"
+  },
+  "252": {
+    "routine_id": "252",
+    "home_id": "74",
+    "created_by_user_id": "41",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-09-19T10:21:56",
+    "updated_at": "2025-09-24T16:41:45"
+  },
+  "253": {
+    "routine_id": "253",
+    "home_id": "74",
+    "created_by_user_id": "41",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-05-02T21:29:03",
+    "updated_at": "2024-10-10T21:17:13"
+  },
+  "254": {
+    "routine_id": "254",
+    "home_id": "74",
+    "created_by_user_id": "41",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-12-05T00:15:22",
+    "updated_at": "2024-08-07T20:59:01"
+  },
+  "255": {
+    "routine_id": "255",
+    "home_id": "75",
+    "created_by_user_id": "41",
+    "routine_name": "Arrive Home 1",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2023-12-16T19:03:18",
+    "updated_at": "2024-02-05T14:54:55"
+  },
+  "256": {
+    "routine_id": "256",
+    "home_id": "75",
+    "created_by_user_id": "41",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-29T12:38:58",
+    "updated_at": "2025-12-07T08:21:29"
+  },
+  "257": {
+    "routine_id": "257",
+    "home_id": "75",
+    "created_by_user_id": "41",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-08-14T10:09:40",
+    "updated_at": "2025-02-09T06:01:19"
+  },
+  "258": {
+    "routine_id": "258",
+    "home_id": "75",
+    "created_by_user_id": "41",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-10T17:56:25",
+    "updated_at": "2025-01-22T08:26:52"
+  },
+  "259": {
+    "routine_id": "259",
+    "home_id": "76",
+    "created_by_user_id": "42",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-25T01:14:55",
+    "updated_at": "2024-05-31T21:06:42"
+  },
+  "260": {
+    "routine_id": "260",
+    "home_id": "76",
+    "created_by_user_id": "42",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-09-16T10:53:47",
+    "updated_at": "2025-01-31T05:19:21"
+  },
+  "261": {
+    "routine_id": "261",
+    "home_id": "76",
+    "created_by_user_id": "42",
+    "routine_name": "Energy Saver 3",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2024-09-29T04:08:05",
+    "updated_at": "2025-11-26T02:32:45"
+  },
+  "262": {
+    "routine_id": "262",
+    "home_id": "76",
+    "created_by_user_id": "42",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-06T20:22:24",
+    "updated_at": "2025-12-10T10:04:28"
+  },
+  "263": {
+    "routine_id": "263",
+    "home_id": "77",
+    "created_by_user_id": "42",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-03T20:40:09",
+    "updated_at": "2025-09-10T18:42:45"
+  },
+  "264": {
+    "routine_id": "264",
+    "home_id": "77",
+    "created_by_user_id": "42",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-04T09:10:10",
+    "updated_at": "2025-12-05T09:22:36"
+  },
+  "265": {
+    "routine_id": "265",
+    "home_id": "77",
+    "created_by_user_id": "42",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-04-16T16:31:02",
+    "updated_at": "2025-01-10T21:04:53"
+  },
+  "266": {
+    "routine_id": "266",
+    "home_id": "78",
+    "created_by_user_id": "42",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-06-08T23:23:50",
+    "updated_at": "2025-12-11T06:04:20"
+  },
+  "267": {
+    "routine_id": "267",
+    "home_id": "78",
+    "created_by_user_id": "42",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-10-28T04:38:33",
+    "updated_at": "2025-12-17T02:52:37"
+  },
+  "268": {
+    "routine_id": "268",
+    "home_id": "78",
+    "created_by_user_id": "42",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-01T09:34:36",
+    "updated_at": "2025-04-26T20:23:04"
+  },
+  "269": {
+    "routine_id": "269",
+    "home_id": "78",
+    "created_by_user_id": "42",
+    "routine_name": "Leave Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-31T15:48:06",
+    "updated_at": "2024-04-14T12:47:15"
+  },
+  "270": {
+    "routine_id": "270",
+    "home_id": "78",
+    "created_by_user_id": "42",
+    "routine_name": "Wake Up 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-11T16:44:11",
+    "updated_at": "2025-07-01T18:47:09"
+  },
+  "271": {
+    "routine_id": "271",
+    "home_id": "79",
+    "created_by_user_id": "43",
+    "routine_name": "Arrive Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-22T09:35:55",
+    "updated_at": "2024-06-02T21:00:41"
+  },
+  "272": {
+    "routine_id": "272",
+    "home_id": "79",
+    "created_by_user_id": "43",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-27T17:19:31",
+    "updated_at": "2025-01-21T13:26:31"
+  },
+  "273": {
+    "routine_id": "273",
+    "home_id": "79",
+    "created_by_user_id": "43",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-28T23:11:49",
+    "updated_at": "2024-11-06T09:24:54"
+  },
+  "274": {
+    "routine_id": "274",
+    "home_id": "79",
+    "created_by_user_id": "43",
+    "routine_name": "Wake Up 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-12-18T21:09:30",
+    "updated_at": "2024-12-04T11:38:09"
+  },
+  "275": {
+    "routine_id": "275",
+    "home_id": "79",
+    "created_by_user_id": "43",
+    "routine_name": "Good Night 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-11-03T23:58:11",
+    "updated_at": "2025-12-12T12:12:48"
+  },
+  "276": {
+    "routine_id": "276",
+    "home_id": "80",
+    "created_by_user_id": "43",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-07-17T08:54:18",
+    "updated_at": "2025-08-29T05:29:48"
+  },
+  "277": {
+    "routine_id": "277",
+    "home_id": "80",
+    "created_by_user_id": "43",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-10T17:24:58",
+    "updated_at": "2025-07-28T21:29:40"
+  },
+  "278": {
+    "routine_id": "278",
+    "home_id": "81",
+    "created_by_user_id": "44",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-17T19:10:31",
+    "updated_at": "2025-05-22T04:15:31"
+  },
+  "279": {
+    "routine_id": "279",
+    "home_id": "81",
+    "created_by_user_id": "44",
+    "routine_name": "Wake Up 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-13T00:13:48",
+    "updated_at": "2025-09-09T18:20:28"
+  },
+  "280": {
+    "routine_id": "280",
+    "home_id": "81",
+    "created_by_user_id": "44",
+    "routine_name": "Good Night 3",
+    "status": "disabled",
+    "description": "",
+    "created_at": "2024-08-25T12:50:20",
+    "updated_at": "2025-08-10T21:02:39"
+  },
+  "281": {
+    "routine_id": "281",
+    "home_id": "82",
+    "created_by_user_id": "45",
+    "routine_name": "Wake Up 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-11-24T07:25:54",
+    "updated_at": "2025-03-13T16:18:45"
+  },
+  "282": {
+    "routine_id": "282",
+    "home_id": "82",
+    "created_by_user_id": "45",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-05-11T13:24:28",
+    "updated_at": "2025-10-25T13:36:16"
+  },
+  "283": {
+    "routine_id": "283",
+    "home_id": "82",
+    "created_by_user_id": "45",
+    "routine_name": "Wake Up 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-12T06:13:26",
+    "updated_at": "2025-11-23T23:10:51"
+  },
+  "284": {
+    "routine_id": "284",
+    "home_id": "82",
+    "created_by_user_id": "45",
+    "routine_name": "Leave Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-11-20T09:41:06",
+    "updated_at": "2025-11-06T16:30:43"
+  },
+  "285": {
+    "routine_id": "285",
+    "home_id": "82",
+    "created_by_user_id": "45",
+    "routine_name": "Leave Home 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-05-17T03:11:39",
+    "updated_at": "2025-10-13T16:50:07"
+  },
+  "286": {
+    "routine_id": "286",
+    "home_id": "83",
+    "created_by_user_id": "47",
+    "routine_name": "Energy Saver 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-01-23T04:09:45",
+    "updated_at": "2023-07-23T23:00:57"
+  },
+  "287": {
+    "routine_id": "287",
+    "home_id": "83",
+    "created_by_user_id": "47",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-09-18T09:20:32",
+    "updated_at": "2025-10-23T16:38:35"
+  },
+  "288": {
+    "routine_id": "288",
+    "home_id": "83",
+    "created_by_user_id": "47",
+    "routine_name": "Leave Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-07-07T11:22:03",
+    "updated_at": "2025-06-10T06:20:11"
+  },
+  "289": {
+    "routine_id": "289",
+    "home_id": "83",
+    "created_by_user_id": "47",
+    "routine_name": "Arrive Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-01-02T21:08:14",
+    "updated_at": "2024-02-11T13:09:34"
+  },
+  "290": {
+    "routine_id": "290",
+    "home_id": "84",
+    "created_by_user_id": "47",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-24T06:54:52",
+    "updated_at": "2024-09-24T11:49:28"
+  },
+  "291": {
+    "routine_id": "291",
+    "home_id": "84",
+    "created_by_user_id": "47",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-27T07:25:38",
+    "updated_at": "2024-04-05T06:17:56"
+  },
+  "292": {
+    "routine_id": "292",
+    "home_id": "84",
+    "created_by_user_id": "47",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-12-24T23:52:38",
+    "updated_at": "2025-02-11T19:29:20"
+  },
+  "293": {
+    "routine_id": "293",
+    "home_id": "84",
+    "created_by_user_id": "47",
+    "routine_name": "Arrive Home 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-03-13T01:10:32",
+    "updated_at": "2024-12-06T13:22:57"
+  },
+  "294": {
+    "routine_id": "294",
+    "home_id": "84",
+    "created_by_user_id": "47",
+    "routine_name": "Wake Up 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-07-03T21:52:15",
+    "updated_at": "2025-11-03T16:23:44"
+  },
+  "295": {
+    "routine_id": "295",
+    "home_id": "85",
+    "created_by_user_id": "49",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-02-05T18:53:15",
+    "updated_at": "2024-05-16T09:28:42"
+  },
+  "296": {
+    "routine_id": "296",
+    "home_id": "85",
+    "created_by_user_id": "49",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-04-07T00:24:03",
+    "updated_at": "2025-11-19T17:38:49"
+  },
+  "297": {
+    "routine_id": "297",
+    "home_id": "86",
+    "created_by_user_id": "49",
+    "routine_name": "Good Night 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-11-18T00:43:19",
+    "updated_at": "2025-11-20T18:13:36"
+  },
+  "298": {
+    "routine_id": "298",
+    "home_id": "86",
+    "created_by_user_id": "49",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-10-01T00:46:15",
+    "updated_at": "2025-11-01T07:23:01"
+  },
+  "299": {
+    "routine_id": "299",
+    "home_id": "86",
+    "created_by_user_id": "49",
+    "routine_name": "Good Night 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-03-23T05:16:20",
+    "updated_at": "2025-06-03T11:19:27"
+  },
+  "300": {
+    "routine_id": "300",
+    "home_id": "86",
+    "created_by_user_id": "49",
+    "routine_name": "Energy Saver 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-23T09:58:19",
+    "updated_at": "2024-03-17T19:29:51"
+  },
+  "301": {
+    "routine_id": "301",
+    "home_id": "86",
+    "created_by_user_id": "49",
+    "routine_name": "Energy Saver 5",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2024-10-26T02:21:45",
+    "updated_at": "2025-11-07T17:38:17"
+  },
+  "302": {
+    "routine_id": "302",
+    "home_id": "87",
+    "created_by_user_id": "49",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-11-11T20:11:36",
+    "updated_at": "2025-11-05T21:27:37"
+  },
+  "303": {
+    "routine_id": "303",
+    "home_id": "87",
+    "created_by_user_id": "49",
+    "routine_name": "Leave Home 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-11-27T04:50:22",
+    "updated_at": "2025-12-13T11:48:32"
+  },
+  "304": {
+    "routine_id": "304",
+    "home_id": "87",
+    "created_by_user_id": "49",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-06-17T21:11:22",
+    "updated_at": "2025-06-06T12:05:33"
+  },
+  "305": {
+    "routine_id": "305",
+    "home_id": "87",
+    "created_by_user_id": "49",
+    "routine_name": "Energy Saver 4",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-03-06T17:55:46",
+    "updated_at": "2025-07-25T07:45:21"
+  },
+  "306": {
+    "routine_id": "306",
+    "home_id": "88",
+    "created_by_user_id": "50",
+    "routine_name": "Leave Home 1",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-08-09T05:09:58",
+    "updated_at": "2025-01-09T05:29:03"
+  },
+  "307": {
+    "routine_id": "307",
+    "home_id": "88",
+    "created_by_user_id": "50",
+    "routine_name": "Good Night 2",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2025-12-11T11:22:31",
+    "updated_at": "2025-12-16T09:55:06"
+  },
+  "308": {
+    "routine_id": "308",
+    "home_id": "88",
+    "created_by_user_id": "50",
+    "routine_name": "Arrive Home 3",
+    "status": "enabled",
+    "description": "",
+    "created_at": "2023-10-02T09:26:37",
+    "updated_at": "2025-11-21T03:21:21"
+  }
+}

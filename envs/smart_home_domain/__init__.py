@@ -1,0 +1,1 @@
+from tau_bench.envs.smart_home_domain.env import MockSmartHomeDomainEnv as MockSmartHomeDomainEnv
