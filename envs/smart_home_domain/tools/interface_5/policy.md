@@ -64,7 +64,7 @@ Steps to follow:
 2. Use list_accessories to get the accessories that will be used for the automation.
 3. Use create_automation to create a new automation.
 4. For time-based trigger: If the automation follows a clock, set the "trigger type" to "time-based" and create the trigger via create_automation_trigger.
-5. For sunrise/sunset trigger: Set the "trigger_type" to "solar-event" and create the trigger using create_automation_trigger with "sunrise" or "sunset" as the solar event.
+5. For sunrise/sunset trigger: Set the "trigger_type" to "solar_event" and create the trigger using create_automation_trigger with "sunrise" or "sunset" as the solar event.
 6. Add the action(s) that are going to be activated by the automation. For each of those actions:
    - If the action changes the attributes of an accessory, then:
 7. Select the target accessory from the list of accessories using list_accessories.
@@ -73,7 +73,7 @@ Steps to follow:
 9. Find the relevant scene using list_home_scenes.
 10. Attach the scene activation to the automation sequence using create_scene_activation_action.
 
-## SOP 5. Create Device State Trigger Automation
+## SOP 5. Create Accessory State Trigger Automation
 
 Steps to follow:
 
@@ -81,7 +81,7 @@ Steps to follow:
 2. Locate the accessory intended to trigger the automation within the list of available accessories via list_accessories.
 3. Verify that the chosen accessory is currently online and reachable by using get_accessory_reachability.
 4. Create the new automation container using create_automation to establish the foundation of the automation.
-5. For creating a trigger based on a device's status, set the trigger type to "device state" and create the trigger using create_automation_trigger.
+5. For creating a trigger based on an accessory's status, set the trigger type to "device_state" and create the trigger using create_automation_trigger.
 6. Add the action(s) that are going to be activated by the automation. For each of those actions:
    1. If the action changes the attributes of an accessory, then:
 7. Select the target accessory from the list of accessories using list_accessories.
@@ -117,18 +117,18 @@ Steps to follow:
 1. Use list_home_users to confirm that the specified home is among the homes the acting user belongs to and that this user has an admin role within it.
 2. To add a new accessory to the home, Use add_accessory_to_home with a unique serial number to complete the registration.
 3. To assign accessory to a room
-4. Locate the specific accessory by checking the device list through list_accessories.
+4. Locate the specific accessory by checking the accessory list through list_accessories.
 5. Find the target room by searching the list of home rooms via list_rooms.
 6. Apply the assignment of accessory to room using assign_accessory_to_room.
 7. Removing accessory from room:
-8. To clear a device's room location, find the accessory in the device list via list_accessories
+8. To clear an accessory's room location, find the accessory in the accessory list via list_accessories
 9. Use remove_accessory_from_room to decouple it from its current room assignment.
 10. For viewing accessory current state:
-11. To see real-time data for a device, obtain the accessory through list_accessories.
+11. To see real-time data for an accessory, obtain the accessory through list_accessories.
 12. Pull the full configuration and state details (such as "online" or "recording" status) via get_accessory.
 13. To add an action to scene:
 14. Retrieve the accessory, scene from the home's list via list_accessories and list_home_scenes.
-15. Verify the device is currently online and reachable by checking get_accessory_reachability.
+15. Verify the accessory is currently online and reachable by checking get_accessory_reachability.
 16. Implement the command by adding it as a scene action using add_action_to_scene.
 
 ## SOP 9. Create or Update Scene
@@ -137,15 +137,15 @@ Steps to follow:
 
 1. Use list_home_users to confirm that the specified home is among the homes the acting user belongs to and that this user has an admin role within it.
 2. To Create a New Scene:
-3. To establish a new scene, first identify the accessory of the primary device to be included by viewing the available devices via list_accessories.
+3. To establish a new scene, first identify the accessory of the primary accessory to be included by viewing the available devices via list_accessories.
 4. Then, use create_home_scene to define the home name, the new scene_name, and the primary accessory's identifier.
 5. To Modify an Existing Scene:
 6. To update a scene, find the specific scene by searching the list of home scenes via list_home_scenes.
 7. Locate the accessory using list_accessories.
 8. Apply the changes using edit_scene by specifying the status and the target state for the accessory.
 9. To Add Scene Actions:
-10. For every device involved in the scene, retrieve the accessory through list_accessories.
-11. Use add_action_to_scene to link the accessory to the scene identifier. Specify the action_order to determine the sequence of operations, the command and the specific value that the device should adopt.
+10. For every accessory involved in the scene, retrieve the accessory through list_accessories.
+11. Use add_action_to_scene to link the accessory to the scene identifier.
 
 ## SOP 10. Activate or Deactivate Scene
 
@@ -193,15 +193,15 @@ Steps to follow:
 5. Link Notification to a Scene: To send an alert when a scene is activated:
    - Locate the notification using list_notifications.
    - Identify the target scene where the notification needs to be sent using list_home_scenes.
-   - Use add_notification_to_scene to connect the alert to the scene, specifying the action_order to determine when the alert is sent during activation.
+   - Use add_notification_to_scene to connect the alert to the scene.
 
 ## SOP 14. Energy Management (View Usage, Summary, and Configure Tariff)
 
 Steps to follow:
 
 1. Use list_home_users to confirm that the specified home is among the homes the acting user belongs to and that this user has an admin role within it.
-2. View Individual Accessory Energy Usage: To monitor how much power a specific device is consuming:
-   - Identify the accessory for the target device by searching the list of home accessories via list_accessories.
-   - Use get_device_energy_usage to retrieve the data in kWh by providing the home name, accessory, and the specific start_date and end_date for the period.
+2. View Individual Accessory Energy Usage: To monitor how much power a specific accessory is consuming:
+   - Identify the accessory for the target accessory by searching the list of home accessories via list_accessories.
+   - Use get_accessory_energy_usage to retrieve the data in kWh by providing the home name, accessory, and the specific start_date and end_date for the period.
 3. To view home energy summary:
    - To get an overview of total consumption across the entire household, use get_home_energy_summary.
