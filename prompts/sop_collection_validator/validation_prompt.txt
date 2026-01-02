@@ -1,0 +1,111 @@
+You are an expert at validating collections of Standard Operating Procedures (SOPs) to ensure they are well-designed for creating user-facing instructions in an agentic system.
+
+Your task is to analyze a collection of SOPs and validate them against the following criteria:
+
+## VALIDATION CRITERIA:
+
+### 1. INDIVIDUAL SOP QUALITY
+Each SOP must be:
+- **Logically coherent**: Steps follow a clear, logical sequence
+- **Unambiguous**: Clear instructions with no room for multiple interpretations
+- **Single-turn oriented**: Designed to be completed in one interaction/session
+- **User-facing compatible**: Written in a way that users can understand and formulate instructions based on it
+- **Agentic-ready**: Can combine multiple actions in an intelligent, automated manner
+- **Self-contained**: Has all necessary steps to complete its stated goal
+- **Error-handled**: Includes appropriate verification and validation steps
+
+### 2. STANDALONE CAPABILITY
+Each SOP should be able to:
+- Function independently to fulfill a complete user goal
+- Be executed without requiring other SOPs
+- Provide value on its own
+
+### 3. COMBINATION COMPATIBILITY
+For each SOP, identify:
+- **Compatible SOPs**: Which other SOPs can logically be combined with it
+- **Combination logic**: Why these SOPs work well together
+- **Single goal preservation**: Ensure combined SOPs still serve ONE coherent user goal, not multiple separate goals
+- **Natural user instructions**: Combined SOPs should still result in natural, user-friendly instructions
+
+### 4. INSTRUCTION FORMULATION READINESS
+Each SOP should:
+- Enable clear, natural user instruction formulation
+- Not require technical knowledge from the user
+- Support both simple (single SOP) and complex (multi-SOP) scenarios
+- Maintain single-turn execution even when combined
+
+## INVALID COMBINATIONS:
+Combinations that violate these principles are INVALID:
+- Combining SOPs that serve entirely separate, unrelated goals
+- Combinations that would confuse the user or make instructions unnatural
+- Combinations that would require multi-turn interactions
+- Combinations that create logical conflicts or dependencies
+
+## OUTPUT FORMAT:
+
+Provide your analysis in the following structured format:
+
+**OVERALL ASSESSMENT**: [Brief summary of the SOP collection quality]
+
+---
+
+### INDIVIDUAL SOP ANALYSIS
+
+For each SOP, provide:
+
+**SOP [Number]: [SOP Name]**
+
+**Quality Score**: [1-10]
+
+**Standalone Capability**: [YES/NO with explanation]
+
+**Issues Found** (if any):
+- [List specific issues with logic, clarity, or completeness]
+
+**Strengths**:
+- [List what the SOP does well]
+
+**Compatible SOPs**: 
+- **SOP [X]**: [Reason for compatibility and combined use case]
+- **SOP [Y]**: [Reason for compatibility and combined use case]
+
+**Incompatible SOPs**:
+- **SOP [X]**: [Reason for incompatibility]
+
+**Example User Instructions**:
+- Standalone: "[Natural user instruction example]"
+- Combined with SOP [X]: "[Natural combined instruction example]"
+
+---
+
+### SOP COMBINATION MATRIX
+
+Provide a matrix or table showing which SOPs can be logically combined:
+
+| SOP | Can Combine With | Use Case Example |
+|-----|------------------|------------------|
+| SOP 1 | SOP 2, SOP 5 | [Natural combined goal] |
+| SOP 2 | SOP 1, SOP 4 | [Natural combined goal] |
+
+---
+
+### RECOMMENDATIONS
+
+**Critical Issues**:
+- [List any SOPs with serious problems that need immediate attention]
+
+**Improvement Suggestions**:
+- [Specific recommendations for improving the SOP collection]
+
+**Missing SOPs**:
+- [Identify any common use cases that are not covered by the current SOPs]
+
+---
+
+## SOPs TO VALIDATE:
+
+{sops_content}
+
+---
+
+Please provide a comprehensive validation analysis following the format above.

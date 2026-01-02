@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='images/favicon.ico') }}"
+      type="image/x-icon"
+    />
+    <title>Tool Schema Extractor - Turing Tooling</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/tool_schema_extractor.css') }}"
+    />
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <a href="/">
+        <div class="logo">
+          <img
+            src="{{ url_for('static', filename='images/turing_logo.svg') }}"
+            alt="turing image"
+            style="width: 100px; scale: 1.5; display: block; margin: 0 auto"
+          />
+        </div>
+      </a>
+    </header>
+
+    <!-- Tool Schema Extraction Section -->
+    <section class="tool-schema-extractor-section">
+      <div class="extractor-header">
+        <div class="header-visual">
+          <div class="extraction-icon">
+            <svg
+              width="120"
+              height="120"
+              viewBox="0 0 120 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="toolGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #667eea; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #764ba2; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <!-- Tool/wrench icon representing extraction -->
+              <path
+                d="M75 35 L85 45 L50 80 L40 70 Z"
+                fill="url(#toolGradient)"
+                opacity="0.6"
+              />
+              <circle cx="88" cy="32" r="8" fill="url(#toolGradient)" />
+              <rect
+                x="35"
+                y="65"
+                width="20"
+                height="20"
+                rx="3"
+                fill="url(#toolGradient)"
+                opacity="0.8"
+              />
+              <!-- Code brackets -->
+              <path
+                d="M25 50 L20 55 L25 60"
+                stroke="url(#toolGradient)"
+                stroke-width="3"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <path
+                d="M95 50 L100 55 L95 60"
+                stroke="url(#toolGradient)"
+                stroke-width="3"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <!-- Data flow arrows -->
+              <path
+                d="M30 40 L45 40"
+                stroke="url(#toolGradient)"
+                stroke-width="2"
+                marker-end="url(#arrowhead)"
+              />
+              <path
+                d="M30 70 L45 70"
+                stroke="url(#toolGradient)"
+                stroke-width="2"
+                marker-end="url(#arrowhead)"
+              />
+              <defs>
+                <marker
+                  id="arrowhead"
+                  markerWidth="10"
+                  markerHeight="10"
+                  refX="9"
+                  refY="3"
+                  orient="auto"
+                >
+                  <polygon points="0 0, 10 3, 0 6" fill="#667eea" />
+                </marker>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <h1>Tool Schema Extractor</h1>
+        <div class="subtitle-container">
+          <div class="subtitle-line"></div>
+          <span class="subtitle"
+            >Extract Tool Schemas with Required/Optional Arguments</span
+          >
+          <div class="subtitle-line"></div>
+        </div>
+        <p class="extractor-description">
+          Paste your draft policy document containing SOPs with function
+          signatures and data flows. This tool analyzes usage patterns across
+          all SOPs to determine which arguments should be required vs optional
+          for each tool/function, helping you create accurate API schemas.
+        </p>
+      </div>
+
+      <div id="content">
+        <div class="input-section">
+          <div class="info-box">
+            <h4>🔧 How It Works:</h4>
+            <ul>
+              <li>
+                <strong>Tracks Function Usage:</strong> Identifies all functions
+                across SOPs
+              </li>
+              <li>
+                <strong>Analyzes Argument Patterns:</strong> Determines usage
+                frequency for each argument
+              </li>
+              <li>
+                <strong>Classifies Arguments:</strong> Required (used
+                consistently) vs Optional (used conditionally)
+              </li>
+              <li>
+                <strong>Detects Inconsistencies:</strong> Flags variations in
+                function signatures
+              </li>
+              <li>
+                <strong>Generates Final Schemas:</strong> Provides complete tool
+                definitions
+              </li>
+            </ul>
+          </div>
+
+          <div class="example-box">
+            <h4>📝 Example Logic:</h4>
+            <p>
+              If <code>get_user(email, primary_household_id)</code> is used:
+            </p>
+            <ul>
+              <li>
+                <code>email</code> - appears in ALL 5 usages →
+                <span class="badge-required">REQUIRED</span>
+              </li>
+              <li>
+                <code>primary_household_id</code> - appears in only 2/5 usages →
+                <span class="badge-optional">OPTIONAL</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="input-group">
+            <h3 class="content-subheader">
+              <span class="step-number">📄</span>
+              Paste Your Draft Policy Document
+            </h3>
+            <p class="input-hint">
+              Include SOPs with full function signatures and data flows
+            </p>
+            <textarea
+              id="draft-policy-input"
+              placeholder="Example:
+
+SOP 3 - Create Sunrise/Sunset Automation
+
+Fetch the user using find_home_user(data: Dict[str, Any], email:str, household_name: str)
+Fetch device details using get_device(data: Dict[str, Any], household_id: str, device_name: str)
+Create automation using add_automation(data: Dict[str, Any], name: str, household_id: str)
+...
+
+Data Flow:
+Instruction(email, household_name) -> find_home_user
+Instruction(device_name), find_home_user(household_id) -> get_device
+..."
+            ></textarea>
+            <div class="char-counter">
+              <span id="char-count">0</span> characters
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            gap: 1rem;
+          "
+        >
+          <button id="extractButton" class="extract-button">
+            <span class="button-text">🔍 Extract Tool Schemas</span>
+            <span class="button-loader" style="display: none">
+              <svg width="20" height="20" viewBox="0 0 50 50">
+                <circle
+                  cx="25"
+                  cy="25"
+                  r="20"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="5"
+                  stroke-dasharray="31.4 31.4"
+                  transform="rotate(-90 25 25)"
+                >
+                  <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 25 25"
+                    to="360 25 25"
+                    dur="1s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </svg>
+            </span>
+          </button>
+          <button id="clearButton" class="clear-button">Clear</button>
+          <button
+            id="downloadButton"
+            class="download-button"
+            style="display: none"
+          >
+            📥 Download Results
+          </button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section" style="display: none">
+          <h2 class="content-header">📊 Extracted Tool Schemas</h2>
+          <div class="results-container">
+            <div id="extraction-output" class="extraction-result"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='scripts/tool_schema_extractor.js') }}"></script>
+  </body>
+</html>

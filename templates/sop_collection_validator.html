@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='images/favicon.ico') }}"
+      type="image/x-icon"
+    />
+    <title>SOP Collection Validator - Turing Tooling</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/sop_collection_validator.css') }}"
+    />
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <a href="/">
+        <div class="logo">
+          <img
+            src="{{ url_for('static', filename='images/turing_logo.svg') }}"
+            alt="turing image"
+            style="width: 100px; scale: 1.5; display: block; margin: 0 auto"
+          />
+        </div>
+      </a>
+    </header>
+
+    <!-- SOP Collection Validation Section -->
+    <section class="sop-collection-validator-section">
+      <div class="validator-header">
+        <div class="header-visual">
+          <div class="validation-icon">
+            <svg
+              width="120"
+              height="120"
+              viewBox="0 0 120 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="collectionGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #667eea; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #764ba2; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <!-- Multiple documents representing collection -->
+              <rect
+                x="25"
+                y="25"
+                width="40"
+                height="55"
+                rx="4"
+                fill="url(#collectionGradient)"
+                opacity="0.3"
+              />
+              <rect
+                x="35"
+                y="30"
+                width="40"
+                height="55"
+                rx="4"
+                fill="url(#collectionGradient)"
+                opacity="0.5"
+              />
+              <rect
+                x="45"
+                y="35"
+                width="40"
+                height="55"
+                rx="4"
+                stroke="url(#collectionGradient)"
+                stroke-width="3"
+                fill="rgba(0,0,0,0.5)"
+              />
+              <!-- Lines representing text -->
+              <line
+                x1="53"
+                y1="45"
+                x2="77"
+                y2="45"
+                stroke="url(#collectionGradient)"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="53"
+                y1="53"
+                x2="77"
+                y2="53"
+                stroke="url(#collectionGradient)"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="53"
+                y1="61"
+                x2="72"
+                y2="61"
+                stroke="url(#collectionGradient)"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <!-- Checkmark overlay -->
+              <circle cx="75" cy="75" r="15" fill="url(#collectionGradient)" />
+              <path
+                d="M68 75 L73 80 L82 70"
+                stroke="white"
+                stroke-width="3"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <h1>SOP Collection Validator</h1>
+        <div class="subtitle-container">
+          <div class="subtitle-line"></div>
+          <span class="subtitle"
+            >Validate Entire SOP Documents & Analyze Combinations</span
+          >
+          <div class="subtitle-line"></div>
+        </div>
+        <p class="validator-description">
+          Paste your complete SOP document (in plain text or Markdown format) to
+          validate logical coherence, standalone capability, and identify which
+          SOPs can be combined to create natural user instructions.
+        </p>
+      </div>
+
+      <div id="content">
+        <div class="input-section">
+          <div class="info-box">
+            <h4>📋 What This Tool Validates:</h4>
+            <ul>
+              <li>
+                <strong>Individual SOP Quality:</strong> Logical coherence,
+                clarity, single-turn orientation
+              </li>
+              <li>
+                <strong>Standalone Capability:</strong> Whether each SOP can
+                function independently
+              </li>
+              <li>
+                <strong>Combination Compatibility:</strong> Which SOPs can be
+                logically combined
+              </li>
+              <li>
+                <strong>User Instruction Readiness:</strong> How natural and
+                user-friendly SOPs are
+              </li>
+            </ul>
+          </div>
+
+          <div class="input-group">
+            <h3 class="content-subheader">
+              <span class="step-number">📄</span>
+              Paste Your SOPs Document
+            </h3>
+            <p class="input-hint">
+              Paste your complete SOP policy document below (supports plain text
+              or Markdown)
+            </p>
+            <textarea
+              id="sops-input"
+              placeholder="Example:
+
+## SOP 1. Add New Household Member
+
+Steps to follow:
+
+1. Retrieve the acting user details using resolve_user_identity...
+2. Retrieve the household where the new member will be added...
+3. Add the user to the household as a member...
+
+## SOP 2. Create Guest / Temporary Access Profile
+
+Steps to follow:
+
+1. Retrieve the acting user details using resolve_user_identity...
+..."
+            ></textarea>
+            <div class="char-counter">
+              <span id="char-count">0</span> characters
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            gap: 1rem;
+          "
+        >
+          <button id="validateButton" class="validation-button">
+            <span class="button-text">🔍 Validate SOP Collection</span>
+            <span class="button-loader" style="display: none">
+              <svg width="20" height="20" viewBox="0 0 50 50">
+                <circle
+                  cx="25"
+                  cy="25"
+                  r="20"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="5"
+                  stroke-dasharray="31.4 31.4"
+                  transform="rotate(-90 25 25)"
+                >
+                  <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 25 25"
+                    to="360 25 25"
+                    dur="1s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </svg>
+            </span>
+          </button>
+          <button id="clearButton" class="clear-button">Clear</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section" style="display: none">
+          <h2 class="content-header">📊 Validation Results</h2>
+          <div class="results-container">
+            <div id="validation-output" class="validation-result"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='scripts/sop_collection_validator.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+You are an expert at analyzing Standard Operating Procedures (SOPs) and extracting tool/function schemas with correct argument specifications.
+
+Your task is to analyze a draft policy document containing multiple SOPs with function signatures and data flows, then extract a comprehensive list of all tools/functions with their arguments, determining whether each argument should be REQUIRED or OPTIONAL based on usage patterns across all SOPs.
+
+## ANALYSIS LOGIC:
+
+### 1. FUNCTION IDENTIFICATION
+- Extract every unique function/tool used across all SOPs
+- Note the function signature including all parameters and their types
+- Track every occurrence of each function across different SOPs
+
+### 2. ARGUMENT CLASSIFICATION RULES
+
+For each argument of each function:
+
+**REQUIRED** - An argument should be marked as REQUIRED if:
+- It appears in ALL usages of the function across different SOPs
+- It is consistently provided in the data flow for that function
+- It is essential for the core functionality of the tool
+- It appears in 100% of the function's usages
+
+**OPTIONAL** - An argument should be marked as OPTIONAL if:
+- It only appears in SOME usages but not others
+- It is conditionally used depending on the specific SOP context
+- Different SOPs call the same function with different subsets of arguments
+- It appears in less than 90% of the function's usages
+
+### 3. TYPE INFERENCE
+- Extract the parameter type from function signatures (e.g., str, bool, int, Dict[str, Any])
+- Maintain consistency in type definitions across all usages
+
+### 4. USAGE TRACKING
+For each function, track:
+- Total number of times it's called across all SOPs
+- Which SOPs use this function
+- Which arguments are provided in each usage
+- Percentage of usages that include each argument
+
+## VALIDATION CHECKS:
+
+1. **Consistency Check**: If a function signature varies across SOPs, flag this as an inconsistency
+2. **Data Flow Alignment**: Ensure arguments in function signatures align with the data flow specifications
+3. **Type Consistency**: Verify that the same argument has consistent types across all usages
+
+## OUTPUT FORMAT:
+
+Provide your analysis in the following structured format:
+
+---
+
+## EXTRACTED TOOL SCHEMAS
+
+### Summary Statistics
+- **Total Unique Functions**: [number]
+- **Total SOPs Analyzed**: [number]
+- **Functions with Inconsistencies**: [number]
+
+---
+
+### Function Schema Definitions
+
+For each function, provide:
+
+#### Function: `function_name`
+
+**Description**: [Brief description of what this function does based on SOP context]
+
+**Usage Statistics**:
+- Used in: [number] SOPs
+- SOPs: SOP [X], SOP [Y], SOP [Z]
+- Total calls: [number]
+
+**Arguments**:
+
+| Argument Name | Type | Required/Optional | Usage % | Rationale |
+|---------------|------|-------------------|---------|-----------|
+| arg1 | str | REQUIRED | 100% | Used in all [X] occurrences across all SOPs |
+| arg2 | int | OPTIONAL | 33% | Only used in SOP [X], not in SOP [Y] or [Z] |
+
+**Function Signature (Final)**:
+```python
+function_name(
+    arg1: str,  # REQUIRED
+    arg2: int = None,  # OPTIONAL
+    arg3: bool = False  # OPTIONAL
+) -> ReturnType
+```
+
+**Notes**: [Any important observations about this function's usage]
+
+---
+
+### Inconsistencies Found
+
+List any issues discovered:
+
+**Function: `function_name`**
+- **Issue**: [Description of the inconsistency]
+- **Occurrences**: [Where the issue appears]
+- **Recommendation**: [How to resolve it]
+
+---
+
+### Recommendations
+
+1. **Argument Standardization**:
+   - [Specific recommendations for standardizing arguments]
+
+2. **Function Consolidation**:
+   - [If multiple similar functions exist, suggest consolidation]
+
+3. **Missing Arguments**:
+   - [If important arguments seem to be missing based on context]
+
+---
+
+### Complete Tool List (Sorted Alphabetically)
+
+```python
+# Tool 1
+function_name_1(
+    required_arg: str,
+    optional_arg: int = None
+)
+
+# Tool 2
+function_name_2(
+    required_arg1: str,
+    required_arg2: Dict[str, Any],
+    optional_arg1: bool = False
+)
+
+# ... [Continue for all tools]
+```
+
+---
+
+## DRAFT POLICY DOCUMENT TO ANALYZE:
+
+{draft_policy}
+
+---
+
+Please provide a comprehensive analysis following the format above. Be thorough in tracking argument usage patterns and provide clear rationale for each required/optional designation.
