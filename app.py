@@ -28,6 +28,9 @@ from modules.task_tracker import task_tracker_bp
 from modules.task_framework import task_framework_bp
 from modules.instruction_validation import instruction_validation_bp
 from modules.interface_connections import interface_connections_bp
+from modules.sop_validator import sop_validator_bp
+from modules.sop_collection_validator import sop_collection_validator_bp
+from modules.tool_schema_extractor import tool_schema_extractor_bp
 ################# END OF BLUEPRINTS #####################
 
 from dotenv import load_dotenv
@@ -68,11 +71,11 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=20) 
 
-# app.config['SESSION_TYPE'] = 'filesystem' 
+app.config['SESSION_TYPE'] = 'filesystem' 
 
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
-Session(app)
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+# Session(app)
 
 ########### REGISTER BLUEPRINTS ###########
 app.register_blueprint(db_utilities_bp)
@@ -80,6 +83,9 @@ app.register_blueprint(task_tracker_bp)
 app.register_blueprint(task_framework_bp)
 app.register_blueprint(instruction_validation_bp)
 app.register_blueprint(interface_connections_bp)
+app.register_blueprint(sop_validator_bp)
+app.register_blueprint(sop_collection_validator_bp)
+app.register_blueprint(tool_schema_extractor_bp)
 ######### END OF REGISTER BLUEPRINTS #########
 
 PUBLIC_ROUTES = {
@@ -97,7 +103,10 @@ REDIRECT_ROUTES = {
     '/index',
     '/tracker',
     '/task-framework',
-    '/db_utilities'
+    '/db_utilities',
+    '/sop_validator',
+    '/sop_collection_validator',
+    '/tool_schema_extractor'
 }
 
 @app.before_request

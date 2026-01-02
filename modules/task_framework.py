@@ -246,7 +246,7 @@ def env_interface():
                 #     new_file.write("class Tools:\n")
                 #     for invoke_method in invoke_methods:
                 #         new_file.write("    @staticmethod\n" + invoke_method + "\n\n")
-                session["imports_set"] = (importsSet)
+                session["imports_set"] = list(importsSet)
                 session["invoke_methods"] = invoke_methods
                 session["actions"] = []
                 # print("Imports set:", session["imports_set"])
