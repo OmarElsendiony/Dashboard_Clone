@@ -34,6 +34,20 @@ Each SOP should:
 - Support both simple (single SOP) and complex (multi-SOP) scenarios
 - Maintain single-turn execution even when combined
 
+### 5. STEP REFERENCE CONSISTENCY
+As an expert technical editor, you must scan the document and identify all incorrect or inconsistent step references (misreferences). Focus on:
+- **Cross-references that point to the wrong step number**: (e.g., referring to "step 4" when it should be "step 5")
+- **Incorrect sub-step formats**: (e.g., "3-a" instead of "3.1", "3-1" instead of "3.1", letters instead of numbers, or non-existent steps like "step 5-a")
+- **References that use inconsistent notation**: (hyphens vs dots vs letters)
+- **Any reference to a step that does not exist**: In the current section or SOP
+
+For each misreference found, you must report:
+- The SOP number and name (if applicable)
+- The exact location (e.g., "In SOP 4, step 4.3")
+- The incorrect reference as written
+- The correct reference (or note if the step doesn't exist)
+- A brief explanation
+
 ## INVALID COMBINATIONS:
 Combinations that violate these principles are INVALID:
 - Combining SOPs that serve entirely separate, unrelated goals
@@ -75,6 +89,20 @@ For each SOP, provide:
 **Example User Instructions**:
 - Standalone: "[Natural user instruction example]"
 - Combined with SOP [X]: "[Natural combined instruction example]"
+
+---
+
+### STEP REFERENCE CONSISTENCY ANALYSIS
+
+Check all step references throughout the document and report any issues found:
+
+**Step Reference Issues** (if any):
+
+| SOP | Location | Incorrect Reference | Correct Reference | Explanation |
+|-----|----------|-------------------|------------------|-------------|
+| SOP [X] | Step [Y] | [As written] | [Should be] | [Why it's wrong] |
+
+If no step reference issues are found, state: **"No step reference inconsistencies detected."**
 
 ---
 
