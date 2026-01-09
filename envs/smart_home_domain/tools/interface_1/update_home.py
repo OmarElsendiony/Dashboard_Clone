@@ -14,7 +14,6 @@ class UpdateHome(Tool):
     ) -> str:
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
-        
         homes = data.get("homes", {})
         addresses = data.get("addresses", {})
         address = new_address
@@ -51,7 +50,6 @@ class UpdateHome(Tool):
                 return json.dumps(
                     {"success": False, "error": f"Failed to update home info: {str(e)}"}
                 )
-                
         return json.dumps(
             {"success": True, "home": home, "address": addresses[target_address_id]}
         )
@@ -62,7 +60,7 @@ class UpdateHome(Tool):
             "type": "function",
             "function": {
                 "name": "update_home",
-                "description": "Update the information of a smart home and its address.",
+                "description": "Update the information of a smart home and its address. You can update home_name, and address details such as street, city, country, and house_number.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -76,7 +74,7 @@ class UpdateHome(Tool):
                         },
                         "target_info": {
                             "type": "object",
-                            "description": "The information to update in the home. Options include home_name, owner_id etc.",
+                            "description": "The information to update in the home. Options include home_name etc. E.g. {'home_name': 'New Home Name'}.",
                         },
                         "new_address": {
                             "type": "object",

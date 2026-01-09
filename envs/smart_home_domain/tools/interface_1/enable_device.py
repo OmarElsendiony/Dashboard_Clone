@@ -20,7 +20,7 @@ class EnableDevice(Tool):
         # Update the enabled status of the device
         devices[device_id] = {**device, "status": "online", "updated_at": timestamp}
         data["devices"] = devices
-        return json.dumps({"success": True, "device": device})
+        return json.dumps({"success": True, "device": devices[device_id]})
 
     @staticmethod
     def get_info() -> Dict[str, Any]:

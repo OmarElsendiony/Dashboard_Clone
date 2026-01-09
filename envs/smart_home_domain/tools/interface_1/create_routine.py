@@ -106,6 +106,7 @@ class CreateRoutine(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
+                        # Define your parameters here
                         "home_id": {
                             "type": "string",
                             "description": "The ID of the home.",
@@ -127,7 +128,7 @@ class CreateRoutine(Tool):
                             "description": "The description of the routine.",
                         },
                     },
+                    "required": ["routine_name", "creator_id"],
                 },
-                "required": ["routine_name", "creator_id"],
             },
         }

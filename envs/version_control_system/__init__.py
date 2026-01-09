@@ -1,0 +1,3 @@
+# Copyright Sierra
+
+from tau_bench.envs.version_control_system.env import MockVersionControlSystemDomainEnv as MockVersionControlSystemDomainEnv

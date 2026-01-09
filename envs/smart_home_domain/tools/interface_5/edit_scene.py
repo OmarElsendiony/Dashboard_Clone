@@ -197,7 +197,11 @@ class EditScene(Tool):
                 return json.dumps({"success": False, "error": "state must be a JSON object"})
             if len(state) != 1:
                 return json.dumps({"success": False, "error": "state must be a JSON object with exactly one attribute"})
-            command, value = next(iter(state.items()))
+            
+            # Extract the single key-value pair from state dictionary
+            state_items = list(state.items())
+            command, value = state_items[0]
+            
             ok, err = validate_attribute(devices[accessory_id_val].get("device_type"), str(command), str(value), allow_readonly=False)
             if not ok:
                 return json.dumps({"success": False, "error": err})
@@ -298,4 +302,3 @@ class EditScene(Tool):
                 },
             },
         }
-

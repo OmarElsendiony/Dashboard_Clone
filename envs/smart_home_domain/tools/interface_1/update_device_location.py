@@ -13,16 +13,8 @@ class UpdateDeviceLocation(Tool):
     ) -> str:
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
+        # Implement your tool logic here
         devices = data.get("devices", {})
-        if room_name and not room_id:
-            # Find room_id by room_name
-            rooms = data.get("rooms", {})
-            for r in rooms.values():
-                if r.get("room_name") == room_name:
-                    room_id = r.get("room_id")
-                    break
-            if not room_id:
-                return json.dumps({"success": False, "error": "Room not found"})
 
         if device_id:
             device = devices.get(device_id)
@@ -30,6 +22,17 @@ class UpdateDeviceLocation(Tool):
             return json.dumps({"success": False, "error": "No device specified"})
         if not device:
             return json.dumps({"success": False, "error": "Device not found"})
+        if room_name and not room_id:
+            # Find room_id by room_name
+            rooms = data.get("rooms", {})
+            for r in rooms.values():
+                if r.get("room_name") == room_name and device.get("home_id") == r.get(
+                    "home_id"
+                ):
+                    room_id = r.get("room_id")
+                    break
+            if not room_id:
+                return json.dumps({"success": False, "error": "Room not found"})
 
         # verify the room_id exists in data
         rooms = data.get("rooms", {})

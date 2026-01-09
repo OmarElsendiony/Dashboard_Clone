@@ -46,9 +46,11 @@ class ResolveHome(Tool):
         user_homes = [
             home_data
             for _, home_data in homes.items()
-            if home_data.pop("owner_id") == user.get("user_id")
+            if home_data.get("owner_id") == user.get("user_id")
         ]
-        return json.dumps({"success": True, "user": user, "homes": user_homes})
+        user_homes_copy = [home.copy() for home in user_homes]
+        _ = [home.pop("owner_id", None) or home for home in user_homes_copy]
+        return json.dumps({"success": True, "user": user, "homes": user_homes_copy})
 
     @staticmethod
     def get_info() -> Dict[str, Any]:

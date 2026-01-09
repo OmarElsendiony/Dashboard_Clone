@@ -19,14 +19,14 @@ class SetNotificationMute(Tool):
     ) -> str:
         """
         Sets notification mute settings for a user with time-based restrictions.
-        
+
         Args:
             data: The complete data dictionary containing all tables
             user_email: Email address of the user (required)
             mute_enabled: Whether notification muting is enabled (required)
             start_time: Start time for mute period in HH:MM format (required)
             end_time: End time for mute period in HH:MM format (required)
-            
+
         Returns:
             JSON string with success status and mute settings or error message
         """
@@ -66,7 +66,7 @@ class SetNotificationMute(Tool):
             )
 
         users = data.get("users", {})
-        
+
         if not isinstance(users, dict):
             return json.dumps(
                 {
@@ -74,17 +74,20 @@ class SetNotificationMute(Tool):
                     "error": "Invalid users container: expected dict at data['users']",
                 }
             )
+        if start_time == end_time:
+            return json.dumps(
+                {
+                    "success": False,
+                    "error": "start_time and end_time cannot be the same",
+                }
+            )
 
         # Validate required parameters
         if not user_email:
-            return json.dumps(
-                {"success": False, "error": "user_email is required"}
-            )
+            return json.dumps({"success": False, "error": "user_email is required"})
 
         if mute_enabled is None or mute_enabled == "":
-            return json.dumps(
-                {"success": False, "error": "mute_enabled is required"}
-            )
+            return json.dumps({"success": False, "error": "mute_enabled is required"})
 
         # Convert mute_enabled to boolean if it's a string
         if isinstance(mute_enabled, str):
@@ -101,18 +104,17 @@ class SetNotificationMute(Tool):
                 )
         elif not isinstance(mute_enabled, bool):
             return json.dumps(
-                {"success": False, "error": "mute_enabled must be a boolean or boolean string"}
+                {
+                    "success": False,
+                    "error": "mute_enabled must be a boolean or boolean string",
+                }
             )
 
         if not start_time:
-            return json.dumps(
-                {"success": False, "error": "start_time is required"}
-            )
+            return json.dumps({"success": False, "error": "start_time is required"})
 
         if not end_time:
-            return json.dumps(
-                {"success": False, "error": "end_time is required"}
-            )
+            return json.dumps({"success": False, "error": "end_time is required"})
 
         # Validate time formats
         if not validate_time_format(start_time):
@@ -134,12 +136,12 @@ class SetNotificationMute(Tool):
         # Find user by email
         user_id = None
         user_email_str = str(user_email)
-        
+
         for uid, user_data in users.items():
             if isinstance(user_data, dict) and user_data.get("email") == user_email_str:
                 user_id = uid
                 break
-        
+
         if not user_id:
             return json.dumps(
                 {
@@ -151,7 +153,7 @@ class SetNotificationMute(Tool):
         # Initialize notification_mute_settings if not exists
         if "notification_mute_settings" not in data:
             data["notification_mute_settings"] = {}
-        
+
         notification_mute_settings = data["notification_mute_settings"]
 
         # Check if user already has a mute setting and update it, or create new one
@@ -163,18 +165,20 @@ class SetNotificationMute(Tool):
 
         if existing_setting_id:
             # Update existing setting
-            notification_mute_settings[existing_setting_id].update({
-                "mute_enabled": mute_enabled,
-                "start_time": start_time,
-                "end_time": end_time,
-                "updated_at": timestamp,
-            })
+            notification_mute_settings[existing_setting_id].update(
+                {
+                    "mute_enabled": mute_enabled,
+                    "start_time": start_time,
+                    "end_time": end_time,
+                    "updated_at": timestamp,
+                }
+            )
             mute_setting = notification_mute_settings[existing_setting_id]
             action = "updated"
         else:
             # Create new setting
             new_setting_id = generate_id(notification_mute_settings)
-            
+
             new_mute_setting = {
                 "setting_id": new_setting_id,
                 "user_id": user_id,
@@ -192,29 +196,39 @@ class SetNotificationMute(Tool):
         # Apply mute/unmute to user's notifications
         notifications = data.get("notifications", {})
         affected_notifications = []
-        
+
         for notif_id, notification in notifications.items():
-            if isinstance(notification, dict) and notification.get("user_id") == user_id:
+            if (
+                isinstance(notification, dict)
+                and notification.get("user_id") == user_id
+            ):
                 # Update the muted status based on mute_enabled setting
                 notification["muted"] = mute_enabled
-                affected_notifications.append({
-                    "notification_id": notification["notification_id"],
-                    "title": notification["title"],
-                    "notification_type": notification["notification_type"],
-                    "muted": notification["muted"],
-                    "status": notification["status"]
-                })
+                affected_notifications.append(
+                    {
+                        "notification_id": notification["notification_id"],
+                        "title": notification["title"],
+                        "notification_type": notification["notification_type"],
+                        "muted": notification["muted"],
+                        "status": notification["status"],
+                    }
+                )
 
-        return json.dumps({
-            "success": True, 
-            "mute_setting": mute_setting, 
-            "action": action,
-            "affected_notifications": affected_notifications,
-            "notifications_count": len(affected_notifications)
-        })
+        return json.dumps(
+            {
+                "success": True,
+                "mute_setting": mute_setting,
+                "action": action,
+                "affected_notifications": affected_notifications,
+                "notifications_count": len(affected_notifications),
+            }
+        )
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
+        """
+        Tool schema for function-calling.
+        """
         return {
             "type": "function",
             "function": {
@@ -245,8 +259,12 @@ class SetNotificationMute(Tool):
                             "description": "End time for mute period in HH:MM format, e.g., '07:00' (required).",
                         },
                     },
-                    "required": ["user_email", "mute_enabled", "start_time", "end_time"],
+                    "required": [
+                        "user_email",
+                        "mute_enabled",
+                        "start_time",
+                        "end_time",
+                    ],
                 },
             },
         }
-
