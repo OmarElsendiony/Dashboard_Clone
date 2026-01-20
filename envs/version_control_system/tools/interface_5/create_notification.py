@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateNotification(Tool):
-    """Tool for creating a notification in the version control system."""
 
     @staticmethod
     def invoke(
@@ -15,28 +14,8 @@ class CreateNotification(Tool):
         reference_id: str,
         repo_id: str,
     ) -> str:
-        """
-        Create a new notification for a user.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            user_id: The ID of the user to notify (required).
-            notification_type: The type of notification (required).
-            reference_type: The type of reference (pull_request/issue) (required).
-            reference_id: The ID of the referenced pull request or issue (required).
-            repo_id: The ID of the repository (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created notification data.
-        """
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
@@ -68,8 +47,10 @@ class CreateNotification(Tool):
 
         # Normalize inputs
         user_id = str(user_id).strip()
-        notification_type = notification_type.strip().lower() if isinstance(notification_type, str) else ""
-        reference_type = reference_type.strip().lower() if isinstance(reference_type, str) else ""
+        notification_type = notification_type.strip().lower(
+        ) if isinstance(notification_type, str) else ""
+        reference_type = reference_type.strip().lower(
+        ) if isinstance(reference_type, str) else ""
         reference_id = str(reference_id).strip()
         repo_id = str(repo_id).strip()
 
@@ -110,7 +91,8 @@ class CreateNotification(Tool):
             })
 
         # Validate notification_type
-        allowed_notification_types = {"review_request", "pr_merged", "issue_assigned"}
+        allowed_notification_types = {
+            "review_request", "pr_merged", "issue_assigned"}
         if notification_type not in allowed_notification_types:
             return json.dumps({
                 "success": False,
@@ -201,12 +183,11 @@ class CreateNotification(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_notification function."""
         return {
             "type": "function",
             "function": {
                 "name": "create_notification",
-                "description": "Creates a notification for a user about a pull request or issue. Use this to notify users about review requests, pull request merges, or issue assignments.",
+                "description": "Creates a notification for a user about a pull request or issue.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -216,11 +197,13 @@ class CreateNotification(Tool):
                         },
                         "notification_type": {
                             "type": "string",
-                            "description": "The type of notification. Must be one of: review_request (for pull requests), pr_merged (for pull requests), issue_assigned (for issues).",
+                            "description": "The type of notification.",
+                            "enum": ["review_request", "pr_merged", "issue_assigned"]
                         },
                         "reference_type": {
                             "type": "string",
-                            "description": "The type of reference. Must be one of: pull_request, issue.",
+                            "description": "The type of reference.",
+                            "enum": ["pull_request", "issue"]
                         },
                         "reference_id": {
                             "type": "string",

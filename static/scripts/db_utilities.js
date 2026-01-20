@@ -256,7 +256,8 @@ async function regression_test_creator_handling() {
                         }
                     }
                     if (extractedLines.length > 0) {
-                        extractedTools += `# FILE: ${path}\n` + extractedLines.join('\n') + "\n\n";
+                        // extractedTools += `# FILE: ${path}\n` + extractedLines.join('\n') + "\n\n";
+                        extractedTools += `# FILE: ${path}\n` + fullCode + "\n\n";
                     }
                 }
             }
@@ -782,8 +783,6 @@ function sendContentLLM(feature) {
         })
             .then(response => response.json())
             .then(data => {
-                console.log(data);
-
                 const existingHeader = document.getElementById('output-header');
                 const existingTextArea = document.getElementById('generated-test');
                 if (existingHeader) existingHeader.remove();
@@ -814,6 +813,68 @@ function sendContentLLM(feature) {
             .catch(error => {
                 console.error('Error:', error);
                 alert('An error occurred while generating the regression test prompt.');
+            });
+    } else if (feature == "intra_inter_sop_validation") {
+        const initialPrompt = document.getElementById('initial-prompt').value;
+        const policy = document.getElementById('policy').value;
+        const targetSops = document.getElementById('target-sops').value;
+        const dbRecords = document.getElementById('db-records').value;
+        const interfaceTools = document.getElementById('interface-tools').value;
+        const exampleTasks = document.getElementById('example-tasks').value;
+
+        // Validation
+        if (!targetSops.trim()) {
+            alert('Please specify target SOP numbers before validating.');
+            return;
+        }
+
+        fetch('/database_utilities_prompt_generation', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                action: 'intra_inter_sop_validation',
+                initial_prompt: initialPrompt,
+                policy: policy,
+                target_sops: targetSops,
+                db_records: dbRecords,
+                interface_tools: interfaceTools,
+                example_tasks: exampleTasks
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                const existingHeader = document.getElementById('output-header');
+                const existingTextArea = document.getElementById('generated-validation');
+                if (existingHeader) existingHeader.remove();
+                if (existingTextArea) existingTextArea.remove();
+
+                const outputHeader = document.createElement('h2');
+                outputHeader.innerText = 'SOP Validation Results';
+                outputHeader.id = 'output-header';
+                outputHeader.style.marginTop = '2rem';
+                outputHeader.style.borderTop = '1px solid #eee';
+                outputHeader.style.paddingTop = '1rem';
+                document.getElementById('content').appendChild(outputHeader);
+
+                const textAreaNode = document.createElement('textarea');
+                textAreaNode.id = 'generated-validation';
+                textAreaNode.style.width = '100%';
+                textAreaNode.style.height = '300px';
+                textAreaNode.style.padding = '1rem';
+                textAreaNode.style.marginTop = '1rem';
+                textAreaNode.style.borderRadius = '8px';
+                textAreaNode.style.border = '1px solid #ccc';
+                textAreaNode.value = data.prompt;
+
+                document.getElementById('content').appendChild(textAreaNode);
+
+                textAreaNode.scrollIntoView({ behavior: 'smooth' });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while validating SOPs.');
             });
     } else {
         alert("This feature is not implemented yet.");
@@ -1154,6 +1215,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 else if (utility === 'regression-test-creator') {
                     regression_test_creator_handling();
                 }
+                else if (utility === 'intra-inter-sop-validation') {
+                    intra_inter_sop_validation_handling();
+                }
             } else {
                 console.warn('No utility data found for this card.');
             }
@@ -1295,10 +1359,10 @@ async function sop_task_creator_handling() {
                         // 2. Get total number of entries
                         const totalEntries = Array.isArray(jsonData) ? jsonData.length : Object.keys(jsonData).length;
                         // --- NEW LOGIC END ---
-
+                        
                         let sample = (Array.isArray(jsonData))
-                            ? jsonData.slice(0, 10)
-                            : Object.keys(jsonData).slice(0, 10).reduce((obj, k) => { obj[k] = jsonData[k]; return obj; }, {});
+                            ? jsonData.slice(0, Math.min(100, totalEntries))
+                            : Object.keys(jsonData).slice(0, Math.min(100, totalEntries)).reduce((obj, k) => { obj[k] = jsonData[k]; return obj; }, {});
 
                         // 3. Updated Output Format
                         extractedData += `FILE: ${cleanFileName} (Total entries: ${totalEntries})\n` + JSON.stringify(sample, null, 2) + "\n\n";
@@ -1498,5 +1562,214 @@ function copyToClipboard() {
     const text = document.getElementById('llm-output').textContent;
     navigator.clipboard.writeText(text).then(() => {
         alert("Copied to clipboard!");
+    });
+}
+
+
+async function intra_inter_sop_validation_handling() {
+    // 1. Fetch data
+    const response = await fetch('/database_utilities', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'intra_inter_sop_validation' })
+    });
+
+    const data = await response.json();
+
+    // 2. Render UI
+    const contentDiv = document.getElementById('content');
+    contentDiv.style.display = 'block';
+    contentDiv.innerHTML = '';
+    contentDiv.innerHTML = `
+        <h2 id="content-header">Intra/Inter SOP Validation</h2>
+        
+        <div id="drop-zone" class="zip-tool-container">
+            <div class="zip-tool-header">Project Auto-fill (Drag & Drop Supported)</div>
+            
+            <div class="control-row">
+                <div class="form-group">
+                    <label class="styled-label">Interface Version</label>
+                    <select id="auto-interface-select" class="styled-select">
+                        <option value="1">Interface 1</option>
+                        <option value="2">Interface 2</option>
+                        <option value="3">Interface 3</option>
+                        <option value="4">Interface 4</option>
+                        <option value="5">Interface 5</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="flex-grow: 1;">
+                     <label class="styled-label">Project Zip File</label>
+                     
+                     <div class="file-input-wrapper">
+                        <input type="file" id="auto-zip-input" accept=".zip" class="hidden-file-input">
+                        
+                        <label for="auto-zip-input" class="custom-file-button">
+                            Choose Zip File
+                        </label>
+                        
+                        <span id="file-name-text" class="file-name-display">No file chosen</span>
+                     </div>
+                </div>
+            </div>
+            
+            <div id="zip-status"></div>
+        </div>
+
+        <h3 class="content-subheader">Initial Prompt</h3>
+        <textarea id="initial-prompt" class="styled-textarea" style="height:80px;"></textarea>
+
+        <h3 class="content-subheader">Policy</h3>
+        <textarea id="policy" class="styled-textarea" style="height:120px;"></textarea>
+
+        <h3 class="content-subheader">Target SOPs</h3>
+        <input type="text" id="target-sops" placeholder="e.g. 1, 2, 6, 9" class="styled-textarea" style="height:42px;">
+
+        <h3 class="content-subheader">Database Records</h3>
+        <textarea id="db-records" class="styled-textarea" style="height:150px;"></textarea>
+
+        <h3 class="content-subheader">Interface Tools</h3>
+        <textarea id="interface-tools" class="styled-textarea" style="height:150px;"></textarea>
+
+        <h3 class="content-subheader">Example Tasks</h3>
+        <textarea id="example-tasks" class="styled-textarea" style="height:120px;"></textarea>
+
+        <button id="validate-sop" class="action-btn" onclick="sendContentLLM('intra_inter_sop_validation')">
+            Validate SOPs
+        </button>
+    `;
+
+    // 3. Fill Defaults
+    document.getElementById('initial-prompt').value = data.initial_prompt || '';
+    document.getElementById('policy').value = data.policy || '';
+    document.getElementById('target-sops').value = '';
+    document.getElementById('db-records').value = data.db_records || '';
+    document.getElementById('interface-tools').value = data.interface_tools || '';
+    document.getElementById('example-tasks').value = data.example_tasks || '';
+
+    // 4. ZIP PROCESSING LOGIC
+    const processZipFile = async (file) => {
+        if (!file) return;
+
+        // Update Filename UI
+        const fileNameSpan = document.getElementById('file-name-text');
+        fileNameSpan.innerText = file.name;
+        fileNameSpan.style.color = "#334155";
+        fileNameSpan.style.fontWeight = "600";
+
+        const interfaceNum = document.getElementById('auto-interface-select').value;
+        const statusDiv = document.getElementById('zip-status');
+        const dbArea = document.getElementById('db-records');
+        const toolsArea = document.getElementById('interface-tools');
+
+        statusDiv.innerText = "Processing Zip file...";
+        statusDiv.style.color = "#4f46e5";
+
+        try {
+            if (typeof JSZip === 'undefined') throw new Error("JSZip library missing.");
+
+            const zip = new JSZip();
+            const content = await zip.loadAsync(file);
+
+            let extractedTools = "";
+            let extractedData = "";
+            const interfacePathKey = `tools/interface_${interfaceNum}/`;
+            const dataPathKey = `data/`;
+
+            const filePaths = Object.keys(content.files).sort();
+
+            for (const path of filePaths) {
+                const entry = content.files[path];
+                if (entry.dir || path.includes('__MACOSX')) continue;
+
+                // DATA
+                if (path.includes(dataPathKey) && path.endsWith('.json')) {
+                    try {
+                        const jsonText = await entry.async("string");
+                        const jsonData = JSON.parse(jsonText);
+
+                        const cleanFileName = path.split('/').pop();
+                        const totalEntries = Array.isArray(jsonData) ? jsonData.length : Object.keys(jsonData).length;
+                        
+                        let sample = (Array.isArray(jsonData))
+                            ? jsonData.slice(0, Math.min(100, totalEntries))
+                            : Object.keys(jsonData).slice(0, Math.min(100, totalEntries)).reduce((obj, k) => { obj[k] = jsonData[k]; return obj; }, {});
+
+                        extractedData += `FILE: ${cleanFileName} (Total entries: ${totalEntries})\n` + JSON.stringify(sample, null, 2) + "\n\n";
+                    } catch (e) { console.warn(`Skipping ${path}`); }
+                }
+
+                // TOOLS
+                if (path.includes(interfacePathKey) && path.endsWith('.py') && !path.endsWith('__init__.py')) {
+                    const fullCode = await entry.async("string");
+                    const lines = fullCode.split('\n');
+                    let extractedLines = [];
+                    let capturing = false;
+                    let baseIndent = -1;
+
+                    for (let i = 0; i < lines.length; i++) {
+                        const line = lines[i];
+                        if (line.includes('def get_info')) {
+                            capturing = true;
+                            baseIndent = line.search(/\S/);
+                            if (i > 0 && lines[i - 1].trim() === '@staticmethod') extractedLines.push(lines[i - 1]);
+                            extractedLines.push(line);
+                            continue;
+                        }
+                        if (capturing) {
+                            if (line.trim() === '') { extractedLines.push(line); continue; }
+                            if (line.search(/\S/) <= baseIndent) break;
+                            extractedLines.push(line);
+                        }
+                    }
+                    if (extractedLines.length > 0) {
+                        extractedTools += `# FILE: ${path}\n` + extractedLines.join('\n') + "\n\n";
+                    }
+                }
+            }
+
+            dbArea.value = extractedData || "No JSON data found.";
+            toolsArea.value = extractedTools || "No get_info methods found.";
+
+            statusDiv.innerHTML = "<b>Success!</b> Fields populated.";
+            statusDiv.style.color = "#166534";
+
+        } catch (err) {
+            console.error(err);
+            statusDiv.innerText = "Error: " + err.message;
+            statusDiv.style.color = "#dc2626";
+            fileNameSpan.innerText = "Error loading file";
+        }
+    };
+
+    // 5. EVENT LISTENERS
+    document.getElementById('auto-zip-input').addEventListener('change', function (event) {
+        processZipFile(event.target.files[0]);
+        this.value = '';
+    });
+
+    const dropZone = document.getElementById('drop-zone');
+
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.classList.add('drag-over');
+    });
+
+    dropZone.addEventListener('dragleave', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('drag-over');
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('drag-over');
+        if (e.dataTransfer.files.length > 0) {
+            const file = e.dataTransfer.files[0];
+            if (file.name.endsWith('.zip')) {
+                processZipFile(file);
+            } else {
+                alert("Please drop a valid .zip file.");
+            }
+        }
     });
 }

@@ -15,11 +15,6 @@ class DeleteFile(Tool):
         file_id: str,
         commit_message: Optional[str] = None
     ) -> str:
-        """
-        Delete a file from a repository branch.
-        The author is automatically set to the authenticated user.
-        """
-
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -209,9 +204,7 @@ class DeleteFile(Tool):
             "function": {
                 "name": "delete_file",
                 "description": (
-                    "Delete a file from a repository branch. Creates a commit to "
-                    "record the deletion and updates the branch pointer. "
-                    "The author is automatically set to the authenticated user."
+                    "Deletes a file from a repository branch. The author is automatically set to the authenticated user."
                 ),
                 "parameters": {
                     "type": "object",
@@ -234,7 +227,7 @@ class DeleteFile(Tool):
                         },
                         "commit_message": {
                             "type": "string",
-                            "description": "Commit message for the deletion"
+                            "description": "Commit message for the deletion (optional)"
                         }
                     },
                     "required": ["access_token", "repository_id", "branch_id", "file_id"]

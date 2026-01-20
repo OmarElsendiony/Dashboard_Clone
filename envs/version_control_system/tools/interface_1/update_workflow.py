@@ -14,9 +14,6 @@ class UpdateWorkflow(Tool):
         trigger_event: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
-        """
-        Updates an existing workflow configuration.
-        """
         timestamp = "2026-01-01T23:59:00"
 
         try:
@@ -84,19 +81,21 @@ class UpdateWorkflow(Tool):
                         },
                         "workflow_name": {
                             "type": "string",
-                            "description": "The new name of the workflow."
+                            "description": "The new name of the workflow (optional)"
                         },
                         "workflow_path": {
                             "type": "string",
-                            "description": "The new file path to the workflow definition."
+                            "description": "The new file path to the workflow definition (optional)"
                         },
                         "trigger_event": {
                             "type": "string",
-                            "description": "The event that triggers the workflow. Allowed values: 'push', 'pull_request', 'schedule', 'workflow_dispatch', 'release'."
+                            "description": "The event that triggers the workflow. Allowed values: 'push', 'pull_request', 'schedule', 'workflow_dispatch', 'release' (optional)",
+                            "enum": ["push", "pull_request", "schedule", "workflow_dispatch", "release"]
                         },
                         "status": {
                             "type": "string",
-                            "description": "The new status of the workflow. Allowed values: 'active', 'disabled', 'deleted'."
+                            "description": "The new status of the workflow. Allowed values: 'active', 'disabled', 'deleted' (optional)",
+                            "enum": ["active", "disabled", "deleted"]
                         }
                     },
                     "required": ["access_token", "workflow_id"]

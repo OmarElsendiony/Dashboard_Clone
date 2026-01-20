@@ -13,9 +13,6 @@ class CreateBranchInRepo(Tool):
         source_branch: str,
         commit_sha: Optional[str] = None
     ) -> str:
-        """
-        Creates a new branch in a repository from a source branch.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -100,7 +97,7 @@ class CreateBranchInRepo(Tool):
             "type": "function",
             "function": {
                 "name": "create_branch_in_repo",
-                "description": "Creates a new branch in a repository from a source branch. If commit_sha is not provided, the new branch will point to the same commit as the source branch. If commit_sha is provided, the new branch will point to that specific commit.",
+                "description": "Creates a new branch in a repository from a source branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -118,7 +115,7 @@ class CreateBranchInRepo(Tool):
                         },
                         "commit_sha": {
                             "type": "string",
-                            "description": "The SHA hash of a specific commit to point the new branch to. If not provided, uses the source branch's current commit. Optional."
+                            "description": "The SHA hash of a specific commit to point the new branch to. If not provided, uses the source branch's current commit (optional)."
                         }
                     },
                     "required": ["repository_id", "branch_name", "source_branch"]

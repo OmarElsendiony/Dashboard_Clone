@@ -8638,5 +8638,212 @@
     "parent_directory_id": null,
     "created_at": "2025-12-21T05:38:53",
     "updated_at": "2025-12-27T03:44:32"
+  },
+  "961": {
+    "directory_id": "961",
+    "repository_id": "161",
+    "branch_id": "801",
+    "directory_path": "src",
+    "parent_directory_id": null,
+    "created_at": "2025-10-25T10:15:00",
+    "updated_at": "2026-01-08T14:00:00"
+  },
+  "962": {
+    "directory_id": "962",
+    "repository_id": "161",
+    "branch_id": "801",
+    "directory_path": "src/api",
+    "parent_directory_id": "961",
+    "created_at": "2025-10-26T09:20:00",
+    "updated_at": "2026-01-05T10:00:00"
+  },
+  "963": {
+    "directory_id": "963",
+    "repository_id": "161",
+    "branch_id": "801",
+    "directory_path": "src/models",
+    "parent_directory_id": "961",
+    "created_at": "2025-11-02T11:05:00",
+    "updated_at": "2026-01-07T14:00:00"
+  },
+  "964": {
+    "directory_id": "964",
+    "repository_id": "161",
+    "branch_id": "801",
+    "directory_path": "src/auth",
+    "parent_directory_id": "961",
+    "created_at": "2025-11-15T14:05:00",
+    "updated_at": "2025-12-20T14:00:00"
+  },
+  "965": {
+    "directory_id": "965",
+    "repository_id": "161",
+    "branch_id": "801",
+    "directory_path": "tests",
+    "parent_directory_id": null,
+    "created_at": "2025-11-05T16:50:00",
+    "updated_at": "2025-12-10T09:00:00"
+  },
+  "966": {
+    "directory_id": "966",
+    "repository_id": "161",
+    "branch_id": "801",
+    "directory_path": "docs",
+    "parent_directory_id": null,
+    "created_at": "2025-10-26T09:20:00",
+    "updated_at": "2025-12-01T11:30:00"
+  },
+  "967": {
+    "directory_id": "967",
+    "repository_id": "161",
+    "branch_id": "801",
+    "directory_path": ".github",
+    "parent_directory_id": null,
+    "created_at": "2025-11-10T09:35:00",
+    "updated_at": "2025-11-10T09:35:00"
+  },
+  "968": {
+    "directory_id": "968",
+    "repository_id": "161",
+    "branch_id": "801",
+    "directory_path": ".github/workflows",
+    "parent_directory_id": "967",
+    "created_at": "2025-11-10T09:40:00",
+    "updated_at": "2025-11-10T09:40:00"
+  },
+  "969": {
+    "directory_id": "969",
+    "repository_id": "162",
+    "branch_id": "806",
+    "directory_path": "src",
+    "parent_directory_id": null,
+    "created_at": "2025-11-30T11:15:00",
+    "updated_at": "2026-01-08T10:00:00"
+  },
+  "970": {
+    "directory_id": "970",
+    "repository_id": "162",
+    "branch_id": "806",
+    "directory_path": "src/gates",
+    "parent_directory_id": "969",
+    "created_at": "2025-12-05T14:35:00",
+    "updated_at": "2026-01-05T15:00:00"
+  },
+  "971": {
+    "directory_id": "971",
+    "repository_id": "162",
+    "branch_id": "806",
+    "directory_path": "src/algorithms",
+    "parent_directory_id": "969",
+    "created_at": "2025-12-20T14:50:00",
+    "updated_at": "2025-12-25T10:00:00"
+  },
+  "972": {
+    "directory_id": "972",
+    "repository_id": "162",
+    "branch_id": "806",
+    "directory_path": "src/simulator",
+    "parent_directory_id": "969",
+    "created_at": "2025-12-10T16:05:00",
+    "updated_at": "2026-01-02T09:15:00"
+  },
+  "973": {
+    "directory_id": "973",
+    "repository_id": "162",
+    "branch_id": "806",
+    "directory_path": "tests",
+    "parent_directory_id": null,
+    "created_at": "2025-12-08T11:05:00",
+    "updated_at": "2026-01-02T09:20:00"
+  },
+  "974": {
+    "directory_id": "974",
+    "repository_id": "162",
+    "branch_id": "806",
+    "directory_path": "docs",
+    "parent_directory_id": null,
+    "created_at": "2025-12-01T10:05:00",
+    "updated_at": "2025-12-28T11:30:00"
+  },
+  "975": {
+    "directory_id": "975",
+    "repository_id": "162",
+    "branch_id": "806",
+    "directory_path": "benchmarks",
+    "parent_directory_id": null,
+    "created_at": "2026-01-02T09:20:00",
+    "updated_at": "2026-01-02T09:20:00"
+  },
+  "976": {
+    "directory_id": "976",
+    "repository_id": "163",
+    "branch_id": "811",
+    "directory_path": "src",
+    "parent_directory_id": null,
+    "created_at": "2025-12-15T12:15:00",
+    "updated_at": "2026-01-08T11:00:00"
+  },
+  "977": {
+    "directory_id": "977",
+    "repository_id": "163",
+    "branch_id": "811",
+    "directory_path": "src/routing",
+    "parent_directory_id": "976",
+    "created_at": "2025-12-18T14:05:00",
+    "updated_at": "2025-12-20T11:30:00"
+  },
+  "978": {
+    "directory_id": "978",
+    "repository_id": "163",
+    "branch_id": "811",
+    "directory_path": "src/middleware",
+    "parent_directory_id": "976",
+    "created_at": "2025-12-20T11:35:00",
+    "updated_at": "2025-12-30T14:30:00"
+  },
+  "979": {
+    "directory_id": "979",
+    "repository_id": "163",
+    "branch_id": "811",
+    "directory_path": "src/loadbalancer",
+    "parent_directory_id": "976",
+    "created_at": "2025-12-25T10:50:00",
+    "updated_at": "2026-01-07T11:00:00"
+  },
+  "980": {
+    "directory_id": "980",
+    "repository_id": "163",
+    "branch_id": "811",
+    "directory_path": "src/health",
+    "parent_directory_id": "976",
+    "created_at": "2025-12-28T09:05:00",
+    "updated_at": "2026-01-08T11:00:00"
+  },
+  "981": {
+    "directory_id": "981",
+    "repository_id": "163",
+    "branch_id": "811",
+    "directory_path": "tests",
+    "parent_directory_id": null,
+    "created_at": "2025-12-18T14:10:00",
+    "updated_at": "2026-01-05T15:30:00"
+  },
+  "982": {
+    "directory_id": "982",
+    "repository_id": "163",
+    "branch_id": "811",
+    "directory_path": "docs",
+    "parent_directory_id": null,
+    "created_at": "2025-12-16T09:35:00",
+    "updated_at": "2026-01-02T10:15:00"
+  },
+  "983": {
+    "directory_id": "983",
+    "repository_id": "163",
+    "branch_id": "811",
+    "directory_path": "config",
+    "parent_directory_id": null,
+    "created_at": "2025-12-15T12:20:00",
+    "updated_at": "2025-12-30T14:35:00"
   }
 }

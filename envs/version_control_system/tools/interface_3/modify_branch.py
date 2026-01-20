@@ -12,9 +12,6 @@ class ModifyBranch(Tool):
         action: str,
         commit_sha: Optional[str] = None
     ) -> str:
-        """
-        Updates or deletes a branch in a repository.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -78,7 +75,7 @@ class ModifyBranch(Tool):
             "type": "function",
             "function": {
                 "name": "modify_branch",
-                "description": "Updates or deletes a branch in a repository. Use action 'update' to change the commit SHA, or action 'delete' to remove the branch.",
+                "description": "Updates or deletes a branch in a repository. Use action 'update' to update, or action 'delete' to remove the branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -92,7 +89,7 @@ class ModifyBranch(Tool):
                         },
                         "commit_sha": {
                             "type": "string",
-                            "description": "The SHA hash of the commit to point the branch to. Required when action is 'update'."
+                            "description": "The SHA hash of the commit to point the branch to. Required when action is 'update' (optional)."
                         }
                     },
                     "required": ["branch_id", "action"]

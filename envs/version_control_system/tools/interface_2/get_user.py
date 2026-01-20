@@ -9,9 +9,9 @@ class GetUser(Tool):
         username: Optional[str] = None,
         email: Optional[str] = None,
     ) -> str:
-        """ Retrieve user information by username or email."""
+        
         def validate_data_structure(data: Dict[str, Any]) -> Tuple[bool, Optional[str], Optional[Dict[str, Any]]]:
-            """Validate the data structure and return users_dict if valid."""
+            
             if not isinstance(data, dict):
                 return False, "Invalid data format: 'data' must be a dict", None
 
@@ -85,13 +85,7 @@ class GetUser(Tool):
             "function": {
                 "name": "get_user",
                 "description": (
-                    "Retrieve user information by username or email. "
-                    "At least one of username or email must be provided. "
-                    "Returns complete user details including user_id, username, email, full_name, bio, "
-                    "plan_type (free/premium), "
-                    "status (active/suspended/deleted), two_factor_enabled flag, and timestamps. "
-                    "Username takes priority in the search when both are provided. "
-                    "Returns an error if neither parameter is provided or if the user is not found."
+                    "Retrieve user details using a username or email (at least one required). If both are provided, the username is used first. Returns full user information, or an error if no input is given or the user does not exist."
                 ),
                 "parameters": {
                     "type": "object",

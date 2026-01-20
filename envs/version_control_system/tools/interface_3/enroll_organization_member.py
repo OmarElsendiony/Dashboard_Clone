@@ -13,9 +13,6 @@ class EnrollOrganizationMember(Tool):
         role: str,
         status: str
     ) -> str:
-        """
-        Adds a user as a member to an organization in the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -83,7 +80,7 @@ class EnrollOrganizationMember(Tool):
             "type": "function",
             "function": {
                 "name": "enroll_organization_member",
-                "description": "Adds a user as a member to an organization in the version control system. The user must exist and not already be a member of the organization.",
+                "description": "Adds a user as a member to an organization.",
                 "parameters": {
                     "type": "object",
                     "properties": {

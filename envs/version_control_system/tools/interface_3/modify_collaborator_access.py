@@ -12,9 +12,6 @@ class ModifyCollaboratorAccess(Tool):
         permission_level: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
-        """
-        Updates a repository collaborator's permission level or status.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -64,7 +61,7 @@ class ModifyCollaboratorAccess(Tool):
             "type": "function",
             "function": {
                 "name": "modify_collaborator_access",
-                "description": "Updates a repository collaborator's permission level or status. At least one of permission_level or status must be provided for update.",
+                "description": "Updates a repository collaborator's permission level or status.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -74,11 +71,11 @@ class ModifyCollaboratorAccess(Tool):
                         },
                         "permission_level": {
                             "type": "string",
-                            "description": "The new permission level for the collaborator. Valid values: read, write, admin."
+                            "description": "The new permission level for the collaborator. Valid values: read, write, admin (optional)."
                         },
                         "status": {
                             "type": "string",
-                            "description": "The new status for the collaborator. Valid values: active, pending, removed."
+                            "description": "The new status for the collaborator. Valid values: active, pending, removed (optional)."
                         }
                     },
                     "required": ["collaborator_id"]

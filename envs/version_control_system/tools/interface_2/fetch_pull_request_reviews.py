@@ -10,7 +10,6 @@ class FetchPullRequestReviews(Tool):
         pull_request_id: str,
         reviewer_id: Optional[str] = None,
     ) -> str:
-        """Fetch pull request review(s) based on pull_request_id and optional reviewer_id filter."""
 
         # Validate data structure
         if not isinstance(data, dict):
@@ -59,7 +58,7 @@ class FetchPullRequestReviews(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the fetch_pull_request_reviews function."""
+        
         return {
             "type": "function",
             "function": {

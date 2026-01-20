@@ -74,16 +74,7 @@ class GetRepository(Tool):
             "type": "function",
             "function": {
                 "name": "get_repository",
-                "description": (
-                    "Retrieve repository information by repository_name and project_id. "
-                    "Returns complete repository details including repository_id, owner_type, owner_id, "
-                    "project_id, repository_name, description, visibility, default_branch, is_fork, "
-                    "parent_repository_id, is_archived, is_template, stars_count, forks_count, "
-                    "license_type, and timestamps. "
-                    "Also includes repository collaborator details (permission_level, status) for the specified user_id. "
-                    "The collaborator_details field will be null if the user is not a collaborator of that repository. "
-                    "Returns an error if the repository is not found."
-                ),
+                "description": "Retrieves repository information.",
                 "parameters": {
                     "type": "object",
                     "properties": {

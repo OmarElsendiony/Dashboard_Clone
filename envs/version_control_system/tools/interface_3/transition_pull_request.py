@@ -12,9 +12,6 @@ class TransitionPullRequest(Tool):
         action: str,
         merged_by: Optional[str] = None
     ) -> str:
-        """
-        Transitions a pull request to a new status.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -88,7 +85,7 @@ class TransitionPullRequest(Tool):
             "type": "function",
             "function": {
                 "name": "transition_pull_request",
-                "description": "Transitions a pull request to a new status. Valid actions: close (closes the PR), merge (merges the PR), reopen (reopens a closed PR), convert_to_draft (converts an open PR to draft).",
+                "description": "Transitions a pull request to a new status.",
                 "parameters": {
                     "type": "object",
                     "properties": {

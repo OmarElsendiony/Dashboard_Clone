@@ -7,9 +7,6 @@ class DissolveOrganization(Tool):
 
     @staticmethod
     def invoke(data: Dict[str, Any], organization_id: str) -> str:
-        """
-        Deletes an organization and all its associated data from the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -59,7 +56,7 @@ class DissolveOrganization(Tool):
             "type": "function",
             "function": {
                 "name": "dissolve_organization",
-                "description": "Deletes an organization from the version control system. This operation also removes all organization memberships and all repositories owned by the organization.",
+                "description": "Deletes an organization from the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

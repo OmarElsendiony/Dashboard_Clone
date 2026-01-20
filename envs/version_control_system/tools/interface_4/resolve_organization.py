@@ -14,12 +14,6 @@ class ResolveOrganization(Tool):
         orgs_membership = data.get("organization_members", {})
 
         def encode(text):
-            """
-            Encodes text into Base64 format.
-            1. Converts string to bytes (.encode).
-            2. Encodes bytes to Base64 bytes.
-            3. Converts back to string (.decode) for readable output.
-            """
             text_bytes = text.encode("utf-8")
             encoded_bytes = base64.b64encode(text_bytes)
             return encoded_bytes.decode("utf-8")

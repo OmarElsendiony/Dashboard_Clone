@@ -5300,5 +5300,137 @@
     "is_read": false,
     "read_at": null,
     "created_at": "2025-11-28T00:09:26"
+  },
+  "483": {
+    "notification_id": "483",
+    "user_id": "101",
+    "notification_type": "review_request",
+    "reference_type": "pull_request",
+    "reference_id": "483",
+    "repository_id": "161",
+    "is_read": true,
+    "read_at": "2026-01-07T10:30:00",
+    "created_at": "2026-01-07T09:00:00"
+  },
+  "484": {
+    "notification_id": "484",
+    "user_id": "102",
+    "notification_type": "mention",
+    "reference_type": "issue",
+    "reference_id": "650",
+    "repository_id": "161",
+    "is_read": true,
+    "read_at": "2026-01-10T02:05:00",
+    "created_at": "2026-01-10T02:00:00"
+  },
+  "485": {
+    "notification_id": "485",
+    "user_id": "101",
+    "notification_type": "ci_failed",
+    "reference_type": "commit",
+    "reference_id": "8041",
+    "repository_id": "161",
+    "is_read": true,
+    "read_at": "2026-01-09T15:00:00",
+    "created_at": "2026-01-09T14:35:00"
+  },
+  "486": {
+    "notification_id": "486",
+    "user_id": "102",
+    "notification_type": "pr_merged",
+    "reference_type": "pull_request",
+    "reference_id": "481",
+    "repository_id": "161",
+    "is_read": false,
+    "read_at": null,
+    "created_at": "2025-12-21T11:00:00"
+  },
+  "487": {
+    "notification_id": "487",
+    "user_id": "111",
+    "notification_type": "issue_assigned",
+    "reference_type": "issue",
+    "reference_id": "653",
+    "repository_id": "162",
+    "is_read": true,
+    "read_at": "2026-01-08T17:00:00",
+    "created_at": "2026-01-08T16:30:00"
+  },
+  "488": {
+    "notification_id": "488",
+    "user_id": "112",
+    "notification_type": "review_request",
+    "reference_type": "pull_request",
+    "reference_id": "495",
+    "repository_id": "162",
+    "is_read": false,
+    "read_at": null,
+    "created_at": "2026-01-11T10:00:00"
+  },
+  "489": {
+    "notification_id": "489",
+    "user_id": "113",
+    "notification_type": "pr_merged",
+    "reference_type": "pull_request",
+    "reference_id": "485",
+    "repository_id": "162",
+    "is_read": true,
+    "read_at": "2025-12-28T15:00:00",
+    "created_at": "2025-12-28T14:00:00"
+  },
+  "490": {
+    "notification_id": "490",
+    "user_id": "121",
+    "notification_type": "ci_failed",
+    "reference_type": "commit",
+    "reference_id": "8049",
+    "repository_id": "163",
+    "is_read": false,
+    "read_at": null,
+    "created_at": "2026-01-11T10:15:00"
+  },
+  "491": {
+    "notification_id": "491",
+    "user_id": "123",
+    "notification_type": "review_request",
+    "reference_type": "pull_request",
+    "reference_id": "498",
+    "repository_id": "163",
+    "is_read": true,
+    "read_at": "2026-01-11T09:00:00",
+    "created_at": "2026-01-11T08:45:00"
+  },
+  "492": {
+    "notification_id": "492",
+    "user_id": "125",
+    "notification_type": "issue_assigned",
+    "reference_type": "issue",
+    "reference_id": "656",
+    "repository_id": "163",
+    "is_read": true,
+    "read_at": "2026-01-11T14:30:00",
+    "created_at": "2026-01-11T14:00:00"
+  },
+  "493": {
+    "notification_id": "493",
+    "user_id": "122",
+    "notification_type": "pr_closed",
+    "reference_type": "pull_request",
+    "reference_id": "496",
+    "repository_id": "163",
+    "is_read": false,
+    "read_at": null,
+    "created_at": "2026-01-05T14:00:00"
+  },
+  "494": {
+    "notification_id": "494",
+    "user_id": "121",
+    "notification_type": "release_published",
+    "reference_type": "release",
+    "reference_id": "337",
+    "repository_id": "163",
+    "is_read": false,
+    "read_at": null,
+    "created_at": "2026-01-12T14:00:00"
   }
 }

@@ -7093,5 +7093,148 @@
     "status": "pending",
     "created_at": "2025-12-31T14:10:30",
     "updated_at": "2025-12-31T20:17:00"
+  },
+  "646": {
+    "code_review_id": "646",
+    "pull_request_id": "481",
+    "file_path": "src/auth/jwt_handler.ts",
+    "reviewer_id": "101",
+    "comment_body": "Consider using a constant for the token expiry time instead of hardcoding.",
+    "review_type": "suggestion",
+    "status": "resolved",
+    "created_at": "2025-12-20T14:00:00",
+    "updated_at": "2025-12-20T15:30:00"
+  },
+  "647": {
+    "code_review_id": "647",
+    "pull_request_id": "483",
+    "file_path": "src/cache/redis_cache.ts",
+    "reviewer_id": "101",
+    "comment_body": "This cache invalidation has a race condition. What happens if two requests try to invalidate simultaneously?",
+    "review_type": "question",
+    "status": "pending",
+    "created_at": "2026-01-07T12:00:00",
+    "updated_at": "2026-01-08T09:00:00"
+  },
+  "648": {
+    "code_review_id": "648",
+    "pull_request_id": "490",
+    "file_path": "src/graphql/schema.ts",
+    "reviewer_id": "101",
+    "comment_body": "The schema design is too coupled to the REST API. Consider a more GraphQL-native approach.",
+    "review_type": "comment",
+    "status": "outdated",
+    "created_at": "2026-01-05T11:00:00",
+    "updated_at": "2026-01-08T16:00:00"
+  },
+  "649": {
+    "code_review_id": "649",
+    "pull_request_id": "491",
+    "file_path": "src/db/connection_pool.ts",
+    "reviewer_id": "102",
+    "comment_body": "Need to add proper error handling for connection timeouts.",
+    "review_type": "suggestion",
+    "status": "pending",
+    "created_at": "2026-01-11T09:30:00",
+    "updated_at": "2026-01-11T09:30:00"
+  },
+  "650": {
+    "code_review_id": "650",
+    "pull_request_id": "492",
+    "file_path": "src/auth/token_refresh.ts",
+    "reviewer_id": "101",
+    "comment_body": "Good use of mutex to prevent race condition. Approved.",
+    "review_type": "comment",
+    "status": "resolved",
+    "created_at": "2026-01-12T14:30:00",
+    "updated_at": "2026-01-12T15:00:00"
+  },
+  "651": {
+    "code_review_id": "651",
+    "pull_request_id": "485",
+    "file_path": "src/algorithms/shor.py",
+    "reviewer_id": "112",
+    "comment_body": "The modular exponentiation could be optimized using repeated squaring.",
+    "review_type": "suggestion",
+    "status": "resolved",
+    "created_at": "2025-12-26T11:00:00",
+    "updated_at": "2025-12-27T14:00:00"
+  },
+  "652": {
+    "code_review_id": "652",
+    "pull_request_id": "493",
+    "file_path": "src/error_correction/surface_code.py",
+    "reviewer_id": "111",
+    "comment_body": "The syndrome extraction is incorrect for boundary qubits. This needs to be fixed before merge.",
+    "review_type": "comment",
+    "status": "outdated",
+    "created_at": "2026-01-06T10:00:00",
+    "updated_at": "2026-01-07T11:00:00"
+  },
+  "653": {
+    "code_review_id": "653",
+    "pull_request_id": "494",
+    "file_path": "src/qml/variational_classifier.py",
+    "reviewer_id": "113",
+    "comment_body": "Have you considered using parameter shift rule for gradients instead of finite differences?",
+    "review_type": "question",
+    "status": "pending",
+    "created_at": "2026-01-10T11:00:00",
+    "updated_at": "2026-01-10T11:00:00"
+  },
+  "654": {
+    "code_review_id": "654",
+    "pull_request_id": "487",
+    "file_path": "src/router/path_matcher.go",
+    "reviewer_id": "121",
+    "comment_body": "Nice implementation of trie-based routing. Very efficient.",
+    "review_type": "comment",
+    "status": "resolved",
+    "created_at": "2025-12-20T12:00:00",
+    "updated_at": "2025-12-21T16:00:00"
+  },
+  "655": {
+    "code_review_id": "655",
+    "pull_request_id": "488",
+    "file_path": "src/resilience/circuit_breaker.go",
+    "reviewer_id": "122",
+    "comment_body": "Should we make the threshold configurable via environment variables?",
+    "review_type": "suggestion",
+    "status": "resolved",
+    "created_at": "2025-12-31T11:00:00",
+    "updated_at": "2026-01-01T14:00:00"
+  },
+  "656": {
+    "code_review_id": "656",
+    "pull_request_id": "496",
+    "file_path": "src/websocket/handler.go",
+    "reviewer_id": "121",
+    "comment_body": "The scope of this PR is too large. Let's defer WebSocket to v2.0.",
+    "review_type": "comment",
+    "status": "outdated",
+    "created_at": "2026-01-02T10:00:00",
+    "updated_at": "2026-01-05T14:00:00"
+  },
+  "657": {
+    "code_review_id": "657",
+    "pull_request_id": "497",
+    "file_path": "src/grpc/gateway.go",
+    "reviewer_id": "123",
+    "comment_body": "Draft looks promising. Let me know when ready for full review.",
+    "review_type": "comment",
+    "status": "pending",
+    "created_at": "2026-01-09T10:30:00",
+    "updated_at": "2026-01-09T10:30:00"
+  },
+  "658": {
+    "code_review_id": "658",
+    "pull_request_id": "498",
+    "file_path": "src/pool/connection.go",
+    "reviewer_id": "123",
+    "comment_body": "The defer statement ensures proper cleanup. Good fix!",
+    "review_type": "comment",
+    "status": "resolved",
+    "created_at": "2026-01-11T09:30:00",
+    "updated_at": "2026-01-11T10:30:00"
   }
 }

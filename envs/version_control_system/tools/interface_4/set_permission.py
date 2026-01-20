@@ -80,10 +80,6 @@ class SetPermission(Tool):
                 "name": "set_permission",
                 "description": (
                     "Updates the visibility setting of an existing organization. "
-                    "This tool allows an authenticated user to change an organization's "
-                    "visibility to one of the supported values. The operation fails if "
-                    "the authentication token is invalid, the organization does not exist, "
-                    "or an unsupported visibility value is provided."
                 ),
                 "parameters": {
                     "type": "object",
@@ -100,8 +96,6 @@ class SetPermission(Tool):
                             "type": "object",
                             "description": (
                                 "Configuration object describing the permission update to apply. "
-                                "For this tool, it must specify the target organization_id and the "
-                                "desired visibility setting ('private', 'public', 'limited')."
                             ),
                             "properties": {
                                 "organization_id": {

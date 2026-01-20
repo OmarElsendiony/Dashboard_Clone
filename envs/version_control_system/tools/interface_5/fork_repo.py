@@ -5,7 +5,6 @@ from tau_bench.envs.tool import Tool
 
 
 class ForkRepo(Tool):
-    """Tool for forking (cloning) a repository into a new namespace in the version control system."""
 
     @staticmethod
     def invoke(
@@ -14,37 +13,15 @@ class ForkRepo(Tool):
         new_owner_email: str,
         new_repo_name: str,
     ) -> str:
-        """
-        Fork (clone) a repository into a new namespace.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            source_repo_id: The ID of the source repository to fork (required).
-            new_owner_email: The email of the user who will own the forked repository (required).
-            new_repo_name: The name of the new forked repository (required, must be unique).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and forked repository data.
-        """
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
 
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
 
         def generate_commit_sha(repo_name: str, branch_name: str, timestamp: str, suffix: str = "") -> str:
-            """
-            Generates a unique commit SHA for a branch.
 
-            Returns:
-                str: A 40-character hexadecimal SHA string.
-            """
             content = f"{repo_name}:{branch_name}:{timestamp}:{suffix}"
             return hashlib.sha1(content.encode()).hexdigest()
 
@@ -157,7 +134,7 @@ class ForkRepo(Tool):
         branch_id_mapping = {}  # old_branch_id -> new_branch_id
         new_branches = []
 
-        for branch_id, branch in branches.items():
+        for branch_id, branch in list(branches.items()):
             if branch.get("repository_id") == source_repo_id:
                 new_branch_id = generate_id(branches)
                 branch_id_mapping[branch_id] = new_branch_id
@@ -184,12 +161,13 @@ class ForkRepo(Tool):
 
         # First pass: collect all source directories
         source_directories = []
-        for dir_id, directory in directories.items():
+        for dir_id, directory in list(directories.items()):
             if directory.get("repository_id") == source_repo_id:
                 source_directories.append((dir_id, directory))
 
         # Sort by directory path length to process parents before children
-        source_directories.sort(key=lambda x: len(x[1].get("directory_path", "")))
+        source_directories.sort(key=lambda x: len(
+            x[1].get("directory_path", "")))
 
         for old_dir_id, directory in source_directories:
             new_dir_id = generate_id(directories)
@@ -199,7 +177,8 @@ class ForkRepo(Tool):
             new_branch_id = branch_id_mapping.get(old_branch_id, old_branch_id)
 
             old_parent_dir_id = directory.get("parent_directory_id")
-            new_parent_dir_id = directory_id_mapping.get(old_parent_dir_id) if old_parent_dir_id else None
+            new_parent_dir_id = directory_id_mapping.get(
+                old_parent_dir_id) if old_parent_dir_id else None
 
             new_directory = {
                 "directory_id": new_dir_id,
@@ -219,13 +198,14 @@ class ForkRepo(Tool):
         file_id_mapping = {}  # old_file_id -> new_file_id
         new_files = []
 
-        for file_id, file_record in files.items():
+        for file_id, file_record in list(files.items()):
             if file_record.get("repository_id") == source_repo_id:
                 new_file_id = generate_id(files)
                 file_id_mapping[file_id] = new_file_id
 
                 old_branch_id = file_record.get("branch_id")
-                new_branch_id = branch_id_mapping.get(old_branch_id, old_branch_id)
+                new_branch_id = branch_id_mapping.get(
+                    old_branch_id, old_branch_id)
 
                 old_dir_id = file_record.get("directory_id")
                 new_dir_id = directory_id_mapping.get(old_dir_id, old_dir_id)
@@ -251,7 +231,7 @@ class ForkRepo(Tool):
         # Copy file contents for the copied files
         new_file_contents = []
 
-        for content_id, content_record in file_contents.items():
+        for content_id, content_record in list(file_contents.items()):
             old_file_id = content_record.get("file_id")
             if old_file_id in file_id_mapping:
                 new_content_id = generate_id(file_contents)
@@ -298,12 +278,12 @@ class ForkRepo(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the fork_repo function."""
+
         return {
             "type": "function",
             "function": {
                 "name": "fork_repo",
-                "description": "Forks an existing repository into a new namespace in the version control system. Creates a copy of the source repository under a new owner with a new name.",
+                "description": "Forks an existing repository into a new namespace in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -14,7 +14,6 @@ class ModifyPullRequest(Tool):
         description: Optional[str] = None,
         title: Optional[str] = None,
     ) -> str:
-        """Modify a pull request."""
         timestamp = "2026-01-01T23:59:00"
 
         # Validate data structure
@@ -76,19 +75,11 @@ class ModifyPullRequest(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the modify_pull_request function."""
         return {
             "type": "function",
             "function": {
                 "name": "modify_pull_request",
-                "description": (
-                    "Modify a pull request's details. "
-                    "At least one of status, target_branch, description, or title must be provided for update. "
-                    "If status is provided, validates it's one of: open, closed, merged, draft. "
-                    "When status changes to 'closed', sets closed_at timestamp. "
-                    "When status changes to 'merged', sets merged_at timestamp and merged_by to user_id. "
-                    "Returns the updated pull request details."
-                ),
+                "description": "Modifies a pull request's details.",
                 "parameters": {
                     "type": "object",
                     "properties": {

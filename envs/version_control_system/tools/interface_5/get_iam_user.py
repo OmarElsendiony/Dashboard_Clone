@@ -4,23 +4,11 @@ from tau_bench.envs.tool import Tool
 
 
 class GetIamUser(Tool):
-    """Tool for retrieving IAM user details from the version control system."""
-
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         email: str,
     ) -> str:
-        """
-        Retrieve IAM user details by email address.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            email: The email address of the user to look up (required).
-
-        Returns:
-            JSON string containing the success status and user data if found.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -45,12 +33,11 @@ class GetIamUser(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_iam_user function."""
         return {
             "type": "function",
             "function": {
                 "name": "get_iam_user",
-                "description": "Retrieves IAM user information by email address. Use this to verify user existence or check account status.",
+                "description": "Retrieves IAM user information.",
                 "parameters": {
                     "type": "object",
                     "properties": {

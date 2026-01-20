@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class WriteRepoPermissions(Tool):
-    """Tool for adding, updating, or removing repository collaborator permissions."""
 
     @staticmethod
     def invoke(
@@ -14,28 +13,9 @@ class WriteRepoPermissions(Tool):
         user_id: str,
         permission_level: Optional[str] = None,
     ) -> str:
-        """
-        Add, update, or remove repository collaborator permissions.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            action: The action to perform. Must be one of: "upsert" (add or update), "remove".
-            repo_id: The ID of the repository (required).
-            user_id: The ID of the user to manage permissions for (required).
-            permission_level: The permission level to assign. Must be one of: read, write, admin.
-                            Required for "upsert" action, optional for "remove" action.
-
-        Returns:
-            JSON string containing the success status and collaborator data.
-        """
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
 
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
@@ -104,14 +84,12 @@ class WriteRepoPermissions(Tool):
             })
 
         # Find existing collaborator record
-        existing_collaborator_key = None
         existing_collaborator = None
         for key, collab in repository_collaborators.items():
             if (
                 str(collab.get("repository_id")) == repo_id
                 and str(collab.get("user_id")) == user_id
             ):
-                existing_collaborator_key = key
                 existing_collaborator = collab
                 break
 
@@ -196,18 +174,19 @@ class WriteRepoPermissions(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the write_repo_permissions function."""
+
         return {
             "type": "function",
             "function": {
                 "name": "write_repo_permissions",
-                "description": "Add, update, or remove repository collaborator permissions. Use action='upsert' to add a new collaborator or update an existing collaborator's permission level. Use action='remove' to remove a collaborator from the repository.",
+                "description": "Adds, updates, or removes repository collaborator permissions.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "The action to perform. Must be one of: 'upsert' (add or update collaborator), 'remove' (remove collaborator).",
+                            "description": "The action to perform.",
+                            "enum": ["upsert", "remove"]
                         },
                         "repo_id": {
                             "type": "string",
@@ -219,7 +198,8 @@ class WriteRepoPermissions(Tool):
                         },
                         "permission_level": {
                             "type": "string",
-                            "description": "The permission level to assign. Must be one of: 'read', 'write', 'admin'. Required for 'upsert' action.",
+                            "description": "The permission level to assign.",
+                            "enum": ["read", "write", "admin"]
                         },
                     },
                     "required": ["action", "repo_id", "user_id"],

@@ -15,9 +15,6 @@ class CreateOrganization(Tool):
         visibility: Optional[str] = None,
         plan_type: Optional[str] = None
     ) -> str:
-        """
-        Create a new organization.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -133,7 +130,7 @@ class CreateOrganization(Tool):
             "type": "function",
             "function": {
                 "name": "create_organization",
-                "description": "Create a new organization. Requires valid access token for authentication. Validates organization name uniqueness. Automatically adds the creator as an owner.",
+                "description": "Creates a new organization. Requires valid access token for authentication",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -155,11 +152,13 @@ class CreateOrganization(Tool):
                         },
                         "visibility": {
                             "type": "string",
-                            "description": "Organization visibility. Allowed values: 'public', 'limited', 'private' (optional, defaults to 'private')"
+                            "description": "Organization visibility. Allowed values: 'public', 'limited', 'private' (optional, defaults to 'private')",
+                            "enum": ["public", "limited", "private"]
                         },
                         "plan_type": {
                             "type": "string",
-                            "description": "Plan type. Allowed values: 'free', 'team', 'enterprise' (optional, defaults to 'free')"
+                            "description": "Plan type. Allowed values: 'free', 'team', 'enterprise' (optional, defaults to 'free')",
+                            "enum": ["free", "team", "enterprise"]
                         }
                     },
                     "required": ["access_token", "organization_name"]

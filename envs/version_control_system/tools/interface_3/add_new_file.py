@@ -16,9 +16,6 @@ class AddNewFile(Tool):
         language: Optional[str] = None,
         is_binary: Optional[bool] = False
     ) -> str:
-        """
-        Creates a new file in a repository.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -90,7 +87,7 @@ class AddNewFile(Tool):
             "directory_id": directory_id,
             "file_path": file_path,
             "file_name": file_name,
-            "is_binary": is_binary,
+            "is_binary": bool(is_binary),
             "language": language,
             "created_at": "2026-01-01T23:59:00"
         }
@@ -105,7 +102,7 @@ class AddNewFile(Tool):
             "type": "function",
             "function": {
                 "name": "add_new_file",
-                "description": "Creates a new file in a repository branch. The file path and name combination must be unique within the branch.",
+                "description": "Creates a new file in a repository branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -127,15 +124,15 @@ class AddNewFile(Tool):
                         },
                         "directory_id": {
                             "type": "string",
-                            "description": "The unique identifier of the directory the file belongs to. Optional."
+                            "description": "The unique identifier of the directory the file belongs to (optional)."
                         },
                         "language": {
                             "type": "string",
-                            "description": "The programming language of the file. Valid values: C, C++, C#, Go, Rust, Java, Kotlin, Scala, Python, Ruby, PHP, JavaScript, TypeScript, Shell, PowerShell, Swift, Objective-C, Dart, R, MATLAB, Groovy, Perl, Lua, Haskell, Elixir, Erlang, Julia, Assembly, Fortran, COBOL, HTML, CSS, SCSS, Less, Markdown, AsciiDoc, JSON, YAML, XML, TOML, INI, CSV, Dockerfile, Makefile, Bash, Terraform, Ansible, SQL, PLpgSQL, Text, Binary, Unknown. Optional."
+                            "description": "The programming language of the file. Valid values: C, C++, C#, Go, Rust, Java, Kotlin, Scala, Python, Ruby, PHP, JavaScript, TypeScript, Shell, PowerShell, Swift, Objective-C, Dart, R, MATLAB, Groovy, Perl, Lua, Haskell, Elixir, Erlang, Julia, Assembly, Fortran, COBOL, HTML, CSS, SCSS, Less, Markdown, AsciiDoc, JSON, YAML, XML, TOML, INI, CSV, Dockerfile, Makefile, Bash, Terraform, Ansible, SQL, PLpgSQL, Text, Binary, Unknown (optional)."
                         },
                         "is_binary": {
                             "type": "boolean",
-                            "description": "Whether the file is a binary file. Default: false."
+                            "description": "Whether the file is a binary file. Default: false (optional)."
                         }
                     },
                     "required": ["repository_id", "branch_id", "file_path", "file_name"]

@@ -17,9 +17,6 @@ class InitializeRepository(Tool):
         is_template: Optional[bool] = False,
         license_type: Optional[str] = None
     ) -> str:
-        """
-        Creates a new repository in the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -111,7 +108,7 @@ class InitializeRepository(Tool):
             "is_fork": False,
             "parent_repository_id": None,
             "is_archived": False,
-            "is_template": is_template,
+            "is_template": bool(is_template),
             "stars_count": 0,
             "forks_count": 0,
             "license_type": license_type,
@@ -151,7 +148,7 @@ class InitializeRepository(Tool):
             "type": "function",
             "function": {
                 "name": "initialize_repository",
-                "description": "Creates a new repository in the version control system. The repository name must be unique for the specified owner.",
+                "description": "Creates a new repository in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -169,23 +166,23 @@ class InitializeRepository(Tool):
                         },
                         "description": {
                             "type": "string",
-                            "description": "A text description of the repository. Optional."
+                            "description": "A text description of the repository (optional)."
                         },
                         "visibility": {
                             "type": "string",
-                            "description": "The visibility level of the repository. Valid values: public, private, internal. Default: public."
+                            "description": "The visibility level of the repository. Valid values: public, private, internal. Default: public (optional)."
                         },
                         "default_branch": {
                             "type": "string",
-                            "description": "The name of the default branch. Default: main."
+                            "description": "The name of the default branch. Default: main (optional)."
                         },
                         "is_template": {
                             "type": "boolean",
-                            "description": "Whether this repository is a template repository. Default: false. Valid values: true, false, True, False."
+                            "description": "Whether this repository is a template repository. Default: false. Valid values: true, false, True, False (optional)."
                         },
                         "license_type": {
                             "type": "string",
-                            "description": "The license type for the repository. Valid values: MIT, Apache-2.0, GPL-3.0, BSD-3-Clause, unlicensed, other. Optional."
+                            "description": "The license type for the repository. Valid values: MIT, Apache-2.0, GPL-3.0, BSD-3-Clause, unlicensed, other (optional)."
                         }
                     },
                     "required": ["owner_type", "owner_id", "repository_name"]

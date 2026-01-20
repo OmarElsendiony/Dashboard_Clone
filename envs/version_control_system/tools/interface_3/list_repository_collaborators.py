@@ -13,9 +13,6 @@ class ListRepositoryCollaborators(Tool):
         permission_level: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
-        """
-        Lists all collaborators for a repository with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -64,7 +61,7 @@ class ListRepositoryCollaborators(Tool):
             "type": "function",
             "function": {
                 "name": "list_repository_collaborators",
-                "description": "Lists all collaborators for a specific repository in the version control system. Optionally filter the results by permission level or status or user_id.",
+                "description": "Lists all collaborators for a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -74,15 +71,15 @@ class ListRepositoryCollaborators(Tool):
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "Optional filter to return only the collaborator record for this specific user."
+                            "description": "Optional filter to return only the collaborator record for this specific user (optional)."
                         },
                         "permission_level": {
                             "type": "string",
-                            "description": "Optional filter to return only collaborators with this permission level. Valid values: read, write, admin."
+                            "description": "Optional filter to return only collaborators with this permission level. Valid values: read, write, admin (optional)."
                         },
                         "status": {
                             "type": "string",
-                            "description": "Optional filter to return only collaborators with this status. Valid values: active, pending, removed."
+                            "description": "Optional filter to return only collaborators with this status. Valid values: active, pending, removed (optional)."
                         }
                     },
                     "required": ["repository_id"]

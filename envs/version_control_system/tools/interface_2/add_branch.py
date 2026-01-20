@@ -95,16 +95,7 @@ class AddBranch(Tool):
             "type": "function",
             "function": {
                 "name": "add_branch",
-                "description": (
-                    "Create a new branch in a repository from an existing source branch. "
-                    "The new branch will inherit the commit_sha from the source branch. "
-                    "Validates that the repository exists. "
-                    "Validates that the source branch exists in the repository. "
-                    "Validates that the new branch name is unique within the repository. "
-                    "The source_branch field in the created branch references the branch_id of the source branch. "
-                    "The is_default field is always set to False. "
-                    "Returns the created branch details including the auto-generated branch_id."
-                ),
+                "description": "Create a new branch in a repository from an existing source branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -114,11 +105,11 @@ class AddBranch(Tool):
                         },
                         "branch_name": {
                             "type": "string",
-                            "description": "The name of the new branch. Must be unique within the repository.",
+                            "description": "The name for the new branch. Must be unique within the repository.",
                         },
                         "source_branch_name": {
                             "type": "string",
-                            "description": "The name of the source branch from which this branch is created.",
+                            "description": "The name of the existing branch to create from. The new branch will inherit its commit SHA.",
                         },
                     },
                     "required": ["repository_id", "branch_name", "source_branch_name"],

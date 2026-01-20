@@ -2,6 +2,7 @@ import json
 import base64
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
+import hashlib
 
 
 class CreateNewBranch(Tool):
@@ -88,12 +89,17 @@ class CreateNewBranch(Tool):
 
         now = "2026-01-01T23:59:00"
 
+        def generate_deterministic_sha(seed: str, prefix: str = "") -> str:
+            return hashlib.sha1(f"{prefix}_{seed}".encode()).hexdigest()
+
+        commit_sha = generate_deterministic_sha(repository_id, branch_name)
         # --- Create branch ---
         branch_entry = {
             "branch_id": new_branch_id,
             "repository_id": repository_id,
             "branch_name": branch_name,
-            "commit_sha": None,
+            "source_branch": None,
+            "commit_sha": commit_sha,
             "is_default": True,
             "created_at": now,
             "updated_at": now,

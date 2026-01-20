@@ -9,9 +9,6 @@ class ListStars(Tool):
         user_id: Optional[str] = None,
         repository_id: Optional[str] = None
     ) -> str:
-        """
-        Lists star records based on user or repository filters.
-        """
         stars = data.get("stars", {})
         users = data.get("users", {})
         repositories = data.get("repositories", {})
@@ -48,11 +45,11 @@ class ListStars(Tool):
                     "properties": {
                         "user_id": {
                             "type": "string",
-                            "description": "Filter stars by user ID."
+                            "description": "Filter stars by user ID (optional)"
                         },
                         "repository_id": {
                             "type": "string",
-                            "description": "Filter stars by repository ID."
+                            "description": "Filter stars by repository ID (optional)"
                         }
                     },
                     "required": []

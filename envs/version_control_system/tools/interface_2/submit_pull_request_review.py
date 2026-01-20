@@ -13,7 +13,6 @@ class SubmitPullRequestReview(Tool):
         review_state: Optional[str] = None,
         review_body: Optional[str] = None,
     ) -> str:
-        """Submit or update a pull request review."""
         timestamp = "2026-01-01T23:59:00"
 
         def generate_id(table: Dict[str, Any]) -> str:
@@ -92,19 +91,11 @@ class SubmitPullRequestReview(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the submit_pull_request_reviews function."""
         return {
             "type": "function",
             "function": {
                 "name": "submit_pull_request_review",
-                "description": (
-                    "Submit a new pull request review or update an existing one. "
-                    "If pull_request_review_id is NOT provided: Creates a new review. "
-                    "Requires user_id, review_state, and review_body. "
-                    "If pull_request_review_id IS provided: Updates an existing review and user_id is ignored. "
-                    "Only review_state and/or review_body can be updated. "
-                    "Valid review_state values: pending, approved, changes_requested, commented, dismissed. "
-                ),
+                "description": "Submits a new pull request review or update an existing one.",
                 "parameters": {
                     "type": "object",
                     "properties": {

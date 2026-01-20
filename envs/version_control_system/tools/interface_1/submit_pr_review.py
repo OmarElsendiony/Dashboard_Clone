@@ -13,11 +13,6 @@ class SubmitPrReview(Tool):
         review_state: str,
         review_body: Optional[str] = None
     ) -> str:
-        """
-        Submit a review for a pull request.
-        The reviewer is automatically identified from the access token.
-        Requires read access to the repository.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -157,7 +152,7 @@ class SubmitPrReview(Tool):
             "type": "function",
             "function": {
                 "name": "submit_pr_review",
-                "description": "Submit a review for a pull request. The reviewer is automatically set to the authenticated user. Requires read access to the repository.",
+                "description": "Submits a review for a pull request.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -171,7 +166,8 @@ class SubmitPrReview(Tool):
                         },
                         "review_state": {
                             "type": "string",
-                            "description": "Review state. Allowed values: 'pending', 'approved', 'changes_requested', 'commented', 'dismissed' (required)"
+                            "description": "Review state. Allowed values: 'pending', 'approved', 'changes_requested', 'commented', 'dismissed' (required)",
+                            "enum": ["pending", "approved", "changes_requested", "commented", "dismissed"]
                         },
                         "review_body": {
                             "type": "string",

@@ -110,13 +110,7 @@ class DiscardRepository(Tool):
             "type": "function",
             "function": {
                 "name": "discard_repository",
-                "description": (
-                    "Delete a repository and cascade delete all related entities. "
-                    "Validates that the repository exists. "
-                    "Performs cascade deletion of: repository collaborators, branches, commits, files, "
-                    "file contents, directories, pull requests, pull request reviews, comments."
-                    "Returns information about the deleted repository and counts of related entities deleted."
-                ),
+                "description": "Delete a repository and all related entities.",
                 "parameters": {
                     "type": "object",
                     "properties": {

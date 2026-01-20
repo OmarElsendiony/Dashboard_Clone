@@ -48022,5 +48022,71 @@
     "user_id": "55",
     "repository_id": "99",
     "starred_at": "2025-08-08T08:37:03"
+  },
+  "8005": {
+    "star_id": "8005",
+    "user_id": "101",
+    "repository_id": "161",
+    "starred_at": "2025-12-20T10:00:00"
+  },
+  "8006": {
+    "star_id": "8006",
+    "user_id": "102",
+    "repository_id": "161",
+    "starred_at": "2025-12-20T11:00:00"
+  },
+  "8007": {
+    "star_id": "8007",
+    "user_id": "111",
+    "repository_id": "161",
+    "starred_at": "2025-12-22T14:00:00"
+  },
+  "8008": {
+    "star_id": "8008",
+    "user_id": "121",
+    "repository_id": "161",
+    "starred_at": "2025-12-25T09:00:00"
+  },
+  "8009": {
+    "star_id": "8009",
+    "user_id": "111",
+    "repository_id": "162",
+    "starred_at": "2025-12-18T15:00:00"
+  },
+  "8010": {
+    "star_id": "8010",
+    "user_id": "112",
+    "repository_id": "162",
+    "starred_at": "2025-12-18T16:00:00"
+  },
+  "8011": {
+    "star_id": "8011",
+    "user_id": "101",
+    "repository_id": "162",
+    "starred_at": "2025-12-20T10:30:00"
+  },
+  "8012": {
+    "star_id": "8012",
+    "user_id": "121",
+    "repository_id": "163",
+    "starred_at": "2025-12-18T11:00:00"
+  },
+  "8013": {
+    "star_id": "8013",
+    "user_id": "122",
+    "repository_id": "163",
+    "starred_at": "2025-12-18T12:00:00"
+  },
+  "8014": {
+    "star_id": "8014",
+    "user_id": "101",
+    "repository_id": "163",
+    "starred_at": "2025-12-22T08:00:00"
+  },
+  "8015": {
+    "star_id": "8015",
+    "user_id": "111",
+    "repository_id": "163",
+    "starred_at": "2025-12-28T16:00:00"
   }
 }

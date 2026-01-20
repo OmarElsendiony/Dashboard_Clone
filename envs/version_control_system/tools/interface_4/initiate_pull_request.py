@@ -109,7 +109,7 @@ class InitiatePullRequest(Tool):
         except ValueError:
             next_pr_id = "1"
 
-        # --- Pull request number (per repository) ---
+        # --- Pull request number ---
         repo_pr_numbers = [pr["pull_request_number"] for pr in pull_requests.values()]
         next_pr_number = int(max([int(_) for _ in repo_pr_numbers], default=0)) + 1
 
@@ -146,14 +146,7 @@ class InitiatePullRequest(Tool):
                 "name": "initiate_pull_request",
                 "description": (
                     "Creates a new pull request (PR) from a source branch to a target branch "
-                    "within the same repository. The tool validates that both branches exist, "
-                    "belong to the same repository, and that no other open or draft pull request "
-                    "already exists for the same source-target branch combination.\n\n"
-                    "The user must have at least write or admin permission on the repository. "
-                    "If no title is provided, a default title in the form "
-                    "`Merge <source_branch> into <target_branch>` is automatically generated.\n\n"
-                    "The pull request is created in the `open` state and is assigned a repository-scoped "
-                    "pull request number, along with a globally unique pull request ID."
+                    "within the same repository. "
                 ),
                 "parameters": {
                     "type": "object",

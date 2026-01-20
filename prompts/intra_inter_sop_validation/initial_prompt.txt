@@ -1,0 +1,33 @@
+I am trying to create a policy that an AI agent will follow. This AI agent will cater for users in multiple domains. The policy shows the sequence of steps that the Agent will follow when the user asks for the grand action mentioned in the SOP title (or something very close to it). The steps should be coherent such that the output of one step is passed as an argument to the next, or the user might specify that. The scenario that the user might follow will be in something called instruction that shows what knowledge this user has, and what this user intention is. There should not be any vague thing in the instruction that is left for interpretation, so free-form fields (like title or description) should be mentioned very clearly in the instruction, so that every time anyone takes this instruction, it produces the same result deterministically. This instruction will only contain information that users of an application in the domain would know, so any reference to any ID present in the backend in the instruction is wrong.
+I am going to give you the policy, collected records from the database (which resemble the domain data) to use in the instruction, and the tools documentation. I will also provide the SOP(s) from the policy that I want to test. Your goal is to analyze and give if the tool calls within the SOP(s) mentioned works where an instruction can have it by giving the flow. 
+The problems might be:
+- The inputs required by a tool can not be get by a prior tool (or instruction because this is a data user won't know)
+- The database does not have data that are coherent to cater for the SOP(s) mentioned.
+IF ANY OF THIS IS FOUND, HALT AND REPORT IT WITH CLEAR REASONING 
+
+
+# Rules:
+    - Instruction:
+        Instruction should be written in second-person view where the instruction target a specific user persona. It provides to it the intent and the outcome that it wants to achieve without specifying the underlying procedure. Otherwise, it will be considered spoon-feeding and spoon-feeding means giving overly detailed, step-by-step instructions like stating the names of the attributes of the API like `user_id` or the API prototype `get_user_info`. All of this is utterly wrong. 
+    - Actions:
+        The actions should correspond to the instruction provided. They should be the ones that the Agent should take to reach the outcome mentioned in the instruction. Follow the examples provided
+
+## Policy:
+{policy}
+
+## Target SOPs:
+{target_sops}
+
+## Database collected:
+{db_records}
+
+## Tools:
+{interface_tools}
+
+## Example Tasks
+{example_tasks}
+
+If there are multiple sequence that works, provide multiple examples with instructions
+Make the same format as the examples:
+I want an instruction to collectively target all of the mentioned SOPs in the correct order. Then, provide the corresponding actions.
+## Output:

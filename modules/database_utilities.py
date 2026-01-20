@@ -265,6 +265,52 @@ def database_utilities_prompt_generation():
             'prompt': prompt,
             'generation_result': ''
         }), 200
+    elif action == "intra_inter_sop_validation":
+        initial_prompt = data.get('initial_prompt', '')
+        policy = data.get('policy', '')
+        target_sops = data.get('target_sops', '')
+        db_records = data.get('db_records', '')
+        interface_tools = data.get('interface_tools', '')
+        example_tasks = data.get('example_tasks', '')
+        
+        # Validate and parse target SOPs
+        if not target_sops:
+            return jsonify({
+                'status': 'error',
+                'message': 'Target SOPs are required'
+            }), 400
+        
+        # Clean and format the target SOPs
+        try:
+            sop_list = [s.strip() for s in target_sops.split(',')]
+            formatted_sops = ', '.join(sop_list)
+        except Exception as e:
+            return jsonify({
+                'status': 'error',
+                'message': f'Invalid SOP format: {str(e)}'
+            }), 400
+        
+        # Format the prompt
+        prompt = initial_prompt.format(
+            policy=policy,
+            target_sops=formatted_sops,
+            db_records=db_records,
+            interface_tools=interface_tools,
+            example_tasks=example_tasks
+        )
+        
+        # Return the formatted prompt
+        try:
+            return jsonify({
+                'status': 'success',
+                'prompt': prompt,
+                'generation_result': ''
+            }), 200
+        except Exception as e:
+            return jsonify({
+                'status': 'error',
+                'message': f'Failed to validate SOPs: {str(e)}'
+            }), 500
     else:
         return jsonify({
             'status': 'error',
@@ -529,6 +575,32 @@ def database_utilities():
             'db_schema': '',
             'db_records': '',
             'interface_tools': ''
+        }), 200
+    elif action == 'intra_inter_sop_validation':
+        initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+        
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+        
+        example_tasks_file_path = f"prompts/{action}/example_tasks.txt"
+        if not os.path.exists(example_tasks_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Example tasks file for {action} not found'
+            }), 404
+        
+        with open(example_tasks_file_path, 'r') as file:
+            example_tasks = file.read()
+        
+        return jsonify({
+            'status': 'success',
+            'initial_prompt': initial_prompt,
+            'example_tasks': example_tasks
         }), 200
     else:
         return jsonify({

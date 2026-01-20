@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class UpdatePipeline(Tool):
-    """Tool for updating, enabling, or disabling a pipeline (workflow) in a repository in the version control system."""
 
     @staticmethod
     def invoke(
@@ -15,20 +14,7 @@ class UpdatePipeline(Tool):
         pipeline_path: Optional[str] = None,
         trigger_event: Optional[str] = None,
     ) -> str:
-        """
-        Update, enable, or disable a pipeline (workflow) in a repository.
 
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository containing the pipeline (required).
-            pipeline_name: The name of the pipeline to update (required).
-            action: The action to perform: 'update', 'enable', or 'disable' (required).
-            pipeline_path: The new path to the pipeline configuration file (optional, for 'update' action).
-            trigger_event: The new trigger event (optional, for 'update' action).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and updated pipeline data.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -141,7 +127,8 @@ class UpdatePipeline(Tool):
 
             # Validate and apply trigger_event update
             if trigger_event is not None:
-                allowed_trigger_events = {"push", "pull_request", "schedule", "workflow_dispatch", "release"}
+                allowed_trigger_events = {
+                    "push", "pull_request", "schedule", "workflow_dispatch", "release"}
                 if not isinstance(trigger_event, str):
                     return json.dumps({"success": False, "error": "trigger_event must be a string"})
                 trigger_event_val = trigger_event.strip().lower()
@@ -192,7 +179,7 @@ class UpdatePipeline(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the update_pipeline function."""
+
         return {
             "type": "function",
             "function": {
@@ -211,7 +198,8 @@ class UpdatePipeline(Tool):
                         },
                         "action": {
                             "type": "string",
-                            "description": "The action to perform. Must be one of: update, enable, disable.",
+                            "description": "The action to perform.",
+                            "enum": ["update", "enable", "disable"]
                         },
                         "pipeline_path": {
                             "type": "string",
@@ -219,7 +207,8 @@ class UpdatePipeline(Tool):
                         },
                         "trigger_event": {
                             "type": "string",
-                            "description": "The new trigger event for the pipeline. Optional field, required for 'update' action if pipeline_path is not provided. Must be one of: push, pull_request, schedule, workflow_dispatch, release.",
+                            "description": "The new trigger event for the pipeline. Optional field, required for 'update' action if pipeline_path is not provided.",
+                            "enum": ["push", "pull_request", "schedule", "workflow_dispatch", "release"]
                         },
                     },
                     "required": ["repo_id", "pipeline_name", "action"],

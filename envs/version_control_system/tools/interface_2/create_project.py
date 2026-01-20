@@ -14,7 +14,6 @@ class CreateProject(Tool):
         user_id: str,
         description: Optional[str] = None,
     ) -> str:
-        """Create a new project in a workspace."""
         timestamp = "2026-01-01T23:59:00"
 
         def check_uniqueness(projects_dict: Dict[str, Any], workspace_id_str: str, project_key_str: str, project_name_str: str) -> Tuple[bool, Optional[str]]:
@@ -115,20 +114,11 @@ class CreateProject(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the create_project function."""
         return {
             "type": "function",
             "function": {
                 "name": "create_project",
-                "description": (
-                    "Create a new project and project_member within a workspace."
-                    "Validates that the workspace exists. "
-                    "Ensures project_key is unique within the workspace. "
-                    "Ensures project_name is unique within the workspace. "
-                    "Returns the created project details including the generated project_id. "
-                    "organization_id and status are always set to null."
-                    "Creates a project member for the user and owner if they are different, both with Project Administrator role."
-                ),
+                "description": "Creates a new project within a workspace.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -138,11 +128,11 @@ class CreateProject(Tool):
                         },
                         "project_key": {
                             "type": "string",
-                            "description": "The unique key for the project within the workspace.",
+                            "description": "The key for the project within the workspace.",
                         },
                         "project_name": {
                             "type": "string",
-                            "description": "The unique name for the project within the workspace.",
+                            "description": "The name for the project within the workspace.",
                         },
                         "is_private": {
                             "type": "boolean",

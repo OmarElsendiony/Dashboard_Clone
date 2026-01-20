@@ -80,10 +80,20 @@ class UpdateOrganization(Tool):
                         membership["organization_id"] == target_org["organization_id"]
                         and membership["user_id"] == user_id
                     ):
+                        membership["user_id"] = user_id
+                        membership["role"] = "member"
+                        membership["updated_at"] = timestamp
+                        updated_owner = membership
+                        continue
+                    if (
+                        membership["organization_id"] == target_org["organization_id"]
+                        and membership["user_id"] == value
+                    ):
                         membership["user_id"] = value
                         membership["role"] = "owner"
                         membership["updated_at"] = timestamp
                         updated_owner = membership
+                        continue
             else:
                 continue
         if not updated_owner:
@@ -103,7 +113,7 @@ class UpdateOrganization(Tool):
             "type": "function",
             "function": {
                 "name": "update_organization",
-                "description": "Updates details of an existing organization for the user. The update_dict parameter specifies the fields to be updated along with their new values. Fields that can be updated include 'new_owner_id', 'new_organization_name', 'new_display_name', and 'new_organization_description'.",
+                "description": "Updates details of an existing organization for the user. ",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -113,7 +123,7 @@ class UpdateOrganization(Tool):
                         },
                         "auth_token": {
                             "type": "string",
-                            "description": "The authentication token of the user.",
+                            "description": "The authentication token of the requesting user.",
                         },
                         "update_dict": {
                             "type": "object",

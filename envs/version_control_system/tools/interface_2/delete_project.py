@@ -9,7 +9,6 @@ class DeleteProject(Tool):
         data: Dict[str, Any],
         project_id: str,
     ) -> str:
-        """Delete a project and cascade delete all related entities."""
 
         # Validate data structure
         if not isinstance(data, dict):
@@ -131,17 +130,13 @@ class DeleteProject(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the delete_project function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "delete_project",
                 "description": (
-                    "Delete a project and cascade delete all related entities. "
-                    "Validates that the project exists. "
-                    "Performs cascade deletion of: repositories, project members, repository collaborators, "
-                    "branches, commits, files, file contents, directories, pull requests, pull request reviews, comments. "
-                    "Returns information about the deleted project and counts of related entities deleted."
+                    "Deletes a project after validating it exists. Removes the project and all related data. Returns information about the deleted project details with counts of removed items."
                 ),
                 "parameters": {
                     "type": "object",

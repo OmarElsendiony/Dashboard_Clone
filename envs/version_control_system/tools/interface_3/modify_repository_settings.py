@@ -16,9 +16,6 @@ class ModifyRepositorySettings(Tool):
         is_template: Optional[bool] = None,
         license_type: Optional[str] = None
     ) -> str:
-        """
-        Updates a repository's settings in the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -85,7 +82,7 @@ class ModifyRepositorySettings(Tool):
             "type": "function",
             "function": {
                 "name": "modify_repository_settings",
-                "description": "Updates a repository's settings in the version control system. At least one field must be provided for update.",
+                "description": "Updates a repository's settings.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -95,27 +92,27 @@ class ModifyRepositorySettings(Tool):
                         },
                         "repository_name": {
                             "type": "string",
-                            "description": "The new name for the repository. Must be unique for the owner."
+                            "description": "The new name for the repository. Must be unique for the owner (optional)."
                         },
                         "description": {
                             "type": "string",
-                            "description": "The new description for the repository."
+                            "description": "The new description for the repository (optional)."
                         },
                         "visibility": {
                             "type": "string",
-                            "description": "The new visibility level. Valid values: public, private, internal."
+                            "description": "The new visibility level. Valid values: public, private, internal (optional)."
                         },
                         "is_archived": {
                             "type": "boolean",
-                            "description": "Whether the repository should be archived."
+                            "description": "Whether the repository should be archived (optional)."
                         },
                         "is_template": {
                             "type": "boolean",
-                            "description": "Whether the repository should be a template."
+                            "description": "Whether the repository should be a template (optional)."
                         },
                         "license_type": {
                             "type": "string",
-                            "description": "The new license type. Valid values: MIT, Apache-2.0, GPL-3.0, BSD-3-Clause, unlicensed, other."
+                            "description": "The new license type. Valid values: MIT, Apache-2.0, GPL-3.0, BSD-3-Clause, unlicensed, other (optional)."
                         }
                     },
                     "required": ["repository_id"]

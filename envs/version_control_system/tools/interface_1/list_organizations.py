@@ -12,9 +12,6 @@ class ListOrganizations(Tool):
         plan_type: Optional[str] = None,
         organization_id: Optional[str] = None
     ) -> str:
-        """
-        List organizations with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
@@ -63,25 +60,27 @@ class ListOrganizations(Tool):
             "type": "function",
             "function": {
                 "name": "list_organizations",
-                "description": "List organizations. Can filter by organization_name, visibility, plan_type, or organization_id. Returns all organizations if no filters are provided.",
+                "description": "Lists organizations with optional filters.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "organization_name": {
                             "type": "string",
-                            "description": "Filter by organization name (exact match)"
+                            "description": "Filter by organization name (exact match) (optional)"
                         },
                         "visibility": {
                             "type": "string",
-                            "description": "Filter by visibility. Allowed values: 'public', 'limited', 'private'"
+                            "description": "Filter by visibility. Allowed values: 'public', 'limited', 'private' (optional)",
+                            "enum" : ["public", "limited", "private"]
                         },
                         "plan_type": {
                             "type": "string",
-                            "description": "Filter by plan type. Allowed values: 'free', 'team', 'enterprise'"
+                            "description": "Filter by plan type. Allowed values: 'free', 'team', 'enterprise' (optional)",
+                            "enum" : ["free", "team", "enterprise"]
                         },
                         "organization_id": {
                             "type": "string",
-                            "description": "Filter by organization_id (exact match)"
+                            "description": "Filter by organization_id (exact match) (optional)"
                         }
                     },
                     "required": []

@@ -12,9 +12,6 @@ class RetrieveRepositoryDetails(Tool):
         owner_name: Optional[str] = None,
         owner_type: Optional[str] = None
     ) -> str:
-        """
-        Retrieves repository information by its name and optionally owner from the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -102,7 +99,7 @@ class RetrieveRepositoryDetails(Tool):
             "type": "function",
             "function": {
                 "name": "retrieve_repository_details",
-                "description": "Retrieves a repository's information from the version control system by looking up its name and optionally owner. If owner_name is not provided, searches by repository_name only. The owner can be either a username (for personal repositories) or an organization name (for organization repositories).",
+                "description": "Retrieves a repository's information from the version control system by looking up its name and optionally owner. The owner can be either a username (for personal repositories) or an organization name (for organization repositories).",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -112,11 +109,11 @@ class RetrieveRepositoryDetails(Tool):
                         },
                         "owner_name": {
                             "type": "string",
-                            "description": "Optional. The username or organization name that owns the repository."
+                            "description": "Optional. The username of the user or organization name that owns the repository."
                         },
                         "owner_type": {
                             "type": "string",
-                            "description": "Optional. The type of owner. Valid values: user, organization."
+                            "description": "The type of owner. Valid values: user, organization (optional)."
                         }
                     },
                     "required": ["repository_name"]

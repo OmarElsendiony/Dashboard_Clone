@@ -4,25 +4,14 @@ from tau_bench.envs.tool import Tool
 
 
 class GetPipeline(Tool):
-    """Tool for retrieving pipeline (workflow) details from the version control system."""
-
+    
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         repo_id: str,
         pipeline_name: str,
     ) -> str:
-        """
-        Retrieve pipeline details by repository ID and pipeline name.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository containing the pipeline (required).
-            pipeline_name: The name of the pipeline to look up (required).
-
-        Returns:
-            JSON string containing the success status and pipeline data if found.
-        """
+     
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -91,12 +80,12 @@ class GetPipeline(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_pipeline function."""
+      
         return {
             "type": "function",
             "function": {
                 "name": "get_pipeline",
-                "description": "Retrieves detailed information about a pipeline from a repository by repository ID and pipeline name.",
+                "description": "Retrieves detailed information about a pipeline from a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

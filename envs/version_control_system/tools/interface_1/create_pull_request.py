@@ -16,10 +16,6 @@ class CreatePullRequest(Tool):
         description: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
-        """
-        Create a new pull request in a repository.
-        The author is automatically set to the authenticated user.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -195,7 +191,7 @@ class CreatePullRequest(Tool):
             "type": "function",
             "function": {
                 "name": "create_pull_request",
-                "description": "Create a new pull request in a repository. The author is automatically set to the authenticated user. Requires write or admin access to the repository.",
+                "description": "Creates a new pull request in a repository. The author is automatically set to the authenticated user.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -225,7 +221,8 @@ class CreatePullRequest(Tool):
                         },
                         "status": {
                             "type": "string",
-                            "description": "Pull request status. Allowed values: 'open', 'closed', 'merged', 'draft' (optional, defaults to 'open')"
+                            "description": "Pull request status. Allowed values: 'open', 'closed', 'merged', 'draft' (optional, defaults to 'open')",
+                            "enum": ["open", "closed", "merged", "draft"]
                         }
                     },
                     "required": ["access_token", "repository_id", "title", "source_branch", "target_branch"]

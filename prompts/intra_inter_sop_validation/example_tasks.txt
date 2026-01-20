@@ -1,0 +1,350 @@
+# Example 1
+{
+    "env": "incident_management_technical",
+    "model_provider": "fireworks",
+    "model": "qwen3-coder-480b-a35b-instruct",
+    "num_trials": 3,
+    "temperature": 1,
+    "interface_num": 2,
+    "task": {
+        "user_id": "11",
+        "instruction": "You are Stephen Solis (stephen.solis@techcorp.com), an incident manager. You need to request approval for a pending escalation related to incident number 'INC0000001', to be approved by John Walsh (john.walsh@techcorp.com)",
+        "actions": [
+            {
+                "name": "search_parties",
+                "arguments": {
+                    "entity_type": "users",
+                    "filters": {
+                        "email": "stephen.solis@techcorp.com"
+                    }
+                },
+                "output": {
+                    "count": 1,
+                    "entity_type": "users",
+                    "results": [
+                        {
+                            "client_id": null,
+                            "created_at": "2025-04-02T18:38:17",
+                            "email": "stephen.solis@techcorp.com",
+                            "first_name": "Stephen",
+                            "last_name": "Solis",
+                            "status": "active",
+                            "timezone": "America/New_York",
+                            "updated_at": "2025-06-27T19:46:37",
+                            "user_id": "11"
+                        }
+                    ],
+                    "success": true
+                }
+            },
+            {
+                "name": "search_incident_tracking",
+                "arguments": {
+                    "entity_type": "incidents",
+                    "filters": {
+                        "incident_number": "INC0000001"
+                    }
+                },
+                "output": {
+                    "count": 1,
+                    "entity_type": "incidents",
+                    "results": [
+                        {
+                            "acknowledged_at": "2025-09-13T20:18:39",
+                            "assigned_to": "179",
+                            "category": "hardware",
+                            "closed_at": null,
+                            "created_at": "2025-09-12T07:00:39",
+                            "description": "Server reporting elevated temperature. CPU temp at 84°C. Cooling system operating normally. Monitoring for escalation. Non-critical.",
+                            "detection_time": "2025-09-12T06:52:39",
+                            "impact": "low",
+                            "incident_id": "1",
+                            "incident_number": "INC0000001",
+                            "problem_id": "7",
+                            "reported_by": "51",
+                            "resolved_at": null,
+                            "severity": "P4",
+                            "status": "in_progress",
+                            "title": "Hardware: Server temperature warning",
+                            "updated_at": "2025-09-12T07:52:39",
+                            "urgency": "low"
+                        }
+                    ],
+                    "success": true
+                }
+            },
+            {
+                "name": "search_coordination",
+                "arguments": {
+                    "entity_type": "escalations",
+                    "filters": {
+                        "incident_id": "1",
+                        "status": "pending"
+                    }
+                },
+                "output": {
+                    "count": 1,
+                    "entity_type": "escalations",
+                    "results": [
+                        {
+                            "escalated_from": "378",
+                            "escalated_to": "359",
+                            "escalation_id": "1",
+                            "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
+                            "incident_id": "1",
+                            "requested_at": "2025-09-12T07:09:06",
+                            "responded_at": null,
+                            "status": "pending"
+                        }
+                    ],
+                    "success": true
+                }
+            },
+            {
+                "name": "search_workflows",
+                "arguments": {
+                    "entity_type": "approval_requests",
+                    "filters": {
+                        "escalation_id": "1"
+                    }
+                },
+                "output": {
+                    "count": 0,
+                    "entity_type": "approval_requests",
+                    "results": [],
+                    "success": true
+                }
+            },
+            {
+                "name": "search_parties",
+                "arguments": {
+                    "entity_type": "users",
+                    "filters": {
+                        "email": "john.walsh@techcorp.com"
+                    }
+                },
+                "output": {
+                    "count": 1,
+                    "entity_type": "users",
+                    "results": [
+                        {
+                            "client_id": null,
+                            "created_at": "2025-07-04T14:00:25",
+                            "email": "john.walsh@techcorp.com",
+                            "first_name": "John",
+                            "last_name": "Walsh",
+                            "status": "active",
+                            "timezone": "America/New_York",
+                            "updated_at": "2025-07-11T05:40:23",
+                            "user_id": "19"
+                        }
+                    ],
+                    "success": true
+                }
+            },
+            {
+                "name": "handle_approval_requests",
+                "arguments": {
+                    "action": "create",
+                    "approver": "19",
+                    "reference_id": "1",
+                    "reference_type": "escalation",
+                    "requested_action": "create_escalation",
+                    "requested_by": "11"
+                },
+                "output": {
+                    "action": "create",
+                    "approval_data": {
+                        "approval_id": "201",
+                        "approver": "19",
+                        "reference_id": "1",
+                        "reference_type": "escalation",
+                        "requested_action": "create_escalation",
+                        "requested_at": "2025-10-07T12:00:00",
+                        "requested_by": "11",
+                        "responded_at": null,
+                        "status": "pending"
+                    },
+                    "approval_id": "201",
+                    "success": true
+                }
+            }
+        ],
+        "outputs": [],
+        "edges": [],
+        "num_edges": 0
+    }
+}
+
+# Example 2
+{
+  "env": "incident_management_technical",
+  "model_provider": "fireworks",
+  "model": "qwen3-coder-480b-a35b-instruct",
+  "num_trials": 3,
+  "temperature": 1,
+  "interface_num": 3,
+  "task": {
+    "user_id": "48",
+    "instruction": "You are Kathleen Gray (email: kathleen.gray@techcorp.com), an Incident Manager. You want the resolved incident titled 'Hardware: Server temperature warning' with severity P4 and urgency low, closed on 2025-10-07. You also want to create a post-incident review report titled 'Closure - Hardware: Server temperature warning' with the content 'Incident INC0000092 has been closed. Resolution verified and services stable.' and you want to add a concise work note stating 'Incident INC0000092 closed. Systems are stable after monitoring. No further action required.'",
+    "actions": [
+      {
+        "name": "find_parties",
+        "arguments": {
+          "entity_type": "users",
+          "filters": { "email": "kathleen.gray@techcorp.com" }
+        },
+        "output": {
+          "count": 1,
+          "entity_type": "users",
+          "results": [
+            {
+              "client_id": null,
+              "created_at": "2025-09-24T06:17:52",
+              "email": "kathleen.gray@techcorp.com",
+              "first_name": "Kathleen",
+              "last_name": "Gray",
+              "status": "active",
+              "timezone": "America/Chicago",
+              "updated_at": "2025-10-01T13:14:53",
+              "user_id": "48"
+            }
+          ],
+          "success": true
+        }
+      },
+      {
+        "name": "find_incident_tracking",
+        "arguments": {
+          "entity_type": "incidents",
+          "filters": {
+            "title": "Hardware: Server temperature warning",
+            "status": "resolved",
+            "severity": "P4",
+            "urgency": "low"
+          }
+        },
+        "output": {
+          "count": 1,
+          "entity_type": "incidents",
+          "results": [
+            {
+              "acknowledged_at": "2025-09-18T05:16:30",
+              "assigned_to": "458",
+              "category": "hardware",
+              "closed_at": null,
+              "created_at": "2025-09-13T11:14:30",
+              "description": "Server reporting elevated temperature. CPU temp at 84°C. Cooling system operating normally. Monitoring for escalation. Non-critical.",
+              "detection_time": "2025-09-13T11:07:30",
+              "impact": "low",
+              "incident_id": "92",
+              "incident_number": "INC0000092",
+              "problem_id": null,
+              "reported_by": "573",
+              "resolved_at": "2025-09-29T11:23:30",
+              "severity": "P4",
+              "status": "resolved",
+              "title": "Hardware: Server temperature warning",
+              "updated_at": "2025-09-13T11:36:30",
+              "urgency": "low"
+            }
+          ],
+          "success": true
+        }
+      },
+      {
+        "name": "manipulate_incidents",
+        "arguments": {
+          "action": "update",
+          "incident_data": {
+            "status": "closed",
+            "closed_at": "2025-10-07"
+          },
+          "incident_id": "92"
+        },
+        "output": {
+          "action": "update",
+          "incident_data": {
+            "acknowledged_at": "2025-09-18T05:16:30",
+            "assigned_to": "458",
+            "category": "hardware",
+            "closed_at": "2025-10-07",
+            "created_at": "2025-09-13T11:14:30",
+            "description": "Server reporting elevated temperature. CPU temp at 84°C. Cooling system operating normally. Monitoring for escalation. Non-critical.",
+            "detection_time": "2025-09-13T11:07:30",
+            "impact": "low",
+            "incident_id": "92",
+            "incident_number": "INC0000092",
+            "problem_id": null,
+            "reported_by": "573",
+            "resolved_at": "2025-09-29T11:23:30",
+            "severity": "P4",
+            "status": "closed",
+            "title": "Hardware: Server temperature warning",
+            "updated_at": "2025-10-07T12:00:00",
+            "urgency": "low"
+          },
+          "incident_id": "92",
+          "success": true
+        }
+      },
+      {
+        "name": "manipulate_incident_reports",
+        "arguments": {
+          "action": "create",
+          "generated_by": "48",
+          "incident_id": "92",
+          "report_content": "Incident INC0000092 has been closed. Resolution verified and services stable.",
+          "report_title": "Closure - Hardware: Server temperature warning",
+          "report_type": "post_incident_review"
+        },
+        "output": {
+          "action": "create",
+          "report_data": {
+            "generated_by": "48",
+            "generation_date": "2025-10-07T12:00:00",
+            "incident_id": "92",
+            "report_content": "Incident INC0000092 has been closed. Resolution verified and services stable.",
+            "report_id": "74",
+            "report_number": "RPT0000074",
+            "report_status": "draft",
+            "report_title": "Closure - Hardware: Server temperature warning",
+            "report_type": "post_incident_review"
+          },
+          "report_id": "74",
+          "report_number": "RPT0000074",
+          "success": true
+        }
+      },
+      {
+        "name": "manipulate_work_notes",
+        "arguments": {
+          "action": "create",
+          "note_data": {
+            "incident_id": "92",
+            "note_text": "Incident INC0000092 closed. Systems are stable after monitoring. No further action required.",
+            "note_type": "resolution",
+            "created_by": "48"
+          }
+        },
+        "output": {
+          "action": "create",
+          "note_data": {
+            "created_at": "2025-10-07T12:00:00",
+            "created_by": "48",
+            "incident_id": "92",
+            "note_id": "331",
+            "note_text": "Incident INC0000092 closed. Systems are stable after monitoring. No further action required.",
+            "note_type": "resolution",
+            "problem_ticket_id": null
+          },
+          "note_id": "331",
+          "success": true
+        }
+      }
+    ],
+    "outputs": [],
+    "edges": [],
+    "num_edges": 0
+  }
+}

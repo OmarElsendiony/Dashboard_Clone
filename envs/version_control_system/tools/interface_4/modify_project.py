@@ -75,10 +75,11 @@ class ModifyProject(Tool):
                     "error": f"Invalid update fields: {', '.join(invalid_fields)}",
                 }
             )
-
+        now = "2026-01-01T23:59:00"
         # --- Apply updates ---
         for key, value in updates.items():
             project[key] = value
+        project["updated_at"] = now
 
         return json.dumps({"success": True, "project": {"project": project}})
 
@@ -89,7 +90,7 @@ class ModifyProject(Tool):
             "function": {
                 "name": "modify_project",
                 "description": (
-                    "Updates mutable fields of an existing project. Allowed fields include 'project_name' and 'description'"
+                    "Updates mutable fields of an existing project. "
                 ),
                 "parameters": {
                     "type": "object",
@@ -106,7 +107,7 @@ class ModifyProject(Tool):
                             "type": "object",
                             "description": (
                                 "A dictionary of project fields to update. "
-                                "Only allowed mutable fields are accepted."
+                                "Only allowed mutable fields are accepted. Allowed fields include 'project_name' and 'description'"
                             ),
                         },
                     },

@@ -25,18 +25,6 @@ class UpsertFileDirectory(Tool):
         file_id: Optional[str] = None,
         directory_id: Optional[str] = None
     ) -> str:
-        """
-        Create or update a file or directory.
-        For files: 
-          - create: provide file_name and parent_directory_id (file_path is constructed automatically)
-          - update: provide file_id to update content/metadata
-            - To move: provide file_id and new parent_directory_id and/or file_name
-            - To delete: provide file_id with content=None and no other update parameters
-        For directories: 
-          - create: provide directory_path (parent_directory_id is inferred from path)
-          - update: provide directory_id and new directory_path to move
-            - To delete: provide directory_id with directory_path as empty string (must be empty directory)
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -550,7 +538,7 @@ class UpsertFileDirectory(Tool):
                     "file_path": file_path,
                     "file_name": file_name,
                     "language": language if language else "Unknown",
-                    "is_binary": is_binary if is_binary is not None else False,
+                    "is_binary": bool(is_binary) if is_binary is not None else False,
                     "last_modified_at": timestamp,
                     "last_commit_id": new_commit_id,
                     "created_at": timestamp,
@@ -802,13 +790,14 @@ class UpsertFileDirectory(Tool):
             "type": "function",
             "function": {
                 "name": "upsert_file_directory",
-                "description": "Create or update a file or directory in a repository branch. For files: provide file_name and parent_directory_id (file_path is constructed from directory structure). For directories: provide directory_path (parent_directory_id is inferred from path). To move: use update action with new location. To delete: use update action with empty parameters (empty string for directory_path, or no parameters for files). Requires write or admin access to the repository.",
+                "description": "Creates or updates a file or directory in a repository branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "Action to perform. Allowed values: 'create', 'update' (required)"
+                            "description": "Action to perform. Allowed values: 'create', 'update' (required)",
+                            "enum": ["create", "update"]
                         },
                         "access_token": {
                             "type": "string",
@@ -824,7 +813,8 @@ class UpsertFileDirectory(Tool):
                         },
                         "item_type": {
                             "type": "string",
-                            "description": "Type of item. Allowed values: 'file', 'directory' (required)"
+                            "description": "Type of item. Allowed values: 'file', 'directory' (required)",
+                            "enum": ["file", "directory"]
                         },
                         "file_name": {
                             "type": "string",
@@ -844,7 +834,8 @@ class UpsertFileDirectory(Tool):
                         },
                         "encoding": {
                             "type": "string",
-                            "description": "Content encoding. Allowed values: 'utf-8', 'base64', 'binary' (optional, defaults to 'utf-8')"
+                            "description": "Content encoding. Allowed values: 'utf-8', 'base64', 'binary' (optional, defaults to 'utf-8')",
+                            "enum": ["utf-8", "base64", "binary"]
                         },
                         "commit_message": {
                             "type": "string",
@@ -856,7 +847,15 @@ class UpsertFileDirectory(Tool):
                         },
                         "language": {
                             "type": "string",
-                            "description": "Programming language (optional, for files only)"
+                            "description": "Programming language (optional, for files only)",
+                            "enum": [
+                                'C', 'C++', 'C#', 'Go', 'Rust', 'Java', 'Kotlin', 'Scala', 'Python', 'Ruby', 'PHP',
+                                'JavaScript', 'TypeScript', 'Shell', 'PowerShell', 'Swift', 'Objective-C', 'Dart',
+                                'R', 'MATLAB', 'Groovy', 'Perl', 'Lua', 'Haskell', 'Elixir', 'Erlang', 'Julia',
+                                'Assembly', 'Fortran', 'COBOL', 'HTML', 'CSS',  'SCSS', 'Less', 'Markdown', 'AsciiDoc',
+                                'JSON', 'YAML', 'XML', 'TOML', 'INI', 'CSV', 'Dockerfile', 'Makefile', 'Bash',
+                                'Terraform', 'Ansible', 'SQL', 'PLpgSQL', 'Text', 'Binary', 'Unknown'
+                            ]
                         },
                         "is_binary": {
                             "type": "boolean",

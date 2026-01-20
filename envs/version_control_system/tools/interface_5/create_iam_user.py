@@ -4,8 +4,7 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateIamUser(Tool):
-    """Tool for creating a new IAM user in the version control system."""
-
+    
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -13,26 +12,10 @@ class CreateIamUser(Tool):
         username: str,
         full_name: Optional[str] = None,
     ) -> str:
-        """
-        Create a new IAM user in the version control system.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            email: The email address of the new user (required, must be unique).
-            username: The username for the new user (required, must be unique).
-            full_name: The full name of the user (optional).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created user data.
-        """
+      
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
+          
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
@@ -108,12 +91,11 @@ class CreateIamUser(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_iam_user function."""
         return {
             "type": "function",
             "function": {
                 "name": "create_iam_user",
-                "description": "Creates a new IAM user in the version control system with the provided email, username, and optional full name.",
+                "description": "Creates a new IAM user in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

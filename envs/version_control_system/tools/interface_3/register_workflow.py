@@ -15,9 +15,6 @@ class RegisterWorkflow(Tool):
         trigger_event: str,
         status: Optional[str] = None
     ) -> str:
-        """
-        Registers a new CI/CD workflow in a repository.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -132,7 +129,7 @@ class RegisterWorkflow(Tool):
                         },
                         "status": {
                             "type": "string",
-                            "description": "The initial status of the workflow. Valid values: active, disabled, deleted. Default: active."
+                            "description": "The initial status of the workflow. Valid values: active, disabled, deleted. Default: active (optional)."
                         }
                     },
                     "required": ["repository_id", "branch_id", "workflow_name", "workflow_path", "trigger_event"]

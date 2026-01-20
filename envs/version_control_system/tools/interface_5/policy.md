@@ -93,7 +93,7 @@ You must **halt the procedure** and immediately initiate a `handoff_to_human` (e
 
 #### Steps
 
-1. Confirm the source repo exists and is readable using `get_repo`.
+1. Confirm the source repo exists using `get_repo`.
 
 2. Confirm the new owner is active with `get_iam_user`.
 
@@ -192,7 +192,7 @@ You must **halt the procedure** and immediately initiate a `handoff_to_human` (e
 
 6. **For each file_updates:**
 
-   - Ensure the file record exists using `create_or_update_file`.
+   - Ensure the file record exists and is created or updated using `create_or_update_file`.
    - Save the content snapshot for this commit using `create_file_content`.
 
 7. Move the branch HEAD to the new commit using `update_branch_head`.

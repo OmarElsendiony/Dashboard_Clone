@@ -18,9 +18,6 @@ class PublishRelease(Tool):
         is_draft: Optional[bool] = None,
         is_prerelease: Optional[bool] = None
     ) -> str:
-        """
-        Publishes a new release in a repository.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -75,8 +72,8 @@ class PublishRelease(Tool):
             "author_id": author_id,
             "target_type": target_type,
             "target_reference": target_reference,
-            "is_draft": is_draft,
-            "is_prerelease": is_prerelease,
+            "is_draft": bool(is_draft),
+            "is_prerelease": bool(is_prerelease),
             "published_at": published_at,
             "created_at": "2026-01-01T23:59:00"
         }
@@ -109,27 +106,27 @@ class PublishRelease(Tool):
                         },
                         "release_name": {
                             "type": "string",
-                            "description": "The display name for the release. Optional."
+                            "description": "The display name for the release (optional)."
                         },
                         "description": {
                             "type": "string",
-                            "description": "The release notes or description. Optional."
+                            "description": "The release notes or description (optional)."
                         },
                         "target_type": {
                             "type": "string",
-                            "description": "The type of target for the release. Valid values: commit, branch. Optional."
+                            "description": "The type of target for the release. Valid values: commit, branch (optional)."
                         },
                         "target_reference": {
                             "type": "string",
-                            "description": "The commit SHA or branch name that the release points to. Optional."
+                            "description": "The commit SHA or branch name that the release points to (optional)."
                         },
                         "is_draft": {
                             "type": "boolean",
-                            "description": "Whether the release is a draft. Draft releases are not published. Default: false."
+                            "description": "Whether the release is a draft. Draft releases are not published. Default: false (optional)."
                         },
                         "is_prerelease": {
                             "type": "boolean",
-                            "description": "Whether the release is a prerelease (e.g., alpha, beta, rc). Default: false."
+                            "description": "Whether the release is a prerelease (e.g., alpha, beta, rc). Default: false (optional)."
                         }
                     },
                     "required": ["repository_id", "tag_name", "author_id"]

@@ -114,14 +114,7 @@ class RemoveUserFromEntity(Tool):
             "type": "function",
             "function": {
                 "name": "remove_user_from_entity",
-                "description": (
-                    "Remove a user from a workspace, project, or repository. "
-                    "Exactly one of workspace_id, project_id, or repository_id must be provided. "
-                    "Validates that the target user exists and the specified entity exists. "
-                    "Checks if the user is a member/collaborator of the entity before removing. "
-                    "Returns an error if the user is not a member/collaborator of the specified entity. "
-                    "Returns the removed membership/collaborator record upon successful removal."
-                ),
+                "description": "Removes a user from a workspace, project, or repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -131,15 +124,15 @@ class RemoveUserFromEntity(Tool):
                         },
                         "workspace_id": {
                             "type": "string",
-                            "description": "Optional. The ID of the workspace to remove the user from.",
+                            "description": "The ID of the workspace to remove the user from (optional).",
                         },
                         "project_id": {
                             "type": "string",
-                            "description": "Optional. The ID of the project to remove the user from.",
+                            "description": "The ID of the project to remove the user from (optional).",
                         },
                         "repository_id": {
                             "type": "string",
-                            "description": "Optional. The ID of the repository to remove the user from.",
+                            "description": "The ID of the repository to remove the user from (optional).",
                         },
                     },
                     "required": ["target_user_id"],

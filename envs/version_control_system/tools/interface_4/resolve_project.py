@@ -17,12 +17,6 @@ class ResolveProject(Tool):
         access_tokens = data.get("access_tokens", {})
 
         def encode(text):
-            """
-            Encodes text into Base64 format.
-            1. Converts string to bytes (.encode).
-            2. Encodes bytes to Base64 bytes.
-            3. Converts back to string (.decode) for readable output.
-            """
             text_bytes = text.encode("utf-8")
             encoded_bytes = base64.b64encode(text_bytes)
             return encoded_bytes.decode("utf-8")
@@ -102,10 +96,9 @@ class ResolveProject(Tool):
             "function": {
                 "name": "resolve_project",
                 "description": (
-                    "Resolves and retrieves project(s) that the authenticated user is a member of, "
-                    "by matching the provided project name and optionally restricting the search "
-                    "to a specific organization. Authentication is validated using the provided token, "
-                    "and only projects associated with the authenticated user are eligible for resolution."
+                    "Retrieves project(s) by name that the requesting user is a member of. "
+                    "Can optionally filter results to a specific organization. "
+                    "Returns all accessible projects if no filters are provided."
                 ),
                 "parameters": {
                     "type": "object",

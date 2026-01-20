@@ -1,0 +1,599 @@
+// GitHub Platform Database Schema
+// This schema represents a comprehensive database for managing users, repositories,
+// code management, collaboration, CI/CD, and security features
+
+Table users {
+  user_id string [primary key]
+  username varchar(100) [not null, unique]
+  email varchar(320) [not null, unique]
+  full_name varchar(200)
+  bio text
+  // avatar_url varchar(500)
+  account_type enum('personal', 'organization') [not null]
+  // plan_type fOR bitbucket only
+  plan_type enum('free', 'premium') [not null, default: 'free'] 
+  status enum('active', 'suspended', 'deleted') [not null, default: 'active']
+  // organization_id string // for forgejo onlyyyy
+  two_factor_enabled boolean [not null, default: false]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+// Ref: users.organization_id >  organizations.organization_id
+
+Table access_tokens {
+  token_id string [primary key]
+  user_id string [not null]
+  token_name varchar(255) [not null]
+  // token_hash varchar(255) [not null]
+  token_encoded varchar(255) [not null]
+  // scopes text [not null]
+  last_used_at timestamp
+  expires_at timestamp
+  status enum('active', 'revoked', 'expired') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+////////// IMPORTANT ///////////
+// {
+//   "github": "repo,workflow,write:packages,delete:packages,admin:org,admin:public_key,admin:repo_hook,admin:org_hook,gist,notifications,user,delete_repo,write:discussion,project,admin:gpg_key,admin:ssh_signing_key,audit_log,copilot",
+//   "forgejo": "write:activitypub,write:admin,write:issue,write:misc,write:notification,write:organization,write:package,write:repository,write:user",
+//   "azure_devops": "vso.code_full vso.build_execute vso.packaging_manage vso.release_manage vso.test_write vso.work_full vso.machinegroup_manage vso.variablegroups_manage vso.governance vso.entitlements vso.graph vso.identity vso.profile vso.project_manage vso.serviceendpoint_manage vso.tokenadministration vso.tokens vso.dashboards_manage vso.analytics vso.wiki_write",
+//   "bitbucket": "account:write team:write repository:admin project:admin pullrequest:write pipeline:write pipeline:variable runner:write webhook snippet:write issue:write wiki:write",
+//   "aws_devops": "arn:aws:iam::aws:policy/AdministratorAccess"
+// }
+////////////////////////////////
+
+
+
+Table organizations {
+  organization_id string [primary key]
+  // user_id string [not null]
+  organization_name varchar(100) [not null, unique]
+  visibility enum("public", "limited", "private")
+  display_name varchar(200)
+  description text
+  // website_url varchar(500)
+  // location varchar(200)
+  // billing_email varchar(320) [not null]
+  plan_type enum('free', 'team', 'enterprise') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Table organization_members {
+  membership_id string [primary key]
+  organization_id string [not null]
+  user_id string [not null]
+  role enum('owner', 'member') [not null]
+  status enum('active', 'pending', 'inactive') [not null]
+  joined_at timestamp [not null, default: `NOW()`]
+}
+
+Table workspaces { // bitbucket
+  workspace_id string [primary key]
+  workspace_name varchar(100) [not null, unique]
+  // organization_id string
+  // workspace_slug varchar(100) [not null, unique]
+  owner_id string [not null]
+  // owner_type enum('user', 'organization') [not null]
+  description text
+  is_forking_allowed boolean [default: false]
+  is_private boolean [not null, default: false]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Table workspace_members {
+  workspace_member_id string
+  workspace_id string
+  user_id string
+  roles enum("Admin", "User")
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+
+Table projects {
+  project_id string [primary key]
+  workspace_id string // only for bitbucket
+  organization_id string // connected to org directly if azure (no workspace)
+  project_key varchar(50) [not null] // for bitbucket only
+  project_name varchar(255) [not null]
+  status enum("active", "deleted") // for azure only
+  description text
+  is_private boolean [not null, default: false] // for bitbucket only
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+
+Table project_members {
+  project_member_id string
+  project_id string
+  user_id string
+  roles enum("Build_Administrator", "Contributor", "Project Administrator", "Reader", "Release_Administrator")
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+
+Table repositories {
+  repository_id string [primary key]
+  owner_type enum('user', 'organization') [not null]
+  owner_id string [not null] 
+  project_id string // for bitbucket and azure only
+  repository_name varchar(100) [not null]
+  description text
+  visibility enum('public', 'private', 'internal') [not null]
+  default_branch varchar(100) [default: 'main'] // nullable in case of Azure only
+  is_fork boolean [not null, default: false]
+  parent_repository_id string
+  is_archived boolean [not null, default: false]
+  is_template boolean [not null, default: false]
+  // size_kb bigint [not null, default: 0]
+  stars_count int [not null, default: 0]
+  forks_count int [not null, default: 0]
+  // open_issues_count int [not null, default: 0]
+  license_type enum('MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'unlicensed', 'other')
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+  pushed_at timestamp
+}
+
+// // When repositories.owner_id is a personal user:
+// permission_level: 'write' for collab and 'admin' for owner
+// // When repositories.owner_id is an organization:
+// permission_level: 'read', 'triage', 'write', 'maintain', or 'admin'
+// | Permission   | Capabilities                           |
+// | ------------ | -------------------------------------- |
+// | **Read**     | View and clone                         |
+// | **Triage**   | Manage issues/PRs (removed)            |
+// | **Write**    | Push code                              |
+// | **Maintain** | Manage repo settings (non-destructive) |
+// | **Admin**    | Full repository control                |
+
+
+Table repository_collaborators {
+  collaborator_id string [primary key]
+  repository_id string [not null]
+  user_id string [not null]
+  // removed triage and maintain as we won't have diversities related to them only. Also, bitbucket allows read,write,admin
+  permission_level enum('read', 'write', 'admin') [not null]
+  status enum('active', 'pending', 'removed') [not null]
+  added_at timestamp [not null, default: `NOW()`]
+}
+
+Table branches {
+  branch_id string [primary key]
+  repository_id string [not null]
+  branch_name varchar(255) [not null]
+  commit_sha varchar(40) [not null]
+  source_branch string
+  // is_protected boolean [not null, default: false]
+  is_default boolean [not null, default: false]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Ref: branches.source_branch > branches.branch_id
+
+Table commits {
+  commit_id string [primary key]
+  repository_id string [not null]
+  commit_sha varchar(40) [not null, unique]
+  author_id string [not null]
+  committer_id string [not null]
+  message text [not null]
+  // parent_commit_sha varchar(40)
+  parent_commit_id string
+  // tree_sha varchar(40) [not null]
+  // additions int [not null, default: 0]
+  // deletions int [not null, default: 0]
+  committed_at timestamp [not null]
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+Table directories {
+  directory_id string [primary key]
+  repository_id string [not null]
+  branch_id string [not null]
+  directory_path varchar(1000) [not null]
+  parent_directory_id string
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Table files {
+  file_id string [primary key]
+  repository_id string [not null]
+  branch_id string [not null]
+  directory_id string
+  file_path varchar(1000) [not null]
+  file_name varchar(255) [not null]
+  // file_extension varchar(50)
+  // file_size_bytes bigint [not null]
+  language enum(
+    'C',
+    'C++',
+    'C#',
+    'Go',
+    'Rust',
+    'Java',
+    'Kotlin',
+    'Scala',
+    'Python',
+    'Ruby',
+    'PHP',
+    'JavaScript',
+    'TypeScript',
+    'Shell',
+    'PowerShell',
+    'Swift',
+    'Objective-C',
+    'Dart',
+    'R',
+    'MATLAB',
+    'Groovy',
+    'Perl',
+    'Lua',
+    'Haskell',
+    'Elixir',
+    'Erlang',
+    'Julia',
+    'Assembly',
+    'Fortran',
+    'COBOL',
+
+    'HTML',
+    'CSS',
+    'SCSS',
+    'Less',
+    'Markdown',
+    'AsciiDoc',
+
+    'JSON',
+    'YAML',
+    'XML',
+    'TOML',
+    'INI',
+    'CSV',
+
+    'Dockerfile',
+    'Makefile',
+    'Bash',
+    'Terraform',
+    'Ansible',
+
+    'SQL',
+    'PLpgSQL',
+
+    'Text',
+    'Binary',
+    'Unknown'
+  )
+  is_binary boolean [not null, default: false]
+  last_modified_at timestamp [not null]
+  // last_commit_sha varchar(40)
+  last_commit_id string
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+
+Table file_contents {  
+  // shows all the versions of the file across the historical commits
+  content_id string [primary key]
+  file_id string [not null]
+  // commit_sha varchar(40) [not null]
+  commit_id string [not null]
+  content text [not null]
+  // content_hash varchar(64) [not null]
+  encoding enum('utf-8', 'base64', 'binary') [not null]
+  // line_count int
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+// Table file_changes {
+//   change_id string [primary key]
+//   commit_id string [not null]
+//   file_path varchar(1000) [not null]
+//   previous_file_path varchar(1000)
+//   change_type enum('added', 'modified', 'deleted', 'renamed', 'copied') [not null]
+//   additions int [not null, default: 0]
+//   deletions int [not null, default: 0]
+//   previous_content_id string
+//   new_content_id string
+//   created_at timestamp [not null, default: `NOW()`]
+// }
+
+Table code_reviews {
+  code_review_id string [primary key]
+  pull_request_id string [not null]
+  file_path varchar(1000) [not null]
+  // line_number int
+  reviewer_id string [not null]
+  comment_body text [not null]
+  review_type enum('comment', 'suggestion', 'question') [not null]
+  status enum('pending', 'resolved', 'outdated') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Table pull_requests {
+  pull_request_id string [primary key]
+  repository_id string [not null]
+  pull_request_number int [not null]
+  title varchar(500) [not null]
+  description text
+  author_id string [not null]
+  source_branch string [not null]
+  target_branch string [not null]
+  status enum('open', 'closed', 'merged', 'draft') [not null]
+  merged_by string
+  merged_at timestamp
+  closed_at timestamp
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Table pull_request_reviews {
+  review_id string [primary key]
+  pull_request_id string [not null]
+  reviewer_id string [not null]
+  review_state enum('pending', 'approved', 'changes_requested', 'commented', 'dismissed') [not null]
+  review_body text
+  submitted_at timestamp
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+Table issues {
+  issue_id string [primary key]
+  repository_id string [not null]
+  issue_number int [not null]
+  title varchar(500) [not null]
+  description text
+  author_id string [not null]
+  assignee_id string
+  status enum('open', 'closed', 'in_progress') [not null]
+  priority enum('low', 'medium', 'high', 'critical')
+  issue_type enum('bug', 'feature', 'documentation', 'question', 'enhancement') [not null]
+  closed_at timestamp
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+// Table issue_comments {
+//   comment_id string [primary key]
+//   issue_id string [not null]
+//   author_id string [not null]
+//   comment_body text [not null]
+//   created_at timestamp [not null, default: `NOW()`]
+//   updated_at timestamp [not null, default: `NOW()`]
+// }
+
+
+
+// Table issue_labels {
+//   issue_label_id string [primary key]
+//   issue_id string [not null]
+//   label_id string [not null]
+//   added_at timestamp [not null, default: `NOW()`]
+// }
+
+Table comments {
+  comment_id string [primary key]
+  commentable_type enum('issue', 'pull_request') [not null]
+  commentable_id string [not null]
+  author_id string [not null]
+  comment_body text [not null]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+  
+  Note: 'commentable_id references either issue_id or pull_request_id based on commentable_type'
+}
+
+// Relationship
+Ref: comments.author_id > users.user_id
+
+Table labels {
+  label_id string [primary key]
+  repository_id string [not null]
+  label_name varchar(100) [not null]
+  color varchar(7) [not null] // #445566 Hexadecimal
+  // type enum('issue')
+  pr_ids string // nullable  "[1,2,5,7]"
+  issue_ids string // nullable "[6,7,9]"
+  description varchar(500)
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+// Table labeled_items {
+//   labeled_item_id string [primary key]
+//   label_id string [not null]
+//   labelable_type enum('issue', 'pull_request') [not null]
+//   labelable_id string [not null]
+//   added_at timestamp [not null, default: `NOW()`]
+  
+//   Note: 'labelable_id references either issue_id or pull_request_id based on labelable_type'
+// }
+
+// Relationship
+// Ref: labeled_items.label_id > labels.label_id
+
+
+// Table milestones {  // not used <<<<<<<<<<<<<>>>>>>>>>>>>>>>
+//   milestone_id string [primary key]
+//   repository_id string [not null]
+//   title varchar(255) [not null]
+//   description text
+//   status enum('open', 'closed') [not null]
+//   due_date date
+//   closed_at timestamp
+//   created_at timestamp [not null, default: `NOW()`]
+//   updated_at timestamp [not null, default: `NOW()`]
+// }
+
+Table workflows {
+  workflow_id string [primary key]
+  repository_id string [not null]
+  workflow_name varchar(255) [not null]
+  workflow_path varchar(500) [not null]
+  trigger_event enum('push', 'pull_request', 'schedule', 'workflow_dispatch', 'release') [not null]
+  status enum('active', 'disabled', 'deleted') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+// Table workflow_runs {
+//   run_id string [primary key]
+//   workflow_id string [not null]
+//   repository_id string [not null]
+//   run_number int [not null]
+//   triggered_by string [not null]
+//   trigger_event enum('push', 'pull_request', 'schedule', 'workflow_dispatch', 'release') [not null]
+//   branch_name varchar(255)
+//   commit_sha varchar(40) [not null]
+//   status enum('queued', 'in_progress', 'completed', 'cancelled', 'failed') [not null]
+//   conclusion enum('success', 'failure', 'cancelled', 'skipped', 'timed_out')
+//   started_at timestamp
+//   completed_at timestamp
+//   created_at timestamp [not null, default: `NOW()`]
+// }
+
+// Table workflow_jobs {
+//   job_id string [primary key]
+//   run_id string [not null]
+//   job_name varchar(255) [not null]
+//   status enum('queued', 'in_progress', 'completed') [not null]
+//   conclusion enum('success', 'failure', 'cancelled', 'skipped')
+//   started_at timestamp
+//   completed_at timestamp
+//   runner_name varchar(100)
+//   created_at timestamp [not null, default: `NOW()`]
+// }
+
+Table releases {
+  release_id string [primary key]
+  repository_id string [not null]
+  tag_name varchar(100) [not null]
+  release_name varchar(255)
+  description text
+  author_id string [not null]
+  // target_commitish varchar(255) [not null]
+  // target_type enum('commit', 'branch', 'tag')
+  target_type enum('commit', 'branch')
+  target_reference varchar(255)
+  is_draft boolean [not null, default: false]
+  is_prerelease boolean [not null, default: false]
+  published_at timestamp
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+
+Table notifications {
+  notification_id string [primary key]
+  user_id string [not null]
+  notification_type enum('mention', 'review_request', 'issue_assigned', 'pr_merged', 'ci_failed') [not null]
+  reference_type enum('issue', 'pull_request', 'commit', 'release') [not null]
+  reference_id string [not null]
+  repository_id string
+  is_read boolean [not null, default: false]
+  read_at timestamp
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+Table stars { 
+  star_id string [primary key]
+  user_id string [not null]
+  repository_id string [not null]
+  starred_at timestamp [not null, default: `NOW()`]
+}
+
+// Relationships
+
+// User and Organization relationships
+// Ref: organizations.user_id > users.user_id
+Ref: organization_members.organization_id > organizations.organization_id
+Ref: organization_members.user_id > users.user_id
+
+// Repository relationships
+Ref: repositories.owner_id > users.user_id
+Ref: workspaces.owner_id > users.user_id
+Ref: repositories.parent_repository_id > repositories.repository_id
+Ref: repository_collaborators.repository_id > repositories.repository_id
+Ref: repository_collaborators.user_id > users.user_id
+
+// Branch and Commit relationships
+Ref: branches.repository_id > repositories.repository_id
+Ref: commits.repository_id > repositories.repository_id
+Ref: commits.author_id > users.user_id
+Ref: commits.committer_id > users.user_id
+
+// Directory and File relationships
+Ref: directories.repository_id > repositories.repository_id
+Ref: directories.branch_id > branches.branch_id
+Ref: directories.parent_directory_id > directories.directory_id
+Ref: files.repository_id > repositories.repository_id
+Ref: files.branch_id > branches.branch_id
+Ref: files.directory_id > directories.directory_id
+Ref: files.last_commit_id > commits.commit_id
+Ref: file_contents.commit_id > commits.commit_id
+Ref: file_contents.file_id > files.file_id
+// Ref: file_changes.commit_id > commits.commit_id
+// Ref: file_changes.previous_content_id > file_contents.content_id
+// Ref: file_changes.new_content_id > file_contents.content_id
+
+// Code Review relationships
+Ref: code_reviews.pull_request_id > pull_requests.pull_request_id
+Ref: code_reviews.reviewer_id > users.user_id
+
+// Pull Request relationships
+Ref: pull_requests.repository_id > repositories.repository_id
+Ref: pull_requests.author_id > users.user_id
+Ref: pull_requests.merged_by > users.user_id
+Ref: pull_request_reviews.pull_request_id > pull_requests.pull_request_id
+Ref: pull_request_reviews.reviewer_id > users.user_id
+
+// Issue relationships
+Ref: issues.repository_id > repositories.repository_id
+Ref: issues.author_id > users.user_id
+Ref: issues.assignee_id > users.user_id
+// Ref: issue_comments.issue_id > issues.issue_id
+// Ref: issue_comments.author_id > users.user_id
+
+// Label relationships
+Ref: labels.repository_id > repositories.repository_id
+// Ref: issue_labels.issue_id > issues.issue_id
+// Ref: issue_labels.label_id > labels.label_id
+
+// Milestone relationships
+// Ref: milestones.repository_id > repositories.repository_id
+
+// Workflow and CI/CD relationships
+Ref: workflows.repository_id > repositories.repository_id
+// Ref: workflow_runs.workflow_id > workflows.workflow_id
+// Ref: workflow_runs.repository_id > repositories.repository_id
+// Ref: workflow_runs.triggered_by > users.user_id
+// Ref: workflow_jobs.run_id > workflow_runs.run_id
+
+// Release relationships
+Ref: releases.repository_id > repositories.repository_id
+Ref: releases.author_id > users.user_id
+
+// Access Token relationships
+Ref: access_tokens.user_id > users.user_id
+
+// Notification relationships
+Ref: notifications.user_id > users.user_id
+Ref: notifications.repository_id > repositories.repository_id
+
+// Star relationships
+Ref: stars.user_id > users.user_id
+Ref: stars.repository_id > repositories.repository_id
+
+Ref: commits.parent_commit_id > commits.commit_id
+
+Ref: projects.workspace_id > workspaces.workspace_id
+// Ref: repositories.workspace_id > workspaces.workspace_id
+Ref: repositories.project_id > projects.project_id

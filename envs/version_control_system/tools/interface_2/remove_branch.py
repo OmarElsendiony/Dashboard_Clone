@@ -9,7 +9,6 @@ class RemoveBranch(Tool):
         data: Dict[str, Any],
         branch_id: str,
     ) -> str:
-        """Remove a branch and cascade delete related PRs if all are merged/closed."""
 
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format: 'data' must be a dict"})
@@ -91,20 +90,13 @@ class RemoveBranch(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the remove_branch function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "remove_branch",
                 "description": (
-                    "Remove a branch and cascade delete related pull requests. "
-                    "Validates that the branch exists. "
-                    "Checks all pull requests where this branch is source or target. "
-                    "Only allows deletion if all related pull requests are merged or closed. "
-                    "If any PR is open or draft, returns an error with the list of open PRs. "
-                    "If all PRs are merged/closed, performs cascade deletion of: "
-                    "pull request reviews, comments (for those PRs), and the PRs themselves. "
-                    "Returns information about the deleted branch and count of deleted PRs."
+                    "Removes a branch after confirming it exists. Check all pull requests where the branch is used as source or target. If any pull request is open or in draft, return an error with the list of those pull requests. If all are merged or closed, delete the branch and all related pull requests, including their reviews and comments, and return the deleted branch details with the count of removed pull requests."
                 ),
                 "parameters": {
                     "type": "object",

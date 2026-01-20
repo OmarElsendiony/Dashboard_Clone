@@ -11,9 +11,6 @@ class ListOrgMembers(Tool):
         role: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
-        """
-        List organization members with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
@@ -60,21 +57,23 @@ class ListOrgMembers(Tool):
             "type": "function",
             "function": {
                 "name": "list_org_members",
-                "description": "List organization members. Can filter by organization_id, role, or status. Returns all organization members if no filters are provided.",
+                "description": "Lists organization members with optional filters.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "organization_id": {
                             "type": "string",
-                            "description": "Filter by organization_id (exact match)"
+                            "description": "Filter by organization_id (exact match) (optional)"
                         },
                         "role": {
                             "type": "string",
-                            "description": "Filter by role. Allowed values: 'owner', 'member'"
+                            "description": "Filter by role. Allowed values: 'owner', 'member' (optional)",
+                            "enum": ["owner", "member"]
                         },
                         "status": {
                             "type": "string",
-                            "description": "Filter by status. Allowed values: 'active', 'pending', 'inactive'"
+                            "description": "Filter by status. Allowed values: 'active', 'pending', 'inactive' (optional)",
+                            "enum": ["active", "pending", "inactive"]
                         }
                     },
                     "required": []

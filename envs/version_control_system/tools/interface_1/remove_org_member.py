@@ -12,9 +12,6 @@ class RemoveOrgMember(Tool):
         organization_id: str,
         user_id: str
     ) -> str:
-        """
-        Remove a user from an organization.
-        """
         def get_user_from_token(token: str, tokens_data: Dict[str, Any]) -> Optional[str]:
             """Encode token and find associated user_id"""
             try:
@@ -117,7 +114,7 @@ class RemoveOrgMember(Tool):
             "type": "function",
             "function": {
                 "name": "remove_org_member",
-                "description": "Remove a user from an organization by setting their membership status to inactive. Requires the requesting user to be an owner of the organization. Cannot remove the last owner - transfer ownership first.",
+                "description": "Removes a user from an organization by setting their membership status to inactive.",
                 "parameters": {
                     "type": "object",
                     "properties": {

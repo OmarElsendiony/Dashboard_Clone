@@ -12,9 +12,6 @@ class ModifyOrganizationMembership(Tool):
         role: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
-        """
-        Updates an organization membership record with new role or status.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -54,7 +51,7 @@ class ModifyOrganizationMembership(Tool):
             "type": "function",
             "function": {
                 "name": "modify_organization_membership",
-                "description": "Updates an organization membership record. Can modify the member's role or status. At least one of role or status must be provided.",
+                "description": "Updates an organization membership record.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -64,11 +61,11 @@ class ModifyOrganizationMembership(Tool):
                         },
                         "role": {
                             "type": "string",
-                            "description": "The new role for the member. Valid values: owner, member."
+                            "description": "The new role for the member. Valid values: owner, member (optional)."
                         },
                         "status": {
                             "type": "string",
-                            "description": "The new status for the membership. Valid values: active, pending, inactive."
+                            "description": "The new status for the membership. Valid values: active, pending, inactive (optional)."
                         }
                     },
                     "required": ["membership_id"]

@@ -10,9 +10,6 @@ class ListComments(Tool):
         commentable_id: str,
         author_id: str
     ) -> str:
-        """
-        Lists comments for a specific entity type and ID, authored by a specific user.
-        """
         comments = data.get("comments", {})
         results = []
 
@@ -34,13 +31,14 @@ class ListComments(Tool):
             "type": "function",
             "function": {
                 "name": "list_comments",
-                "description": "Lists comments based on entity type, entity ID, and author.",
+                "description": "Lists comments for a specific entity type and ID, authored by a specific user.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "commentable_type": {
                             "type": "string",
-                            "description": "The type of entity the comment belongs to. Allowed values: 'issue', 'pull_request'."
+                            "description": "The type of entity the comment belongs to. Allowed values: 'issue', 'pull_request'.",
+                            "enum": ["issue", "pull_request"]
                         },
                         "commentable_id": {
                             "type": "string",

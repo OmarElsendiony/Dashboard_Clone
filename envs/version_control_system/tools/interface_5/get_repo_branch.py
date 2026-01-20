@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class GetRepoBranch(Tool):
-    """Tool for retrieving branch details from a repository in the version control system."""
 
     @staticmethod
     def invoke(
@@ -12,18 +11,6 @@ class GetRepoBranch(Tool):
         repo_id: str,
         branch_name: Optional[str] = None,
     ) -> str:
-        """
-        Retrieve branch details by repository ID and optionally branch name.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to look up branches for (required).
-            branch_name: The name of the branch to look up (optional). If not provided,
-                        returns all branches for the repository.
-
-        Returns:
-            JSON string containing the success status and branch data if found.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -121,12 +108,11 @@ class GetRepoBranch(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_repo_branch function."""
         return {
             "type": "function",
             "function": {
                 "name": "get_repo_branch",
-                "description": "Retrieves branch information from a repository in the version control system. When branch_name is provided, returns detailed information about that specific branch including branch_id, repository_id, branch_name, commit_sha (HEAD pointer), source_branch (the branch it was created from), is_default (whether it's the default branch), created_at, and updated_at. When branch_name is not provided, returns all branches for the repository sorted with the default branch first. Use this to verify branch existence, check branch HEAD commit SHA, confirm default branch status, or list all branches in a repository before performing branch operations.",
+                "description": "Retrieves branch information from a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

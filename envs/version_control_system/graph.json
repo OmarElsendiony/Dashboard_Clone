@@ -1,0 +1,550 @@
+{
+  "inputs": {
+    "schema_file": "/home/omar/sandbox/Amazon-Agentic/Dashboard/Dashboard_Clone/envs/version_control_system/schema.txt",
+    "sop_file": "/home/omar/sandbox/Amazon-Agentic/Dashboard/Dashboard_Clone/envs/version_control_system/tools/interface_1/policy.md",
+    "tools_paths": [
+      "/home/omar/sandbox/Amazon-Agentic/Dashboard/Dashboard_Clone/envs/version_control_system/tools/interface_1"
+    ]
+  },
+  "selection": {
+    "used_tools_inferred_from_sop": [
+      "CreateBranch",
+      "CreateOrganization",
+      "CreatePullRequest",
+      "CreateWorkflow",
+      "DeleteComment",
+      "DeleteFile",
+      "DeleteIssue",
+      "DeleteRelease",
+      "DeleteWorkflow",
+      "EraseBranch",
+      "ForkRepository",
+      "GetRepositoryPermissions",
+      "InviteOrgMember",
+      "ListAccessTokens",
+      "ListBranches",
+      "ListComments",
+      "ListFilesDirectories",
+      "ListLabels",
+      "ListOrgMembers",
+      "ListOrganizations",
+      "ListPullRequests",
+      "ListReleases",
+      "ListRepositories",
+      "ListStars",
+      "ListUsers",
+      "ListWorkflows",
+      "RemoveOrgMember",
+      "SearchIssues",
+      "StarUnstarRepo",
+      "SubmitPrReview",
+      "TransferToHuman",
+      "UpdateIssues",
+      "UpdatePullRequest",
+      "UpdateRepositoryPermissions",
+      "UpdateWorkflow",
+      "UpsertComment",
+      "UpsertFileDirectory",
+      "UpsertLabel",
+      "UpsertRelease",
+      "UpsertRepository"
+    ],
+    "tables_of_interest": [
+      "access_tokens",
+      "branches",
+      "comments",
+      "commits",
+      "directories",
+      "file_contents",
+      "files",
+      "issues",
+      "labels",
+      "organization_members",
+      "organizations",
+      "pull_request_reviews",
+      "pull_requests",
+      "releases",
+      "repositories",
+      "repository_collaborators",
+      "stars",
+      "users",
+      "workflows"
+    ],
+    "reachable_from_roots": [
+      "access_tokens",
+      "branches",
+      "comments",
+      "commits",
+      "directories",
+      "file_contents",
+      "files",
+      "issues",
+      "labels",
+      "organization_members",
+      "organizations",
+      "pull_request_reviews",
+      "pull_requests",
+      "releases",
+      "repositories",
+      "repository_collaborators",
+      "stars",
+      "users",
+      "workflows"
+    ]
+  },
+  "primary_keys": {
+    "access_tokens": [
+      "token_id"
+    ],
+    "branches": [
+      "branch_id"
+    ],
+    "comments": [
+      "comment_id"
+    ],
+    "commits": [
+      "commit_id"
+    ],
+    "directories": [
+      "directory_id"
+    ],
+    "file_contents": [
+      "content_id"
+    ],
+    "files": [
+      "file_id"
+    ],
+    "issues": [
+      "issue_id"
+    ],
+    "labels": [
+      "label_id"
+    ],
+    "organization_members": [
+      "membership_id"
+    ],
+    "organizations": [
+      "organization_id"
+    ],
+    "pull_request_reviews": [
+      "review_id"
+    ],
+    "pull_requests": [
+      "pull_request_id"
+    ],
+    "releases": [
+      "release_id"
+    ],
+    "repositories": [
+      "repository_id"
+    ],
+    "repository_collaborators": [
+      "collaborator_id"
+    ],
+    "stars": [
+      "star_id"
+    ],
+    "users": [
+      "user_id"
+    ],
+    "workflows": [
+      "workflow_id"
+    ]
+  },
+  "relationships": [
+    {
+      "parent_table": "organizations",
+      "parent_pk": "organization_id",
+      "child_table": "users",
+      "child_fk": "organization_id"
+    },
+    {
+      "parent_table": "branches",
+      "parent_pk": "branch_id",
+      "child_table": "branches",
+      "child_fk": "source_branch"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "comments",
+      "child_fk": "author_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "organizations",
+      "child_fk": "user_id"
+    },
+    {
+      "parent_table": "organizations",
+      "parent_pk": "organization_id",
+      "child_table": "organization_members",
+      "child_fk": "organization_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "organization_members",
+      "child_fk": "user_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "repositories",
+      "child_fk": "owner_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "repositories",
+      "child_fk": "parent_repository_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "repository_collaborators",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "repository_collaborators",
+      "child_fk": "user_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "branches",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "commits",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "commits",
+      "child_fk": "author_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "commits",
+      "child_fk": "committer_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "directories",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "branches",
+      "parent_pk": "branch_id",
+      "child_table": "directories",
+      "child_fk": "branch_id"
+    },
+    {
+      "parent_table": "directories",
+      "parent_pk": "directory_id",
+      "child_table": "directories",
+      "child_fk": "parent_directory_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "files",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "branches",
+      "parent_pk": "branch_id",
+      "child_table": "files",
+      "child_fk": "branch_id"
+    },
+    {
+      "parent_table": "directories",
+      "parent_pk": "directory_id",
+      "child_table": "files",
+      "child_fk": "directory_id"
+    },
+    {
+      "parent_table": "commits",
+      "parent_pk": "commit_id",
+      "child_table": "files",
+      "child_fk": "last_commit_id"
+    },
+    {
+      "parent_table": "commits",
+      "parent_pk": "commit_id",
+      "child_table": "file_contents",
+      "child_fk": "commit_id"
+    },
+    {
+      "parent_table": "files",
+      "parent_pk": "file_id",
+      "child_table": "file_contents",
+      "child_fk": "file_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "pull_requests",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "pull_requests",
+      "child_fk": "author_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "pull_requests",
+      "child_fk": "merged_by"
+    },
+    {
+      "parent_table": "pull_requests",
+      "parent_pk": "pull_request_id",
+      "child_table": "pull_request_reviews",
+      "child_fk": "pull_request_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "pull_request_reviews",
+      "child_fk": "reviewer_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "issues",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "issues",
+      "child_fk": "author_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "issues",
+      "child_fk": "assignee_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "labels",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "workflows",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "releases",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "releases",
+      "child_fk": "author_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "access_tokens",
+      "child_fk": "user_id"
+    },
+    {
+      "parent_table": "users",
+      "parent_pk": "user_id",
+      "child_table": "stars",
+      "child_fk": "user_id"
+    },
+    {
+      "parent_table": "repositories",
+      "parent_pk": "repository_id",
+      "child_table": "stars",
+      "child_fk": "repository_id"
+    },
+    {
+      "parent_table": "commits",
+      "parent_pk": "commit_id",
+      "child_table": "commits",
+      "child_fk": "parent_commit_id"
+    }
+  ],
+  "graph": {
+    "adjacency": {
+      "access_tokens": [],
+      "branches": [
+        "branches",
+        "directories",
+        "files"
+      ],
+      "comments": [],
+      "commits": [
+        "commits",
+        "file_contents",
+        "files"
+      ],
+      "directories": [
+        "directories",
+        "files"
+      ],
+      "file_contents": [],
+      "files": [
+        "file_contents"
+      ],
+      "issues": [],
+      "labels": [],
+      "organization_members": [],
+      "organizations": [
+        "organization_members",
+        "users"
+      ],
+      "pull_request_reviews": [],
+      "pull_requests": [
+        "pull_request_reviews"
+      ],
+      "releases": [],
+      "repositories": [
+        "branches",
+        "commits",
+        "directories",
+        "files",
+        "issues",
+        "labels",
+        "pull_requests",
+        "releases",
+        "repositories",
+        "repository_collaborators",
+        "stars",
+        "workflows"
+      ],
+      "repository_collaborators": [],
+      "stars": [],
+      "users": [
+        "access_tokens",
+        "comments",
+        "commits",
+        "issues",
+        "organization_members",
+        "organizations",
+        "pull_request_reviews",
+        "pull_requests",
+        "releases",
+        "repositories",
+        "repository_collaborators",
+        "stars"
+      ],
+      "workflows": []
+    },
+    "reverse_adjacency": {
+      "access_tokens": [
+        "users"
+      ],
+      "branches": [
+        "branches",
+        "repositories"
+      ],
+      "comments": [
+        "users"
+      ],
+      "commits": [
+        "commits",
+        "repositories",
+        "users"
+      ],
+      "directories": [
+        "branches",
+        "directories",
+        "repositories"
+      ],
+      "file_contents": [
+        "commits",
+        "files"
+      ],
+      "files": [
+        "branches",
+        "commits",
+        "directories",
+        "repositories"
+      ],
+      "issues": [
+        "repositories",
+        "users"
+      ],
+      "labels": [
+        "repositories"
+      ],
+      "organization_members": [
+        "organizations",
+        "users"
+      ],
+      "organizations": [
+        "users"
+      ],
+      "pull_request_reviews": [
+        "pull_requests",
+        "users"
+      ],
+      "pull_requests": [
+        "repositories",
+        "users"
+      ],
+      "releases": [
+        "repositories",
+        "users"
+      ],
+      "repositories": [
+        "repositories",
+        "users"
+      ],
+      "repository_collaborators": [
+        "repositories",
+        "users"
+      ],
+      "stars": [
+        "repositories",
+        "users"
+      ],
+      "users": [
+        "organizations"
+      ],
+      "workflows": [
+        "repositories"
+      ]
+    }
+  },
+  "analysis": {
+    "leaf_nodes": [
+      "access_tokens",
+      "comments",
+      "file_contents",
+      "issues",
+      "labels",
+      "organization_members",
+      "pull_request_reviews",
+      "releases",
+      "repository_collaborators",
+      "stars",
+      "workflows"
+    ],
+    "leaf_count": 11,
+    "distinct_scenarios_assumption": "leaf_count"
+  }
+}

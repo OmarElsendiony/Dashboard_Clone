@@ -14,9 +14,6 @@ class ListPullRequests(Tool):
         target_branch: Optional[str] = None,
         pull_request_id: Optional[str] = None
     ) -> str:
-        """
-        List pull requests with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
@@ -62,33 +59,34 @@ class ListPullRequests(Tool):
             "type": "function",
             "function": {
                 "name": "list_pull_requests",
-                "description": "List pull requests from repositories. Can filter by repository_id, status, author_id, source_branch, target_branch, or pull_request_id. Returns all pull requests if no filters are provided.",
+                "description": "Lists pull requests with optional filters.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "repository_id": {
                             "type": "string",
-                            "description": "Filter by repository_id (exact match)"
+                            "description": "Filter by repository_id (exact match) (optional)"
                         },
                         "status": {
                             "type": "string",
-                            "description": "Filter by status. Allowed values: 'open', 'closed', 'merged', 'draft' (exact match)"
+                            "description": "Filter by status. Allowed values: 'open', 'closed', 'merged', 'draft' (exact match) (optional)",
+                            "enum" : ["open", "closed", "merged", "draft"]
                         },
                         "author_id": {
                             "type": "string",
-                            "description": "Filter by author_id (exact match)"
+                            "description": "Filter by author_id (exact match) (optional)"
                         },
                         "source_branch": {
                             "type": "string",
-                            "description": "Filter by source branch name (exact match)"
+                            "description": "Filter by source branch name (exact match) (optional)"
                         },
                         "target_branch": {
                             "type": "string",
-                            "description": "Filter by target branch name (exact match)"
+                            "description": "Filter by target branch name (exact match) (optional)"
                         },
                         "pull_request_id": {
                             "type": "string",
-                            "description": "Filter by pull_request_id (exact match)"
+                            "description": "Filter by pull_request_id (exact match) (optional)"
                         }
                     },
                     "required": []

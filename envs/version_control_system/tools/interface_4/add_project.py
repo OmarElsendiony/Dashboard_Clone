@@ -132,11 +132,8 @@ class AddProject(Tool):
                 "name": "add_project",
                 "description": (
                     "Creates a new project within an organization. "
-                    "The requesting user must be authenticated and must "
-                    "already be a member of the specified organization. "
+                    "The requesting user must be a member of the specified organization. "
                     "Project names must be unique within the organization. "
-                    "Upon creation, the requesting user is automatically "
-                    "added as a project administrator."
                 ),
                 "parameters": {
                     "type": "object",

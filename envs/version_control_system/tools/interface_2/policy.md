@@ -153,7 +153,7 @@ You must halt execution and switch to human (switch_to_human) when any of the fo
 9. If the user wants to update the file:
    1. Modify file content using update_file
 10. If the user wants to delete the file:
-    1. Delete file using remove_file
+   1. Delete file using remove_file
 
 ### **SOP 11 - Create a pull request**
 
@@ -183,8 +183,8 @@ You must halt execution and switch to human (switch_to_human) when any of the fo
 9. If the user wants to merge a pull request:
    1. Fetch all the pull request reviews for the pull requests using fetch_pull_request_reviews and verify the status for all is approved
 10. If the user wants to add comments to a pull request:
-11. Add a comment using add_pull_request_comment
-12. Update the pull request using modify_pull_request
+   1. Add a comment using add_pull_request_comment
+11. Update the pull request using modify_pull_request
 
 ### **SOP 13 - Fork a repository**
 
@@ -214,7 +214,7 @@ You must halt execution and switch to human (switch_to_human) when any of the fo
 9. If the file exists in step 8:
    1. Modify file content using update_file
 10. If the file does not exist in step 8:
-11. Create a file using create_file
+   1. Create a file using create_file
 
 ### **SOP 15 - Remove users from Workspaces/Projects/Repositories**
 

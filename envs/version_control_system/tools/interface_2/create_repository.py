@@ -151,17 +151,7 @@ class CreateRepository(Tool):
             "type": "function",
             "function": {
                 "name": "create_repository",
-                "description": (
-                    "Create a new repository with default branch and collaborator records. "
-                    "Validates that owner, project, and optional user exist. "
-                    "Validates visibility is one of: public, private, internal. "
-                    "Ensures repository_name is unique within the project. "
-                    "Creates a branch record for the default branch with null commit_sha. "
-                    "Creates a repository_collaborators record for owner_id with admin permission_level. "
-                    "If user_id is provided and different from owner_id, creates an additional "
-                    "repository_collaborators record for user_id with admin permission_level. "
-                    "Returns the created repository, branch, and collaborator records."
-                ),
+                "description": "Creates a new repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -15,13 +15,6 @@ class UpdateIamUser(Tool):
         user_id: str,
         status: str,
     ) -> str:
-        """
-        Update the status of an IAM user account.
-
-        Parameters:
-        - user_id (str, required): The unique identifier of the user to update.
-        - status (str, required): The new status for the user. Must be one of: "active", "suspended".
-        """
 
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data container"})
@@ -77,7 +70,8 @@ class UpdateIamUser(Tool):
         user["updated_at"] = timestamp
 
         # Filter out unsupported fields
-        filtered_user = {k: v for k, v in user.items() if k not in {"plan_type", "account_type", "two_factor_enabled"}}
+        filtered_user = {k: v for k, v in user.items() if k not in {
+            "plan_type", "account_type", "two_factor_enabled"}}
 
         return json.dumps({
             "success": True,
@@ -91,9 +85,7 @@ class UpdateIamUser(Tool):
             "type": "function",
             "function": {
                 "name": "update_iam_user",
-                "description": (
-                    "Update an IAM user's status. Use this to suspend or reactivate a user account."
-                ),
+                "description": "Updates an IAM user's status.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -103,7 +95,8 @@ class UpdateIamUser(Tool):
                         },
                         "status": {
                             "type": "string",
-                            "description": "The new status for the user. Must be one of: active, suspended.",
+                            "description": "The new status for the user.",
+                            "enum": ["active", "suspended"]
                         },
                     },
                     "required": ["user_id", "status"],

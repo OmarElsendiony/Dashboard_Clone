@@ -14,9 +14,6 @@ class ListRepositories(Tool):
         repository_name: Optional[str] = None,
         repository_id: Optional[str] = None
     ) -> str:
-        """
-        List repositories with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
@@ -80,33 +77,35 @@ class ListRepositories(Tool):
             "type": "function",
             "function": {
                 "name": "list_repositories",
-                "description": "List repositories. Can filter by owner_id, owner_type, visibility, is_archived, repository_name, or repository_id. Returns all repositories if no filters are provided.",
+                "description": "Lists repositories with optional filters.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "owner_id": {
                             "type": "string",
-                            "description": "Filter by owner_id (exact match)"
+                            "description": "Filter by owner_id (exact match) (optional)"
                         },
                         "owner_type": {
                             "type": "string",
-                            "description": "Filter by owner type. Allowed values: 'user', 'organization'"
+                            "description": "Filter by owner type. Allowed values: 'user', 'organization' (optional)",
+                            "enum" : ["user", "organization"]
                         },
                         "visibility": {
                             "type": "string",
-                            "description": "Filter by visibility. Allowed values: 'public', 'private', 'internal'"
+                            "description": "Filter by visibility. Allowed values: 'public', 'private', 'internal' (optional)",
+                            "enum" : ["public", "private", "internal"]
                         },
                         "is_archived": {
                             "type": "boolean",
-                            "description": "Filter by archived status. Allowed values: True, False"
+                            "description": "Filter by archived status. Allowed values: True, False (optional)"
                         },
                         "repository_name": {
                             "type": "string",
-                            "description": "Filter by repository name (exact match)"
+                            "description": "Filter by repository name (exact match) (optional)"
                         },
                         "repository_id": {
                             "type": "string",
-                            "description": "Filter by repository_id (exact match)"
+                            "description": "Filter by repository_id (exact match) (optional)"
                         }
                     },
                     "required": []

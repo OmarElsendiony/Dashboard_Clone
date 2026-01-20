@@ -9,7 +9,7 @@ class ListAccessToken(Tool):
         data: Dict[str, Any],
         user_id: str,
     ) -> str:
-        """ Returns the access token for a specific user. """
+        
         # Validate data structure and required containers
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format: 'data' must be a dict"})
@@ -69,7 +69,7 @@ class ListAccessToken(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """ Return tool metadata for the list_access_token function. """
+        
         return {
             "type": "function",
             "function": {
@@ -77,10 +77,7 @@ class ListAccessToken(Tool):
                 "description": (
                     "Retrieve the access token associated with a specific user. "
                     "Each user has exactly one access token. "
-                    "Returns the access token including token_id, token_name, user_id, "
-                    "status (active/revoked/expired), last_used_at, expires_at, created_at timestamps. "
-                    "Validates that the user exists and is active. "
-                    "Returns an error if the user doesn't exist, is not active, or has no access token."
+                    "Validates that the user exists and is active, and returns the token details or an error if none is available."
                 ),
                 "parameters": {
                     "type": "object",

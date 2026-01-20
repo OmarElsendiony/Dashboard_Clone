@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class UpdateRepoArchiveStatus(Tool):
-    """Tool for updating the archive status of a repository in the version control system."""
 
     @staticmethod
     def invoke(
@@ -12,17 +11,6 @@ class UpdateRepoArchiveStatus(Tool):
         repo_id: str,
         is_archived: bool,
     ) -> str:
-        """
-        Update the archive status of a repository.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to update (required).
-            is_archived: The new archive status (required). Set to True to archive, False to unarchive.
-
-        Returns:
-            str: A JSON-encoded string containing the success status and updated repository data.
-        """
 
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
@@ -80,12 +68,11 @@ class UpdateRepoArchiveStatus(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the update_repo_archive_status function."""
         return {
             "type": "function",
             "function": {
                 "name": "update_repo_archive_status",
-                "description": "Updates the archive status of a repository. Use this to archive or unarchive a repository.",
+                "description": "Updates the archive status of a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

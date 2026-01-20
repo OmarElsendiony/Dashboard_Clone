@@ -101,8 +101,6 @@ class ApproveRelease(Tool):
             release["published_at"] = None
             action = "unpublished"
 
-        release["updated_at"] = now
-
         return json.dumps({"success": True, "action": action, "release": release})
 
     @staticmethod
@@ -124,11 +122,11 @@ class ApproveRelease(Tool):
                         },
                         "approval_decision": {
                             "type": "string",
-                            "description": "Decision to approve (publish) or reject the release.",
+                            "description": "Decision to approve (publish) or reject the release. Allowed values: 'publish', 'reject', 'unpublish'.",
                         },
                         "auth_token": {
                             "type": "string",
-                            "description": "Authentication token of the requesting admin.",
+                            "description": "Authentication token of the requesting user.",
                         },
                     },
                     "required": ["release_id", "approval_decision", "auth_token"],

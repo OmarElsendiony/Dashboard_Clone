@@ -11,17 +11,13 @@ class FetchEntityInfo(Tool):
         entity_type: str,
         repository_id: str,
         entity_id: Optional[str] = None,
-        filters: Optional[Union[str, Dict[str, Any]]] = None,
+        filters: Optional[Dict[str, Any]] = None,
         branch_id: Optional[str] = None,
         author_id: Optional[str] = None,
         assignee_id: Optional[str] = None,
         status: Optional[str] = None,
         is_default: Optional[bool] = None
     ) -> str:
-        """
-        Fetches entity information based on entity type and filters.
-        Supports: branch, commit, issue, workflow, label, directory.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -154,31 +150,31 @@ class FetchEntityInfo(Tool):
                         },
                         "entity_id": {
                             "type": "string",
-                            "description": "The unique identifier of the specific entity to fetch. If provided, returns that entity directly. Optional."
+                            "description": "The unique identifier of the specific entity to fetch. If provided, returns that entity directly (optional)."
                         },
                         "filters": {
                             "type": "object",
-                            "description": "A dictionary of field-value pairs to filter entities. Any field from the entity can be used. Any filter provided should exist in the respective entity schema. Optional."
+                            "description": "A dictionary of field-value pairs to filter entities. Any field from the entity can be used. Any filter provided should exist in the respective entity schema (optional)."
                         },
                         "branch_id": {
                             "type": "string",
-                            "description": "Filter by branch ID. Applicable for entity_type: directory. Optional."
+                            "description": "Filter by branch ID. Applicable for entity_type: directory (optional)."
                         },
                         "author_id": {
                             "type": "string",
-                            "description": "Filter by author ID. Applicable for entity_type: commit, issue. Optional."
+                            "description": "Filter by author ID. Applicable for entity_type: commit, issue (optional)."
                         },
                         "assignee_id": {
                             "type": "string",
-                            "description": "Filter by assignee ID. Applicable for entity_type: issue. Optional."
+                            "description": "Filter by assignee ID. Applicable for entity_type: issue (optional)."
                         },
                         "status": {
                             "type": "string",
-                            "description": "Filter by status. Applicable for entity_type: issue (open, closed, in_progress), workflow (active, disabled, deleted). Optional."
+                            "description": "Filter by status. Applicable for entity_type: issue (open, closed, in_progress), workflow (active, disabled, deleted) (optional)."
                         },
                         "is_default": {
                             "type": "boolean",
-                            "description": "Filter by default branch flag. Applicable for entity_type: branch. Optional."
+                            "description": "Filter by default branch flag. Applicable for entity_type: branch (optional)."
                         }
                     },
                     "required": ["entity_type", "repository_id"]

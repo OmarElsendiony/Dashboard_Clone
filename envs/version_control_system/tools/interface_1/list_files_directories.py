@@ -16,9 +16,6 @@ class ListFilesDirectories(Tool):
         file_id: Optional[str] = None,
         directory_id: Optional[str] = None
     ) -> str:
-        """
-        List files or directories with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
@@ -32,7 +29,7 @@ class ListFilesDirectories(Tool):
                 "error": f"Invalid search_type '{search_type}'. Must be 'file' or 'directory'"
             })
         
-        # Validate language if provided (only relevant for files)
+        # Validate language if provided 
         valid_languages = [
             'C', 'C++', 'C#', 'Go', 'Rust', 'Java', 'Kotlin', 'Scala', 'Python', 'Ruby', 'PHP',
             'JavaScript', 'TypeScript', 'Shell', 'PowerShell', 'Swift', 'Objective-C', 'Dart',
@@ -47,54 +44,66 @@ class ListFilesDirectories(Tool):
                 "success": False,
                 "error": f"Invalid language '{language}'. Must be one of the supported languages"
             })
-        
-        results = []
-        
-        # Search for files
-        if search_type == "file":
-            files = data.get("files", {})
+
+        def get_results_for_branch(target_branch_id: Optional[str]):
+            results = []
+            if search_type == "file":
+                files = data.get("files", {})
+                for f_id, file_data in files.items():
+                    if repository_id and file_data.get("repository_id") != repository_id: continue
+                    if target_branch_id and file_data.get("branch_id") != target_branch_id: continue
+                    if parent_directory_id and file_data.get("directory_id") != parent_directory_id: continue
+                    if file_name and file_data.get("file_name") != file_name: continue
+                    if language and file_data.get("language") != language: continue
+                    if file_id and f_id != file_id: continue
+                    results.append({**file_data, "file_id": f_id, "item_type": "file"})
             
-            for f_id, file_data in files.items():
-                # Apply filters
-                if repository_id and file_data.get("repository_id") != repository_id:
-                    continue
-                if branch_id and file_data.get("branch_id") != branch_id:
-                    continue
-                if parent_directory_id and file_data.get("directory_id") != parent_directory_id:
-                    continue
-                if file_name and file_data.get("file_name") != file_name:
-                    continue
-                if language and file_data.get("language") != language:
-                    continue
-                if file_id and f_id != file_id:
-                    continue
-                
-                results.append({**file_data, "file_id": f_id, "item_type": "file"})
+            elif search_type == "directory":
+                directories = data.get("directories", {})
+                for d_id, dir_data in directories.items():
+                    if repository_id and dir_data.get("repository_id") != repository_id: continue
+                    if target_branch_id and dir_data.get("branch_id") != target_branch_id: continue
+                    if parent_directory_id and dir_data.get("parent_directory_id") != parent_directory_id: continue
+                    if directory_path and dir_data.get("directory_path") != directory_path: continue
+                    if directory_id and d_id != directory_id: continue
+                    results.append({**dir_data, "directory_id": d_id, "item_type": "directory"})
+            return results
+
         
-        # Search for directories
-        elif search_type == "directory":
-            directories = data.get("directories", {})
+        current_branch_search = branch_id
+        final_results = []
+        
+        max_depth = 10 
+        attempts = 0
+
+        while attempts < max_depth:
+            final_results = get_results_for_branch(current_branch_search)            
+            if final_results or not current_branch_search:
+                break
             
-            for d_id, dir_data in directories.items():
-                # Apply filters
-                if repository_id and dir_data.get("repository_id") != repository_id:
-                    continue
-                if branch_id and dir_data.get("branch_id") != branch_id:
-                    continue
-                if parent_directory_id and dir_data.get("parent_directory_id") != parent_directory_id:
-                    continue
-                if directory_path and dir_data.get("directory_path") != directory_path:
-                    continue
-                if directory_id and d_id != directory_id:
-                    continue
-                
-                results.append({**dir_data, "directory_id": d_id, "item_type": "directory"})
-        
+            branches = data.get("branches", {})
+            branch_obj = None
+            
+            if current_branch_search in branches:
+                branch_obj = branches[current_branch_search]
+            else:
+                for b in branches.values():
+                    if b.get("branch_id") == current_branch_search:
+                        branch_obj = b
+                        break
+            
+            if branch_obj and branch_obj.get("source_branch"):
+                current_branch_search = branch_obj.get("source_branch")
+                attempts += 1
+            else:
+                break
+
         return json.dumps({
             "success": True,
-            "count": len(results),
+            "count": len(final_results),
             "search_type": search_type,
-            "results": results
+            "results": final_results,
+            "resolved_branch_id": current_branch_search 
         })
     
     @staticmethod
@@ -103,45 +112,54 @@ class ListFilesDirectories(Tool):
             "type": "function",
             "function": {
                 "name": "list_files_directories",
-                "description": "List either files or directories from repositories. Must specify search_type to indicate whether to search for files or directories. Can filter by various parameters including repository_id, branch_id, parent_directory_id, and more.",
+                "description": "Lists either files or directories from repositories based on the search_type.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "search_type": {
                             "type": "string",
-                            "description": "Type of items to search for. Allowed values: 'file', 'directory' (required)"
+                            "description": "Type of items to search for. Allowed values: 'file', 'directory' (required)",
+                            "enum": ["file", "directory"]
                         },
                         "repository_id": {
                             "type": "string",
-                            "description": "Filter by repository_id (exact match)"
+                            "description": "Filter by repository_id (exact match) (optional)"
                         },
                         "branch_id": {
                             "type": "string",
-                            "description": "Filter by branch_id (exact match)"
+                            "description": "Filter by branch_id (exact match) (optional)"
                         },
                         "parent_directory_id": {
                             "type": "string",
-                            "description": "Filter by parent directory ID (exact match) - for files, this filters by directory_id; for directories, this filters by parent_directory_id"
+                            "description": "Filter by parent directory ID (exact match) - for files, this filters by directory_id; for directories, this filters by parent_directory_id (optional)"
                         },
                         "directory_path": {
                             "type": "string",
-                            "description": "Filter by directory path (exact match) - only applies when search_type='directory'"
+                            "description": "Filter by directory path (exact match) - only applies when search_type='directory' (optional)"
                         },
                         "file_name": {
                             "type": "string",
-                            "description": "Filter by file name (exact match) - only applies when search_type='file'"
+                            "description": "Filter by file name (exact match) - only applies when search_type='file' (optional)"
                         },
                         "language": {
                             "type": "string",
-                            "description": "Filter by programming language (exact match) - only applies when search_type='file'. Allowed values: 'C', 'C++', 'C#', 'Go', 'Rust', 'Java', 'Kotlin', 'Scala', 'Python', 'Ruby', 'PHP', 'JavaScript', 'TypeScript', 'Shell', 'PowerShell', 'Swift', 'Objective-C', 'Dart', 'R', 'MATLAB', 'Groovy', 'Perl', 'Lua', 'Haskell', 'Elixir', 'Erlang', 'Julia', 'Assembly', 'Fortran', 'COBOL', 'HTML', 'CSS', 'SCSS', 'Less', 'Markdown', 'AsciiDoc', 'JSON', 'YAML', 'XML', 'TOML', 'INI', 'CSV', 'Dockerfile', 'Makefile', 'Bash', 'Terraform', 'Ansible', 'SQL', 'PLpgSQL', 'Text', 'Binary', 'Unknown'"
+                            "description": "Filter by programming language (exact match) - only applies when search_type='file'. Allowed values: 'C', 'C++', 'C#', 'Go', 'Rust', 'Java', 'Kotlin', 'Scala', 'Python', 'Ruby', 'PHP', 'JavaScript', 'TypeScript', 'Shell', 'PowerShell', 'Swift', 'Objective-C', 'Dart', 'R', 'MATLAB', 'Groovy', 'Perl', 'Lua', 'Haskell', 'Elixir', 'Erlang', 'Julia', 'Assembly', 'Fortran', 'COBOL', 'HTML', 'CSS', 'SCSS', 'Less', 'Markdown', 'AsciiDoc', 'JSON', 'YAML', 'XML', 'TOML', 'INI', 'CSV', 'Dockerfile', 'Makefile', 'Bash', 'Terraform', 'Ansible', 'SQL', 'PLpgSQL', 'Text', 'Binary', 'Unknown' (optional)",
+                            "enum": [
+                                'C', 'C++', 'C#', 'Go', 'Rust', 'Java', 'Kotlin', 'Scala', 'Python', 'Ruby', 'PHP',
+                                'JavaScript', 'TypeScript', 'Shell', 'PowerShell', 'Swift', 'Objective-C', 'Dart',
+                                'R', 'MATLAB', 'Groovy', 'Perl', 'Lua', 'Haskell', 'Elixir', 'Erlang', 'Julia',
+                                'Assembly', 'Fortran', 'COBOL', 'HTML', 'CSS',  'SCSS', 'Less', 'Markdown', 'AsciiDoc',
+                                'JSON', 'YAML', 'XML', 'TOML', 'INI', 'CSV', 'Dockerfile', 'Makefile', 'Bash',
+                                'Terraform', 'Ansible', 'SQL', 'PLpgSQL', 'Text', 'Binary', 'Unknown'
+                            ]
                         },
                         "file_id": {
                             "type": "string",
-                            "description": "Filter by file_id (exact match) - only applies when search_type='file'"
+                            "description": "Filter by file_id (exact match) - only applies when search_type='file' (optional)"
                         },
                         "directory_id": {
                             "type": "string",
-                            "description": "Filter by directory_id (exact match) - only applies when search_type='directory'"
+                            "description": "Filter by directory_id (exact match) - only applies when search_type='directory' (optional)"
                         }
                     },
                     "required": ["search_type"]

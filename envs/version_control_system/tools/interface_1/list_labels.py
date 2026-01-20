@@ -13,11 +13,6 @@ class ListLabels(Tool):
         issue_id: Optional[str] = None,
         pull_request_id: Optional[str] = None
     ) -> str:
-        """
-        List all labels in a repository. 
-        Can filter by issue_id or pull_request_id to find labels attached to specific items.
-        Requires read access.
-        """
         def get_user_from_token(token: str, tokens_data: Dict[str, Any]) -> Optional[str]:
             """Encode token and find associated user_id"""
             try:
@@ -146,7 +141,7 @@ class ListLabels(Tool):
             "type": "function",
             "function": {
                 "name": "list_labels",
-                "description": "List all labels defined in a repository. Can filter by issue_id or pull_request_id to see labels attached to specific items. Requires read access.",
+                "description": "Lists labels defined in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

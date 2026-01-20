@@ -15,11 +15,6 @@ class UpsertComment(Tool):
         commentable_id: Optional[str] = None,
         comment_id: Optional[str] = None
     ) -> str:
-        """
-        Create or update a comment.
-        - action="create": Requires commentable_type and commentable_id.
-        - action="update": Requires comment_id.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -196,13 +191,14 @@ class UpsertComment(Tool):
             "type": "function",
             "function": {
                 "name": "upsert_comment",
-                "description": "Create or update a comment. Use action='create' to post a new comment (requires commentable_type/id). Use action='update' to edit an existing comment (requires comment_id). Requires read access to the repository.",
+                "description": "Creates or updates a comment.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "Action to perform. Allowed values: 'create', 'update' (required)"
+                            "description": "Action to perform. Allowed values: 'create', 'update' (required)",
+                            "enum": ["create", "update"]
                         },
                         "access_token": {
                             "type": "string",
@@ -214,7 +210,8 @@ class UpsertComment(Tool):
                         },
                         "commentable_type": {
                             "type": "string",
-                            "description": "Type of entity (required for 'create'). Allowed values: 'issue', 'pull_request'"
+                            "description": "Type of entity (required for 'create'). Allowed values: 'issue', 'pull_request'",
+                            "enum": ["issue", "pull_request"]
                         },
                         "commentable_id": {
                             "type": "string",

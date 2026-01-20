@@ -4,25 +4,14 @@ from tau_bench.envs.tool import Tool
 
 
 class AssignIssue(Tool):
-    """Tool for assigning a user to an issue in the version control system."""
-
+    
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         issue_id: str,
         assignee_id: str,
     ) -> str:
-        """
-        Assign a user to an issue.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            issue_id: The ID of the issue to assign (required).
-            assignee_id: The ID of the user to assign to the issue (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and updated issue data.
-        """
+      
 
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
@@ -101,12 +90,12 @@ class AssignIssue(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the assign_issue function."""
+
         return {
             "type": "function",
             "function": {
                 "name": "assign_issue",
-                "description": "Assigns a user to an issue in the version control system. The specified user will become the assignee responsible for the issue.",
+                "description": "Assigns a user to an issue in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

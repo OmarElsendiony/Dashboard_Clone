@@ -13,9 +13,6 @@ class SubmitReviewVerdict(Tool):
         verdict: str,
         body: Optional[str] = None
     ) -> str:
-        """
-        Submits a review verdict on a pull request.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -78,7 +75,7 @@ class SubmitReviewVerdict(Tool):
             "type": "function",
             "function": {
                 "name": "submit_review_verdict",
-                "description": "Submits a review verdict on a pull request. The reviewer provides their assessment of the changes.",
+                "description": "Submits a review verdict on a pull request.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -96,7 +93,7 @@ class SubmitReviewVerdict(Tool):
                         },
                         "body": {
                             "type": "string",
-                            "description": "Optional comment or explanation for the review verdict."
+                            "description": "Optional comment or explanation for the review verdict (optional)."
                         }
                     },
                     "required": ["pull_request_id", "reviewer_id", "verdict"]

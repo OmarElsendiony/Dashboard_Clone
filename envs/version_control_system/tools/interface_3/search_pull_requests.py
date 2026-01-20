@@ -14,9 +14,6 @@ class SearchPullRequests(Tool):
         source_branch: Optional[str] = None,
         target_branch: Optional[str] = None
     ) -> str:
-        """
-        Searches for pull requests in a repository with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -38,7 +35,7 @@ class SearchPullRequests(Tool):
 
         # Search for pull requests matching the filters
         results = []
-        for pr_id, pr in pull_requests.items():
+        for _, pr in pull_requests.items():
             # Filter by repository_id
             if str(pr.get("repository_id")) != str(repository_id):
                 continue
@@ -69,7 +66,7 @@ class SearchPullRequests(Tool):
             "type": "function",
             "function": {
                 "name": "search_pull_requests",
-                "description": "Searches for pull requests in a repository with optional filters. Returns a list of pull requests matching the criteria.",
+                "description": "Searches for pull requests in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -79,19 +76,19 @@ class SearchPullRequests(Tool):
                         },
                         "author_id": {
                             "type": "string",
-                            "description": "Filter by the unique identifier of the pull request author. Optional."
+                            "description": "Filter by the unique identifier of the pull request author (optional)."
                         },
                         "status": {
                             "type": "string",
-                            "description": "Filter by pull request status. Valid values: open, draft, closed, merged. Optional."
+                            "description": "Filter by pull request status. Valid values: open, draft, closed, merged (optional)."
                         },
                         "source_branch": {
                             "type": "string",
-                            "description": "Filter by source branch ID. Optional."
+                            "description": "Filter by source branch ID (optional)."
                         },
                         "target_branch": {
                             "type": "string",
-                            "description": "Filter by target branch ID. Optional."
+                            "description": "Filter by target branch ID (optional)."
                         }
                     },
                     "required": ["repository_id"]

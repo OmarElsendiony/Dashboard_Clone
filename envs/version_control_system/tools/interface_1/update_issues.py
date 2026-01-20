@@ -18,9 +18,6 @@ class UpdateIssues(Tool):
         priority: Optional[str] = None,
         issue_type: Optional[str] = None
     ) -> str:
-        """
-        Creates or updates an issue.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -147,39 +144,42 @@ class UpdateIssues(Tool):
                         },
                         "issue_id": {
                             "type": "string",
-                            "description": "The ID of the issue. If provided, updates existing issue; otherwise creates new."
+                            "description": "The ID of the issue. If provided, updates existing issue; otherwise creates new (optional)"
                         },
                         "repository_id": {
                             "type": "string",
-                            "description": "The ID of the repository."
+                            "description": "The ID of the repository"
                         },
                         "title": {
                             "type": "string",
-                            "description": "The title of the issue."
+                            "description": "The title of the issue"
                         },
                         "author_id": {
                             "type": "string",
-                            "description": "The user ID of the author."
+                            "description": "The user ID of the author"
                         },
                         "description": {
                             "type": "string",
-                            "description": "The description of the issue."
+                            "description": "The description of the issue (optional)"
                         },
                         "assignee_id": {
                             "type": "string",
-                            "description": "The user ID of the assignee."
+                            "description": "The user ID of the assignee (optional)"
                         },
                         "status": {
                             "type": "string",
-                            "description": "Status of the issue. Allowed values: 'active', 'suspended', 'deleted'. Default: 'active'."
+                            "description": "Status of the issue. Allowed values: 'active', 'suspended', 'deleted'. Default: 'active' (optional)",
+                            "enum": ["active", "suspended", "deleted"]
                         },
                         "priority": {
                             "type": "string",
-                            "description": "Priority level. Allowed values: 'low', 'medium', 'high'."
+                            "description": "Priority level. Allowed values: 'low', 'medium', 'high' (optional)",
+                            "enum": ["low", "medium", "high"]
                         },
                         "issue_type": {
                             "type": "string",
-                            "description": "Type of issue. Allowed values: 'bug', 'feature', 'doc'. Default: 'bug'."
+                            "description": "Type of issue. Allowed values: 'bug', 'feature', 'doc'. Default: 'bug' (optional)",
+                            "enum": ["bug", "feature", "doc"]
                         }
                     },
                     "required": ["access_token", "repository_id", "title", "author_id"]

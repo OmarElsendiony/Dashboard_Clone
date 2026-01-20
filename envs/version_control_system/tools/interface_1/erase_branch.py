@@ -12,9 +12,6 @@ class EraseBranch(Tool):
         repository_id: str,
         branch_name: str
     ) -> str:
-        """
-        Delete a branch from a repository.
-        """
         def get_user_from_token(token: str, tokens_data: Dict[str, Any]) -> Optional[str]:
             """Encode token and find associated user_id"""
             try:
@@ -136,7 +133,7 @@ class EraseBranch(Tool):
             "type": "function",
             "function": {
                 "name": "erase_branch",
-                "description": "Delete a branch from a repository. Cannot delete the default branch. Requires write or admin access to the repository. Cannot delete branches from archived repositories.",
+                "description": "Deletes a branch from a repository. Cannot delete the default branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {

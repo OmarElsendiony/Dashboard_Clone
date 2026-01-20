@@ -17,7 +17,7 @@ class TransferToHuman(Tool):
             "type": "function",
             "function": {
                 "name": "transfer_to_human",
-                "description": "Transfer the user to a human agent, with a summary of the user's issue. Only transfer if the user explicitly asks for a human agent, or if the user's issue cannot be resolved by the agent with the available tools.",
+                "description": "Transfers the user to a human agent, with a summary of the user's issue. Only transfer if the user explicitly asks for a human agent, or if the user's issue cannot be resolved by the agent with the available tools.",
                 "parameters": {
                     "type": "object",
                     "properties": {

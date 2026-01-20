@@ -13,9 +13,6 @@ class InviteOrgMember(Tool):
         user_id: str,
         role: str
     ) -> str:
-        """
-        Invite a user to an organization.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -123,7 +120,7 @@ class InviteOrgMember(Tool):
             "type": "function",
             "function": {
                 "name": "invite_org_member",
-                "description": "Invite a user to join an organization. Requires the requesting user to be an owner of the organization. Creates a new membership with active status.",
+                "description": "Invites a user to join an organization.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -141,7 +138,8 @@ class InviteOrgMember(Tool):
                         },
                         "role": {
                             "type": "string",
-                            "description": "Role to assign. Allowed values: 'owner', 'member' (required)"
+                            "description": "Role to assign. Allowed values: 'owner', 'member' (required)",
+                            "enum": ["owner", "member"]
                         }
                     },
                     "required": ["access_token", "organization_id", "user_id", "role"]

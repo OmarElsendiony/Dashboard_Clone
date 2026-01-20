@@ -7,9 +7,6 @@ class ResolveUserIdentity(Tool):
 
     @staticmethod
     def invoke(data: Dict[str, Any], user_email: str) -> str:
-        """
-        Retrieves user account information by their email address in the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -20,7 +17,7 @@ class ResolveUserIdentity(Tool):
 
         # Search for user by email
         found_user = None
-        for user_id, user in users.items():
+        for _, user in users.items():
             if user.get("email") == user_email:
                 found_user = user
                 break
@@ -36,13 +33,13 @@ class ResolveUserIdentity(Tool):
             "type": "function",
             "function": {
                 "name": "resolve_user_identity",
-                "description": "Retrieves a user's account information from the version control system by looking up their email address.",
+                "description": "Retrieves a user's account information by email address.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "user_email": {
                             "type": "string",
-                            "description": "The email address of the user to look up in the version control system."
+                            "description": "The email address of the user to look up."
                         }
                     },
                     "required": ["user_email"]

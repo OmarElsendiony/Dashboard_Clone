@@ -4,8 +4,7 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateRepoPipeline(Tool):
-    """Tool for creating a new pipeline (workflow) in a repository in the version control system."""
-
+   
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -14,19 +13,7 @@ class CreateRepoPipeline(Tool):
         pipeline_path: str,
         trigger_event: str,
     ) -> str:
-        """
-        Create a new pipeline (workflow) in a repository.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to create the pipeline in (required).
-            pipeline_name: The name of the pipeline (required, must be unique within the repository).
-            pipeline_path: The path to the pipeline configuration file in the repo (required, e.g., '.github/workflows/ci.yml').
-            trigger_event: The event that triggers the pipeline (required, must be one of: push, pull_request, schedule, workflow_dispatch, release).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created pipeline data.
-        """
+       
 
         def generate_id(table: Dict[str, Any]) -> str:
             """
@@ -150,7 +137,6 @@ class CreateRepoPipeline(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_repo_pipeline function."""
         return {
             "type": "function",
             "function": {
@@ -173,7 +159,8 @@ class CreateRepoPipeline(Tool):
                         },
                         "trigger_event": {
                             "type": "string",
-                            "description": "The event that triggers the pipeline. Must be one of: push, pull_request, schedule, workflow_dispatch, release.",
+                            "description": "The event that triggers the pipeline.",
+                            "enum": ["push", "pull_request", "schedule", "workflow_dispatch", "release"]
                         },
                     },
                     "required": ["repo_id", "pipeline_name", "pipeline_path", "trigger_event"],

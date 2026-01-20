@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class GetIssue(Tool):
-    """Tool for retrieving issue details from the version control system."""
 
     @staticmethod
     def invoke(
@@ -12,17 +11,7 @@ class GetIssue(Tool):
         repo_id: str,
         issue_number: int,
     ) -> str:
-        """
-        Retrieve issue details by repository ID and issue number.
 
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository containing the issue (required).
-            issue_number: The issue number within the repository (required).
-
-        Returns:
-            JSON string containing the success status and issue data if found.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -97,7 +86,7 @@ class GetIssue(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_issue function."""
+
         return {
             "type": "function",
             "function": {

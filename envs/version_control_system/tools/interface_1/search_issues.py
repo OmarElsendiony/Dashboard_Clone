@@ -14,9 +14,6 @@ class SearchIssues(Tool):
         priority: Optional[str] = None,
         issue_type: Optional[str] = None
     ) -> str:
-        """
-        Searches issues based on various filters.
-        """
         issues = data.get("issues", {})
         results = []
 
@@ -54,31 +51,34 @@ class SearchIssues(Tool):
                     "properties": {
                         "repository_id": {
                             "type": "string",
-                            "description": "Filter by repository ID."
+                            "description": "Filter by repository ID (optional)"
                         },
                         "issue_number": {
                             "type": "integer",
-                            "description": "Filter by issue number."
+                            "description": "Filter by issue number (optional)"
                         },
                         "status": {
                             "type": "string",
-                            "description": "Filter by issue status. Allowed values: 'open', 'closed', 'in_progress'."
+                            "description": "Filter by issue status. Allowed values: 'open', 'closed', 'in_progress' (optional)",
+                            "enum": ["open", "closed", "in_progress"]
                         },
                         "author_id": {
                             "type": "string",
-                            "description": "Filter by author ID."
+                            "description": "Filter by author ID (optional)"
                         },
                         "assignee_id": {
                             "type": "string",
-                            "description": "Filter by assignee ID."
+                            "description": "Filter by assignee ID (optional)"
                         },
                         "priority": {
                             "type": "string",
-                            "description": "Filter by priority. Allowed values: 'low', 'medium', 'high', 'critical'."
+                            "description": "Filter by priority. Allowed values: 'low', 'medium', 'high', 'critical' (optional)",
+                            "enum": ["low", "medium", "high", "critical"]
                         },
                         "issue_type": {
                             "type": "string",
-                            "description": "Filter by issue type. Allowed values: 'bug', 'feature', 'documentation', 'question', 'enhancement'."
+                            "description": "Filter by issue type. Allowed values: 'bug', 'feature', 'documentation', 'question', 'enhancement' (optional)",
+                            "enum": ["bug", "feature", "documentation", "question", "enhancement"]
                         }
                     },
                     "required": []

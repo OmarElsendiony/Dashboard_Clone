@@ -4,23 +4,13 @@ from tau_bench.envs.tool import Tool
 
 
 class ListFilesForCommit(Tool):
-    """Tool for listing all files associated with a commit in the version control system."""
 
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         commit_id: str,
     ) -> str:
-        """
-        List all files associated with a commit.
 
-        Args:
-            data: The data dictionary containing all version control system data.
-            commit_id: The ID of the commit to list files for (required).
-
-        Returns:
-            JSON string containing the success status and list of files associated with the commit.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -94,12 +84,11 @@ class ListFilesForCommit(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the list_files_for_commit function."""
         return {
             "type": "function",
             "function": {
                 "name": "list_files_for_commit",
-                "description": "Lists all files associated with a specific commit in the version control system. Returns file information including file_id, repository_id, branch_id, file_path, file_name, language, and other metadata for each file in the commit. Use this to verify which files were changed or included in a commit, or to track file changes across commits.",
+                "description": "Lists all files associated with a specific commit in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

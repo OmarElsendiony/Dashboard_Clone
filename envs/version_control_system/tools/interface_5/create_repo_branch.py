@@ -5,7 +5,6 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateRepoBranch(Tool):
-    """Tool for creating a new branch in a repository in the version control system."""
 
     @staticmethod
     def invoke(
@@ -14,39 +13,14 @@ class CreateRepoBranch(Tool):
         branch_name: str,
         base_branch: Optional[str] = None,
     ) -> str:
-        """
-        Create a new branch in a repository.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to create the branch in (required).
-            branch_name: The name of the new branch to create (required).
-            base_branch: The name of the base branch to create from (optional).
-                        If provided, the new branch inherits the commit SHA from this branch.
-                        If not provided, the branch is created from the default branch.
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created branch data.
-        """
-
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
+          
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
 
         def generate_commit_sha(repo_name: str, branch_name: str, timestamp: str) -> str:
-            """
-            Generates a unique commit SHA for a branch.
-
-            Returns:
-                str: A 40-character hexadecimal SHA string.
-            """
+           
             content = f"{repo_name}:{branch_name}:{timestamp}:new-branch"
             return hashlib.sha1(content.encode()).hexdigest()
 
@@ -155,7 +129,8 @@ class CreateRepoBranch(Tool):
 
         # If source branch doesn't have a commit SHA, generate one
         if not commit_sha:
-            commit_sha = generate_commit_sha(repo.get("repository_name", ""), branch_name, timestamp)
+            commit_sha = generate_commit_sha(
+                repo.get("repository_name", ""), branch_name, timestamp)
 
         # Create new branch record
         new_branch = {
@@ -180,18 +155,17 @@ class CreateRepoBranch(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_repo_branch function."""
         return {
             "type": "function",
             "function": {
                 "name": "create_repo_branch",
-                "description": "Creates a new branch in a repository in the version control system. The new branch inherits the commit SHA (HEAD pointer) from the base branch. If no base_branch is provided, the branch is created from the repository's default branch. The new branch is not set as default. Use this after confirming the repository exists using get_repo, the user has admin or write access using get_repo_permissions, the base branch exists using get_repo_branch, and the new branch name is not already taken using get_repo_branch.",
+                "description": "Creates a new branch in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "repo_id": {
                             "type": "string",
-                            "description": "The ID of the repository to create the branch in. Required field. The repository must exist and not be archived.",
+                            "description": "The ID of the repository to create the branch in. Required field. ",
                         },
                         "branch_name": {
                             "type": "string",

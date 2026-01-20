@@ -16,9 +16,6 @@ class OpenPullRequest(Tool):
         description: Optional[str] = None,
         status: Optional[str] = "open"
     ) -> str:
-        """
-        Opens a new pull request in a repository.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -134,11 +131,11 @@ class OpenPullRequest(Tool):
                         },
                         "description": {
                             "type": "string",
-                            "description": "A detailed description of the changes in the pull request. Optional."
+                            "description": "A detailed description of the changes in the pull request (optional)."
                         },
                         "status": {
                             "type": "string",
-                            "description": "The initial status of the pull request. Valid values: open, draft, closed, merged. Default: open."
+                            "description": "The initial status of the pull request. Valid values: open, draft, closed, merged. Default: open (optional)."
                         }
                     },
                     "required": ["repository_id", "title", "source_branch_id", "target_branch_id", "author_id"]

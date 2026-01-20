@@ -14,9 +14,6 @@ class ForkRepository(Tool):
         owner_type: str,
         repository_name: Optional[str] = None
     ) -> str:
-        """
-        Fork a repository to a new owner, including all branches, commits, files, and content.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -321,7 +318,7 @@ class ForkRepository(Tool):
             "type": "function",
             "function": {
                 "name": "fork_repository",
-                "description": "Fork a repository to a new owner (user or organization). Creates a complete copy of the repository including all branches, commits, directories, files, and file contents. Sets is_fork to True and increments the forks_count on the source repository.",
+                "description": "Forks a repository to a new owner, including all branches, commits, files, and content.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -339,7 +336,8 @@ class ForkRepository(Tool):
                         },
                         "owner_type": {
                             "type": "string",
-                            "description": "Type of new owner. Allowed values: 'user', 'organization' (required)"
+                            "description": "Type of new owner. Allowed values: 'user', 'organization' (required)",
+                            "enum": ["user", "organization"]
                         },
                         "repository_name": {
                             "type": "string",

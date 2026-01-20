@@ -23,9 +23,6 @@ class UpsertRepository(Tool):
         forks_count: Optional[int] = None,
         stars_count: Optional[int] = None
     ) -> str:
-        """
-        Create or update a repository.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -127,8 +124,8 @@ class UpsertRepository(Tool):
                 "default_branch": default_branch if default_branch else "main",
                 "is_fork": False,
                 "parent_repository_id": None,
-                "is_archived": is_archived if is_archived is not None else False,
-                "is_template": is_template if is_template is not None else False,
+                "is_archived": bool(is_archived) if is_archived is not None else False,
+                "is_template": bool(is_template) if is_template is not None else False,
                 "stars_count": stars_count if stars_count is not None else 0,
                 "forks_count": forks_count if forks_count is not None else 0,
                 "license_type": license_type,
@@ -245,13 +242,14 @@ class UpsertRepository(Tool):
             "type": "function",
             "function": {
                 "name": "upsert_repository",
-                "description": "Create or update a repository. Requires valid access token for authentication. For creation, validates repository name uniqueness per owner and all required fields. For updates, requires repository_id and validates all provided fields. Validates owner existence, visibility settings, and license types.",
+                "description": "Creates or updates a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "Action to perform. Allowed values: 'create', 'update' (required)"
+                            "description": "Action to perform. Allowed values: 'create', 'update' (required)",
+                            "enum": ["create", "update"]
                         },
                         "access_token": {
                             "type": "string",
@@ -263,7 +261,8 @@ class UpsertRepository(Tool):
                         },
                         "owner_type": {
                             "type": "string",
-                            "description": "Type of owner. Allowed values: 'user', 'organization' (required)"
+                            "description": "Type of owner. Allowed values: 'user', 'organization' (required)",
+                            "enum": ["user", "organization"]
                         },
                         "owner_id": {
                             "type": "string",
@@ -275,7 +274,8 @@ class UpsertRepository(Tool):
                         },
                         "visibility": {
                             "type": "string",
-                            "description": "Repository visibility. Allowed values: 'public', 'private', 'internal' (optional, defaults to 'private' for create)"
+                            "description": "Repository visibility. Allowed values: 'public', 'private', 'internal' (optional, defaults to 'private' for create)",
+                            "enum": ["public", "private", "internal"]
                         },
                         "default_branch": {
                             "type": "string",
@@ -287,7 +287,8 @@ class UpsertRepository(Tool):
                         },
                         "license_type": {
                             "type": "string",
-                            "description": "Repository license type. Allowed values: 'MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'unlicensed', 'other' (optional)"
+                            "description": "Repository license type. Allowed values: 'MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'unlicensed', 'other' (optional)",
+                            "enum": ["MIT", "Apache-2.0", "GPL-3.0", "BSD-3-Clause", "unlicensed", "other"]
                         },
                         "is_archived": {
                             "type": "boolean",

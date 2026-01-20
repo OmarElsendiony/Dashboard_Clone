@@ -4,24 +4,11 @@ from tau_bench.envs.tool import Tool
 
 
 class DeleteBranch(Tool):
-    """Tool for deleting a branch from a repository in the version control system."""
-
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         branch_id: str,
     ) -> str:
-        """
-        Delete a branch from a repository.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            branch_id: The ID of the branch to delete (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and deleted branch data.
-        """
-
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -89,18 +76,17 @@ class DeleteBranch(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the delete_branch function."""
         return {
             "type": "function",
             "function": {
                 "name": "delete_branch",
-                "description": "Deletes a branch from a repository in the version control system. The branch must exist and cannot be the default branch. Use this after confirming the repository exists using get_repo, the user has admin or write access using get_repo_permissions, and the branch exists and is not the default branch using get_repo_branch. After deletion, verify the branch is removed by calling get_repo_branch and expecting a 'not found' response.",
+                "description":"Deletes a branch from a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "branch_id": {
                             "type": "string",
-                            "description": "The ID of the branch to delete. Required field. The branch must exist and cannot be the default branch of the repository.",
+                            "description": "The ID of the branch to delete.",
                         },
                     },
                     "required": ["branch_id"],

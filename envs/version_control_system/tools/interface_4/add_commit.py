@@ -54,45 +54,60 @@ class AddCommit(Tool):
 
             extension_map = {
                 ".c": "C",
-                ".cpp": "C++", ".cc": "C++", ".cxx": "C++", ".hpp": "C++",
+                ".cpp": "C++",
+                ".cc": "C++",
+                ".cxx": "C++",
+                ".hpp": "C++",
                 ".cs": "C#",
                 ".go": "Go",
                 ".rs": "Rust",
                 ".java": "Java",
-                ".kt": "Kotlin", ".kts": "Kotlin",
+                ".kt": "Kotlin",
+                ".kts": "Kotlin",
                 ".scala": "Scala",
                 ".py": "Python",
                 ".rb": "Ruby",
                 ".php": "PHP",
-                ".js": "JavaScript", ".mjs": "JavaScript",
-                ".ts": "TypeScript", ".tsx": "TypeScript",
+                ".js": "JavaScript",
+                ".mjs": "JavaScript",
+                ".ts": "TypeScript",
+                ".tsx": "TypeScript",
                 ".sh": "Shell",
                 ".ps1": "PowerShell",
                 ".swift": "Swift",
                 ".dart": "Dart",
                 ".r": "R",
                 ".groovy": "Groovy",
-                ".pl": "Perl", ".pm": "Perl",
+                ".pl": "Perl",
+                ".pm": "Perl",
                 ".lua": "Lua",
                 ".hs": "Haskell",
-                ".ex": "Elixir", ".exs": "Elixir",
-                ".erl": "Erlang", ".hrl": "Erlang",
+                ".ex": "Elixir",
+                ".exs": "Elixir",
+                ".erl": "Erlang",
+                ".hrl": "Erlang",
                 ".jl": "Julia",
-                ".s": "Assembly", ".asm": "Assembly",
-                ".f": "Fortran", ".f90": "Fortran",
-                ".cbl": "COBOL", ".cob": "COBOL",
-                ".html": "HTML", ".htm": "HTML",
+                ".s": "Assembly",
+                ".asm": "Assembly",
+                ".f": "Fortran",
+                ".f90": "Fortran",
+                ".cbl": "COBOL",
+                ".cob": "COBOL",
+                ".html": "HTML",
+                ".htm": "HTML",
                 ".css": "CSS",
                 ".scss": "SCSS",
                 ".less": "Less",
                 ".md": "Markdown",
                 ".json": "JSON",
-                ".yaml": "YAML", ".yml": "YAML",
+                ".yaml": "YAML",
+                ".yml": "YAML",
                 ".xml": "XML",
                 ".toml": "TOML",
                 ".ini": "INI",
                 ".csv": "CSV",
-                ".tf": "Terraform", ".tfvars": "Terraform",
+                ".tf": "Terraform",
+                ".tfvars": "Terraform",
                 ".sql": "SQL",
             }
 
@@ -106,7 +121,9 @@ class AddCommit(Tool):
         )
 
         if not token_info:
-            return json.dumps({"success": False, "error": "Invalid authentication token"})
+            return json.dumps(
+                {"success": False, "error": "Invalid authentication token"}
+            )
 
         requester_id = token_info.get("user_id")
 
@@ -116,7 +133,9 @@ class AddCommit(Tool):
         if not branch_id:
             return json.dumps({"success": False, "error": "branch_id is required"})
         if not file_name and not file_path:
-            return json.dumps({"success": False, "error": "file_name or file_path is required"})
+            return json.dumps(
+                {"success": False, "error": "file_name or file_path is required"}
+            )
         if content is None:
             return json.dumps({"success": False, "error": "content is required"})
 
@@ -127,7 +146,8 @@ class AddCommit(Tool):
         # ------------------ PERMISSION CHECK ------------------
         membership = next(
             (
-                m for m in repository_members.values()
+                m
+                for m in repository_members.values()
                 if m.get("repository_id") == repository_id
                 and m.get("user_id") == requester_id
                 and m.get("permission_level") in {"admin", "write"}
@@ -136,15 +156,19 @@ class AddCommit(Tool):
         )
 
         if not membership:
-            return json.dumps({
-                "success": False,
-                "error": "Permission denied. Admin or write access required.",
-            })
+            return json.dumps(
+                {
+                    "success": False,
+                    "error": "Permission denied. Admin or write access required.",
+                }
+            )
 
         # ------------------ BRANCH ------------------
         branch = branches.get(branch_id)
         if not branch or branch.get("repository_id") != repository_id:
-            return json.dumps({"success": False, "error": "Branch not found for repository"})
+            return json.dumps(
+                {"success": False, "error": "Branch not found for repository"}
+            )
 
         # ------------------ DIRECTORY RESOLUTION ------------------
         dir_path = os.path.dirname(file_path) if file_path else ""
@@ -185,21 +209,30 @@ class AddCommit(Tool):
 
         commit_sha = generate_deterministic_sha(next_commit_id, "azure")
         now = "2026-01-01T23:59:00"
+        parent_commit_sha = branch.get("commit_sha")
+        parent_commit_id = next(
+            (
+                commit["commit_id"]
+                for commit in commits.values()
+                if commit["commit_sha"] == parent_commit_sha
+            ),
+            None,
+        )
 
         commit_entry = {
-            "commit_id": next_commit_id,
-            "repository_id": repository_id,
-            "commit_sha": commit_sha,
-            "author_id": requester_id,
-            "committer_id": requester_id,
+            "commit_id": str(next_commit_id),
+            "repository_id": str(repository_id),
+            "commit_sha": str(commit_sha),
+            "author_id": str(requester_id),
+            "committer_id": str(requester_id),
             "message": f"Add/update {file_path or file_name}",
-            "parent_commit_id": branch.get("commit_sha"),
+            "parent_commit_id": str(parent_commit_id),
             "committed_at": now,
             "created_at": now,
         }
 
         commits[next_commit_id] = commit_entry
-        branches[branch_id]["commit_sha"] = commit_sha
+        branches[branch_id]["commit_sha"] = str(commit_sha)
 
         # ------------------ FILE ------------------
         try:
@@ -212,11 +245,13 @@ class AddCommit(Tool):
 
         if existing_file:
             file_id = existing_file["file_id"]
-            files[file_id].update({
-                "last_modified_at": now,
-                "last_commit_id": next_commit_id,
-                "updated_at": now,
-            })
+            files[file_id].update(
+                {
+                    "last_modified_at": now,
+                    "last_commit_id": next_commit_id,
+                    "updated_at": now,
+                }
+            )
         else:
             file_id = next_file_id
             files[file_id] = {
@@ -249,13 +284,14 @@ class AddCommit(Tool):
             "created_at": now,
         }
 
-        return json.dumps({
-            "success": True,
-            "commit": commit_entry,
-            "file": files[file_id],
-            "content": file_contents[next_content_id],
-        })
-
+        return json.dumps(
+            {
+                "success": True,
+                "commit": commit_entry,
+                "file": files[file_id],
+                "content": file_contents[next_content_id],
+            }
+        )
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -266,9 +302,7 @@ class AddCommit(Tool):
                 "description": (
                     "Creates a new commit on a specified branch of a repository by adding or updating "
                     "a file. The requesting user must be authenticated and have either 'admin' or 'write' "
-                    "permission on the target repository. If the file already exists on the branch, it "
-                    "will be updated; otherwise, a new file will be created. The operation advances the "
-                    "branch head to the newly created commit."
+                    "permission on the target repository. "
                 ),
                 "parameters": {
                     "type": "object",
@@ -277,7 +311,6 @@ class AddCommit(Tool):
                             "type": "string",
                             "description": (
                                 "The unique identifier of the repository where the commit will be created. "
-                                "The requester must have admin or write access to this repository."
                             ),
                         },
                         "branch_id": {

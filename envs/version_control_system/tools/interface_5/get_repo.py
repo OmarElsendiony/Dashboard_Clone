@@ -4,23 +4,13 @@ from tau_bench.envs.tool import Tool
 
 
 class GetRepo(Tool):
-    """Tool for retrieving repository details from the version control system."""
 
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         repo_name: str,
     ) -> str:
-        """
-        Retrieve repository details by repository name.
 
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_name: The name of the repository to look up (required).
-
-        Returns:
-            JSON string containing the success status and repository data if found.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -69,12 +59,11 @@ class GetRepo(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_repo function."""
         return {
             "type": "function",
             "function": {
                 "name": "get_repo",
-                "description": "Retrieves detailed information about a repository from the version control system by its name. Use this to verify repository existence, check repository accessibility, or retrieve repository metadata for other operations.",
+                "description": "Retrieves detailed information about a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

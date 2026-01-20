@@ -73,28 +73,21 @@ class GetProject(Tool):
             "type": "function",
             "function": {
                 "name": "get_project",
-                "description": (
-                    "Retrieve project information by workspace_id and project_name. "
-                    "Returns complete project details including project_id, workspace_id, organization_id, "
-                    "project_key, project_name, status, description, is_private, and timestamps. "
-                    "Also includes project member details (role, status) for the specified user_id. "
-                    "The member_details field will be null if the user is not a member of that project. "
-                    "Returns an error if workspace_id, user_id, or project_name is not provided or if the project is not found."
-                ),
+                "description": "Retrieves project information and member details for a specific user.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "workspace_id": {
                             "type": "string",
-                            "description": "The ID of the workspace containing the project.",
+                            "description": "The workspace ID.",
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "The ID of the user whose project member details to retrieve.",
+                            "description": "The user ID to retrieve member details for (null if not a member).",
                         },
                         "project_name": {
                             "type": "string",
-                            "description": "The name of the project to retrieve.",
+                            "description": "The project name.",
                         },
                     },
                     "required": ["workspace_id", "user_id", "project_name"],

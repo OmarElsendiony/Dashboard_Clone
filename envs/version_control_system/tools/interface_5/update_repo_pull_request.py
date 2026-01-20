@@ -4,8 +4,7 @@ from tau_bench.envs.tool import Tool
 
 
 class UpdateRepoPullRequest(Tool):
-    """Tool for updating an existing pull request in a repository in the version control system."""
-
+ 
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -15,20 +14,7 @@ class UpdateRepoPullRequest(Tool):
         description: Optional[str] = None,
         status: Optional[str] = None,
     ) -> str:
-        """
-        Update an existing pull request.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository containing the pull request (required).
-            pull_request_number: The pull request number within the repository (required).
-            title: The new title of the pull request (optional).
-            description: The new description of the pull request (optional).
-            status: The new status of the pull request (optional, must be 'closed' to close the PR).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and updated pull request data.
-        """
+     
 
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
@@ -146,12 +132,12 @@ class UpdateRepoPullRequest(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the update_repo_pull_request function."""
+       
         return {
             "type": "function",
             "function": {
                 "name": "update_repo_pull_request",
-                "description": "Updates an existing pull request in a repository. Allows updating the pull request's title, description, and status. Only the fields to be changed need to be provided.",
+                "description": "Updates an existing pull request in a repository. Supports partial updates.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -173,7 +159,8 @@ class UpdateRepoPullRequest(Tool):
                         },
                         "status": {
                             "type": "string",
-                            "description": "The new status of the pull request. Must be: 'closed'.",
+                            "description": "The new status of the pull request.",
+                             "enum": ["closed"]
                         },
                     },
                     "required": ["repo_id", "pull_request_number"],

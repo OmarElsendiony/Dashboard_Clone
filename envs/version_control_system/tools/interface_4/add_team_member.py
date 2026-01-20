@@ -275,9 +275,8 @@ class AddTeamMember(Tool):
             "function": {
                 "name": "add_team_member",
                 "description": (
-                    "Adds a user to one or more scopes (organization, project, repository) in one run. "
-                    "Validates requester permissions and parent memberships. Returns the newly created memberships."
-                    "permission_config includes Options[('organization_role', ['owner', 'member']), ('project_role', ['Build_Administrator', 'Contributor', 'Project Administrator', 'Reader', 'Release_Administrator']), ('repository_permission', ['admin', 'write', 'read'])]"
+                    "Adds a user to one or more scopes (organization, project, or repository) with specified "
+                    "permissions. The requesting user must have appropriate administrative permissions for each scope. "
                 ),
                 "parameters": {
                     "type": "object",
@@ -304,7 +303,7 @@ class AddTeamMember(Tool):
                         },
                         "permission_config": {
                             "type": "object",
-                            "description": "The role and permissions to apply per scope.",
+                            "description": "The role and permissions to apply per scope. Options ('organization_role', ['owner', 'member']), ('project_role', ['Build_Administrator', 'Contributor', 'Project Administrator', 'Reader', 'Release_Administrator']), ('repository_permission', ['admin', 'write', 'read'])",
                         },
                     },
                     "required": ["user_id", "auth_token", "permission_config"],

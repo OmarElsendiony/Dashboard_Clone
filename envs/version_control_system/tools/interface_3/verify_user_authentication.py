@@ -7,9 +7,6 @@ class VerifyUserAuthentication(Tool):
 
     @staticmethod
     def invoke(data: Dict[str, Any], user_id: str) -> str:
-        """
-        Validates that a user has an active and non-expired access token in the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 

@@ -14776,5 +14776,122 @@
     "comment_body": "Along small any air she join guess.",
     "created_at": "2025-12-30T21:33:29",
     "updated_at": "2025-12-31T07:10:40"
+  },
+  "1643": {
+    "comment_id": "1643",
+    "commentable_type": "issue",
+    "commentable_id": "641",
+    "author_id": "102",
+    "comment_body": "This is related to the recent JWT changes. I'll investigate the token refresh flow.",
+    "created_at": "2025-12-22T14:30:00",
+    "updated_at": "2025-12-22T14:30:00"
+  },
+  "1644": {
+    "comment_id": "1644",
+    "commentable_type": "issue",
+    "commentable_id": "650",
+    "author_id": "101",
+    "comment_body": "INCIDENT RESPONSE: Immediate mitigation applied. Scaling up DB instances.",
+    "created_at": "2026-01-10T02:15:00",
+    "updated_at": "2026-01-10T02:15:00"
+  },
+  "1645": {
+    "comment_id": "1645",
+    "commentable_type": "issue",
+    "commentable_id": "650",
+    "author_id": "102",
+    "comment_body": "Root cause identified: connection pool exhausted due to unclosed connections. Hotfix deployed.",
+    "created_at": "2026-01-10T03:30:00",
+    "updated_at": "2026-01-10T03:30:00"
+  },
+  "1646": {
+    "comment_id": "1646",
+    "commentable_type": "pull_request",
+    "commentable_id": "481",
+    "author_id": "101",
+    "comment_body": "LGTM! The authentication flow looks solid.",
+    "created_at": "2025-12-20T16:00:00",
+    "updated_at": "2025-12-20T16:00:00"
+  },
+  "1647": {
+    "comment_id": "1647",
+    "commentable_type": "pull_request",
+    "commentable_id": "490",
+    "author_id": "101",
+    "comment_body": "Closing this PR - we've decided to go with a different GraphQL implementation. Will open a new PR.",
+    "created_at": "2026-01-08T16:55:00",
+    "updated_at": "2026-01-08T16:55:00"
+  },
+  "1648": {
+    "comment_id": "1648",
+    "commentable_type": "pull_request",
+    "commentable_id": "491",
+    "author_id": "104",
+    "comment_body": "WIP - still working on connection pooling logic. Need to handle edge cases.",
+    "created_at": "2026-01-11T10:00:00",
+    "updated_at": "2026-01-11T10:00:00"
+  },
+  "1649": {
+    "comment_id": "1649",
+    "commentable_type": "issue",
+    "commentable_id": "653",
+    "author_id": "111",
+    "comment_body": "CRITICAL: This is blocking the v1.0 release. Reverting to v0.9 decoherence model as temporary fix.",
+    "created_at": "2026-01-09T08:00:00",
+    "updated_at": "2026-01-09T08:00:00"
+  },
+  "1650": {
+    "comment_id": "1650",
+    "commentable_type": "issue",
+    "commentable_id": "656",
+    "author_id": "125",
+    "comment_body": "Stack trace shows goroutine leak. Investigating the connection handler.",
+    "created_at": "2026-01-11T15:00:00",
+    "updated_at": "2026-01-11T15:00:00"
+  },
+  "1651": {
+    "comment_id": "1651",
+    "commentable_type": "pull_request",
+    "commentable_id": "496",
+    "author_id": "121",
+    "comment_body": "Closing this for now - WebSocket support is being deferred to v2.0 roadmap.",
+    "created_at": "2026-01-05T13:45:00",
+    "updated_at": "2026-01-05T13:45:00"
+  },
+  "1652": {
+    "comment_id": "1652",
+    "commentable_type": "pull_request",
+    "commentable_id": "497",
+    "author_id": "125",
+    "comment_body": "Draft PR for gRPC gateway. Not ready for review yet - still prototyping the interface.",
+    "created_at": "2026-01-08T13:30:00",
+    "updated_at": "2026-01-08T13:30:00"
+  },
+  "1653": {
+    "comment_id": "1653",
+    "commentable_type": "pull_request",
+    "commentable_id": "498",
+    "author_id": "123",
+    "comment_body": "Hotfix approved and merged. Memory leak was caused by goroutine not releasing connection on timeout.",
+    "created_at": "2026-01-11T10:45:00",
+    "updated_at": "2026-01-11T10:45:00"
+  },
+  "1654": {
+    "comment_id": "1654",
+    "commentable_type": "issue",
+    "commentable_id": "651",
+    "author_id": "105",
+    "comment_body": "I can work on this after the current sprint. Low priority so no rush.",
+    "created_at": "2025-12-29T10:00:00",
+    "updated_at": "2025-12-29T10:00:00"
+  },
+  "1655": {
+    "comment_id": "1655",
+    "commentable_type": "issue",
+    "commentable_id": "654",
+    "author_id": "114",
+    "comment_body": "I'll create Jupyter notebooks with examples. Should I include the basic algorithms?",
+    "created_at": "2026-01-03T09:00:00",
+    "updated_at": "2026-01-03T09:00:00"
   }
 }

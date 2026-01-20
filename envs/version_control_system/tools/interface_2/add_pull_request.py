@@ -80,12 +80,7 @@ class AddPullRequest(Tool):
             "type": "function",
             "function": {
                 "name": "add_pull_request",
-                "description": (
-                    "Create a new pull request in a repository. "
-                    "Automatically generates a unique pull request number for the repository. "
-                    "The pull request is created with status 'open'. "
-                    "Returns the created pull request details including the auto-generated pull_request_id and pull_request_number."
-                ),
+                "description": "Creates a new pull request in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -294,60 +294,49 @@ class CreateFile(Tool):
             "type": "function",
             "function": {
                 "name": "create_file",
-                "description": (
-                    "Create a new file in a repository with file content, commit, and directory records. "
-                    "Validates that repository, branch, and user exist. "
-                    "Validates that the branch belongs to the repository. "
-                    "Validates encoding is one of: utf-8, base64, binary. "
-                    "Creates file_content record with file_id, commit_id, content, and encoding. "
-                    "Creates directories based on file_path (e.g., 'src/folder' creates 'src' and 'src/folder'). "
-                    "Directory paths are unique per repository. Uses parent_directory_id for hierarchy. "
-                    "Creates a commit record with SHA-1 hash generated from 'commit_{commit_id}'. "
-                    "Updates the branch's commit_sha to the newly created commit. "
-                    "Returns the created file, file_content, and commit details."
-                ),
+                "description": "Create a new file in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "repository_id": {
                             "type": "string",
-                            "description": "The ID of the repository.",
+                            "description": "The ID of the repository. Required",
                         },
                         "branch_id": {
                             "type": "string",
-                            "description": "The ID of the branch where the file is created.",
+                            "description": "The ID of the branch where the file is created. Required",
                         },
                         "file_path": {
                             "type": "string",
-                            "description": "The path to the file (e.g., 'src/folder'). Directories are auto-created.",
+                            "description": "The path to the file. Directories are auto-created. Required",
                         },
                         "file_name": {
                             "type": "string",
-                            "description": "The name of the file.",
+                            "description": "The name of the file. Required",
                         },
                         "language": {
                             "type": "string",
-                            "description": "Optional. The programming language of the file. Valid values: C, C++, C#, Go, Rust, Java, Kotlin, Scala, Python, Ruby, PHP, JavaScript, TypeScript, Shell, PowerShell, Swift, Objective-C, Dart, R, MATLAB, Groovy, Perl, Lua, Haskell, Elixir, Erlang, Julia, Assembly, Fortran, COBOL, HTML, CSS, SCSS, Less, Markdown, AsciiDoc, JSON, YAML, XML, TOML, INI, CSV, Dockerfile, Makefile, Bash, Terraform, Ansible, SQL, PLpgSQL, Text, Binary, Unknown. Optional",
+                            "description": "Required. The programming language of the file. Valid values: C, C++, C#, Go, Rust, Java, Kotlin, Scala, Python, Ruby, PHP, JavaScript, TypeScript, Shell, PowerShell, Swift, Objective-C, Dart, R, MATLAB, Groovy, Perl, Lua, Haskell, Elixir, Erlang, Julia, Assembly, Fortran, COBOL, HTML, CSS, SCSS, Less, Markdown, AsciiDoc, JSON, YAML, XML, TOML, INI, CSV, Dockerfile, Makefile, Bash, Terraform, Ansible, SQL, PLpgSQL, Text, Binary, Unknown. Optional",
                         },
                         "is_binary": {
                             "type": "boolean",
-                            "description": "Whether the file is binary.",
+                            "description": "Required. Whether the file is binary.",
                         },
                         "content": {
                             "type": "string",
-                            "description": "The content of the file.",
+                            "description": "Required. The content of the file.",
                         },
                         "encoding": {
                             "type": "string",
-                            "description": "The encoding of the file Valid values: utf-8, base64, binary.",
+                            "description": "Required. The encoding of the file Valid values: utf-8, base64, binary.",
                         },
                         "commit_message": {
                             "type": "string",
-                            "description": "The commit message for this file creation.",
+                            "description": "Required. The commit message for this file creation.",
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "The ID of the user creating the file (used as author_id and committer_id).",
+                            "description": "Required. The ID of the user creating the file (used as author_id and committer_id).",
                         },
                     },
                     "required": [

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <title>Schema Manager - Turing Tooling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/schema_manager.css') }}">
+</head>
+
+<body>
+    <header class="dashboard-header">
+        <a href='/'>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/turing_logo.svg') }}" alt="turing image"
+                    style="width: 100px; scale: 1.5; display: block; margin: 0 auto;">
+            </div>
+        </a>
+    </header>
+
+    <section class="main-section">
+        <div class="page-header">
+            <div class="header-visual">
+                <div class="database-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="dbGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="40" cy="15" rx="25" ry="6" fill="url(#dbGradient)" opacity="0.8" />
+                        <rect x="15" y="15" width="50" height="10" fill="url(#dbGradient)" opacity="0.6" />
+                        <ellipse cx="40" cy="25" rx="25" ry="6" fill="url(#dbGradient)" opacity="0.9" />
+                        <ellipse cx="40" cy="35" rx="25" ry="6" fill="url(#dbGradient)" opacity="0.7" />
+                        <rect x="15" y="35" width="50" height="10" fill="url(#dbGradient)" opacity="0.5" />
+                        <ellipse cx="40" cy="45" rx="25" ry="6" fill="url(#dbGradient)" opacity="0.8" />
+                        <ellipse cx="40" cy="55" rx="25" ry="6" fill="url(#dbGradient)" opacity="0.6" />
+                        <rect x="15" y="55" width="50" height="10" fill="url(#dbGradient)" opacity="0.4" />
+                        <ellipse cx="40" cy="65" rx="25" ry="6" fill="url(#dbGradient)" opacity="0.9" />
+                    </svg>
+                </div>
+            </div>
+            <h1>Schema Manager</h1>
+            <p class="header-description">
+                Upload database schemas, manage MySQL databases, and query your data
+            </p>
+        </div>
+
+        <!-- Action Cards -->
+        <div class="action-cards">
+            <div class="action-card" id="add-db-card">
+                <div class="card-icon">📦</div>
+                <h3>Add New Database</h3>
+                <p>Upload a zip file containing schema and data</p>
+            </div>
+            <div class="action-card" id="query-db-card">
+                <div class="card-icon">🔍</div>
+                <h3>Query Database</h3>
+                <p>Run SQL queries on existing databases</p>
+            </div>
+        </div>
+
+        <!-- Upload Database Section -->
+        <div id="upload-section" class="content-section" style="display: none;">
+            <div class="section-header">
+                <h2>Upload New Database</h2>
+                <button class="close-btn" onclick="closeSection('upload-section')">✕</button>
+            </div>
+
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="db-name">Database Name</label>
+                    <input type="text" id="db-name" placeholder="e.g., github_platform, hr_system"
+                        class="form-input">
+                    <small>Use only letters, numbers, and underscores</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="schema-zip">Schema Zip File</label>
+                    <div class="file-input-wrapper" id="drop-zone">
+                        <input type="file" id="schema-zip" accept=".zip" class="hidden-file-input">
+                        <label for="schema-zip" class="file-label">
+                            <span class="upload-icon">📁</span>
+                            <span id="file-name">Choose zip file or drag & drop</span>
+                        </label>
+                    </div>
+                    <small>Zip should contain schema file (.dbml or schema.txt) and optional data/ folder with JSON
+                        files</small>
+                </div>
+
+                <div id="upload-status" class="status-message"></div>
+
+                <button id="upload-btn" class="action-btn">Create Database</button>
+            </div>
+        </div>
+
+        <!-- Query Database Section -->
+        <div id="query-section" class="content-section" style="display: none;">
+            <div class="section-header">
+                <h2>Query Database</h2>
+                <button class="close-btn" onclick="closeSection('query-section')">✕</button>
+            </div>
+
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="db-select">Select Database</label>
+                    <select id="db-select" class="form-select">
+                        <option value="">-- Select a database --</option>
+                    </select>
+                </div>
+
+                <div id="db-info" class="db-info-box" style="display: none;">
+                    <h4>Database Information</h4>
+                    <p><strong>Created:</strong> <span id="db-created"></span></p>
+                    <p><strong>Tables:</strong> <span id="db-tables"></span></p>
+                    <p><strong>Data Files Loaded:</strong> <span id="db-data-files"></span></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="sql-query">SQL Query</label>
+                    <textarea id="sql-query" class="form-textarea" rows="6"
+                        placeholder="SELECT * FROM users LIMIT 10;"></textarea>
+                    <small>Only SELECT queries are allowed for safety</small>
+                </div>
+
+                <div class="button-group">
+                    <button id="query-btn" class="action-btn">Execute Query</button>
+                    <button id="delete-db-btn" class="danger-btn" style="display: none;">Delete Database</button>
+                </div>
+
+                <div id="query-status" class="status-message"></div>
+
+                <div id="results-container" style="display: none;">
+                    <h3>Query Results (<span id="result-count">0</span> rows)</h3>
+                    <div class="table-container">
+                        <table id="results-table">
+                            <thead id="results-thead"></thead>
+                            <tbody id="results-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Existing Databases List -->
+        <div id="databases-list" class="databases-section">
+            <h2>Existing Databases</h2>
+            <div id="db-cards-container" class="db-cards">
+                <div class="loading">Loading databases...</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='scripts/schema_manager.js') }}"></script>
+</body>
+
+</html>

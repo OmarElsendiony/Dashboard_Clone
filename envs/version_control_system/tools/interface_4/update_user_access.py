@@ -151,9 +151,7 @@ class UpdateUserAccess(Tool):
                 "name": "update_user_access",
                 "description": (
                     "Updates an organization member's access by changing their role or membership "
-                    "status. Only organization owners may perform this operation. Membership can "
-                    "be revoked by setting the status to 'inactive'. At least one active owner "
-                    "must remain in the organization."
+                    "status."
                 ),
                 "parameters": {
                     "type": "object",

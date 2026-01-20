@@ -5,7 +5,6 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateFileContent(Tool):
-    """Tool for creating a file content snapshot for a commit in the version control system."""
 
     @staticmethod
     def invoke(
@@ -15,27 +14,9 @@ class CreateFileContent(Tool):
         content: str,
         encoding: str,
     ) -> str:
-        """
-        Create a file content snapshot for a commit.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            file_id: The ID of the file (required).
-            commit_id: The ID of the commit this content is associated with (required).
-            content: The file content as a string (required).
-            encoding: The encoding type, either "utf-8" or "base64" (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and file content data.
-        """
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
 
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
@@ -124,7 +105,8 @@ class CreateFileContent(Tool):
                 content_str = content
             except Exception:
                 # If not valid base64, encode the string
-                content_str = base64.b64encode(content.encode("utf-8")).decode("utf-8")
+                content_str = base64.b64encode(
+                    content.encode("utf-8")).decode("utf-8")
 
         # Set timestamp
         timestamp = "2026-01-01T23:59:00"
@@ -159,7 +141,6 @@ class CreateFileContent(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_file_content function."""
         return {
             "type": "function",
             "function": {
@@ -182,7 +163,8 @@ class CreateFileContent(Tool):
                         },
                         "encoding": {
                             "type": "string",
-                            "description": "The encoding type, either 'utf-8' or 'base64'.",
+                            "description": "The encoding type.",
+                            "enum": ["utf-8", "base64"]
                         },
                     },
                     "required": ["file_id", "commit_id", "content", "encoding"],

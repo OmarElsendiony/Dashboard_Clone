@@ -85,7 +85,7 @@ class UpdatePullRequest(Tool):
             "type": "function",
             "function": {
                 "name": "update_pull_request",
-                "description": "Updates details of an existing pull request, such as title, description, or status.",
+                "description": "Updates details of an existing pull request.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -99,19 +99,20 @@ class UpdatePullRequest(Tool):
                         },
                         "title": {
                             "type": "string",
-                            "description": "The new title of the pull request."
+                            "description": "The new title of the pull request (optional)"
                         },
                         "description": {
                             "type": "string",
-                            "description": "The new description of the pull request."
+                            "description": "The new description of the pull request (optional)"
                         },
                         "status": {
                             "type": "string",
-                            "description": "The new status of the pull request. Allowed values: 'open', 'closed', 'merged', 'draft'."
+                            "description": "The new status of the pull request. Allowed values: 'open', 'closed', 'merged', 'draft' (optional)",
+                            "enum": ["open", "closed", "merged", "draft"]
                         },
                         "merged_by": {
                             "type": "string",
-                            "description": "The user ID of the person merging the pull request. Required if status is set to 'merged'."
+                            "description": "The user ID of the person merging the pull request. Required if status is set to 'merged' (optional)"
                         }
                     },
                     "required": ["access_token", "pull_request_id"]

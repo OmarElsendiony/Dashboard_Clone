@@ -13,11 +13,11 @@ class AddUserToEntity(Tool):
         project_id: Optional[str] = None,
         repository_id: Optional[str] = None,
     ) -> str:
-        """Add a user to a workspace, project, or repository."""
+        
         timestamp = "2026-01-01T23:59:00"
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """Generate a new unique ID for a record."""
+            
             return "1" if not table else str(max(int(k) for k in table.keys()) + 1)
 
         # Validate data structure
@@ -152,19 +152,13 @@ class AddUserToEntity(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the add_user_to_entity function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "add_user_to_entity",
                 "description": (
-                    "Add a user to a workspace, project, or repository. "
-                    "Exactly one of workspace_id, project_id, or repository_id must be provided. "
-                    "For workspace: valid roles are 'Admin', 'User'. "
-                    "For project: valid roles are 'Build_Administrator', 'Contributor', 'Project Administrator', 'Reader', 'Release_Administrator'. "
-                    "For repository: valid roles are 'read', 'write', 'admin'. "
-                    "Checks if the user is already a member/collaborator before adding. "
-                    "Returns the created membership/collaborator record."
+                    "Adds a user to a workspace, project, or repository. Exactly one target must be provided, the role is validated based on the target type, duplicate membership is prevented, and the created association is returned."
                 ),
                 "parameters": {
                     "type": "object",

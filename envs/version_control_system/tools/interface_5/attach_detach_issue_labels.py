@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class AttachDetachIssueLabels(Tool):
-    """Tool for attaching or detaching labels on issues in the version control system."""
 
     @staticmethod
     def invoke(
@@ -13,18 +12,6 @@ class AttachDetachIssueLabels(Tool):
         label_id: str,
         issue_id: str,
     ) -> str:
-        """
-        Attach or detach a label from an issue.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            action: The action to perform. Must be either 'attach_to_issue' or 'detach_from_issue' (required).
-            label_id: The ID of the label to attach or detach (required).
-            issue_id: The ID of the issue to attach the label to or detach from (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and updated label data.
-        """
 
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
@@ -184,18 +171,18 @@ class AttachDetachIssueLabels(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the attach_detach_issue_labels function."""
         return {
             "type": "function",
             "function": {
                 "name": "attach_detach_issue_labels",
-                "description": "Attaches or detaches a label from an issue in a repository. Use action='attach_to_issue' to attach a label to an issue, or action='detach_from_issue' to remove a label from an issue. Both the label and issue must exist and belong to the same repository.",
+                "description": "Attaches or detaches a label from an issue in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "The action to perform: 'attach_to_issue' or 'detach_from_issue'.",
+                            "description": "The action to perform",
+                            "enum": ["attach_to_issue", "detach_from_issue"]
                         },
                         "label_id": {
                             "type": "string",

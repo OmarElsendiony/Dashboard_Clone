@@ -187,9 +187,6 @@ class UpdateWorkItem(Tool):
                 "name": "update_work_item",
                 "description": (
                     "Updates an existing work item (issue) in a repository. "
-                    "The requesting user must have write or admin permission. "
-                    "Updatable fields: title, description, status, priority. "
-                    "Optionally assigns the work item to a collaborator and/or adds a comment."
                 ),
                 "parameters": {
                     "type": "object",
@@ -202,8 +199,10 @@ class UpdateWorkItem(Tool):
                             "type": "object",
                             "description": (
                                 "Fields to update. "
-                                "Allowed keys: title, description, status, priority, "
-                                "assignee_id, comment."
+                                "Allowed keys: 'title' (string), 'description' (string), "
+                                "'status' (enum: ['open', 'in_progress', 'closed']), "
+                                "'priority' (enum: ['low', 'medium', 'high', 'critical']), "
+                                "'assignee_id' (string), 'comment' (string)."
                             ),
                         },
                         "auth_token": {

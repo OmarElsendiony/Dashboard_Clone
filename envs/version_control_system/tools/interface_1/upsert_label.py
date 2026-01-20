@@ -18,11 +18,6 @@ class UpsertLabel(Tool):
         pr_ids: Optional[str] = None,
         issue_ids: Optional[str] = None
     ) -> str:
-        """
-        Create or update a label in a repository.
-        - action="create": Requires repository_id, label_name, color.
-        - action="update": Requires label_id. Other fields are optional.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -189,13 +184,14 @@ class UpsertLabel(Tool):
             "type": "function",
             "function": {
                 "name": "upsert_label",
-                "description": "Create or update a label in a repository. Use action='create' to make a new label (requires repository_id, name, color). Use action='update' to edit existing label (requires label_id).",
+                "description": "Creates or updates a label in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "Action to perform. Allowed values: 'create', 'update' (required)"
+                            "description": "Action to perform. Allowed values: 'create', 'update' (required)",
+                            "enum": ["create", "update"]
                         },
                         "access_token": {
                             "type": "string",

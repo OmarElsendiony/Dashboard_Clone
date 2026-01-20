@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class UpdateIssue(Tool):
-    """Tool for updating an existing issue in a repository in the version control system."""
 
     @staticmethod
     def invoke(
@@ -16,21 +15,6 @@ class UpdateIssue(Tool):
         priority: Optional[str] = None,
         status: Optional[str] = None,
     ) -> str:
-        """
-        Update an existing issue.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            issue_id: The ID of the issue to update (required).
-            title: The new title of the issue (optional).
-            description: The new description of the issue (optional).
-            issue_type: The new type of issue (bug/feature/documentation/question/enhancement, optional).
-            priority: The new priority of the issue (low/medium/high/critical, optional).
-            status: The new status of the issue (open/closed/in_progress, optional).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and updated issue data.
-        """
 
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
@@ -77,7 +61,8 @@ class UpdateIssue(Tool):
 
         # Validate and apply issue_type update
         if issue_type is not None:
-            allowed_issue_types = {"bug", "feature", "documentation", "question", "enhancement"}
+            allowed_issue_types = {"bug", "feature",
+                                   "documentation", "question", "enhancement"}
             if not isinstance(issue_type, str):
                 return json.dumps({"success": False, "error": "issue_type must be a string"})
             issue_type_val = issue_type.strip().lower()
@@ -143,12 +128,11 @@ class UpdateIssue(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the update_issue function."""
         return {
             "type": "function",
             "function": {
                 "name": "update_issue",
-                "description": "Updates an existing issue in a repository. Supports partial updates - only provide the fields you want to change.",
+                "description": "Updates an existing issue in a repository. Supports partial updates.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -166,15 +150,18 @@ class UpdateIssue(Tool):
                         },
                         "issue_type": {
                             "type": "string",
-                            "description": "The type of issue. Must be one of: bug, feature, documentation, question, enhancement.",
+                            "description": "The type of issue.",
+                            "enum": ["bug", "feature", "documentation", "question", "enhancement"]
                         },
                         "priority": {
                             "type": "string",
-                            "description": "The priority of the issue. Must be one of: low, medium, high, critical.",
+                            "description": "The priority of the issue. ",
+                            "enum": ["low", "medium", "high", "critical"]
                         },
                         "status": {
                             "type": "string",
-                            "description": "The status of the issue. Must be one of: open, closed, in_progress.",
+                            "description": "The status of the issue.",
+                            "enum": ["open", "closed", "in_progress"]
                         },
                     },
                     "required": ["issue_id"],

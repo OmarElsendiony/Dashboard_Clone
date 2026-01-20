@@ -4,25 +4,14 @@ from tau_bench.envs.tool import Tool
 
 
 class GetRelease(Tool):
-    """Tool for retrieving release details from the version control system."""
-
+   
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         repo_id: str,
         tag_name: str,
     ) -> str:
-        """
-        Retrieve release details by repository ID and tag name.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository containing the release (required).
-            tag_name: The tag name of the release to look up (required).
-
-        Returns:
-            JSON string containing the success status and release data if found.
-        """
+       
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -95,12 +84,12 @@ class GetRelease(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_release function."""
+       
         return {
             "type": "function",
             "function": {
                 "name": "get_release",
-                "description": "Retrieves detailed information about a release from a repository by tag name.",
+                "description": "Retrieves detailed information about a release from a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

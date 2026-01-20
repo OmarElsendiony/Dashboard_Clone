@@ -103,15 +103,11 @@ class AddNewRepo(Tool):
         repositories[new_repository_id] = new_repository
 
         # --- Resolve organization owner ---
-        organization_owner = next(
-            (
-                m
-                for m in organization_members.values()
-                if m.get("organization_id") == organization_id
-                and m.get("role") == "owner"
-            ),
-            None,
-        )
+        organization_owners = [
+            m
+            for m in organization_members.values()
+            if m.get("organization_id") == organization_id and m.get("role") == "owner"
+        ]
 
         def next_collaborator_id() -> str:
             return str(
@@ -131,17 +127,18 @@ class AddNewRepo(Tool):
 
         repository_collaborators[requester_collaborator_id] = requester_collaborator
 
-        # --- Grant organization owner admin access ---
-        if organization_owner and organization_owner["user_id"] != requester_id:
-            owner_collaborator_id = next_collaborator_id()
-            repository_collaborators[owner_collaborator_id] = {
-                "collaborator_id": owner_collaborator_id,
-                "repository_id": new_repository_id,
-                "user_id": organization_owner["user_id"],
-                "permission_level": "admin",
-                "status": "active",
-                "added_at": now,
-            }
+        # --- Grant organization owners admin access ---
+        for organization_owner in organization_owners:
+            if organization_owner and organization_owner["user_id"] != requester_id:
+                owner_collaborator_id = next_collaborator_id()
+                repository_collaborators[owner_collaborator_id] = {
+                    "collaborator_id": str(owner_collaborator_id),
+                    "repository_id": str(new_repository_id),
+                    "user_id": str(organization_owner["user_id"]),
+                    "permission_level": "admin",
+                    "status": "active",
+                    "added_at": now,
+                }
 
         return json.dumps(
             {
@@ -165,7 +162,7 @@ class AddNewRepo(Tool):
                 "description": (
                     "Creates a repository under a project. The requesting user must be a "
                     "Project Administrator. The repository is owned by the project's "
-                    "organization. Both the organization owner and the creator are granted "
+                    "organization. Organization owners and the creator are granted "
                     "admin access automatically."
                 ),
                 "parameters": {

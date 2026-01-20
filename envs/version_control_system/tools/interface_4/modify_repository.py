@@ -159,14 +159,6 @@ class ModifyRepository(Tool):
                 "description": (
                     "Updates configurable fields of an existing repository. "
                     "The requesting user must have admin permissions on the repository. "
-                    "Supported fields that can be updated via the `config` object include:\n"
-                    "- `description` (string | null): Repository description.\n"
-                    "- `visibility` (enum): One of `public`, `private`, `internal`.\n"
-                    "- `is_archived` (boolean): Whether the repository is archived.\n"
-                    "- `is_template` (boolean): Whether the repository is marked as a template.\n"
-                    "- `license_type` (enum): One of `MIT`, `Apache-2.0`, `GPL-3.0`, "
-                    "`BSD-3-Clause`, `unlicensed`, or `other`.\n"
-                    "Any fields outside this list are not permitted and will result in an error."
                 ),
                 "parameters": {
                     "type": "object",
@@ -183,7 +175,10 @@ class ModifyRepository(Tool):
                             "type": "object",
                             "description": (
                                 "A dictionary of fields to update on the repository. "
-                                "Only supported fields listed in the description are allowed."
+                                "Supported fields: 'description' (string|null), "
+                                "'visibility' (enum: ['public', 'private', 'internal']), "
+                                "'is_archived' (boolean), 'is_template' (boolean), "
+                                "'license_type' (enum: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'unlicensed', 'other'])."
                             ),
                         },
                     },

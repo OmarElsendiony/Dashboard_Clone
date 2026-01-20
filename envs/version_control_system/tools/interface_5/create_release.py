@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateRelease(Tool):
-    """Tool for creating a new release in a repository in the version control system."""
 
     @staticmethod
     def invoke(
@@ -19,32 +18,9 @@ class CreateRelease(Tool):
         is_draft: bool = False,
         is_prerelease: bool = False,
     ) -> str:
-        """
-        Create a new release in a repository.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to create the release in (required).
-            tag_name: The tag name for the release (required, must be unique within the repository).
-            release_name: The name of the release (required).
-            target_type: The type of target (required, must be 'commit' or 'branch').
-            target_reference: The commit SHA (if target_type='commit') or branch name (if target_type='branch') (required).
-            actor_id: The ID of the user creating the release (required).
-            description: The description of the release (optional).
-            is_draft: Whether the release is a draft (optional, default False).
-            is_prerelease: Whether the release is a prerelease (optional, default False).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created release data.
-        """
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
 
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
@@ -194,7 +170,8 @@ class CreateRelease(Tool):
         new_release_id = generate_id(releases)
 
         # Process description
-        description_value = description.strip() if isinstance(description, str) and description.strip() else ""
+        description_value = description.strip() if isinstance(
+            description, str) and description.strip() else ""
 
         # Create new release record
         new_release = {
@@ -223,7 +200,7 @@ class CreateRelease(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_release function."""
+
         return {
             "type": "function",
             "function": {

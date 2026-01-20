@@ -91,9 +91,7 @@ class ResolveBranch(Tool):
                 "name": "resolve_branch",
                 "description": (
                     "Resolves and retrieves branches belonging to a specific repository that the "
-                    "authenticated user has access to. The tool validates repository access using "
-                    "collaboration records and supports optional filtering by branch attributes "
-                    "such as branch name or default status."
+                    "authenticated user has access to."
                 ),
                 "parameters": {
                     "type": "object",

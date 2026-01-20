@@ -12,9 +12,6 @@ class ListReleases(Tool):
         is_prerelease: Optional[bool] = None,
         author_id: Optional[str] = None
     ) -> str:
-        """
-        Lists releases for a repository with optional filters.
-        """
         releases = data.get("releases", {})
         repositories = data.get("repositories", {})
 
@@ -45,7 +42,7 @@ class ListReleases(Tool):
             "type": "function",
             "function": {
                 "name": "list_releases",
-                "description": "Lists releases associated with a repository.",
+                "description": "Lists releases for a repository with optional filters.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -55,15 +52,15 @@ class ListReleases(Tool):
                         },
                         "is_draft": {
                             "type": "boolean",
-                            "description": "Filter by draft status (True/False)."
+                            "description": "Filter by draft status (True/False) (optional)"
                         },
                         "is_prerelease": {
                             "type": "boolean",
-                            "description": "Filter by prerelease status (True/False)."
+                            "description": "Filter by prerelease status (True/False) (optional)"
                         },
                         "author_id": {
                             "type": "string",
-                            "description": "Filter by author ID."
+                            "description": "Filter by author ID (optional)"
                         }
                     },
                     "required": ["repository_id"]

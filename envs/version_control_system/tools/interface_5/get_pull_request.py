@@ -1,32 +1,17 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 
 class GetPullRequest(Tool):
-    """Tool for retrieving pull request details from the version control system."""
-
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         repo_id: str,
         pull_request_number: int,
-        include_reviews: Optional[bool] = False,
-        include_comments: Optional[bool] = False,
+        include_reviews: bool = False,
+        include_comments: bool = False,
     ) -> str:
-        """
-        Retrieve pull request details by repository ID and pull request number.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository containing the pull request (required).
-            pull_request_number: The pull request number within the repository (required).
-            include_reviews: Whether to include reviews in the response (optional, default False).
-            include_comments: Whether to include comments in the response (optional, default False).
-
-        Returns:
-            JSON string containing the success status and pull request data if found.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -118,12 +103,11 @@ class GetPullRequest(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_pull_request function."""
         return {
             "type": "function",
             "function": {
                 "name": "get_pull_request",
-                "description": "Retrieve detailed information about a specific pull request. Optionally includes associated reviews and comments.",
+                "description": "Retrieves detailed information about a specific pull request, including reviews and comments.",
                 "parameters": {
                     "type": "object",
                     "properties": {

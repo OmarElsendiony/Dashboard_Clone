@@ -14,9 +14,6 @@ class DispatchNotification(Tool):
         reference_id: str,
         repository_id: Optional[str] = None
     ) -> str:
-        """
-        Dispatches a notification to a user.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -121,7 +118,7 @@ class DispatchNotification(Tool):
                         },
                         "repository_id": {
                             "type": "string",
-                            "description": "The unique identifier of the repository associated with the notification. Optional."
+                            "description": "The unique identifier of the repository associated with the notification (optional)."
                         }
                     },
                     "required": ["user_id", "notification_type", "reference_type", "reference_id"]

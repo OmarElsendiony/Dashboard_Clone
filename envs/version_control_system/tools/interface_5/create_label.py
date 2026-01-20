@@ -5,44 +5,23 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateLabel(Tool):
-    """Tool for creating a new label in a repository in the version control system."""
-
+   
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         repo_id: str,
         label_name: str,
     ) -> str:
-        """
-        Create a new label in a repository.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to create the label in (required).
-            label_name: The name of the label to create (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created label data.
-        """
+      
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
+         
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
 
         def generate_random_color() -> str:
-            """
-            Generates a random hex color code.
-
-            Returns:
-                str: A hex color code string (e.g., '#a3b2c1').
-            """
+           
             return "#{:06x}".format(random.randint(0, 0xFFFFFF))
 
         if not isinstance(data, dict):
@@ -136,12 +115,11 @@ class CreateLabel(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_label function."""
         return {
             "type": "function",
             "function": {
                 "name": "create_label",
-                "description": "Creates a new label in a repository in the version control system. The label is created with the specified name.",
+                "description": "Creates a new label in a repository in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

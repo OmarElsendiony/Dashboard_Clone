@@ -17,9 +17,6 @@ class AddNewIssue(Tool):
         assignee_id: Optional[str] = None,
         priority: Optional[str] = None
     ) -> str:
-        """
-        Creates a new issue in a repository.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -113,7 +110,7 @@ class AddNewIssue(Tool):
             "type": "function",
             "function": {
                 "name": "add_new_issue",
-                "description": "Creates a new issue in a repository. Issues are used to track bugs, feature requests, documentation updates, questions, and enhancements. Each issue is assigned a unique issue number within the repository.",
+                "description": "Creates a new issue in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -135,19 +132,19 @@ class AddNewIssue(Tool):
                         },
                         "status": {
                             "type": "string",
-                            "description": "The initial status of the issue. Valid values: open, closed, in_progress. Default: open."
+                            "description": "The initial status of the issue. Valid values: open, closed, in_progress. Default: open (optional)."
                         },
                         "description": {
                             "type": "string",
-                            "description": "A detailed description of the issue. Optional."
+                            "description": "A detailed description of the issue (optional)."
                         },
                         "assignee_id": {
                             "type": "string",
-                            "description": "The unique identifier of the user assigned to work on this issue. Optional."
+                            "description": "The unique identifier of the user assigned to work on this issue (optional)."
                         },
                         "priority": {
                             "type": "string",
-                            "description": "The priority level of the issue. Valid values: low, medium, high, critical. Optional."
+                            "description": "The priority level of the issue. Valid values: low, medium, high, critical (optional)."
                         }
                     },
                     "required": ["repository_id", "title", "author_id", "issue_type"]

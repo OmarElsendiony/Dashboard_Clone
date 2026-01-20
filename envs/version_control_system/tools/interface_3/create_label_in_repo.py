@@ -13,9 +13,6 @@ class CreateLabelInRepo(Tool):
         color: str,
         description: Optional[str] = None
     ) -> str:
-        """
-        Creates a new label in a repository.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -85,7 +82,7 @@ class CreateLabelInRepo(Tool):
                         },
                         "description": {
                             "type": "string",
-                            "description": "A brief description of the label's purpose. Optional."
+                            "description": "A brief description of the label's purpose (optional)."
                         }
                     },
                     "required": ["repository_id", "label_name", "color"]

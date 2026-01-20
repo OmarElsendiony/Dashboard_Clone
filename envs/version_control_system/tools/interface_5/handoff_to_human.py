@@ -19,9 +19,7 @@ class HandoffToHuman(Tool):
             "function": {
                 "name": "handoff_to_human",
                 "description": (
-                    "Transfer the user to a human agent, with a summary of the user's issue. "
-                    "Only transfer if the user explicitly asks for a human agent, or if the user's "
-                    "issue cannot be resolved by the agent with the available tools."
+                   "Transfers the user to a human agent with a summary of the user's issue."
                 ),
                 "parameters": {
                     "type": "object",

@@ -13,9 +13,6 @@ class FetchOrganizationMembership(Tool):
         role: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
-        """
-        Retrieves the membership details for a user in an organization.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -53,7 +50,7 @@ class FetchOrganizationMembership(Tool):
             "type": "function",
             "function": {
                 "name": "fetch_organization_membership",
-                "description": "Retrieves the membership details for a specific user in a specific organization within the version control system.",
+                "description": "Retrieves membership details for a user in an organization.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -67,11 +64,11 @@ class FetchOrganizationMembership(Tool):
                         },
                         "role": {
                             "type": "string",
-                            "description": "Optional filter to verify the membership has this role. Valid values: owner, member. If provided and role does not match, returns an error."
+                            "description": "Optional filter by role; allowed values: owner, member (optional)."
                         },
                         "status": {
                             "type": "string",
-                            "description": "Optional filter to verify the membership has this status. Valid values: active, pending, inactive. If provided and status does not match, returns an error."
+                            "description": "Optional filter by status; allowed values: active, pending, inactive (optional)."
                         }
                     },
                     "required": ["organization_id", "user_id"]

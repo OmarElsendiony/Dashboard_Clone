@@ -13,9 +13,6 @@ class UpdateRepositoryPermissions(Tool):
         user_id: str,
         permission_level: str
     ) -> str:
-        """
-        Update repository permissions for a user (add/update collaborator).
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -169,7 +166,7 @@ class UpdateRepositoryPermissions(Tool):
             "type": "function",
             "function": {
                 "name": "update_repository_permissions",
-                "description": "Update repository permissions for a user (add or update collaborator). Requires admin permissions on the repository.",
+                "description": "Updates repository permissions for a user (add or update collaborator).",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -187,7 +184,8 @@ class UpdateRepositoryPermissions(Tool):
                         },
                         "permission_level": {
                             "type": "string",
-                            "description": "Permission level to grant. Allowed values: 'read', 'write', 'admin' (required)"
+                            "description": "Permission level to grant. Allowed values: 'read', 'write', 'admin' (required)",
+                            "enum": ["read", "write", "admin"]
                         }
                     },
                     "required": ["access_token", "repository_id", "user_id", "permission_level"]

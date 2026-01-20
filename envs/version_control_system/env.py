@@ -23,6 +23,7 @@ class MockVersionControlSystemDomainEnv(Env):
         task_split: str = "test",
         task_index: Optional[int] = None,
         interface_num: Optional[int] = None,
+        populate_data_diff: bool = False,
     ):
         match task_split:
             case "test":
@@ -84,6 +85,7 @@ class MockVersionControlSystemDomainEnv(Env):
             user_model=user_model,
             user_provider=user_provider,
             task_index=task_index,
+            populate_data_diff=populate_data_diff,
         )
         self.terminate_tools = ["transfer_to_human_agents"]
         

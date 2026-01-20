@@ -14,9 +14,6 @@ class PostComment(Tool):
         issue_id: Optional[str] = None,
         pull_request_id: Optional[str] = None
     ) -> str:
-        """
-        Posts a comment on an issue or pull request.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -87,7 +84,7 @@ class PostComment(Tool):
             "type": "function",
             "function": {
                 "name": "post_comment",
-                "description": "Posts a comment on an issue or pull request. Specify the commentable_type and provide the corresponding issue_id or pull_request_id.",
+                "description": "Posts a comment on an issue or pull request.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -105,11 +102,11 @@ class PostComment(Tool):
                         },
                         "issue_id": {
                             "type": "string",
-                            "description": "The unique identifier of the issue to comment on. Required when commentable_type is 'issue'."
+                            "description": "The unique identifier of the issue to comment on. Required when commentable_type is 'issue' (optional)."
                         },
                         "pull_request_id": {
                             "type": "string",
-                            "description": "The unique identifier of the pull request to comment on. Required when commentable_type is 'pull_request'."
+                            "description": "The unique identifier of the pull request to comment on. Required when commentable_type is 'pull_request' (optional)."
                         }
                     },
                     "required": ["commentable_type", "author_id", "comment_body"]

@@ -10,10 +10,9 @@ class GetBranch(Tool):
         branch_name: str,
         repository_id: str,
     ) -> str:
-        """Retrieve branch information by branch_name and repository_id."""
 
         def find_branch(branches_dict: Dict[str, Any], repository_id_str: str, branch_name_str: str) -> Optional[Dict[str, Any]]:
-            """Find branch by repository_id and branch_name."""
+            
             for bid, branch in branches_dict.items():
                 if not isinstance(branch, dict):
                     continue
@@ -53,16 +52,13 @@ class GetBranch(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the get_branch function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "get_branch",
                 "description": (
-                    "Retrieve branch information by branch_name and repository_id. "
-                    "Returns complete branch details including branch_id, repository_id, branch_name, "
-                    "commit_sha, source_branch, is_default, and timestamps. "
-                    "Returns an error if branch_name or repository_id is not provided or if the branch is not found."
+                    "Retrieve branch information using the branch name and repository. Returns full branch details, or an error if required inputs are missing or the branch does not exist."
                 ),
                 "parameters": {
                     "type": "object",

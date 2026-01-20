@@ -5,8 +5,6 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateOrUpdateFile(Tool):
-    """Tool for creating or updating a file record in a repository branch in the version control system."""
-
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -17,29 +15,7 @@ class CreateOrUpdateFile(Tool):
         language: str,
         file_name: Optional[str] = None,
     ) -> str:
-        """
-        Create or update a file record in a repository branch.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository (required).
-            branch_id: The ID of the branch (required).
-            commit_id: The ID of the commit this file is associated with (required).
-            file_path: The full path to the file (required).
-            file_name: The name of the file. If not provided, defaults to basename of file_path.
-            language: The programming language of the file (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and file data.
-        """
-
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
@@ -154,7 +130,6 @@ class CreateOrUpdateFile(Tool):
 
         # Check if file already exists for this repo, branch, and path
         existing_file = None
-        existing_file_id = None
         for f_id, f in files.items():
             if (
                 str(f.get("repository_id")) == repo_id
@@ -162,7 +137,6 @@ class CreateOrUpdateFile(Tool):
                 and f.get("file_path", "").strip() == file_path
             ):
                 existing_file = f
-                existing_file_id = f_id
                 break
 
         if existing_file:
@@ -241,26 +215,25 @@ class CreateOrUpdateFile(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_or_update_file function."""
         return {
             "type": "function",
             "function": {
                 "name": "create_or_update_file",
-                "description": "Creates or updates a file record in a repository branch in the version control system. This function ensures a file record exists for the specified repository, branch, and file path. If a file with the same repository_id, branch_id, and file_path already exists, it updates the file record (updates last_commit_id, last_modified_at, and optionally language and file_name). If the file doesn't exist, it creates a new file record. The file_name parameter is optional and defaults to the basename of file_path if not provided. The directory_id is automatically determined from the file_path if a matching directory exists. Use this after confirming the repository exists using get_repo, the branch exists using get_repo_branch, and the commit exists using create_commit. After creating or updating the file record, you typically need to save the file content using create_file_content.",
+                "description": "Creates or updates a file record in a repository branch. Use this to register a new file or update an existing file's metadata in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "repo_id": {
                             "type": "string",
-                            "description": "The ID of the repository. Required field. The repository must exist.",
+                            "description": "The ID of the repository. Required field.",
                         },
                         "branch_id": {
                             "type": "string",
-                            "description": "The ID of the branch. Required field. The branch must exist and belong to the specified repository.",
+                            "description": "The ID of the branch. Required field.",
                         },
                         "commit_id": {
                             "type": "string",
-                            "description": "The ID of the commit this file is associated with. Required field. The commit must exist and belong to the specified repository.",
+                            "description": "The ID of the commit this file is associated with. Required field.",
                         },
                         "file_path": {
                             "type": "string",

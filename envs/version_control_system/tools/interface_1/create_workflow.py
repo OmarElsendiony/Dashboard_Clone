@@ -1,6 +1,6 @@
 import json
 import base64
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
 class CreateWorkflow(Tool):
@@ -12,11 +12,8 @@ class CreateWorkflow(Tool):
         workflow_name: str,
         workflow_path: str,
         trigger_event: str,
-        status: str = 'active'
+        status: Optional[str] = 'active'
     ) -> str:
-        """
-        Creates a new CI/CD workflow for a repository, enforcing permission checks.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -109,7 +106,7 @@ class CreateWorkflow(Tool):
             "type": "function",
             "function": {
                 "name": "create_workflow",
-                "description": "Creates a new workflow definition for a repository.",
+                "description": "Creates a new CI/CD workflow for a repository, enforcing permission checks.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -131,11 +128,13 @@ class CreateWorkflow(Tool):
                         },
                         "trigger_event": {
                             "type": "string",
-                            "description": "The event that triggers the workflow. Allowed values: 'push', 'pull_request', 'schedule'."
+                            "description": "The event that triggers the workflow. Allowed values: 'push', 'pull_request', 'schedule'.",
+                            "enum": ["push", "pull_request", "schedule"]
                         },
                         "status": {
                             "type": "string",
-                            "description": "The initial status of the workflow. Allowed values: 'active', 'suspended', 'deleted'. Default is 'active'."
+                            "description": "The initial status of the workflow. Allowed values: 'active', 'suspended', 'deleted'. Default is 'active' (optional)",
+                            "enum": ["active", "suspended", "deleted"]
                         }
                     },
                     "required": ["access_token", "repository_id", "workflow_name", "workflow_path", "trigger_event"]

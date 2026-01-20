@@ -1,6 +1,6 @@
 import json
 import base64
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 
@@ -10,9 +10,6 @@ class ListAccessTokens(Tool):
         data: Dict[str, Any],
         user_id: str
     ) -> str:
-        """
-        List access tokens filtered by user_id.
-        """
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
@@ -58,7 +55,7 @@ class ListAccessTokens(Tool):
             "type": "function",
             "function": {
                 "name": "list_access_tokens",
-                "description": "List access tokens for a user.",
+                "description": "Lists access tokens for a user.",
                 "parameters": {
                     "type": "object",
                     "properties": {

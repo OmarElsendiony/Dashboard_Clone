@@ -12,9 +12,6 @@ class ListCodeReviews(Tool):
         reviewer_id: str,
         status: Optional[str] = None
     ) -> str:
-        """
-        Lists code reviews for a pull request by a specific reviewer with optional status filter.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -43,7 +40,7 @@ class ListCodeReviews(Tool):
 
         # Search for code reviews matching the filters
         results = []
-        for code_review_id, code_review in code_reviews.items():
+        for _, code_review in code_reviews.items():
             # Filter by pull_request_id
             if str(code_review.get("pull_request_id")) != str(pull_request_id):
                 continue
@@ -66,7 +63,7 @@ class ListCodeReviews(Tool):
             "type": "function",
             "function": {
                 "name": "list_code_reviews",
-                "description": "Lists code reviews for a pull request by a specific reviewer with optional status filter.",
+                "description": "Lists code reviews for a pull request by a specific reviewer.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -80,7 +77,7 @@ class ListCodeReviews(Tool):
                         },
                         "status": {
                             "type": "string",
-                            "description": "Filter by code review status. Valid values: pending, resolved, outdated. Optional."
+                            "description": "Filter by code review status. Valid values: pending, resolved, outdated (optional)."
                         }
                     },
                     "required": ["pull_request_id", "reviewer_id"]

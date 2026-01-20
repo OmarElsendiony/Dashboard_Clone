@@ -12,15 +12,15 @@ class CopyRepository(Tool):
         target_repository_name: str,
         user_id: str,
     ) -> str:
-        """Copy a repository to a target project with all its entities."""
+        
         timestamp = "2026-01-01T23:59:00"
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """Generate a new unique ID for a record."""
+            
             return "1" if not table else str(max(int(k) for k in table.keys()) + 1)
 
         def validate_data_structure(data: Dict[str, Any]):
-            """Validate the data structure."""
+            
             if not isinstance(data, dict):
                 return False, "Invalid data format: 'data' must be a dict"
             return True, None
@@ -302,23 +302,13 @@ class CopyRepository(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the copy_repository function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "copy_repository",
                 "description": (
-                    "Copy a repository to a target project with all its entities. "
-                    "Creates a complete copy including commits, branches, directories, files, and file_contents. "
-                    "All entities get new IDs and are mapped to maintain relationships. "
-                    "The new repository owner_id is determined by the owner of the workspace containing the target project. "
-                    "The new repository is marked as a fork with is_fork=True and references the source repository. "
-                    "Does NOT copy repository_collaborators from the source. "
-                    "Creates new collaborator record(s): always adds user_id as admin. "
-                    "If user_id differs from the target workspace owner, also adds the workspace owner as admin. "
-                    "Validates source repository, target project, and target workspace exist. "
-                    "Ensures target repository name is unique within the target project. "
-                    "Returns the new repository details and counts of copied entities."
+                    "Copies a repository into a target project with its full history and structure. Creates new entities with preserved relationships, marks the result as a fork of the source, does not copy existing collaborators, and creates new admin access for the requesting user and the target workspace owner when different. Validates inputs, enforces name uniqueness, and returns the new repository details with counts of copied items."
                 ),
                 "parameters": {
                     "type": "object",

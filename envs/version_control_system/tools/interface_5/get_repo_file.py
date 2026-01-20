@@ -5,8 +5,7 @@ from tau_bench.envs.tool import Tool
 
 
 class GetRepoFile(Tool):
-    """Tool for retrieving file details from a repository in the version control system."""
-
+   
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -14,18 +13,7 @@ class GetRepoFile(Tool):
         file_path: str,
         file_name: Optional[str] = None,
     ) -> str:
-        """
-        Retrieve file details by repository ID and file path.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository containing the file (required).
-            file_path: The full path to the file (required).
-            file_name: The name of the file. If not provided, defaults to basename of file_path.
-
-        Returns:
-            JSON string containing the success status and file data if found.
-        """
+       
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -128,12 +116,12 @@ class GetRepoFile(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_repo_file function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "get_repo_file",
-                "description": "Retrieves file information from a repository's default branch by repository ID and file path.",
+                "description": "Retrieves file information from a repository's default branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {

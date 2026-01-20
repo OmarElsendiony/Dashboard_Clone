@@ -9,7 +9,6 @@ class RemoveFile(Tool):
         data: Dict[str, Any],
         file_id: str,
     ) -> str:
-        """Remove a file and cascade delete all its file_contents records."""
 
         # Validate data structure
         if not isinstance(data, dict):
@@ -53,18 +52,13 @@ class RemoveFile(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the remove_file function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "remove_file",
                 "description": (
-                    "Remove a file and cascade delete all its file_contents records. "
-                    "Validates that the file exists. "
-                    "Deletes all file_contents records associated with the file (all versions). "
-                    "Deletes the file record. "
-                    "Does not delete commits - only file and file_contents. "
-                    "Returns information about the deleted file and count of deleted file_contents."
+                    "Removes a file after validating its existence. Deletes the file and all associated file content versions, do not delete any commits, and returns the deleted file information along with the count of removed file content records."
                 ),
                 "parameters": {
                     "type": "object",

@@ -12,9 +12,6 @@ class ListBranches(Tool):
         is_default: Optional[bool] = None,
         branch_id: Optional[str] = None
     ) -> str:
-        """
-        List branches with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
@@ -56,25 +53,25 @@ class ListBranches(Tool):
             "type": "function",
             "function": {
                 "name": "list_branches",
-                "description": "List branches from repositories. Can filter by repository_id, branch_name, is_default, or branch_id. Returns all branches if no filters are provided.",
+                "description": "Lists branches from repositories.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "repository_id": {
                             "type": "string",
-                            "description": "Filter by repository_id (exact match)"
+                            "description": "Filter by repository_id (exact match) (optional)"
                         },
                         "branch_name": {
                             "type": "string",
-                            "description": "Filter by branch name (exact match)"
+                            "description": "Filter by branch name (exact match) (optional)"
                         },
                         "is_default": {
                             "type": "boolean",
-                            "description": "Filter by default branch status. Allowed values: True, False"
+                            "description": "Filter by default branch status. Allowed values: True, False (optional)"
                         },
                         "branch_id": {
                             "type": "string",
-                            "description": "Filter by branch_id (exact match)"
+                            "description": "Filter by branch_id (exact match) (optional)"
                         }
                     },
                     "required": []

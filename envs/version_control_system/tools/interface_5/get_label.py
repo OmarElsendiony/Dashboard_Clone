@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class GetLabel(Tool):
-    """Tool for retrieving label details from the version control system."""
 
     @staticmethod
     def invoke(
@@ -12,17 +11,7 @@ class GetLabel(Tool):
         repo_id: str,
         label_name: str,
     ) -> str:
-        """
-        Retrieve label details by repository ID and label name.
 
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository containing the label (required).
-            label_name: The name of the label to look up (required).
-
-        Returns:
-            JSON string containing the success status and label data if found.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -103,12 +92,11 @@ class GetLabel(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_label function."""
         return {
             "type": "function",
             "function": {
                 "name": "get_label",
-                "description": "Retrieves information about a label from a repository in the version control system by repository ID and label name. Use this to verify label existence or retrieve label details.",
+                "description": "Retrieves information about a label from a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

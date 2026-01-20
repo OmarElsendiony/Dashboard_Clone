@@ -181,7 +181,7 @@ class MergePullRequest(Tool):
                 "description": (
                     "Submits a review decision on a pull request and, if approved, "
                     "merges it into the target branch."
-                    "Allowed decisions include ('approved', 'changes_requested', 'commented', 'dismissed')"
+                    ""
                 ),
                 "parameters": {
                     "type": "object",
@@ -192,7 +192,7 @@ class MergePullRequest(Tool):
                         },
                         "decision": {
                             "type": "string",
-                            "description": "Review decision applied to the pull request.",
+                            "description": "Review decision applied to the pull request.Allowed decisions include ('approved', 'changes_requested', 'commented', 'dismissed')",
                         },
                         "auth_token": {
                             "type": "string",

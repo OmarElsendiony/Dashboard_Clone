@@ -21,12 +21,38 @@ class AddPullRequestComment(Tool):
         # Validate data structure
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format: 'data' must be a dict"})
-
+        
         comments_dict = data.get("comments", {})
-
+        pull_requests_dict = data.get("pull_requests", {})
+        users_dict = data.get("users", {})
+        
         pull_request_id_str = str(pull_request_id).strip()
         user_id_str = str(user_id).strip()
         body_str = str(body).strip()
+
+        # Validate user exists
+        if user_id_str not in users_dict:
+            return json.dumps({
+                "success": False,
+                "error": f"User with ID '{user_id_str}' not found"
+            })
+
+        user = users_dict[user_id_str]
+        user_status = str(user.get("status", "")).strip()
+
+        # Validate user is active
+        if user_status != "active":
+            return json.dumps({
+                "success": False,
+                "error": f"User with ID '{user_id_str}' is not active (status: {user_status})"
+            })
+
+        # Validate pull request exists
+        if pull_request_id_str not in pull_requests_dict:
+            return json.dumps({
+                "success": False,
+                "error": f"Pull request with ID '{pull_request_id_str}' not found"
+            })
 
         new_comment_id = generate_id(comments_dict)
         new_comment = {
@@ -54,11 +80,7 @@ class AddPullRequestComment(Tool):
             "type": "function",
             "function": {
                 "name": "add_pull_request_comment",
-                "description": (
-                    "Add a comment to a pull request. "
-                    "Creates a new comment entry in the comments table with commentable_type set to 'pull_request'. "
-                    "Returns the created comment details including the auto-generated comment_id."
-                ),
+                "description": "Add a comment to a pull request.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -68,7 +90,7 @@ class AddPullRequestComment(Tool):
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "The ID of the user adding the comment.",
+                            "description": "The ID of the user adding the comment. User must be active.",
                         },
                         "body": {
                             "type": "string",

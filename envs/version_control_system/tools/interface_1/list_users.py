@@ -11,9 +11,6 @@ class ListUsers(Tool):
         user_id: Optional[str] = None,
         account_type: Optional[str] = None
     ) -> str:
-        """
-        List users filtered by username, user_id, or account_type.
-        """
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
@@ -49,21 +46,22 @@ class ListUsers(Tool):
             "type": "function",
             "function": {
                 "name": "list_users",
-                "description": "List users. Can filter by username, user_id, or account_type. Returns all users if no filters are provided.",
+                "description": "Lists users with optional filters.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "username": {
                             "type": "string",
-                            "description": "Filter by username (exact match)"
+                            "description": "Filter by username (exact match) (optional)"
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "Filter by user_id (exact match)"
+                            "description": "Filter by user_id (exact match) (optional)"
                         },
                         "account_type": {
                             "type": "string",
-                            "description": "Filter by account type. Allowed values: 'personal', 'organization'"
+                            "description": "Filter by account type. Allowed values: 'personal', 'organization' (optional)",
+                            "enum" : ["personal", "organization"]
                         }
                     },
                     "required": []

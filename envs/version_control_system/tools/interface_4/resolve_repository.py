@@ -97,11 +97,9 @@ class ResolveRepository(Tool):
             "function": {
                 "name": "resolve_repository",
                 "description": (
-                    "Retrieves repository information that the authenticated user "
-                    "has access to. The tool can resolve a specific repository by name, optionally "
-                    "scoped to a project, or list all repositories accessible to the user. "
-                    "Authentication is validated using the provided token, and only repositories "
-                    "where the user is a collaborator are eligible for resolution."
+                    "Retrieves repository information that the requesting user has access to. "
+                    "Can retrieve a specific repository by name (optionally filtered by project) "
+                    "or list all accessible repositories."
                 ),
                 "parameters": {
                     "type": "object",

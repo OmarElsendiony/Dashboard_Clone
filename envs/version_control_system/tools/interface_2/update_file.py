@@ -18,15 +18,13 @@ class UpdateFile(Tool):
         commit_message: str,
         user_id: str,
     ) -> str:
-        """Update a file by creating a new commit and file_content record."""
+        
         timestamp = "2026-01-01T23:59:00"
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """Generate a new unique ID for a record."""
             return "1" if not table else str(max(int(k) for k in table.keys()) + 1)
 
         def generate_commit_sha(commit_id: str) -> str:
-            """Generate commit SHA using hashlib."""
             return hashlib.sha1(f"commit_{commit_id}".encode()).hexdigest()
 
         # Validate data structure
@@ -148,21 +146,13 @@ class UpdateFile(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the update_file function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "update_file",
                 "description": (
-                    "Update a file by creating a new commit and file_content record. "
-                    "Validates that repository, branch, file, and user exist. "
-                    "Validates that branch and file belong to the repository. "
-                    "Validates encoding is one of: utf-8, base64, binary. "
-                    "Only the content is updated - creates a new file_content record with new content and commit_id. "
-                    "Creates a new commit record with SHA-1 hash generated from 'commit_{commit_id}'. "
-                    "Updates the file's last_commit_id field. "
-                    "Updates the branch's commit_sha to the newly created commit. "
-                    "Returns the updated file, new file_content, and commit details."
+                    "Update a file by creating a new commit with updated content. Validates that the repository, branch, file, and user exist and ensures the supported encoding. Creates a new file content version, updates the branch to point to the new commit, and returns the updated file, content, and commit details."
                 ),
                 "parameters": {
                     "type": "object",

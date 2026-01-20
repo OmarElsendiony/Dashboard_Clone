@@ -5,7 +5,6 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateRepo(Tool):
-    """Tool for creating a new repository in the version control system."""
 
     @staticmethod
     def invoke(
@@ -15,38 +14,15 @@ class CreateRepo(Tool):
         default_branch: str = "main",
         description: Optional[str] = None,
     ) -> str:
-        """
-        Create a new repository in the version control system.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            owner_id: The ID of the user who will own the repository (required).
-            repo_name: The name of the repository (required, must be unique).
-            default_branch: The name of the default branch (default: main).
-            description: The description of the repository (optional).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created repository data.
-        """
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
 
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
 
         def generate_commit_sha(repo_name: str, branch_name: str, timestamp: str) -> str:
-            """
-            Generates a unique commit SHA for the initial commit.
 
-            Returns:
-                str: A 40-character hexadecimal SHA string.
-            """
             content = f"{repo_name}:{branch_name}:{timestamp}:initial"
             return hashlib.sha1(content.encode()).hexdigest()
 
@@ -130,7 +106,8 @@ class CreateRepo(Tool):
 
         # Create the default branch for the repository
         new_branch_id = generate_id(branches)
-        initial_commit_sha = generate_commit_sha(repo_name, default_branch, timestamp)
+        initial_commit_sha = generate_commit_sha(
+            repo_name, default_branch, timestamp)
 
         new_branch = {
             "branch_id": new_branch_id,
@@ -171,12 +148,12 @@ class CreateRepo(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_repo function."""
+
         return {
             "type": "function",
             "function": {
                 "name": "create_repo",
-                "description": "Creates a new repository in the version control system with the specified name and default branch.",
+                "description": "Creates a new repository in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -99,15 +99,7 @@ class ListWorkspaces(Tool):
             "type": "function",
             "function": {
                 "name": "list_workspaces",
-                "description": (
-                    "Retrieve a specific workspace by owner_id and workspace_name. "
-                    "Returns workspace details including workspace_id, workspace_name, owner_id, "
-                    "description, is_private, is_forking_allowed, and timestamps. "
-                    "Also includes workspace member details (role, status) for the specified user_id. "
-                    "If user_id is not provided, it defaults to owner_id. "
-                    "The member_details field will be null if the user is not a member of that workspace. "
-                    "Returns an error if owner_id or workspace_name is not provided or workspace is not found."
-                ),
+                "description": "Retrieves a specific workspace by owner and name with member details.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -121,7 +113,7 @@ class ListWorkspaces(Tool):
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "Optional. The ID of the user whose workspace member details to retrieve. Defaults to owner_id if not provided.",
+                            "description": "(optional) The ID of the user whose workspace member details to retrieve. Defaults to owner_id if not provided.",
                         },
                     },
                     "required": ["owner_id", "workspace_name"],

@@ -5,7 +5,6 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateCommit(Tool):
-    """Tool for creating a new commit in a repository branch in the version control system."""
 
     @staticmethod
     def invoke(
@@ -15,38 +14,12 @@ class CreateCommit(Tool):
         actor_id: str,
         message: str,
     ) -> str:
-        """
-        Create a new commit in a repository branch.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to create the commit in (required).
-            branch_id: The ID of the branch to create the commit on (required).
-            actor_id: The ID of the user creating the commit (required).
-            message: The commit message (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created commit data.
-        """
-
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
 
         def generate_commit_sha(repo_id: str, branch_id: str, actor_id: str, message: str, timestamp: str) -> str:
-            """
-            Generates a unique commit SHA for a commit.
-
-            Returns:
-                str: A 40-character hexadecimal SHA string.
-            """
             content = f"{repo_id}:{branch_id}:{actor_id}:{message}:{timestamp}"
             return hashlib.sha1(content.encode()).hexdigest()
 
@@ -155,7 +128,8 @@ class CreateCommit(Tool):
         new_commit_id = generate_id(commits)
 
         # Generate new commit SHA
-        commit_sha = generate_commit_sha(repo_id, branch_id, actor_id, message, timestamp)
+        commit_sha = generate_commit_sha(
+            repo_id, branch_id, actor_id, message, timestamp)
 
         # Create new commit record
         new_commit = {
@@ -191,12 +165,11 @@ class CreateCommit(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_commit function."""
         return {
             "type": "function",
             "function": {
                 "name": "create_commit",
-                "description": "Creates a new commit in a repository branch in the version control system. Use this to record changes to files in a branch with a commit message and author.",
+                "description":  "Creates a new commit in a repository branch in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

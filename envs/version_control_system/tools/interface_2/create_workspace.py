@@ -13,13 +13,13 @@ class CreateWorkspace(Tool):
         is_private: Optional[bool] = True,
         is_forking_allowed: Optional[bool] = False,
     ) -> str:
-        """Create a new workspace and workspace member in the system."""
+        
         timestamp = "2026-01-01T23:59:00"
 
         def check_workspace_name_uniqueness(
             workspaces_dict: Dict[str, Any], workspace_name_str: str, owner_id_str: str
         ) -> Tuple[bool, Optional[str]]:
-            """Check if workspace name is unique."""
+            
             for wid, workspace in workspaces_dict.items():
                 if (
                     str(workspace.get("workspace_name", "")).strip()
@@ -35,7 +35,7 @@ class CreateWorkspace(Tool):
         def check_free_plan_limit(
             workspaces_dict: Dict[str, Any], owner_id_str: str, owner_plan: str
         ) -> Tuple[bool, Optional[str]]:
-            """Check if free plan user already has a workspace."""
+            
             if owner_plan != "free":
                 return True, None
 
@@ -48,7 +48,7 @@ class CreateWorkspace(Tool):
             return True, None
 
         def generate_workspace_id(workspaces_dict: Dict[str, Any]) -> str:
-            """Generate a new unique workspace ID."""
+            
             if not workspaces_dict:
                 return "1"
             return str(max(int(k) for k in workspaces_dict.keys()) + 1)
@@ -128,18 +128,13 @@ class CreateWorkspace(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the create_workspace function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "create_workspace",
                 "description": (
-                    "Create a new workspace and workspace member details in Bitbucket. "
-                    "Ensures workspace_name is globally unique across all workspaces. "
-                    "For users on free plan, enforces a limit of 1 workspace per user. "
-                    "Premium users can create multiple workspaces. "
-                    "Returns the created workspace and workspace member details including the generated workspace_id. "
-                    "is_private defaults to true, is_forking_allowed defaults to false."
+                    "Create a new Bitbucket workspace with initial member details. Ensures unique workspace name, enforces plan-based limits, applies default privacy settings, and returns the created workspace information."
                 ),
                 "parameters": {
                     "type": "object",

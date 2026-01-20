@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class GetRepoPermissions(Tool):
-    """Tool for retrieving repository permissions for a specific user."""
 
     @staticmethod
     def invoke(
@@ -12,17 +11,7 @@ class GetRepoPermissions(Tool):
         repo_id: str,
         user_id: str,
     ) -> str:
-        """
-        Retrieve repository permissions for a specific user.
 
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to check permissions for (required).
-            user_id: The ID of the user to check permissions for (required).
-
-        Returns:
-            JSON string containing the success status and permission data if found.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -118,12 +107,12 @@ class GetRepoPermissions(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_repo_permissions function."""
+
         return {
             "type": "function",
             "function": {
                 "name": "get_repo_permissions",
-                "description": "Retrieves the permission level and status for a specific user on a repository. Returns the user's access level (read/write/admin) and collaboration status (active/pending/removed). Use this to verify user access rights before performing repository operations.",
+                "description": "Retrieves the permission level and collaboration status for a specific user on a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

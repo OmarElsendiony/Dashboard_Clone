@@ -23,5 +23,9 @@ Notes:
 - boolean parameters should have (True/False) in their description to show that those values are the only values to be provided
 - Any enum parameter should have its allowed values presented in the parameter description to show what argument can be passed
 - Any date parameter should show the date format as (YYYY-MM-DD) in its description
+- Clearly express what the function does, State when it should be used without mentioning the implementation details and avoid ambiguity
+- Making sure that all tool calls stick to one type, from input (arguments) to output (json.dumps). e.g int should stay as int and not change to float. To overcome this, if it is a float, cast it explicitly to float()
+- If there is an object parameter within the grand object in get_info, then you can add properties and list the fields like the grand one.
+- Take care if creating/updating an entity in a tool would require modifying another entity or table by adding records or modify ones.
 
 Your generated tools content should be presented in a bash script that can be executed to create them in files that hold the same name as the class name. Each file should contain the class definition and its methods. The files should be named as follows: {{tool_name}}.py, where {{tool_name}} is the name of the tool class. Take care that all names should be in snake_case format.

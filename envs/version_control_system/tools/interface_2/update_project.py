@@ -14,10 +14,10 @@ class UpdateProject(Tool):
         description: Optional[str] = None,
         is_private: Optional[bool] = None,
     ) -> str:
-        """Update project information."""
+        
         timestamp = "2026-01-01T23:59:00"
         def check_uniqueness(projects_dict: Dict[str, Any], workspace_id_str: str, project_id_str: str, project_key_str: Optional[str], project_name_str: Optional[str]) -> Tuple[bool, Optional[str]]:
-            """Check if project_key and project_name are unique within the workspace, excluding current project."""
+            
             for pid, project in projects_dict.items():
                 if str(pid) == project_id_str:
                     continue
@@ -36,8 +36,9 @@ class UpdateProject(Tool):
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format: 'data' must be a dict"})
         
-        if str(is_private) not in ["True", "False"]:
-            return json.dumps({"success": False, "error": "Invalid input value. Expected True or False"})
+        # Validate is_private only when provided
+        if is_private is not None and str(is_private) not in ["True", "False"]:
+            return json.dumps({"success": False, "error": "Invalid input value for is_private. Expected True or False"})
 
         # Check at least one update parameter is provided
         if not project_key and not project_name and not description and is_private is None:
@@ -94,18 +95,14 @@ class UpdateProject(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the update_project function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "update_project",
                 "description": (
-                    "Update project information including project_key, project_name, description, and privacy settings. "
-                    "At least one of project_key, project_name, description, or is_private must be provided for update. "
-                    "Validates that the project exists. "
-                    "If project_key is provided, ensures it's unique within the workspace (excluding the current project). "
-                    "If project_name is provided, ensures it's unique within the workspace (excluding the current project). "
-                    "Returns the updated project details."
+                    "Updates a project information. At least one project field must be provided for the update."
+                   
                 ),
                 "parameters": {
                     "type": "object",
@@ -120,11 +117,11 @@ class UpdateProject(Tool):
                         },
                         "project_key": {
                             "type": "string",
-                            "description": "Optional. The new unique key for the project within the workspace.",
+                            "description": "Optional. The new key for the project within the workspace.",
                         },
                         "project_name": {
                             "type": "string",
-                            "description": "Optional. The new unique name for the project within the workspace.",
+                            "description": "Optional. The new name for the project within the workspace.",
                         },
                         "description": {
                             "type": "string",

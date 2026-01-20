@@ -12,9 +12,6 @@ class StarUnstarRepo(Tool):
         repository_id: str,
         action: str
     ) -> str:
-        """
-        Stars or unstars a repository.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -106,7 +103,8 @@ class StarUnstarRepo(Tool):
                         },
                         "action": {
                             "type": "string",
-                            "description": "The action to perform. Allowed values: 'star', 'unstar'."
+                            "description": "The action to perform. Allowed values: 'star', 'unstar'.",
+                            "enum": ["star", "unstar"]
                         }
                     },
                     "required": ["access_token", "user_id", "repository_id", "action"]

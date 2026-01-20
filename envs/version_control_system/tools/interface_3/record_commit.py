@@ -17,9 +17,6 @@ class RecordCommit(Tool):
         content: str,
         encoding: str
     ) -> str:
-        """
-        Records a new commit in a repository and creates file content entry.
-        """
         def generate_deterministic_sha(seed: str, prefix: str = "") -> str:
             """Generates a pseudo-random deterministic SHA-1 hash."""
             return hashlib.sha1(f"{prefix}_{seed}".encode()).hexdigest()
@@ -127,7 +124,7 @@ class RecordCommit(Tool):
             "type": "function",
             "function": {
                 "name": "record_commit",
-                "description": "Records a new commit in a repository branch and creates a file content entry. A unique commit SHA is automatically generated.",
+                "description": "Records a new commit in a repository branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {

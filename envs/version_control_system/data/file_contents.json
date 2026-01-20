@@ -103134,5 +103134,285 @@
     "content": "#!/bin/bash\nfor i in {1..5}; do\n    echo \"Number: $i\"\ndone",
     "encoding": "utf-8",
     "created_at": "2025-12-28T22:05:32"
+  },
+  "12893": {
+    "content_id": "12893",
+    "file_id": "6401",
+    "commit_id": "8009",
+    "content": "# Nexus Core API\n\nA robust API backend for the Nexus platform.\n\n## Features\n- RESTful API endpoints\n- JWT Authentication\n- PostgreSQL integration\n\n## Getting Started\n\n```bash\npip install -r requirements.txt\npython main.py\n```",
+    "encoding": "utf-8",
+    "created_at": "2025-12-01T11:30:00"
+  },
+  "12894": {
+    "content_id": "12894",
+    "file_id": "6402",
+    "commit_id": "8010",
+    "content": "from fastapi import FastAPI, HTTPException\nfrom typing import Dict, Any\n\napp = FastAPI()\n\n@app.get(\"/api/v1/health\")\nasync def health_check() -> Dict[str, str]:\n    return {\"status\": \"healthy\"}\n\n@app.get(\"/api/v1/users/{user_id}\")\nasync def get_user(user_id: int) -> Dict[str, Any]:\n    return {\"user_id\": user_id, \"name\": \"User\"}\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-05T15:45:00"
+  },
+  "12895": {
+    "content_id": "12895",
+    "file_id": "6403",
+    "commit_id": "8010",
+    "content": "from fastapi import APIRouter\nfrom . import handler\n\nrouter = APIRouter()\n\nrouter.include_router(handler.app, prefix=\"/api/v1\")\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-05T15:45:00"
+  },
+  "12896": {
+    "content_id": "12896",
+    "file_id": "6404",
+    "commit_id": "8014",
+    "content": "from sqlalchemy import Column, Integer, String, DateTime\nfrom sqlalchemy.ext.declarative import declarative_base\nfrom datetime import datetime\n\nBase = declarative_base()\n\nclass User(Base):\n    __tablename__ = 'users'\n    \n    id = Column(Integer, primary_key=True)\n    username = Column(String(100), unique=True, nullable=False)\n    email = Column(String(255), unique=True, nullable=False)\n    created_at = Column(DateTime, default=datetime.utcnow)\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-07T14:30:00"
+  },
+  "12897": {
+    "content_id": "12897",
+    "file_id": "6405",
+    "commit_id": "8014",
+    "content": "from sqlalchemy import create_engine\nfrom sqlalchemy.orm import sessionmaker\nimport os\n\nDATABASE_URL = os.getenv(\"DATABASE_URL\", \"postgresql://localhost/nexus\")\n\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\n\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-07T14:30:00"
+  },
+  "12898": {
+    "content_id": "12898",
+    "file_id": "6406",
+    "commit_id": "8012",
+    "content": "from fastapi import Depends, HTTPException, status\nfrom fastapi.security import OAuth2PasswordBearer\nfrom .jwt_utils import decode_token\n\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\n\nasync def get_current_user(token: str = Depends(oauth2_scheme)):\n    payload = decode_token(token)\n    if payload is None:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Invalid authentication credentials\"\n        )\n    return payload\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-02T16:30:00"
+  },
+  "12899": {
+    "content_id": "12899",
+    "file_id": "6407",
+    "commit_id": "8008",
+    "content": "import jwt\nfrom datetime import datetime, timedelta\nimport os\n\nSECRET_KEY = os.getenv(\"JWT_SECRET\", \"secret\")\nALGORITHM = \"HS256\"\n\ndef create_token(data: dict, expires_delta: timedelta = timedelta(hours=24)):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n\ndef decode_token(token: str):\n    try:\n        return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])\n    except jwt.PyJWTError:\n        return None\n",
+    "encoding": "utf-8",
+    "created_at": "2025-11-20T10:15:00"
+  },
+  "12900": {
+    "content_id": "12900",
+    "file_id": "6408",
+    "commit_id": "8011",
+    "content": "import pytest\nfrom fastapi.testclient import TestClient\nfrom src.api.handler import app\n\nclient = TestClient(app)\n\ndef test_health_check():\n    response = client.get(\"/api/v1/health\")\n    assert response.status_code == 200\n    assert response.json() == {\"status\": \"healthy\"}\n\ndef test_get_user():\n    response = client.get(\"/api/v1/users/1\")\n    assert response.status_code == 200\n    assert \"user_id\" in response.json()\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-10T09:00:00"
+  },
+  "12901": {
+    "content_id": "12901",
+    "file_id": "6409",
+    "commit_id": "8009",
+    "content": "# API Documentation\n\n## Endpoints\n\n### Health Check\n- `GET /api/v1/health` - Check API health\n\n### Users\n- `GET /api/v1/users/{id}` - Get user by ID\n- `POST /api/v1/users` - Create new user\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-01T11:30:00"
+  },
+  "12902": {
+    "content_id": "12902",
+    "file_id": "6410",
+    "commit_id": "8006",
+    "content": "name: CI\non:\n  push:\n    branches: [main]\n  pull_request:\n    branches: [main]\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - name: Set up Python\n        uses: actions/setup-python@v4\n        with:\n          python-version: '3.11'\n      - name: Install dependencies\n        run: pip install -r requirements.txt\n      - name: Run tests\n        run: pytest\n",
+    "encoding": "utf-8",
+    "created_at": "2025-11-10T09:30:00"
+  },
+  "12903": {
+    "content_id": "12903",
+    "file_id": "6411",
+    "commit_id": "8015",
+    "content": "fastapi==0.104.1\nuvicorn==0.24.0\nsqlalchemy==2.0.23\npsycopg2-binary==2.9.9\npyjwt==2.8.0\npytest==7.4.3\nhttpx==0.25.2\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-08T11:15:00"
+  },
+  "12904": {
+    "content_id": "12904",
+    "file_id": "6412",
+    "commit_id": "8024",
+    "content": "# Quantum Algorithms Library\n\nA Python library for quantum computing simulations.\n\n## Features\n- Quantum gate implementations\n- Shor's algorithm\n- Grover's search algorithm\n- State vector simulator\n\n## Installation\n\n```bash\npython setup.py install\n```\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-28T11:30:00"
+  },
+  "12905": {
+    "content_id": "12905",
+    "file_id": "6413",
+    "commit_id": "8026",
+    "content": "import numpy as np\nfrom typing import List\n\nclass QuantumGate:\n    def __init__(self, matrix: np.ndarray):\n        self.matrix = matrix\n    \n    def apply(self, state: np.ndarray) -> np.ndarray:\n        return np.dot(self.matrix, state)\n\n# Pauli gates\nX = QuantumGate(np.array([[0, 1], [1, 0]]))\nY = QuantumGate(np.array([[0, -1j], [1j, 0]]))\nZ = QuantumGate(np.array([[1, 0], [0, -1]]))\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-05T15:00:00"
+  },
+  "12906": {
+    "content_id": "12906",
+    "file_id": "6414",
+    "commit_id": "8019",
+    "content": "import numpy as np\nfrom .basic_gates import QuantumGate\n\n# Hadamard gate\nH = QuantumGate(np.array([[1, 1], [1, -1]]) / np.sqrt(2))\n\ndef create_superposition(n_qubits: int) -> np.ndarray:\n    \"\"\"Create uniform superposition state.\"\"\"\n    state = np.zeros(2**n_qubits)\n    state[0] = 1\n    for _ in range(n_qubits):\n        state = H.apply(state)\n    return state\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-08T11:00:00"
+  },
+  "12907": {
+    "content_id": "12907",
+    "file_id": "6415",
+    "commit_id": "8019",
+    "content": "import numpy as np\nfrom .basic_gates import QuantumGate\n\n# CNOT (Controlled-NOT) gate\nCNOT = QuantumGate(np.array([\n    [1, 0, 0, 0],\n    [0, 1, 0, 0],\n    [0, 0, 0, 1],\n    [0, 0, 1, 0]\n]))\n\ndef entangle(state: np.ndarray) -> np.ndarray:\n    \"\"\"Create Bell state from |00>.\"\"\"\n    return CNOT.apply(state)\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-08T11:00:00"
+  },
+  "12908": {
+    "content_id": "12908",
+    "file_id": "6416",
+    "commit_id": "8022",
+    "content": "import numpy as np\nfrom typing import Callable\n\ndef shor_algorithm(N: int) -> int:\n    \"\"\"Shor's algorithm for integer factorization.\n    \n    Args:\n        N: Number to factorize\n    \n    Returns:\n        A non-trivial factor of N\n    \"\"\"\n    # Simplified classical simulation\n    for a in range(2, int(np.sqrt(N)) + 1):\n        if N % a == 0:\n            return a\n    return N\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-20T14:45:00"
+  },
+  "12909": {
+    "content_id": "12909",
+    "file_id": "6417",
+    "commit_id": "8023",
+    "content": "import numpy as np\nfrom typing import Callable, List\n\ndef grover_search(oracle: Callable, n_qubits: int, iterations: int = None) -> int:\n    \"\"\"Grover's quantum search algorithm.\n    \n    Args:\n        oracle: Function that marks the target state\n        n_qubits: Number of qubits\n        iterations: Number of Grover iterations\n    \n    Returns:\n        Index of the marked element\n    \"\"\"\n    if iterations is None:\n        iterations = int(np.pi / 4 * np.sqrt(2**n_qubits))\n    # Simplified simulation\n    return oracle(n_qubits)\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-25T10:00:00"
+  },
+  "12910": {
+    "content_id": "12910",
+    "file_id": "6418",
+    "commit_id": "8020",
+    "content": "import numpy as np\nfrom typing import List\n\nclass StateVector:\n    def __init__(self, n_qubits: int):\n        self.n_qubits = n_qubits\n        self.state = np.zeros(2**n_qubits, dtype=complex)\n        self.state[0] = 1  # Initialize to |0...0>\n    \n    def apply_gate(self, gate, qubit: int):\n        # Apply single-qubit gate to specified qubit\n        pass\n    \n    def measure(self) -> List[int]:\n        probs = np.abs(self.state)**2\n        outcome = np.random.choice(len(probs), p=probs)\n        return [int(b) for b in format(outcome, f'0{self.n_qubits}b')]\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-10T16:00:00"
+  },
+  "12911": {
+    "content_id": "12911",
+    "file_id": "6419",
+    "commit_id": "8019",
+    "content": "import pytest\nimport numpy as np\nfrom src.gates.basic_gates import X, Y, Z\nfrom src.gates.hadamard import H\n\ndef test_pauli_x():\n    state = np.array([1, 0])\n    result = X.apply(state)\n    np.testing.assert_array_equal(result, [0, 1])\n\ndef test_hadamard():\n    state = np.array([1, 0])\n    result = H.apply(state)\n    expected = np.array([1, 1]) / np.sqrt(2)\n    np.testing.assert_array_almost_equal(result, expected)\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-08T11:05:00"
+  },
+  "12912": {
+    "content_id": "12912",
+    "file_id": "6420",
+    "commit_id": "8024",
+    "content": "# Quantum Algorithms\n\n## Shor's Algorithm\nInteger factorization in polynomial time.\n\n## Grover's Algorithm\nQuantum search with O(sqrt(N)) complexity.\n\n## Usage\n```python\nfrom src.algorithms import shor, grover\nresult = shor.shor_algorithm(15)\n```\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-28T11:30:00"
+  },
+  "12913": {
+    "content_id": "12913",
+    "file_id": "6421",
+    "commit_id": "8025",
+    "content": "import time\nimport numpy as np\nfrom src.simulator.state_vector import StateVector\n\ndef benchmark_state_vector(n_qubits: int, iterations: int = 100):\n    start = time.time()\n    for _ in range(iterations):\n        sv = StateVector(n_qubits)\n        sv.measure()\n    elapsed = time.time() - start\n    print(f\"n_qubits={n_qubits}: {elapsed/iterations*1000:.2f}ms per iteration\")\n\nif __name__ == \"__main__\":\n    for n in range(2, 12):\n        benchmark_state_vector(n)\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-02T09:15:00"
+  },
+  "12914": {
+    "content_id": "12914",
+    "file_id": "6422",
+    "commit_id": "8027",
+    "content": "from setuptools import setup, find_packages\n\nsetup(\n    name=\"quantum-algorithms\",\n    version=\"0.1.0\",\n    packages=find_packages(),\n    install_requires=[\n        \"numpy>=1.24.0\",\n        \"scipy>=1.11.0\",\n    ],\n    python_requires=\">=3.9\",\n)\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-07T08:30:00"
+  },
+  "12915": {
+    "content_id": "12915",
+    "file_id": "6423",
+    "commit_id": "8037",
+    "content": "# Stellar Gateway Service\n\nA high-performance API Gateway written in Go.\n\n## Features\n- Request routing\n- Load balancing\n- Circuit breaker pattern\n- Health checks\n- Caching middleware\n\n## Quick Start\n\n```bash\ngo build -o gateway\n./gateway\n```\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-02T10:15:00"
+  },
+  "12916": {
+    "content_id": "12916",
+    "file_id": "6424",
+    "commit_id": "8032",
+    "content": "package routing\n\nimport (\n\t\"net/http\"\n\t\"sync\"\n)\n\ntype Router struct {\n\troutes map[string]http.Handler\n\tmu     sync.RWMutex\n}\n\nfunc NewRouter() *Router {\n\treturn &Router{routes: make(map[string]http.Handler)}\n}\n\nfunc (r *Router) Handle(path string, handler http.Handler) {\n\tr.mu.Lock()\n\tdefer r.mu.Unlock()\n\tr.routes[path] = handler\n}\n\nfunc (r *Router) ServeHTTP(w http.ResponseWriter, req *http.Request) {\n\tr.mu.RLock()\n\thandler, ok := r.routes[req.URL.Path]\n\tr.mu.RUnlock()\n\tif ok {\n\t\thandler.ServeHTTP(w, req)\n\t} else {\n\t\thttp.NotFound(w, req)\n\t}\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-20T11:30:00"
+  },
+  "12917": {
+    "content_id": "12917",
+    "file_id": "6425",
+    "commit_id": "8031",
+    "content": "package routing\n\ntype Route struct {\n\tPath    string\n\tMethod  string\n\tHandler string\n}\n\nvar DefaultRoutes = []Route{\n\t{\"/health\", \"GET\", \"health.Handler\"},\n\t{\"/api/v1/*\", \"ANY\", \"proxy.Handler\"},\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-18T14:00:00"
+  },
+  "12918": {
+    "content_id": "12918",
+    "file_id": "6426",
+    "commit_id": "8032",
+    "content": "package middleware\n\nimport (\n\t\"net/http\"\n\t\"time\"\n)\n\nfunc RequestLogger(next http.Handler) http.Handler {\n\treturn http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {\n\t\tstart := time.Now()\n\t\tnext.ServeHTTP(w, r)\n\t\tduration := time.Since(start)\n\t\t// Log request details\n\t\t_ = duration\n\t})\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-20T11:30:00"
+  },
+  "12919": {
+    "content_id": "12919",
+    "file_id": "6427",
+    "commit_id": "8033",
+    "content": "package middleware\n\nimport (\n\t\"net/http\"\n\t\"sync\"\n\t\"time\"\n)\n\ntype Cache struct {\n\tdata map[string]cacheEntry\n\tmu   sync.RWMutex\n\tttl  time.Duration\n}\n\ntype cacheEntry struct {\n\tvalue     []byte\n\texpiresAt time.Time\n}\n\nfunc NewCache(ttl time.Duration) *Cache {\n\treturn &Cache{data: make(map[string]cacheEntry), ttl: ttl}\n}\n\nfunc (c *Cache) Get(key string) ([]byte, bool) {\n\tc.mu.RLock()\n\tdefer c.mu.RUnlock()\n\tentry, ok := c.data[key]\n\tif !ok || time.Now().After(entry.expiresAt) {\n\t\treturn nil, false\n\t}\n\treturn entry.value, true\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-22T16:45:00"
+  },
+  "12920": {
+    "content_id": "12920",
+    "file_id": "6428",
+    "commit_id": "8036",
+    "content": "package middleware\n\nimport (\n\t\"sync\"\n\t\"time\"\n)\n\ntype CircuitBreaker struct {\n\tfailures    int\n\tthreshold   int\n\ttimeout     time.Duration\n\tlastFailure time.Time\n\tmu          sync.Mutex\n\tstate       string\n}\n\nfunc NewCircuitBreaker(threshold int, timeout time.Duration) *CircuitBreaker {\n\treturn &CircuitBreaker{threshold: threshold, timeout: timeout, state: \"closed\"}\n}\n\nfunc (cb *CircuitBreaker) Allow() bool {\n\tcb.mu.Lock()\n\tdefer cb.mu.Unlock()\n\tif cb.state == \"open\" && time.Since(cb.lastFailure) > cb.timeout {\n\t\tcb.state = \"half-open\"\n\t}\n\treturn cb.state != \"open\"\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-30T14:30:00"
+  },
+  "12921": {
+    "content_id": "12921",
+    "file_id": "6429",
+    "commit_id": "8034",
+    "content": "package loadbalancer\n\nimport (\n\t\"sync/atomic\"\n)\n\ntype Balancer struct {\n\tbackends []string\n\tcurrent  uint64\n}\n\nfunc NewBalancer(backends []string) *Balancer {\n\treturn &Balancer{backends: backends}\n}\n\nfunc (b *Balancer) Next() string {\n\tn := atomic.AddUint64(&b.current, 1)\n\treturn b.backends[n%uint64(len(b.backends))]\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-25T10:45:00"
+  },
+  "12922": {
+    "content_id": "12922",
+    "file_id": "6430",
+    "commit_id": "8040",
+    "content": "package health\n\nimport (\n\t\"encoding/json\"\n\t\"net/http\"\n)\n\ntype HealthResponse struct {\n\tStatus  string `json:\"status\"`\n\tVersion string `json:\"version\"`\n}\n\nfunc Handler(w http.ResponseWriter, r *http.Request) {\n\tresp := HealthResponse{Status: \"healthy\", Version: \"1.0.0\"}\n\tw.Header().Set(\"Content-Type\", \"application/json\")\n\tjson.NewEncoder(w).Encode(resp)\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-08T11:00:00"
+  },
+  "12923": {
+    "content_id": "12923",
+    "file_id": "6431",
+    "commit_id": "8040",
+    "content": "package health\n\nimport (\n\t\"sync/atomic\"\n\t\"time\"\n)\n\ntype Metrics struct {\n\trequestCount  uint64\n\terrorCount    uint64\n\ttotalLatency  uint64\n}\n\nfunc (m *Metrics) RecordRequest(latency time.Duration, isError bool) {\n\tatomic.AddUint64(&m.requestCount, 1)\n\tatomic.AddUint64(&m.totalLatency, uint64(latency.Milliseconds()))\n\tif isError {\n\t\tatomic.AddUint64(&m.errorCount, 1)\n\t}\n}\n\nfunc (m *Metrics) GetStats() (requests, errors, avgLatency uint64) {\n\trequests = atomic.LoadUint64(&m.requestCount)\n\terrors = atomic.LoadUint64(&m.errorCount)\n\tif requests > 0 {\n\t\tavgLatency = atomic.LoadUint64(&m.totalLatency) / requests\n\t}\n\treturn\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-08T11:00:00"
+  },
+  "12924": {
+    "content_id": "12924",
+    "file_id": "6432",
+    "commit_id": "8038",
+    "content": "package routing\n\nimport (\n\t\"net/http\"\n\t\"net/http/httptest\"\n\t\"testing\"\n)\n\nfunc TestRouter_Handle(t *testing.T) {\n\tr := NewRouter()\n\tr.Handle(\"/test\", http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {\n\t\tw.WriteHeader(http.StatusOK)\n\t}))\n\t\n\treq := httptest.NewRequest(\"GET\", \"/test\", nil)\n\trec := httptest.NewRecorder()\n\tr.ServeHTTP(rec, req)\n\t\n\tif rec.Code != http.StatusOK {\n\t\tt.Errorf(\"expected 200, got %d\", rec.Code)\n\t}\n}\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-05T15:30:00"
+  },
+  "12925": {
+    "content_id": "12925",
+    "file_id": "6433",
+    "commit_id": "8037",
+    "content": "# Architecture\n\n## Components\n\n### Router\nHandles incoming requests and routes to appropriate backends.\n\n### Load Balancer\nDistributes requests across multiple backend instances.\n\n### Circuit Breaker\nPrevents cascading failures by stopping requests to failing services.\n\n### Cache\nReduces backend load with TTL-based response caching.\n",
+    "encoding": "utf-8",
+    "created_at": "2026-01-02T10:15:00"
+  },
+  "12926": {
+    "content_id": "12926",
+    "file_id": "6434",
+    "commit_id": "8036",
+    "content": "server:\n  port: 8080\n  read_timeout: 30s\n  write_timeout: 30s\n\nupstream:\n  backends:\n    - http://backend1:8081\n    - http://backend2:8081\n    - http://backend3:8081\n\ncircuit_breaker:\n  threshold: 5\n  timeout: 30s\n\ncache:\n  ttl: 60s\n  max_size: 1000\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-30T14:35:00"
+  },
+  "12927": {
+    "content_id": "12927",
+    "file_id": "6435",
+    "commit_id": "8029",
+    "content": "module github.com/stellar-innovations-group/stellar-gateway-service\n\ngo 1.21\n\nrequire (\n\tgithub.com/prometheus/client_golang v1.17.0\n\tgopkg.in/yaml.v3 v3.0.1\n)\n",
+    "encoding": "utf-8",
+    "created_at": "2025-12-15T12:10:00"
   }
 }

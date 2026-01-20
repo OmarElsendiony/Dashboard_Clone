@@ -10,9 +10,6 @@ class RemoveRepository(Tool):
         data: Dict[str, Any],
         repository_id: str
     ) -> str:
-        """
-        Deletes a repository and all its associated data from the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -195,7 +192,7 @@ class RemoveRepository(Tool):
             "type": "function",
             "function": {
                 "name": "remove_repository",
-                "description": "Permanently deletes a repository and all its associated data from the version control system. This includes all branches, commits, files, pull requests, issues, collaborators, labels, workflows, releases, stars, and notifications.",
+                "description": "Permanently deletes a repository and all its associated data from the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -152,7 +152,7 @@ You must halt execution and **escalate to human** (**escalate_to_human**) when a
 
    5.1. Retrieve the target user to be added using **resolve_user_identity** and confirm the user exists and is active.
 
-   5.2. Check the target user is not already a collaborator using **list_repository_collaborators** and confirm the collaborator does not exist. Confirm if the collaborator exist then the status should be "removed".
+   5.2. Check the target user is not already a collaborator using **list_repository_collaborators** and confirm the collaborator does not exist. If the collaborator exist and the status is "removed" then to add back the user, update collaborator status using modify_collaborator_access.
 
    5.3. Add the collaborator using **add_repository_collaborator**
 
@@ -328,7 +328,7 @@ You must halt execution and **escalate to human** (**escalate_to_human**) when a
 
 5. Retrieve the branch using **fetch_entity_info** and confirm the branch exists.
 
-6. Create the workflow file at ./workflows/[name].yaml using **add_new_file**
+6. Create the workflow file at .github/workflows/ using **add_new_file**
 
 7. Create the workflow record using **register_workflow**
 

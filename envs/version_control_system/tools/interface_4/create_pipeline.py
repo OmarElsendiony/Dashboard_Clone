@@ -150,8 +150,6 @@ class CreatePipeline(Tool):
                 "description": (
                     "Creates a new CI/CD workflow (pipeline) for a repository. "
                     "The requesting user must have write or admin permission. "
-                    "The workflow is created in an active state and defaults to "
-                    "triggering on push events."
                 ),
                 "parameters": {
                     "type": "object",

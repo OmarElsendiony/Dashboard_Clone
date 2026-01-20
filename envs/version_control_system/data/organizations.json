@@ -398,5 +398,35 @@
     "plan_type": "team",
     "created_at": "2023-11-06T09:24:05",
     "updated_at": "2025-02-09T11:47:07"
+  },
+  "41": {
+    "organization_id": "41",
+    "organization_name": "nexus-tech-solutions",
+    "visibility": "public",
+    "display_name": "Nexus Tech Solutions Inc",
+    "description": "A leading technology solutions provider",
+    "plan_type": "enterprise",
+    "created_at": "2025-10-15T08:30:00",
+    "updated_at": "2026-01-05T14:22:18"
+  },
+  "42": {
+    "organization_id": "42",
+    "organization_name": "quantum-dynamics-corp",
+    "visibility": "public",
+    "display_name": "Quantum Dynamics Corporation",
+    "description": "Innovative quantum computing research",
+    "plan_type": "enterprise",
+    "created_at": "2025-11-20T10:15:30",
+    "updated_at": "2026-01-08T09:45:00"
+  },
+  "43": {
+    "organization_id": "43",
+    "organization_name": "stellar-innovations-group",
+    "visibility": "public",
+    "display_name": "Stellar Innovations Group LLC",
+    "description": "Pioneering software development",
+    "plan_type": "team",
+    "created_at": "2025-12-01T12:00:00",
+    "updated_at": "2026-01-09T08:00:00"
   }
 }

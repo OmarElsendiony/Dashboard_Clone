@@ -12,7 +12,6 @@ class FetchPullRequest(Tool):
         title: Optional[str] = None,
         status: Optional[str] = None,
     ) -> str:
-        """Fetch pull request(s) from a repository based on filters."""
 
         # Validate data structure
         if not isinstance(data, dict):
@@ -79,22 +78,11 @@ class FetchPullRequest(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the fetch_pull_request function."""
         return {
             "type": "function",
             "function": {
                 "name": "fetch_pull_request",
-                "description": (
-                    "Fetch pull request(s) from a repository based on optional filters. "
-                    "Validates that the repository exists. "
-                    "If pull_request_number is provided, returns the PR with that exact number. "
-                    "If title is provided, returns PR with that exact title. "
-                    "If status is provided, returns PR(s) with that status (open/closed/merged/draft). "
-                    "Filters can be combined: pull_request_number and title must match the same PR, "
-                    "but status can return multiple PRs. "
-                    "If no filters are provided, returns all PRs in the repository. "
-                    "Returns an array of pull requests with a count field indicating total matches."
-                ),
+                "description": "Fetch pull request(s) from a repository based on optional filters.",
                 "parameters": {
                     "type": "object",
                     "properties": {

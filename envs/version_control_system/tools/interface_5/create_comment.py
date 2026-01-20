@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateComment(Tool):
-    """Tool for creating a comment on an issue or pull request in the version control system."""
 
     @staticmethod
     def invoke(
@@ -14,27 +13,8 @@ class CreateComment(Tool):
         actor_id: str,
         body: str,
     ) -> str:
-        """
-        Create a new comment on an issue or pull request.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            reference_type: The type of reference to comment on (issue/pull_request). Required.
-            reference_id: The ID of the issue or pull request to comment on. Required.
-            actor_id: The ID of the user creating the comment. Required.
-            body: The content of the comment. Required.
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created comment data.
-        """
-
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
+           
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
@@ -64,7 +44,8 @@ class CreateComment(Tool):
             return json.dumps({"success": False, "error": "body must be a non-empty string"})
 
         # Validate reference_type
-        reference_type = reference_type.strip().lower() if isinstance(reference_type, str) else ""
+        reference_type = reference_type.strip().lower(
+        ) if isinstance(reference_type, str) else ""
         allowed_reference_types = {"issue", "pull_request"}
         if reference_type not in allowed_reference_types:
             return json.dumps({
@@ -159,18 +140,18 @@ class CreateComment(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_comment function."""
         return {
             "type": "function",
             "function": {
                 "name": "create_comment",
-                "description": "Creates a new comment on an issue or pull request in the version control system. The comment will be associated with the specified reference and authored by the given user.",
+                "description": "Creates a new comment on an issue or pull request in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "reference_type": {
                             "type": "string",
-                            "description": "The type of reference to comment on (issue or pull_request).",
+                            "description": "The type of reference to comment on.",
+                            "enum": ["issue", "pull_request"]
                         },
                         "reference_id": {
                             "type": "string",

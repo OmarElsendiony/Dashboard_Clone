@@ -17,9 +17,6 @@ class AddCodeReview(Tool):
         status: Optional[str] = None,
         code_review_id: Optional[str] = None
     ) -> str:
-        """
-        Creates or updates a code review entry on a pull request.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 

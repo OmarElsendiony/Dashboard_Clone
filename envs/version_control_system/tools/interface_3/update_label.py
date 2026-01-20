@@ -12,9 +12,6 @@ class UpdateLabel(Tool):
         pr_ids: Optional[Dict[str, str]] = None,
         issue_ids: Optional[Dict[str, str]] = None
     ) -> str:
-        """
-        Updates a label by adding or removing pull request IDs or issue IDs.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 

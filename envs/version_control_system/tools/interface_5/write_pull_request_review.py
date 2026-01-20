@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class WritePullRequestReview(Tool):
-    """Tool for requesting or submitting pull request reviews in the version control system."""
 
     @staticmethod
     def invoke(
@@ -16,30 +15,10 @@ class WritePullRequestReview(Tool):
         review_state: Optional[str] = None,
         body: Optional[str] = None,
     ) -> str:
-        """
-        Request a review from a user or submit an existing pending review.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            action: The action to perform. Must be one of: "request" (request a review), "submit" (submit a review).
-            pull_request_id: The ID of the pull request (required).
-            reviewer_id: The ID of the user to request a review from. Required for "request" action.
-            review_id: The ID of the existing pending review to submit. Required for "submit" action.
-            review_state: The state of the review. Must be one of: approved, changes_requested.
-                          Required for "submit" action.
-            body: The body/comment of the review. Optional for "submit" action.
-
-        Returns:
-            JSON string containing the success status and review data.
-        """
+      
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
+           
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
@@ -232,18 +211,18 @@ class WritePullRequestReview(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the write_pull_request_review function."""
         return {
             "type": "function",
             "function": {
                 "name": "write_pull_request_review",
-                "description": "Request a review from a user or submit an existing review on a pull request. Use action='request' to request a review from a specific user. Use action='submit' to submit a review with a state and optional body text.",
+                "description": "Requests a review from a user or submits an existing review on a pull request.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "The action to perform. Must be one of: 'request' (request a review from a user), 'submit' (submit a review).",
+                            "description": "The action to perform.",
+                            "enum": ["request", "submit"]
                         },
                         "pull_request_id": {
                             "type": "string",
@@ -259,7 +238,8 @@ class WritePullRequestReview(Tool):
                         },
                         "review_state": {
                             "type": "string",
-                            "description": "The state of the review. Must be one of: 'approved', 'changes_requested'. Required for 'submit' action.",
+                            "description": "The state of the review. ",
+                             "enum": ["approved", "changes_requested"]
                         },
                         "body": {
                             "type": "string",

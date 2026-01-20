@@ -13,9 +13,6 @@ class CreateBranch(Tool):
         branch_name: str,
         source_branch: Optional[str] = None
     ) -> str:
-        """
-        Create a new branch in a repository.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -169,7 +166,7 @@ class CreateBranch(Tool):
             "type": "function",
             "function": {
                 "name": "create_branch",
-                "description": "Create a new branch in a repository. If source_branch is provided, the new branch will be created from that branch; otherwise, it will be created from the default branch. If no default branch exists, this will be the first branch. Requires write or admin access to the repository. Cannot create branches in archived repositories.",
+                "description": "Creates a new branch in a repository",
                 "parameters": {
                     "type": "object",
                     "properties": {

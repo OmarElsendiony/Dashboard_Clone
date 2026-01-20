@@ -4,7 +4,6 @@ from tau_bench.envs.tool import Tool
 
 
 class MergeRepoPullRequest(Tool):
-    """Tool for merging a pull request in a repository in the version control system."""
 
     @staticmethod
     def invoke(
@@ -12,18 +11,6 @@ class MergeRepoPullRequest(Tool):
         pull_request_id: str,
         actor_id: str,
     ) -> str:
-        """
-        Merge a pull request.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            pull_request_id: The ID of the pull request to merge (required).
-            actor_id: The ID of the user performing the merge (required).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and merged pull request data.
-        """
-
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -162,12 +149,11 @@ class MergeRepoPullRequest(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the merge_repo_pull_request function."""
         return {
             "type": "function",
             "function": {
                 "name": "merge_repo_pull_request",
-                "description": "Merge a pull request in a repository. The pull request status is set to 'merged'. Only pull requests with 'open' or 'draft' status can be merged.",
+                "description": "Merges a pull request in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {

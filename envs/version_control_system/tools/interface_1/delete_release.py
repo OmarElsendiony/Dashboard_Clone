@@ -10,9 +10,6 @@ class DeleteRelease(Tool):
         access_token: str,
         release_id: str
     ) -> str:
-        """
-        Deletes a release record.
-        """
         timestamp = "2026-01-01T23:59:00"
 
         try:

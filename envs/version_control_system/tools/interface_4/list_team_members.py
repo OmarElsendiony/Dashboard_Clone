@@ -64,10 +64,6 @@ class ListTeamMembers(Tool):
                 "name": "list_team_members",
                 "description": (
                     "Retrieves the list of members associated with a specific entity. "
-                    "The entity can be an organization, a project, or a repository. "
-                    "The requesting user must provide a valid authentication token. "
-                    "The tool returns all membership or collaboration records linked "
-                    "to the specified entity identifier."
                 ),
                 "parameters": {
                     "type": "object",

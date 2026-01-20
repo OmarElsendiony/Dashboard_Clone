@@ -14,9 +14,6 @@ class ReviseIssue(Tool):
         assignee_id: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
-        """
-        Updates an existing issue's title, description, assignee, or status.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -77,7 +74,7 @@ class ReviseIssue(Tool):
             "type": "function",
             "function": {
                 "name": "revise_issue",
-                "description": "Updates an existing issue. Allows modifying the title, description, assignee, and status. At least one field must be provided for update.",
+                "description": "Updates an existing issue.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -87,19 +84,19 @@ class ReviseIssue(Tool):
                         },
                         "title": {
                             "type": "string",
-                            "description": "The new title for the issue. Optional."
+                            "description": "The new title for the issue (optional)."
                         },
                         "description": {
                             "type": "string",
-                            "description": "The new description for the issue. Optional."
+                            "description": "The new description for the issue (optional)."
                         },
                         "assignee_id": {
                             "type": "string",
-                            "description": "The unique identifier of the user to assign to this issue. Optional."
+                            "description": "The unique identifier of the user to assign to this issue (optional)."
                         },
                         "status": {
                             "type": "string",
-                            "description": "The new status for the issue. Valid values: open, closed, in_progress. Optional."
+                            "description": "The new status for the issue. Valid values: open, closed, in_progress (optional)."
                         }
                     },
                     "required": ["issue_id"]

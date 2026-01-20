@@ -11,9 +11,6 @@ class GetRepositoryPermissions(Tool):
         access_token: str,
         repository_id: str
     ) -> str:
-        """
-        Get repository permissions for the authenticated user.
-        """
         valid_permissions = {'read', 'write', 'admin'}
 
         def get_user_from_token(token: str, tokens_data: Dict[str, Any]) -> str:
@@ -140,7 +137,7 @@ class GetRepositoryPermissions(Tool):
             "type": "function",
             "function": {
                 "name": "get_repository_permissions",
-                "description": "Get repository permissions for the authenticated user. Returns the permission level (read, write, admin) based on ownership, organization membership, or collaborator status.",
+                "description": "Gets repository permissions for the authenticated user.",
                 "parameters": {
                     "type": "object",
                     "properties": {

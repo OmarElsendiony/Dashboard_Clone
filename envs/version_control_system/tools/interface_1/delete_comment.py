@@ -10,12 +10,7 @@ class DeleteComment(Tool):
         access_token: str,
         comment_id: str
     ) -> str:
-        """
-        Deletes a comment.
-        """
         timestamp = "2026-01-01T23:59:00"
-
-       
         try:
             encoded_input_token = base64.b64encode(access_token.encode('utf-8')).decode('utf-8')
         except Exception:

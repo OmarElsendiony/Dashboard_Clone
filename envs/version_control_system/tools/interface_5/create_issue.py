@@ -4,8 +4,7 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateIssue(Tool):
-    """Tool for creating a new issue in a repository in the version control system."""
-
+   
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -16,40 +15,12 @@ class CreateIssue(Tool):
         issue_type: str = "bug",
         priority: str = "medium",
     ) -> str:
-        """
-        Create a new issue in a repository.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to create the issue in (required).
-            actor_id: The ID of the user creating the issue (required).
-            title: The title of the issue (required).
-            description: The description of the issue (optional).
-            issue_type: The type of issue (bug/feature/documentation/question/enhancement, default: bug).
-            priority: The priority of the issue (low/medium/high/critical, default: medium).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created issue data.
-        """
-
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
 
         def get_next_issue_number(issues: Dict[str, Any]) -> int:
-            """
-            Generates the next issue number.
-
-            Returns:
-                int: The next issue number.
-            """
             if not issues:
                 return 1
             return max(int(issue.get("issue_number", 0)) for issue in issues.values()) + 1
@@ -162,7 +133,6 @@ class CreateIssue(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_issue function."""
         return {
             "type": "function",
             "function": {
@@ -189,11 +159,13 @@ class CreateIssue(Tool):
                         },
                         "issue_type": {
                             "type": "string",
-                            "description": "Issue type; allowed values: bug, feature, documentation, question, enhancement. Defaults to bug.",
+                            "description": "The type of issue.",
+                            "enum": ["bug", "feature", "documentation", "question", "enhancement"]
                         },
                         "priority": {
                             "type": "string",
-                            "description": "Issue priority; allowed values: low, medium, high, critical. Defaults to medium.",
+                            "description": "The priority of the issue.",
+                            "enum": ["low", "medium", "high", "critical"]
                         },
                     },
                     "required": ["repo_id", "actor_id", "title"],

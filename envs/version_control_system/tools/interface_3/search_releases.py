@@ -14,9 +14,6 @@ class SearchReleases(Tool):
         is_draft: Optional[bool] = None,
         is_prerelease: Optional[bool] = None
     ) -> str:
-        """
-        Searches for releases in a repository with optional filters.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 
@@ -32,7 +29,7 @@ class SearchReleases(Tool):
 
         # Search for releases matching the filters
         results = []
-        for release_id, release in releases.items():
+        for _, release in releases.items():
             # Filter by repository_id
             if str(release.get("repository_id")) != str(repository_id):
                 continue
@@ -63,7 +60,7 @@ class SearchReleases(Tool):
             "type": "function",
             "function": {
                 "name": "search_releases",
-                "description": "Searches for releases in a repository with optional filters. Returns a list of releases matching the criteria.",
+                "description": "Searches for releases in a repository.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -73,19 +70,19 @@ class SearchReleases(Tool):
                         },
                         "author_id": {
                             "type": "string",
-                            "description": "Filter by the unique identifier of the release author. Optional."
+                            "description": "Filter by the unique identifier of the release author (optional)."
                         },
                         "tag_name": {
                             "type": "string",
-                            "description": "Filter by the release tag name. Optional."
+                            "description": "Filter by the release tag name (optional)."
                         },
                         "is_draft": {
                             "type": "boolean",
-                            "description": "Filter by draft status. Set to true to find draft releases, false to find published releases. Optional."
+                            "description": "Filter by draft status. Set to true to find draft releases, false to find published releases (optional)."
                         },
                         "is_prerelease": {
                             "type": "boolean",
-                            "description": "Filter by prerelease status. Set to true to find prereleases, false to find stable releases. Optional."
+                            "description": "Filter by prerelease status. Set to true to find prereleases, false to find stable releases (optional)."
                         }
                     },
                     "required": ["repository_id"]

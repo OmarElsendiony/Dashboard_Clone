@@ -94,8 +94,8 @@ You must halt execution and **transfer to human** (transfer_to_human) when any o
 3. Retrieve the target organization details using `list_organizations`
 4. Check the user is an owner within the organization members using `list_org_members`
 5. If inviting a new user, then:
-   1. Retrieve the details of the new user using `list_users`
-   2. Invite the new user using `invite_org_member` -> Dict[str, Any]
+   1. Retrieve the details of the new user using `list_users` and ensure that this user account is active, not deleted or suspended.
+   2. Invite the new user using `invite_org_member`, with the acting user's `access_token` from Step 2 to authorize the request, the target `organization_id` from Step 3, and the `user_id` of the individual retrieved in Step 5.1, along with their designated `role`.
 6. If removing an organization member, then:
    1. Retrieve the details of that user using `list_users`
    2. Ensure that this user is an organization member and not an owner using `list_org_members`
@@ -115,7 +115,7 @@ You must halt execution and **transfer to human** (transfer_to_human) when any o
    2. However, if the repository belongs to a user account, then check that the acting user (from step 1) is either the owner of the repository from step 3.2 or a collaborator in this repository using `get_repository_permissions`
    3. If neither 4.1 or 4.2 applies, then the user does not have permissions to fork the repository
 5. Fork the repository using `fork_repository` which was obtained in step 3.2.
-6. Update the `forks_count` of the repository retrived in step 3.2 and add a reference to the forked repository as well using `upsert_repository`
+6. Retrieve the current `forks_count` from the repository details obtained in Step 3.2, increment this value by 1, and then call `upsert_repository` targeting the original repository using its `repository_id`, `owner_id` (not the acting user's), and `owner_type` from Step 3.2, passing the new incremented integer value into the `forks_count` parameter.
 
 ### **SOP 5 - Create/Delete Branches**
 
@@ -240,7 +240,7 @@ You must halt execution and **transfer to human** (transfer_to_human) when any o
    2. Create the workflow file in the repository, branch and directory specified in steps 3, 5 and 6.1 respectively using `upsert_file_directory`.
 7. However, if the file already exists and the next step is to just link it to the workflow, then:
    1. Retrieve and validate that the file with the path specified by the user exists using `list_files_directories`.
-   2. Create a workflow using the workflow file path via `create_workflow` -> Dict[str, Any]
+   2. Create a workflow using the workflow file path via `create_workflow`.
 
 ### **SOP 11 - Update or Delete Workflow**
 

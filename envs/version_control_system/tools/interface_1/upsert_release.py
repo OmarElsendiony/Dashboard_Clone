@@ -16,12 +16,9 @@ class UpsertRelease(Tool):
         release_id: Optional[str] = None,
         release_name: Optional[str] = None,
         description: Optional[str] = None,
-        is_draft: bool = False,
-        is_prerelease: bool = False
+        is_draft: Optional[bool] = False,
+        is_prerelease: Optional[bool] = False
     ) -> str:
-        """
-        Creates a new release or updates an existing one.
-        """
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -71,8 +68,8 @@ class UpsertRelease(Tool):
             release["author_id"] = author_id
             release["target_type"] = target_type
             release["target_reference"] = target_reference
-            release["is_draft"] = is_draft
-            release["is_prerelease"] = is_prerelease
+            release["is_draft"] = bool(is_draft)
+            release["is_prerelease"] = bool(is_prerelease)
             
             if release_name is not None:
                 release["release_name"] = release_name
@@ -100,8 +97,8 @@ class UpsertRelease(Tool):
                 "author_id": author_id,
                 "target_type": target_type,
                 "target_reference": target_reference,
-                "is_draft": is_draft,
-                "is_prerelease": is_prerelease,
+                "is_draft": bool(is_draft),
+                "is_prerelease": bool(is_prerelease),
                 "published_at": timestamp if not is_draft else None,
                 "created_at": timestamp
             }
@@ -124,7 +121,7 @@ class UpsertRelease(Tool):
                         },
                         "release_id": {
                             "type": "string",
-                            "description": "The ID of the release. If provided, updates the existing release."
+                            "description": "The ID of the release. If provided, updates the existing release. (optional)"
                         },
                         "repository_id": {
                             "type": "string",
@@ -140,7 +137,8 @@ class UpsertRelease(Tool):
                         },
                         "target_type": {
                             "type": "string",
-                            "description": "The type of the target. Allowed values: 'commit', 'branch'."
+                            "description": "The type of the target. Allowed values: 'commit', 'branch'.",
+                            "enum": ["commit", "branch"]
                         },
                         "target_reference": {
                             "type": "string",
@@ -148,19 +146,19 @@ class UpsertRelease(Tool):
                         },
                         "release_name": {
                             "type": "string",
-                            "description": "The name of the release."
+                            "description": "The name of the release. (optional)"
                         },
                         "description": {
                             "type": "string",
-                            "description": "The description of the release."
+                            "description": "The description of the release (optional)"
                         },
                         "is_draft": {
                             "type": "boolean",
-                            "description": "Whether the release is a draft (True/False)."
+                            "description": "Whether the release is a draft (True/False). (optional)"
                         },
                         "is_prerelease": {
                             "type": "boolean",
-                            "description": "Whether the release is a prerelease (True/False)."
+                            "description": "Whether the release is a prerelease (True/False). (optional)"
                         }
                     },
                     "required": ["access_token", "repository_id", "tag_name", "author_id", "target_type", "target_reference"]

@@ -110,13 +110,7 @@ class UpdateWorkspace(Tool):
             "type": "function",
             "function": {
                 "name": "update_workspace",
-                "description": (
-                    "Update workspace information including name, description, forking permissions, and privacy settings. "
-                    "At least one of workspace_name, description, is_forking_allowed, or is_private must be provided for update. "
-                    "Validates that the workspace exists. "
-                    "If workspace_name is provided, ensures it's unique for an owner (excluding the current workspace). "
-                    "Returns the updated workspace details."
-                ),
+                "description": "Updates workspace information.",
                 "parameters": {
                     "type": "object",
                     "properties": {

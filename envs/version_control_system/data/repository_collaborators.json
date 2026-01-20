@@ -56110,5 +56110,245 @@
     "permission_level": "read",
     "status": "active",
     "added_at": "2025-08-23T11:47:11"
+  },
+  "7015": {
+    "collaborator_id": "7015",
+    "repository_id": "161",
+    "user_id": "101",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-10-25T10:05:00"
+  },
+  "7016": {
+    "collaborator_id": "7016",
+    "repository_id": "161",
+    "user_id": "102",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-10-26T09:30:00"
+  },
+  "7017": {
+    "collaborator_id": "7017",
+    "repository_id": "161",
+    "user_id": "103",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-10-27T11:00:00"
+  },
+  "7018": {
+    "collaborator_id": "7018",
+    "repository_id": "161",
+    "user_id": "104",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-10-28T14:15:00"
+  },
+  "7019": {
+    "collaborator_id": "7019",
+    "repository_id": "161",
+    "user_id": "105",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-10-29T10:45:00"
+  },
+  "7020": {
+    "collaborator_id": "7020",
+    "repository_id": "162",
+    "user_id": "111",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-11-30T11:05:00"
+  },
+  "7021": {
+    "collaborator_id": "7021",
+    "repository_id": "162",
+    "user_id": "112",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-01T09:00:00"
+  },
+  "7022": {
+    "collaborator_id": "7022",
+    "repository_id": "162",
+    "user_id": "113",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-02T10:30:00"
+  },
+  "7023": {
+    "collaborator_id": "7023",
+    "repository_id": "162",
+    "user_id": "114",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-03T13:45:00"
+  },
+  "7024": {
+    "collaborator_id": "7024",
+    "repository_id": "162",
+    "user_id": "115",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-04T16:00:00"
+  },
+  "7025": {
+    "collaborator_id": "7025",
+    "repository_id": "163",
+    "user_id": "121",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-15T12:05:00"
+  },
+  "7026": {
+    "collaborator_id": "7026",
+    "repository_id": "163",
+    "user_id": "122",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-16T08:30:00"
+  },
+  "7027": {
+    "collaborator_id": "7027",
+    "repository_id": "163",
+    "user_id": "123",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-17T10:45:00"
+  },
+  "7028": {
+    "collaborator_id": "7028",
+    "repository_id": "163",
+    "user_id": "124",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-18T14:00:00"
+  },
+  "7029": {
+    "collaborator_id": "7029",
+    "repository_id": "163",
+    "user_id": "125",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-19T09:15:00"
+  },
+  "7030": {
+    "collaborator_id": "7030",
+    "repository_id": "164",
+    "user_id": "121",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-13T09:05:00"
+  },
+  "7031": {
+    "collaborator_id": "7031",
+    "repository_id": "164",
+    "user_id": "122",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-13T10:00:00"
+  },
+  "7032": {
+    "collaborator_id": "7032",
+    "repository_id": "165",
+    "user_id": "121",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-15T11:05:00"
+  },
+  "7033": {
+    "collaborator_id": "7033",
+    "repository_id": "165",
+    "user_id": "142",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-15T12:00:00"
+  },
+  "7034": {
+    "collaborator_id": "7034",
+    "repository_id": "166",
+    "user_id": "111",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-11-29T10:05:00"
+  },
+  "7035": {
+    "collaborator_id": "7035",
+    "repository_id": "166",
+    "user_id": "112",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-11-29T11:00:00"
+  },
+  "7036": {
+    "collaborator_id": "7036",
+    "repository_id": "166",
+    "user_id": "133",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-04T09:00:00"
+  },
+  "7037": {
+    "collaborator_id": "7037",
+    "repository_id": "167",
+    "user_id": "111",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-02T11:05:00"
+  },
+  "7038": {
+    "collaborator_id": "7038",
+    "repository_id": "167",
+    "user_id": "113",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-02T12:00:00"
+  },
+  "7039": {
+    "collaborator_id": "7039",
+    "repository_id": "168",
+    "user_id": "111",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-04T12:05:00"
+  },
+  "7040": {
+    "collaborator_id": "7040",
+    "repository_id": "168",
+    "user_id": "114",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-04T13:00:00"
+  },
+  "7041": {
+    "collaborator_id": "7041",
+    "repository_id": "168",
+    "user_id": "115",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-05T09:00:00"
+  },
+  "7042": {
+    "collaborator_id": "7042",
+    "repository_id": "169",
+    "user_id": "111",
+    "permission_level": "admin",
+    "status": "active",
+    "added_at": "2025-12-09T10:05:00"
+  },
+  "7043": {
+    "collaborator_id": "7043",
+    "repository_id": "169",
+    "user_id": "113",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-09T11:00:00"
+  },
+  "7044": {
+    "collaborator_id": "7044",
+    "repository_id": "169",
+    "user_id": "114",
+    "permission_level": "write",
+    "status": "active",
+    "added_at": "2025-12-10T09:00:00"
   }
 }

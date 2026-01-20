@@ -4,8 +4,7 @@ from tau_bench.envs.tool import Tool
 
 
 class CreateRepoPullRequest(Tool):
-    """Tool for creating a new pull request in a repository in the version control system."""
-
+   
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -17,41 +16,16 @@ class CreateRepoPullRequest(Tool):
         status: str,
         description: Optional[str] = None,
     ) -> str:
-        """
-        Create a new pull request in a repository.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            repo_id: The ID of the repository to create the pull request in (required).
-            title: The title of the pull request (required).
-            source_branch: The name of the source branch (required).
-            target_branch: The name of the target branch (required).
-            actor_id: The ID of the user creating the pull request (required).
-            status: The status of the pull request (required, must be 'draft' or 'open').
-            description: The description of the pull request (optional).
-
-        Returns:
-            str: A JSON-encoded string containing the success status and created pull request data.
-        """
+       
 
         def generate_id(table: Dict[str, Any]) -> str:
-            """
-            Generates a new unique ID for a record.
-
-            Returns:
-                str: The new unique ID as a string.
-            """
+          
             if not table:
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
 
         def get_next_pr_number(pull_requests: Dict[str, Any], repo_id: str) -> int:
-            """
-            Gets the next pull request number for a repository.
-
-            Returns:
-                int: The next pull request number.
-            """
+           
             max_number = 0
             for _, pr in pull_requests.items():
                 if str(pr.get("repository_id")) == repo_id:
@@ -239,12 +213,12 @@ class CreateRepoPullRequest(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the create_repo_pull_request function."""
+       
         return {
             "type": "function",
             "function": {
                 "name": "create_repo_pull_request",
-                "description": "Create a new pull request to propose merging changes from one branch into another. The pull request can be created as a draft or open for review.",
+                "description": "Creates a new pull request to propose merging changes from one branch into another.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -270,7 +244,8 @@ class CreateRepoPullRequest(Tool):
                         },
                         "status": {
                             "type": "string",
-                            "description": "The initial status; one of draft or open.",
+                            "description": "The initial status of the pull request.",
+                            "enum": ["draft", "open"]
                         },
                         "description": {
                             "type": "string",

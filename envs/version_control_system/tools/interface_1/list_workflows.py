@@ -8,9 +8,6 @@ class ListWorkflows(Tool):
         data: Dict[str, Any],
         repository_id: str
     ) -> str:
-        """
-        Lists all workflows associated with a specific repository.
-        """
         workflows = data.get("workflows", {})
         repositories = data.get("repositories", {})
 

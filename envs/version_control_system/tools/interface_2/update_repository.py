@@ -14,7 +14,6 @@ class UpdateRepository(Tool):
         description: Optional[str] = None,
         default_branch: Optional[str] = None,
     ) -> str:
-        """Update repository information."""
         timestamp = "2026-01-01T23:59:00"
 
         def check_repository_name_uniqueness(
@@ -157,20 +156,11 @@ class UpdateRepository(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the update_repository function."""
         return {
             "type": "function",
             "function": {
                 "name": "update_repository",
-                "description": (
-                    "Update repository information including name, project, fork status, description, and default branch. "
-                    "At least one of repository_name, project_id, is_fork, description, or default_branch must be provided for update. "
-                    "Validates that the repository exists. "
-                    "If repository_name is provided or project_id is changed, ensures the repository name is unique within the target project (excluding the current repository). "
-                    "If project_id is provided, validates that the project exists. "
-                    "If default_branch is provided, validates that the branch exists in the repository and updates the is_default flags accordingly. "
-                    "Returns the updated repository details."
-                ),
+                "description": "Updates repository information.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -180,23 +170,23 @@ class UpdateRepository(Tool):
                         },
                         "repository_name": {
                             "type": "string",
-                            "description": "Optional. The new name for the repository. Must be unique within the project.",
+                            "description": "The new name for the repository. Must be unique within the project (optional).",
                         },
                         "project_id": {
                             "type": "string",
-                            "description": "Optional. The new project ID to move the repository to.",
+                            "description": "The new project ID to move the repository to (optional).",
                         },
                         "is_fork": {
                             "type": "boolean",
-                            "description": "Optional. Whether the repository is a fork.",
+                            "description": "Whether the repository is a fork (optional).",
                         },
                         "description": {
                             "type": "string",
-                            "description": "Optional. The new description for the repository.",
+                            "description": "The new description for the repository (optional).",
                         },
                         "default_branch": {
                             "type": "string",
-                            "description": "Optional. The new default branch name. Must exist in the repository.",
+                            "description": "The new default branch name. Must exist in the repository (optional).",
                         },
                     },
                     "required": ["repository_id"],

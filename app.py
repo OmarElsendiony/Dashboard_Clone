@@ -31,6 +31,7 @@ from modules.interface_connections import interface_connections_bp
 from modules.sop_validator import sop_validator_bp
 from modules.sop_collection_validator import sop_collection_validator_bp
 from modules.tool_schema_extractor import tool_schema_extractor_bp
+from modules.schema_manager import schema_manager_bp
 ################# END OF BLUEPRINTS #####################
 
 from dotenv import load_dotenv
@@ -86,6 +87,7 @@ app.register_blueprint(interface_connections_bp)
 app.register_blueprint(sop_validator_bp)
 app.register_blueprint(sop_collection_validator_bp)
 app.register_blueprint(tool_schema_extractor_bp)
+app.register_blueprint(schema_manager_bp)
 ######### END OF REGISTER BLUEPRINTS #########
 
 PUBLIC_ROUTES = {

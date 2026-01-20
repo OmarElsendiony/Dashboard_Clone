@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
 
@@ -12,10 +12,9 @@ class GetFile(Tool):
         file_name: str,
         file_path: str,
     ) -> str:
-        """Retrieve file information and content by repository_id, branch_id, file_name, and file_path."""
 
         def find_file(files_dict: Dict[str, Any], repository_id_str: str, branch_id_str: str, file_name_str: str, file_path_str: str) -> Optional[Dict[str, Any]]:
-            """Find file by repository_id, branch_id, file_name, and file_path."""
+            
             for fid, file in files_dict.items():
 
                 if (str(file.get("repository_id")) == repository_id_str and 
@@ -29,7 +28,7 @@ class GetFile(Tool):
             return None
 
         def find_file_content(file_contents_dict: Dict[str, Any], file_id: str) -> Optional[Dict[str, Any]]:
-            """Find file content by file_id."""
+            
             for cid, content in file_contents_dict.items():
                 
                 if str(content.get("file_id")) == file_id:
@@ -71,18 +70,13 @@ class GetFile(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return tool metadata for the get_file function."""
+        
         return {
             "type": "function",
             "function": {
                 "name": "get_file",
                 "description": (
-                    "Retrieve file information and content by repository_id, branch_id, file_name, and file_path. "
-                    "Returns complete file details including file_id, repository_id, branch_id, directory_id, "
-                    "file_path, file_name, language, is_binary, last_modified_at, last_commit_id, and timestamps. "
-                    "Also returns file content details including content_id, file_id, commit_id, content, encoding, and created_at. "
-                    "The file_content field will be null if no content is found for the file. "
-                    "Returns an error if any required parameter is not provided or if the file is not found."
+                   "Retrieves a file and its content."
                 ),
                 "parameters": {
                     "type": "object",
@@ -101,7 +95,7 @@ class GetFile(Tool):
                         },
                         "file_path": {
                             "type": "string",
-                            "description": "The path of the file to retrieve.",
+                            "description": "The path of the file to retrieve. The file_path must include the full path leading to the file, including the file name itself.",
                         },
                     },
                     "required": ["repository_id", "branch_id", "file_name", "file_path"],

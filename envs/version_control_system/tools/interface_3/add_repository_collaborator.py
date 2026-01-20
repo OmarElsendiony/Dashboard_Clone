@@ -12,9 +12,6 @@ class AddRepositoryCollaborator(Tool):
         permission_level: str,
         status: str
     ) -> str:
-        """
-        Adds a collaborator to a repository in the version control system.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid payload: data must be dict."})
 

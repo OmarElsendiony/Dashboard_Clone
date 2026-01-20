@@ -4,25 +4,12 @@ from tau_bench.envs.tool import Tool
 
 
 class UpdateBranchHead(Tool):
-    """Tool for updating the HEAD commit SHA of a branch in the version control system."""
-
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         branch_id: str,
         commit_sha: str,
     ) -> str:
-        """
-        Update the HEAD commit SHA of a branch.
-
-        Args:
-            data: The data dictionary containing all version control system data.
-            branch_id: The ID of the branch to update (required).
-            commit_sha: The commit SHA to set as the branch HEAD (required).
-
-        Returns:
-            JSON string containing the success status and updated branch data.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -99,12 +86,11 @@ class UpdateBranchHead(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the update_branch_head function."""
         return {
             "type": "function",
             "function": {
                 "name": "update_branch_head",
-                "description": "Updates the HEAD commit SHA of a branch in the version control system. This function moves the branch HEAD pointer to point to a specific commit.",
+                "description": "Updates the HEAD commit SHA of a branch in the version control system.",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -4,23 +4,13 @@ from tau_bench.envs.tool import Tool
 
 
 class GetCommit(Tool):
-    """Tool for retrieving commit details from the version control system."""
 
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         commit_sha: str,
     ) -> str:
-        """
-        Retrieve commit details by commit SHA.
 
-        Args:
-            data: The data dictionary containing all version control system data.
-            commit_sha: The commit SHA (unique identifier) of the commit to look up (required).
-
-        Returns:
-            JSON string containing the success status and commit data if found.
-        """
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -69,12 +59,11 @@ class GetCommit(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        """Return the tool specification for the get_commit function."""
         return {
             "type": "function",
             "function": {
                 "name": "get_commit",
-                "description": "Retrieves detailed information about a commit from the version control system by commit SHA. Use this to verify commit existence, retrieve commit details, or get commit identifiers for other operations such as creating releases.",
+                "description": "Retrieves detailed information about a commit.",
                 "parameters": {
                     "type": "object",
                     "properties": {
