@@ -36,7 +36,7 @@ function sendContentLLM(feature) {
         callLLMButton.disabled = true;
         callLLMButton.innerHTML = "Validating...";
         
-        fetch('/instruction_validation', {
+        fetch('/clone/instruction_validation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ function sendContentLLM(feature) {
 // Fetch initial prompt from server
 async function fetch_initial_prompt() {
     try {
-        const response = await fetch('/instruction_validation', {
+        const response = await fetch('/clone/instruction_validation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

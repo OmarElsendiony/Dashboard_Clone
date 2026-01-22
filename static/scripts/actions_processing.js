@@ -20,7 +20,7 @@ async function handleGo() {
     console.log('Interface:', interface);
     
     try {
-        const response = await fetch('/choose_env_interface', {
+        const response = await fetch('/clone/choose_env_interface', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -520,7 +520,7 @@ async function executeAPI(actionId) {
             return obj;
         }
 
-        const response = await fetch('/execute_api', {
+        const response = await fetch('/clone/execute_api', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         buttonLoader.style.display = 'inline-block';
 
         try {
-            const response = await fetch('/tool_schema_extractor', {
+            const response = await fetch('/clone/tool_schema_extractor', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

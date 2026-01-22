@@ -109,7 +109,7 @@ function showStatus(elementId, message, type = 'info') {
 
 async function loadDatabases() {
     try {
-        const response = await fetch('/schema_manager/list_databases');
+        const response = await fetch('/clone/schema_manager/list_databases');
         const data = await response.json();
 
         if (data.status === 'success') {
@@ -208,7 +208,7 @@ async function uploadSchema() {
     formData.append('dbName', dbName);
 
     try {
-        const response = await fetch('/schema_manager/upload_schema', {
+        const response = await fetch('/clone/schema_manager/upload_schema', {
             method: 'POST',
             body: formData
         });
@@ -264,7 +264,7 @@ async function executeQuery() {
     showStatus('query-status', 'Running query...', 'info');
 
     try {
-        const response = await fetch('/schema_manager/query', {
+        const response = await fetch('/clone/schema_manager/query', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -371,7 +371,7 @@ async function deleteDatabase() {
     deleteBtn.textContent = 'Deleting...';
 
     try {
-        const response = await fetch('/schema_manager/delete_database', {
+        const response = await fetch('/clone/schema_manager/delete_database', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

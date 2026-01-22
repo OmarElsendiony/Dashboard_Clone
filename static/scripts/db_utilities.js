@@ -1,5 +1,5 @@
 async function extract_policy_apis_handling() {
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ async function extract_policy_apis_handling() {
 }
 
 async function extract_policy_schema_handling() {
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -73,7 +73,7 @@ async function extract_policy_schema_handling() {
 }
 async function regression_test_creator_handling() {
     // Fetch data
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'regression_test_creator' })
@@ -319,7 +319,7 @@ function sendContentLLM(feature) {
         const examplePolicies = document.getElementById('example-policies').value;
         const interfaceApis = document.getElementById('interface-apis').value;
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -367,7 +367,7 @@ function sendContentLLM(feature) {
         const exampleApis = document.getElementById('example-apis').value;
         const interfaceApis = document.getElementById('interface-apis').value;
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -413,7 +413,7 @@ function sendContentLLM(feature) {
         const initialPrompt = document.getElementById('initial-prompt').value;
         const dbSchema = document.getElementById('db-schema').value;
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -457,7 +457,7 @@ function sendContentLLM(feature) {
         const initialPrompt = document.getElementById('initial-prompt').value;
         const dbSchema = document.getElementById('db-schema').value;
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -503,7 +503,7 @@ function sendContentLLM(feature) {
         const policy = document.getElementById('policy').value;
         const exampleApis = document.getElementById('example-apis').value;
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -549,7 +549,7 @@ function sendContentLLM(feature) {
         const policy = document.getElementById('policy').value;
         const exampleSchema = document.getElementById('example-schema').value;
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -595,7 +595,7 @@ function sendContentLLM(feature) {
         const policy = document.getElementById('policy').value;
         const examplePolicies = document.getElementById('example-policies').value;
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -641,7 +641,7 @@ function sendContentLLM(feature) {
         const policy = document.getElementById('policy').value;
         const examplePolicies = document.getElementById('example-policies').value;
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -698,7 +698,7 @@ function sendContentLLM(feature) {
         }
 
         // 3. Send Request
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -765,7 +765,7 @@ function sendContentLLM(feature) {
             return;
         }
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -828,7 +828,7 @@ function sendContentLLM(feature) {
             return;
         }
 
-        fetch('/database_utilities_prompt_generation', {
+        fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -882,7 +882,7 @@ function sendContentLLM(feature) {
 }
 
 async function policy_creation_handling() {
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -921,7 +921,7 @@ async function policy_creation_handling() {
 }
 
 async function database_seeding_handling() {
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -955,7 +955,7 @@ async function database_seeding_handling() {
 }
 
 // async function scenario_realism_handling() {
-//     const response = await fetch('/database_utilities', {
+//     const response = await fetch('/clone/database_utilities', {
 //         method: 'POST',
 //         headers: {
 //             'Content-Type': 'application/json'
@@ -992,7 +992,7 @@ async function database_seeding_handling() {
 
 async function api_implementation_handling() {
 
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -1034,7 +1034,7 @@ async function api_implementation_handling() {
 
 
 async function extract_policy_apis_handling() {
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -1071,7 +1071,7 @@ async function extract_policy_apis_handling() {
 }
 
 async function tune_policy_handling() {
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -1108,7 +1108,7 @@ async function tune_policy_handling() {
 }
 
 async function policy_validator_handling() {
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -1145,7 +1145,7 @@ async function policy_validator_handling() {
 }
 
 async function extract_policy_schema_handling() {
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -1227,7 +1227,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 async function sop_task_creator_handling() {
     // 1. Fetch data
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'sop_task_creator' })
@@ -1523,7 +1523,7 @@ async function submitSopTaskGeneration() {
     };
 
     try {
-        const response = await fetch('/database_utilities_prompt_generation', {
+        const response = await fetch('/clone/database_utilities_prompt_generation', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
@@ -1568,7 +1568,7 @@ function copyToClipboard() {
 
 async function intra_inter_sop_validation_handling() {
     // 1. Fetch data
-    const response = await fetch('/database_utilities', {
+    const response = await fetch('/clone/database_utilities', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'intra_inter_sop_validation' })

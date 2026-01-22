@@ -32,15 +32,12 @@ from modules.sop_validator import sop_validator_bp
 from modules.sop_collection_validator import sop_collection_validator_bp
 from modules.tool_schema_extractor import tool_schema_extractor_bp
 from modules.schema_manager import schema_manager_bp
+from modules.trajectory_viewer import trajectory_viewer_bp
+from modules.health import health_bp
 ################# END OF BLUEPRINTS #####################
 
 from dotenv import load_dotenv
 load_dotenv()
-
-# Enable insecure transport for local OAuth development
-# if os.environ.get('OAUTHLIB_INSECURE_TRANSPORT'):
-#     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
-
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY")
@@ -49,22 +46,6 @@ if not app.secret_key:
 
 # Configure app to trust proxy headers (for HTTPS detection behind nginx)
 app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
-
-# Talisman(app, 
-#     force_https=True,
-#     strict_transport_security=True,
-#     content_security_policy={
-#         'default-src': "'self'",
-#         'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
-#         'style-src': "'self' 'unsafe-inline'",
-#         'img-src': "'self' data: https:",
-#         'font-src': "'self' https:",
-#         'connect-src': "'self' https:",
-#         'frame-src': "'none'",
-#         'object-src': "'none'",
-#         'base-uri': "'self'"
-#     }
-# )
 
 # CORS configuration
 cors = CORS(app) 
@@ -79,16 +60,18 @@ app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
 
 ########### REGISTER BLUEPRINTS ###########
-app.register_blueprint(db_utilities_bp)
-app.register_blueprint(task_tracker_bp)
-app.register_blueprint(task_framework_bp)
-app.register_blueprint(instruction_validation_bp)
-app.register_blueprint(interface_connections_bp)
-app.register_blueprint(sop_validator_bp)
-app.register_blueprint(sop_collection_validator_bp)
-app.register_blueprint(tool_schema_extractor_bp)
-app.register_blueprint(schema_manager_bp)
-######### END OF REGISTER BLUEPRINTS #########
+app.register_blueprint(db_utilities_bp, url_prefix='/clone')
+app.register_blueprint(task_tracker_bp, url_prefix='/clone')
+app.register_blueprint(task_framework_bp, url_prefix='/clone')
+app.register_blueprint(instruction_validation_bp, url_prefix='/clone')
+app.register_blueprint(interface_connections_bp, url_prefix='/clone')
+app.register_blueprint(sop_validator_bp, url_prefix='/clone')
+app.register_blueprint(sop_collection_validator_bp, url_prefix='/clone')
+app.register_blueprint(tool_schema_extractor_bp, url_prefix='/clone')
+app.register_blueprint(schema_manager_bp, url_prefix='/clone')
+app.register_blueprint(trajectory_viewer_bp, url_prefix='/clone')
+app.register_blueprint(health_bp, url_prefix='/clone')
+####### END OF REGISTER BLUEPRINTS #######
 
 PUBLIC_ROUTES = {
     '/',
@@ -96,30 +79,31 @@ PUBLIC_ROUTES = {
     '/login/callback',
     '/logout',
     '/static',
-    
-    '/interface_connections',
-    '/instruction_validation',
-    '/instruction_relevant_actions_or_policies',
-    '/index',
-    '/tracker',
-    '/task-framework',
-    '/db_utilities',
-    '/sop_validator',
-    '/sop_collection_validator',
-    '/tool_schema_extractor'
+    '/clone/static',
+    '/clone/interface_connections',
+    '/clone/instruction_validation',
+    '/clone/instruction_relevant_actions_or_policies',
+    '/clone/index',
+    '/clone/tracker',
+    '/clone/task-framework',
+    '/clone/db_utilities',
+    '/clone/sop_validator',
+    '/clone/sop_collection_validator',
+    '/clone/tool_schema_extractor',
+    '/clone/trajectory_viewer'
 }
 
 REDIRECT_ROUTES = {
-    '/interface_connections',
-    '/instruction_validation',
-    '/instruction_relevant_actions_or_policies',
-    '/index',
-    '/tracker',
-    '/task-framework',
-    '/db_utilities',
-    '/sop_validator',
-    '/sop_collection_validator',
-    '/tool_schema_extractor'
+    '/clone/interface_connections',
+    '/clone/instruction_validation',
+    '/clone/instruction_relevant_actions_or_policies',
+    '/clone/index',
+    '/clone/tracker',
+    '/clone/task-framework',
+    '/clone/db_utilities',
+    '/clone/sop_validator',
+    '/clone/sop_collection_validator',
+    '/clone/tool_schema_extractor'
 }
 
 @app.before_request
@@ -305,35 +289,6 @@ def logout():
 @app.route('/index', strict_slashes=False, methods=['GET'])
 def home_page():
     return render_template('main.html')
-
-@app.route('/trajectory_viewer', strict_slashes=False, methods=['GET'])
-def trajectory_viewer():
-    return render_template('trajectory_viewer.html')
-
-####################### Deployment Health Check Endpoint #######################
-@app.route('/health', methods=['GET'])
-def health_check():
-    """Health check endpoint for load balancers and monitoring"""
-    try:
-        # Check Redis connection
-        redis_client = app.config.get('SESSION_REDIS')
-        if redis_client:
-            redis_client.ping()
-        
-        return {
-            'status': 'healthy',
-            'timestamp': str(datetime.now()),
-            'services': {
-                'redis': 'connected' if redis_client else 'not_configured'
-            }
-        }, 200
-    except Exception as e:
-        return {
-            'status': 'unhealthy',
-            'error': str(e),
-            'timestamp': str(datetime.now())
-        }, 503
-
 
 
 if __name__ == "__main__":

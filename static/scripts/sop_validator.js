@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         buttonLoader.style.display = 'inline-block';
 
         try {
-            const response = await fetch('/sop_validator', {
+            const response = await fetch('/clone/sop_validator', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

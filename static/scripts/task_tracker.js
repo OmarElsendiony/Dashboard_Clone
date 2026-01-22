@@ -671,7 +671,7 @@ function reloadTrackerData() {
     reloadBtn.disabled = true;
 
     // Simulate API call to reload tracker data
-    fetch('/tracker', {
+    fetch('/clone/tracker', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
