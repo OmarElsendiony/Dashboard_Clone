@@ -36,8 +36,20 @@ def validate_path_within_base(constructed_path, base_path):
     Validate that a constructed path stays within the expected base directory.
     Returns True if safe, False if path traversal is detected.
     """
+    # Preliminary string-based validation before using Path operations
+    if not constructed_path or not isinstance(constructed_path, str):
+        return False
+    # Check for null bytes which could truncate paths
+    if '\x00' in constructed_path:
+        return False
+    # Normalize and check the path
     try:
-        resolved_path = Path(constructed_path).resolve()
+        # Use os.path.normpath first to normalize without resolving symlinks
+        normalized = os.path.normpath(constructed_path)
+        # Reject if normpath reveals path traversal
+        if normalized.startswith('..') or '/..' in normalized or '\\..' in normalized:
+            return False
+        resolved_path = Path(normalized).resolve()
         base_resolved = Path(base_path).resolve()
         return resolved_path.is_relative_to(base_resolved)
     except (ValueError, OSError):
