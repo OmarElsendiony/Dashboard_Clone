@@ -53,7 +53,7 @@ def safe_extract_zip(zip_path, extract_dir):
 
 
 class SchemaConverter:
-    """Converts JSON schema to MySQL tables"""
+    """Converts JSON schema to MySQL Tables"""
     
     TYPE_MAPPING = {
         'string': 'VARCHAR(255)',
