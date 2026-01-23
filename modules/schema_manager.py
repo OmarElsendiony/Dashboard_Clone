@@ -18,8 +18,42 @@ os.makedirs(DATABASES_DIR, exist_ok=True)
 os.makedirs(SCHEMAS_DIR, exist_ok=True)
 
 
+def validate_db_name(db_name):
+    """
+    Validate database name to prevent path traversal and SQL injection.
+    Returns True if valid, False otherwise.
+    """
+    if not db_name or not isinstance(db_name, str):
+        return False
+    # Only allow alphanumeric characters and underscores
+    if not db_name.replace('_', '').isalnum():
+        return False
+    # Prevent excessively long names
+    if len(db_name) > 64:
+        return False
+    return True
+
+
+def safe_extract_zip(zip_path, extract_dir):
+    """
+    Safely extract a zip file, preventing zip slip attacks (path traversal).
+    """
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        for member in zip_ref.namelist():
+            # Get the absolute path of where the file would be extracted
+            member_path = os.path.abspath(os.path.join(extract_dir, member))
+            extract_dir_abs = os.path.abspath(extract_dir)
+
+            # Ensure the path is within the extract directory
+            if not member_path.startswith(extract_dir_abs + os.sep) and member_path != extract_dir_abs:
+                raise ValueError(f"Attempted path traversal in zip file: {member}")
+
+            # Extract the member
+            zip_ref.extract(member, extract_dir)
+
+
 class SchemaConverter:
-    """Converts JSON schema to MySQL tables"""
+    """Converts JSON schema to MySQL Tables"""
     
     TYPE_MAPPING = {
         'string': 'VARCHAR(255)',
@@ -484,9 +518,8 @@ def upload_schema():
             zip_path = os.path.join(temp_dir, 'upload.zip')
             zip_file.save(zip_path)
             
-            # Extract zip
-            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-                zip_ref.extractall(temp_dir)
+            # Extract zip safely to prevent zip slip attacks
+            safe_extract_zip(zip_path, temp_dir)
             
             # Find schema file and data files
             schema_file = None
@@ -626,9 +659,13 @@ def query_database():
     data = request.get_json()
     db_name = data.get('dbName')
     query = data.get('query', '').strip()
-    
+
     if not db_name or not query:
         return jsonify({'status': 'error', 'message': 'Database name and query are required'}), 400
+
+    # Validate database name to prevent injection attacks
+    if not validate_db_name(db_name):
+        return jsonify({'status': 'error', 'message': 'Invalid database name'}), 400
     
     # Basic SQL injection prevention
     if not query.upper().startswith('SELECT'):
@@ -655,9 +692,13 @@ def delete_database():
     """Delete a database"""
     data = request.get_json()
     db_name = data.get('dbName')
-    
+
     if not db_name:
         return jsonify({'status': 'error', 'message': 'Database name is required'}), 400
+
+    # Validate database name to prevent injection and path traversal attacks
+    if not validate_db_name(db_name):
+        return jsonify({'status': 'error', 'message': 'Invalid database name'}), 400
     
     try:
         # Drop database

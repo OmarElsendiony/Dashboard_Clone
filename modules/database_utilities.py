@@ -9,6 +9,31 @@ load_dotenv()
 
 db_utilities_bp = Blueprint('db_utilities', __name__)
 
+# Whitelist of allowed actions to prevent path traversal attacks
+ALLOWED_ACTIONS = {
+    'policy_creation',
+    'api_implementation',
+    'database_seeding',
+    'scenario_realism',
+    'extract_policy_apis',
+    'extract_policy_schema',
+    'tune_policy',
+    'policy_validator',
+    'sop_task_creator',
+    'regression_test_creator',
+    'intra_inter_sop_validation'
+}
+
+def validate_action(action):
+    """
+    Validate that an action is in the allowed whitelist.
+    Prevents path traversal attacks by ensuring only known actions are used.
+    """
+    if not action or not isinstance(action, str):
+        return False
+    # Check against whitelist
+    return action in ALLOWED_ACTIONS
+
 
 ############ DB UTILITIES APIs ##############
 @db_utilities_bp.route('/db_utilities', strict_slashes=False, methods=["GET", "POST"])
@@ -322,6 +347,14 @@ def database_utilities_prompt_generation():
 def database_utilities():
     data = request.get_json()
     action = data.get('action')
+
+    # Validate action against whitelist to prevent path traversal
+    if not validate_action(action):
+        return jsonify({
+            'status': 'error',
+            'message': 'Invalid action specified'
+        }), 400
+
     if action == 'policy_creation':
         # Handle policy creation logic here
         initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
