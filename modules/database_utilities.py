@@ -1,38 +1,16 @@
 from flask import Blueprint, render_template
 import os
 from flask import request, jsonify
-from modules.claude_apis import *
+from clone_utils.claude_apis import call_claude
 from dotenv import load_dotenv
+import logging
 load_dotenv()
 # from openai import OpenAI
 # client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+logger = logging.getLogger(__name__)
+
 db_utilities_bp = Blueprint('db_utilities', __name__)
-
-# Whitelist of allowed actions to prevent path traversal attacks
-ALLOWED_ACTIONS = {
-    'policy_creation',
-    'api_implementation',
-    'database_seeding',
-    'scenario_realism',
-    'extract_policy_apis',
-    'extract_policy_schema',
-    'tune_policy',
-    'policy_validator',
-    'sop_task_creator',
-    'regression_test_creator',
-    'intra_inter_sop_validation'
-}
-
-def validate_action(action):
-    """
-    Validate that an action is in the allowed whitelist.
-    Prevents path traversal attacks by ensuring only known actions are used.
-    """
-    if not action or not isinstance(action, str):
-        return False
-    # Check against whitelist
-    return action in ALLOWED_ACTIONS
 
 
 ############ DB UTILITIES APIs ##############
@@ -152,7 +130,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Failed to check scenario realism: {str(e)}'
+                'message': 'Failed to check scenario realism due to an internal error.'
             }), 500
     elif action == "extract_policy_apis":
         initial_prompt = data.get('initial_prompt', '')
@@ -227,7 +205,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Invalid SOP format: {str(e)}'
+                'message': f'Invalid SOP format'
             }), 400
         
         # Format the prompt
@@ -251,7 +229,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Failed to generate SOP task: {str(e)}'
+                'message': f'Failed to generate SOP task'
             }), 500
     elif action == "generate_regression_test_prompt":
         environment_name = data.get('environment_name', '')
@@ -312,7 +290,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Invalid SOP format: {str(e)}'
+                'message': f'Invalid SOP format'
             }), 400
         
         # Format the prompt
@@ -334,7 +312,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Failed to validate SOPs: {str(e)}'
+                'message': f'Failed to validate SOPs'
             }), 500
     else:
         return jsonify({
@@ -347,14 +325,6 @@ def database_utilities_prompt_generation():
 def database_utilities():
     data = request.get_json()
     action = data.get('action')
-
-    # Validate action against whitelist to prevent path traversal
-    if not validate_action(action):
-        return jsonify({
-            'status': 'error',
-            'message': 'Invalid action specified'
-        }), 400
-
     if action == 'policy_creation':
         # Handle policy creation logic here
         initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
