@@ -1,11 +1,14 @@
 from flask import Blueprint, render_template
 import os
 from flask import request, jsonify
-from modules.claude_apis import *
+from clone_utils.claude_apis import call_claude
 from dotenv import load_dotenv
+import logging
 load_dotenv()
 # from openai import OpenAI
 # client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+logger = logging.getLogger(__name__)
 
 db_utilities_bp = Blueprint('db_utilities', __name__)
 
@@ -127,7 +130,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Failed to check scenario realism: {str(e)}'
+                'message': 'Failed to check scenario realism due to an internal error.'
             }), 500
     elif action == "extract_policy_apis":
         initial_prompt = data.get('initial_prompt', '')
@@ -202,7 +205,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Invalid SOP format: {str(e)}'
+                'message': f'Invalid SOP format'
             }), 400
         
         # Format the prompt
@@ -226,7 +229,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Failed to generate SOP task: {str(e)}'
+                'message': f'Failed to generate SOP task'
             }), 500
     elif action == "generate_regression_test_prompt":
         environment_name = data.get('environment_name', '')
@@ -287,7 +290,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Invalid SOP format: {str(e)}'
+                'message': f'Invalid SOP format'
             }), 400
         
         # Format the prompt
@@ -309,7 +312,7 @@ def database_utilities_prompt_generation():
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Failed to validate SOPs: {str(e)}'
+                'message': f'Failed to validate SOPs'
             }), 500
     else:
         return jsonify({

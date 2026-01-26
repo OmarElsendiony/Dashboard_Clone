@@ -7,6 +7,80 @@ from flask import Blueprint, render_template, request, jsonify, session, g, Resp
 
 task_framework_bp = Blueprint('task_framework', __name__)
 
+# Base path for environments - resolved at module load time (safe, no user input)
+ENVS_BASE_PATH = os.path.abspath("envs")
+
+
+def validate_path_component(component):
+    """
+    Validate a path component (like environment or interface name) to prevent path traversal.
+    Returns True if the component is safe, False otherwise.
+    """
+    if not component or not isinstance(component, str):
+        return False
+    # Check for path traversal patterns
+    if '..' in component or '/' in component or '\\' in component:
+        return False
+    # Check for null bytes
+    if '\x00' in component:
+        return False
+    # Only allow alphanumeric characters, underscores, and hyphens
+    if not re.match(r'^[a-zA-Z0-9_-]+$', component):
+        return False
+    return True
+
+
+def safe_join_path(base_path, *components):
+    """
+    Safely join path components after validating each one.
+    Returns the joined path if all components are valid, None otherwise.
+    All components must pass validate_path_component check.
+    """
+    for component in components:
+        if not validate_path_component(component):
+            return None
+    # All components validated - safe to join
+    return os.path.join(base_path, *components)
+
+
+def validate_filename(filename):
+    """
+    Validate a filename from directory listing to ensure it's safe.
+    Returns True if the filename is safe to use, False otherwise.
+    """
+    if not filename or not isinstance(filename, str):
+        return False
+    # Check for path traversal patterns
+    if '..' in filename or '/' in filename or '\\' in filename:
+        return False
+    # Check for null bytes
+    if '\x00' in filename:
+        return False
+    # Filename should not be empty or just dots
+    if filename in ('.', '..'):
+        return False
+    return True
+
+
+def safe_open_file(base_dir, filename, mode='r'):
+    """
+    Safely open a file within a base directory after validating the filename.
+    Returns file handle if safe, raises ValueError if unsafe.
+    """
+    if not validate_filename(filename):
+        raise ValueError(f"Invalid filename: {filename}")
+
+    file_path = os.path.join(base_dir, filename)
+
+    # Verify the resolved path is still within base_dir
+    abs_base = os.path.abspath(base_dir)
+    abs_file = os.path.abspath(file_path)
+
+    if not abs_file.startswith(abs_base + os.sep):
+        raise ValueError(f"Path traversal detected: {filename}")
+
+    return open(abs_file, mode)
+
 
 
 ######################## UTILITY FUNCTIONS ##################################
@@ -47,8 +121,15 @@ def extract_method_from_ast(source_code: str, method_name: str) -> str:
 def extract_file_info(file_path: str) -> Dict[str, Any]:
     """
     Extract function information from a Python file containing a Tool class with get_info method.
+    The file_path should be an absolute path that has already been validated.
     """
     try:
+        # Ensure the path is absolute and doesn't contain traversal patterns
+        if not os.path.isabs(file_path):
+            return {"error": "File path must be absolute"}
+        if '..' in file_path:
+            return {"error": "Invalid file path"}
+
         # Read the file content
         with open(file_path, "r") as file:
             content = file.read()
@@ -189,42 +270,63 @@ def env_interface():
             
             environment = passed_inputs.get('environment') if passed_inputs else None
             interface = passed_inputs.get('interface') if passed_inputs else None
-            
+
+            # Validate environment and interface to prevent path traversal attacks
+            if not environment or not validate_path_component(environment):
+                return jsonify({
+                    'status': 'error',
+                    'message': 'Invalid environment name'
+                }), 400
+            if not interface or not validate_path_component(interface):
+                return jsonify({
+                    'status': 'error',
+                    'message': 'Invalid interface name'
+                }), 400
+
             # global last_environment, last_interface, data
-            
+
             # print(environment, session.get("environment"))
             if environment != session.get("environment"):
                 g.data.clear()
-                # ENVS_PATH = "envs"
-                # DATA_PATH = f"{ENVS_PATH}/{environment}/data"
-                # data_files = os.listdir(DATA_PATH)
-                # # print("Loaded data:")
-                # for data_file in data_files:
-                #     if data_file.endswith(".json"):
-                #         data_file_path = os.path.join(DATA_PATH, data_file)
-                #         with open(data_file_path, "r") as file:
-                #             g.data[data_file.split('.')[0]] = json.load(file)
                 session["environment"] = environment
                 session["interface"] = interface
-                # session["data"] = g.data
-                # print("data", g.data)
-            
+
             # print(session["environment"], session["interface"])
             if environment and interface:
-                # last_interface = interface
-                # last_environment = environment
-                ENVS_PATH = "envs"
-                TOOLS_PATH = f"{ENVS_PATH}/{environment}/tools"
-                INTERFACE_PATH = f"{TOOLS_PATH}/interface_{interface}"
+                # Construct path safely using validated components
+                # interface is prefixed with "interface_" which is safe
+                interface_dir = f"interface_{interface}"
+                INTERFACE_PATH = safe_join_path(ENVS_BASE_PATH, environment, "tools", interface_dir)
+
+                if INTERFACE_PATH is None:
+                    return jsonify({
+                        'status': 'error',
+                        'message': 'Invalid path specified'
+                    }), 400
+
+                if not os.path.isdir(INTERFACE_PATH):
+                    return jsonify({
+                        'status': 'error',
+                        'message': 'Environment or interface not found'
+                    }), 404
+
                 API_files = os.listdir(INTERFACE_PATH)
                 invoke_methods = []
                 functionsInfo = []
                 importsSet = set()
                 for api_file in API_files:
+                    # Validate filename before using it
+                    if not validate_filename(api_file):
+                        continue
                     if api_file.endswith(".py") and not api_file.startswith("__"):
+                        # Construct path and verify it stays within base directory
                         file_path = os.path.join(INTERFACE_PATH, api_file)
+                        abs_interface = os.path.abspath(INTERFACE_PATH)
+                        abs_file = os.path.abspath(file_path)
+                        if not abs_file.startswith(abs_interface + os.sep):
+                            continue  # Skip files that would escape the directory
                         try:
-                            function_info, invoke_method, imports = extract_file_info(file_path)
+                            function_info, invoke_method, imports = extract_file_info(abs_file)
                             # print(f"Extracted function info: {function_info}")
                             # if not function_info:
                             #     print(f"No function info found in {api_file}, skipping.")
@@ -426,14 +528,43 @@ def execute_api():
     # print(passed_data)
     # print(passed_data.get('environment'))
     environment = passed_data.get('environment', session.get("environment"))
-    ENVS_PATH = "envs"
-    DATA_PATH = f"{ENVS_PATH}/{environment}/data"
+
+    # Validate environment to prevent path traversal attacks
+    if not environment or not validate_path_component(environment):
+        return jsonify({
+            'status': 'error',
+            'message': 'Invalid environment name'
+        }), 400
+
+    # Construct path safely using validated component
+    DATA_PATH = safe_join_path(ENVS_BASE_PATH, environment, "data")
+
+    if DATA_PATH is None:
+        return jsonify({
+            'status': 'error',
+            'message': 'Invalid path specified'
+        }), 400
+
+    if not os.path.isdir(DATA_PATH):
+        return jsonify({
+            'status': 'error',
+            'message': 'Data directory not found'
+        }), 404
+
     data_files = os.listdir(DATA_PATH)
     # print("Loaded data:")
+    abs_data_path = os.path.abspath(DATA_PATH)
     for data_file in data_files:
+        # Validate filename before using it
+        if not validate_filename(data_file):
+            continue
         if data_file.endswith(".json"):
             data_file_path = os.path.join(DATA_PATH, data_file)
-            with open(data_file_path, "r") as file:
+            # Verify the path stays within the data directory
+            abs_file_path = os.path.abspath(data_file_path)
+            if not abs_file_path.startswith(abs_data_path + os.sep):
+                continue  # Skip files that would escape the directory
+            with open(abs_file_path, "r") as file:
                 g.data[data_file.split('.')[0]] = json.load(file)
     
     for action in session.get("actions", []):
