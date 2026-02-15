@@ -9,7 +9,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-02-02 17:51:39",
-    "updated_at": "2026-02-02 19:06:50"
+    "updated_at": "2026-02-02 18:38:20"
   },
   "2": {
     "user_id": "2",
@@ -21,7 +21,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-28 16:59:57",
-    "updated_at": "2026-02-02 09:03:26"
+    "updated_at": "2026-02-01 16:44:38"
   },
   "3": {
     "user_id": "3",
@@ -33,7 +33,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-27 02:32:33",
-    "updated_at": "2026-01-30 22:30:09"
+    "updated_at": "2026-02-01 06:25:24"
   },
   "4": {
     "user_id": "4",
@@ -45,7 +45,7 @@
     "technical_expertise": "backend_dev",
     "status": "active",
     "created_at": "2026-01-29 09:39:28",
-    "updated_at": "2026-01-31 00:20:29"
+    "updated_at": "2026-02-02 19:16:25"
   },
   "5": {
     "user_id": "5",
@@ -57,7 +57,7 @@
     "technical_expertise": "backend_dev",
     "status": "active",
     "created_at": "2026-02-01 11:18:42",
-    "updated_at": "2026-02-01 17:21:03"
+    "updated_at": "2026-02-01 15:53:09"
   },
   "6": {
     "user_id": "6",
@@ -69,7 +69,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-29 05:07:00",
-    "updated_at": "2026-01-31 10:41:21"
+    "updated_at": "2026-01-31 02:13:21"
   },
   "7": {
     "user_id": "7",
@@ -81,7 +81,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-02-02 00:07:25",
-    "updated_at": "2026-02-02 02:28:52"
+    "updated_at": "2026-02-02 15:14:17"
   },
   "8": {
     "user_id": "8",
@@ -93,7 +93,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-28 15:11:54",
-    "updated_at": "2026-01-29 17:29:44"
+    "updated_at": "2026-02-01 11:03:56"
   },
   "9": {
     "user_id": "9",
@@ -105,7 +105,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-02-01 19:09:30",
-    "updated_at": "2026-02-02 00:00:00"
+    "updated_at": "2026-02-02 13:35:30"
   },
   "10": {
     "user_id": "10",
@@ -117,7 +117,7 @@
     "technical_expertise": "security_specialist",
     "status": "active",
     "created_at": "2026-01-28 11:52:14",
-    "updated_at": "2026-02-02 01:44:26"
+    "updated_at": "2026-02-02 19:58:38"
   },
   "11": {
     "user_id": "11",
@@ -129,7 +129,7 @@
     "technical_expertise": "backend_dev",
     "status": "active",
     "created_at": "2026-01-27 21:16:52",
-    "updated_at": "2026-01-31 17:47:44"
+    "updated_at": "2026-01-28 04:06:44"
   },
   "12": {
     "user_id": "12",
@@ -141,7 +141,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-28 03:01:09",
-    "updated_at": "2026-01-31 18:56:59"
+    "updated_at": "2026-01-30 09:46:05"
   },
   "13": {
     "user_id": "13",
@@ -153,7 +153,7 @@
     "technical_expertise": "db_admin",
     "status": "active",
     "created_at": "2026-01-29 16:14:36",
-    "updated_at": "2026-01-31 07:53:11"
+    "updated_at": "2026-02-02 16:46:47"
   },
   "14": {
     "user_id": "14",
@@ -165,7 +165,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-02-01 03:20:59",
-    "updated_at": "2026-02-02 11:09:21"
+    "updated_at": "2026-02-01 16:23:27"
   },
   "15": {
     "user_id": "15",
@@ -177,7 +177,7 @@
     "technical_expertise": "security_specialist",
     "status": "active",
     "created_at": "2026-01-30 04:39:31",
-    "updated_at": "2026-01-30 11:28:58"
+    "updated_at": "2026-01-30 09:01:00"
   },
   "16": {
     "user_id": "16",
@@ -189,7 +189,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-31 09:36:15",
-    "updated_at": "2026-02-01 14:05:28"
+    "updated_at": "2026-02-02 14:13:13"
   },
   "17": {
     "user_id": "17",
@@ -201,7 +201,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-31 12:45:51",
-    "updated_at": "2026-01-31 22:05:42"
+    "updated_at": "2026-02-01 06:25:54"
   },
   "18": {
     "user_id": "18",
@@ -213,7 +213,7 @@
     "technical_expertise": "security_specialist",
     "status": "active",
     "created_at": "2026-01-29 09:11:10",
-    "updated_at": "2026-01-30 23:05:21"
+    "updated_at": "2026-01-31 18:36:41"
   },
   "19": {
     "user_id": "19",
@@ -225,7 +225,7 @@
     "technical_expertise": "backend_dev",
     "status": "active",
     "created_at": "2026-01-27 06:06:41",
-    "updated_at": "2026-01-29 15:44:20"
+    "updated_at": "2026-01-31 18:27:50"
   },
   "20": {
     "user_id": "20",
@@ -237,7 +237,7 @@
     "technical_expertise": "security_specialist",
     "status": "active",
     "created_at": "2026-01-28 02:15:26",
-    "updated_at": "2026-01-30 14:15:42"
+    "updated_at": "2026-01-30 11:27:56"
   },
   "21": {
     "user_id": "21",
@@ -249,7 +249,7 @@
     "technical_expertise": "security_specialist",
     "status": "inactive",
     "created_at": "2026-01-29 00:50:07",
-    "updated_at": "2026-01-29 18:34:18"
+    "updated_at": "2026-02-01 12:51:10"
   },
   "22": {
     "user_id": "22",
@@ -261,7 +261,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-30 10:18:48",
-    "updated_at": "2026-01-30 18:16:47"
+    "updated_at": "2026-02-02 11:42:59"
   },
   "23": {
     "user_id": "23",
@@ -273,7 +273,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-28 03:20:08",
-    "updated_at": "2026-02-02 07:10:34"
+    "updated_at": "2026-01-28 22:56:54"
   },
   "24": {
     "user_id": "24",
@@ -285,7 +285,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-28 18:28:56",
-    "updated_at": "2026-02-02 09:35:41"
+    "updated_at": "2026-01-29 01:20:53"
   },
   "25": {
     "user_id": "25",
@@ -297,7 +297,7 @@
     "technical_expertise": "security_specialist",
     "status": "active",
     "created_at": "2026-02-01 09:57:23",
-    "updated_at": "2026-02-02 13:53:05"
+    "updated_at": "2026-02-02 07:26:37"
   },
   "26": {
     "user_id": "26",
@@ -309,7 +309,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-31 02:12:02",
-    "updated_at": "2026-02-02 12:39:34"
+    "updated_at": "2026-02-01 10:18:38"
   },
   "27": {
     "user_id": "27",
@@ -321,7 +321,7 @@
     "technical_expertise": "backend_dev",
     "status": "active",
     "created_at": "2026-01-27 13:03:50",
-    "updated_at": "2026-02-01 17:39:06"
+    "updated_at": "2026-02-01 08:26:46"
   },
   "28": {
     "user_id": "28",
@@ -333,7 +333,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-31 01:07:00",
-    "updated_at": "2026-02-02 04:27:19"
+    "updated_at": "2026-02-01 17:30:19"
   },
   "29": {
     "user_id": "29",
@@ -345,7 +345,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-30 11:54:12",
-    "updated_at": "2026-02-02 05:49:10"
+    "updated_at": "2026-02-01 14:05:10"
   },
   "30": {
     "user_id": "30",
@@ -357,7 +357,7 @@
     "technical_expertise": null,
     "status": "inactive",
     "created_at": "2026-01-31 12:28:56",
-    "updated_at": "2026-02-01 09:41:13"
+    "updated_at": "2026-02-01 04:46:49"
   },
   "31": {
     "user_id": "31",
@@ -369,7 +369,7 @@
     "technical_expertise": "db_admin",
     "status": "active",
     "created_at": "2026-01-27 14:37:53",
-    "updated_at": "2026-01-31 22:35:46"
+    "updated_at": "2026-01-29 08:40:17"
   },
   "32": {
     "user_id": "32",
@@ -381,7 +381,7 @@
     "technical_expertise": "backend_dev",
     "status": "active",
     "created_at": "2026-01-28 15:07:11",
-    "updated_at": "2026-01-31 03:55:39"
+    "updated_at": "2026-01-31 19:39:20"
   },
   "33": {
     "user_id": "33",
@@ -393,7 +393,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-31 07:08:04",
-    "updated_at": "2026-01-31 07:37:02"
+    "updated_at": "2026-02-01 07:30:22"
   },
   "34": {
     "user_id": "34",
@@ -405,7 +405,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-31 20:01:23",
-    "updated_at": "2026-02-02 06:01:12"
+    "updated_at": "2026-02-02 15:46:55"
   },
   "35": {
     "user_id": "35",
@@ -417,7 +417,7 @@
     "technical_expertise": null,
     "status": "inactive",
     "created_at": "2026-01-30 05:59:59",
-    "updated_at": "2026-02-02 19:09:40"
+    "updated_at": "2026-02-01 08:48:20"
   },
   "36": {
     "user_id": "36",
@@ -429,7 +429,7 @@
     "technical_expertise": "db_admin",
     "status": "active",
     "created_at": "2026-02-02 04:22:26",
-    "updated_at": "2026-02-02 09:25:59"
+    "updated_at": "2026-02-02 14:00:31"
   },
   "37": {
     "user_id": "37",
@@ -441,7 +441,7 @@
     "technical_expertise": "db_admin",
     "status": "active",
     "created_at": "2026-01-31 21:27:43",
-    "updated_at": "2026-01-31 22:58:21"
+    "updated_at": "2026-01-31 22:03:41"
   },
   "38": {
     "user_id": "38",
@@ -453,7 +453,7 @@
     "technical_expertise": "frontend_dev",
     "status": "active",
     "created_at": "2026-01-31 19:27:57",
-    "updated_at": "2026-02-01 06:12:19"
+    "updated_at": "2026-02-01 01:35:25"
   },
   "39": {
     "user_id": "39",
@@ -465,7 +465,7 @@
     "technical_expertise": "security_specialist",
     "status": "inactive",
     "created_at": "2026-01-31 06:31:49",
-    "updated_at": "2026-02-02 00:32:33"
+    "updated_at": "2026-01-31 10:20:59"
   },
   "40": {
     "user_id": "40",
@@ -477,7 +477,7 @@
     "technical_expertise": "db_admin",
     "status": "active",
     "created_at": "2026-01-27 02:44:03",
-    "updated_at": "2026-01-27 23:51:28"
+    "updated_at": "2026-01-30 02:05:37"
   },
   "41": {
     "user_id": "41",
@@ -489,7 +489,7 @@
     "technical_expertise": "security_specialist",
     "status": "active",
     "created_at": "2026-01-30 20:39:47",
-    "updated_at": "2026-02-01 13:41:15"
+    "updated_at": "2026-02-02 11:13:08"
   },
   "42": {
     "user_id": "42",
@@ -501,7 +501,7 @@
     "technical_expertise": "backend_dev",
     "status": "active",
     "created_at": "2026-01-28 09:52:13",
-    "updated_at": "2026-01-31 08:34:20"
+    "updated_at": "2026-02-02 18:17:52"
   },
   "43": {
     "user_id": "43",
@@ -513,7 +513,7 @@
     "technical_expertise": "frontend_dev",
     "status": "inactive",
     "created_at": "2026-01-30 15:06:49",
-    "updated_at": "2026-02-02 07:38:27"
+    "updated_at": "2026-02-01 12:44:32"
   },
   "44": {
     "user_id": "44",
@@ -525,7 +525,7 @@
     "technical_expertise": "db_admin",
     "status": "active",
     "created_at": "2026-02-01 09:01:08",
-    "updated_at": "2026-02-01 17:44:55"
+    "updated_at": "2026-02-01 15:43:15"
   },
   "45": {
     "user_id": "45",
@@ -537,7 +537,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-02-01 11:57:34",
-    "updated_at": "2026-02-02 15:09:45"
+    "updated_at": "2026-02-01 20:09:23"
   },
   "46": {
     "user_id": "46",
@@ -549,7 +549,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-02-01 16:18:18",
-    "updated_at": "2026-02-01 18:57:39"
+    "updated_at": "2026-02-02 13:40:51"
   },
   "47": {
     "user_id": "47",
@@ -561,7 +561,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-31 20:14:00",
-    "updated_at": "2026-02-01 11:49:18"
+    "updated_at": "2026-02-02 07:25:18"
   },
   "48": {
     "user_id": "48",
@@ -573,7 +573,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-27 23:22:26",
-    "updated_at": "2026-01-29 18:18:31"
+    "updated_at": "2026-01-29 04:51:29"
   },
   "49": {
     "user_id": "49",
@@ -585,7 +585,7 @@
     "technical_expertise": null,
     "status": "active",
     "created_at": "2026-01-30 06:26:09",
-    "updated_at": "2026-02-02 11:17:22"
+    "updated_at": "2026-01-31 23:36:10"
   },
   "50": {
     "user_id": "50",
@@ -597,6 +597,6 @@
     "technical_expertise": "security_specialist",
     "status": "inactive",
     "created_at": "2026-01-31 01:36:13",
-    "updated_at": "2026-02-02 09:31:43"
+    "updated_at": "2026-01-31 08:12:14"
   }
 }

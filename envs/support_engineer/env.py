@@ -1,6 +1,6 @@
-from tau_bench.envs.version_control_system.data import load_data
-from tau_bench.envs.version_control_system.rules import RULES
-from tau_bench.envs.version_control_system.tools import (
+from tau_bench.envs.support_engineer.data import load_data
+from tau_bench.envs.support_engineer.rules import RULES
+from tau_bench.envs.support_engineer.tools import (
     ALL_TOOLS_INTERFACE_1,
     ALL_TOOLS_INTERFACE_2,
     ALL_TOOLS_INTERFACE_3,
@@ -26,17 +26,17 @@ class MockSupportEngineerDomainEnv(Env):
     ):
         match task_split:
             case "test":
-                from tau_bench.envs.version_control_system.tasks import tasks
+                from tau_bench.envs.support_engineer.tasks import tasks
             case "test_interface_1":
-                from tau_bench.envs.version_control_system.interface_1_tasks import INTERFACE_1_TEST as tasks
+                from tau_bench.envs.support_engineer.interface_1_tasks import INTERFACE_1_TEST as tasks
             case "test_interface_2":
-                from tau_bench.envs.version_control_system.interface_2_tasks import INTERFACE_2_TEST as tasks
+                from tau_bench.envs.support_engineer.interface_2_tasks import INTERFACE_2_TEST as tasks
             case "test_interface_3":
-                from tau_bench.envs.version_control_system.interface_3_tasks import INTERFACE_3_TEST as tasks
+                from tau_bench.envs.support_engineer.interface_3_tasks import INTERFACE_3_TEST as tasks
             case "test_interface_4":
-                from tau_bench.envs.version_control_system.interface_4_tasks import INTERFACE_4_TEST as tasks
+                from tau_bench.envs.support_engineer.interface_4_tasks import INTERFACE_4_TEST as tasks
             case "test_interface_5":
-                from tau_bench.envs.version_control_system.interface_5_tasks import INTERFACE_5_TEST as tasks
+                from tau_bench.envs.support_engineer.interface_5_tasks import INTERFACE_5_TEST as tasks
             case _:
                 raise ValueError(f"Unknown task split: {task_split}")
         
@@ -86,4 +86,4 @@ class MockSupportEngineerDomainEnv(Env):
             task_index=task_index,
             populate_data_diff=populate_data_diff,
         )
-        self.terminate_tools = ["transfer_to_human_agents"]
+        self.terminate_tools = ["transfer_to_human", "switch_to_human", "escalate_to_human", "delegate_to_human", "handoff_to_human"]

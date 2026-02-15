@@ -2,91 +2,81 @@
   "1": {
     "repository_id": "1",
     "repository_name": "logistics_shipping_service",
-    "name": "logistics_shipping_service",
-    "description": "Repository for logistics shipping service service",
+    "description": "Repository for logistics shipping service",
     "default_branch": "main",
     "created_at": "2026-02-01 10:36:49",
-    "updated_at": "2026-02-01 13:27:22"
+    "updated_at": "2026-02-01 22:39:13"
   },
   "2": {
     "repository_id": "2",
     "repository_name": "notification_communication_service",
-    "name": "notification_communication_service",
-    "description": "Repository for notification communication service service",
+    "description": "Repository for notification communication service",
     "default_branch": "main",
     "created_at": "2026-02-01 09:52:25",
-    "updated_at": "2026-02-01 23:23:59"
+    "updated_at": "2026-02-01 10:25:34"
   },
   "3": {
     "repository_id": "3",
     "repository_name": "payment_billing_service",
-    "name": "payment_billing_service",
-    "description": "Repository for payment billing service service",
+    "description": "Repository for payment billing service",
     "default_branch": "main",
     "created_at": "2026-01-28 09:40:27",
-    "updated_at": "2026-01-29 08:38:56"
+    "updated_at": "2026-02-01 21:21:20"
   },
   "4": {
     "repository_id": "4",
     "repository_name": "search_discovery_service",
-    "name": "search_discovery_service",
-    "description": "Repository for search discovery service service",
+    "description": "Repository for search discovery service",
     "default_branch": "main",
     "created_at": "2026-01-30 06:14:05",
-    "updated_at": "2026-02-01 08:05:02"
+    "updated_at": "2026-01-31 14:43:42"
   },
   "5": {
     "repository_id": "5",
     "repository_name": "analytics_reporting_service",
-    "name": "analytics_reporting_service",
-    "description": "Repository for analytics reporting service service",
+    "description": "Repository for analytics reporting service",
     "default_branch": "main",
     "created_at": "2026-01-27 00:55:34",
-    "updated_at": "2026-01-27 22:37:15"
+    "updated_at": "2026-01-31 00:25:23"
   },
   "6": {
     "repository_id": "6",
     "repository_name": "security_compliance_service",
-    "name": "security_compliance_service",
-    "description": "Repository for security compliance service service",
+    "description": "Repository for security compliance service",
     "default_branch": "main",
     "created_at": "2026-02-02 17:38:33",
-    "updated_at": "2026-02-02 18:51:50"
+    "updated_at": "2026-02-02 18:55:05"
   },
   "7": {
     "repository_id": "7",
     "repository_name": "inventory_warehouse_service",
-    "name": "inventory_warehouse_service",
-    "description": "Repository for inventory warehouse service service",
+    "description": "Repository for inventory warehouse service",
     "default_branch": "main",
     "created_at": "2026-01-27 06:23:08",
-    "updated_at": "2026-01-31 10:03:55"
+    "updated_at": "2026-01-29 03:10:27"
   },
   "8": {
     "repository_id": "8",
     "repository_name": "integration_api_service",
-    "name": "integration_api_service",
-    "description": "Repository for integration api service service",
+    "description": "Repository for integration api service",
     "default_branch": "main",
     "created_at": "2026-01-29 21:35:34",
-    "updated_at": "2026-02-02 18:03:51"
+    "updated_at": "2026-01-31 20:59:55"
   },
   "9": {
     "repository_id": "9",
     "repository_name": "order_management_service",
-    "name": "order_management_service",
-    "description": "Repository for order management service service",
+    "description": "Repository for order management service",
     "default_branch": "main",
     "created_at": "2026-01-29 14:53:09",
-    "updated_at": "2026-01-31 00:30:06"
+    "updated_at": "2026-01-31 18:28:00"
   },
   "10": {
     "repository_id": "10",
     "repository_name": "card_management_service",
-    "name": "card_management_service",
-    "description": "Repository for card management service service",
+    "description": "Repository for card management service",
     "default_branch": "main",
     "created_at": "2026-01-29 23:43:46",
-    "updated_at": "2026-02-01 22:01:41"
+    "updated_at": "2026-02-02 16:19:39"
   }
 }

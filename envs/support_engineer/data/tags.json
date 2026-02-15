@@ -1,90 +1,192 @@
 {
   "1": {
     "tag_id": "1",
-    "tag_name": "high_priority"
+    "tag_name": "bug",
+    "tag_type": "issue_type"
   },
   "2": {
     "tag_id": "2",
-    "tag_name": "medium_priority"
+    "tag_name": "incident",
+    "tag_type": "issue_type"
   },
   "3": {
     "tag_id": "3",
-    "tag_name": "low_priority"
+    "tag_name": "request",
+    "tag_type": "issue_type"
   },
   "4": {
     "tag_id": "4",
-    "tag_name": "critical"
+    "tag_name": "query",
+    "tag_type": "issue_type"
   },
   "5": {
     "tag_id": "5",
-    "tag_name": "awaiting_customer"
+    "tag_name": "feature",
+    "tag_type": "issue_type"
   },
   "6": {
     "tag_id": "6",
-    "tag_name": "has_pir"
+    "tag_name": "service_request",
+    "tag_type": "issue_type"
   },
   "7": {
     "tag_id": "7",
-    "tag_name": "has_documentation"
+    "tag_name": "critical",
+    "tag_type": "impact_level"
   },
   "8": {
     "tag_id": "8",
-    "tag_name": "duplicate"
+    "tag_name": "high",
+    "tag_type": "impact_level"
   },
   "9": {
     "tag_id": "9",
-    "tag_name": "login"
+    "tag_name": "medium",
+    "tag_type": "impact_level"
   },
   "10": {
     "tag_id": "10",
-    "tag_name": "payment"
+    "tag_name": "low",
+    "tag_type": "impact_level"
   },
   "11": {
     "tag_id": "11",
-    "tag_name": "api"
+    "tag_name": "P1",
+    "tag_type": "priority"
   },
   "12": {
     "tag_id": "12",
-    "tag_name": "database"
+    "tag_name": "P2",
+    "tag_type": "priority"
   },
   "13": {
     "tag_id": "13",
-    "tag_name": "security"
+    "tag_name": "P3",
+    "tag_type": "priority"
   },
   "14": {
     "tag_id": "14",
-    "tag_name": "compliance"
+    "tag_name": "P4",
+    "tag_type": "priority"
   },
   "15": {
     "tag_id": "15",
-    "tag_name": "outage"
+    "tag_name": "high_priority",
+    "tag_type": "priority"
   },
   "16": {
     "tag_id": "16",
-    "tag_name": "bug"
+    "tag_name": "medium_priority",
+    "tag_type": "priority"
   },
   "17": {
     "tag_id": "17",
-    "tag_name": "feature"
+    "tag_name": "low_priority",
+    "tag_type": "priority"
   },
   "18": {
     "tag_id": "18",
-    "tag_name": "service_request"
+    "tag_name": "urgent_queue",
+    "tag_type": "queue"
   },
   "19": {
     "tag_id": "19",
-    "tag_name": "data_loss"
+    "tag_name": "high_priority_queue",
+    "tag_type": "queue"
   },
   "20": {
     "tag_id": "20",
-    "tag_name": "performance"
+    "tag_name": "standard_queue",
+    "tag_type": "queue"
   },
   "21": {
     "tag_id": "21",
-    "tag_name": "authentication"
+    "tag_name": "low_priority_queue",
+    "tag_type": "queue"
   },
   "22": {
     "tag_id": "22",
-    "tag_name": "authorization"
+    "tag_name": "is_actionable",
+    "tag_type": "actionable"
+  },
+  "23": {
+    "tag_id": "23",
+    "tag_name": "is_not_actionable",
+    "tag_type": "actionable"
+  },
+  "24": {
+    "tag_id": "24",
+    "tag_name": "awaiting_customer",
+    "tag_type": "actionable"
+  },
+  "25": {
+    "tag_id": "25",
+    "tag_name": "has_pir",
+    "tag_type": "actionable"
+  },
+  "26": {
+    "tag_id": "26",
+    "tag_name": "has_documentation",
+    "tag_type": "actionable"
+  },
+  "27": {
+    "tag_id": "27",
+    "tag_name": "duplicate",
+    "tag_type": "actionable"
+  },
+  "28": {
+    "tag_id": "28",
+    "tag_name": "login",
+    "tag_type": "issue_type"
+  },
+  "29": {
+    "tag_id": "29",
+    "tag_name": "payment",
+    "tag_type": "issue_type"
+  },
+  "30": {
+    "tag_id": "30",
+    "tag_name": "api",
+    "tag_type": "issue_type"
+  },
+  "31": {
+    "tag_id": "31",
+    "tag_name": "database",
+    "tag_type": "issue_type"
+  },
+  "32": {
+    "tag_id": "32",
+    "tag_name": "security",
+    "tag_type": "issue_type"
+  },
+  "33": {
+    "tag_id": "33",
+    "tag_name": "compliance",
+    "tag_type": "issue_type"
+  },
+  "34": {
+    "tag_id": "34",
+    "tag_name": "outage",
+    "tag_type": "issue_type"
+  },
+  "35": {
+    "tag_id": "35",
+    "tag_name": "data_loss",
+    "tag_type": "issue_type"
+  },
+  "36": {
+    "tag_id": "36",
+    "tag_name": "performance",
+    "tag_type": "issue_type"
+  },
+  "37": {
+    "tag_id": "37",
+    "tag_name": "authentication",
+    "tag_type": "issue_type"
+  },
+  "38": {
+    "tag_id": "38",
+    "tag_name": "authorization",
+    "tag_type": "issue_type"
   }
 }

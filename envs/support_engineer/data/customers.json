@@ -6,7 +6,7 @@
     "status": "inactive",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-28 18:11:00",
-    "updated_at": "2026-01-31 03:32:35"
+    "updated_at": "2026-01-31 15:24:35"
   },
   "2": {
     "customer_id": "2",
@@ -15,7 +15,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-30 11:50:04",
-    "updated_at": "2026-02-01 03:02:05"
+    "updated_at": "2026-02-01 02:58:09"
   },
   "3": {
     "customer_id": "3",
@@ -24,7 +24,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-26 20:20:47",
-    "updated_at": "2026-02-02 06:24:27"
+    "updated_at": "2026-02-01 06:05:49"
   },
   "4": {
     "customer_id": "4",
@@ -33,7 +33,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-02 18:30:36",
-    "updated_at": "2026-02-02 18:40:02"
+    "updated_at": "2026-02-02 18:59:50"
   },
   "5": {
     "customer_id": "5",
@@ -42,7 +42,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-31 06:51:42",
-    "updated_at": "2026-02-01 23:14:54"
+    "updated_at": "2026-01-31 18:12:48"
   },
   "6": {
     "customer_id": "6",
@@ -51,7 +51,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-02 00:59:57",
-    "updated_at": "2026-02-02 17:17:41"
+    "updated_at": "2026-02-02 06:44:59"
   },
   "7": {
     "customer_id": "7",
@@ -60,7 +60,7 @@
     "status": "active",
     "sla_contract_type": "High_Availability",
     "created_at": "2026-01-29 00:52:16",
-    "updated_at": "2026-01-29 20:39:59"
+    "updated_at": "2026-01-30 12:17:11"
   },
   "8": {
     "customer_id": "8",
@@ -69,7 +69,7 @@
     "status": "active",
     "sla_contract_type": "High_Availability",
     "created_at": "2026-01-28 21:54:24",
-    "updated_at": "2026-01-31 04:13:13"
+    "updated_at": "2026-01-30 01:27:25"
   },
   "9": {
     "customer_id": "9",
@@ -78,7 +78,7 @@
     "status": "suspended",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-29 22:28:48",
-    "updated_at": "2026-02-01 09:54:52"
+    "updated_at": "2026-02-02 18:13:40"
   },
   "10": {
     "customer_id": "10",
@@ -87,7 +87,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-30 21:02:27",
-    "updated_at": "2026-02-01 18:23:14"
+    "updated_at": "2026-01-30 21:29:35"
   },
   "11": {
     "customer_id": "11",
@@ -96,7 +96,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-01 01:56:19",
-    "updated_at": "2026-02-01 21:30:21"
+    "updated_at": "2026-02-02 09:27:36"
   },
   "12": {
     "customer_id": "12",
@@ -105,7 +105,7 @@
     "status": "active",
     "sla_contract_type": "High_Availability",
     "created_at": "2026-02-01 16:42:27",
-    "updated_at": "2026-02-02 11:53:57"
+    "updated_at": "2026-02-02 06:44:48"
   },
   "13": {
     "customer_id": "13",
@@ -114,7 +114,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-29 02:01:30",
-    "updated_at": "2026-01-31 08:52:42"
+    "updated_at": "2026-02-02 12:15:42"
   },
   "14": {
     "customer_id": "14",
@@ -123,7 +123,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-01 18:33:33",
-    "updated_at": "2026-02-01 21:00:09"
+    "updated_at": "2026-02-02 17:36:18"
   },
   "15": {
     "customer_id": "15",
@@ -132,7 +132,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-01 06:50:48",
-    "updated_at": "2026-02-02 11:49:27"
+    "updated_at": "2026-02-01 23:40:03"
   },
   "16": {
     "customer_id": "16",
@@ -141,7 +141,7 @@
     "status": "suspended",
     "sla_contract_type": "High_Availability",
     "created_at": "2026-01-28 17:21:18",
-    "updated_at": "2026-01-29 10:36:06"
+    "updated_at": "2026-01-31 11:33:36"
   },
   "17": {
     "customer_id": "17",
@@ -150,7 +150,7 @@
     "status": "active",
     "sla_contract_type": "High_Availability",
     "created_at": "2026-01-28 05:56:24",
-    "updated_at": "2026-02-01 04:38:16"
+    "updated_at": "2026-01-28 18:30:04"
   },
   "18": {
     "customer_id": "18",
@@ -159,7 +159,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-01 22:21:53",
-    "updated_at": "2026-02-02 19:55:21"
+    "updated_at": "2026-02-02 13:54:49"
   },
   "19": {
     "customer_id": "19",
@@ -168,7 +168,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-28 23:55:39",
-    "updated_at": "2026-01-30 18:37:30"
+    "updated_at": "2026-02-02 17:49:27"
   },
   "20": {
     "customer_id": "20",
@@ -177,7 +177,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-02 15:18:45",
-    "updated_at": "2026-02-02 19:02:52"
+    "updated_at": "2026-02-02 19:42:07"
   },
   "21": {
     "customer_id": "21",
@@ -186,7 +186,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-28 03:12:17",
-    "updated_at": "2026-01-28 06:58:04"
+    "updated_at": "2026-02-01 10:19:12"
   },
   "22": {
     "customer_id": "22",
@@ -195,7 +195,7 @@
     "status": "active",
     "sla_contract_type": "High_Availability",
     "created_at": "2026-01-29 01:47:50",
-    "updated_at": "2026-01-31 02:28:56"
+    "updated_at": "2026-01-30 06:12:36"
   },
   "23": {
     "customer_id": "23",
@@ -204,7 +204,7 @@
     "status": "active",
     "sla_contract_type": "High_Availability",
     "created_at": "2026-02-01 11:06:00",
-    "updated_at": "2026-02-02 18:25:40"
+    "updated_at": "2026-02-01 22:13:40"
   },
   "24": {
     "customer_id": "24",
@@ -213,7 +213,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-27 05:42:48",
-    "updated_at": "2026-01-30 19:32:27"
+    "updated_at": "2026-01-30 10:07:15"
   },
   "25": {
     "customer_id": "25",
@@ -222,7 +222,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-30 12:25:55",
-    "updated_at": "2026-01-31 09:36:35"
+    "updated_at": "2026-02-02 13:52:40"
   },
   "26": {
     "customer_id": "26",
@@ -231,7 +231,7 @@
     "status": "active",
     "sla_contract_type": "High_Availability",
     "created_at": "2026-01-31 00:32:33",
-    "updated_at": "2026-02-02 01:17:35"
+    "updated_at": "2026-01-31 18:58:05"
   },
   "27": {
     "customer_id": "27",
@@ -240,7 +240,7 @@
     "status": "inactive",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-01 23:26:27",
-    "updated_at": "2026-02-02 00:43:51"
+    "updated_at": "2026-02-02 06:02:15"
   },
   "28": {
     "customer_id": "28",
@@ -249,7 +249,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-01 03:02:18",
-    "updated_at": "2026-02-01 22:57:22"
+    "updated_at": "2026-02-01 20:24:58"
   },
   "29": {
     "customer_id": "29",
@@ -258,7 +258,7 @@
     "status": "active",
     "sla_contract_type": "Standard",
     "created_at": "2026-01-28 19:30:47",
-    "updated_at": "2026-02-02 17:55:37"
+    "updated_at": "2026-02-02 08:48:19"
   },
   "30": {
     "customer_id": "30",
@@ -267,6 +267,6 @@
     "status": "suspended",
     "sla_contract_type": "Standard",
     "created_at": "2026-02-02 01:38:22",
-    "updated_at": "2026-02-02 04:23:18"
+    "updated_at": "2026-02-02 02:17:30"
   }
 }
