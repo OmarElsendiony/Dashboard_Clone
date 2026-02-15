@@ -1,0 +1,272 @@
+{
+  "1": {
+    "customer_id": "1",
+    "customer_name": "Gonzalez Inc",
+    "email": "andrew.parker577@hotmail.com",
+    "status": "inactive",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-28 18:11:00",
+    "updated_at": "2026-01-31 03:32:35"
+  },
+  "2": {
+    "customer_id": "2",
+    "customer_name": "Flores, Alexander and Hayes",
+    "email": "barbara.jones43@yahoo.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-30 11:50:04",
+    "updated_at": "2026-02-01 03:02:05"
+  },
+  "3": {
+    "customer_id": "3",
+    "customer_name": "Roman Group",
+    "email": "jeremy.davis877@aol.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-26 20:20:47",
+    "updated_at": "2026-02-02 06:24:27"
+  },
+  "4": {
+    "customer_id": "4",
+    "customer_name": "Pace PLC",
+    "email": "sara.valencia201@outlook.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-02 18:30:36",
+    "updated_at": "2026-02-02 18:40:02"
+  },
+  "5": {
+    "customer_id": "5",
+    "customer_name": "Larson Group",
+    "email": "jacob.gutierrez909@aol.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-31 06:51:42",
+    "updated_at": "2026-02-01 23:14:54"
+  },
+  "6": {
+    "customer_id": "6",
+    "customer_name": "Martin-Reese",
+    "email": "jaime.robinson766@icloud.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-02 00:59:57",
+    "updated_at": "2026-02-02 17:17:41"
+  },
+  "7": {
+    "customer_id": "7",
+    "customer_name": "Watkins Group",
+    "email": "christopher.reed67@hotmail.com",
+    "status": "active",
+    "sla_contract_type": "High_Availability",
+    "created_at": "2026-01-29 00:52:16",
+    "updated_at": "2026-01-29 20:39:59"
+  },
+  "8": {
+    "customer_id": "8",
+    "customer_name": "Norman, Smith and Cantu",
+    "email": "michael.mcintosh417@outlook.com",
+    "status": "active",
+    "sla_contract_type": "High_Availability",
+    "created_at": "2026-01-28 21:54:24",
+    "updated_at": "2026-01-31 04:13:13"
+  },
+  "9": {
+    "customer_id": "9",
+    "customer_name": "Alvarez-Perez",
+    "email": "rebecca.hendricks397@outlook.com",
+    "status": "suspended",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-29 22:28:48",
+    "updated_at": "2026-02-01 09:54:52"
+  },
+  "10": {
+    "customer_id": "10",
+    "customer_name": "Cohen, Hernandez and Young",
+    "email": "connor.anderson200@gmail.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-30 21:02:27",
+    "updated_at": "2026-02-01 18:23:14"
+  },
+  "11": {
+    "customer_id": "11",
+    "customer_name": "Riley-Owens",
+    "email": "karen.castaneda781@gmail.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-01 01:56:19",
+    "updated_at": "2026-02-01 21:30:21"
+  },
+  "12": {
+    "customer_id": "12",
+    "customer_name": "Dunn, Johnson and Rose",
+    "email": "james.robles101@protonmail.com",
+    "status": "active",
+    "sla_contract_type": "High_Availability",
+    "created_at": "2026-02-01 16:42:27",
+    "updated_at": "2026-02-02 11:53:57"
+  },
+  "13": {
+    "customer_id": "13",
+    "customer_name": "Smith-Hill",
+    "email": "debra.berry184@outlook.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-29 02:01:30",
+    "updated_at": "2026-01-31 08:52:42"
+  },
+  "14": {
+    "customer_id": "14",
+    "customer_name": "Bryant, Rose and Thompson",
+    "email": "samantha.smith423@gmail.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-01 18:33:33",
+    "updated_at": "2026-02-01 21:00:09"
+  },
+  "15": {
+    "customer_id": "15",
+    "customer_name": "Price PLC",
+    "email": "rebecca.nelson614@icloud.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-01 06:50:48",
+    "updated_at": "2026-02-02 11:49:27"
+  },
+  "16": {
+    "customer_id": "16",
+    "customer_name": "Young, Robinson and Gonzalez",
+    "email": "dylan.brown513@outlook.com",
+    "status": "suspended",
+    "sla_contract_type": "High_Availability",
+    "created_at": "2026-01-28 17:21:18",
+    "updated_at": "2026-01-29 10:36:06"
+  },
+  "17": {
+    "customer_id": "17",
+    "customer_name": "Martinez-Tran",
+    "email": "catherine.allen101@outlook.com",
+    "status": "active",
+    "sla_contract_type": "High_Availability",
+    "created_at": "2026-01-28 05:56:24",
+    "updated_at": "2026-02-01 04:38:16"
+  },
+  "18": {
+    "customer_id": "18",
+    "customer_name": "Cunningham, Patton and Young",
+    "email": "gina.cortez571@aol.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-01 22:21:53",
+    "updated_at": "2026-02-02 19:55:21"
+  },
+  "19": {
+    "customer_id": "19",
+    "customer_name": "Thomas Group",
+    "email": "sara.sweeney643@protonmail.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-28 23:55:39",
+    "updated_at": "2026-01-30 18:37:30"
+  },
+  "20": {
+    "customer_id": "20",
+    "customer_name": "Kim, Acosta and Smith",
+    "email": "alexander.ramos675@outlook.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-02 15:18:45",
+    "updated_at": "2026-02-02 19:02:52"
+  },
+  "21": {
+    "customer_id": "21",
+    "customer_name": "Chen, Wright and Young",
+    "email": "margaret.decker136@outlook.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-28 03:12:17",
+    "updated_at": "2026-01-28 06:58:04"
+  },
+  "22": {
+    "customer_id": "22",
+    "customer_name": "Brooks-Estrada",
+    "email": "amanda.christensen544@gmail.com",
+    "status": "active",
+    "sla_contract_type": "High_Availability",
+    "created_at": "2026-01-29 01:47:50",
+    "updated_at": "2026-01-31 02:28:56"
+  },
+  "23": {
+    "customer_id": "23",
+    "customer_name": "Murray, Butler and Aguirre",
+    "email": "benjamin.sherman148@gmail.com",
+    "status": "active",
+    "sla_contract_type": "High_Availability",
+    "created_at": "2026-02-01 11:06:00",
+    "updated_at": "2026-02-02 18:25:40"
+  },
+  "24": {
+    "customer_id": "24",
+    "customer_name": "Marshall Ltd",
+    "email": "cheryl.bailey314@aol.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-27 05:42:48",
+    "updated_at": "2026-01-30 19:32:27"
+  },
+  "25": {
+    "customer_id": "25",
+    "customer_name": "Graham-Barnes",
+    "email": "stephanie.jones425@outlook.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-30 12:25:55",
+    "updated_at": "2026-01-31 09:36:35"
+  },
+  "26": {
+    "customer_id": "26",
+    "customer_name": "Hill, Sullivan and Jackson",
+    "email": "gloria.santana275@gmail.com",
+    "status": "active",
+    "sla_contract_type": "High_Availability",
+    "created_at": "2026-01-31 00:32:33",
+    "updated_at": "2026-02-02 01:17:35"
+  },
+  "27": {
+    "customer_id": "27",
+    "customer_name": "Woods Ltd",
+    "email": "rachel.stevens412@outlook.com",
+    "status": "inactive",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-01 23:26:27",
+    "updated_at": "2026-02-02 00:43:51"
+  },
+  "28": {
+    "customer_id": "28",
+    "customer_name": "Montgomery Group",
+    "email": "nathan.miller534@gmail.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-01 03:02:18",
+    "updated_at": "2026-02-01 22:57:22"
+  },
+  "29": {
+    "customer_id": "29",
+    "customer_name": "Evans and Sons",
+    "email": "roberta.williams30@hotmail.com",
+    "status": "active",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-01-28 19:30:47",
+    "updated_at": "2026-02-02 17:55:37"
+  },
+  "30": {
+    "customer_id": "30",
+    "customer_name": "Ross, Grant and Montoya",
+    "email": "rachel.chang151@hotmail.com",
+    "status": "suspended",
+    "sla_contract_type": "Standard",
+    "created_at": "2026-02-02 01:38:22",
+    "updated_at": "2026-02-02 04:23:18"
+  }
+}

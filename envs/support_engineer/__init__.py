@@ -1,0 +1,3 @@
+# Copyright Sierra
+
+from tau_bench.envs.support_engineer.env import MockSupportEngineerDomainEnv as MockSupportEngineerDomainEnv

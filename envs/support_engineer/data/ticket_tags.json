@@ -1,0 +1,8852 @@
+{
+  "1": {
+    "ticket_id": "1",
+    "tag_id": "10",
+    "tag_type": "queue"
+  },
+  "2": {
+    "ticket_id": "2",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "3": {
+    "ticket_id": "3",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "4": {
+    "ticket_id": "4",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "5": {
+    "ticket_id": "5",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "6": {
+    "ticket_id": "6",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "7": {
+    "ticket_id": "7",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "8": {
+    "ticket_id": "8",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "9": {
+    "ticket_id": "9",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "10": {
+    "ticket_id": "10",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "11": {
+    "ticket_id": "11",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "12": {
+    "ticket_id": "12",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "13": {
+    "ticket_id": "13",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "14": {
+    "ticket_id": "14",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "15": {
+    "ticket_id": "15",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "16": {
+    "ticket_id": "16",
+    "tag_id": "3",
+    "tag_type": "queue"
+  },
+  "17": {
+    "ticket_id": "17",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "18": {
+    "ticket_id": "18",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "19": {
+    "ticket_id": "19",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "20": {
+    "ticket_id": "20",
+    "tag_id": "21",
+    "tag_type": "issue_type"
+  },
+  "21": {
+    "ticket_id": "21",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "22": {
+    "ticket_id": "22",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "23": {
+    "ticket_id": "23",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "24": {
+    "ticket_id": "24",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "25": {
+    "ticket_id": "25",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "26": {
+    "ticket_id": "26",
+    "tag_id": "3",
+    "tag_type": "impact_level"
+  },
+  "27": {
+    "ticket_id": "27",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "28": {
+    "ticket_id": "28",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "29": {
+    "ticket_id": "29",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "30": {
+    "ticket_id": "30",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "31": {
+    "ticket_id": "31",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "32": {
+    "ticket_id": "32",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "33": {
+    "ticket_id": "33",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "34": {
+    "ticket_id": "34",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "35": {
+    "ticket_id": "35",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "36": {
+    "ticket_id": "36",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "37": {
+    "ticket_id": "37",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "38": {
+    "ticket_id": "38",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "39": {
+    "ticket_id": "39",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "40": {
+    "ticket_id": "40",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "41": {
+    "ticket_id": "41",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "42": {
+    "ticket_id": "42",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "43": {
+    "ticket_id": "43",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "44": {
+    "ticket_id": "44",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "45": {
+    "ticket_id": "45",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "46": {
+    "ticket_id": "46",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "47": {
+    "ticket_id": "47",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "48": {
+    "ticket_id": "48",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "49": {
+    "ticket_id": "49",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "50": {
+    "ticket_id": "50",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "51": {
+    "ticket_id": "51",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "52": {
+    "ticket_id": "52",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "53": {
+    "ticket_id": "53",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "54": {
+    "ticket_id": "54",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "55": {
+    "ticket_id": "55",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "56": {
+    "ticket_id": "56",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "57": {
+    "ticket_id": "57",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "58": {
+    "ticket_id": "58",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "59": {
+    "ticket_id": "59",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "60": {
+    "ticket_id": "60",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "61": {
+    "ticket_id": "61",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "62": {
+    "ticket_id": "62",
+    "tag_id": "4",
+    "tag_type": "priority"
+  },
+  "63": {
+    "ticket_id": "63",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "64": {
+    "ticket_id": "64",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "65": {
+    "ticket_id": "65",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "66": {
+    "ticket_id": "66",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "67": {
+    "ticket_id": "67",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "68": {
+    "ticket_id": "68",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "69": {
+    "ticket_id": "69",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "70": {
+    "ticket_id": "70",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "71": {
+    "ticket_id": "71",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "72": {
+    "ticket_id": "72",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "73": {
+    "ticket_id": "73",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "74": {
+    "ticket_id": "74",
+    "tag_id": "7",
+    "tag_type": "priority"
+  },
+  "75": {
+    "ticket_id": "75",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "76": {
+    "ticket_id": "76",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "77": {
+    "ticket_id": "77",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "78": {
+    "ticket_id": "78",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "79": {
+    "ticket_id": "79",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "80": {
+    "ticket_id": "80",
+    "tag_id": "10",
+    "tag_type": "impact_level"
+  },
+  "81": {
+    "ticket_id": "81",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "82": {
+    "ticket_id": "82",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "83": {
+    "ticket_id": "83",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "84": {
+    "ticket_id": "84",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "85": {
+    "ticket_id": "85",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "86": {
+    "ticket_id": "86",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "87": {
+    "ticket_id": "87",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "88": {
+    "ticket_id": "88",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "89": {
+    "ticket_id": "89",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "90": {
+    "ticket_id": "90",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "91": {
+    "ticket_id": "91",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "92": {
+    "ticket_id": "92",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "93": {
+    "ticket_id": "93",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "94": {
+    "ticket_id": "94",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "95": {
+    "ticket_id": "95",
+    "tag_id": "15",
+    "tag_type": "issue_type"
+  },
+  "96": {
+    "ticket_id": "96",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "97": {
+    "ticket_id": "97",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "98": {
+    "ticket_id": "98",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "99": {
+    "ticket_id": "99",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "100": {
+    "ticket_id": "100",
+    "tag_id": "11",
+    "tag_type": "priority"
+  },
+  "101": {
+    "ticket_id": "101",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "102": {
+    "ticket_id": "102",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "103": {
+    "ticket_id": "103",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "104": {
+    "ticket_id": "104",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "105": {
+    "ticket_id": "105",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "106": {
+    "ticket_id": "106",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "107": {
+    "ticket_id": "107",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "108": {
+    "ticket_id": "108",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "109": {
+    "ticket_id": "109",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "110": {
+    "ticket_id": "110",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "111": {
+    "ticket_id": "111",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "112": {
+    "ticket_id": "112",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "113": {
+    "ticket_id": "113",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "114": {
+    "ticket_id": "114",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "115": {
+    "ticket_id": "115",
+    "tag_id": "22",
+    "tag_type": "impact_level"
+  },
+  "116": {
+    "ticket_id": "116",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "117": {
+    "ticket_id": "117",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "118": {
+    "ticket_id": "118",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "119": {
+    "ticket_id": "119",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "120": {
+    "ticket_id": "120",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "121": {
+    "ticket_id": "121",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "122": {
+    "ticket_id": "122",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "123": {
+    "ticket_id": "123",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "124": {
+    "ticket_id": "124",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "125": {
+    "ticket_id": "125",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "126": {
+    "ticket_id": "126",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "127": {
+    "ticket_id": "127",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "128": {
+    "ticket_id": "128",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "129": {
+    "ticket_id": "129",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "130": {
+    "ticket_id": "130",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "131": {
+    "ticket_id": "131",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "132": {
+    "ticket_id": "132",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "133": {
+    "ticket_id": "133",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "134": {
+    "ticket_id": "134",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "135": {
+    "ticket_id": "135",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "136": {
+    "ticket_id": "136",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "137": {
+    "ticket_id": "137",
+    "tag_id": "18",
+    "tag_type": "impact_level"
+  },
+  "138": {
+    "ticket_id": "138",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "139": {
+    "ticket_id": "139",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "140": {
+    "ticket_id": "140",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "141": {
+    "ticket_id": "141",
+    "tag_id": "14",
+    "tag_type": "priority"
+  },
+  "142": {
+    "ticket_id": "142",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "143": {
+    "ticket_id": "143",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "144": {
+    "ticket_id": "144",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "145": {
+    "ticket_id": "145",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "146": {
+    "ticket_id": "146",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "147": {
+    "ticket_id": "147",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "148": {
+    "ticket_id": "148",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "149": {
+    "ticket_id": "149",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "150": {
+    "ticket_id": "150",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "151": {
+    "ticket_id": "151",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "152": {
+    "ticket_id": "152",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "153": {
+    "ticket_id": "153",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "154": {
+    "ticket_id": "154",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "155": {
+    "ticket_id": "155",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "156": {
+    "ticket_id": "156",
+    "tag_id": "1",
+    "tag_type": "impact_level"
+  },
+  "157": {
+    "ticket_id": "157",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "158": {
+    "ticket_id": "158",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "159": {
+    "ticket_id": "159",
+    "tag_id": "11",
+    "tag_type": "impact_level"
+  },
+  "160": {
+    "ticket_id": "160",
+    "tag_id": "18",
+    "tag_type": "issue_type"
+  },
+  "161": {
+    "ticket_id": "161",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "162": {
+    "ticket_id": "162",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "163": {
+    "ticket_id": "163",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "164": {
+    "ticket_id": "164",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "165": {
+    "ticket_id": "165",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "166": {
+    "ticket_id": "166",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "167": {
+    "ticket_id": "167",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "168": {
+    "ticket_id": "168",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "169": {
+    "ticket_id": "169",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "170": {
+    "ticket_id": "170",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "171": {
+    "ticket_id": "171",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "172": {
+    "ticket_id": "172",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "173": {
+    "ticket_id": "173",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "174": {
+    "ticket_id": "174",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "175": {
+    "ticket_id": "175",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "176": {
+    "ticket_id": "176",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "177": {
+    "ticket_id": "177",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "178": {
+    "ticket_id": "178",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "179": {
+    "ticket_id": "179",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "180": {
+    "ticket_id": "180",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "181": {
+    "ticket_id": "181",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "182": {
+    "ticket_id": "182",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "183": {
+    "ticket_id": "183",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "184": {
+    "ticket_id": "184",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "185": {
+    "ticket_id": "185",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "186": {
+    "ticket_id": "186",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "187": {
+    "ticket_id": "187",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "188": {
+    "ticket_id": "188",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "189": {
+    "ticket_id": "189",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "190": {
+    "ticket_id": "190",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "191": {
+    "ticket_id": "191",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "192": {
+    "ticket_id": "192",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "193": {
+    "ticket_id": "193",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "194": {
+    "ticket_id": "194",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "195": {
+    "ticket_id": "195",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "196": {
+    "ticket_id": "196",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "197": {
+    "ticket_id": "197",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "198": {
+    "ticket_id": "198",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "199": {
+    "ticket_id": "199",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "200": {
+    "ticket_id": "200",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "201": {
+    "ticket_id": "201",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "202": {
+    "ticket_id": "202",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "203": {
+    "ticket_id": "203",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "204": {
+    "ticket_id": "204",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "205": {
+    "ticket_id": "205",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "206": {
+    "ticket_id": "206",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "207": {
+    "ticket_id": "207",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "208": {
+    "ticket_id": "208",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "209": {
+    "ticket_id": "209",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "210": {
+    "ticket_id": "210",
+    "tag_id": "6",
+    "tag_type": "priority"
+  },
+  "211": {
+    "ticket_id": "211",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "212": {
+    "ticket_id": "212",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "213": {
+    "ticket_id": "213",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "214": {
+    "ticket_id": "214",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "215": {
+    "ticket_id": "215",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "216": {
+    "ticket_id": "216",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "217": {
+    "ticket_id": "217",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "218": {
+    "ticket_id": "218",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "219": {
+    "ticket_id": "219",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "220": {
+    "ticket_id": "220",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "221": {
+    "ticket_id": "221",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "222": {
+    "ticket_id": "222",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "223": {
+    "ticket_id": "223",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "224": {
+    "ticket_id": "224",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "225": {
+    "ticket_id": "225",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "226": {
+    "ticket_id": "226",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "227": {
+    "ticket_id": "227",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "228": {
+    "ticket_id": "228",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "229": {
+    "ticket_id": "229",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "230": {
+    "ticket_id": "230",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "231": {
+    "ticket_id": "231",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "232": {
+    "ticket_id": "232",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "233": {
+    "ticket_id": "233",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "234": {
+    "ticket_id": "234",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "235": {
+    "ticket_id": "235",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "236": {
+    "ticket_id": "236",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "237": {
+    "ticket_id": "237",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "238": {
+    "ticket_id": "238",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "239": {
+    "ticket_id": "239",
+    "tag_id": "7",
+    "tag_type": "priority"
+  },
+  "240": {
+    "ticket_id": "240",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "241": {
+    "ticket_id": "241",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "242": {
+    "ticket_id": "242",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "243": {
+    "ticket_id": "243",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "244": {
+    "ticket_id": "244",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "245": {
+    "ticket_id": "245",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "246": {
+    "ticket_id": "246",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "247": {
+    "ticket_id": "247",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "248": {
+    "ticket_id": "248",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "249": {
+    "ticket_id": "249",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "250": {
+    "ticket_id": "250",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "251": {
+    "ticket_id": "251",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "252": {
+    "ticket_id": "252",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "253": {
+    "ticket_id": "253",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "254": {
+    "ticket_id": "254",
+    "tag_id": "16",
+    "tag_type": "impact_level"
+  },
+  "255": {
+    "ticket_id": "255",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "256": {
+    "ticket_id": "256",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "257": {
+    "ticket_id": "257",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "258": {
+    "ticket_id": "258",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "259": {
+    "ticket_id": "259",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "260": {
+    "ticket_id": "260",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "261": {
+    "ticket_id": "261",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "262": {
+    "ticket_id": "262",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "263": {
+    "ticket_id": "263",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "264": {
+    "ticket_id": "264",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "265": {
+    "ticket_id": "265",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "266": {
+    "ticket_id": "266",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "267": {
+    "ticket_id": "267",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "268": {
+    "ticket_id": "268",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "269": {
+    "ticket_id": "269",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "270": {
+    "ticket_id": "270",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "271": {
+    "ticket_id": "271",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "272": {
+    "ticket_id": "272",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "273": {
+    "ticket_id": "273",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "274": {
+    "ticket_id": "274",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "275": {
+    "ticket_id": "275",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "276": {
+    "ticket_id": "276",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "277": {
+    "ticket_id": "277",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "278": {
+    "ticket_id": "278",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "279": {
+    "ticket_id": "279",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "280": {
+    "ticket_id": "280",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "281": {
+    "ticket_id": "281",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "282": {
+    "ticket_id": "282",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "283": {
+    "ticket_id": "283",
+    "tag_id": "21",
+    "tag_type": "impact_level"
+  },
+  "284": {
+    "ticket_id": "284",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "285": {
+    "ticket_id": "285",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "286": {
+    "ticket_id": "286",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "287": {
+    "ticket_id": "287",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "288": {
+    "ticket_id": "288",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "289": {
+    "ticket_id": "289",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "290": {
+    "ticket_id": "290",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "291": {
+    "ticket_id": "291",
+    "tag_id": "9",
+    "tag_type": "priority"
+  },
+  "292": {
+    "ticket_id": "292",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "293": {
+    "ticket_id": "293",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "294": {
+    "ticket_id": "294",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "295": {
+    "ticket_id": "295",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "296": {
+    "ticket_id": "296",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "297": {
+    "ticket_id": "297",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "298": {
+    "ticket_id": "298",
+    "tag_id": "14",
+    "tag_type": "impact_level"
+  },
+  "299": {
+    "ticket_id": "299",
+    "tag_id": "3",
+    "tag_type": "impact_level"
+  },
+  "300": {
+    "ticket_id": "300",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "301": {
+    "ticket_id": "301",
+    "tag_id": "21",
+    "tag_type": "priority"
+  },
+  "302": {
+    "ticket_id": "302",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "303": {
+    "ticket_id": "303",
+    "tag_id": "18",
+    "tag_type": "priority"
+  },
+  "304": {
+    "ticket_id": "304",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "305": {
+    "ticket_id": "305",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "306": {
+    "ticket_id": "306",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "307": {
+    "ticket_id": "307",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "308": {
+    "ticket_id": "308",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "309": {
+    "ticket_id": "309",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "310": {
+    "ticket_id": "310",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "311": {
+    "ticket_id": "311",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "312": {
+    "ticket_id": "312",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "313": {
+    "ticket_id": "313",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "314": {
+    "ticket_id": "314",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "315": {
+    "ticket_id": "315",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "316": {
+    "ticket_id": "316",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "317": {
+    "ticket_id": "317",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "318": {
+    "ticket_id": "318",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "319": {
+    "ticket_id": "319",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "320": {
+    "ticket_id": "320",
+    "tag_id": "10",
+    "tag_type": "queue"
+  },
+  "321": {
+    "ticket_id": "321",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "322": {
+    "ticket_id": "322",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "323": {
+    "ticket_id": "323",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "324": {
+    "ticket_id": "324",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "325": {
+    "ticket_id": "325",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "326": {
+    "ticket_id": "326",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "327": {
+    "ticket_id": "327",
+    "tag_id": "20",
+    "tag_type": "priority"
+  },
+  "328": {
+    "ticket_id": "328",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "329": {
+    "ticket_id": "329",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "330": {
+    "ticket_id": "330",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "331": {
+    "ticket_id": "331",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "332": {
+    "ticket_id": "332",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "333": {
+    "ticket_id": "333",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "334": {
+    "ticket_id": "334",
+    "tag_id": "21",
+    "tag_type": "issue_type"
+  },
+  "335": {
+    "ticket_id": "335",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "336": {
+    "ticket_id": "336",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "337": {
+    "ticket_id": "337",
+    "tag_id": "13",
+    "tag_type": "impact_level"
+  },
+  "338": {
+    "ticket_id": "338",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "339": {
+    "ticket_id": "339",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "340": {
+    "ticket_id": "340",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "341": {
+    "ticket_id": "341",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "342": {
+    "ticket_id": "342",
+    "tag_id": "10",
+    "tag_type": "queue"
+  },
+  "343": {
+    "ticket_id": "343",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "344": {
+    "ticket_id": "344",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "345": {
+    "ticket_id": "345",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "346": {
+    "ticket_id": "346",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "347": {
+    "ticket_id": "347",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "348": {
+    "ticket_id": "348",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "349": {
+    "ticket_id": "349",
+    "tag_id": "16",
+    "tag_type": "impact_level"
+  },
+  "350": {
+    "ticket_id": "350",
+    "tag_id": "18",
+    "tag_type": "queue"
+  },
+  "351": {
+    "ticket_id": "351",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "352": {
+    "ticket_id": "352",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "353": {
+    "ticket_id": "353",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "354": {
+    "ticket_id": "354",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "355": {
+    "ticket_id": "355",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "356": {
+    "ticket_id": "356",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "357": {
+    "ticket_id": "357",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "358": {
+    "ticket_id": "358",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "359": {
+    "ticket_id": "359",
+    "tag_id": "10",
+    "tag_type": "queue"
+  },
+  "360": {
+    "ticket_id": "360",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "361": {
+    "ticket_id": "361",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "362": {
+    "ticket_id": "362",
+    "tag_id": "22",
+    "tag_type": "impact_level"
+  },
+  "363": {
+    "ticket_id": "363",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "364": {
+    "ticket_id": "364",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "365": {
+    "ticket_id": "365",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "366": {
+    "ticket_id": "366",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "367": {
+    "ticket_id": "367",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "368": {
+    "ticket_id": "368",
+    "tag_id": "10",
+    "tag_type": "impact_level"
+  },
+  "369": {
+    "ticket_id": "369",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "370": {
+    "ticket_id": "370",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "371": {
+    "ticket_id": "371",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "372": {
+    "ticket_id": "372",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "373": {
+    "ticket_id": "373",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "374": {
+    "ticket_id": "374",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "375": {
+    "ticket_id": "375",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "376": {
+    "ticket_id": "376",
+    "tag_id": "8",
+    "tag_type": "impact_level"
+  },
+  "377": {
+    "ticket_id": "377",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "378": {
+    "ticket_id": "378",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "379": {
+    "ticket_id": "379",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "380": {
+    "ticket_id": "380",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "381": {
+    "ticket_id": "381",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "382": {
+    "ticket_id": "382",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "383": {
+    "ticket_id": "383",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "384": {
+    "ticket_id": "384",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "385": {
+    "ticket_id": "385",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "386": {
+    "ticket_id": "386",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "387": {
+    "ticket_id": "387",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "388": {
+    "ticket_id": "388",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "389": {
+    "ticket_id": "389",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "390": {
+    "ticket_id": "390",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "391": {
+    "ticket_id": "391",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "392": {
+    "ticket_id": "392",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "393": {
+    "ticket_id": "393",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "394": {
+    "ticket_id": "394",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "395": {
+    "ticket_id": "395",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "396": {
+    "ticket_id": "396",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "397": {
+    "ticket_id": "397",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "398": {
+    "ticket_id": "398",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "399": {
+    "ticket_id": "399",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "400": {
+    "ticket_id": "400",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "401": {
+    "ticket_id": "401",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "402": {
+    "ticket_id": "402",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "403": {
+    "ticket_id": "403",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "404": {
+    "ticket_id": "404",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "405": {
+    "ticket_id": "405",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "406": {
+    "ticket_id": "406",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "407": {
+    "ticket_id": "407",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "408": {
+    "ticket_id": "408",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "409": {
+    "ticket_id": "409",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "410": {
+    "ticket_id": "410",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "411": {
+    "ticket_id": "411",
+    "tag_id": "12",
+    "tag_type": "impact_level"
+  },
+  "412": {
+    "ticket_id": "412",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "413": {
+    "ticket_id": "413",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "414": {
+    "ticket_id": "414",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "415": {
+    "ticket_id": "415",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "416": {
+    "ticket_id": "416",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "417": {
+    "ticket_id": "417",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "418": {
+    "ticket_id": "418",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "419": {
+    "ticket_id": "419",
+    "tag_id": "4",
+    "tag_type": "issue_type"
+  },
+  "420": {
+    "ticket_id": "420",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "421": {
+    "ticket_id": "421",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "422": {
+    "ticket_id": "422",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "423": {
+    "ticket_id": "423",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "424": {
+    "ticket_id": "424",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "425": {
+    "ticket_id": "425",
+    "tag_id": "3",
+    "tag_type": "queue"
+  },
+  "426": {
+    "ticket_id": "426",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "427": {
+    "ticket_id": "427",
+    "tag_id": "10",
+    "tag_type": "impact_level"
+  },
+  "428": {
+    "ticket_id": "428",
+    "tag_id": "20",
+    "tag_type": "issue_type"
+  },
+  "429": {
+    "ticket_id": "429",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "430": {
+    "ticket_id": "430",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "431": {
+    "ticket_id": "431",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "432": {
+    "ticket_id": "432",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "433": {
+    "ticket_id": "433",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "434": {
+    "ticket_id": "434",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "435": {
+    "ticket_id": "435",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "436": {
+    "ticket_id": "436",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "437": {
+    "ticket_id": "437",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "438": {
+    "ticket_id": "438",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "439": {
+    "ticket_id": "439",
+    "tag_id": "5",
+    "tag_type": "impact_level"
+  },
+  "440": {
+    "ticket_id": "440",
+    "tag_id": "18",
+    "tag_type": "priority"
+  },
+  "441": {
+    "ticket_id": "441",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "442": {
+    "ticket_id": "442",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "443": {
+    "ticket_id": "443",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "444": {
+    "ticket_id": "444",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "445": {
+    "ticket_id": "445",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "446": {
+    "ticket_id": "446",
+    "tag_id": "12",
+    "tag_type": "priority"
+  },
+  "447": {
+    "ticket_id": "447",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "448": {
+    "ticket_id": "448",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "449": {
+    "ticket_id": "449",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "450": {
+    "ticket_id": "450",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "451": {
+    "ticket_id": "451",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "452": {
+    "ticket_id": "452",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "453": {
+    "ticket_id": "453",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "454": {
+    "ticket_id": "454",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "455": {
+    "ticket_id": "455",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "456": {
+    "ticket_id": "456",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "457": {
+    "ticket_id": "457",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "458": {
+    "ticket_id": "458",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "459": {
+    "ticket_id": "459",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "460": {
+    "ticket_id": "460",
+    "tag_id": "20",
+    "tag_type": "issue_type"
+  },
+  "461": {
+    "ticket_id": "461",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "462": {
+    "ticket_id": "462",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "463": {
+    "ticket_id": "463",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "464": {
+    "ticket_id": "464",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "465": {
+    "ticket_id": "465",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "466": {
+    "ticket_id": "466",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "467": {
+    "ticket_id": "467",
+    "tag_id": "12",
+    "tag_type": "impact_level"
+  },
+  "468": {
+    "ticket_id": "468",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "469": {
+    "ticket_id": "469",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "470": {
+    "ticket_id": "470",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "471": {
+    "ticket_id": "471",
+    "tag_id": "11",
+    "tag_type": "impact_level"
+  },
+  "472": {
+    "ticket_id": "472",
+    "tag_id": "1",
+    "tag_type": "impact_level"
+  },
+  "473": {
+    "ticket_id": "473",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "474": {
+    "ticket_id": "474",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "475": {
+    "ticket_id": "475",
+    "tag_id": "13",
+    "tag_type": "impact_level"
+  },
+  "476": {
+    "ticket_id": "476",
+    "tag_id": "21",
+    "tag_type": "priority"
+  },
+  "477": {
+    "ticket_id": "477",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "478": {
+    "ticket_id": "478",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "479": {
+    "ticket_id": "479",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "480": {
+    "ticket_id": "480",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "481": {
+    "ticket_id": "481",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "482": {
+    "ticket_id": "482",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "483": {
+    "ticket_id": "483",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "484": {
+    "ticket_id": "484",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "485": {
+    "ticket_id": "485",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "486": {
+    "ticket_id": "486",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "487": {
+    "ticket_id": "487",
+    "tag_id": "18",
+    "tag_type": "queue"
+  },
+  "488": {
+    "ticket_id": "488",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "489": {
+    "ticket_id": "489",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "490": {
+    "ticket_id": "490",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "491": {
+    "ticket_id": "491",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "492": {
+    "ticket_id": "492",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "493": {
+    "ticket_id": "493",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "494": {
+    "ticket_id": "494",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "495": {
+    "ticket_id": "495",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "496": {
+    "ticket_id": "496",
+    "tag_id": "18",
+    "tag_type": "priority"
+  },
+  "497": {
+    "ticket_id": "497",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "498": {
+    "ticket_id": "498",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "499": {
+    "ticket_id": "499",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "500": {
+    "ticket_id": "500",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "501": {
+    "ticket_id": "501",
+    "tag_id": "11",
+    "tag_type": "impact_level"
+  },
+  "502": {
+    "ticket_id": "502",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "503": {
+    "ticket_id": "503",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "504": {
+    "ticket_id": "504",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "505": {
+    "ticket_id": "505",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "506": {
+    "ticket_id": "506",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "507": {
+    "ticket_id": "507",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "508": {
+    "ticket_id": "508",
+    "tag_id": "9",
+    "tag_type": "queue"
+  },
+  "509": {
+    "ticket_id": "509",
+    "tag_id": "1",
+    "tag_type": "impact_level"
+  },
+  "510": {
+    "ticket_id": "510",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "511": {
+    "ticket_id": "511",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "512": {
+    "ticket_id": "512",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "513": {
+    "ticket_id": "513",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "514": {
+    "ticket_id": "514",
+    "tag_id": "20",
+    "tag_type": "impact_level"
+  },
+  "515": {
+    "ticket_id": "515",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "516": {
+    "ticket_id": "516",
+    "tag_id": "14",
+    "tag_type": "issue_type"
+  },
+  "517": {
+    "ticket_id": "517",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "518": {
+    "ticket_id": "518",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "519": {
+    "ticket_id": "519",
+    "tag_id": "21",
+    "tag_type": "priority"
+  },
+  "520": {
+    "ticket_id": "520",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "521": {
+    "ticket_id": "521",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "522": {
+    "ticket_id": "522",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "523": {
+    "ticket_id": "523",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "524": {
+    "ticket_id": "524",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "525": {
+    "ticket_id": "525",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "526": {
+    "ticket_id": "526",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "527": {
+    "ticket_id": "527",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "528": {
+    "ticket_id": "528",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "529": {
+    "ticket_id": "529",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "530": {
+    "ticket_id": "530",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "531": {
+    "ticket_id": "531",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "532": {
+    "ticket_id": "532",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "533": {
+    "ticket_id": "533",
+    "tag_id": "9",
+    "tag_type": "queue"
+  },
+  "534": {
+    "ticket_id": "534",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "535": {
+    "ticket_id": "535",
+    "tag_id": "18",
+    "tag_type": "queue"
+  },
+  "536": {
+    "ticket_id": "536",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "537": {
+    "ticket_id": "537",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "538": {
+    "ticket_id": "538",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "539": {
+    "ticket_id": "539",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "540": {
+    "ticket_id": "540",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "541": {
+    "ticket_id": "541",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "542": {
+    "ticket_id": "542",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "543": {
+    "ticket_id": "543",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "544": {
+    "ticket_id": "544",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "545": {
+    "ticket_id": "545",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "546": {
+    "ticket_id": "546",
+    "tag_id": "5",
+    "tag_type": "priority"
+  },
+  "547": {
+    "ticket_id": "547",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "548": {
+    "ticket_id": "548",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "549": {
+    "ticket_id": "549",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "550": {
+    "ticket_id": "550",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "551": {
+    "ticket_id": "551",
+    "tag_id": "19",
+    "tag_type": "impact_level"
+  },
+  "552": {
+    "ticket_id": "552",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "553": {
+    "ticket_id": "553",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "554": {
+    "ticket_id": "554",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "555": {
+    "ticket_id": "555",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "556": {
+    "ticket_id": "556",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "557": {
+    "ticket_id": "557",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "558": {
+    "ticket_id": "558",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "559": {
+    "ticket_id": "559",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "560": {
+    "ticket_id": "560",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "561": {
+    "ticket_id": "561",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "562": {
+    "ticket_id": "562",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "563": {
+    "ticket_id": "563",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "564": {
+    "ticket_id": "564",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "565": {
+    "ticket_id": "565",
+    "tag_id": "4",
+    "tag_type": "issue_type"
+  },
+  "566": {
+    "ticket_id": "566",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "567": {
+    "ticket_id": "567",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "568": {
+    "ticket_id": "568",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "569": {
+    "ticket_id": "569",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "570": {
+    "ticket_id": "570",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "571": {
+    "ticket_id": "571",
+    "tag_id": "14",
+    "tag_type": "impact_level"
+  },
+  "572": {
+    "ticket_id": "572",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "573": {
+    "ticket_id": "573",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "574": {
+    "ticket_id": "574",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "575": {
+    "ticket_id": "575",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "576": {
+    "ticket_id": "576",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "577": {
+    "ticket_id": "577",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "578": {
+    "ticket_id": "578",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "579": {
+    "ticket_id": "579",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "580": {
+    "ticket_id": "580",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "581": {
+    "ticket_id": "581",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "582": {
+    "ticket_id": "582",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "583": {
+    "ticket_id": "583",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "584": {
+    "ticket_id": "584",
+    "tag_id": "4",
+    "tag_type": "priority"
+  },
+  "585": {
+    "ticket_id": "585",
+    "tag_id": "21",
+    "tag_type": "impact_level"
+  },
+  "586": {
+    "ticket_id": "586",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "587": {
+    "ticket_id": "587",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "588": {
+    "ticket_id": "588",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "589": {
+    "ticket_id": "589",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "590": {
+    "ticket_id": "590",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "591": {
+    "ticket_id": "591",
+    "tag_id": "20",
+    "tag_type": "priority"
+  },
+  "592": {
+    "ticket_id": "592",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "593": {
+    "ticket_id": "593",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "594": {
+    "ticket_id": "594",
+    "tag_id": "4",
+    "tag_type": "priority"
+  },
+  "595": {
+    "ticket_id": "595",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "596": {
+    "ticket_id": "596",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "597": {
+    "ticket_id": "597",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "598": {
+    "ticket_id": "598",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "599": {
+    "ticket_id": "599",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "600": {
+    "ticket_id": "600",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "601": {
+    "ticket_id": "601",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "602": {
+    "ticket_id": "602",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "603": {
+    "ticket_id": "603",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "604": {
+    "ticket_id": "604",
+    "tag_id": "1",
+    "tag_type": "queue"
+  },
+  "605": {
+    "ticket_id": "605",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "606": {
+    "ticket_id": "606",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "607": {
+    "ticket_id": "607",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "608": {
+    "ticket_id": "608",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "609": {
+    "ticket_id": "609",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "610": {
+    "ticket_id": "610",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "611": {
+    "ticket_id": "611",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "612": {
+    "ticket_id": "612",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "613": {
+    "ticket_id": "613",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "614": {
+    "ticket_id": "614",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "615": {
+    "ticket_id": "615",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "616": {
+    "ticket_id": "616",
+    "tag_id": "12",
+    "tag_type": "impact_level"
+  },
+  "617": {
+    "ticket_id": "617",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "618": {
+    "ticket_id": "618",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "619": {
+    "ticket_id": "619",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "620": {
+    "ticket_id": "620",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "621": {
+    "ticket_id": "621",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "622": {
+    "ticket_id": "622",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "623": {
+    "ticket_id": "623",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "624": {
+    "ticket_id": "624",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "625": {
+    "ticket_id": "625",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "626": {
+    "ticket_id": "626",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "627": {
+    "ticket_id": "627",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "628": {
+    "ticket_id": "628",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "629": {
+    "ticket_id": "629",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "630": {
+    "ticket_id": "630",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "631": {
+    "ticket_id": "631",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "632": {
+    "ticket_id": "632",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "633": {
+    "ticket_id": "633",
+    "tag_id": "17",
+    "tag_type": "priority"
+  },
+  "634": {
+    "ticket_id": "634",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "635": {
+    "ticket_id": "635",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "636": {
+    "ticket_id": "636",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "637": {
+    "ticket_id": "637",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "638": {
+    "ticket_id": "638",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "639": {
+    "ticket_id": "639",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "640": {
+    "ticket_id": "640",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "641": {
+    "ticket_id": "641",
+    "tag_id": "9",
+    "tag_type": "priority"
+  },
+  "642": {
+    "ticket_id": "642",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "643": {
+    "ticket_id": "643",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "644": {
+    "ticket_id": "644",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "645": {
+    "ticket_id": "645",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "646": {
+    "ticket_id": "646",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "647": {
+    "ticket_id": "647",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "648": {
+    "ticket_id": "648",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "649": {
+    "ticket_id": "649",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "650": {
+    "ticket_id": "650",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "651": {
+    "ticket_id": "651",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "652": {
+    "ticket_id": "652",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "653": {
+    "ticket_id": "653",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "654": {
+    "ticket_id": "654",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "655": {
+    "ticket_id": "655",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "656": {
+    "ticket_id": "656",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "657": {
+    "ticket_id": "657",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "658": {
+    "ticket_id": "658",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "659": {
+    "ticket_id": "659",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "660": {
+    "ticket_id": "660",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "661": {
+    "ticket_id": "661",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "662": {
+    "ticket_id": "662",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "663": {
+    "ticket_id": "663",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "664": {
+    "ticket_id": "664",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "665": {
+    "ticket_id": "665",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "666": {
+    "ticket_id": "666",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "667": {
+    "ticket_id": "667",
+    "tag_id": "17",
+    "tag_type": "priority"
+  },
+  "668": {
+    "ticket_id": "668",
+    "tag_id": "9",
+    "tag_type": "impact_level"
+  },
+  "669": {
+    "ticket_id": "669",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "670": {
+    "ticket_id": "670",
+    "tag_id": "22",
+    "tag_type": "issue_type"
+  },
+  "671": {
+    "ticket_id": "671",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "672": {
+    "ticket_id": "672",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "673": {
+    "ticket_id": "673",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "674": {
+    "ticket_id": "674",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "675": {
+    "ticket_id": "675",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "676": {
+    "ticket_id": "676",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "677": {
+    "ticket_id": "677",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "678": {
+    "ticket_id": "678",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "679": {
+    "ticket_id": "679",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "680": {
+    "ticket_id": "680",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "681": {
+    "ticket_id": "681",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "682": {
+    "ticket_id": "682",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "683": {
+    "ticket_id": "683",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "684": {
+    "ticket_id": "684",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "685": {
+    "ticket_id": "685",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "686": {
+    "ticket_id": "686",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "687": {
+    "ticket_id": "687",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "688": {
+    "ticket_id": "688",
+    "tag_id": "16",
+    "tag_type": "impact_level"
+  },
+  "689": {
+    "ticket_id": "689",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "690": {
+    "ticket_id": "690",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "691": {
+    "ticket_id": "691",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "692": {
+    "ticket_id": "692",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "693": {
+    "ticket_id": "693",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "694": {
+    "ticket_id": "694",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "695": {
+    "ticket_id": "695",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "696": {
+    "ticket_id": "696",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "697": {
+    "ticket_id": "697",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "698": {
+    "ticket_id": "698",
+    "tag_id": "16",
+    "tag_type": "impact_level"
+  },
+  "699": {
+    "ticket_id": "699",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "700": {
+    "ticket_id": "700",
+    "tag_id": "9",
+    "tag_type": "queue"
+  },
+  "701": {
+    "ticket_id": "701",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "702": {
+    "ticket_id": "702",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "703": {
+    "ticket_id": "703",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "704": {
+    "ticket_id": "704",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "705": {
+    "ticket_id": "705",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "706": {
+    "ticket_id": "706",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "707": {
+    "ticket_id": "707",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "708": {
+    "ticket_id": "708",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "709": {
+    "ticket_id": "709",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "710": {
+    "ticket_id": "710",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "711": {
+    "ticket_id": "711",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "712": {
+    "ticket_id": "712",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "713": {
+    "ticket_id": "713",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "714": {
+    "ticket_id": "714",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "715": {
+    "ticket_id": "715",
+    "tag_id": "9",
+    "tag_type": "queue"
+  },
+  "716": {
+    "ticket_id": "716",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "717": {
+    "ticket_id": "717",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "718": {
+    "ticket_id": "718",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "719": {
+    "ticket_id": "719",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "720": {
+    "ticket_id": "720",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "721": {
+    "ticket_id": "721",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "722": {
+    "ticket_id": "722",
+    "tag_id": "3",
+    "tag_type": "priority"
+  },
+  "723": {
+    "ticket_id": "723",
+    "tag_id": "8",
+    "tag_type": "impact_level"
+  },
+  "724": {
+    "ticket_id": "724",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "725": {
+    "ticket_id": "725",
+    "tag_id": "5",
+    "tag_type": "priority"
+  },
+  "726": {
+    "ticket_id": "726",
+    "tag_id": "14",
+    "tag_type": "priority"
+  },
+  "727": {
+    "ticket_id": "727",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "728": {
+    "ticket_id": "728",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "729": {
+    "ticket_id": "729",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "730": {
+    "ticket_id": "730",
+    "tag_id": "12",
+    "tag_type": "priority"
+  },
+  "731": {
+    "ticket_id": "731",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "732": {
+    "ticket_id": "732",
+    "tag_id": "3",
+    "tag_type": "priority"
+  },
+  "733": {
+    "ticket_id": "733",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "734": {
+    "ticket_id": "734",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "735": {
+    "ticket_id": "735",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "736": {
+    "ticket_id": "736",
+    "tag_id": "17",
+    "tag_type": "priority"
+  },
+  "737": {
+    "ticket_id": "737",
+    "tag_id": "13",
+    "tag_type": "impact_level"
+  },
+  "738": {
+    "ticket_id": "738",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "739": {
+    "ticket_id": "739",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "740": {
+    "ticket_id": "740",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "741": {
+    "ticket_id": "741",
+    "tag_id": "3",
+    "tag_type": "queue"
+  },
+  "742": {
+    "ticket_id": "742",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "743": {
+    "ticket_id": "743",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "744": {
+    "ticket_id": "744",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "745": {
+    "ticket_id": "745",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "746": {
+    "ticket_id": "746",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "747": {
+    "ticket_id": "747",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "748": {
+    "ticket_id": "748",
+    "tag_id": "18",
+    "tag_type": "queue"
+  },
+  "749": {
+    "ticket_id": "749",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "750": {
+    "ticket_id": "750",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "751": {
+    "ticket_id": "751",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "752": {
+    "ticket_id": "752",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "753": {
+    "ticket_id": "753",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "754": {
+    "ticket_id": "754",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "755": {
+    "ticket_id": "755",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "756": {
+    "ticket_id": "756",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "757": {
+    "ticket_id": "757",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "758": {
+    "ticket_id": "758",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "759": {
+    "ticket_id": "759",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "760": {
+    "ticket_id": "760",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "761": {
+    "ticket_id": "761",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "762": {
+    "ticket_id": "762",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "763": {
+    "ticket_id": "763",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "764": {
+    "ticket_id": "764",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "765": {
+    "ticket_id": "765",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "766": {
+    "ticket_id": "766",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "767": {
+    "ticket_id": "767",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "768": {
+    "ticket_id": "768",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "769": {
+    "ticket_id": "769",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "770": {
+    "ticket_id": "770",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "771": {
+    "ticket_id": "771",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "772": {
+    "ticket_id": "772",
+    "tag_id": "17",
+    "tag_type": "priority"
+  },
+  "773": {
+    "ticket_id": "773",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "774": {
+    "ticket_id": "774",
+    "tag_id": "3",
+    "tag_type": "queue"
+  },
+  "775": {
+    "ticket_id": "775",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "776": {
+    "ticket_id": "776",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "777": {
+    "ticket_id": "777",
+    "tag_id": "6",
+    "tag_type": "priority"
+  },
+  "778": {
+    "ticket_id": "778",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "779": {
+    "ticket_id": "779",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "780": {
+    "ticket_id": "780",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "781": {
+    "ticket_id": "781",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "782": {
+    "ticket_id": "782",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "783": {
+    "ticket_id": "783",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "784": {
+    "ticket_id": "784",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "785": {
+    "ticket_id": "785",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "786": {
+    "ticket_id": "786",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "787": {
+    "ticket_id": "787",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "788": {
+    "ticket_id": "788",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "789": {
+    "ticket_id": "789",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "790": {
+    "ticket_id": "790",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "791": {
+    "ticket_id": "791",
+    "tag_id": "18",
+    "tag_type": "queue"
+  },
+  "792": {
+    "ticket_id": "792",
+    "tag_id": "13",
+    "tag_type": "impact_level"
+  },
+  "793": {
+    "ticket_id": "793",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "794": {
+    "ticket_id": "794",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "795": {
+    "ticket_id": "795",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "796": {
+    "ticket_id": "796",
+    "tag_id": "19",
+    "tag_type": "impact_level"
+  },
+  "797": {
+    "ticket_id": "797",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "798": {
+    "ticket_id": "798",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "799": {
+    "ticket_id": "799",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "800": {
+    "ticket_id": "800",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "801": {
+    "ticket_id": "801",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "802": {
+    "ticket_id": "802",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "803": {
+    "ticket_id": "803",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "804": {
+    "ticket_id": "804",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "805": {
+    "ticket_id": "805",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "806": {
+    "ticket_id": "806",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "807": {
+    "ticket_id": "807",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "808": {
+    "ticket_id": "808",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "809": {
+    "ticket_id": "809",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "810": {
+    "ticket_id": "810",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "811": {
+    "ticket_id": "811",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "812": {
+    "ticket_id": "812",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "813": {
+    "ticket_id": "813",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "814": {
+    "ticket_id": "814",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "815": {
+    "ticket_id": "815",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "816": {
+    "ticket_id": "816",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "817": {
+    "ticket_id": "817",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "818": {
+    "ticket_id": "818",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "819": {
+    "ticket_id": "819",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "820": {
+    "ticket_id": "820",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "821": {
+    "ticket_id": "821",
+    "tag_id": "17",
+    "tag_type": "issue_type"
+  },
+  "822": {
+    "ticket_id": "822",
+    "tag_id": "21",
+    "tag_type": "impact_level"
+  },
+  "823": {
+    "ticket_id": "823",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "824": {
+    "ticket_id": "824",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "825": {
+    "ticket_id": "825",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "826": {
+    "ticket_id": "826",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "827": {
+    "ticket_id": "827",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "828": {
+    "ticket_id": "828",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "829": {
+    "ticket_id": "829",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "830": {
+    "ticket_id": "830",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "831": {
+    "ticket_id": "831",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "832": {
+    "ticket_id": "832",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "833": {
+    "ticket_id": "833",
+    "tag_id": "10",
+    "tag_type": "impact_level"
+  },
+  "834": {
+    "ticket_id": "834",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "835": {
+    "ticket_id": "835",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "836": {
+    "ticket_id": "836",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "837": {
+    "ticket_id": "837",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "838": {
+    "ticket_id": "838",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "839": {
+    "ticket_id": "839",
+    "tag_id": "10",
+    "tag_type": "issue_type"
+  },
+  "840": {
+    "ticket_id": "840",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "841": {
+    "ticket_id": "841",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "842": {
+    "ticket_id": "842",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "843": {
+    "ticket_id": "843",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "844": {
+    "ticket_id": "844",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "845": {
+    "ticket_id": "845",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "846": {
+    "ticket_id": "846",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "847": {
+    "ticket_id": "847",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "848": {
+    "ticket_id": "848",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "849": {
+    "ticket_id": "849",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "850": {
+    "ticket_id": "850",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "851": {
+    "ticket_id": "851",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "852": {
+    "ticket_id": "852",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "853": {
+    "ticket_id": "853",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "854": {
+    "ticket_id": "854",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "855": {
+    "ticket_id": "855",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "856": {
+    "ticket_id": "856",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "857": {
+    "ticket_id": "857",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "858": {
+    "ticket_id": "858",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "859": {
+    "ticket_id": "859",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "860": {
+    "ticket_id": "860",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "861": {
+    "ticket_id": "861",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "862": {
+    "ticket_id": "862",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "863": {
+    "ticket_id": "863",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "864": {
+    "ticket_id": "864",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "865": {
+    "ticket_id": "865",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "866": {
+    "ticket_id": "866",
+    "tag_id": "11",
+    "tag_type": "issue_type"
+  },
+  "867": {
+    "ticket_id": "867",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "868": {
+    "ticket_id": "868",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "869": {
+    "ticket_id": "869",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "870": {
+    "ticket_id": "870",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "871": {
+    "ticket_id": "871",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "872": {
+    "ticket_id": "872",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "873": {
+    "ticket_id": "873",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "874": {
+    "ticket_id": "874",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "875": {
+    "ticket_id": "875",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "876": {
+    "ticket_id": "876",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "877": {
+    "ticket_id": "877",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "878": {
+    "ticket_id": "878",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "879": {
+    "ticket_id": "879",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "880": {
+    "ticket_id": "880",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "881": {
+    "ticket_id": "881",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "882": {
+    "ticket_id": "882",
+    "tag_id": "10",
+    "tag_type": "queue"
+  },
+  "883": {
+    "ticket_id": "883",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "884": {
+    "ticket_id": "884",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "885": {
+    "ticket_id": "885",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "886": {
+    "ticket_id": "886",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "887": {
+    "ticket_id": "887",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "888": {
+    "ticket_id": "888",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "889": {
+    "ticket_id": "889",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "890": {
+    "ticket_id": "890",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "891": {
+    "ticket_id": "891",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "892": {
+    "ticket_id": "892",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "893": {
+    "ticket_id": "893",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "894": {
+    "ticket_id": "894",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "895": {
+    "ticket_id": "895",
+    "tag_id": "10",
+    "tag_type": "impact_level"
+  },
+  "896": {
+    "ticket_id": "896",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "897": {
+    "ticket_id": "897",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "898": {
+    "ticket_id": "898",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "899": {
+    "ticket_id": "899",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "900": {
+    "ticket_id": "900",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "901": {
+    "ticket_id": "901",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "902": {
+    "ticket_id": "902",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "903": {
+    "ticket_id": "903",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "904": {
+    "ticket_id": "904",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "905": {
+    "ticket_id": "905",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "906": {
+    "ticket_id": "906",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "907": {
+    "ticket_id": "907",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "908": {
+    "ticket_id": "908",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "909": {
+    "ticket_id": "909",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "910": {
+    "ticket_id": "910",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "911": {
+    "ticket_id": "911",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "912": {
+    "ticket_id": "912",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "913": {
+    "ticket_id": "913",
+    "tag_id": "1",
+    "tag_type": "queue"
+  },
+  "914": {
+    "ticket_id": "914",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "915": {
+    "ticket_id": "915",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "916": {
+    "ticket_id": "916",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "917": {
+    "ticket_id": "917",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "918": {
+    "ticket_id": "918",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "919": {
+    "ticket_id": "919",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "920": {
+    "ticket_id": "920",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "921": {
+    "ticket_id": "921",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "922": {
+    "ticket_id": "922",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "923": {
+    "ticket_id": "923",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "924": {
+    "ticket_id": "924",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "925": {
+    "ticket_id": "925",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "926": {
+    "ticket_id": "926",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "927": {
+    "ticket_id": "927",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "928": {
+    "ticket_id": "928",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "929": {
+    "ticket_id": "929",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "930": {
+    "ticket_id": "930",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "931": {
+    "ticket_id": "931",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "932": {
+    "ticket_id": "932",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "933": {
+    "ticket_id": "933",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "934": {
+    "ticket_id": "934",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "935": {
+    "ticket_id": "935",
+    "tag_id": "12",
+    "tag_type": "impact_level"
+  },
+  "936": {
+    "ticket_id": "936",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "937": {
+    "ticket_id": "937",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "938": {
+    "ticket_id": "938",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "939": {
+    "ticket_id": "939",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "940": {
+    "ticket_id": "940",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "941": {
+    "ticket_id": "941",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "942": {
+    "ticket_id": "942",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "943": {
+    "ticket_id": "943",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "944": {
+    "ticket_id": "944",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "945": {
+    "ticket_id": "945",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "946": {
+    "ticket_id": "946",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "947": {
+    "ticket_id": "947",
+    "tag_id": "18",
+    "tag_type": "impact_level"
+  },
+  "948": {
+    "ticket_id": "948",
+    "tag_id": "22",
+    "tag_type": "impact_level"
+  },
+  "949": {
+    "ticket_id": "949",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "950": {
+    "ticket_id": "950",
+    "tag_id": "7",
+    "tag_type": "impact_level"
+  },
+  "951": {
+    "ticket_id": "951",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "952": {
+    "ticket_id": "952",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "953": {
+    "ticket_id": "953",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "954": {
+    "ticket_id": "954",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "955": {
+    "ticket_id": "955",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "956": {
+    "ticket_id": "956",
+    "tag_id": "1",
+    "tag_type": "impact_level"
+  },
+  "957": {
+    "ticket_id": "957",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "958": {
+    "ticket_id": "958",
+    "tag_id": "6",
+    "tag_type": "priority"
+  },
+  "959": {
+    "ticket_id": "959",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "960": {
+    "ticket_id": "960",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "961": {
+    "ticket_id": "961",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "962": {
+    "ticket_id": "962",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "963": {
+    "ticket_id": "963",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "964": {
+    "ticket_id": "964",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "965": {
+    "ticket_id": "965",
+    "tag_id": "9",
+    "tag_type": "queue"
+  },
+  "966": {
+    "ticket_id": "966",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "967": {
+    "ticket_id": "967",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "968": {
+    "ticket_id": "968",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "969": {
+    "ticket_id": "969",
+    "tag_id": "4",
+    "tag_type": "priority"
+  },
+  "970": {
+    "ticket_id": "970",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "971": {
+    "ticket_id": "971",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "972": {
+    "ticket_id": "972",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "973": {
+    "ticket_id": "973",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "974": {
+    "ticket_id": "974",
+    "tag_id": "17",
+    "tag_type": "impact_level"
+  },
+  "975": {
+    "ticket_id": "975",
+    "tag_id": "9",
+    "tag_type": "issue_type"
+  },
+  "976": {
+    "ticket_id": "976",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "977": {
+    "ticket_id": "977",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "978": {
+    "ticket_id": "978",
+    "tag_id": "8",
+    "tag_type": "impact_level"
+  },
+  "979": {
+    "ticket_id": "979",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "980": {
+    "ticket_id": "980",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "981": {
+    "ticket_id": "981",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "982": {
+    "ticket_id": "982",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "983": {
+    "ticket_id": "983",
+    "tag_id": "1",
+    "tag_type": "queue"
+  },
+  "984": {
+    "ticket_id": "984",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "985": {
+    "ticket_id": "985",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "986": {
+    "ticket_id": "986",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "987": {
+    "ticket_id": "987",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "988": {
+    "ticket_id": "988",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "989": {
+    "ticket_id": "989",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "990": {
+    "ticket_id": "990",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "991": {
+    "ticket_id": "991",
+    "tag_id": "7",
+    "tag_type": "priority"
+  },
+  "992": {
+    "ticket_id": "992",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "993": {
+    "ticket_id": "993",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "994": {
+    "ticket_id": "994",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "995": {
+    "ticket_id": "995",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "996": {
+    "ticket_id": "996",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "997": {
+    "ticket_id": "997",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "998": {
+    "ticket_id": "998",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "999": {
+    "ticket_id": "999",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "1000": {
+    "ticket_id": "1000",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1001": {
+    "ticket_id": "1001",
+    "tag_id": "5",
+    "tag_type": "priority"
+  },
+  "1002": {
+    "ticket_id": "1002",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1003": {
+    "ticket_id": "1003",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1004": {
+    "ticket_id": "1004",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1005": {
+    "ticket_id": "1005",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1006": {
+    "ticket_id": "1006",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1007": {
+    "ticket_id": "1007",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1008": {
+    "ticket_id": "1008",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1009": {
+    "ticket_id": "1009",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1010": {
+    "ticket_id": "1010",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1011": {
+    "ticket_id": "1011",
+    "tag_id": "22",
+    "tag_type": "impact_level"
+  },
+  "1012": {
+    "ticket_id": "1012",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1013": {
+    "ticket_id": "1013",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "1014": {
+    "ticket_id": "1014",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "1015": {
+    "ticket_id": "1015",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "1016": {
+    "ticket_id": "1016",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1017": {
+    "ticket_id": "1017",
+    "tag_id": "11",
+    "tag_type": "issue_type"
+  },
+  "1018": {
+    "ticket_id": "1018",
+    "tag_id": "9",
+    "tag_type": "queue"
+  },
+  "1019": {
+    "ticket_id": "1019",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "1020": {
+    "ticket_id": "1020",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1021": {
+    "ticket_id": "1021",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1022": {
+    "ticket_id": "1022",
+    "tag_id": "12",
+    "tag_type": "priority"
+  },
+  "1023": {
+    "ticket_id": "1023",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1024": {
+    "ticket_id": "1024",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "1025": {
+    "ticket_id": "1025",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1026": {
+    "ticket_id": "1026",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1027": {
+    "ticket_id": "1027",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1028": {
+    "ticket_id": "1028",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1029": {
+    "ticket_id": "1029",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1030": {
+    "ticket_id": "1030",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1031": {
+    "ticket_id": "1031",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1032": {
+    "ticket_id": "1032",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1033": {
+    "ticket_id": "1033",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1034": {
+    "ticket_id": "1034",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1035": {
+    "ticket_id": "1035",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "1036": {
+    "ticket_id": "1036",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1037": {
+    "ticket_id": "1037",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1038": {
+    "ticket_id": "1038",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "1039": {
+    "ticket_id": "1039",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "1040": {
+    "ticket_id": "1040",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1041": {
+    "ticket_id": "1041",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "1042": {
+    "ticket_id": "1042",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1043": {
+    "ticket_id": "1043",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1044": {
+    "ticket_id": "1044",
+    "tag_id": "7",
+    "tag_type": "priority"
+  },
+  "1045": {
+    "ticket_id": "1045",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1046": {
+    "ticket_id": "1046",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1047": {
+    "ticket_id": "1047",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "1048": {
+    "ticket_id": "1048",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1049": {
+    "ticket_id": "1049",
+    "tag_id": "8",
+    "tag_type": "impact_level"
+  },
+  "1050": {
+    "ticket_id": "1050",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1051": {
+    "ticket_id": "1051",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "1052": {
+    "ticket_id": "1052",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1053": {
+    "ticket_id": "1053",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "1054": {
+    "ticket_id": "1054",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "1055": {
+    "ticket_id": "1055",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1056": {
+    "ticket_id": "1056",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1057": {
+    "ticket_id": "1057",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1058": {
+    "ticket_id": "1058",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "1059": {
+    "ticket_id": "1059",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "1060": {
+    "ticket_id": "1060",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "1061": {
+    "ticket_id": "1061",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1062": {
+    "ticket_id": "1062",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1063": {
+    "ticket_id": "1063",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1064": {
+    "ticket_id": "1064",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "1065": {
+    "ticket_id": "1065",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "1066": {
+    "ticket_id": "1066",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1067": {
+    "ticket_id": "1067",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1068": {
+    "ticket_id": "1068",
+    "tag_id": "13",
+    "tag_type": "issue_type"
+  },
+  "1069": {
+    "ticket_id": "1069",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1070": {
+    "ticket_id": "1070",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1071": {
+    "ticket_id": "1071",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1072": {
+    "ticket_id": "1072",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1073": {
+    "ticket_id": "1073",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "1074": {
+    "ticket_id": "1074",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1075": {
+    "ticket_id": "1075",
+    "tag_id": "9",
+    "tag_type": "impact_level"
+  },
+  "1076": {
+    "ticket_id": "1076",
+    "tag_id": "17",
+    "tag_type": "impact_level"
+  },
+  "1077": {
+    "ticket_id": "1077",
+    "tag_id": "7",
+    "tag_type": "priority"
+  },
+  "1078": {
+    "ticket_id": "1078",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "1079": {
+    "ticket_id": "1079",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1080": {
+    "ticket_id": "1080",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1081": {
+    "ticket_id": "1081",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "1082": {
+    "ticket_id": "1082",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "1083": {
+    "ticket_id": "1083",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1084": {
+    "ticket_id": "1084",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1085": {
+    "ticket_id": "1085",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1086": {
+    "ticket_id": "1086",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1087": {
+    "ticket_id": "1087",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1088": {
+    "ticket_id": "1088",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1089": {
+    "ticket_id": "1089",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "1090": {
+    "ticket_id": "1090",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1091": {
+    "ticket_id": "1091",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "1092": {
+    "ticket_id": "1092",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1093": {
+    "ticket_id": "1093",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1094": {
+    "ticket_id": "1094",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1095": {
+    "ticket_id": "1095",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "1096": {
+    "ticket_id": "1096",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1097": {
+    "ticket_id": "1097",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "1098": {
+    "ticket_id": "1098",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1099": {
+    "ticket_id": "1099",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "1100": {
+    "ticket_id": "1100",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1101": {
+    "ticket_id": "1101",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1102": {
+    "ticket_id": "1102",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "1103": {
+    "ticket_id": "1103",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1104": {
+    "ticket_id": "1104",
+    "tag_id": "14",
+    "tag_type": "priority"
+  },
+  "1105": {
+    "ticket_id": "1105",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "1106": {
+    "ticket_id": "1106",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "1107": {
+    "ticket_id": "1107",
+    "tag_id": "10",
+    "tag_type": "issue_type"
+  },
+  "1108": {
+    "ticket_id": "1108",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1109": {
+    "ticket_id": "1109",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "1110": {
+    "ticket_id": "1110",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1111": {
+    "ticket_id": "1111",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "1112": {
+    "ticket_id": "1112",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1113": {
+    "ticket_id": "1113",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1114": {
+    "ticket_id": "1114",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1115": {
+    "ticket_id": "1115",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "1116": {
+    "ticket_id": "1116",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1117": {
+    "ticket_id": "1117",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "1118": {
+    "ticket_id": "1118",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1119": {
+    "ticket_id": "1119",
+    "tag_id": "18",
+    "tag_type": "actionable"
+  },
+  "1120": {
+    "ticket_id": "1120",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1121": {
+    "ticket_id": "1121",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1122": {
+    "ticket_id": "1122",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "1123": {
+    "ticket_id": "1123",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1124": {
+    "ticket_id": "1124",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1125": {
+    "ticket_id": "1125",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1126": {
+    "ticket_id": "1126",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "1127": {
+    "ticket_id": "1127",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1128": {
+    "ticket_id": "1128",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1129": {
+    "ticket_id": "1129",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1130": {
+    "ticket_id": "1130",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1131": {
+    "ticket_id": "1131",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1132": {
+    "ticket_id": "1132",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1133": {
+    "ticket_id": "1133",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "1134": {
+    "ticket_id": "1134",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "1135": {
+    "ticket_id": "1135",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1136": {
+    "ticket_id": "1136",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "1137": {
+    "ticket_id": "1137",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1138": {
+    "ticket_id": "1138",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "1139": {
+    "ticket_id": "1139",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1140": {
+    "ticket_id": "1140",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1141": {
+    "ticket_id": "1141",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1142": {
+    "ticket_id": "1142",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "1143": {
+    "ticket_id": "1143",
+    "tag_id": "4",
+    "tag_type": "priority"
+  },
+  "1144": {
+    "ticket_id": "1144",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1145": {
+    "ticket_id": "1145",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "1146": {
+    "ticket_id": "1146",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1147": {
+    "ticket_id": "1147",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1148": {
+    "ticket_id": "1148",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1149": {
+    "ticket_id": "1149",
+    "tag_id": "6",
+    "tag_type": "priority"
+  },
+  "1150": {
+    "ticket_id": "1150",
+    "tag_id": "14",
+    "tag_type": "issue_type"
+  },
+  "1151": {
+    "ticket_id": "1151",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "1152": {
+    "ticket_id": "1152",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "1153": {
+    "ticket_id": "1153",
+    "tag_id": "9",
+    "tag_type": "impact_level"
+  },
+  "1154": {
+    "ticket_id": "1154",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "1155": {
+    "ticket_id": "1155",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "1156": {
+    "ticket_id": "1156",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1157": {
+    "ticket_id": "1157",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1158": {
+    "ticket_id": "1158",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1159": {
+    "ticket_id": "1159",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1160": {
+    "ticket_id": "1160",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1161": {
+    "ticket_id": "1161",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1162": {
+    "ticket_id": "1162",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "1163": {
+    "ticket_id": "1163",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1164": {
+    "ticket_id": "1164",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1165": {
+    "ticket_id": "1165",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1166": {
+    "ticket_id": "1166",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1167": {
+    "ticket_id": "1167",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1168": {
+    "ticket_id": "1168",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1169": {
+    "ticket_id": "1169",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1170": {
+    "ticket_id": "1170",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "1171": {
+    "ticket_id": "1171",
+    "tag_id": "12",
+    "tag_type": "priority"
+  },
+  "1172": {
+    "ticket_id": "1172",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1173": {
+    "ticket_id": "1173",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1174": {
+    "ticket_id": "1174",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1175": {
+    "ticket_id": "1175",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "1176": {
+    "ticket_id": "1176",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1177": {
+    "ticket_id": "1177",
+    "tag_id": "6",
+    "tag_type": "priority"
+  },
+  "1178": {
+    "ticket_id": "1178",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1179": {
+    "ticket_id": "1179",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "1180": {
+    "ticket_id": "1180",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "1181": {
+    "ticket_id": "1181",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1182": {
+    "ticket_id": "1182",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1183": {
+    "ticket_id": "1183",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "1184": {
+    "ticket_id": "1184",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1185": {
+    "ticket_id": "1185",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1186": {
+    "ticket_id": "1186",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1187": {
+    "ticket_id": "1187",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1188": {
+    "ticket_id": "1188",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "1189": {
+    "ticket_id": "1189",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1190": {
+    "ticket_id": "1190",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1191": {
+    "ticket_id": "1191",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1192": {
+    "ticket_id": "1192",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "1193": {
+    "ticket_id": "1193",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1194": {
+    "ticket_id": "1194",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "1195": {
+    "ticket_id": "1195",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1196": {
+    "ticket_id": "1196",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1197": {
+    "ticket_id": "1197",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1198": {
+    "ticket_id": "1198",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1199": {
+    "ticket_id": "1199",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1200": {
+    "ticket_id": "1200",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1201": {
+    "ticket_id": "1201",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1202": {
+    "ticket_id": "1202",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1203": {
+    "ticket_id": "1203",
+    "tag_id": "3",
+    "tag_type": "queue"
+  },
+  "1204": {
+    "ticket_id": "1204",
+    "tag_id": "14",
+    "tag_type": "priority"
+  },
+  "1205": {
+    "ticket_id": "1205",
+    "tag_id": "10",
+    "tag_type": "impact_level"
+  },
+  "1206": {
+    "ticket_id": "1206",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "1207": {
+    "ticket_id": "1207",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "1208": {
+    "ticket_id": "1208",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1209": {
+    "ticket_id": "1209",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "1210": {
+    "ticket_id": "1210",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1211": {
+    "ticket_id": "1211",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1212": {
+    "ticket_id": "1212",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1213": {
+    "ticket_id": "1213",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1214": {
+    "ticket_id": "1214",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1215": {
+    "ticket_id": "1215",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1216": {
+    "ticket_id": "1216",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1217": {
+    "ticket_id": "1217",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1218": {
+    "ticket_id": "1218",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "1219": {
+    "ticket_id": "1219",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1220": {
+    "ticket_id": "1220",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1221": {
+    "ticket_id": "1221",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1222": {
+    "ticket_id": "1222",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1223": {
+    "ticket_id": "1223",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "1224": {
+    "ticket_id": "1224",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1225": {
+    "ticket_id": "1225",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "1226": {
+    "ticket_id": "1226",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "1227": {
+    "ticket_id": "1227",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "1228": {
+    "ticket_id": "1228",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1229": {
+    "ticket_id": "1229",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1230": {
+    "ticket_id": "1230",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1231": {
+    "ticket_id": "1231",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1232": {
+    "ticket_id": "1232",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1233": {
+    "ticket_id": "1233",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1234": {
+    "ticket_id": "1234",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1235": {
+    "ticket_id": "1235",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "1236": {
+    "ticket_id": "1236",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "1237": {
+    "ticket_id": "1237",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "1238": {
+    "ticket_id": "1238",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "1239": {
+    "ticket_id": "1239",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "1240": {
+    "ticket_id": "1240",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "1241": {
+    "ticket_id": "1241",
+    "tag_id": "8",
+    "tag_type": "impact_level"
+  },
+  "1242": {
+    "ticket_id": "1242",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "1243": {
+    "ticket_id": "1243",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1244": {
+    "ticket_id": "1244",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1245": {
+    "ticket_id": "1245",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "1246": {
+    "ticket_id": "1246",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1247": {
+    "ticket_id": "1247",
+    "tag_id": "9",
+    "tag_type": "queue"
+  },
+  "1248": {
+    "ticket_id": "1248",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1249": {
+    "ticket_id": "1249",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1250": {
+    "ticket_id": "1250",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "1251": {
+    "ticket_id": "1251",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "1252": {
+    "ticket_id": "1252",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "1253": {
+    "ticket_id": "1253",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1254": {
+    "ticket_id": "1254",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1255": {
+    "ticket_id": "1255",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1256": {
+    "ticket_id": "1256",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1257": {
+    "ticket_id": "1257",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "1258": {
+    "ticket_id": "1258",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1259": {
+    "ticket_id": "1259",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "1260": {
+    "ticket_id": "1260",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1261": {
+    "ticket_id": "1261",
+    "tag_id": "10",
+    "tag_type": "issue_type"
+  },
+  "1262": {
+    "ticket_id": "1262",
+    "tag_id": "18",
+    "tag_type": "priority"
+  },
+  "1263": {
+    "ticket_id": "1263",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "1264": {
+    "ticket_id": "1264",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1265": {
+    "ticket_id": "1265",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1266": {
+    "ticket_id": "1266",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "1267": {
+    "ticket_id": "1267",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1268": {
+    "ticket_id": "1268",
+    "tag_id": "1",
+    "tag_type": "impact_level"
+  },
+  "1269": {
+    "ticket_id": "1269",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1270": {
+    "ticket_id": "1270",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1271": {
+    "ticket_id": "1271",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "1272": {
+    "ticket_id": "1272",
+    "tag_id": "5",
+    "tag_type": "actionable"
+  },
+  "1273": {
+    "ticket_id": "1273",
+    "tag_id": "9",
+    "tag_type": "priority"
+  },
+  "1274": {
+    "ticket_id": "1274",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1275": {
+    "ticket_id": "1275",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "1276": {
+    "ticket_id": "1276",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "1277": {
+    "ticket_id": "1277",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1278": {
+    "ticket_id": "1278",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1279": {
+    "ticket_id": "1279",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "1280": {
+    "ticket_id": "1280",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1281": {
+    "ticket_id": "1281",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "1282": {
+    "ticket_id": "1282",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1283": {
+    "ticket_id": "1283",
+    "tag_id": "21",
+    "tag_type": "priority"
+  },
+  "1284": {
+    "ticket_id": "1284",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1285": {
+    "ticket_id": "1285",
+    "tag_id": "11",
+    "tag_type": "priority"
+  },
+  "1286": {
+    "ticket_id": "1286",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "1287": {
+    "ticket_id": "1287",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1288": {
+    "ticket_id": "1288",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "1289": {
+    "ticket_id": "1289",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "1290": {
+    "ticket_id": "1290",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1291": {
+    "ticket_id": "1291",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1292": {
+    "ticket_id": "1292",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1293": {
+    "ticket_id": "1293",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1294": {
+    "ticket_id": "1294",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1295": {
+    "ticket_id": "1295",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "1296": {
+    "ticket_id": "1296",
+    "tag_id": "9",
+    "tag_type": "priority"
+  },
+  "1297": {
+    "ticket_id": "1297",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "1298": {
+    "ticket_id": "1298",
+    "tag_id": "4",
+    "tag_type": "issue_type"
+  },
+  "1299": {
+    "ticket_id": "1299",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1300": {
+    "ticket_id": "1300",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1301": {
+    "ticket_id": "1301",
+    "tag_id": "14",
+    "tag_type": "priority"
+  },
+  "1302": {
+    "ticket_id": "1302",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1303": {
+    "ticket_id": "1303",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "1304": {
+    "ticket_id": "1304",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1305": {
+    "ticket_id": "1305",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "1306": {
+    "ticket_id": "1306",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1307": {
+    "ticket_id": "1307",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1308": {
+    "ticket_id": "1308",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1309": {
+    "ticket_id": "1309",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1310": {
+    "ticket_id": "1310",
+    "tag_id": "20",
+    "tag_type": "priority"
+  },
+  "1311": {
+    "ticket_id": "1311",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1312": {
+    "ticket_id": "1312",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "1313": {
+    "ticket_id": "1313",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1314": {
+    "ticket_id": "1314",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1315": {
+    "ticket_id": "1315",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1316": {
+    "ticket_id": "1316",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "1317": {
+    "ticket_id": "1317",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1318": {
+    "ticket_id": "1318",
+    "tag_id": "7",
+    "tag_type": "priority"
+  },
+  "1319": {
+    "ticket_id": "1319",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1320": {
+    "ticket_id": "1320",
+    "tag_id": "20",
+    "tag_type": "issue_type"
+  },
+  "1321": {
+    "ticket_id": "1321",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "1322": {
+    "ticket_id": "1322",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1323": {
+    "ticket_id": "1323",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1324": {
+    "ticket_id": "1324",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "1325": {
+    "ticket_id": "1325",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1326": {
+    "ticket_id": "1326",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1327": {
+    "ticket_id": "1327",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1328": {
+    "ticket_id": "1328",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "1329": {
+    "ticket_id": "1329",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "1330": {
+    "ticket_id": "1330",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1331": {
+    "ticket_id": "1331",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1332": {
+    "ticket_id": "1332",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1333": {
+    "ticket_id": "1333",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1334": {
+    "ticket_id": "1334",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1335": {
+    "ticket_id": "1335",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1336": {
+    "ticket_id": "1336",
+    "tag_id": "21",
+    "tag_type": "impact_level"
+  },
+  "1337": {
+    "ticket_id": "1337",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1338": {
+    "ticket_id": "1338",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1339": {
+    "ticket_id": "1339",
+    "tag_id": "8",
+    "tag_type": "impact_level"
+  },
+  "1340": {
+    "ticket_id": "1340",
+    "tag_id": "12",
+    "tag_type": "issue_type"
+  },
+  "1341": {
+    "ticket_id": "1341",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1342": {
+    "ticket_id": "1342",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "1343": {
+    "ticket_id": "1343",
+    "tag_id": "4",
+    "tag_type": "actionable"
+  },
+  "1344": {
+    "ticket_id": "1344",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1345": {
+    "ticket_id": "1345",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1346": {
+    "ticket_id": "1346",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "1347": {
+    "ticket_id": "1347",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1348": {
+    "ticket_id": "1348",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "1349": {
+    "ticket_id": "1349",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "1350": {
+    "ticket_id": "1350",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "1351": {
+    "ticket_id": "1351",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1352": {
+    "ticket_id": "1352",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1353": {
+    "ticket_id": "1353",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "1354": {
+    "ticket_id": "1354",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "1355": {
+    "ticket_id": "1355",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1356": {
+    "ticket_id": "1356",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1357": {
+    "ticket_id": "1357",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1358": {
+    "ticket_id": "1358",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1359": {
+    "ticket_id": "1359",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1360": {
+    "ticket_id": "1360",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1361": {
+    "ticket_id": "1361",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1362": {
+    "ticket_id": "1362",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1363": {
+    "ticket_id": "1363",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1364": {
+    "ticket_id": "1364",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "1365": {
+    "ticket_id": "1365",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1366": {
+    "ticket_id": "1366",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "1367": {
+    "ticket_id": "1367",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1368": {
+    "ticket_id": "1368",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1369": {
+    "ticket_id": "1369",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1370": {
+    "ticket_id": "1370",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "1371": {
+    "ticket_id": "1371",
+    "tag_id": "1",
+    "tag_type": "queue"
+  },
+  "1372": {
+    "ticket_id": "1372",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1373": {
+    "ticket_id": "1373",
+    "tag_id": "20",
+    "tag_type": "impact_level"
+  },
+  "1374": {
+    "ticket_id": "1374",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1375": {
+    "ticket_id": "1375",
+    "tag_id": "17",
+    "tag_type": "priority"
+  },
+  "1376": {
+    "ticket_id": "1376",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1377": {
+    "ticket_id": "1377",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1378": {
+    "ticket_id": "1378",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1379": {
+    "ticket_id": "1379",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "1380": {
+    "ticket_id": "1380",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "1381": {
+    "ticket_id": "1381",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "1382": {
+    "ticket_id": "1382",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "1383": {
+    "ticket_id": "1383",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "1384": {
+    "ticket_id": "1384",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1385": {
+    "ticket_id": "1385",
+    "tag_id": "5",
+    "tag_type": "priority"
+  },
+  "1386": {
+    "ticket_id": "1386",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1387": {
+    "ticket_id": "1387",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1388": {
+    "ticket_id": "1388",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1389": {
+    "ticket_id": "1389",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1390": {
+    "ticket_id": "1390",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "1391": {
+    "ticket_id": "1391",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "1392": {
+    "ticket_id": "1392",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "1393": {
+    "ticket_id": "1393",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "1394": {
+    "ticket_id": "1394",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1395": {
+    "ticket_id": "1395",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1396": {
+    "ticket_id": "1396",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1397": {
+    "ticket_id": "1397",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1398": {
+    "ticket_id": "1398",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1399": {
+    "ticket_id": "1399",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1400": {
+    "ticket_id": "1400",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1401": {
+    "ticket_id": "1401",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1402": {
+    "ticket_id": "1402",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1403": {
+    "ticket_id": "1403",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "1404": {
+    "ticket_id": "1404",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1405": {
+    "ticket_id": "1405",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "1406": {
+    "ticket_id": "1406",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1407": {
+    "ticket_id": "1407",
+    "tag_id": "20",
+    "tag_type": "queue"
+  },
+  "1408": {
+    "ticket_id": "1408",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1409": {
+    "ticket_id": "1409",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1410": {
+    "ticket_id": "1410",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1411": {
+    "ticket_id": "1411",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1412": {
+    "ticket_id": "1412",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1413": {
+    "ticket_id": "1413",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "1414": {
+    "ticket_id": "1414",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "1415": {
+    "ticket_id": "1415",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1416": {
+    "ticket_id": "1416",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1417": {
+    "ticket_id": "1417",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "1418": {
+    "ticket_id": "1418",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "1419": {
+    "ticket_id": "1419",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1420": {
+    "ticket_id": "1420",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1421": {
+    "ticket_id": "1421",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1422": {
+    "ticket_id": "1422",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "1423": {
+    "ticket_id": "1423",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1424": {
+    "ticket_id": "1424",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "1425": {
+    "ticket_id": "1425",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1426": {
+    "ticket_id": "1426",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1427": {
+    "ticket_id": "1427",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1428": {
+    "ticket_id": "1428",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1429": {
+    "ticket_id": "1429",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "1430": {
+    "ticket_id": "1430",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1431": {
+    "ticket_id": "1431",
+    "tag_id": "14",
+    "tag_type": "queue"
+  },
+  "1432": {
+    "ticket_id": "1432",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "1433": {
+    "ticket_id": "1433",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "1434": {
+    "ticket_id": "1434",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1435": {
+    "ticket_id": "1435",
+    "tag_id": "18",
+    "tag_type": "impact_level"
+  },
+  "1436": {
+    "ticket_id": "1436",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1437": {
+    "ticket_id": "1437",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1438": {
+    "ticket_id": "1438",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1439": {
+    "ticket_id": "1439",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1440": {
+    "ticket_id": "1440",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "1441": {
+    "ticket_id": "1441",
+    "tag_id": "21",
+    "tag_type": "queue"
+  },
+  "1442": {
+    "ticket_id": "1442",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "1443": {
+    "ticket_id": "1443",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "1444": {
+    "ticket_id": "1444",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1445": {
+    "ticket_id": "1445",
+    "tag_id": "5",
+    "tag_type": "queue"
+  },
+  "1446": {
+    "ticket_id": "1446",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1447": {
+    "ticket_id": "1447",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1448": {
+    "ticket_id": "1448",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1449": {
+    "ticket_id": "1449",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1450": {
+    "ticket_id": "1450",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "1451": {
+    "ticket_id": "1451",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1452": {
+    "ticket_id": "1452",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1453": {
+    "ticket_id": "1453",
+    "tag_id": "4",
+    "tag_type": "priority"
+  },
+  "1454": {
+    "ticket_id": "1454",
+    "tag_id": "17",
+    "tag_type": "priority"
+  },
+  "1455": {
+    "ticket_id": "1455",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1456": {
+    "ticket_id": "1456",
+    "tag_id": "20",
+    "tag_type": "priority"
+  },
+  "1457": {
+    "ticket_id": "1457",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1458": {
+    "ticket_id": "1458",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1459": {
+    "ticket_id": "1459",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1460": {
+    "ticket_id": "1460",
+    "tag_id": "9",
+    "tag_type": "impact_level"
+  },
+  "1461": {
+    "ticket_id": "1461",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1462": {
+    "ticket_id": "1462",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "1463": {
+    "ticket_id": "1463",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "1464": {
+    "ticket_id": "1464",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1465": {
+    "ticket_id": "1465",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1466": {
+    "ticket_id": "1466",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1467": {
+    "ticket_id": "1467",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "1468": {
+    "ticket_id": "1468",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "1469": {
+    "ticket_id": "1469",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1470": {
+    "ticket_id": "1470",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "1471": {
+    "ticket_id": "1471",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1472": {
+    "ticket_id": "1472",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1473": {
+    "ticket_id": "1473",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "1474": {
+    "ticket_id": "1474",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1475": {
+    "ticket_id": "1475",
+    "tag_id": "18",
+    "tag_type": "impact_level"
+  },
+  "1476": {
+    "ticket_id": "1476",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1477": {
+    "ticket_id": "1477",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1478": {
+    "ticket_id": "1478",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1479": {
+    "ticket_id": "1479",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1480": {
+    "ticket_id": "1480",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1481": {
+    "ticket_id": "1481",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1482": {
+    "ticket_id": "1482",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "1483": {
+    "ticket_id": "1483",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1484": {
+    "ticket_id": "1484",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1485": {
+    "ticket_id": "1485",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "1486": {
+    "ticket_id": "1486",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1487": {
+    "ticket_id": "1487",
+    "tag_id": "20",
+    "tag_type": "priority"
+  },
+  "1488": {
+    "ticket_id": "1488",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1489": {
+    "ticket_id": "1489",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "1490": {
+    "ticket_id": "1490",
+    "tag_id": "17",
+    "tag_type": "queue"
+  },
+  "1491": {
+    "ticket_id": "1491",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "1492": {
+    "ticket_id": "1492",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "1493": {
+    "ticket_id": "1493",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1494": {
+    "ticket_id": "1494",
+    "tag_id": "1",
+    "tag_type": "priority"
+  },
+  "1495": {
+    "ticket_id": "1495",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "1496": {
+    "ticket_id": "1496",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1497": {
+    "ticket_id": "1497",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1498": {
+    "ticket_id": "1498",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1499": {
+    "ticket_id": "1499",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "1500": {
+    "ticket_id": "1500",
+    "tag_id": "7",
+    "tag_type": "priority"
+  },
+  "1501": {
+    "ticket_id": "1501",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1502": {
+    "ticket_id": "1502",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "1503": {
+    "ticket_id": "1503",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1504": {
+    "ticket_id": "1504",
+    "tag_id": "17",
+    "tag_type": "priority"
+  },
+  "1505": {
+    "ticket_id": "1505",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1506": {
+    "ticket_id": "1506",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "1507": {
+    "ticket_id": "1507",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1508": {
+    "ticket_id": "1508",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1509": {
+    "ticket_id": "1509",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "1510": {
+    "ticket_id": "1510",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "1511": {
+    "ticket_id": "1511",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1512": {
+    "ticket_id": "1512",
+    "tag_id": "16",
+    "tag_type": "queue"
+  },
+  "1513": {
+    "ticket_id": "1513",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1514": {
+    "ticket_id": "1514",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1515": {
+    "ticket_id": "1515",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1516": {
+    "ticket_id": "1516",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1517": {
+    "ticket_id": "1517",
+    "tag_id": "10",
+    "tag_type": "impact_level"
+  },
+  "1518": {
+    "ticket_id": "1518",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1519": {
+    "ticket_id": "1519",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1520": {
+    "ticket_id": "1520",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1521": {
+    "ticket_id": "1521",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1522": {
+    "ticket_id": "1522",
+    "tag_id": "19",
+    "tag_type": "priority"
+  },
+  "1523": {
+    "ticket_id": "1523",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1524": {
+    "ticket_id": "1524",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "1525": {
+    "ticket_id": "1525",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1526": {
+    "ticket_id": "1526",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "1527": {
+    "ticket_id": "1527",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1528": {
+    "ticket_id": "1528",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1529": {
+    "ticket_id": "1529",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1530": {
+    "ticket_id": "1530",
+    "tag_id": "22",
+    "tag_type": "queue"
+  },
+  "1531": {
+    "ticket_id": "1531",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1532": {
+    "ticket_id": "1532",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "1533": {
+    "ticket_id": "1533",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "1534": {
+    "ticket_id": "1534",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1535": {
+    "ticket_id": "1535",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1536": {
+    "ticket_id": "1536",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1537": {
+    "ticket_id": "1537",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1538": {
+    "ticket_id": "1538",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1539": {
+    "ticket_id": "1539",
+    "tag_id": "3",
+    "tag_type": "queue"
+  },
+  "1540": {
+    "ticket_id": "1540",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1541": {
+    "ticket_id": "1541",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1542": {
+    "ticket_id": "1542",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1543": {
+    "ticket_id": "1543",
+    "tag_id": "16",
+    "tag_type": "impact_level"
+  },
+  "1544": {
+    "ticket_id": "1544",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1545": {
+    "ticket_id": "1545",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1546": {
+    "ticket_id": "1546",
+    "tag_id": "10",
+    "tag_type": "queue"
+  },
+  "1547": {
+    "ticket_id": "1547",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1548": {
+    "ticket_id": "1548",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1549": {
+    "ticket_id": "1549",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1550": {
+    "ticket_id": "1550",
+    "tag_id": "16",
+    "tag_type": "actionable"
+  },
+  "1551": {
+    "ticket_id": "1551",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1552": {
+    "ticket_id": "1552",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "1553": {
+    "ticket_id": "1553",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1554": {
+    "ticket_id": "1554",
+    "tag_id": "10",
+    "tag_type": "issue_type"
+  },
+  "1555": {
+    "ticket_id": "1555",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1556": {
+    "ticket_id": "1556",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1557": {
+    "ticket_id": "1557",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "1558": {
+    "ticket_id": "1558",
+    "tag_id": "5",
+    "tag_type": "priority"
+  },
+  "1559": {
+    "ticket_id": "1559",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1560": {
+    "ticket_id": "1560",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1561": {
+    "ticket_id": "1561",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1562": {
+    "ticket_id": "1562",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1563": {
+    "ticket_id": "1563",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1564": {
+    "ticket_id": "1564",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1565": {
+    "ticket_id": "1565",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "1566": {
+    "ticket_id": "1566",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1567": {
+    "ticket_id": "1567",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1568": {
+    "ticket_id": "1568",
+    "tag_id": "11",
+    "tag_type": "queue"
+  },
+  "1569": {
+    "ticket_id": "1569",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "1570": {
+    "ticket_id": "1570",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1571": {
+    "ticket_id": "1571",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1572": {
+    "ticket_id": "1572",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1573": {
+    "ticket_id": "1573",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1574": {
+    "ticket_id": "1574",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1575": {
+    "ticket_id": "1575",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "1576": {
+    "ticket_id": "1576",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1577": {
+    "ticket_id": "1577",
+    "tag_id": "10",
+    "tag_type": "queue"
+  },
+  "1578": {
+    "ticket_id": "1578",
+    "tag_id": "19",
+    "tag_type": "impact_level"
+  },
+  "1579": {
+    "ticket_id": "1579",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "1580": {
+    "ticket_id": "1580",
+    "tag_id": "14",
+    "tag_type": "priority"
+  },
+  "1581": {
+    "ticket_id": "1581",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1582": {
+    "ticket_id": "1582",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1583": {
+    "ticket_id": "1583",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1584": {
+    "ticket_id": "1584",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1585": {
+    "ticket_id": "1585",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1586": {
+    "ticket_id": "1586",
+    "tag_id": "3",
+    "tag_type": "priority"
+  },
+  "1587": {
+    "ticket_id": "1587",
+    "tag_id": "20",
+    "tag_type": "actionable"
+  },
+  "1588": {
+    "ticket_id": "1588",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1589": {
+    "ticket_id": "1589",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "1590": {
+    "ticket_id": "1590",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1591": {
+    "ticket_id": "1591",
+    "tag_id": "13",
+    "tag_type": "actionable"
+  },
+  "1592": {
+    "ticket_id": "1592",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "1593": {
+    "ticket_id": "1593",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1594": {
+    "ticket_id": "1594",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1595": {
+    "ticket_id": "1595",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1596": {
+    "ticket_id": "1596",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1597": {
+    "ticket_id": "1597",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1598": {
+    "ticket_id": "1598",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "1599": {
+    "ticket_id": "1599",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1600": {
+    "ticket_id": "1600",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1601": {
+    "ticket_id": "1601",
+    "tag_id": "9",
+    "tag_type": "priority"
+  },
+  "1602": {
+    "ticket_id": "1602",
+    "tag_id": "9",
+    "tag_type": "priority"
+  },
+  "1603": {
+    "ticket_id": "1603",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1604": {
+    "ticket_id": "1604",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1605": {
+    "ticket_id": "1605",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1606": {
+    "ticket_id": "1606",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "1607": {
+    "ticket_id": "1607",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "1608": {
+    "ticket_id": "1608",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1609": {
+    "ticket_id": "1609",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "1610": {
+    "ticket_id": "1610",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1611": {
+    "ticket_id": "1611",
+    "tag_id": "12",
+    "tag_type": "priority"
+  },
+  "1612": {
+    "ticket_id": "1612",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1613": {
+    "ticket_id": "1613",
+    "tag_id": "5",
+    "tag_type": "priority"
+  },
+  "1614": {
+    "ticket_id": "1614",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1615": {
+    "ticket_id": "1615",
+    "tag_id": "6",
+    "tag_type": "actionable"
+  },
+  "1616": {
+    "ticket_id": "1616",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1617": {
+    "ticket_id": "1617",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1618": {
+    "ticket_id": "1618",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "1619": {
+    "ticket_id": "1619",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1620": {
+    "ticket_id": "1620",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1621": {
+    "ticket_id": "1621",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1622": {
+    "ticket_id": "1622",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "1623": {
+    "ticket_id": "1623",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1624": {
+    "ticket_id": "1624",
+    "tag_id": "3",
+    "tag_type": "priority"
+  },
+  "1625": {
+    "ticket_id": "1625",
+    "tag_id": "13",
+    "tag_type": "impact_level"
+  },
+  "1626": {
+    "ticket_id": "1626",
+    "tag_id": "3",
+    "tag_type": "queue"
+  },
+  "1627": {
+    "ticket_id": "1627",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1628": {
+    "ticket_id": "1628",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1629": {
+    "ticket_id": "1629",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1630": {
+    "ticket_id": "1630",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1631": {
+    "ticket_id": "1631",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1632": {
+    "ticket_id": "1632",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "1633": {
+    "ticket_id": "1633",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1634": {
+    "ticket_id": "1634",
+    "tag_id": "12",
+    "tag_type": "impact_level"
+  },
+  "1635": {
+    "ticket_id": "1635",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1636": {
+    "ticket_id": "1636",
+    "tag_id": "21",
+    "tag_type": "actionable"
+  },
+  "1637": {
+    "ticket_id": "1637",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1638": {
+    "ticket_id": "1638",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1639": {
+    "ticket_id": "1639",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "1640": {
+    "ticket_id": "1640",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1641": {
+    "ticket_id": "1641",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1642": {
+    "ticket_id": "1642",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1643": {
+    "ticket_id": "1643",
+    "tag_id": "12",
+    "tag_type": "actionable"
+  },
+  "1644": {
+    "ticket_id": "1644",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1645": {
+    "ticket_id": "1645",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1646": {
+    "ticket_id": "1646",
+    "tag_id": "7",
+    "tag_type": "actionable"
+  },
+  "1647": {
+    "ticket_id": "1647",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1648": {
+    "ticket_id": "1648",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1649": {
+    "ticket_id": "1649",
+    "tag_id": "6",
+    "tag_type": "priority"
+  },
+  "1650": {
+    "ticket_id": "1650",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "1651": {
+    "ticket_id": "1651",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1652": {
+    "ticket_id": "1652",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1653": {
+    "ticket_id": "1653",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1654": {
+    "ticket_id": "1654",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1655": {
+    "ticket_id": "1655",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1656": {
+    "ticket_id": "1656",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1657": {
+    "ticket_id": "1657",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1658": {
+    "ticket_id": "1658",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1659": {
+    "ticket_id": "1659",
+    "tag_id": "19",
+    "tag_type": "issue_type"
+  },
+  "1660": {
+    "ticket_id": "1660",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1661": {
+    "ticket_id": "1661",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "1662": {
+    "ticket_id": "1662",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1663": {
+    "ticket_id": "1663",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1664": {
+    "ticket_id": "1664",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1665": {
+    "ticket_id": "1665",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1666": {
+    "ticket_id": "1666",
+    "tag_id": "4",
+    "tag_type": "queue"
+  },
+  "1667": {
+    "ticket_id": "1667",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1668": {
+    "ticket_id": "1668",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1669": {
+    "ticket_id": "1669",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1670": {
+    "ticket_id": "1670",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1671": {
+    "ticket_id": "1671",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1672": {
+    "ticket_id": "1672",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1673": {
+    "ticket_id": "1673",
+    "tag_id": "17",
+    "tag_type": "impact_level"
+  },
+  "1674": {
+    "ticket_id": "1674",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1675": {
+    "ticket_id": "1675",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "1676": {
+    "ticket_id": "1676",
+    "tag_id": "18",
+    "tag_type": "queue"
+  },
+  "1677": {
+    "ticket_id": "1677",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1678": {
+    "ticket_id": "1678",
+    "tag_id": "13",
+    "tag_type": "priority"
+  },
+  "1679": {
+    "ticket_id": "1679",
+    "tag_id": "7",
+    "tag_type": "queue"
+  },
+  "1680": {
+    "ticket_id": "1680",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1681": {
+    "ticket_id": "1681",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1682": {
+    "ticket_id": "1682",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "1683": {
+    "ticket_id": "1683",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1684": {
+    "ticket_id": "1684",
+    "tag_id": "10",
+    "tag_type": "priority"
+  },
+  "1685": {
+    "ticket_id": "1685",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1686": {
+    "ticket_id": "1686",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1687": {
+    "ticket_id": "1687",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1688": {
+    "ticket_id": "1688",
+    "tag_id": "6",
+    "tag_type": "queue"
+  },
+  "1689": {
+    "ticket_id": "1689",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1690": {
+    "ticket_id": "1690",
+    "tag_id": "22",
+    "tag_type": "actionable"
+  },
+  "1691": {
+    "ticket_id": "1691",
+    "tag_id": "9",
+    "tag_type": "actionable"
+  },
+  "1692": {
+    "ticket_id": "1692",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1693": {
+    "ticket_id": "1693",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1694": {
+    "ticket_id": "1694",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1695": {
+    "ticket_id": "1695",
+    "tag_id": "11",
+    "tag_type": "priority"
+  },
+  "1696": {
+    "ticket_id": "1696",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1697": {
+    "ticket_id": "1697",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1698": {
+    "ticket_id": "1698",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1699": {
+    "ticket_id": "1699",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1700": {
+    "ticket_id": "1700",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1701": {
+    "ticket_id": "1701",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1702": {
+    "ticket_id": "1702",
+    "tag_id": "20",
+    "tag_type": "issue_type"
+  },
+  "1703": {
+    "ticket_id": "1703",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1704": {
+    "ticket_id": "1704",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1705": {
+    "ticket_id": "1705",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1706": {
+    "ticket_id": "1706",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1707": {
+    "ticket_id": "1707",
+    "tag_id": "11",
+    "tag_type": "actionable"
+  },
+  "1708": {
+    "ticket_id": "1708",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1709": {
+    "ticket_id": "1709",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1710": {
+    "ticket_id": "1710",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1711": {
+    "ticket_id": "1711",
+    "tag_id": "15",
+    "tag_type": "impact_level"
+  },
+  "1712": {
+    "ticket_id": "1712",
+    "tag_id": "8",
+    "tag_type": "priority"
+  },
+  "1713": {
+    "ticket_id": "1713",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1714": {
+    "ticket_id": "1714",
+    "tag_id": "14",
+    "tag_type": "impact_level"
+  },
+  "1715": {
+    "ticket_id": "1715",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1716": {
+    "ticket_id": "1716",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1717": {
+    "ticket_id": "1717",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "1718": {
+    "ticket_id": "1718",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1719": {
+    "ticket_id": "1719",
+    "tag_id": "13",
+    "tag_type": "queue"
+  },
+  "1720": {
+    "ticket_id": "1720",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1721": {
+    "ticket_id": "1721",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1722": {
+    "ticket_id": "1722",
+    "tag_id": "1",
+    "tag_type": "actionable"
+  },
+  "1723": {
+    "ticket_id": "1723",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1724": {
+    "ticket_id": "1724",
+    "tag_id": "3",
+    "tag_type": "issue_type"
+  },
+  "1725": {
+    "ticket_id": "1725",
+    "tag_id": "19",
+    "tag_type": "queue"
+  },
+  "1726": {
+    "ticket_id": "1726",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1727": {
+    "ticket_id": "1727",
+    "tag_id": "9",
+    "tag_type": "priority"
+  },
+  "1728": {
+    "ticket_id": "1728",
+    "tag_id": "12",
+    "tag_type": "priority"
+  },
+  "1729": {
+    "ticket_id": "1729",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1730": {
+    "ticket_id": "1730",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1731": {
+    "ticket_id": "1731",
+    "tag_id": "16",
+    "tag_type": "priority"
+  },
+  "1732": {
+    "ticket_id": "1732",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1733": {
+    "ticket_id": "1733",
+    "tag_id": "3",
+    "tag_type": "actionable"
+  },
+  "1734": {
+    "ticket_id": "1734",
+    "tag_id": "17",
+    "tag_type": "actionable"
+  },
+  "1735": {
+    "ticket_id": "1735",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1736": {
+    "ticket_id": "1736",
+    "tag_id": "8",
+    "tag_type": "queue"
+  },
+  "1737": {
+    "ticket_id": "1737",
+    "tag_id": "15",
+    "tag_type": "queue"
+  },
+  "1738": {
+    "ticket_id": "1738",
+    "tag_id": "18",
+    "tag_type": "impact_level"
+  },
+  "1739": {
+    "ticket_id": "1739",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1740": {
+    "ticket_id": "1740",
+    "tag_id": "7",
+    "tag_type": "priority"
+  },
+  "1741": {
+    "ticket_id": "1741",
+    "tag_id": "14",
+    "tag_type": "actionable"
+  },
+  "1742": {
+    "ticket_id": "1742",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1743": {
+    "ticket_id": "1743",
+    "tag_id": "9",
+    "tag_type": "priority"
+  },
+  "1744": {
+    "ticket_id": "1744",
+    "tag_id": "9",
+    "tag_type": "queue"
+  },
+  "1745": {
+    "ticket_id": "1745",
+    "tag_id": "8",
+    "tag_type": "actionable"
+  },
+  "1746": {
+    "ticket_id": "1746",
+    "tag_id": "12",
+    "tag_type": "queue"
+  },
+  "1747": {
+    "ticket_id": "1747",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1748": {
+    "ticket_id": "1748",
+    "tag_id": "19",
+    "tag_type": "actionable"
+  },
+  "1749": {
+    "ticket_id": "1749",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1750": {
+    "ticket_id": "1750",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1751": {
+    "ticket_id": "1751",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1752": {
+    "ticket_id": "1752",
+    "tag_id": "2",
+    "tag_type": "impact_level"
+  },
+  "1753": {
+    "ticket_id": "1753",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1754": {
+    "ticket_id": "1754",
+    "tag_id": "15",
+    "tag_type": "priority"
+  },
+  "1755": {
+    "ticket_id": "1755",
+    "tag_id": "2",
+    "tag_type": "issue_type"
+  },
+  "1756": {
+    "ticket_id": "1756",
+    "tag_id": "22",
+    "tag_type": "priority"
+  },
+  "1757": {
+    "ticket_id": "1757",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1758": {
+    "ticket_id": "1758",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1759": {
+    "ticket_id": "1759",
+    "tag_id": "6",
+    "tag_type": "impact_level"
+  },
+  "1760": {
+    "ticket_id": "1760",
+    "tag_id": "2",
+    "tag_type": "queue"
+  },
+  "1761": {
+    "ticket_id": "1761",
+    "tag_id": "15",
+    "tag_type": "actionable"
+  },
+  "1762": {
+    "ticket_id": "1762",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  },
+  "1763": {
+    "ticket_id": "1763",
+    "tag_id": "21",
+    "tag_type": "impact_level"
+  },
+  "1764": {
+    "ticket_id": "1764",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1765": {
+    "ticket_id": "1765",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1766": {
+    "ticket_id": "1766",
+    "tag_id": "2",
+    "tag_type": "actionable"
+  },
+  "1767": {
+    "ticket_id": "1767",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1768": {
+    "ticket_id": "1768",
+    "tag_id": "2",
+    "tag_type": "priority"
+  },
+  "1769": {
+    "ticket_id": "1769",
+    "tag_id": "12",
+    "tag_type": "impact_level"
+  },
+  "1770": {
+    "ticket_id": "1770",
+    "tag_id": "10",
+    "tag_type": "actionable"
+  }
+}

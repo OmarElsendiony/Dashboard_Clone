@@ -1,0 +1,352 @@
+{
+  "1": {
+    "thread_id": "1",
+    "channel_id": "1",
+    "thread_name": "main",
+    "description": "Main discussion thread for Support_General",
+    "is_main_thread": true,
+    "status": "active",
+    "created_at": "2026-01-29 11:23:49",
+    "updated_at": "2026-01-31 11:56:57"
+  },
+  "2": {
+    "thread_id": "2",
+    "channel_id": "1",
+    "thread_name": "ticket-triage",
+    "description": "Ticket Triage",
+    "is_main_thread": false,
+    "status": "archived",
+    "created_at": "2026-02-02 01:01:36",
+    "updated_at": "2026-01-29 15:20:15"
+  },
+  "3": {
+    "thread_id": "3",
+    "channel_id": "1",
+    "thread_name": "escalations",
+    "description": "Escalations",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-31 04:04:06",
+    "updated_at": "2026-02-02 06:46:00"
+  },
+  "4": {
+    "thread_id": "4",
+    "channel_id": "1",
+    "thread_name": "knowledge-sharing",
+    "description": "Knowledge Sharing",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 06:54:59",
+    "updated_at": "2026-01-30 14:51:00"
+  },
+  "5": {
+    "thread_id": "5",
+    "channel_id": "1",
+    "thread_name": "team-updates",
+    "description": "Team Updates",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 03:34:36",
+    "updated_at": "2026-01-31 03:06:50"
+  },
+  "6": {
+    "thread_id": "6",
+    "channel_id": "2",
+    "thread_name": "main",
+    "description": "Main discussion thread for Billing_Accounts",
+    "is_main_thread": true,
+    "status": "archived",
+    "created_at": "2026-01-28 13:20:42",
+    "updated_at": "2026-02-02 05:49:44"
+  },
+  "7": {
+    "thread_id": "7",
+    "channel_id": "2",
+    "thread_name": "payment-issues",
+    "description": "Payment Issues",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-28 17:22:06",
+    "updated_at": "2026-01-29 04:10:17"
+  },
+  "8": {
+    "thread_id": "8",
+    "channel_id": "2",
+    "thread_name": "subscription-changes",
+    "description": "Subscription Changes",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 21:42:29",
+    "updated_at": "2026-01-28 17:54:43"
+  },
+  "9": {
+    "thread_id": "9",
+    "channel_id": "2",
+    "thread_name": "refund-requests",
+    "description": "Refund Requests",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-29 15:43:10",
+    "updated_at": "2026-02-01 00:13:47"
+  },
+  "10": {
+    "thread_id": "10",
+    "channel_id": "2",
+    "thread_name": "invoice-queries",
+    "description": "Invoice Queries",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-02 14:43:58",
+    "updated_at": "2026-01-29 02:23:06"
+  },
+  "11": {
+    "thread_id": "11",
+    "channel_id": "3",
+    "thread_name": "main",
+    "description": "Main discussion thread for Security_Response",
+    "is_main_thread": true,
+    "status": "active",
+    "created_at": "2026-01-29 20:09:32",
+    "updated_at": "2026-02-01 16:13:09"
+  },
+  "12": {
+    "thread_id": "12",
+    "channel_id": "3",
+    "thread_name": "active-threats",
+    "description": "Active Threats",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-02 08:27:19",
+    "updated_at": "2026-02-02 03:51:10"
+  },
+  "13": {
+    "thread_id": "13",
+    "channel_id": "3",
+    "thread_name": "vulnerability-reports",
+    "description": "Vulnerability Reports",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-02 02:02:20",
+    "updated_at": "2026-01-30 03:15:39"
+  },
+  "14": {
+    "thread_id": "14",
+    "channel_id": "3",
+    "thread_name": "incident-coordination",
+    "description": "Incident Coordination",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 14:18:28",
+    "updated_at": "2026-02-02 19:46:04"
+  },
+  "15": {
+    "thread_id": "15",
+    "channel_id": "3",
+    "thread_name": "security-patches",
+    "description": "Security Patches",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-31 12:23:10",
+    "updated_at": "2026-02-01 09:14:59"
+  },
+  "16": {
+    "thread_id": "16",
+    "channel_id": "4",
+    "thread_name": "main",
+    "description": "Main discussion thread for Engineering_Escalation",
+    "is_main_thread": true,
+    "status": "active",
+    "created_at": "2026-01-27 20:59:50",
+    "updated_at": "2026-01-28 04:35:13"
+  },
+  "17": {
+    "thread_id": "17",
+    "channel_id": "4",
+    "thread_name": "critical-bugs",
+    "description": "Critical Bugs",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 04:41:12",
+    "updated_at": "2026-01-31 02:44:41"
+  },
+  "18": {
+    "thread_id": "18",
+    "channel_id": "4",
+    "thread_name": "infrastructure-issues",
+    "description": "Infrastructure Issues",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 20:38:40",
+    "updated_at": "2026-01-30 08:28:15"
+  },
+  "19": {
+    "thread_id": "19",
+    "channel_id": "4",
+    "thread_name": "deployment-coordination",
+    "description": "Deployment Coordination",
+    "is_main_thread": false,
+    "status": "archived",
+    "created_at": "2026-01-29 11:42:32",
+    "updated_at": "2026-01-30 18:42:53"
+  },
+  "20": {
+    "thread_id": "20",
+    "channel_id": "4",
+    "thread_name": "code-reviews",
+    "description": "Code Reviews",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-29 09:58:17",
+    "updated_at": "2026-01-29 23:54:45"
+  },
+  "21": {
+    "thread_id": "21",
+    "channel_id": "5",
+    "thread_name": "main",
+    "description": "Main discussion thread for #announcements",
+    "is_main_thread": true,
+    "status": "active",
+    "created_at": "2026-01-29 22:41:45",
+    "updated_at": "2026-02-01 10:02:23"
+  },
+  "22": {
+    "thread_id": "22",
+    "channel_id": "5",
+    "thread_name": "really",
+    "description": "Throughout end put wide.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 22:46:03",
+    "updated_at": "2026-02-02 06:39:09"
+  },
+  "23": {
+    "thread_id": "23",
+    "channel_id": "5",
+    "thread_name": "past",
+    "description": "Candidate condition table oil Republican analysis always.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-30 20:45:49",
+    "updated_at": "2026-01-31 13:39:01"
+  },
+  "24": {
+    "thread_id": "24",
+    "channel_id": "5",
+    "thread_name": "language",
+    "description": "Beyond star for report.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-31 08:26:57",
+    "updated_at": "2026-02-02 12:13:50"
+  },
+  "25": {
+    "thread_id": "25",
+    "channel_id": "6",
+    "thread_name": "main",
+    "description": "Main discussion thread for #random",
+    "is_main_thread": true,
+    "status": "active",
+    "created_at": "2026-01-30 07:04:37",
+    "updated_at": "2026-01-30 09:01:04"
+  },
+  "26": {
+    "thread_id": "26",
+    "channel_id": "6",
+    "thread_name": "something",
+    "description": "Model a more since paper report computer.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-31 15:46:55",
+    "updated_at": "2026-02-02 19:13:27"
+  },
+  "27": {
+    "thread_id": "27",
+    "channel_id": "6",
+    "thread_name": "group",
+    "description": "Worry hospital century story relationship.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-31 19:12:02",
+    "updated_at": "2026-02-02 08:37:04"
+  },
+  "28": {
+    "thread_id": "28",
+    "channel_id": "6",
+    "thread_name": "sell",
+    "description": "Live any message possible face end.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 00:43:49",
+    "updated_at": "2026-02-02 17:33:20"
+  },
+  "29": {
+    "thread_id": "29",
+    "channel_id": "6",
+    "thread_name": "save",
+    "description": "Street region edge everybody.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-01 20:19:44",
+    "updated_at": "2026-02-02 13:28:53"
+  },
+  "30": {
+    "thread_id": "30",
+    "channel_id": "7",
+    "thread_name": "main",
+    "description": "Main discussion thread for #engineering",
+    "is_main_thread": true,
+    "status": "active",
+    "created_at": "2026-01-29 21:02:11",
+    "updated_at": "2026-01-31 14:27:13"
+  },
+  "31": {
+    "thread_id": "31",
+    "channel_id": "7",
+    "thread_name": "according",
+    "description": "Pick picture big stay character.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-01-31 02:32:34",
+    "updated_at": "2026-01-31 08:02:21"
+  },
+  "32": {
+    "thread_id": "32",
+    "channel_id": "7",
+    "thread_name": "will",
+    "description": "Art choice plan next kind after.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-02 08:22:58",
+    "updated_at": "2026-02-02 18:46:36"
+  },
+  "33": {
+    "thread_id": "33",
+    "channel_id": "8",
+    "thread_name": "main",
+    "description": "Main discussion thread for #support-team",
+    "is_main_thread": true,
+    "status": "active",
+    "created_at": "2026-02-02 07:48:59",
+    "updated_at": "2026-02-02 09:37:26"
+  },
+  "34": {
+    "thread_id": "34",
+    "channel_id": "8",
+    "thread_name": "good",
+    "description": "Economic else skill draw.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-02 12:12:36",
+    "updated_at": "2026-02-02 14:12:55"
+  },
+  "35": {
+    "thread_id": "35",
+    "channel_id": "8",
+    "thread_name": "edge",
+    "description": "Away arrive six baby take financial.",
+    "is_main_thread": false,
+    "status": "active",
+    "created_at": "2026-02-02 18:11:12",
+    "updated_at": "2026-02-02 19:11:29"
+  }
+}

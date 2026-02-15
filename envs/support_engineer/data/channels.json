@@ -1,0 +1,82 @@
+{
+  "1": {
+    "channel_id": "1",
+    "name": "Support_General",
+    "description": "General support team discussions",
+    "ticket_id": null,
+    "channel_type": "general",
+    "status": "active",
+    "created_at": "2026-01-29 11:23:49",
+    "updated_at": "2026-02-01 03:50:05"
+  },
+  "2": {
+    "channel_id": "2",
+    "name": "Billing_Accounts",
+    "description": "Billing and account management",
+    "ticket_id": null,
+    "channel_type": "accounts",
+    "status": "active",
+    "created_at": "2026-01-28 13:20:42",
+    "updated_at": "2026-01-29 05:18:50"
+  },
+  "3": {
+    "channel_id": "3",
+    "name": "Security_Response",
+    "description": "Security incident response and alerts",
+    "ticket_id": null,
+    "channel_type": "security",
+    "status": "active",
+    "created_at": "2026-01-29 20:09:32",
+    "updated_at": "2026-02-02 05:59:47"
+  },
+  "4": {
+    "channel_id": "4",
+    "name": "Engineering_Escalation",
+    "description": "Engineering escalations and critical issues",
+    "ticket_id": null,
+    "channel_type": "general",
+    "status": "active",
+    "created_at": "2026-01-27 20:59:50",
+    "updated_at": "2026-02-01 02:08:30"
+  },
+  "5": {
+    "channel_id": "5",
+    "name": "#announcements",
+    "description": "Company-wide announcements",
+    "ticket_id": null,
+    "channel_type": "public",
+    "status": "archived",
+    "created_at": "2026-01-29 22:41:45",
+    "updated_at": "2026-02-02 05:47:37"
+  },
+  "6": {
+    "channel_id": "6",
+    "name": "#random",
+    "description": "Random discussions",
+    "ticket_id": null,
+    "channel_type": "public",
+    "status": "active",
+    "created_at": "2026-01-30 07:04:37",
+    "updated_at": "2026-02-02 19:25:27"
+  },
+  "7": {
+    "channel_id": "7",
+    "name": "#engineering",
+    "description": "Engineering discussions",
+    "ticket_id": null,
+    "channel_type": "private",
+    "status": "active",
+    "created_at": "2026-01-29 21:02:11",
+    "updated_at": "2026-01-31 21:47:13"
+  },
+  "8": {
+    "channel_id": "8",
+    "name": "#support-team",
+    "description": "Support team coordination",
+    "ticket_id": null,
+    "channel_type": "private",
+    "status": "active",
+    "created_at": "2026-02-02 07:48:59",
+    "updated_at": "2026-02-02 19:08:36"
+  }
+}
