@@ -30,7 +30,7 @@ Notes:
 
 Your generated tools content should be presented in a bash script that can be executed to create them in files that hold the same name as the class name. Each file should contain the class definition and its methods. The files should be named as follows: {{tool_name}}.py, where {{tool_name}} is the name of the tool class. Take care that all names should be in snake_case format.
 
-Here is a list of the common problems from the document:
+Here is a list of the common problems:
 
 * **Inconsistent Data Types & Mismatches:** Numeric fields are often inconsistently stored. There are also data type mismatches where data is returned in a different type than defined in the schema (e.g., returning a string `"28"` instead of an integer `28`), or non-deterministic types like `Union[int, float]` are used. Explicit typecasting to the actual schema datatype is required before saving or returning data.
 * **Incorrect Tool Description Formatting & Grammar:** Tool descriptions must be wrapped in double-quotes (`""`) instead of parentheses (`()`). Additionally, descriptions must use the third-person singular form (e.g., "Creates a workspace" instead of "Create a workspace").
@@ -45,3 +45,4 @@ Here is a list of the common problems from the document:
 * **Improper Type Hinting for Optionals:** Incorrectly using `Optional[type] = None` when the field actually has a different default value.
 * **Non-Matching Error Messages:** Error messages fail to correctly match the specific error being presented.
 * **Not Using Domain-Specific Terms:** Using incorrect terminology in function signatures and responses instead of domain-specific terms.
+All fields should be type casted to their right types before storing in the database or returning from the function. Even if the passed parameter is a dictionary, it has to be flattened or broken down into its fields and type casted. I want to ensure that floats are floats, strings are strings and other types are the same as intended by the schema.
