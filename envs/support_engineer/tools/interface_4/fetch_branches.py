@@ -12,6 +12,11 @@ class FetchBranches(Tool):
         branch_name: Optional[str] = None,
         status: Optional[str] = None,
     ) -> str:
+        if isinstance(data, str):
+            try:
+                data = json.loads(data)
+            except (json.JSONDecodeError, TypeError):
+                return json.dumps({"success": False, "error": "Invalid data format"})
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
 
@@ -76,9 +81,25 @@ class FetchBranches(Tool):
             if status is not None and branch.get("status") != status:
                 continue
 
-            results.append(branch)
+            b = branch
+            results.append({
+                "branch_id": str(b.get("branch_id", "")),
+                "repository_id": str(b.get("repository_id", "")),
+                "branch_name": str(b.get("branch_name", "")),
+                "source_branch_name": str(b["source_branch_name"]) if b.get("source_branch_name") is not None else None,
+                "commit_sha": str(b.get("commit_sha", "")),
+                "linked_ticket_id": str(b["linked_ticket_id"]) if b.get("linked_ticket_id") is not None else None,
+                "created_by": str(b["created_by"]) if b.get("created_by") is not None else None,
+                "status": str(b.get("status", "")),
+                "created_at": str(b.get("created_at", "")),
+                "updated_at": str(b.get("updated_at", "")),
+            })
 
-        return json.dumps({"success": True, "branches": results, "count": len(results)})
+        return json.dumps({
+            "success": bool(True),
+            "branches": results,
+            "count": int(len(results)),
+        })
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -86,30 +107,30 @@ class FetchBranches(Tool):
             "type": "function",
             "function": {
                 "name": "fetch_branches",
-                "description": "List branches in a repository, optionally filtered by name or status.",
+                "description": "Lists branches in a repository, optionally filtered by branch name or status.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "repository_id": {
                             "type": "string",
-                            "description": "Repository identifier",
+                            "description": "Repository identifier. Use this or repository_name to target the repository.",
                         },
                         "repository_name": {
                             "type": "string",
-                            "description": "Repository name",
+                            "description": "Repository name. Use this or repository_id to target the repository.",
                         },
                         "branch_name": {
                             "type": "string",
-                            "description": "Filter by branch name",
+                            "description": "Filter results to branches matching this name (case-insensitive).",
                         },
                         "status": {
                             "type": "string",
-                            "description": "Filter by branch status",
-                            "enum": ["active",  "deleted"],
+                            "description": "Filter results by branch status.",
+                            "enum": ["active", "deleted"],
                         },
                     },
                     "required": [],
-                    "oneOf": [
+                    "anyOf": [
                         {"required": ["repository_id"]},
                         {"required": ["repository_name"]},
                     ],

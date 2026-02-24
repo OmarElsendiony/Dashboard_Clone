@@ -2,14 +2,26 @@ import json
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
-
 class TransferToHuman(Tool):
     @staticmethod
     def invoke(
         data: Dict[str, Any],
         summary: str,
     ) -> str:
-        return json.dumps({"success": True, "message": "Transfer successful"})
+        if not isinstance(data, dict):
+            return json.dumps({"success": bool(False), "error": str("Invalid data format")})
+
+        if not summary:
+             return json.dumps({"success": bool(False), "error": str("Missing Argument: 'summary' is required.")})
+
+        if not isinstance(summary, str) or not summary.strip():
+            return json.dumps({"success": bool(False), "error": str("Invalid Argument: summary must be a non-empty string.")})
+
+        return json.dumps({
+            "success": bool(True),
+            "message": str("Transfer successful"),
+            "summary": str(summary)
+        })
 
     @staticmethod
     def get_info() -> Dict[str, Any]:

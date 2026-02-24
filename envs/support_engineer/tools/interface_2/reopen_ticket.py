@@ -41,7 +41,7 @@ class ReopenTicket(Tool):
             })
 
         # Get current ticket status
-        current_status = ticket.get("status")
+        current_status = str(ticket.get("status", ""))
 
         # Validate current status exists
         if not current_status:

@@ -109,10 +109,10 @@ class CreateThread(Tool):
 
         # Create new thread
         new_thread = {
-            "thread_id": new_thread_id,
-            "channel_id": channel_id_str,
-            "thread_name": thread_name_str,
-            "description": description_str,
+            "thread_id": str(new_thread_id) if new_thread_id else None,
+            "channel_id": str(channel_id_str) if channel_id_str else None,
+            "thread_name": str(thread_name_str) if thread_name_str else None,
+            "description": str(description_str) if description_str else None,
             "status": "active",
             "created_at": timestamp,
             "updated_at": timestamp,
@@ -123,8 +123,8 @@ class CreateThread(Tool):
 
         # Prepare return data
         thread_return = new_thread.copy()
-        thread_return["channel_name"] = channel.get("name")
-        thread_return["channel_type"] = channel.get("channel_type")
+        thread_return["channel_name"] = str(channel.get("name")) if channel.get("name") else None
+        thread_return["channel_type"] = str(channel.get("channel_type")) if channel.get("channel_type") else None
 
         # Build success message
         message = f"Thread '{thread_name_str}' created successfully in channel '{channel.get('name', channel_id_str)}'"

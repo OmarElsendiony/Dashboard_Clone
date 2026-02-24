@@ -4,6 +4,7 @@ import zipfile
 import tempfile
 from flask import Blueprint, render_template, request, jsonify
 from datetime import datetime
+import re
 import mysql.connector
 from mysql.connector import Error
 
@@ -166,6 +167,10 @@ class SchemaConverter:
         for col in table_def['columns']:
             col_sql = f"`{col['name']}` {col['type']}"
             
+            # Add COLLATE for VARCHAR and TEXT columns
+            if col['type'].startswith('VARCHAR') or col['type'] == 'TEXT':
+                col_sql += " COLLATE utf8mb4_unicode_ci"
+            
             # Add AUTO_INCREMENT for integer primary keys
             if col['name'] == primary_key_col and col['type'] in ['INT', 'BIGINT']:
                 col_sql += " AUTO_INCREMENT"
@@ -182,16 +187,12 @@ class SchemaConverter:
                 elif default_val.lower() in ['true', 'false']:
                     col_sql += f" DEFAULT {default_val.upper()}"
                 elif col['type'] in ['INT', 'BIGINT'] and default_val.isdigit():
-                    # Numeric defaults don't need quotes
                     col_sql += f" DEFAULT {default_val}"
                 elif col['type'].startswith('ENUM'):
-                    # Enum defaults need single quotes
                     col_sql += f" DEFAULT '{default_val}'"
                 elif col['type'].startswith('VARCHAR') or col['type'] == 'TEXT':
-                    # String defaults need single quotes
                     col_sql += f" DEFAULT '{default_val}'"
                 else:
-                    # For other types, quote the value to be safe
                     col_sql += f" DEFAULT '{default_val}'"
             
             if col['unique'] and col['name'] != primary_key_col:
@@ -225,6 +226,44 @@ class DatabaseManager:
             print(f"Error connecting to MySQL: {e}")
             return None
     
+    def database_exists(self, db_name):
+        """Check if database exists"""
+        connection = self.connect()
+        if not connection:
+            return False
+        
+        try:
+            cursor = connection.cursor()
+            cursor.execute("SHOW DATABASES")
+            databases = [db[0] for db in cursor.fetchall()]
+            return db_name in databases
+        except Error as e:
+            print(f"Error checking database existence: {e}")
+            return False
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+    
+    def delete_database(self, db_name):
+        """Delete a database"""
+        connection = self.connect()
+        if not connection:
+            return False
+        
+        try:
+            cursor = connection.cursor()
+            cursor.execute(f"DROP DATABASE IF EXISTS `{db_name}`")
+            connection.commit()
+            return True
+        except Error as e:
+            print(f"Error deleting database: {e}")
+            return False
+        finally:
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+    
     def create_database(self, db_name):
         """Create a new database"""
         connection = self.connect()
@@ -233,7 +272,13 @@ class DatabaseManager:
         
         try:
             cursor = connection.cursor()
-            cursor.execute(f"CREATE DATABASE IF NOT EXISTS `{db_name}`")
+            cursor.execute(
+                f"""
+                CREATE DATABASE IF NOT EXISTS `{db_name}`
+                CHARACTER SET utf8mb4
+                COLLATE utf8mb4_unicode_ci
+                """
+            )
             connection.commit()
             return True
         except Error as e:
@@ -535,7 +580,10 @@ def upload_schema():
             for table_name, table_def in tables.items():
                 sql = SchemaConverter.generate_create_table_sql(table_name, table_def)
                 create_statements.append(sql)
-            
+            print("\n=== Generated CREATE TABLE statements ===")
+            for i, sql in enumerate(create_statements):
+                print(f"\n--- Statement {i+1} ---")
+                print(sql)
             # Create database
             db_manager = DatabaseManager(get_db_config())
             
@@ -616,7 +664,7 @@ def upload_schema():
             })
     
     except Exception as e:
-        import traceback
+        # import traceback
         # print(traceback.format_exc())
         return jsonify({'status': 'error', 'message': f'Error processing schema: {str(e)}'}), 500
 
@@ -631,8 +679,12 @@ def query_database():
         return jsonify({'status': 'error', 'message': 'Database name and query are required'}), 400
     
     # Basic SQL injection prevention
-    if not query.upper().startswith('SELECT'):
-        return jsonify({'status': 'error', 'message': 'Only SELECT queries are allowed'}), 400
+    normalized_query = query.strip()
+    
+    if not re.match(r'^\(*\s*SELECT\b', normalized_query, re.IGNORECASE):
+        return jsonify(
+            {'status': 'error', 'message': 'Only SELECT queries are allowed'}
+        ), 400
     
     db_manager = DatabaseManager(get_db_config())
     success, result = db_manager.query(db_name, query)

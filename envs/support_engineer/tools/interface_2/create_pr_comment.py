@@ -111,10 +111,10 @@ class CreatePrComment(Tool):
 
         new_comment_id = generate_id(pull_request_comments_dict)
         new_comment = {
-            "comment_id": new_comment_id,
-            "pull_request_id": pull_request_id_str,
-            "author_id": author_id_str,
-            "comment_body": comment_body_str,
+            "comment_id": str(new_comment_id) if new_comment_id else None,
+            "pull_request_id": str(pull_request_id_str) if pull_request_id_str else None,
+            "author_id": str(author_id_str) if author_id_str else None,
+            "comment_body": str(comment_body_str) if comment_body_str else None,
             "created_at": timestamp,
             "updated_at": timestamp,
         }
@@ -123,11 +123,11 @@ class CreatePrComment(Tool):
         pull_request["updated_at"] = timestamp
 
         comment_return = new_comment.copy()
-        comment_return["author_email"] = author.get("email")
-        comment_return["author_name"] = f"{author.get('first_name', '')} {author.get('last_name', '')}".strip()
-        comment_return["pull_request_title"] = pull_request.get("title")
-        comment_return["pull_request_number"] = pr_number
-        comment_return["repository_name"] = repository.get("repository_name")
+        comment_return["author_email"] = str(author.get("email")) if author.get("email") else None
+        comment_return["author_name"] = str(f"{author.get('first_name', '')} {author.get('last_name', '')}".strip())
+        comment_return["pull_request_title"] = str(pull_request.get("title")) if pull_request.get("title") else None
+        comment_return["pull_request_number"] = int(pr_number) if pr_number else None
+        comment_return["repository_name"] = str(repository.get("repository_name")) if repository.get("repository_name") else None
 
         message = f"Comment added to pull request #{pr_number}: '{pull_request.get('title', '')}'"
 

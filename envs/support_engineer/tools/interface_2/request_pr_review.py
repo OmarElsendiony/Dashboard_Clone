@@ -136,8 +136,8 @@ class RequestPrReview(Tool):
             if not isinstance(review, dict):
                 continue
             if (
-                str(review.get("pull_request_id")) == pull_request_id_str
-                and str(review.get("reviewer_id")) == reviewer_id_str
+                review.get("pull_request_id") == pull_request_id_str
+                and review.get("reviewer_id") == reviewer_id_str
             ):
                 existing_status = str(review.get("review_status", "")).strip()
                 if existing_status == "pending":
@@ -150,9 +150,9 @@ class RequestPrReview(Tool):
 
         new_review_id = generate_id(pull_request_reviews_dict)
         new_review = {
-            "review_id": new_review_id,
-            "pull_request_id": pull_request_id_str,
-            "reviewer_id": reviewer_id_str,
+            "review_id": str(new_review_id) if new_review_id else None,
+            "pull_request_id": str(pull_request_id_str) if pull_request_id_str else None,
+            "reviewer_id": str(reviewer_id_str) if reviewer_id_str else None,
             "review_status": "pending",
             "review_comment": None,
             "submitted_at": None,

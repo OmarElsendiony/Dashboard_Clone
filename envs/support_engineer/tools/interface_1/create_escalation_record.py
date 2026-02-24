@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 class CreateEscalationRecord(Tool):
@@ -32,7 +32,19 @@ class CreateEscalationRecord(Tool):
         if not escalated_by:
             return json.dumps({"success": False, "error": "Missing Argument: 'escalated_by' is required."})
 
-        if str(ticket_id) not in tickets:
+        if not escalated_to:
+             return json.dumps({
+                "success": False,
+                "error": "Missing Argument: 'escalated_to' (User ID) is required to route this escalation."
+            })
+
+        ticket_id = str(ticket_id).strip()
+        target_domain = str(target_domain).strip()
+        escalation_reason = str(escalation_reason).strip()
+        escalated_by = str(escalated_by).strip()
+        escalated_to = str(escalated_to).strip()
+
+        if ticket_id not in tickets:
             return json.dumps({"success": False, "error": f"Not Found Error: Ticket ID '{ticket_id}' not found."})
 
         valid_domains = ["Legal", "Security", "SecOps", "Billing"]
@@ -53,28 +65,40 @@ class CreateEscalationRecord(Tool):
                 "error": f"Invalid Argument: escalation_reason must be one of {valid_reasons}."
             })
 
-        if str(escalated_by) not in users:
+        if escalated_by not in users:
             return json.dumps({"success": False, "error": f"Auth Error: User ID '{escalated_by}' (escalated_by) not found."})
 
-        if not escalated_to:
+        if escalated_to not in users:
              return json.dumps({
                 "success": False,
-                "error": "Missing Argument: 'escalated_to' (User ID) is required to route this escalation."
-            })
-
-        if str(escalated_to) not in users:
-             return json.dumps({"success": False, "error": f"Target Error: User ID '{escalated_to}' (escalated_to) not found."})
+                "error": f"Target Error: User ID '{escalated_to}' (escalated_to) not found."})
 
         for esc in escalations.values():
-            if (str(esc.get("ticket_id")) == str(ticket_id) and
-                str(esc.get("escalated_to")) == str(escalated_to) and
-                esc.get("status") == "pending"):
+            if not isinstance(esc, dict):
+                continue
+            if (
+                str(esc.get("ticket_id")) == ticket_id and
+                str(esc.get("target_domain")) == target_domain and
+                str(esc.get("escalation_reason")) == escalation_reason and
+                str(esc.get("escalated_by")) == escalated_by and
+                str(esc.get("escalated_to")) == escalated_to
+            ):
                 return json.dumps({
                     "success": False,
-                    "error": f"Action Failed: A pending escalation for Ticket {ticket_id} to User {escalated_to} already exists."
+                    "error": "Duplicate Escalation Detected",
+                    "message": f"Idempotency violation: An identical escalation record for ticket '{ticket_id}' to domain '{target_domain}' by user '{escalated_by}' already exists. Infinite writes are blocked."
                 })
 
-        new_id = str(len(escalations) + 1)
+        max_id = 0
+        for k in escalations.keys():
+            try:
+                num = int(str(k))
+                if num > max_id:
+                    max_id = num
+            except ValueError:
+                continue
+
+        new_id = str(max_id + 1)
         timestamp = "2026-02-02 23:59:00"
 
         new_escalation = {
@@ -90,13 +114,10 @@ class CreateEscalationRecord(Tool):
 
         escalations[new_id] = new_escalation
 
-        tickets[str(ticket_id)]["status"] = "escalated"
-        tickets[str(ticket_id)]["updated_at"] = timestamp
-
         return json.dumps({
             "success": True,
             "escalation": new_escalation,
-            "message": f"Escalation Record #{new_id} created. Ticket #{ticket_id} status set to 'escalated'."
+            "message": f"Escalation Record #{new_id} created successfully."
         })
 
     @staticmethod
@@ -106,10 +127,10 @@ class CreateEscalationRecord(Tool):
             "function": {
                 "name": "create_escalation_record",
                 "description": (
-                    "Generates a formal record in the escalations table. "
-                    "PURPOSE: Triggers the official handoff process when an issue requires expertise beyond Support (e.g., Legal, Security). "
-                    "WHEN TO USE: When a ticket cannot be resolved by the support team due to access limits, legal implications, or security risks. "
-                    "RETURNS: The created escalation record and confirmation that the parent ticket has been placed on hold."
+                    "Generates a formal record in the escalations table.\n"
+                    "Purpose: Triggers the official handoff process when an issue requires expertise beyond Support (e.g., Legal, Security). Includes an idempotency check to prevent duplicate escalation records.\n"
+                    "When to use: When a ticket cannot be resolved by the support team due to access limits, legal implications, or security risks.\n"
+                    "Returns: The created escalation record. Fails explicitly if an identical escalation record already exists to prevent infinite writes."
                 ),
                 "parameters": {
                     "type": "object",

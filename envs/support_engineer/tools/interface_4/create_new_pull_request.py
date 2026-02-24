@@ -15,44 +15,56 @@ class CreateNewPullRequest(Tool):
         author_id: str,
         linked_ticket_id: Optional[str] = None,
     ) -> str:
+        if isinstance(data, str):
+            try:
+                data = json.loads(data)
+            except (json.JSONDecodeError, TypeError):
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str("Wrong data format"),
+                })
         if not isinstance(data, dict):
-            return json.dumps({"success": False, "error": "Invalid data format"})
+            return json.dumps({
+                "success": bool(False),
+                "error": str("Wrong data format"),
+            })
 
-        if not repository_id:
-            return json.dumps(
-                {"success": False, "error": "repository_id is required"}
-            )
+        if repository_id is None or (isinstance(repository_id, str) and repository_id.strip() == ""):
+            return json.dumps({
+                "success": bool(False),
+                "error": str("repository_id is required"),
+            })
+        if title is None or (isinstance(title, str) and title.strip() == ""):
+            return json.dumps({
+                "success": bool(False),
+                "error": str("title is required"),
+            })
+        if description is None or (isinstance(description, str) and description.strip() == ""):
+            return json.dumps({
+                "success": bool(False),
+                "error": str("description is required"),
+            })
+        if source_branch_name is None or (isinstance(source_branch_name, str) and source_branch_name.strip() == ""):
+            return json.dumps({
+                "success": bool(False),
+                "error": str("source_branch_name is required"),
+            })
+        if target_branch_name is None or (isinstance(target_branch_name, str) and target_branch_name.strip() == ""):
+            return json.dumps({
+                "success": bool(False),
+                "error": str("target_branch_name is required"),
+            })
+        if author_id is None or (isinstance(author_id, str) and author_id.strip() == ""):
+            return json.dumps({
+                "success": bool(False),
+                "error": str("author_id is required"),
+            })
 
-        if not title:
-            return json.dumps({"success": False, "error": "title is required"})
-
-        if not description:
-            return json.dumps(
-                {"success": False, "error": "description is required"}
-            )
-
-        if not source_branch_name:
-            return json.dumps(
-                {"success": False, "error": "source_branch_name is required"}
-            )
-
-        if not target_branch_name:
-            return json.dumps(
-                {"success": False, "error": "target_branch_name is required"}
-            )
-
-        if not author_id:
-            return json.dumps(
-                {"success": False, "error": "author_id is required"}
-            )
-
-        if source_branch_name == target_branch_name:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": "Source and target branches must differ",
-                }
-            )
+        if str(source_branch_name).strip() == str(target_branch_name).strip():
+            return json.dumps({
+                "success": bool(False),
+                "error": str("Source and target branches must differ"),
+            })
 
         repositories = data.get("repositories", {})
         branches = data.get("branches", {})
@@ -62,27 +74,21 @@ class CreateNewPullRequest(Tool):
 
         author = users.get(str(author_id))
         if not author:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Author with id '{author_id}' not found in users",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Author with id '{author_id}' not found in users"),
+            })
         if author.get("status") != "active":
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Author with id '{author_id}' must have active status. Current status: {author.get('status')}",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Author with id '{author_id}' must have active status. Current status: {author.get('status')}"),
+            })
 
         if str(repository_id) not in repositories:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Repository with id '{repository_id}' not found",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Repository with id '{repository_id}' not found"),
+            })
 
         source_branch = None
         for branch in branches.values():
@@ -94,20 +100,16 @@ class CreateNewPullRequest(Tool):
                 break
 
         if not source_branch:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Source branch '{source_branch_name}' not found in repository '{repository_id}'",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Source branch '{source_branch_name}' not found in repository '{repository_id}'"),
+            })
 
         if source_branch.get("status") != "active":
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Source branch '{source_branch_name}' is not active. Current status: {source_branch.get('status')}",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Source branch '{source_branch_name}' is not active. Current status: {source_branch.get('status')}"),
+            })
 
         target_branch = None
         for branch in branches.values():
@@ -119,35 +121,25 @@ class CreateNewPullRequest(Tool):
                 break
 
         if not target_branch:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Target branch '{target_branch_name}' not found in repository '{repository_id}'",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Target branch '{target_branch_name}' not found in repository '{repository_id}'"),
+            })
 
-        if linked_ticket_id is not None:
+        if linked_ticket_id is not None and str(linked_ticket_id).strip() != "":
             if str(linked_ticket_id) not in tickets:
-                return json.dumps(
-                    {
-                        "success": False,
-                        "error": f"Ticket with id '{linked_ticket_id}' not found",
-                    }
-                )
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str(f"Ticket with id '{linked_ticket_id}' not found"),
+                })
 
             ticket = tickets[str(linked_ticket_id)]
-            valid_ticket_statuses = [
-                "open",
-                "pending",
-                "in_progress",
-            ]
+            valid_ticket_statuses = ["open", "pending", "in_progress"]
             if ticket.get("status") not in valid_ticket_statuses:
-                return json.dumps(
-                    {
-                        "success": False,
-                        "error": f"Ticket '{linked_ticket_id}' is not in valid state. Must be one of: {', '.join(valid_ticket_statuses)}. Current status: {ticket.get('status')}",
-                    }
-                )
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str(f"Ticket '{linked_ticket_id}' is not in valid state. Must be one of: {', '.join(valid_ticket_statuses)}. Current status: {ticket.get('status')}"),
+                })
 
         if pull_requests:
             max_id = max(int(k) for k in pull_requests.keys())
@@ -172,20 +164,34 @@ class CreateNewPullRequest(Tool):
             "pull_request_id": str(new_pr_id),
             "repository_id": str(repository_id),
             "pull_request_number": int(new_pr_number),
-            "title": title,
-            "description": description,
-            "source_branch_name": source_branch_name,
-            "target_branch_name": target_branch_name,
+            "title": str(title),
+            "description": str(description),
+            "source_branch_name": str(source_branch_name),
+            "target_branch_name": str(target_branch_name),
             "author_id": str(author_id),
-            "status": "open",
-            "linked_ticket_id": str(linked_ticket_id) if linked_ticket_id is not None else None,
-            "created_at": static_timestamp,
-            "updated_at": static_timestamp,
+            "status": str("open"),
+            "linked_ticket_id": str(linked_ticket_id) if linked_ticket_id is not None and str(linked_ticket_id).strip() != "" else None,
+            "created_at": str(static_timestamp),
+            "updated_at": str(static_timestamp),
         }
 
         pull_requests[new_pr_id] = new_pull_request
 
-        return json.dumps({"success": True, "pull_request": new_pull_request})
+        out_pull_request = {
+            "pull_request_id": str(new_pull_request["pull_request_id"]),
+            "repository_id": str(new_pull_request["repository_id"]),
+            "pull_request_number": int(new_pull_request["pull_request_number"]),
+            "title": str(new_pull_request["title"]),
+            "description": str(new_pull_request["description"]),
+            "source_branch_name": str(new_pull_request["source_branch_name"]),
+            "target_branch_name": str(new_pull_request["target_branch_name"]),
+            "author_id": str(new_pull_request["author_id"]),
+            "status": str(new_pull_request["status"]),
+            "linked_ticket_id": str(new_pull_request["linked_ticket_id"]) if new_pull_request["linked_ticket_id"] is not None else None,
+            "created_at": str(new_pull_request["created_at"]),
+            "updated_at": str(new_pull_request["updated_at"]),
+        }
+        return json.dumps({"success": bool(True), "pull_request": out_pull_request})
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -193,37 +199,37 @@ class CreateNewPullRequest(Tool):
             "type": "function",
             "function": {
                 "name": "create_new_pull_request",
-                "description": "Create a new pull request from a source branch to a target branch.",
+                "description": "Creates a new pull request from a source branch to a target branch.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "repository_id": {
                             "type": "string",
-                            "description": "Repository identifier where PR will be created",
+                            "description": "Repository identifier where the pull request will be created.",
                         },
                         "title": {
                             "type": "string",
-                            "description": "Pull request title",
+                            "description": "Pull request title.",
                         },
                         "description": {
                             "type": "string",
-                            "description": "Pull request description",
+                            "description": "Pull request description.",
                         },
                         "source_branch_name": {
                             "type": "string",
-                            "description": "Source branch name",
+                            "description": "Source branch name.",
                         },
                         "target_branch_name": {
                             "type": "string",
-                            "description": "Target branch name",
+                            "description": "Target branch name.",
                         },
                         "author_id": {
                             "type": "string",
-                            "description": "Required. Author user identifier; must exist in users and have active status",
+                            "description": "Author user identifier; must exist in users and have active status.",
                         },
                         "linked_ticket_id": {
                             "type": "string",
-                            "description": "Linked ticket identifier",
+                            "description": "Linked ticket identifier. Default: none.",
                         },
                     },
                     "required": [

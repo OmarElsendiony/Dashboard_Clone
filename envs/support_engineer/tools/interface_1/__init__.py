@@ -1,69 +1,57 @@
-from .bulk_update_tickets import BulkUpdateTickets
+from .add_channel_member import AddChannelMember
+from .add_ticket_note import AddTicketNote
+from .create_branches import CreateBranches
+from .create_channel import CreateChannel
+from .create_customer_message import CreateCustomerMessage
 from .create_escalation_record import CreateEscalationRecord
 from .create_issue import CreateIssue
-from .create_support_ticket import CreateSupportTicket
+from .create_knowledge_article import CreateKnowledgeArticle
+from .create_ticket_comment import CreateTicketComment
+from .get_branches import GetBranches
+from .get_channels import GetChannels
 from .get_comments import GetComments
-from .get_entity_status import GetEntityStatus
+from .get_entity import GetEntity
+from .get_issues import GetIssues
 from .get_message import GetMessage
-from .get_page import GetPage
-from .inspect_pull_request import InspectPullRequest
-from .list_branches import ListBranches
-from .list_channels import ListChannels
-from .list_groups import ListGroups
-from .list_services import ListServices
-from .manage_channel import ManageChannel
-from .manage_channel_membership import ManageChannelMembership
-from .manage_issue_assignees import ManageIssueAssignees
-from .manage_kb_page import ManageKbPage
-from .manage_message_pin import ManageMessagePin
-from .manage_pull_requests import ManagePullRequests
-from .manage_reaction import ManageReaction
-from .manage_repository import ManageRepository
-from .merge_tickets import MergeTickets
-from .moderate_issue import ModerateIssue
-from .publish_response import PublishResponse
-from .read_channel_history import ReadChannelHistory
+from .get_pages import GetPages
+from .get_repositories import GetRepositories
+from .get_ticket_notes import GetTicketNotes
+from .get_tickets import GetTickets
+from .make_pull_requests import MakePullRequests
 from .sanitize_attachment import SanitizeAttachment
-from .search_object_entities import SearchObjectEntities
-from .search_pages import SearchPages
-from .search_tickets import SearchTickets
-from .send_slack_message import SendSlackMessage
-from .start_branch import StartBranch
+from .send_channel_message import SendChannelMessage
 from .transfer_to_human import TransferToHuman
-from .update_issue import UpdateIssue
+from .update_customer_message import UpdateCustomerMessage
+from .update_knowledge_article import UpdateKnowledgeArticle
+from .update_pull_requests import UpdatePullRequests
+from .update_ticket import UpdateTicket
 
 ALL_TOOLS_INTERFACE_1 = [
-    BulkUpdateTickets,
+    AddChannelMember,
+    AddTicketNote,
+    CreateBranches,
+    CreateChannel,
+    CreateCustomerMessage,
     CreateEscalationRecord,
     CreateIssue,
-    CreateSupportTicket,
+    CreateKnowledgeArticle,
+    CreateTicketComment,
+    GetBranches,
+    GetChannels,
     GetComments,
-    GetEntityStatus,
+    GetEntity,
+    GetIssues,
     GetMessage,
-    GetPage,
-    InspectPullRequest,
-    ListBranches,
-    ListChannels,
-    ListGroups,
-    ListServices,
-    ManageChannel,
-    ManageChannelMembership,
-    ManageIssueAssignees,
-    ManageKbPage,
-    ManageMessagePin,
-    ManagePullRequests,
-    ManageReaction,
-    ManageRepository,
-    MergeTickets,
-    ModerateIssue,
-    PublishResponse,
-    ReadChannelHistory,
+    GetPages,
+    GetRepositories,
+    GetTicketNotes,
+    GetTickets,
+    MakePullRequests,
     SanitizeAttachment,
-    SearchObjectEntities,
-    SearchPages,
-    SearchTickets,
-    SendSlackMessage,
-    StartBranch,
+    SendChannelMessage,
     TransferToHuman,
-    UpdateIssue
+    UpdateCustomerMessage,
+    UpdateKnowledgeArticle,
+    UpdatePullRequests,
+    UpdateTicket
 ]

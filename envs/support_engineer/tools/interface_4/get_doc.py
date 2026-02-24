@@ -11,31 +11,38 @@ class GetDoc(Tool):
         title: Optional[str] = None,
         related_ticket_id: Optional[str] = None,
     ) -> str:
+        if isinstance(data, str):
+            try:
+                data = json.loads(data)
+            except (json.JSONDecodeError, TypeError):
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str("Wrong data format"),
+                })
         if not isinstance(data, dict):
-            return json.dumps({"success": False, "error": "Invalid data format"})
+            return json.dumps({
+                "success": bool(False),
+                "error": str("Wrong data format"),
+            })
 
         if not any([document_id, title, related_ticket_id]):
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": "At least one parameter must be provided",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str("At least one of document_id, title, or related_ticket_id must be provided"),
+            })
 
         documents = data.get("documents", {})
 
-        _EXCLUDE_KEYS = {
+        exclude_keys = {
             "ingestion_channel",
             "kb_article_link",
             "incident_timestamp",
-            "escalation_reason"
+            "escalation_reason",
         }
-        _EXCLUDE_PREFIXES = ("incident_", "escalation_", "space_")
+        exclude_prefixes = ("incident_", "escalation_", "space_")
         results = []
         for doc in documents.values():
-            if document_id is not None and str(doc.get("document_id")) != str(
-                document_id
-            ):
+            if document_id is not None and str(doc.get("document_id")) != str(document_id):
                 continue
 
             if title is not None and title.lower() not in doc.get("title", "").lower():
@@ -43,19 +50,23 @@ class GetDoc(Tool):
 
             if related_ticket_id is not None:
                 doc_ticket_id = doc.get("related_ticket_id")
-                if doc_ticket_id is None or str(doc_ticket_id) != str(
-                    related_ticket_id
-                ):
+                if doc_ticket_id is None or str(doc_ticket_id) != str(related_ticket_id):
                     continue
 
-            filtered_doc = {
-                k: v
-                for k, v in doc.items()
-                if k not in _EXCLUDE_KEYS and not k.startswith(_EXCLUDE_PREFIXES)
-            }
+            filtered_doc = {}
+            for k, v in doc.items():
+                if k not in exclude_keys and not k.startswith(exclude_prefixes):
+                    if v is None:
+                        filtered_doc[k] = ""
+                    else:
+                        filtered_doc[k] = str(v)
             results.append(filtered_doc)
 
-        return json.dumps({"success": True, "documents": results, "count": len(results)})
+        return json.dumps({
+            "success": bool(True),
+            "documents": results,
+            "count": int(len(results)),
+        })
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -63,7 +74,7 @@ class GetDoc(Tool):
             "type": "function",
             "function": {
                 "name": "get_doc",
-                "description": "Retrieve documentation for tickets, investigation records, or knowledge base articles.",
+                "description": "Retrieves documentation for tickets, investigation records, or knowledge base articles.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -85,7 +96,7 @@ class GetDoc(Tool):
                         {"required": ["document_id"]},
                         {"required": ["title"]},
                         {"required": ["related_ticket_id"]},
-                    ]
+                    ],
                 },
             },
         }

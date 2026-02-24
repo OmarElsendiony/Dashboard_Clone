@@ -185,16 +185,16 @@ class CreatePr(Tool):
         pr_number = generate_pr_number(pull_requests_dict, repository_id_str)
 
         new_pull_request = {
-            "pull_request_id": new_pr_id,
-            "repository_id": repository_id_str,
+            "pull_request_id": str(new_pr_id),
+            "repository_id": str(repository_id_str),
             "pull_request_number": int(pr_number),
-            "title": title_str,
-            "description": description_str,
-            "source_branch_name": source_branch_name_str,
-            "target_branch_name": target_branch_name_str,
-            "author_id": author_id_str,
+            "title": str(title_str) if title_str else None,
+            "description": str(description_str) if description_str else None,
+            "source_branch_name": str(source_branch_name_str) if source_branch_name_str else None,
+            "target_branch_name": str(target_branch_name_str) if target_branch_name_str else None,
+            "author_id": str(author_id_str) if author_id_str else None,
             "status": "open",
-            "linked_ticket_id": linked_ticket_id_str,
+            "linked_ticket_id": str(linked_ticket_id_str) if linked_ticket_id_str else None,
             "gate_traceability": False,
             "gate_test_coverage": False,
             "gate_ci_status": None,
@@ -210,9 +210,9 @@ class CreatePr(Tool):
         pull_requests_dict[new_pr_id] = new_pull_request
 
         pr_return = new_pull_request.copy()
-        pr_return["author_email"] = author.get("email")
-        pr_return["author_name"] = f"{author.get('first_name', '')} {author.get('last_name', '')}".strip()
-        pr_return["repository_name"] = repository.get("repository_name")
+        pr_return["author_email"] = str(author.get("email")) if author.get("email") else None
+        pr_return["author_name"] = str(f"{author.get('first_name', '')} {author.get('last_name', '')}".strip())
+        pr_return["repository_name"] = str(repository.get("repository_name")) if repository.get("repository_name") else None
         pr_return.pop("gate_ci_status", None)
         pr_return.pop("gate_test_coverage", None)
         pr_return.pop("gate_traceability", None)

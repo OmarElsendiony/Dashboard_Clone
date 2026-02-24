@@ -136,7 +136,7 @@ class EscalateToExpert(Tool):
                 }
             )
 
-        escalator_status = escalator.get("status")
+        escalator_status = str(escalator.get("status", ""))
         if escalator_status != "active":
             return json.dumps(
                 {
@@ -154,7 +154,7 @@ class EscalateToExpert(Tool):
                     }
                 )
 
-            expert = users_dict[escalated_to_str]
+            expert = (users_dict[escalated_to_str])
 
             if not isinstance(expert, dict):
                 return json.dumps(
@@ -164,7 +164,7 @@ class EscalateToExpert(Tool):
                     }
                 )
 
-            expert_role = expert.get("role")
+            expert_role = str(expert.get("role", ""))
             if expert_role != "technical_engineer":
                 return json.dumps(
                     {
@@ -173,7 +173,7 @@ class EscalateToExpert(Tool):
                     }
                 )
 
-            expert_status = expert.get("status")
+            expert_status = str(expert.get("status", ""))
             if expert_status != "active":
                 return json.dumps(
                     {
@@ -215,11 +215,11 @@ class EscalateToExpert(Tool):
         new_escalation_id = generate_id(escalations_dict)
 
         new_escalation = {
-            "escalation_id": new_escalation_id,
-            "ticket_id": ticket_id_str,
-            "escalated_to": escalated_to_str,
-            "escalated_by": escalated_by_str,
-            "escalation_reason": escalation_reason_str,
+            "escalation_id": str(new_escalation_id),
+            "ticket_id": str(ticket_id_str),
+            "escalated_to": str(escalated_to_str),
+            "escalated_by": str(escalated_by_str),
+            "escalation_reason": str(escalation_reason_str) if escalation_reason_str else None,
             "target_domain": None,
             "status": "assigned",
             "created_at": timestamp,
@@ -228,24 +228,24 @@ class EscalateToExpert(Tool):
 
         escalations_dict[new_escalation_id] = new_escalation
 
-        ticket["escalation_reason"] = escalation_reason_str
+        ticket["escalation_reason"] = str(escalation_reason_str) if escalation_reason_str else None
         ticket["updated_at"] = timestamp
 
         escalation_return = new_escalation.copy()
 
         expert = users_dict[escalated_to_str]
-        escalation_return["expert_email"] = expert.get("email")
-        escalation_return["expert_name"] = (
+        escalation_return["expert_email"] = str(expert.get("email", ""))
+        escalation_return["expert_name"] = str(
             f"{expert.get('first_name', '')} {expert.get('last_name', '')}".strip()
         )
-        escalation_return["expert_expertise"] = expert.get("technical_expertise")
+        escalation_return["expert_expertise"] = str(expert.get("technical_expertise", ""))
 
-        escalation_return["escalator_email"] = escalator.get("email")
-        escalation_return["escalator_name"] = (
+        escalation_return["escalator_email"] = str(escalator.get("email", ""))
+        escalation_return["escalator_name"] = str(
             f"{escalator.get('first_name', '')} {escalator.get('last_name', '')}".strip()
         )
 
-        escalation_return["ticket_number"] = ticket.get("ticket_number")
+        escalation_return["ticket_number"] = str(ticket.get("ticket_number", ""))
 
         # Build success message
         message = f"Ticket '{ticket.get('ticket_number', ticket_id_str)}' escalated to expert '{expert.get('email', escalated_to_str)}' for reason '{escalation_reason_str}'"

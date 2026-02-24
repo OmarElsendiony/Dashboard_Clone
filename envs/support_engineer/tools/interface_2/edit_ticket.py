@@ -80,7 +80,7 @@ class EditTicket(Tool):
             "pending_review",
             "pending_security_review",
             "archived",
-            "root_cause_identified"
+            "root_cause_identified",
             "resolved_pending_verification",
         ]
 
@@ -140,7 +140,7 @@ class EditTicket(Tool):
                     }
                 )
 
-            user_role = assignee.get("role")
+            user_role = str(assignee.get("role", ""))
             valid_roles = ["support_engineer", "technical_engineer"]
 
             if user_role not in valid_roles:
@@ -151,7 +151,7 @@ class EditTicket(Tool):
                     }
                 )
 
-            user_status = assignee.get("status")
+            user_status = str(assignee.get("status", ""))
             if user_status != "active":
                 return json.dumps(
                     {
@@ -160,7 +160,7 @@ class EditTicket(Tool):
                     }
                 )
 
-        current_status = ticket.get("status")
+        current_status = str(ticket.get("status", ""))
         if current_status and current_status == "archived":
             return json.dumps(
                 {
@@ -181,34 +181,34 @@ class EditTicket(Tool):
                     ticket["resolved_at"] = timestamp
                     changes["resolved_at"] = timestamp
 
-            ticket["status"] = status_str
+            ticket["status"] = str(status_str)
             changes["status"] = {"old": current_status, "new": status_str}
 
         if priority_str:
-            old_priority = ticket.get("priority")
-            ticket["priority"] = priority_str
+            old_priority = str(ticket.get("priority", ""))
+            ticket["priority"] = str(priority_str)
             changes["priority"] = {"old": old_priority, "new": priority_str}
 
         if assigned_to_str:
-            old_assigned = ticket.get("assigned_to")
-            ticket["assigned_to"] = assigned_to_str
+            old_assigned = str(ticket.get("assigned_to", ""))
+            ticket["assigned_to"] = str(assigned_to_str)
             changes["assigned_to"] = {"old": old_assigned, "new": assigned_to_str}
 
         if description_str:
-            ticket["description"] = description_str
+            ticket["description"] = str(description_str)
             changes["description"] = "updated"
 
         if title_str:
-            old_title = ticket.get("title")
-            ticket["title"] = title_str
+            old_title = str(ticket.get("title", ""))
+            ticket["title"] = str(title_str)
             changes["title"] = {"old": old_title, "new": title_str}
 
         if escalation_reason_str:
-            old_escalation_reason = ticket.get("escalation_reason")
-            ticket["escalation_reason"] = escalation_reason_str
+            old_escalation_reason = str(ticket.get("escalation_reason", ""))
+            ticket["escalation_reason"] = str(escalation_reason_str)
             changes["escalation_reason"] = {
-                "old": old_escalation_reason,
-                "new": escalation_reason_str,
+                "old": str(old_escalation_reason),
+                "new": str(escalation_reason_str),
             }
 
         ticket["updated_at"] = timestamp
@@ -231,14 +231,12 @@ class EditTicket(Tool):
             "type": "function",
             "function": {
                 "name": "edit_ticket",
-                "description": (
-                    "Updates one or more fields of an existing support ticket. "
+                "description": "Updates one or more fields of an existing support ticket. "
                     "This function modifies ticket attributes including status, priority, assignment, "
                     "description, title, and escalation reason. "
                     "Use this to reflect ticket progress through workflow stages, change priority based on impact assessment, "
                     "reassign tickets to appropriate team members, update ticket details as more information becomes available, "
-                    "or record escalation reasons when elevating tickets to specialized teams."
-                ),
+                    "or record escalation reasons when elevating tickets to specialized teams.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -259,7 +257,7 @@ class EditTicket(Tool):
                                 "pending_review",
                                 "pending_security_review",
                                 "archived",
-                                "root_cause_identified"
+                                "root_cause_identified",
                                 "resolved_pending_verification",
                             ],
                         },

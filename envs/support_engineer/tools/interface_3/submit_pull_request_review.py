@@ -112,7 +112,7 @@ class SubmitPullRequestReview(Tool):
             "type": "function",
             "function": {
                 "name": "submit_pull_request_review",
-                "description": "Submits a review on a pull request with an approval, change request, or rejection decision.. This tool should be used when a user wants to provide feedback on a pull request.",
+                "description": "Submits a review on a pull request with an approval, change request, or rejection decision. This tool should be used when a user wants to provide feedback on a pull request.",
                 "parameters": {
                     "type": "object",
                     "properties": {

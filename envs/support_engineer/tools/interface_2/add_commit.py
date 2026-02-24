@@ -216,14 +216,14 @@ class AddCommit(Tool):
         new_commit_id = generate_id(commits_dict)
 
         new_commit = {
-            "commit_id": new_commit_id,
-            "repository_id": repository_id_str,
-            "branch_id": branch_id_str,
-            "commit_sha": commit_sha,
-            "author_id": author_id_str,
-            "commit_message": commit_message_str,
-            "commit_type": commit_type_str,
-            "ticket_id": ticket_id_str,
+            "commit_id": str(new_commit_id),
+            "repository_id": str(repository_id_str),
+            "branch_id": str(branch_id_str),
+            "commit_sha": str(commit_sha),
+            "author_id": str(author_id_str),
+            "commit_message": str(commit_message_str),
+            "commit_type": str(commit_type_str),
+            "ticket_id": str(ticket_id_str),
             "committed_at": timestamp,
             "created_at": timestamp,
         }
@@ -242,12 +242,12 @@ class AddCommit(Tool):
             new_file_id = generate_id(files_dict)
             new_file = {
                 "file_id": new_file_id,
-                "repository_id": repository_id_str,
-                "branch_id": branch_id_str,
-                "file_path": file_path_str,
-                "file_name": file_name_str,
-                "content": new_content_str,
-                "last_commit_id": new_commit_id,
+                "repository_id": str(repository_id_str),
+                "branch_id": str(branch_id_str),
+                "file_path": str(file_path_str),
+                "file_name": str(file_name_str),
+                "content": str(new_content_str),
+                "last_commit_id": str(new_commit_id),
                 "created_at": timestamp,
                 "updated_at": timestamp,
             }
@@ -255,24 +255,24 @@ class AddCommit(Tool):
             files_dict[new_file_id] = new_file
 
             file_return = new_file.copy()
-            file_id_str = new_file_id
+            file_id_str = str(new_file_id)
             action = "created"
 
         branch["commit_sha"] = commit_sha
         branch["updated_at"] = timestamp
 
         commit_return = new_commit.copy()
-        commit_return["author_email"] = author.get("email")
-        commit_return["author_name"] = (
+        commit_return["author_email"] = str(author.get("email"))
+        commit_return["author_name"] = str(
             f"{author.get('first_name', '')} {author.get('last_name', '')}".strip()
         )
-        commit_return["branch_name"] = branch.get("branch_name")
-        commit_return["repository_name"] = repository.get("repository_name")
+        commit_return["branch_name"] = str(branch.get("branch_name"))
+        commit_return["repository_name"] = str(repository.get("repository_name"))
 
         if ticket_id_str and ticket_id_str in tickets_dict:
-            commit_return["ticket_number"] = tickets_dict[ticket_id_str].get(
+            commit_return["ticket_number"] = str(tickets_dict[ticket_id_str].get(
                 "ticket_number"
-            )
+            ))
 
         message = f"Commit {commit_sha[:7]} created successfully: '{commit_message_str}' - File '{file_name_str}' {action} in branch '{branch.get('branch_name')}'"
 

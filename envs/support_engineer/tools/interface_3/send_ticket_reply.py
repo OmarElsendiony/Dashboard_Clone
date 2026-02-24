@@ -86,7 +86,7 @@ class SendTicketReply(Tool):
             "type": "function",
             "function": {
                 "name": "send_ticket_reply",
-                "description": "Sends a reply to a ticket in the ticketing system. It should be used when you need to respond to a ticket and a reply to it.",
+                "description": "Sends a reply to an existing ticket in the ticketing system. It should be used when you need to respond to a ticket.",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -79,11 +79,11 @@ class AssignSeverityLevel(Tool):
 
         old_priority = ticket.get("priority")
 
-        ticket["priority"] = severity_str
+        ticket["priority"] = str(severity_str) if severity_str else None
         ticket["updated_at"] = timestamp
 
         ticket_return = ticket.copy()
-        ticket_return["ticket_id"] = ticket_id_str
+        ticket_return["ticket_id"] = str(ticket_id_str) if ticket_id_str else None
 
         severity_descriptions = {
             "P0": "Critical",

@@ -13,22 +13,25 @@ class UpdateTicketInfo(Tool):
         priority: Optional[str] = None,
         assigned_to: Optional[str] = None,
     ) -> str:
+        if isinstance(data, str):
+            data = json.loads(data)
+
         if not isinstance(data, dict):
-            return json.dumps({"success": False, "error": "Invalid data format"})
+            return json.dumps({"success": bool(False), "error": str("Invalid data format")})
 
         if not any([ticket_id, ticket_number]):
             return json.dumps(
                 {
-                    "success": False,
-                    "error": "At least one identifier must be provided: ticket_id or ticket_number",
+                    "success": bool(False),
+                    "error": str("At least one identifier must be provided: ticket_id or ticket_number"),
                 }
             )
 
         if not any([status, priority, assigned_to]):
             return json.dumps(
                 {
-                    "success": False,
-                    "error": "At least one field to update must be provided: status, priority, or assigned_to",
+                    "success": bool(False),
+                    "error": str("At least one field to update must be provided: status, priority, or assigned_to"),
                 }
             )
 
@@ -42,8 +45,8 @@ class UpdateTicketInfo(Tool):
             else:
                 return json.dumps(
                     {
-                        "success": False,
-                        "error": f"Ticket with id '{ticket_id}' not found",
+                        "success": bool(False),
+                        "error": str(f"Ticket with id \"{ticket_id}\" not found"),
                     }
                 )
         elif ticket_number:
@@ -54,8 +57,8 @@ class UpdateTicketInfo(Tool):
             if not target_ticket:
                 return json.dumps(
                     {
-                        "success": False,
-                        "error": f"Ticket with number '{ticket_number}' not found",
+                        "success": bool(False),
+                        "error": str(f"Ticket with number \"{ticket_number}\" not found"),
                     }
                 )
 
@@ -66,59 +69,68 @@ class UpdateTicketInfo(Tool):
             if status not in valid_statuses:
                 return json.dumps(
                     {
-                        "success": False,
-                        "error": f"Invalid status '{status}'. Valid values: {', '.join(valid_statuses)}",
+                        "success": bool(False),
+                        "error": str(f"Invalid status \"{status}\". Valid values: {', '.join(valid_statuses)}"),
                     }
                 )
-            target_ticket["status"] = status
+            target_ticket["status"] = str(status)
 
         if priority is not None:
             valid_priorities = ["P1", "P2", "P3"]
             if priority not in valid_priorities:
                 return json.dumps(
                     {
-                        "success": False,
-                        "error": f"Invalid priority '{priority}'. Valid values: P1, P2, P3",
+                        "success": bool(False),
+                        "error": str(f"Invalid priority \"{priority}\". Valid values: P1, P2, P3"),
                     }
                 )
-            target_ticket["priority"] = priority
+            target_ticket["priority"] = str(priority)
 
         if assigned_to is not None:
             users = data.get("users", {})
             if str(assigned_to) not in users:
                 return json.dumps(
                     {
-                        "success": False,
-                        "error": f"User with id '{assigned_to}' not found",
+                        "success": bool(False),
+                        "error": str(f"User with id \"{assigned_to}\" not found"),
                     }
                 )
             user = users[str(assigned_to)]
             if user.get("status") != "active":
                 return json.dumps(
                     {
-                        "success": False,
-                        "error": f"User with id '{assigned_to}' is not active. Current status: {user.get('status')}",
+                        "success": bool(False),
+                        "error": str(f"User with id \"{assigned_to}\" is not active. Current status: {user.get('status')}"),
                     }
                 )
-            target_ticket["assigned_to"] = assigned_to
+            target_ticket["assigned_to"] = str(assigned_to)
 
         static_timestamp = "2026-02-02 23:59:00"
         target_ticket["updated_at"] = static_timestamp
 
-        _EXCLUDE_KEYS = {
+        exclude_keys = {
             "ingestion_channel",
             "kb_article_link",
             "incident_timestamp",
             "escalation_reason",
             "created_at",
         }
-        _EXCLUDE_PREFIXES = ("incident_", "escalation_", "space_")
-        ticket_response = {
-            k: v
-            for k, v in target_ticket.items()
-            if k not in _EXCLUDE_KEYS and not k.startswith(_EXCLUDE_PREFIXES)
-        }
-        return json.dumps({"success": True, "ticket": ticket_response})
+        exclude_prefixes = ("incident_", "escalation_", "space_")
+        ticket_response = {}
+        for k, v in target_ticket.items():
+            if k not in exclude_keys and not k.startswith(exclude_prefixes):
+                if v is None:
+                    ticket_response[k] = None
+                elif isinstance(v, bool):
+                    ticket_response[k] = bool(v)
+                elif isinstance(v, int):
+                    ticket_response[k] = int(v)
+                elif isinstance(v, float):
+                    ticket_response[k] = int(v) if v == int(v) else float(v)
+                else:
+                    ticket_response[k] = str(v)
+
+        return json.dumps({"success": bool(True), "ticket": ticket_response})
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -126,42 +138,48 @@ class UpdateTicketInfo(Tool):
             "type": "function",
             "function": {
                 "name": "update_ticket_info",
-                "description": "Update a ticket's status, priority, or assignment.",
+                "description": "Updates a ticket's status, priority, or assignment.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "ticket_id": {
                             "type": "string",
-                            "description": "Ticket identifier",
+                            "description": "Ticket identifier to update.",
                         },
                         "ticket_number": {
                             "type": "string",
-                            "description": "Ticket number",
+                            "description": "Ticket number to update.",
                         },
                         "status": {
                             "type": "string",
-                            "description": "New ticket status",
+                            "description": "New ticket status value.",
                             "enum": ["open", "closed", "pending", "in_progress"],
                         },
                         "priority": {
                             "type": "string",
-                            "description": "New ticket priority",
+                            "description": "New ticket priority value.",
                             "enum": ["P1", "P2", "P3"],
                         },
                         "assigned_to": {
                             "type": "string",
-                            "description": "User identifier to assign ticket to",
+                            "description": "User identifier to assign the ticket to.",
                         },
                     },
                     "required": [],
-                    "oneOf": [
-                        {"required": ["ticket_id"]},
-                        {"required": ["ticket_number"]},
-                    ],
-                    "anyOf": [
-                        {"required": ["status"]},
-                        {"required": ["priority"]},
-                        {"required": ["assigned_to"]},
+                    "allOf": [
+                        {
+                            "anyOf": [
+                                {"required": ["ticket_id"]},
+                                {"required": ["ticket_number"]},
+                            ]
+                        },
+                        {
+                            "anyOf": [
+                                {"required": ["status"]},
+                                {"required": ["priority"]},
+                                {"required": ["assigned_to"]},
+                            ]
+                        },
                     ],
                 },
             },

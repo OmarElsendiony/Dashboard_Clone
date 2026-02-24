@@ -41,7 +41,7 @@ class GetRepositoryDetails(Tool):
             "type": "function",
             "function": {
                 "name": "get_repository_details",
-                "description": "The tool retrieves details of a repository using its name. It should be used when information about a specific repository is needed.",
+                "description": "Retrieves details of a repository using its name. It should be used when information about a specific repository is needed.",
                 "parameters": {
                     "type": "object",
                     "properties": {

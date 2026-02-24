@@ -91,10 +91,10 @@ class AddTicketComment(Tool):
         # Create new comment
         new_comment_id = generate_id(ticket_comments_dict)
         new_comment = {
-            "comment_id": new_comment_id,
-            "ticket_id": ticket_id_str,
-            "sender_id": sender_id_str,
-            "message": message_str,
+            "comment_id": str(new_comment_id) if new_comment_id else None,
+            "ticket_id": str(ticket_id_str) if ticket_id_str else None,
+            "sender_id": str(sender_id_str) if sender_id_str else None,
+            "message": str(message_str) if message_str else None,
             "is_public": is_public,
             "created_at": timestamp,
             "updated_at": timestamp,
@@ -105,9 +105,9 @@ class AddTicketComment(Tool):
 
         # Prepare return data
         comment_return = new_comment.copy()
-        comment_return["sender_email"] = sender.get("email")
-        comment_return["sender_name"] = f"{sender.get('first_name', '')} {sender.get('last_name', '')}".strip()
-        comment_return["ticket_number"] = ticket.get("ticket_number")
+        comment_return["sender_email"] = str(sender.get("email", "")).strip()
+        comment_return["sender_name"] = str(f"{sender.get('first_name', '')} {sender.get('last_name', '')}".strip())
+        comment_return["ticket_number"] = str(ticket.get("ticket_number"))
 
         # Build success message
         visibility = "public" if is_public else "internal"

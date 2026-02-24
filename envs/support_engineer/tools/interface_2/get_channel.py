@@ -112,8 +112,8 @@ class GetChannel(Tool):
                     "required": [],
                     "anyOf": [
                         {"required": ["channel_name"]},
-                        {"required": ["channel_id"]},
-                    ],
+                        {"required": ["channel_id"]}
+                    ]
                 },
             },
         }

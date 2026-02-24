@@ -137,8 +137,8 @@ class FetchPullRequestDetails(Tool):
                     "required": ["repository_name"],
                     "anyOf": [
                         {"required": ["pull_request_number"]},
-                        {"required": ["pull_request_id"]},
-                    ],
+                        {"required": ["pull_request_id"]}
+                    ]
                 },
             },
         }

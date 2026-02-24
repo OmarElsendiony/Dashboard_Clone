@@ -13,68 +13,94 @@ class AddNewTicket(Tool):
         status: str = "open",
         priority: Optional[str] = None,
     ) -> str:
+        if isinstance(data, str):
+            try:
+                data = json.loads(data)
+            except (json.JSONDecodeError, TypeError):
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str("Wrong data format"),
+                })
         if not isinstance(data, dict):
-            return json.dumps({"success": False, "error": "Invalid data format"})
+            return json.dumps({
+                "success": bool(False),
+                "error": str("Wrong data format"),
+            })
 
-        if not customer_id:
-            return json.dumps(
-                {"success": False, "error": "customer_id is required"}
-            )
+        customer_id_str = str(customer_id).strip() if customer_id is not None else ""
+        if not customer_id_str:
+            return json.dumps({
+                "success": bool(False),
+                "error": str("customer_id is required"),
+            })
 
+        if title is None:
+            return json.dumps({
+                "success": bool(False),
+                "error": str("title is required"),
+            })
+        title = str(title).strip()
         if not title:
-            return json.dumps({"success": False, "error": "title is required"})
+            return json.dumps({
+                "success": bool(False),
+                "error": str("title is required"),
+            })
 
+        if description is None:
+            return json.dumps({
+                "success": bool(False),
+                "error": str("description is required"),
+            })
+        description = str(description).strip()
         if not description:
-            return json.dumps(
-                {"success": False, "error": "description is required"}
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str("description is required"),
+            })
 
+        status = str(status).strip() if status is not None and str(status).strip() else str("open")
         if priority is not None:
             valid_priorities = ["P1", "P2", "P3"]
             if priority not in valid_priorities:
-                return json.dumps(
-                    {
-                        "success": False,
-                        "error": f"Invalid priority '{priority}'. Valid values: P1, P2, P3",
-                    }
-                )
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str(
+                        f"Invalid priority '{priority}'. Valid values: P1, P2, P3"
+                    ),
+                })
 
-        valid_statuses = [
-            "open", "closed", "pending", "in_progress"
-        ]
+        valid_statuses = ["open", "closed", "pending", "in_progress"]
         if status not in valid_statuses:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Invalid status '{status}'. Valid values: {', '.join(valid_statuses)}",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(
+                    f"Invalid status '{status}'. Valid values: {', '.join(valid_statuses)}"
+                ),
+            })
 
         customers = data.get("customers", {})
         tickets = data.get("tickets", {})
 
-        if str(customer_id) not in customers:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Customer with id '{customer_id}' not found",
-                }
-            )
+        if customer_id_str not in customers:
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Customer with id '{customer_id_str}' not found"),
+            })
 
-        customer = customers[str(customer_id)]
+        customer = customers[customer_id_str]
         if customer.get("status") == "inactive":
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Inactive customers cannot create tickets. Customer '{customer_id}' has status 'inactive'.",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(
+                    f"Inactive customers cannot create tickets. Customer '{customer_id_str}' has status 'inactive'."
+                ),
+            })
 
         if tickets:
             max_id = max(int(k) for k in tickets.keys())
             new_ticket_id = str(max_id + 1)
         else:
-            new_ticket_id = "1"
+            new_ticket_id = str("1")
 
         existing_ticket_numbers = [
             ticket.get("ticket_number", "")
@@ -86,40 +112,44 @@ class AddNewTicket(Tool):
             max_ticket_number = max(
                 int(tn.split("-")[1]) for tn in existing_ticket_numbers
             )
-            new_ticket_number = f"TKT-{str(max_ticket_number + 1).zfill(6)}"
+            new_ticket_number = str(f"TKT-{str(max_ticket_number + 1).zfill(6)}")
         else:
-            new_ticket_number = "TKT-000001"
+            new_ticket_number = str("TKT-000001")
 
-        static_timestamp = "2026-02-02 23:59:00"
+        static_timestamp = str("2026-02-02 23:59:00")
 
         new_ticket = {
             "ticket_id": str(new_ticket_id),
-            "ticket_number": new_ticket_number,
-            "customer_id": str(customer_id),
+            "ticket_number": str(new_ticket_number),
+            "customer_id": str(customer_id_str),
             "assigned_to": None,
-            "title": title,
-            "description": description,
-            "priority": priority,
-            "status": status,
-            "created_at": static_timestamp,
-            "updated_at": static_timestamp,
+            "title": str(title),
+            "description": str(description),
+            "priority": str(priority) if priority is not None else None,
+            "status": str(status),
+            "created_at": str(static_timestamp),
+            "updated_at": str(static_timestamp),
         }
 
         tickets[new_ticket_id] = new_ticket
 
-        _EXCLUDE_KEYS = {
-            "ingestion_channel",
-            "kb_article_link",
-            "incident_timestamp",
-            "escalation_reason"
-        }
-        _EXCLUDE_PREFIXES = ("incident_", "escalation_", "space_")
         ticket_response = {
-            k: v
-            for k, v in new_ticket.items()
-            if k not in _EXCLUDE_KEYS and not k.startswith(_EXCLUDE_PREFIXES)
+            "ticket_id": str(new_ticket["ticket_id"]),
+            "ticket_number": str(new_ticket["ticket_number"]),
+            "customer_id": str(new_ticket["customer_id"]),
+            "assigned_to": new_ticket["assigned_to"],
+            "title": str(new_ticket["title"]),
+            "description": str(new_ticket["description"]),
+            "priority": str(new_ticket["priority"]) if new_ticket["priority"] is not None else None,
+            "status": str(new_ticket["status"]),
+            "created_at": str(new_ticket["created_at"]),
+            "updated_at": str(new_ticket["updated_at"]),
         }
-        return json.dumps({"success": True, "ticket": ticket_response})
+
+        return json.dumps({
+            "success": bool(True),
+            "ticket": ticket_response,
+        })
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -127,30 +157,31 @@ class AddNewTicket(Tool):
             "type": "function",
             "function": {
                 "name": "add_new_ticket",
-                "description": "Create a new support ticket for a customer issue or problem report.",
+                "description": "Creates a new support ticket for a customer issue or problem report.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "customer_id": {
                             "type": "string",
-                            "description": "Customer identifier who reported the issue",
+                            "description": "Customer identifier who reported the issue.",
                         },
                         "title": {
                             "type": "string",
-                            "description": "Brief title summarizing the issue",
+                            "description": "Brief title summarizing the issue.",
                         },
                         "description": {
                             "type": "string",
-                            "description": "Detailed description of the issue",
+                            "description": "Detailed description of the issue.",
                         },
                         "status": {
                             "type": "string",
-                            "description": "Initial ticket status",
-                            "enum": ["open", "closed", "pending", "in_progress"]
+                            "description": "Initial ticket status. Defaults to open if omitted.",
+                            "enum": ["open", "closed", "pending", "in_progress"],
                         },
                         "priority": {
                             "type": "string",
-                            "description": "Ticket priority level",
+                            "description": "Ticket priority level (P1, P2, or P3).",
+                            "enum": ["P1", "P2", "P3"],
                         },
                     },
                     "required": ["customer_id", "title", "description"],

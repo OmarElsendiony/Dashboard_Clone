@@ -19,7 +19,7 @@ class SearchBranch(Tool):
                 if not isinstance(branch, dict):
                     continue
 
-                if str(branch.get("repository_id")) == repository_id_str:
+                if str(branch.get("repository_id", "")) == repository_id_str:
                     current_branch_name = str(branch.get("branch_name", "")).strip()
                     if branch_name_lower in current_branch_name.lower():
                         branch_info = branch.copy()
@@ -77,14 +77,14 @@ class SearchBranch(Tool):
         for branch in matching_branches:
             enriched_branch = branch.copy()
 
-            created_by = branch.get("created_by")
+            created_by = str(branch.get("created_by", ""))
             if created_by and str(created_by) in users_dict:
                 creator = users_dict[str(created_by)]
                 if isinstance(creator, dict):
-                    enriched_branch["creator_email"] = creator.get("email")
-                    enriched_branch["creator_name"] = f"{creator.get('first_name', '')} {creator.get('last_name', '')}".strip()
+                    enriched_branch["creator_email"] = str(creator.get("email", ""))
+                    enriched_branch["creator_name"] = str(f"{creator.get('first_name', '')} {creator.get('last_name', '')}".strip())
 
-            enriched_branch["repository_name"] = repository.get("repository_name")
+            enriched_branch["repository_name"] = str(repository.get("repository_name", ""))
 
             enriched_branches.append(enriched_branch)
 
@@ -101,7 +101,7 @@ class SearchBranch(Tool):
         return json.dumps({
             "success": True,
             "branches": enriched_branches,
-            "count": len(enriched_branches),
+            "count": int(len(enriched_branches)),
             "message": message,
         })
 

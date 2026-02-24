@@ -113,12 +113,12 @@ class CreateWikiPage(Tool):
         initial_status = "WIP"
 
         new_document = {
-            "document_id": new_document_id,
-            "title": title_str,
-            "description": description_str,
-            "related_ticket_id": related_ticket_id_str,
-            "space_key": space_key_str,
-            "status": initial_status,
+            "document_id": str(new_document_id) if new_document_id else None,
+            "title": str(title_str) if title_str else None,
+            "description": str(description_str) if description_str else None,
+            "related_ticket_id": str(related_ticket_id_str) if related_ticket_id_str else None,
+            "space_key": str(space_key_str) if space_key_str else None,
+            "status": str(initial_status) if initial_status else None,
             "created_at": timestamp,
             "updated_at": timestamp,
         }
@@ -130,7 +130,7 @@ class CreateWikiPage(Tool):
         if related_ticket_id_str and related_ticket_id_str in tickets_dict:
             ticket = tickets_dict[related_ticket_id_str]
             if isinstance(ticket, dict):
-                document_return["ticket_number"] = ticket.get("ticket_number")
+                document_return["ticket_number"] = str(ticket.get("ticket_number")) if ticket.get("ticket_number") else None
 
         message = f"Wiki page '{title_str}' created successfully in '{space_key_str}'"
         if related_ticket_id_str:

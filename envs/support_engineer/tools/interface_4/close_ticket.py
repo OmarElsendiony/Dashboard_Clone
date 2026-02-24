@@ -10,70 +10,78 @@ class CloseTicket(Tool):
         ticket_id: Optional[str] = None,
         ticket_number: Optional[str] = None,
     ) -> str:
+        if isinstance(data, str):
+            try:
+                data = json.loads(data)
+            except (json.JSONDecodeError, TypeError):
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str("Wrong data format"),
+                })
         if not isinstance(data, dict):
-            return json.dumps({"success": False, "error": "Invalid data format"})
+            return json.dumps({
+                "success": bool(False),
+                "error": str("Wrong data format"),
+            })
 
-        if not any([ticket_id, ticket_number]):
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": "At least one parameter must be provided: ticket_id or ticket_number",
-                }
-            )
+        has_id = ticket_id is not None and (not isinstance(ticket_id, str) or ticket_id.strip())
+        has_number = ticket_number is not None and (not isinstance(ticket_number, str) or ticket_number.strip())
+        if has_id and has_number:
+            return json.dumps({
+                "success": bool(False),
+                "error": str("Exactly one of ticket_id or ticket_number must be provided, not both."),
+            })
+        if not has_id and not has_number:
+            return json.dumps({
+                "success": bool(False),
+                "error": str("At least one of ticket_id or ticket_number is required."),
+            })
 
         tickets = data.get("tickets", {})
 
         target_ticket = None
 
-        if ticket_id:
-            if str(ticket_id) in tickets:
-                target_ticket = tickets[str(ticket_id)]
+        if has_id:
+            ticket_id = str(ticket_id).strip()
+            if ticket_id in tickets:
+                target_ticket = tickets[ticket_id]
             else:
-                return json.dumps(
-                    {
-                        "success": False,
-                        "error": f"Ticket with id '{ticket_id}' not found",
-                    }
-                )
-        elif ticket_number:
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str(f"Ticket with id '{ticket_id}' not found"),
+                })
+        else:
+            ticket_number = str(ticket_number).strip()
             for ticket in tickets.values():
                 if ticket.get("ticket_number") == ticket_number:
                     target_ticket = ticket
                     break
             if not target_ticket:
-                return json.dumps(
-                    {
-                        "success": False,
-                        "error": f"Ticket with number '{ticket_number}' not found",
-                    }
-                )
+                return json.dumps({
+                    "success": bool(False),
+                    "error": str(f"Ticket with number '{ticket_number}' not found"),
+                })
 
         current_status = target_ticket.get("status")
-        if current_status in ["closed"]:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Ticket is already {current_status}. Cannot close a ticket that is already closed",
-                }
-            )
+        if current_status == "closed":
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Ticket is already closed. Cannot close a ticket that is already closed"),
+            })
 
         customers = data.get("customers", {})
         customer_id = target_ticket.get("customer_id")
         if customer_id is None or str(customer_id) not in customers:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Cannot close ticket: customer for ticket '{target_ticket.get('ticket_id')}' not found.",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Cannot close ticket: customer for ticket '{target_ticket.get('ticket_id')}' not found."),
+            })
         customer = customers[str(customer_id)]
         if customer.get("status") != "active":
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Cannot close ticket: customer '{customer_id}' does not have active status (current: {customer.get('status') or 'unknown'}). Verify active customer before closing.",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Cannot close ticket: customer '{customer_id}' does not have active status (current: {customer.get('status') or 'unknown'}). Verify active customer before closing."),
+            })
 
         pull_requests = data.get("pull_requests", {})
         tid = str(target_ticket.get("ticket_id"))
@@ -82,12 +90,10 @@ class CloseTicket(Tool):
             for pr in pull_requests.values()
         )
         if not merged_pr_for_ticket:
-            return json.dumps(
-                {
-                    "success": False,
-                    "error": f"Cannot close ticket: no merged PR linked to ticket '{tid}'. It is required to have a merged PR before closing.",
-                }
-            )
+            return json.dumps({
+                "success": bool(False),
+                "error": str(f"Cannot close ticket: no merged PR linked to ticket '{tid}'. It is required to have a merged PR before closing."),
+            })
 
         static_timestamp = "2026-02-02 23:59:00"
 
@@ -95,20 +101,23 @@ class CloseTicket(Tool):
         target_ticket["closed_at"] = static_timestamp
         target_ticket["updated_at"] = static_timestamp
 
-        _EXCLUDE_KEYS = {
+        exclude_keys = {
             "ingestion_channel",
             "kb_article_link",
             "incident_timestamp",
             "escalation_reason",
             "created_at",
         }
-        _EXCLUDE_PREFIXES = ("incident_", "escalation_", "space_")
-        ticket_response = {
-            k: v
-            for k, v in target_ticket.items()
-            if k not in _EXCLUDE_KEYS and not k.startswith(_EXCLUDE_PREFIXES)
-        }
-        return json.dumps({"success": True, "ticket": ticket_response})
+        exclude_prefixes = ("incident_", "escalation_", "space_")
+        ticket_response = {}
+        for k, v in target_ticket.items():
+            if k not in exclude_keys and not k.startswith(exclude_prefixes):
+                ticket_response[k] = str(v) if v is not None else None
+
+        return json.dumps({
+            "success": bool(True),
+            "ticket": ticket_response,
+        })
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -116,7 +125,7 @@ class CloseTicket(Tool):
             "type": "function",
             "function": {
                 "name": "close_ticket",
-                "description": "Close a support ticket.",
+                "description": "Closes a support ticket.",
                 "parameters": {
                     "type": "object",
                     "properties": {

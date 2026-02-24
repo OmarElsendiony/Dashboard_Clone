@@ -43,7 +43,7 @@ class ModifyTicket(Tool):
                     f"Invalid status '{status}'. Valid values: "
                     "open, awaiting_info, ready_for_investigation, "
                     "root_cause_identified, in_progress, "
-                    "escalated, resolved, fix_rejected."
+                    "escalated, resolved, fix_rejected, closed."
                 )
             })
 
@@ -129,15 +129,15 @@ class ModifyTicket(Tool):
                         },
                         "escalation_reason": {
                             "type": "string",
-                            "description": "Optional. The reason for escalation.",
+                            "description": "The reason for escalation when status is set to 'escalated'",
                             "enum": ["code_bug", "infrastructure", "security", "data_corruption", "access_limitation"]
                         }
                     },
                     "required": ["ticket_number"],
                     "anyOf": [
                         {"required": ["status"]},
-                        {"required": ["escalation_reason"]},
-                    ],
+                        {"required": ["escalation_reason"]}
+                    ]
                 },
             },
         }

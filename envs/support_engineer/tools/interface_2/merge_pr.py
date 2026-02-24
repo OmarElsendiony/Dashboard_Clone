@@ -18,8 +18,10 @@ class MergePr(Tool):
             for bid, branch in branches_dict.items():
                 if not isinstance(branch, dict):
                     continue
-                if (str(branch.get("repository_id")) == repository_id_str and
-                    str(branch.get("branch_name", "")).strip() == branch_name_str):
+                if (
+                    str(branch.get("repository_id")).strip() == repository_id_str
+                    and str(branch.get("branch_name", "")).strip() == branch_name_str
+                ):
                     return str(bid)
             return None
 
@@ -28,8 +30,10 @@ class MergePr(Tool):
             for pid, pr in pull_requests_dict.items():
                 if not isinstance(pr, dict):
                     continue
-                if (str(pr.get("repository_id")) == repository_id_str and
-                    pr.get("pull_request_number") == pr_number):
+                if (
+                    str(pr.get("repository_id")).strip() == repository_id_str
+                    and int(pr.get("pull_request_number")) == pr_number
+                ):
                     return str(pid), pr
             return None, None
 
@@ -90,7 +94,7 @@ class MergePr(Tool):
                 "error": f"Invalid user data structure for user ID '{merged_by_str}'"
             })
 
-        merger_status = merger.get("status")
+        merger_status = str(merger.get("status", ""))
         if merger_status != 'active':
             return json.dumps({
                 "success": False,
@@ -163,15 +167,18 @@ class MergePr(Tool):
                             })
 
         pull_request["status"] = "merged"
-        pull_request["merged_by"] = merged_by_str
+        pull_request["merged_by"] = str(merged_by_str) if merged_by_str else None
         pull_request["merged_at"] = timestamp
         pull_request["updated_at"] = timestamp
 
         pr_return = pull_request.copy()
-        pr_return["pull_request_id"] = pull_request_id_str
-        pr_return["merger_email"] = merger.get("email")
+        pr_return["pull_request_id"] = str(pull_request_id_str) if pull_request_id_str else None
+        pr_return["merger_email"] = str(merger.get("email")) if merger.get("email") else None
         pr_return["merger_name"] = f"{merger.get('first_name', '')} {merger.get('last_name', '')}".strip()
-        pr_return["repository_name"] = repository.get("repository_name")
+        pr_return["repository_name"] = str(repository.get("repository_name")) if repository.get("repository_name") else None
+        pr_return.pop("gate_traceability", None)
+        pr_return.pop("gate_ci_status", None)
+        pr_return.pop("gate_test_coverage", None)
 
         message = f"Pull request #{pr_number} merged successfully: '{pull_request.get('title', '')}' (from '{source_branch_name}' to '{target_branch_name}')"
 

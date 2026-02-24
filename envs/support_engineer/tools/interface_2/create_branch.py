@@ -154,15 +154,15 @@ class CreateBranch(Tool):
 
         new_branch_id = generate_id(branches_dict)
         new_branch = {
-            "branch_id": new_branch_id,
-            "repository_id": repository_id_str,
-            "branch_name": branch_name_str,
-            "source_branch_name": source_branch_name_str,
-            "commit_sha": source_commit_sha,
-            "branch_type": branch_type_str,
-            "linked_ticket_id": linked_ticket_id_str,
+            "branch_id": str(new_branch_id) if new_branch_id else None,
+            "repository_id": str(repository_id_str) if repository_id_str else None,
+            "branch_name": str(branch_name_str) if branch_name_str else None,
+            "source_branch_name": str(source_branch_name_str) if source_branch_name_str else None,
+            "commit_sha": str(source_commit_sha) if source_commit_sha else None,
+            "branch_type": str(branch_type_str) if branch_type_str else None,
+            "linked_ticket_id": str(linked_ticket_id_str) if linked_ticket_id_str else None,
             "issue_id": None,
-            "created_by": created_by_str,
+            "created_by": str(created_by_str) if created_by_str else None,
             "status": "active",
             "created_at": timestamp,
             "updated_at": timestamp,
@@ -170,10 +170,10 @@ class CreateBranch(Tool):
         branches_dict[new_branch_id] = new_branch
 
         branch_return = new_branch.copy()
-        branch_return["creator_email"] = creator.get("email")
-        branch_return["creator_name"] = f"{creator.get('first_name', '')} {creator.get('last_name', '')}".strip()
-        branch_return["repository_name"] = repository.get("repository_name")
-        branch_return["source_branch_id"] = source_branch_id_str
+        branch_return["creator_email"] = str(creator.get("email")) if creator.get("email") else None
+        branch_return["creator_name"] = str(f"{creator.get('first_name', '')} {creator.get('last_name', '')}".strip())
+        branch_return["repository_name"] = str(repository.get("repository_name"))
+        branch_return["source_branch_id"] = str(source_branch_id_str) if source_branch_id_str else None
 
         if source_branch_name_str:
             message = f"Branch '{branch_name_str}' created successfully in repository '{repository.get('repository_name', repository_id_str)}' from source branch '{source_branch_name_str}'"

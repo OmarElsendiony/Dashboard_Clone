@@ -42,9 +42,9 @@ class SendMessageInChannel(Tool):
         users_dict = data.get("users", {})
         tickets_dict = data.get("tickets", {})
 
-        channel_id_str = str(channel_id).strip()
-        sender_id_str = str(sender_id).strip()
-        message_str = str(message).strip()
+        channel_id_str = str(channel_id).strip() if channel_id else None
+        sender_id_str = str(sender_id).strip() if sender_id else None
+        message_str = str(message).strip() if message else None
         thread_id_str = str(thread_id).strip() if thread_id else None
         related_ticket_id_str = (
             str(related_ticket_id).strip() if related_ticket_id else None
@@ -95,7 +95,7 @@ class SendMessageInChannel(Tool):
                 }
             )
 
-        sender_status = sender.get("status")
+        sender_status = str(sender.get("status", ""))
         if sender_status != "active":
             return json.dumps(
                 {
@@ -163,12 +163,12 @@ class SendMessageInChannel(Tool):
         new_message_id = generate_id(channel_messages_dict)
 
         new_message = {
-            "message_id": new_message_id,
-            "channel_id": channel_id_str,
-            "thread_id": thread_id_str,
-            "sender_id": sender_id_str,
-            "message": message_str,
-            "related_ticket_id": related_ticket_id_str,
+            "message_id": str(new_message_id) if new_message_id else None,
+            "channel_id": str(channel_id_str) if channel_id_str else None,
+            "thread_id": str(thread_id_str) if thread_id_str else None,
+            "sender_id": str(sender_id_str) if sender_id_str else None,
+            "message": str(message_str) if message_str else None,
+            "related_ticket_id": str(related_ticket_id_str) if related_ticket_id_str else None,
             "sent_at": timestamp,
             "created_at": timestamp,
             "updated_at": timestamp,
@@ -177,22 +177,22 @@ class SendMessageInChannel(Tool):
         channel_messages_dict[new_message_id] = new_message
 
         message_return = new_message.copy()
-        message_return["sender_email"] = sender.get("email")
-        message_return["sender_name"] = (
+        message_return["sender_email"] = str(sender.get("email")) if sender.get("email") else None
+        message_return["sender_name"] = str(
             f"{sender.get('first_name', '')} {sender.get('last_name', '')}".strip()
         )
-        message_return["channel_name"] = channel.get("name")
-        message_return["channel_type"] = channel.get("channel_type")
+        message_return["channel_name"] = str(channel.get("name")) if channel.get("name") else None
+        message_return["channel_type"] = str(channel.get("channel_type")) if channel.get("channel_type") else None
 
         if thread_id_str and thread_id_str in threads_dict:
             thread = threads_dict[thread_id_str]
             if isinstance(thread, dict):
-                message_return["thread_name"] = thread.get("thread_name")
+                message_return["thread_name"] = str(thread.get("thread_name", ""))
 
         if related_ticket_id_str and related_ticket_id_str in tickets_dict:
             ticket = tickets_dict[related_ticket_id_str]
             if isinstance(ticket, dict):
-                message_return["ticket_number"] = ticket.get("ticket_number")
+                message_return["ticket_number"] = str(ticket.get("ticket_number", ""))
 
         # Build success message
         destination = f"channel '{channel.get('name', channel_id_str)}'"

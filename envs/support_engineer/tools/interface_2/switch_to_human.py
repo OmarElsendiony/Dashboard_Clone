@@ -9,8 +9,10 @@ class SwitchToHuman(Tool):
         data: Dict[str, Any],
         summary: str,
     ) -> str:
+        if not summary:
+            return json.dumps({"success": False, "error": "Missing required parameter: 'summary'"})
         return json.dumps(
-            {"success": True, "message": "Transfer successful", "summary": summary}
+            {"success": True, "message": "Transfer successful", "summary": str(summary)}
         )
 
     @staticmethod

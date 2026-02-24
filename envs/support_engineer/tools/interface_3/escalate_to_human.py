@@ -8,7 +8,10 @@ class EscalateToHuman(Tool):
         data: Dict[str, Any],
         summary: str,
     ) -> str:
-        return json.dumps({"message": "Transfer successful", "summary": summary})
+        if not summary:
+            return json.dumps({"error": "summary is required"})
+
+        return json.dumps({"message": "Transfer successful", "summary": str(summary)})
 
     @staticmethod
     def get_info() -> Dict[str, Any]:

@@ -112,9 +112,9 @@ class GetThread(Tool):
             if thread_channel_id and str(thread_channel_id) in channels_dict:
                 channel = channels_dict[str(thread_channel_id)]
                 if isinstance(channel, dict):
-                    thread["channel_name"] = channel.get("name")
-                    thread["channel_type"] = channel.get("channel_type")
-                    thread["channel_status"] = channel.get("status")
+                    thread["channel_name"] = str(channel.get("name", ""))
+                    thread["channel_type"] = str(channel.get("channel_type", ""))
+                    thread["channel_status"] = str(channel.get("status", ""))
 
         # Build success message
         if thread_id_str:
