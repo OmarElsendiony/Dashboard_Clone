@@ -1,0 +1,362 @@
+{
+  "1": {
+    "service_id": "1",
+    "service_name": "shipping-service",
+    "description": "Microservice responsible for handling shipping service operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_2",
+    "status": "maintenance",
+    "created_at": "2025-12-04T20:18:29",
+    "updated_at": "2025-12-18T09:17:29"
+  },
+  "2": {
+    "service_id": "2",
+    "service_name": "user-service",
+    "description": "Enterprise-grade user service service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-12-14T01:59:29",
+    "updated_at": "2026-01-07T03:05:29"
+  },
+  "3": {
+    "service_id": "3",
+    "service_name": "notification-service",
+    "description": "Microservice responsible for handling notification service operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_2",
+    "status": "maintenance",
+    "created_at": "2025-11-12T02:33:13",
+    "updated_at": "2025-11-22T22:49:13"
+  },
+  "4": {
+    "service_id": "4",
+    "service_name": "inventory-service",
+    "description": "Microservice responsible for handling inventory service operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_1",
+    "status": "maintenance",
+    "created_at": "2025-11-12T04:58:22",
+    "updated_at": "2025-11-13T17:54:22"
+  },
+  "5": {
+    "service_id": "5",
+    "service_name": "payment-gateway",
+    "description": "Enterprise-grade payment gateway service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-10-20T07:22:18",
+    "updated_at": "2025-11-02T19:50:18"
+  },
+  "6": {
+    "service_id": "6",
+    "service_name": "checkout-service",
+    "description": "Microservice responsible for handling checkout service operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-11-25T17:44:19",
+    "updated_at": "2026-01-16T23:35:19"
+  },
+  "7": {
+    "service_id": "7",
+    "service_name": "catalog-service",
+    "description": "Microservice responsible for handling catalog service operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_2",
+    "status": "disabled",
+    "created_at": "2025-11-12T20:32:00",
+    "updated_at": "2025-12-30T04:51:00"
+  },
+  "8": {
+    "service_id": "8",
+    "service_name": "auth-service",
+    "description": "Microservice responsible for handling auth service operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-12-02T21:05:56",
+    "updated_at": "2025-12-05T18:21:56"
+  },
+  "9": {
+    "service_id": "9",
+    "service_name": "search-service",
+    "description": "Microservice responsible for handling search service operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_1",
+    "status": "active",
+    "created_at": "2025-11-21T03:55:06",
+    "updated_at": "2025-12-03T00:04:06"
+  },
+  "10": {
+    "service_id": "10",
+    "service_name": "cart-service",
+    "description": "Enterprise-grade cart service service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-11-10T08:17:38",
+    "updated_at": "2025-11-28T09:02:38"
+  },
+  "11": {
+    "service_id": "11",
+    "service_name": "order-service",
+    "description": "Enterprise-grade order service service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-10-17T10:12:43",
+    "updated_at": "2025-10-19T04:06:43"
+  },
+  "12": {
+    "service_id": "12",
+    "service_name": "recommendation-engine",
+    "description": "Enterprise-grade recommendation engine service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_3",
+    "status": "disabled",
+    "created_at": "2025-11-06T08:31:31",
+    "updated_at": "2025-11-17T03:28:31"
+  },
+  "13": {
+    "service_id": "13",
+    "service_name": "billing-service",
+    "description": "Microservice responsible for handling billing service operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-11-13T01:04:40",
+    "updated_at": "2025-11-15T08:57:40"
+  },
+  "14": {
+    "service_id": "14",
+    "service_name": "analytics-service",
+    "description": "Enterprise-grade analytics service service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_1",
+    "status": "active",
+    "created_at": "2025-12-07T08:01:00",
+    "updated_at": "2025-12-21T14:50:00"
+  },
+  "15": {
+    "service_id": "15",
+    "service_name": "service-15",
+    "description": "Core platform service managing service 15 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_1",
+    "status": "maintenance",
+    "created_at": "2025-10-19T04:39:16",
+    "updated_at": "2025-10-26T03:26:16"
+  },
+  "16": {
+    "service_id": "16",
+    "service_name": "service-16",
+    "description": "Microservice responsible for handling service 16 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_2",
+    "status": "maintenance",
+    "created_at": "2025-11-29T14:34:45",
+    "updated_at": "2025-12-04T05:09:45"
+  },
+  "17": {
+    "service_id": "17",
+    "service_name": "service-17",
+    "description": "Microservice responsible for handling service 17 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_3",
+    "status": "maintenance",
+    "created_at": "2025-11-29T00:06:04",
+    "updated_at": "2025-12-11T18:40:04"
+  },
+  "18": {
+    "service_id": "18",
+    "service_name": "service-18",
+    "description": "Enterprise-grade service 18 service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_1",
+    "status": "active",
+    "created_at": "2025-10-15T01:52:23",
+    "updated_at": "2025-10-21T08:27:23"
+  },
+  "19": {
+    "service_id": "19",
+    "service_name": "service-19",
+    "description": "Core platform service managing service 19 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_2",
+    "status": "disabled",
+    "created_at": "2025-12-09T04:26:08",
+    "updated_at": "2025-12-12T18:45:08"
+  },
+  "20": {
+    "service_id": "20",
+    "service_name": "service-20",
+    "description": "Core platform service managing service 20 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_1",
+    "status": "active",
+    "created_at": "2025-10-23T11:56:59",
+    "updated_at": "2025-10-23T23:53:59"
+  },
+  "21": {
+    "service_id": "21",
+    "service_name": "service-21",
+    "description": "Core platform service managing service 21 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-10-27T11:12:43",
+    "updated_at": "2025-11-17T19:54:43"
+  },
+  "22": {
+    "service_id": "22",
+    "service_name": "service-22",
+    "description": "Microservice responsible for handling service 22 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-10-26T03:21:49",
+    "updated_at": "2025-11-07T03:17:49"
+  },
+  "23": {
+    "service_id": "23",
+    "service_name": "service-23",
+    "description": "Microservice responsible for handling service 23 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-12-06T13:38:47",
+    "updated_at": "2025-12-19T19:37:47"
+  },
+  "24": {
+    "service_id": "24",
+    "service_name": "service-24",
+    "description": "Core platform service managing service 24 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_1",
+    "status": "active",
+    "created_at": "2025-11-14T07:54:10",
+    "updated_at": "2025-11-29T11:50:10"
+  },
+  "25": {
+    "service_id": "25",
+    "service_name": "service-25",
+    "description": "Microservice responsible for handling service 25 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-12-04T13:00:11",
+    "updated_at": "2025-12-18T18:50:11"
+  },
+  "26": {
+    "service_id": "26",
+    "service_name": "service-26",
+    "description": "Microservice responsible for handling service 26 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_1",
+    "status": "active",
+    "created_at": "2025-11-11T13:50:42",
+    "updated_at": "2025-12-02T19:07:42"
+  },
+  "27": {
+    "service_id": "27",
+    "service_name": "service-27",
+    "description": "Core platform service managing service 27 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-11-17T05:49:44",
+    "updated_at": "2025-11-19T14:13:44"
+  },
+  "28": {
+    "service_id": "28",
+    "service_name": "service-28",
+    "description": "Microservice responsible for handling service 28 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_1",
+    "status": "disabled",
+    "created_at": "2025-10-16T01:53:30",
+    "updated_at": "2025-11-04T02:05:30"
+  },
+  "29": {
+    "service_id": "29",
+    "service_name": "service-29",
+    "description": "Core platform service managing service 29 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-10-27T14:21:19",
+    "updated_at": "2025-11-14T04:11:19"
+  },
+  "30": {
+    "service_id": "30",
+    "service_name": "service-30",
+    "description": "Core platform service managing service 30 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_3",
+    "status": "disabled",
+    "created_at": "2025-10-30T07:13:01",
+    "updated_at": "2025-11-27T11:25:01"
+  },
+  "31": {
+    "service_id": "31",
+    "service_name": "service-31",
+    "description": "Enterprise-grade service 31 service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_1",
+    "status": "active",
+    "created_at": "2025-11-19T12:20:17",
+    "updated_at": "2025-11-25T12:09:17"
+  },
+  "32": {
+    "service_id": "32",
+    "service_name": "service-32",
+    "description": "Core platform service managing service 32 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-11-03T08:21:41",
+    "updated_at": "2025-11-25T02:46:41"
+  },
+  "33": {
+    "service_id": "33",
+    "service_name": "service-33",
+    "description": "Microservice responsible for handling service 33 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-11-16T21:52:34",
+    "updated_at": "2025-12-15T04:53:34"
+  },
+  "34": {
+    "service_id": "34",
+    "service_name": "service-34",
+    "description": "Enterprise-grade service 34 service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-11-16T03:55:16",
+    "updated_at": "2025-11-20T00:32:16"
+  },
+  "35": {
+    "service_id": "35",
+    "service_name": "service-35",
+    "description": "Core platform service managing service 35 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_3",
+    "status": "active",
+    "created_at": "2025-11-29T08:01:06",
+    "updated_at": "2025-12-12T02:28:06"
+  },
+  "36": {
+    "service_id": "36",
+    "service_name": "service-36",
+    "description": "Enterprise-grade service 36 service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_1",
+    "status": "active",
+    "created_at": "2025-12-10T11:45:50",
+    "updated_at": "2025-12-23T22:12:50"
+  },
+  "37": {
+    "service_id": "37",
+    "service_name": "service-37",
+    "description": "Microservice responsible for handling service 37 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_3",
+    "status": "maintenance",
+    "created_at": "2025-12-13T19:31:07",
+    "updated_at": "2026-01-15T17:28:07"
+  },
+  "38": {
+    "service_id": "38",
+    "service_name": "service-38",
+    "description": "Core platform service managing service 38 functionality. Built on a scalable architecture supporting high throughput and low latency requirements. Includes built-in monitoring, alerting, and automatic failover capabilities.",
+    "tier": "tier_1",
+    "status": "disabled",
+    "created_at": "2025-11-09T18:11:16",
+    "updated_at": "2025-11-11T16:56:16"
+  },
+  "39": {
+    "service_id": "39",
+    "service_name": "service-39",
+    "description": "Microservice responsible for handling service 39 operations. This service provides RESTful APIs for internal and external consumers, with support for synchronous and asynchronous communication patterns. It integrates with the central authentication system and follows company-wide security standards.",
+    "tier": "tier_2",
+    "status": "active",
+    "created_at": "2025-11-07T12:59:33",
+    "updated_at": "2025-11-27T07:50:33"
+  },
+  "40": {
+    "service_id": "40",
+    "service_name": "service-40",
+    "description": "Enterprise-grade service 40 service providing critical business functionality. Features include request validation, rate limiting, circuit breaker patterns, and comprehensive audit logging. Deployed across multiple availability zones for high availability.",
+    "tier": "tier_3",
+    "status": "maintenance",
+    "created_at": "2025-12-14T17:42:46",
+    "updated_at": "2025-12-22T16:29:46"
+  }
+}

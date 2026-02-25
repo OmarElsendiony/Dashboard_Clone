@@ -1,0 +1,4802 @@
+{
+  "1": {
+    "update_id": "1",
+    "work_item_id": "617",
+    "updated_by": "30",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T20:23:55"
+  },
+  "2": {
+    "update_id": "2",
+    "work_item_id": "1187",
+    "updated_by": "54",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T02:35:05"
+  },
+  "3": {
+    "update_id": "3",
+    "work_item_id": "1382",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T04:49:33"
+  },
+  "4": {
+    "update_id": "4",
+    "work_item_id": "58",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T09:05:07"
+  },
+  "5": {
+    "update_id": "5",
+    "work_item_id": "643",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T15:13:03"
+  },
+  "6": {
+    "update_id": "6",
+    "work_item_id": "782",
+    "updated_by": "75",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T19:33:21"
+  },
+  "7": {
+    "update_id": "7",
+    "work_item_id": "1340",
+    "updated_by": "12",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T00:13:52"
+  },
+  "8": {
+    "update_id": "8",
+    "work_item_id": "898",
+    "updated_by": "37",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:58:53"
+  },
+  "9": {
+    "update_id": "9",
+    "work_item_id": "540",
+    "updated_by": "25",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T08:23:45"
+  },
+  "10": {
+    "update_id": "10",
+    "work_item_id": "426",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:03:55"
+  },
+  "11": {
+    "update_id": "11",
+    "work_item_id": "468",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T05:17:04"
+  },
+  "12": {
+    "update_id": "12",
+    "work_item_id": "97",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:35:15"
+  },
+  "13": {
+    "update_id": "13",
+    "work_item_id": "1146",
+    "updated_by": "36",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T16:58:39"
+  },
+  "14": {
+    "update_id": "14",
+    "work_item_id": "372",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T16:18:25"
+  },
+  "15": {
+    "update_id": "15",
+    "work_item_id": "1544",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:02:34"
+  },
+  "16": {
+    "update_id": "16",
+    "work_item_id": "274",
+    "updated_by": "67",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T22:56:07"
+  },
+  "17": {
+    "update_id": "17",
+    "work_item_id": "479",
+    "updated_by": "2",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T18:29:59"
+  },
+  "18": {
+    "update_id": "18",
+    "work_item_id": "276",
+    "updated_by": "43",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T08:40:01"
+  },
+  "19": {
+    "update_id": "19",
+    "work_item_id": "442",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T01:20:26"
+  },
+  "20": {
+    "update_id": "20",
+    "work_item_id": "45",
+    "updated_by": "29",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:11:21"
+  },
+  "21": {
+    "update_id": "21",
+    "work_item_id": "837",
+    "updated_by": "60",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T01:07:13"
+  },
+  "22": {
+    "update_id": "22",
+    "work_item_id": "1418",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T17:51:46"
+  },
+  "23": {
+    "update_id": "23",
+    "work_item_id": "935",
+    "updated_by": "47",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T10:58:48"
+  },
+  "24": {
+    "update_id": "24",
+    "work_item_id": "897",
+    "updated_by": "55",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T21:57:56"
+  },
+  "25": {
+    "update_id": "25",
+    "work_item_id": "980",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T01:14:31"
+  },
+  "26": {
+    "update_id": "26",
+    "work_item_id": "511",
+    "updated_by": "8",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T02:50:36"
+  },
+  "27": {
+    "update_id": "27",
+    "work_item_id": "1315",
+    "updated_by": "48",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:43:53"
+  },
+  "28": {
+    "update_id": "28",
+    "work_item_id": "161",
+    "updated_by": "23",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T01:21:04"
+  },
+  "29": {
+    "update_id": "29",
+    "work_item_id": "1192",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T13:37:47"
+  },
+  "30": {
+    "update_id": "30",
+    "work_item_id": "350",
+    "updated_by": "31",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:58:05"
+  },
+  "31": {
+    "update_id": "31",
+    "work_item_id": "555",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:29:08"
+  },
+  "32": {
+    "update_id": "32",
+    "work_item_id": "1107",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T08:45:02"
+  },
+  "33": {
+    "update_id": "33",
+    "work_item_id": "1519",
+    "updated_by": "3",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T03:01:31"
+  },
+  "34": {
+    "update_id": "34",
+    "work_item_id": "1470",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T16:13:41"
+  },
+  "35": {
+    "update_id": "35",
+    "work_item_id": "272",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:26:30"
+  },
+  "36": {
+    "update_id": "36",
+    "work_item_id": "765",
+    "updated_by": "8",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T09:49:54"
+  },
+  "37": {
+    "update_id": "37",
+    "work_item_id": "848",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T07:00:59"
+  },
+  "38": {
+    "update_id": "38",
+    "work_item_id": "948",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T01:00:49"
+  },
+  "39": {
+    "update_id": "39",
+    "work_item_id": "1316",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T06:33:38"
+  },
+  "40": {
+    "update_id": "40",
+    "work_item_id": "848",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T12:42:43"
+  },
+  "41": {
+    "update_id": "41",
+    "work_item_id": "375",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:00:35"
+  },
+  "42": {
+    "update_id": "42",
+    "work_item_id": "737",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"assignee\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:02:24"
+  },
+  "43": {
+    "update_id": "43",
+    "work_item_id": "903",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T12:43:08"
+  },
+  "44": {
+    "update_id": "44",
+    "work_item_id": "1289",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:43:27"
+  },
+  "45": {
+    "update_id": "45",
+    "work_item_id": "369",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T17:07:07"
+  },
+  "46": {
+    "update_id": "46",
+    "work_item_id": "1198",
+    "updated_by": "44",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T14:06:57"
+  },
+  "47": {
+    "update_id": "47",
+    "work_item_id": "578",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T19:56:23"
+  },
+  "48": {
+    "update_id": "48",
+    "work_item_id": "1515",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T11:11:21"
+  },
+  "49": {
+    "update_id": "49",
+    "work_item_id": "511",
+    "updated_by": "25",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:57:03"
+  },
+  "50": {
+    "update_id": "50",
+    "work_item_id": "382",
+    "updated_by": "13",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:13:05"
+  },
+  "51": {
+    "update_id": "51",
+    "work_item_id": "177",
+    "updated_by": "7",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:59:14"
+  },
+  "52": {
+    "update_id": "52",
+    "work_item_id": "938",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T13:46:48"
+  },
+  "53": {
+    "update_id": "53",
+    "work_item_id": "1428",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T17:35:02"
+  },
+  "54": {
+    "update_id": "54",
+    "work_item_id": "852",
+    "updated_by": "7",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T00:54:46"
+  },
+  "55": {
+    "update_id": "55",
+    "work_item_id": "931",
+    "updated_by": "7",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T07:51:03"
+  },
+  "56": {
+    "update_id": "56",
+    "work_item_id": "597",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T02:02:08"
+  },
+  "57": {
+    "update_id": "57",
+    "work_item_id": "1226",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T14:10:18"
+  },
+  "58": {
+    "update_id": "58",
+    "work_item_id": "1269",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T01:19:22"
+  },
+  "59": {
+    "update_id": "59",
+    "work_item_id": "1226",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T19:40:56"
+  },
+  "60": {
+    "update_id": "60",
+    "work_item_id": "1012",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:17:08"
+  },
+  "61": {
+    "update_id": "61",
+    "work_item_id": "292",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T19:24:30"
+  },
+  "62": {
+    "update_id": "62",
+    "work_item_id": "522",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T21:06:42"
+  },
+  "63": {
+    "update_id": "63",
+    "work_item_id": "931",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T02:03:16"
+  },
+  "64": {
+    "update_id": "64",
+    "work_item_id": "739",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:12:31"
+  },
+  "65": {
+    "update_id": "65",
+    "work_item_id": "232",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T22:46:52"
+  },
+  "66": {
+    "update_id": "66",
+    "work_item_id": "1391",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T11:56:58"
+  },
+  "67": {
+    "update_id": "67",
+    "work_item_id": "1211",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T07:27:45"
+  },
+  "68": {
+    "update_id": "68",
+    "work_item_id": "400",
+    "updated_by": "1",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T09:22:49"
+  },
+  "69": {
+    "update_id": "69",
+    "work_item_id": "415",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:17:55"
+  },
+  "70": {
+    "update_id": "70",
+    "work_item_id": "907",
+    "updated_by": "3",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T20:14:33"
+  },
+  "71": {
+    "update_id": "71",
+    "work_item_id": "1023",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T08:19:44"
+  },
+  "72": {
+    "update_id": "72",
+    "work_item_id": "25",
+    "updated_by": "35",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T17:31:06"
+  },
+  "73": {
+    "update_id": "73",
+    "work_item_id": "22",
+    "updated_by": "48",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T01:21:57"
+  },
+  "74": {
+    "update_id": "74",
+    "work_item_id": "1569",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:44:39"
+  },
+  "75": {
+    "update_id": "75",
+    "work_item_id": "1254",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:16:05"
+  },
+  "76": {
+    "update_id": "76",
+    "work_item_id": "1397",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T06:57:08"
+  },
+  "77": {
+    "update_id": "77",
+    "work_item_id": "1438",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T16:13:19"
+  },
+  "78": {
+    "update_id": "78",
+    "work_item_id": "1348",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:34:13"
+  },
+  "79": {
+    "update_id": "79",
+    "work_item_id": "1225",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T03:22:46"
+  },
+  "80": {
+    "update_id": "80",
+    "work_item_id": "379",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T04:01:15"
+  },
+  "81": {
+    "update_id": "81",
+    "work_item_id": "654",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T22:27:41"
+  },
+  "82": {
+    "update_id": "82",
+    "work_item_id": "735",
+    "updated_by": "73",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:06:01"
+  },
+  "83": {
+    "update_id": "83",
+    "work_item_id": "857",
+    "updated_by": "11",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T15:52:02"
+  },
+  "84": {
+    "update_id": "84",
+    "work_item_id": "1112",
+    "updated_by": "11",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:16:37"
+  },
+  "85": {
+    "update_id": "85",
+    "work_item_id": "1239",
+    "updated_by": "18",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T12:18:52"
+  },
+  "86": {
+    "update_id": "86",
+    "work_item_id": "756",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-07T02:09:50"
+  },
+  "87": {
+    "update_id": "87",
+    "work_item_id": "310",
+    "updated_by": "37",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:23:31"
+  },
+  "88": {
+    "update_id": "88",
+    "work_item_id": "661",
+    "updated_by": "53",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T00:54:24"
+  },
+  "89": {
+    "update_id": "89",
+    "work_item_id": "311",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T12:27:02"
+  },
+  "90": {
+    "update_id": "90",
+    "work_item_id": "1436",
+    "updated_by": "75",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T07:12:24"
+  },
+  "91": {
+    "update_id": "91",
+    "work_item_id": "501",
+    "updated_by": "60",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T05:41:27"
+  },
+  "92": {
+    "update_id": "92",
+    "work_item_id": "1323",
+    "updated_by": "53",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:02:42"
+  },
+  "93": {
+    "update_id": "93",
+    "work_item_id": "1275",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T09:01:34"
+  },
+  "94": {
+    "update_id": "94",
+    "work_item_id": "88",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T11:58:01"
+  },
+  "95": {
+    "update_id": "95",
+    "work_item_id": "1359",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T19:47:57"
+  },
+  "96": {
+    "update_id": "96",
+    "work_item_id": "1324",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T10:58:53"
+  },
+  "97": {
+    "update_id": "97",
+    "work_item_id": "420",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:50:48"
+  },
+  "98": {
+    "update_id": "98",
+    "work_item_id": "1103",
+    "updated_by": "6",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T18:12:48"
+  },
+  "99": {
+    "update_id": "99",
+    "work_item_id": "1176",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T00:20:46"
+  },
+  "100": {
+    "update_id": "100",
+    "work_item_id": "1443",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:26:55"
+  },
+  "101": {
+    "update_id": "101",
+    "work_item_id": "1316",
+    "updated_by": "11",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T13:49:46"
+  },
+  "102": {
+    "update_id": "102",
+    "work_item_id": "311",
+    "updated_by": "13",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T23:47:03"
+  },
+  "103": {
+    "update_id": "103",
+    "work_item_id": "157",
+    "updated_by": "48",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T03:34:24"
+  },
+  "104": {
+    "update_id": "104",
+    "work_item_id": "1358",
+    "updated_by": "15",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T23:58:43"
+  },
+  "105": {
+    "update_id": "105",
+    "work_item_id": "315",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T09:53:34"
+  },
+  "106": {
+    "update_id": "106",
+    "work_item_id": "1023",
+    "updated_by": "52",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"assignee\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:26:36"
+  },
+  "107": {
+    "update_id": "107",
+    "work_item_id": "18",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T23:35:49"
+  },
+  "108": {
+    "update_id": "108",
+    "work_item_id": "1088",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T16:15:10"
+  },
+  "109": {
+    "update_id": "109",
+    "work_item_id": "1101",
+    "updated_by": "8",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T12:28:47"
+  },
+  "110": {
+    "update_id": "110",
+    "work_item_id": "1537",
+    "updated_by": "18",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T17:56:19"
+  },
+  "111": {
+    "update_id": "111",
+    "work_item_id": "2",
+    "updated_by": "6",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T00:16:51"
+  },
+  "112": {
+    "update_id": "112",
+    "work_item_id": "1168",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T21:16:05"
+  },
+  "113": {
+    "update_id": "113",
+    "work_item_id": "906",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T07:48:34"
+  },
+  "114": {
+    "update_id": "114",
+    "work_item_id": "1067",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T09:20:36"
+  },
+  "115": {
+    "update_id": "115",
+    "work_item_id": "1307",
+    "updated_by": "52",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T12:01:39"
+  },
+  "116": {
+    "update_id": "116",
+    "work_item_id": "818",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T08:22:17"
+  },
+  "117": {
+    "update_id": "117",
+    "work_item_id": "1221",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T21:15:50"
+  },
+  "118": {
+    "update_id": "118",
+    "work_item_id": "607",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T20:50:49"
+  },
+  "119": {
+    "update_id": "119",
+    "work_item_id": "289",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T18:59:07"
+  },
+  "120": {
+    "update_id": "120",
+    "work_item_id": "154",
+    "updated_by": "25",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:35:42"
+  },
+  "121": {
+    "update_id": "121",
+    "work_item_id": "626",
+    "updated_by": "9",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:52:16"
+  },
+  "122": {
+    "update_id": "122",
+    "work_item_id": "335",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T05:27:29"
+  },
+  "123": {
+    "update_id": "123",
+    "work_item_id": "577",
+    "updated_by": "63",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T00:27:00"
+  },
+  "124": {
+    "update_id": "124",
+    "work_item_id": "1583",
+    "updated_by": "15",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:01:22"
+  },
+  "125": {
+    "update_id": "125",
+    "work_item_id": "1260",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:39:54"
+  },
+  "126": {
+    "update_id": "126",
+    "work_item_id": "1558",
+    "updated_by": "53",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T17:12:26"
+  },
+  "127": {
+    "update_id": "127",
+    "work_item_id": "1256",
+    "updated_by": "36",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T01:36:05"
+  },
+  "128": {
+    "update_id": "128",
+    "work_item_id": "198",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T08:56:39"
+  },
+  "129": {
+    "update_id": "129",
+    "work_item_id": "228",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:19:04"
+  },
+  "130": {
+    "update_id": "130",
+    "work_item_id": "450",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T14:10:16"
+  },
+  "131": {
+    "update_id": "131",
+    "work_item_id": "1511",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T08:15:55"
+  },
+  "132": {
+    "update_id": "132",
+    "work_item_id": "12",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"assignee\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T15:07:14"
+  },
+  "133": {
+    "update_id": "133",
+    "work_item_id": "331",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T20:10:09"
+  },
+  "134": {
+    "update_id": "134",
+    "work_item_id": "812",
+    "updated_by": "25",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T19:40:03"
+  },
+  "135": {
+    "update_id": "135",
+    "work_item_id": "659",
+    "updated_by": "6",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T07:06:41"
+  },
+  "136": {
+    "update_id": "136",
+    "work_item_id": "554",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T01:10:43"
+  },
+  "137": {
+    "update_id": "137",
+    "work_item_id": "1127",
+    "updated_by": "1",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T16:54:28"
+  },
+  "138": {
+    "update_id": "138",
+    "work_item_id": "1412",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T18:19:02"
+  },
+  "139": {
+    "update_id": "139",
+    "work_item_id": "351",
+    "updated_by": "73",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"status\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T17:44:14"
+  },
+  "140": {
+    "update_id": "140",
+    "work_item_id": "123",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T01:44:16"
+  },
+  "141": {
+    "update_id": "141",
+    "work_item_id": "886",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T08:00:43"
+  },
+  "142": {
+    "update_id": "142",
+    "work_item_id": "500",
+    "updated_by": "30",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:33:45"
+  },
+  "143": {
+    "update_id": "143",
+    "work_item_id": "1139",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T01:37:15"
+  },
+  "144": {
+    "update_id": "144",
+    "work_item_id": "1249",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T11:05:04"
+  },
+  "145": {
+    "update_id": "145",
+    "work_item_id": "440",
+    "updated_by": "62",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"status\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T16:27:07"
+  },
+  "146": {
+    "update_id": "146",
+    "work_item_id": "171",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T16:03:15"
+  },
+  "147": {
+    "update_id": "147",
+    "work_item_id": "1293",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T06:19:36"
+  },
+  "148": {
+    "update_id": "148",
+    "work_item_id": "363",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T11:52:52"
+  },
+  "149": {
+    "update_id": "149",
+    "work_item_id": "889",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T21:25:04"
+  },
+  "150": {
+    "update_id": "150",
+    "work_item_id": "2",
+    "updated_by": "10",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T20:26:56"
+  },
+  "151": {
+    "update_id": "151",
+    "work_item_id": "1360",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T09:08:01"
+  },
+  "152": {
+    "update_id": "152",
+    "work_item_id": "463",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:37:50"
+  },
+  "153": {
+    "update_id": "153",
+    "work_item_id": "1108",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T11:20:26"
+  },
+  "154": {
+    "update_id": "154",
+    "work_item_id": "716",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T20:22:30"
+  },
+  "155": {
+    "update_id": "155",
+    "work_item_id": "1492",
+    "updated_by": "9",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T09:38:01"
+  },
+  "156": {
+    "update_id": "156",
+    "work_item_id": "1451",
+    "updated_by": "3",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T05:22:02"
+  },
+  "157": {
+    "update_id": "157",
+    "work_item_id": "1010",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:58:09"
+  },
+  "158": {
+    "update_id": "158",
+    "work_item_id": "89",
+    "updated_by": "55",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T18:00:06"
+  },
+  "159": {
+    "update_id": "159",
+    "work_item_id": "759",
+    "updated_by": "75",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:12:51"
+  },
+  "160": {
+    "update_id": "160",
+    "work_item_id": "1301",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T10:31:45"
+  },
+  "161": {
+    "update_id": "161",
+    "work_item_id": "546",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T23:31:50"
+  },
+  "162": {
+    "update_id": "162",
+    "work_item_id": "261",
+    "updated_by": "60",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T18:44:22"
+  },
+  "163": {
+    "update_id": "163",
+    "work_item_id": "240",
+    "updated_by": "59",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T06:23:53"
+  },
+  "164": {
+    "update_id": "164",
+    "work_item_id": "227",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T18:01:42"
+  },
+  "165": {
+    "update_id": "165",
+    "work_item_id": "1187",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T23:08:24"
+  },
+  "166": {
+    "update_id": "166",
+    "work_item_id": "1419",
+    "updated_by": "39",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T20:04:04"
+  },
+  "167": {
+    "update_id": "167",
+    "work_item_id": "365",
+    "updated_by": "3",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T07:35:32"
+  },
+  "168": {
+    "update_id": "168",
+    "work_item_id": "309",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T18:39:35"
+  },
+  "169": {
+    "update_id": "169",
+    "work_item_id": "818",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T23:25:34"
+  },
+  "170": {
+    "update_id": "170",
+    "work_item_id": "1253",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T23:06:54"
+  },
+  "171": {
+    "update_id": "171",
+    "work_item_id": "284",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T16:50:03"
+  },
+  "172": {
+    "update_id": "172",
+    "work_item_id": "1264",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T19:29:42"
+  },
+  "173": {
+    "update_id": "173",
+    "work_item_id": "704",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T16:32:28"
+  },
+  "174": {
+    "update_id": "174",
+    "work_item_id": "559",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T10:16:12"
+  },
+  "175": {
+    "update_id": "175",
+    "work_item_id": "1565",
+    "updated_by": "57",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T18:17:58"
+  },
+  "176": {
+    "update_id": "176",
+    "work_item_id": "1187",
+    "updated_by": "3",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T07:20:15"
+  },
+  "177": {
+    "update_id": "177",
+    "work_item_id": "974",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T11:13:29"
+  },
+  "178": {
+    "update_id": "178",
+    "work_item_id": "867",
+    "updated_by": "39",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:46:07"
+  },
+  "179": {
+    "update_id": "179",
+    "work_item_id": "897",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T22:14:28"
+  },
+  "180": {
+    "update_id": "180",
+    "work_item_id": "45",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:55:26"
+  },
+  "181": {
+    "update_id": "181",
+    "work_item_id": "1220",
+    "updated_by": "59",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T11:04:22"
+  },
+  "182": {
+    "update_id": "182",
+    "work_item_id": "1020",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T17:31:04"
+  },
+  "183": {
+    "update_id": "183",
+    "work_item_id": "1266",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:40:30"
+  },
+  "184": {
+    "update_id": "184",
+    "work_item_id": "565",
+    "updated_by": "10",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T19:13:28"
+  },
+  "185": {
+    "update_id": "185",
+    "work_item_id": "1246",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:13:36"
+  },
+  "186": {
+    "update_id": "186",
+    "work_item_id": "842",
+    "updated_by": "60",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T04:58:34"
+  },
+  "187": {
+    "update_id": "187",
+    "work_item_id": "939",
+    "updated_by": "67",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T07:48:58"
+  },
+  "188": {
+    "update_id": "188",
+    "work_item_id": "423",
+    "updated_by": "52",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T13:42:37"
+  },
+  "189": {
+    "update_id": "189",
+    "work_item_id": "1093",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T21:07:38"
+  },
+  "190": {
+    "update_id": "190",
+    "work_item_id": "1591",
+    "updated_by": "75",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T08:49:18"
+  },
+  "191": {
+    "update_id": "191",
+    "work_item_id": "594",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:19:07"
+  },
+  "192": {
+    "update_id": "192",
+    "work_item_id": "1239",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T02:25:26"
+  },
+  "193": {
+    "update_id": "193",
+    "work_item_id": "808",
+    "updated_by": "2",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T16:08:36"
+  },
+  "194": {
+    "update_id": "194",
+    "work_item_id": "243",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:39:56"
+  },
+  "195": {
+    "update_id": "195",
+    "work_item_id": "286",
+    "updated_by": "59",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:56:11"
+  },
+  "196": {
+    "update_id": "196",
+    "work_item_id": "820",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:59:10"
+  },
+  "197": {
+    "update_id": "197",
+    "work_item_id": "38",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T03:25:16"
+  },
+  "198": {
+    "update_id": "198",
+    "work_item_id": "1095",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T17:44:59"
+  },
+  "199": {
+    "update_id": "199",
+    "work_item_id": "1578",
+    "updated_by": "29",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:46:06"
+  },
+  "200": {
+    "update_id": "200",
+    "work_item_id": "1106",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T04:54:02"
+  },
+  "201": {
+    "update_id": "201",
+    "work_item_id": "85",
+    "updated_by": "43",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T13:00:44"
+  },
+  "202": {
+    "update_id": "202",
+    "work_item_id": "1108",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:03:08"
+  },
+  "203": {
+    "update_id": "203",
+    "work_item_id": "1219",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T16:54:33"
+  },
+  "204": {
+    "update_id": "204",
+    "work_item_id": "1523",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T12:56:27"
+  },
+  "205": {
+    "update_id": "205",
+    "work_item_id": "485",
+    "updated_by": "2",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:07:25"
+  },
+  "206": {
+    "update_id": "206",
+    "work_item_id": "916",
+    "updated_by": "48",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T22:34:15"
+  },
+  "207": {
+    "update_id": "207",
+    "work_item_id": "2",
+    "updated_by": "28",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T22:17:07"
+  },
+  "208": {
+    "update_id": "208",
+    "work_item_id": "707",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T10:56:52"
+  },
+  "209": {
+    "update_id": "209",
+    "work_item_id": "209",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T10:36:38"
+  },
+  "210": {
+    "update_id": "210",
+    "work_item_id": "733",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:05:46"
+  },
+  "211": {
+    "update_id": "211",
+    "work_item_id": "1143",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T01:03:47"
+  },
+  "212": {
+    "update_id": "212",
+    "work_item_id": "898",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T11:27:58"
+  },
+  "213": {
+    "update_id": "213",
+    "work_item_id": "885",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"status\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T13:39:28"
+  },
+  "214": {
+    "update_id": "214",
+    "work_item_id": "1559",
+    "updated_by": "62",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T23:52:27"
+  },
+  "215": {
+    "update_id": "215",
+    "work_item_id": "1339",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T09:47:30"
+  },
+  "216": {
+    "update_id": "216",
+    "work_item_id": "849",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T22:07:46"
+  },
+  "217": {
+    "update_id": "217",
+    "work_item_id": "1293",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T05:45:49"
+  },
+  "218": {
+    "update_id": "218",
+    "work_item_id": "252",
+    "updated_by": "7",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T18:57:52"
+  },
+  "219": {
+    "update_id": "219",
+    "work_item_id": "606",
+    "updated_by": "39",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T16:04:09"
+  },
+  "220": {
+    "update_id": "220",
+    "work_item_id": "270",
+    "updated_by": "6",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T00:36:37"
+  },
+  "221": {
+    "update_id": "221",
+    "work_item_id": "1363",
+    "updated_by": "44",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T11:42:41"
+  },
+  "222": {
+    "update_id": "222",
+    "work_item_id": "821",
+    "updated_by": "48",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:23:20"
+  },
+  "223": {
+    "update_id": "223",
+    "work_item_id": "80",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:10:32"
+  },
+  "224": {
+    "update_id": "224",
+    "work_item_id": "1594",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:36:17"
+  },
+  "225": {
+    "update_id": "225",
+    "work_item_id": "705",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T03:13:19"
+  },
+  "226": {
+    "update_id": "226",
+    "work_item_id": "646",
+    "updated_by": "55",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T15:20:03"
+  },
+  "227": {
+    "update_id": "227",
+    "work_item_id": "371",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T18:32:57"
+  },
+  "228": {
+    "update_id": "228",
+    "work_item_id": "484",
+    "updated_by": "28",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T16:36:32"
+  },
+  "229": {
+    "update_id": "229",
+    "work_item_id": "1352",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:17:20"
+  },
+  "230": {
+    "update_id": "230",
+    "work_item_id": "530",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T12:19:48"
+  },
+  "231": {
+    "update_id": "231",
+    "work_item_id": "622",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:08:02"
+  },
+  "232": {
+    "update_id": "232",
+    "work_item_id": "667",
+    "updated_by": "48",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T23:55:46"
+  },
+  "233": {
+    "update_id": "233",
+    "work_item_id": "896",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:26:33"
+  },
+  "234": {
+    "update_id": "234",
+    "work_item_id": "475",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:35:56"
+  },
+  "235": {
+    "update_id": "235",
+    "work_item_id": "13",
+    "updated_by": "63",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T19:19:06"
+  },
+  "236": {
+    "update_id": "236",
+    "work_item_id": "589",
+    "updated_by": "43",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T11:17:10"
+  },
+  "237": {
+    "update_id": "237",
+    "work_item_id": "209",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T03:17:17"
+  },
+  "238": {
+    "update_id": "238",
+    "work_item_id": "116",
+    "updated_by": "1",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T15:27:14"
+  },
+  "239": {
+    "update_id": "239",
+    "work_item_id": "262",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T05:17:58"
+  },
+  "240": {
+    "update_id": "240",
+    "work_item_id": "1469",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:37:48"
+  },
+  "241": {
+    "update_id": "241",
+    "work_item_id": "1595",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T03:58:14"
+  },
+  "242": {
+    "update_id": "242",
+    "work_item_id": "1014",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T21:16:09"
+  },
+  "243": {
+    "update_id": "243",
+    "work_item_id": "1098",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T03:12:35"
+  },
+  "244": {
+    "update_id": "244",
+    "work_item_id": "710",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T16:47:10"
+  },
+  "245": {
+    "update_id": "245",
+    "work_item_id": "658",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T00:37:57"
+  },
+  "246": {
+    "update_id": "246",
+    "work_item_id": "1197",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T01:56:34"
+  },
+  "247": {
+    "update_id": "247",
+    "work_item_id": "710",
+    "updated_by": "18",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T17:50:12"
+  },
+  "248": {
+    "update_id": "248",
+    "work_item_id": "208",
+    "updated_by": "52",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T00:30:53"
+  },
+  "249": {
+    "update_id": "249",
+    "work_item_id": "1029",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T00:22:13"
+  },
+  "250": {
+    "update_id": "250",
+    "work_item_id": "173",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:35:27"
+  },
+  "251": {
+    "update_id": "251",
+    "work_item_id": "689",
+    "updated_by": "7",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T23:27:33"
+  },
+  "252": {
+    "update_id": "252",
+    "work_item_id": "97",
+    "updated_by": "47",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T04:52:29"
+  },
+  "253": {
+    "update_id": "253",
+    "work_item_id": "530",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T09:57:07"
+  },
+  "254": {
+    "update_id": "254",
+    "work_item_id": "966",
+    "updated_by": "30",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T22:44:58"
+  },
+  "255": {
+    "update_id": "255",
+    "work_item_id": "440",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T03:27:56"
+  },
+  "256": {
+    "update_id": "256",
+    "work_item_id": "898",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T13:30:16"
+  },
+  "257": {
+    "update_id": "257",
+    "work_item_id": "606",
+    "updated_by": "15",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T02:54:08"
+  },
+  "258": {
+    "update_id": "258",
+    "work_item_id": "244",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T08:45:42"
+  },
+  "259": {
+    "update_id": "259",
+    "work_item_id": "1170",
+    "updated_by": "59",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T03:21:51"
+  },
+  "260": {
+    "update_id": "260",
+    "work_item_id": "593",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T02:46:50"
+  },
+  "261": {
+    "update_id": "261",
+    "work_item_id": "474",
+    "updated_by": "63",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T07:45:04"
+  },
+  "262": {
+    "update_id": "262",
+    "work_item_id": "456",
+    "updated_by": "25",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:09:32"
+  },
+  "263": {
+    "update_id": "263",
+    "work_item_id": "446",
+    "updated_by": "54",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:16:29"
+  },
+  "264": {
+    "update_id": "264",
+    "work_item_id": "141",
+    "updated_by": "26",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T20:46:32"
+  },
+  "265": {
+    "update_id": "265",
+    "work_item_id": "1320",
+    "updated_by": "67",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T21:48:04"
+  },
+  "266": {
+    "update_id": "266",
+    "work_item_id": "875",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T22:43:20"
+  },
+  "267": {
+    "update_id": "267",
+    "work_item_id": "1096",
+    "updated_by": "23",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T01:26:06"
+  },
+  "268": {
+    "update_id": "268",
+    "work_item_id": "140",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T22:49:33"
+  },
+  "269": {
+    "update_id": "269",
+    "work_item_id": "1113",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:11:53"
+  },
+  "270": {
+    "update_id": "270",
+    "work_item_id": "585",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T17:41:53"
+  },
+  "271": {
+    "update_id": "271",
+    "work_item_id": "1402",
+    "updated_by": "9",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T20:01:40"
+  },
+  "272": {
+    "update_id": "272",
+    "work_item_id": "912",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T19:59:15"
+  },
+  "273": {
+    "update_id": "273",
+    "work_item_id": "436",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T04:36:24"
+  },
+  "274": {
+    "update_id": "274",
+    "work_item_id": "1049",
+    "updated_by": "7",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:42:12"
+  },
+  "275": {
+    "update_id": "275",
+    "work_item_id": "1157",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T08:29:09"
+  },
+  "276": {
+    "update_id": "276",
+    "work_item_id": "980",
+    "updated_by": "25",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:51:11"
+  },
+  "277": {
+    "update_id": "277",
+    "work_item_id": "782",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:30:18"
+  },
+  "278": {
+    "update_id": "278",
+    "work_item_id": "982",
+    "updated_by": "57",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T04:11:40"
+  },
+  "279": {
+    "update_id": "279",
+    "work_item_id": "1214",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T02:32:54"
+  },
+  "280": {
+    "update_id": "280",
+    "work_item_id": "636",
+    "updated_by": "29",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:46:13"
+  },
+  "281": {
+    "update_id": "281",
+    "work_item_id": "812",
+    "updated_by": "18",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T00:26:04"
+  },
+  "282": {
+    "update_id": "282",
+    "work_item_id": "527",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T15:34:39"
+  },
+  "283": {
+    "update_id": "283",
+    "work_item_id": "537",
+    "updated_by": "44",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:44:11"
+  },
+  "284": {
+    "update_id": "284",
+    "work_item_id": "1204",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T01:25:44"
+  },
+  "285": {
+    "update_id": "285",
+    "work_item_id": "1413",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:38:24"
+  },
+  "286": {
+    "update_id": "286",
+    "work_item_id": "1091",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T20:36:15"
+  },
+  "287": {
+    "update_id": "287",
+    "work_item_id": "1183",
+    "updated_by": "3",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T20:21:30"
+  },
+  "288": {
+    "update_id": "288",
+    "work_item_id": "1401",
+    "updated_by": "44",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T16:41:11"
+  },
+  "289": {
+    "update_id": "289",
+    "work_item_id": "1443",
+    "updated_by": "11",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T09:52:14"
+  },
+  "290": {
+    "update_id": "290",
+    "work_item_id": "1359",
+    "updated_by": "67",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:41:31"
+  },
+  "291": {
+    "update_id": "291",
+    "work_item_id": "589",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T15:49:40"
+  },
+  "292": {
+    "update_id": "292",
+    "work_item_id": "568",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T12:37:22"
+  },
+  "293": {
+    "update_id": "293",
+    "work_item_id": "1269",
+    "updated_by": "59",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T17:29:18"
+  },
+  "294": {
+    "update_id": "294",
+    "work_item_id": "350",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T03:13:07"
+  },
+  "295": {
+    "update_id": "295",
+    "work_item_id": "1588",
+    "updated_by": "63",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T09:25:28"
+  },
+  "296": {
+    "update_id": "296",
+    "work_item_id": "1170",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T10:14:42"
+  },
+  "297": {
+    "update_id": "297",
+    "work_item_id": "1062",
+    "updated_by": "15",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:06:11"
+  },
+  "298": {
+    "update_id": "298",
+    "work_item_id": "367",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:19:42"
+  },
+  "299": {
+    "update_id": "299",
+    "work_item_id": "1527",
+    "updated_by": "75",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T03:21:44"
+  },
+  "300": {
+    "update_id": "300",
+    "work_item_id": "1248",
+    "updated_by": "10",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T12:44:08"
+  },
+  "301": {
+    "update_id": "301",
+    "work_item_id": "1084",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:52:51"
+  },
+  "302": {
+    "update_id": "302",
+    "work_item_id": "1247",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T15:37:26"
+  },
+  "303": {
+    "update_id": "303",
+    "work_item_id": "30",
+    "updated_by": "43",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T21:14:01"
+  },
+  "304": {
+    "update_id": "304",
+    "work_item_id": "613",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T09:16:32"
+  },
+  "305": {
+    "update_id": "305",
+    "work_item_id": "545",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T06:55:54"
+  },
+  "306": {
+    "update_id": "306",
+    "work_item_id": "1072",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:02:35"
+  },
+  "307": {
+    "update_id": "307",
+    "work_item_id": "170",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T10:15:43"
+  },
+  "308": {
+    "update_id": "308",
+    "work_item_id": "61",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T10:25:25"
+  },
+  "309": {
+    "update_id": "309",
+    "work_item_id": "1541",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T14:26:25"
+  },
+  "310": {
+    "update_id": "310",
+    "work_item_id": "1588",
+    "updated_by": "11",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T08:57:03"
+  },
+  "311": {
+    "update_id": "311",
+    "work_item_id": "1007",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:30:46"
+  },
+  "312": {
+    "update_id": "312",
+    "work_item_id": "690",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:20:40"
+  },
+  "313": {
+    "update_id": "313",
+    "work_item_id": "47",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T01:18:28"
+  },
+  "314": {
+    "update_id": "314",
+    "work_item_id": "216",
+    "updated_by": "57",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T13:13:36"
+  },
+  "315": {
+    "update_id": "315",
+    "work_item_id": "759",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:33:13"
+  },
+  "316": {
+    "update_id": "316",
+    "work_item_id": "871",
+    "updated_by": "55",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T20:06:39"
+  },
+  "317": {
+    "update_id": "317",
+    "work_item_id": "766",
+    "updated_by": "12",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T19:20:08"
+  },
+  "318": {
+    "update_id": "318",
+    "work_item_id": "642",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T19:33:01"
+  },
+  "319": {
+    "update_id": "319",
+    "work_item_id": "1546",
+    "updated_by": "60",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T23:00:51"
+  },
+  "320": {
+    "update_id": "320",
+    "work_item_id": "1575",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T12:04:49"
+  },
+  "321": {
+    "update_id": "321",
+    "work_item_id": "1379",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T22:20:58"
+  },
+  "322": {
+    "update_id": "322",
+    "work_item_id": "1525",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:48:49"
+  },
+  "323": {
+    "update_id": "323",
+    "work_item_id": "494",
+    "updated_by": "75",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:03:41"
+  },
+  "324": {
+    "update_id": "324",
+    "work_item_id": "510",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T01:32:13"
+  },
+  "325": {
+    "update_id": "325",
+    "work_item_id": "1175",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"status\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T11:33:12"
+  },
+  "326": {
+    "update_id": "326",
+    "work_item_id": "646",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:52:34"
+  },
+  "327": {
+    "update_id": "327",
+    "work_item_id": "1482",
+    "updated_by": "55",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T12:54:45"
+  },
+  "328": {
+    "update_id": "328",
+    "work_item_id": "121",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T07:17:51"
+  },
+  "329": {
+    "update_id": "329",
+    "work_item_id": "207",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T05:57:23"
+  },
+  "330": {
+    "update_id": "330",
+    "work_item_id": "581",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:25:13"
+  },
+  "331": {
+    "update_id": "331",
+    "work_item_id": "278",
+    "updated_by": "39",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:45:15"
+  },
+  "332": {
+    "update_id": "332",
+    "work_item_id": "945",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T00:01:54"
+  },
+  "333": {
+    "update_id": "333",
+    "work_item_id": "1428",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T00:47:33"
+  },
+  "334": {
+    "update_id": "334",
+    "work_item_id": "1552",
+    "updated_by": "52",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T03:31:25"
+  },
+  "335": {
+    "update_id": "335",
+    "work_item_id": "901",
+    "updated_by": "11",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:01:10"
+  },
+  "336": {
+    "update_id": "336",
+    "work_item_id": "715",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T09:18:01"
+  },
+  "337": {
+    "update_id": "337",
+    "work_item_id": "1164",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:39:49"
+  },
+  "338": {
+    "update_id": "338",
+    "work_item_id": "496",
+    "updated_by": "8",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T22:14:02"
+  },
+  "339": {
+    "update_id": "339",
+    "work_item_id": "684",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T08:46:07"
+  },
+  "340": {
+    "update_id": "340",
+    "work_item_id": "186",
+    "updated_by": "47",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T12:40:25"
+  },
+  "341": {
+    "update_id": "341",
+    "work_item_id": "923",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T04:51:47"
+  },
+  "342": {
+    "update_id": "342",
+    "work_item_id": "685",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T08:54:05"
+  },
+  "343": {
+    "update_id": "343",
+    "work_item_id": "1198",
+    "updated_by": "63",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T02:03:32"
+  },
+  "344": {
+    "update_id": "344",
+    "work_item_id": "711",
+    "updated_by": "15",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:44:48"
+  },
+  "345": {
+    "update_id": "345",
+    "work_item_id": "595",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T23:25:01"
+  },
+  "346": {
+    "update_id": "346",
+    "work_item_id": "1257",
+    "updated_by": "6",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T00:46:53"
+  },
+  "347": {
+    "update_id": "347",
+    "work_item_id": "492",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T17:37:58"
+  },
+  "348": {
+    "update_id": "348",
+    "work_item_id": "58",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T04:05:47"
+  },
+  "349": {
+    "update_id": "349",
+    "work_item_id": "1569",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T18:49:25"
+  },
+  "350": {
+    "update_id": "350",
+    "work_item_id": "511",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:52:38"
+  },
+  "351": {
+    "update_id": "351",
+    "work_item_id": "169",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T09:49:20"
+  },
+  "352": {
+    "update_id": "352",
+    "work_item_id": "141",
+    "updated_by": "53",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T13:31:47"
+  },
+  "353": {
+    "update_id": "353",
+    "work_item_id": "215",
+    "updated_by": "60",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T00:18:17"
+  },
+  "354": {
+    "update_id": "354",
+    "work_item_id": "1300",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T14:11:06"
+  },
+  "355": {
+    "update_id": "355",
+    "work_item_id": "614",
+    "updated_by": "53",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T08:40:36"
+  },
+  "356": {
+    "update_id": "356",
+    "work_item_id": "765",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:23:18"
+  },
+  "357": {
+    "update_id": "357",
+    "work_item_id": "1371",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T13:04:14"
+  },
+  "358": {
+    "update_id": "358",
+    "work_item_id": "1005",
+    "updated_by": "28",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T13:34:17"
+  },
+  "359": {
+    "update_id": "359",
+    "work_item_id": "293",
+    "updated_by": "63",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T15:17:58"
+  },
+  "360": {
+    "update_id": "360",
+    "work_item_id": "276",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T22:33:32"
+  },
+  "361": {
+    "update_id": "361",
+    "work_item_id": "1298",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T07:23:01"
+  },
+  "362": {
+    "update_id": "362",
+    "work_item_id": "238",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T15:45:25"
+  },
+  "363": {
+    "update_id": "363",
+    "work_item_id": "1213",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T11:47:34"
+  },
+  "364": {
+    "update_id": "364",
+    "work_item_id": "1179",
+    "updated_by": "53",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T22:05:28"
+  },
+  "365": {
+    "update_id": "365",
+    "work_item_id": "857",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T07:35:01"
+  },
+  "366": {
+    "update_id": "366",
+    "work_item_id": "1549",
+    "updated_by": "1",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T12:48:14"
+  },
+  "367": {
+    "update_id": "367",
+    "work_item_id": "1036",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T14:22:30"
+  },
+  "368": {
+    "update_id": "368",
+    "work_item_id": "1257",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T18:05:41"
+  },
+  "369": {
+    "update_id": "369",
+    "work_item_id": "656",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:20:09"
+  },
+  "370": {
+    "update_id": "370",
+    "work_item_id": "1448",
+    "updated_by": "31",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T20:04:06"
+  },
+  "371": {
+    "update_id": "371",
+    "work_item_id": "1102",
+    "updated_by": "59",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:09:13"
+  },
+  "372": {
+    "update_id": "372",
+    "work_item_id": "1006",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T15:36:15"
+  },
+  "373": {
+    "update_id": "373",
+    "work_item_id": "44",
+    "updated_by": "55",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T02:08:25"
+  },
+  "374": {
+    "update_id": "374",
+    "work_item_id": "246",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T19:52:30"
+  },
+  "375": {
+    "update_id": "375",
+    "work_item_id": "1589",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T16:45:53"
+  },
+  "376": {
+    "update_id": "376",
+    "work_item_id": "427",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T18:47:14"
+  },
+  "377": {
+    "update_id": "377",
+    "work_item_id": "1039",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T01:48:31"
+  },
+  "378": {
+    "update_id": "378",
+    "work_item_id": "963",
+    "updated_by": "57",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T08:25:19"
+  },
+  "379": {
+    "update_id": "379",
+    "work_item_id": "1049",
+    "updated_by": "29",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T23:20:53"
+  },
+  "380": {
+    "update_id": "380",
+    "work_item_id": "829",
+    "updated_by": "37",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T04:01:20"
+  },
+  "381": {
+    "update_id": "381",
+    "work_item_id": "29",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T22:35:38"
+  },
+  "382": {
+    "update_id": "382",
+    "work_item_id": "1470",
+    "updated_by": "2",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T13:54:00"
+  },
+  "383": {
+    "update_id": "383",
+    "work_item_id": "231",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:43:13"
+  },
+  "384": {
+    "update_id": "384",
+    "work_item_id": "1305",
+    "updated_by": "54",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T17:49:31"
+  },
+  "385": {
+    "update_id": "385",
+    "work_item_id": "1117",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T17:30:20"
+  },
+  "386": {
+    "update_id": "386",
+    "work_item_id": "542",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T20:14:20"
+  },
+  "387": {
+    "update_id": "387",
+    "work_item_id": "139",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T14:44:30"
+  },
+  "388": {
+    "update_id": "388",
+    "work_item_id": "175",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T16:34:54"
+  },
+  "389": {
+    "update_id": "389",
+    "work_item_id": "923",
+    "updated_by": "60",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:45:05"
+  },
+  "390": {
+    "update_id": "390",
+    "work_item_id": "550",
+    "updated_by": "36",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T03:26:44"
+  },
+  "391": {
+    "update_id": "391",
+    "work_item_id": "116",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T02:23:08"
+  },
+  "392": {
+    "update_id": "392",
+    "work_item_id": "558",
+    "updated_by": "13",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T00:09:33"
+  },
+  "393": {
+    "update_id": "393",
+    "work_item_id": "555",
+    "updated_by": "48",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T23:06:10"
+  },
+  "394": {
+    "update_id": "394",
+    "work_item_id": "1129",
+    "updated_by": "10",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:27:55"
+  },
+  "395": {
+    "update_id": "395",
+    "work_item_id": "989",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T03:01:56"
+  },
+  "396": {
+    "update_id": "396",
+    "work_item_id": "1300",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T13:30:10"
+  },
+  "397": {
+    "update_id": "397",
+    "work_item_id": "568",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T20:50:33"
+  },
+  "398": {
+    "update_id": "398",
+    "work_item_id": "1203",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T15:07:47"
+  },
+  "399": {
+    "update_id": "399",
+    "work_item_id": "799",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T17:25:25"
+  },
+  "400": {
+    "update_id": "400",
+    "work_item_id": "834",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T00:17:07"
+  },
+  "401": {
+    "update_id": "401",
+    "work_item_id": "765",
+    "updated_by": "11",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T13:17:46"
+  },
+  "402": {
+    "update_id": "402",
+    "work_item_id": "296",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T21:16:33"
+  },
+  "403": {
+    "update_id": "403",
+    "work_item_id": "543",
+    "updated_by": "28",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:38:56"
+  },
+  "404": {
+    "update_id": "404",
+    "work_item_id": "205",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T11:35:41"
+  },
+  "405": {
+    "update_id": "405",
+    "work_item_id": "106",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:08:18"
+  },
+  "406": {
+    "update_id": "406",
+    "work_item_id": "784",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T16:42:13"
+  },
+  "407": {
+    "update_id": "407",
+    "work_item_id": "782",
+    "updated_by": "28",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:44:23"
+  },
+  "408": {
+    "update_id": "408",
+    "work_item_id": "25",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T16:37:16"
+  },
+  "409": {
+    "update_id": "409",
+    "work_item_id": "1423",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T15:28:13"
+  },
+  "410": {
+    "update_id": "410",
+    "work_item_id": "311",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:58:47"
+  },
+  "411": {
+    "update_id": "411",
+    "work_item_id": "687",
+    "updated_by": "31",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T23:53:59"
+  },
+  "412": {
+    "update_id": "412",
+    "work_item_id": "1478",
+    "updated_by": "18",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T04:09:33"
+  },
+  "413": {
+    "update_id": "413",
+    "work_item_id": "739",
+    "updated_by": "26",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T22:52:30"
+  },
+  "414": {
+    "update_id": "414",
+    "work_item_id": "1195",
+    "updated_by": "4",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T00:19:26"
+  },
+  "415": {
+    "update_id": "415",
+    "work_item_id": "953",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T05:08:30"
+  },
+  "416": {
+    "update_id": "416",
+    "work_item_id": "123",
+    "updated_by": "13",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T01:59:19"
+  },
+  "417": {
+    "update_id": "417",
+    "work_item_id": "684",
+    "updated_by": "73",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T22:11:12"
+  },
+  "418": {
+    "update_id": "418",
+    "work_item_id": "945",
+    "updated_by": "28",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T22:05:34"
+  },
+  "419": {
+    "update_id": "419",
+    "work_item_id": "389",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T14:20:06"
+  },
+  "420": {
+    "update_id": "420",
+    "work_item_id": "329",
+    "updated_by": "12",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T01:38:29"
+  },
+  "421": {
+    "update_id": "421",
+    "work_item_id": "1108",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T19:09:04"
+  },
+  "422": {
+    "update_id": "422",
+    "work_item_id": "1044",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\", \"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T11:39:35"
+  },
+  "423": {
+    "update_id": "423",
+    "work_item_id": "799",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:21:40"
+  },
+  "424": {
+    "update_id": "424",
+    "work_item_id": "246",
+    "updated_by": "4",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T00:58:12"
+  },
+  "425": {
+    "update_id": "425",
+    "work_item_id": "648",
+    "updated_by": "36",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T08:17:52"
+  },
+  "426": {
+    "update_id": "426",
+    "work_item_id": "1016",
+    "updated_by": "15",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T13:36:46"
+  },
+  "427": {
+    "update_id": "427",
+    "work_item_id": "141",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T09:22:39"
+  },
+  "428": {
+    "update_id": "428",
+    "work_item_id": "526",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T12:58:16"
+  },
+  "429": {
+    "update_id": "429",
+    "work_item_id": "111",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"assignee\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T17:33:41"
+  },
+  "430": {
+    "update_id": "430",
+    "work_item_id": "601",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T21:11:04"
+  },
+  "431": {
+    "update_id": "431",
+    "work_item_id": "296",
+    "updated_by": "12",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T18:08:06"
+  },
+  "432": {
+    "update_id": "432",
+    "work_item_id": "296",
+    "updated_by": "44",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:12:17"
+  },
+  "433": {
+    "update_id": "433",
+    "work_item_id": "1204",
+    "updated_by": "35",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T05:15:36"
+  },
+  "434": {
+    "update_id": "434",
+    "work_item_id": "1501",
+    "updated_by": "3",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"assignee\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T03:07:51"
+  },
+  "435": {
+    "update_id": "435",
+    "work_item_id": "1520",
+    "updated_by": "58",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T16:36:41"
+  },
+  "436": {
+    "update_id": "436",
+    "work_item_id": "370",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T12:20:36"
+  },
+  "437": {
+    "update_id": "437",
+    "work_item_id": "1382",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T18:37:17"
+  },
+  "438": {
+    "update_id": "438",
+    "work_item_id": "724",
+    "updated_by": "41",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:54:39"
+  },
+  "439": {
+    "update_id": "439",
+    "work_item_id": "268",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T21:57:30"
+  },
+  "440": {
+    "update_id": "440",
+    "work_item_id": "954",
+    "updated_by": "39",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T06:09:00"
+  },
+  "441": {
+    "update_id": "441",
+    "work_item_id": "1387",
+    "updated_by": "18",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:12:05"
+  },
+  "442": {
+    "update_id": "442",
+    "work_item_id": "707",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T19:08:09"
+  },
+  "443": {
+    "update_id": "443",
+    "work_item_id": "230",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:29:55"
+  },
+  "444": {
+    "update_id": "444",
+    "work_item_id": "217",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T00:19:04"
+  },
+  "445": {
+    "update_id": "445",
+    "work_item_id": "655",
+    "updated_by": "69",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T01:07:32"
+  },
+  "446": {
+    "update_id": "446",
+    "work_item_id": "350",
+    "updated_by": "56",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"description\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T14:26:42"
+  },
+  "447": {
+    "update_id": "447",
+    "work_item_id": "1552",
+    "updated_by": "37",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T15:19:19"
+  },
+  "448": {
+    "update_id": "448",
+    "work_item_id": "848",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T16:47:07"
+  },
+  "449": {
+    "update_id": "449",
+    "work_item_id": "1053",
+    "updated_by": "54",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:34:25"
+  },
+  "450": {
+    "update_id": "450",
+    "work_item_id": "950",
+    "updated_by": "49",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T12:48:24"
+  },
+  "451": {
+    "update_id": "451",
+    "work_item_id": "1025",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T22:29:22"
+  },
+  "452": {
+    "update_id": "452",
+    "work_item_id": "935",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:52:33"
+  },
+  "453": {
+    "update_id": "453",
+    "work_item_id": "1535",
+    "updated_by": "30",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T10:32:05"
+  },
+  "454": {
+    "update_id": "454",
+    "work_item_id": "1142",
+    "updated_by": "12",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T19:52:13"
+  },
+  "455": {
+    "update_id": "455",
+    "work_item_id": "1172",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T05:39:53"
+  },
+  "456": {
+    "update_id": "456",
+    "work_item_id": "1162",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:44:09"
+  },
+  "457": {
+    "update_id": "457",
+    "work_item_id": "616",
+    "updated_by": "6",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T13:34:28"
+  },
+  "458": {
+    "update_id": "458",
+    "work_item_id": "1170",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T15:43:50"
+  },
+  "459": {
+    "update_id": "459",
+    "work_item_id": "805",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T08:42:07"
+  },
+  "460": {
+    "update_id": "460",
+    "work_item_id": "472",
+    "updated_by": "36",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T17:56:27"
+  },
+  "461": {
+    "update_id": "461",
+    "work_item_id": "896",
+    "updated_by": "35",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T20:21:11"
+  },
+  "462": {
+    "update_id": "462",
+    "work_item_id": "1033",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T00:54:23"
+  },
+  "463": {
+    "update_id": "463",
+    "work_item_id": "1176",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T14:48:42"
+  },
+  "464": {
+    "update_id": "464",
+    "work_item_id": "885",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:45:27"
+  },
+  "465": {
+    "update_id": "465",
+    "work_item_id": "20",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:38:35"
+  },
+  "466": {
+    "update_id": "466",
+    "work_item_id": "341",
+    "updated_by": "26",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T06:23:23"
+  },
+  "467": {
+    "update_id": "467",
+    "work_item_id": "1406",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T05:58:47"
+  },
+  "468": {
+    "update_id": "468",
+    "work_item_id": "674",
+    "updated_by": "1",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T00:11:28"
+  },
+  "469": {
+    "update_id": "469",
+    "work_item_id": "5",
+    "updated_by": "8",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:32:12"
+  },
+  "470": {
+    "update_id": "470",
+    "work_item_id": "1124",
+    "updated_by": "67",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T00:36:19"
+  },
+  "471": {
+    "update_id": "471",
+    "work_item_id": "1524",
+    "updated_by": "52",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T10:05:58"
+  },
+  "472": {
+    "update_id": "472",
+    "work_item_id": "228",
+    "updated_by": "1",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T11:57:16"
+  },
+  "473": {
+    "update_id": "473",
+    "work_item_id": "1068",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T16:57:00"
+  },
+  "474": {
+    "update_id": "474",
+    "work_item_id": "185",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:16:02"
+  },
+  "475": {
+    "update_id": "475",
+    "work_item_id": "832",
+    "updated_by": "1",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T20:16:41"
+  },
+  "476": {
+    "update_id": "476",
+    "work_item_id": "190",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"status\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T15:24:02"
+  },
+  "477": {
+    "update_id": "477",
+    "work_item_id": "1286",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T22:44:16"
+  },
+  "478": {
+    "update_id": "478",
+    "work_item_id": "1404",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T08:39:03"
+  },
+  "479": {
+    "update_id": "479",
+    "work_item_id": "936",
+    "updated_by": "75",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"status\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T18:51:01"
+  },
+  "480": {
+    "update_id": "480",
+    "work_item_id": "1489",
+    "updated_by": "59",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T22:58:30"
+  },
+  "481": {
+    "update_id": "481",
+    "work_item_id": "92",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:39:29"
+  },
+  "482": {
+    "update_id": "482",
+    "work_item_id": "1502",
+    "updated_by": "44",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T15:10:30"
+  },
+  "483": {
+    "update_id": "483",
+    "work_item_id": "1122",
+    "updated_by": "55",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T23:54:41"
+  },
+  "484": {
+    "update_id": "484",
+    "work_item_id": "796",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T17:50:06"
+  },
+  "485": {
+    "update_id": "485",
+    "work_item_id": "48",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T01:22:01"
+  },
+  "486": {
+    "update_id": "486",
+    "work_item_id": "449",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T19:56:45"
+  },
+  "487": {
+    "update_id": "487",
+    "work_item_id": "1481",
+    "updated_by": "32",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T04:44:47"
+  },
+  "488": {
+    "update_id": "488",
+    "work_item_id": "197",
+    "updated_by": "67",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T05:54:54"
+  },
+  "489": {
+    "update_id": "489",
+    "work_item_id": "190",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T04:04:26"
+  },
+  "490": {
+    "update_id": "490",
+    "work_item_id": "531",
+    "updated_by": "43",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T03:02:28"
+  },
+  "491": {
+    "update_id": "491",
+    "work_item_id": "633",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T20:44:03"
+  },
+  "492": {
+    "update_id": "492",
+    "work_item_id": "1303",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T10:05:54"
+  },
+  "493": {
+    "update_id": "493",
+    "work_item_id": "25",
+    "updated_by": "9",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T17:16:54"
+  },
+  "494": {
+    "update_id": "494",
+    "work_item_id": "1562",
+    "updated_by": "31",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:40:39"
+  },
+  "495": {
+    "update_id": "495",
+    "work_item_id": "842",
+    "updated_by": "4",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T23:00:21"
+  },
+  "496": {
+    "update_id": "496",
+    "work_item_id": "1178",
+    "updated_by": "33",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T21:53:57"
+  },
+  "497": {
+    "update_id": "497",
+    "work_item_id": "1442",
+    "updated_by": "35",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T10:56:45"
+  },
+  "498": {
+    "update_id": "498",
+    "work_item_id": "905",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T05:56:37"
+  },
+  "499": {
+    "update_id": "499",
+    "work_item_id": "120",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:22:33"
+  },
+  "500": {
+    "update_id": "500",
+    "work_item_id": "1319",
+    "updated_by": "3",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T00:41:25"
+  },
+  "501": {
+    "update_id": "501",
+    "work_item_id": "1577",
+    "updated_by": "70",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"status\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T13:52:42"
+  },
+  "502": {
+    "update_id": "502",
+    "work_item_id": "1039",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"status\", \"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T21:02:04"
+  },
+  "503": {
+    "update_id": "503",
+    "work_item_id": "456",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T06:51:48"
+  },
+  "504": {
+    "update_id": "504",
+    "work_item_id": "3",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T16:08:46"
+  },
+  "505": {
+    "update_id": "505",
+    "work_item_id": "289",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T08:04:11"
+  },
+  "506": {
+    "update_id": "506",
+    "work_item_id": "144",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:01:17"
+  },
+  "507": {
+    "update_id": "507",
+    "work_item_id": "666",
+    "updated_by": "18",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T19:11:44"
+  },
+  "508": {
+    "update_id": "508",
+    "work_item_id": "1305",
+    "updated_by": "25",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T16:25:11"
+  },
+  "509": {
+    "update_id": "509",
+    "work_item_id": "456",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T20:46:53"
+  },
+  "510": {
+    "update_id": "510",
+    "work_item_id": "18",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T00:18:17"
+  },
+  "511": {
+    "update_id": "511",
+    "work_item_id": "1270",
+    "updated_by": "13",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T17:21:07"
+  },
+  "512": {
+    "update_id": "512",
+    "work_item_id": "286",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T10:28:36"
+  },
+  "513": {
+    "update_id": "513",
+    "work_item_id": "1125",
+    "updated_by": "15",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T22:04:36"
+  },
+  "514": {
+    "update_id": "514",
+    "work_item_id": "1287",
+    "updated_by": "23",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T14:04:07"
+  },
+  "515": {
+    "update_id": "515",
+    "work_item_id": "709",
+    "updated_by": "73",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T02:10:46"
+  },
+  "516": {
+    "update_id": "516",
+    "work_item_id": "1364",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T02:10:20"
+  },
+  "517": {
+    "update_id": "517",
+    "work_item_id": "65",
+    "updated_by": "8",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T18:39:01"
+  },
+  "518": {
+    "update_id": "518",
+    "work_item_id": "449",
+    "updated_by": "8",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:49:00"
+  },
+  "519": {
+    "update_id": "519",
+    "work_item_id": "837",
+    "updated_by": "4",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:39:23"
+  },
+  "520": {
+    "update_id": "520",
+    "work_item_id": "262",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:04:56"
+  },
+  "521": {
+    "update_id": "521",
+    "work_item_id": "294",
+    "updated_by": "59",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"assignee\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T23:14:19"
+  },
+  "522": {
+    "update_id": "522",
+    "work_item_id": "184",
+    "updated_by": "23",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T21:40:57"
+  },
+  "523": {
+    "update_id": "523",
+    "work_item_id": "261",
+    "updated_by": "73",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"status\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T06:46:48"
+  },
+  "524": {
+    "update_id": "524",
+    "work_item_id": "875",
+    "updated_by": "9",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T23:07:19"
+  },
+  "525": {
+    "update_id": "525",
+    "work_item_id": "61",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\", \"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T01:23:45"
+  },
+  "526": {
+    "update_id": "526",
+    "work_item_id": "767",
+    "updated_by": "2",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T09:10:17"
+  },
+  "527": {
+    "update_id": "527",
+    "work_item_id": "892",
+    "updated_by": "42",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T04:35:20"
+  },
+  "528": {
+    "update_id": "528",
+    "work_item_id": "1581",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T13:13:53"
+  },
+  "529": {
+    "update_id": "529",
+    "work_item_id": "95",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T23:15:05"
+  },
+  "530": {
+    "update_id": "530",
+    "work_item_id": "901",
+    "updated_by": "54",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T06:10:18"
+  },
+  "531": {
+    "update_id": "531",
+    "work_item_id": "615",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T08:43:28"
+  },
+  "532": {
+    "update_id": "532",
+    "work_item_id": "220",
+    "updated_by": "12",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T08:04:31"
+  },
+  "533": {
+    "update_id": "533",
+    "work_item_id": "750",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T11:36:23"
+  },
+  "534": {
+    "update_id": "534",
+    "work_item_id": "420",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T11:48:41"
+  },
+  "535": {
+    "update_id": "535",
+    "work_item_id": "532",
+    "updated_by": "31",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"assignee\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T16:27:53"
+  },
+  "536": {
+    "update_id": "536",
+    "work_item_id": "171",
+    "updated_by": "63",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"status\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T20:42:53"
+  },
+  "537": {
+    "update_id": "537",
+    "work_item_id": "347",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T05:01:53"
+  },
+  "538": {
+    "update_id": "538",
+    "work_item_id": "1535",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T18:23:09"
+  },
+  "539": {
+    "update_id": "539",
+    "work_item_id": "376",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T17:35:13"
+  },
+  "540": {
+    "update_id": "540",
+    "work_item_id": "1044",
+    "updated_by": "51",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T22:26:22"
+  },
+  "541": {
+    "update_id": "541",
+    "work_item_id": "794",
+    "updated_by": "45",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T20:50:43"
+  },
+  "542": {
+    "update_id": "542",
+    "work_item_id": "313",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:12:21"
+  },
+  "543": {
+    "update_id": "543",
+    "work_item_id": "157",
+    "updated_by": "57",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T22:31:35"
+  },
+  "544": {
+    "update_id": "544",
+    "work_item_id": "1118",
+    "updated_by": "57",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T23:49:17"
+  },
+  "545": {
+    "update_id": "545",
+    "work_item_id": "1278",
+    "updated_by": "38",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T02:31:49"
+  },
+  "546": {
+    "update_id": "546",
+    "work_item_id": "1357",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T06:15:13"
+  },
+  "547": {
+    "update_id": "547",
+    "work_item_id": "426",
+    "updated_by": "47",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T14:15:02"
+  },
+  "548": {
+    "update_id": "548",
+    "work_item_id": "846",
+    "updated_by": "14",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T03:32:42"
+  },
+  "549": {
+    "update_id": "549",
+    "work_item_id": "1026",
+    "updated_by": "73",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T20:10:30"
+  },
+  "550": {
+    "update_id": "550",
+    "work_item_id": "299",
+    "updated_by": "17",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T04:28:37"
+  },
+  "551": {
+    "update_id": "551",
+    "work_item_id": "557",
+    "updated_by": "27",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T10:22:36"
+  },
+  "552": {
+    "update_id": "552",
+    "work_item_id": "1487",
+    "updated_by": "54",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T12:41:37"
+  },
+  "553": {
+    "update_id": "553",
+    "work_item_id": "1122",
+    "updated_by": "20",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T01:19:44"
+  },
+  "554": {
+    "update_id": "554",
+    "work_item_id": "178",
+    "updated_by": "44",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"status\", \"description\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T03:39:22"
+  },
+  "555": {
+    "update_id": "555",
+    "work_item_id": "518",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T00:09:26"
+  },
+  "556": {
+    "update_id": "556",
+    "work_item_id": "526",
+    "updated_by": "74",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T15:20:21"
+  },
+  "557": {
+    "update_id": "557",
+    "work_item_id": "819",
+    "updated_by": "36",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T20:56:06"
+  },
+  "558": {
+    "update_id": "558",
+    "work_item_id": "181",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"priority\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:57:22"
+  },
+  "559": {
+    "update_id": "559",
+    "work_item_id": "1455",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T09:09:29"
+  },
+  "560": {
+    "update_id": "560",
+    "work_item_id": "1128",
+    "updated_by": "11",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T17:10:48"
+  },
+  "561": {
+    "update_id": "561",
+    "work_item_id": "511",
+    "updated_by": "1",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T00:27:51"
+  },
+  "562": {
+    "update_id": "562",
+    "work_item_id": "479",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T19:28:37"
+  },
+  "563": {
+    "update_id": "563",
+    "work_item_id": "1387",
+    "updated_by": "37",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\", \"assignee\", \"description\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T18:43:27"
+  },
+  "564": {
+    "update_id": "564",
+    "work_item_id": "367",
+    "updated_by": "9",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T23:24:30"
+  },
+  "565": {
+    "update_id": "565",
+    "work_item_id": "1202",
+    "updated_by": "54",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"description\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T07:15:46"
+  },
+  "566": {
+    "update_id": "566",
+    "work_item_id": "830",
+    "updated_by": "34",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T11:37:21"
+  },
+  "567": {
+    "update_id": "567",
+    "work_item_id": "712",
+    "updated_by": "13",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T15:42:25"
+  },
+  "568": {
+    "update_id": "568",
+    "work_item_id": "373",
+    "updated_by": "12",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"status\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T09:01:59"
+  },
+  "569": {
+    "update_id": "569",
+    "work_item_id": "760",
+    "updated_by": "40",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T07:47:59"
+  },
+  "570": {
+    "update_id": "570",
+    "work_item_id": "1536",
+    "updated_by": "36",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T16:05:26"
+  },
+  "571": {
+    "update_id": "571",
+    "work_item_id": "1488",
+    "updated_by": "24",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T13:48:17"
+  },
+  "572": {
+    "update_id": "572",
+    "work_item_id": "61",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\", \"description\", \"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T18:24:37"
+  },
+  "573": {
+    "update_id": "573",
+    "work_item_id": "637",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T00:09:32"
+  },
+  "574": {
+    "update_id": "574",
+    "work_item_id": "1018",
+    "updated_by": "19",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:58:19"
+  },
+  "575": {
+    "update_id": "575",
+    "work_item_id": "1496",
+    "updated_by": "65",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\", \"status\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T19:43:33"
+  },
+  "576": {
+    "update_id": "576",
+    "work_item_id": "415",
+    "updated_by": "21",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T06:35:48"
+  },
+  "577": {
+    "update_id": "577",
+    "work_item_id": "1432",
+    "updated_by": "26",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T04:07:42"
+  },
+  "578": {
+    "update_id": "578",
+    "work_item_id": "915",
+    "updated_by": "71",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"assignee\", \"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T10:49:03"
+  },
+  "579": {
+    "update_id": "579",
+    "work_item_id": "1238",
+    "updated_by": "7",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T02:18:50"
+  },
+  "580": {
+    "update_id": "580",
+    "work_item_id": "566",
+    "updated_by": "5",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T04:50:22"
+  },
+  "581": {
+    "update_id": "581",
+    "work_item_id": "610",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"blocked\", \"changed_fields\": [\"description\", \"status\", \"assignee\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T14:24:10"
+  },
+  "582": {
+    "update_id": "582",
+    "work_item_id": "220",
+    "updated_by": "64",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"status\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T13:59:42"
+  },
+  "583": {
+    "update_id": "583",
+    "work_item_id": "956",
+    "updated_by": "72",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T04:11:56"
+  },
+  "584": {
+    "update_id": "584",
+    "work_item_id": "215",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-05T05:18:19"
+  },
+  "585": {
+    "update_id": "585",
+    "work_item_id": "1558",
+    "updated_by": "46",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T02:10:15"
+  },
+  "586": {
+    "update_id": "586",
+    "work_item_id": "1539",
+    "updated_by": "7",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T06:26:05"
+  },
+  "587": {
+    "update_id": "587",
+    "work_item_id": "202",
+    "updated_by": "75",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\", \"priority\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T23:14:09"
+  },
+  "588": {
+    "update_id": "588",
+    "work_item_id": "956",
+    "updated_by": "68",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"status\", \"priority\", \"assignee\"]}",
+    "reason": "Reassignment",
+    "created_at": "2026-02-05T21:34:54"
+  },
+  "589": {
+    "update_id": "589",
+    "work_item_id": "20",
+    "updated_by": "16",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:59:30"
+  },
+  "590": {
+    "update_id": "590",
+    "work_item_id": "897",
+    "updated_by": "44",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"priority\", \"status\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T05:21:06"
+  },
+  "591": {
+    "update_id": "591",
+    "work_item_id": "1086",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"backlog\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T15:34:43"
+  },
+  "592": {
+    "update_id": "592",
+    "work_item_id": "968",
+    "updated_by": "22",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"status\"]}",
+    "reason": "Due date adjustment",
+    "created_at": "2026-02-05T12:43:13"
+  },
+  "593": {
+    "update_id": "593",
+    "work_item_id": "909",
+    "updated_by": "67",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\", \"assignee\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T15:41:24"
+  },
+  "594": {
+    "update_id": "594",
+    "work_item_id": "282",
+    "updated_by": "60",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"priority\"]}",
+    "reason": "Status change",
+    "created_at": "2026-02-05T14:44:15"
+  },
+  "595": {
+    "update_id": "595",
+    "work_item_id": "1465",
+    "updated_by": "30",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"description\", \"priority\", \"status\"]}",
+    "reason": "Description update",
+    "created_at": "2026-02-05T03:23:08"
+  },
+  "596": {
+    "update_id": "596",
+    "work_item_id": "217",
+    "updated_by": "55",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"in_progress\", \"changed_fields\": [\"priority\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T10:47:59"
+  },
+  "597": {
+    "update_id": "597",
+    "work_item_id": "1414",
+    "updated_by": "66",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"description\", \"assignee\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T04:24:49"
+  },
+  "598": {
+    "update_id": "598",
+    "work_item_id": "1261",
+    "updated_by": "61",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"done\", \"changed_fields\": [\"assignee\", \"description\"]}",
+    "reason": "Priority update",
+    "created_at": "2026-02-07T17:41:56"
+  },
+  "599": {
+    "update_id": "599",
+    "work_item_id": "266",
+    "updated_by": "26",
+    "fields_json": "{\"old_status\": \"in_progress\", \"new_status\": \"blocked\", \"changed_fields\": [\"assignee\", \"description\", \"priority\"]}",
+    "reason": "Sprint change",
+    "created_at": "2026-02-05T21:45:55"
+  },
+  "600": {
+    "update_id": "600",
+    "work_item_id": "1298",
+    "updated_by": "50",
+    "fields_json": "{\"old_status\": \"open\", \"new_status\": \"done\", \"changed_fields\": [\"priority\", \"description\"]}",
+    "reason": null,
+    "created_at": "2026-02-05T13:37:25"
+  }
+}

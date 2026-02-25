@@ -1,0 +1,98 @@
+{
+  "1": {
+    "label_id": "1",
+    "label_name": "intake_complete",
+    "description": "Indicates intake process is complete",
+    "created_at": "2025-12-14T23:19:03"
+  },
+  "2": {
+    "label_id": "2",
+    "label_name": "execution_task",
+    "description": "Marks task as execution phase",
+    "created_at": "2025-12-14T01:36:30"
+  },
+  "3": {
+    "label_id": "3",
+    "label_name": "owner_assigned",
+    "description": "Owner has been assigned",
+    "created_at": "2025-12-14T16:57:54"
+  },
+  "4": {
+    "label_id": "4",
+    "label_name": "dependency_tracked",
+    "description": "Dependencies have been tracked",
+    "created_at": "2025-12-14T16:09:03"
+  },
+  "5": {
+    "label_id": "5",
+    "label_name": "kickoff_announced",
+    "description": "Kickoff has been announced",
+    "created_at": "2025-12-14T16:04:54"
+  },
+  "6": {
+    "label_id": "6",
+    "label_name": "status_update_sent",
+    "description": "Status update has been sent",
+    "created_at": "2025-12-14T05:03:38"
+  },
+  "7": {
+    "label_id": "7",
+    "label_name": "merge_verified",
+    "description": "Code merge has been verified",
+    "created_at": "2025-12-14T02:42:55"
+  },
+  "8": {
+    "label_id": "8",
+    "label_name": "code_activity_checked",
+    "description": "Code activity has been checked",
+    "created_at": "2025-12-14T07:24:07"
+  },
+  "9": {
+    "label_id": "9",
+    "label_name": "risk_open",
+    "description": "Risk is currently open",
+    "created_at": "2025-12-14T18:14:37"
+  },
+  "10": {
+    "label_id": "10",
+    "label_name": "risk_escalated",
+    "description": "Risk has been escalated",
+    "created_at": "2025-12-14T19:01:39"
+  },
+  "11": {
+    "label_id": "11",
+    "label_name": "incident_cleared",
+    "description": "Incident has been cleared",
+    "created_at": "2025-12-14T02:25:42"
+  },
+  "12": {
+    "label_id": "12",
+    "label_name": "ready_to_close",
+    "description": "Item is ready to close",
+    "created_at": "2025-12-14T18:35:33"
+  },
+  "13": {
+    "label_id": "13",
+    "label_name": "closed",
+    "description": "Item has been closed",
+    "created_at": "2025-12-14T10:58:16"
+  },
+  "14": {
+    "label_id": "14",
+    "label_name": "decision_documented",
+    "description": "Decision has been documented",
+    "created_at": "2025-12-14T06:41:45"
+  },
+  "15": {
+    "label_id": "15",
+    "label_name": "lessons_captured",
+    "description": "Lessons learned have been captured",
+    "created_at": "2025-12-14T10:14:16"
+  },
+  "16": {
+    "label_id": "16",
+    "label_name": "pending_review",
+    "description": "Item is pending review",
+    "created_at": "2025-12-14T12:07:42"
+  }
+}

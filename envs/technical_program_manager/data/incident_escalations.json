@@ -1,0 +1,402 @@
+{
+  "1": {
+    "escalation_id": "1",
+    "incident_id": "36",
+    "escalated_to": "70",
+    "escalated_by": "14",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "pending",
+    "created_at": "2026-02-05T11:36:27",
+    "resolved_at": null
+  },
+  "2": {
+    "escalation_id": "2",
+    "incident_id": "29",
+    "escalated_to": "33",
+    "escalated_by": "8",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "pending",
+    "created_at": "2026-01-31T21:59:20",
+    "resolved_at": null
+  },
+  "3": {
+    "escalation_id": "3",
+    "incident_id": "27",
+    "escalated_to": "30",
+    "escalated_by": "31",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "resolved",
+    "created_at": "2026-01-31T17:25:42",
+    "resolved_at": "2026-01-31T18:33:42"
+  },
+  "4": {
+    "escalation_id": "4",
+    "incident_id": "21",
+    "escalated_to": "56",
+    "escalated_by": "29",
+    "escalation_reason": "Management visibility required",
+    "status": "acknowledged",
+    "created_at": "2026-02-04T20:48:59",
+    "resolved_at": null
+  },
+  "5": {
+    "escalation_id": "5",
+    "incident_id": "12",
+    "escalated_to": "62",
+    "escalated_by": "73",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "resolved",
+    "created_at": "2026-02-01T06:24:19",
+    "resolved_at": "2026-02-01T08:36:19"
+  },
+  "6": {
+    "escalation_id": "6",
+    "incident_id": "9",
+    "escalated_to": "51",
+    "escalated_by": "53",
+    "escalation_reason": "Management visibility required",
+    "status": "acknowledged",
+    "created_at": "2026-01-30T14:38:38",
+    "resolved_at": null
+  },
+  "7": {
+    "escalation_id": "7",
+    "incident_id": "40",
+    "escalated_to": "42",
+    "escalated_by": "39",
+    "escalation_reason": "Severity increased based on customer impact",
+    "status": "pending",
+    "created_at": "2026-02-02T12:12:24",
+    "resolved_at": null
+  },
+  "8": {
+    "escalation_id": "8",
+    "incident_id": "58",
+    "escalated_to": "15",
+    "escalated_by": "55",
+    "escalation_reason": "SLA breach imminent",
+    "status": "resolved",
+    "created_at": "2026-02-02T14:56:11",
+    "resolved_at": "2026-02-02T18:40:11"
+  },
+  "9": {
+    "escalation_id": "9",
+    "incident_id": "15",
+    "escalated_to": "70",
+    "escalated_by": "30",
+    "escalation_reason": "SLA breach imminent",
+    "status": "resolved",
+    "created_at": "2026-02-04T16:53:16",
+    "resolved_at": "2026-02-04T20:44:16"
+  },
+  "10": {
+    "escalation_id": "10",
+    "incident_id": "48",
+    "escalated_to": "2",
+    "escalated_by": "7",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "acknowledged",
+    "created_at": "2026-02-11T23:59:00",
+    "resolved_at": null
+  },
+  "11": {
+    "escalation_id": "11",
+    "incident_id": "40",
+    "escalated_to": "5",
+    "escalated_by": "24",
+    "escalation_reason": "Management visibility required",
+    "status": "resolved",
+    "created_at": "2026-02-02T13:18:24",
+    "resolved_at": "2026-02-02T20:04:24"
+  },
+  "12": {
+    "escalation_id": "12",
+    "incident_id": "18",
+    "escalated_to": "64",
+    "escalated_by": "29",
+    "escalation_reason": "Management visibility required",
+    "status": "resolved",
+    "created_at": "2026-02-08T05:45:12",
+    "resolved_at": "2026-02-08T08:16:12"
+  },
+  "13": {
+    "escalation_id": "13",
+    "incident_id": "2",
+    "escalated_to": "45",
+    "escalated_by": "11",
+    "escalation_reason": "Management visibility required",
+    "status": "resolved",
+    "created_at": "2026-02-10T03:51:28",
+    "resolved_at": "2026-02-10T05:49:28"
+  },
+  "14": {
+    "escalation_id": "14",
+    "incident_id": "5",
+    "escalated_to": "33",
+    "escalated_by": "23",
+    "escalation_reason": "Management visibility required",
+    "status": "pending",
+    "created_at": "2026-02-05T23:16:34",
+    "resolved_at": null
+  },
+  "15": {
+    "escalation_id": "15",
+    "incident_id": "28",
+    "escalated_to": "69",
+    "escalated_by": "23",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "acknowledged",
+    "created_at": "2026-02-04T20:34:34",
+    "resolved_at": null
+  },
+  "16": {
+    "escalation_id": "16",
+    "incident_id": "53",
+    "escalated_to": "4",
+    "escalated_by": "8",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "resolved",
+    "created_at": "2026-01-31T07:17:28",
+    "resolved_at": "2026-01-31T13:14:28"
+  },
+  "17": {
+    "escalation_id": "17",
+    "incident_id": "32",
+    "escalated_to": "58",
+    "escalated_by": "9",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "acknowledged",
+    "created_at": "2026-01-30T17:50:49",
+    "resolved_at": null
+  },
+  "18": {
+    "escalation_id": "18",
+    "incident_id": "5",
+    "escalated_to": "41",
+    "escalated_by": "42",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "pending",
+    "created_at": "2026-02-05T18:09:34",
+    "resolved_at": null
+  },
+  "19": {
+    "escalation_id": "19",
+    "incident_id": "58",
+    "escalated_to": "45",
+    "escalated_by": "47",
+    "escalation_reason": "Management visibility required",
+    "status": "pending",
+    "created_at": "2026-02-02T04:28:11",
+    "resolved_at": null
+  },
+  "20": {
+    "escalation_id": "20",
+    "incident_id": "38",
+    "escalated_to": "58",
+    "escalated_by": "11",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "acknowledged",
+    "created_at": "2026-02-11T13:14:45",
+    "resolved_at": null
+  },
+  "21": {
+    "escalation_id": "21",
+    "incident_id": "32",
+    "escalated_to": "51",
+    "escalated_by": "32",
+    "escalation_reason": "Severity increased based on customer impact",
+    "status": "resolved",
+    "created_at": "2026-01-30T21:53:49",
+    "resolved_at": "2026-01-31T00:29:49"
+  },
+  "22": {
+    "escalation_id": "22",
+    "incident_id": "20",
+    "escalated_to": "44",
+    "escalated_by": "3",
+    "escalation_reason": "SLA breach imminent",
+    "status": "resolved",
+    "created_at": "2026-01-29T16:33:54",
+    "resolved_at": "2026-01-29T18:28:54"
+  },
+  "23": {
+    "escalation_id": "23",
+    "incident_id": "21",
+    "escalated_to": "1",
+    "escalated_by": "12",
+    "escalation_reason": "Management visibility required",
+    "status": "pending",
+    "created_at": "2026-02-04T22:01:59",
+    "resolved_at": null
+  },
+  "24": {
+    "escalation_id": "24",
+    "incident_id": "22",
+    "escalated_to": "5",
+    "escalated_by": "55",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "pending",
+    "created_at": "2026-02-02T09:05:22",
+    "resolved_at": null
+  },
+  "25": {
+    "escalation_id": "25",
+    "incident_id": "54",
+    "escalated_to": "72",
+    "escalated_by": "61",
+    "escalation_reason": "Management visibility required",
+    "status": "pending",
+    "created_at": "2026-02-07T08:36:59",
+    "resolved_at": null
+  },
+  "26": {
+    "escalation_id": "26",
+    "incident_id": "60",
+    "escalated_to": "51",
+    "escalated_by": "19",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "pending",
+    "created_at": "2026-02-08T20:28:03",
+    "resolved_at": null
+  },
+  "27": {
+    "escalation_id": "27",
+    "incident_id": "31",
+    "escalated_to": "10",
+    "escalated_by": "12",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "resolved",
+    "created_at": "2026-02-06T16:10:06",
+    "resolved_at": "2026-02-06T23:00:06"
+  },
+  "28": {
+    "escalation_id": "28",
+    "incident_id": "37",
+    "escalated_to": "1",
+    "escalated_by": "23",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "pending",
+    "created_at": "2026-01-30T02:40:58",
+    "resolved_at": null
+  },
+  "29": {
+    "escalation_id": "29",
+    "incident_id": "15",
+    "escalated_to": "5",
+    "escalated_by": "19",
+    "escalation_reason": "Management visibility required",
+    "status": "acknowledged",
+    "created_at": "2026-02-04T05:35:16",
+    "resolved_at": null
+  },
+  "30": {
+    "escalation_id": "30",
+    "incident_id": "25",
+    "escalated_to": "55",
+    "escalated_by": "56",
+    "escalation_reason": "Severity increased based on customer impact",
+    "status": "acknowledged",
+    "created_at": "2026-02-07T09:22:23",
+    "resolved_at": null
+  },
+  "31": {
+    "escalation_id": "31",
+    "incident_id": "24",
+    "escalated_to": "51",
+    "escalated_by": "34",
+    "escalation_reason": "SLA breach imminent",
+    "status": "acknowledged",
+    "created_at": "2026-02-02T17:47:28",
+    "resolved_at": null
+  },
+  "32": {
+    "escalation_id": "32",
+    "incident_id": "54",
+    "escalated_to": "14",
+    "escalated_by": "10",
+    "escalation_reason": "Severity increased based on customer impact",
+    "status": "resolved",
+    "created_at": "2026-02-07T14:40:59",
+    "resolved_at": "2026-02-07T15:51:59"
+  },
+  "33": {
+    "escalation_id": "33",
+    "incident_id": "17",
+    "escalated_to": "53",
+    "escalated_by": "61",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "acknowledged",
+    "created_at": "2026-02-08T16:03:01",
+    "resolved_at": null
+  },
+  "34": {
+    "escalation_id": "34",
+    "incident_id": "34",
+    "escalated_to": "37",
+    "escalated_by": "33",
+    "escalation_reason": "Management visibility required",
+    "status": "acknowledged",
+    "created_at": "2026-02-11T21:46:57",
+    "resolved_at": null
+  },
+  "35": {
+    "escalation_id": "35",
+    "incident_id": "14",
+    "escalated_to": "5",
+    "escalated_by": "9",
+    "escalation_reason": "Management visibility required",
+    "status": "resolved",
+    "created_at": "2026-02-08T23:14:12",
+    "resolved_at": "2026-02-09T00:27:12"
+  },
+  "36": {
+    "escalation_id": "36",
+    "incident_id": "1",
+    "escalated_to": "42",
+    "escalated_by": "24",
+    "escalation_reason": "Subject matter expertise needed",
+    "status": "pending",
+    "created_at": "2026-02-06T03:13:39",
+    "resolved_at": null
+  },
+  "37": {
+    "escalation_id": "37",
+    "incident_id": "29",
+    "escalated_to": "35",
+    "escalated_by": "48",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "pending",
+    "created_at": "2026-01-31T08:41:20",
+    "resolved_at": null
+  },
+  "38": {
+    "escalation_id": "38",
+    "incident_id": "7",
+    "escalated_to": "36",
+    "escalated_by": "14",
+    "escalation_reason": "SLA breach imminent",
+    "status": "pending",
+    "created_at": "2026-02-08T04:24:48",
+    "resolved_at": null
+  },
+  "39": {
+    "escalation_id": "39",
+    "incident_id": "52",
+    "escalated_to": "27",
+    "escalated_by": "36",
+    "escalation_reason": "Severity increased based on customer impact",
+    "status": "pending",
+    "created_at": "2026-02-08T00:20:04",
+    "resolved_at": null
+  },
+  "40": {
+    "escalation_id": "40",
+    "incident_id": "7",
+    "escalated_to": "55",
+    "escalated_by": "53",
+    "escalation_reason": "Cross-team coordination needed",
+    "status": "pending",
+    "created_at": "2026-02-08T09:29:48",
+    "resolved_at": null
+  }
+}

@@ -60,8 +60,8 @@ class FetchTicketDetails(Tool):
         ticket_tag_list = [
             {
                 "tag_id": int(tt.get("tag_id")),
-                "tag_type": str(tt.get("tag_type")),
-                "tag_name": str(tags.get(str(tt.get("tag_id")), {}).get("tag_name", "")),
+                "tag_type": (tags.get(str(tt.get("tag_id")), {}).get("tag_type")),
+                "tag_name": (tags.get(str(tt.get("tag_id")), {}).get("tag_name", "")),
             }
             for tt in ticket_tags.values()
             if str(tt.get("ticket_id")) == str(found_ticket_id)

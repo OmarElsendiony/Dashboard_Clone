@@ -55,14 +55,14 @@ Halt immediately and transfer to human if:
 1. Content Audit: Ensure the ticket description contains:
    * What the failure was: Technical error/crash description.
    * Where the failure was (Scope): Service Name, URL, Feature ID, or Environment where the failure occurred.
-2. Enforce: If either of the 2 points are missing, Post: "Please provide what happened and where it happened clearly in the issue.",  set status "closed".
+2. Enforce: If either of the 2 points are missing, post: "Please provide what happened and where it happened clearly in the issue.". Set status to "closed".
 3. Proceed: Only if both points are present.
 
 ### Validate Customer Entitlement
 1. Check account status: Access account profile. Examine if the account status is "active".
 2. Revocation: If the account status is "inactive" or "suspended", reassign to "Billing Department". Add internal note flagging the account for review. Then, halt.
 3. Tier Logic: If the account status is "active", check the service level agreement type:
-   * "High_Availability": Apply "High Priority" tag.
+   * "High_Availability": Apply "high_priority" tag to the entity's ticket.
    * "Standard": Proceed without applying special tags.
 
 ### Triage (Severity)
@@ -78,11 +78,11 @@ Halt immediately and transfer to human if:
 2. Attachment Purge: Scan for high-risk extensions (example, .pem, .key, .p12, .env). If found: Mark Purged. Delete file object.
 
 ### Identify and Merge Duplicate Tickets
-1. Search History: Query tickets created within the last 24 hours with matching error codes/description.
+1. Search History: Find tickets which have the same titles created within the last 15 days.
 2. Evaluate: If match found:
    * Set ticket with older timestamp = Master Ticket.
    * Set ticket with current timestamp = Duplicate.
-3. Merge: Apply the Duplicate classification tag to the current ticket. Change its status to "closed". Add a comment explicitly linking it to Master Ticket ID.
+3. Merge: Apply the Duplicate classification tag to the current ticket. Add a comment explicitly linking it to Master Ticket ID. Change its status to "closed".
 
 ### Select Tone (AER)
 1. Analyze: After fetching the ticket, read up to 10 most recent messages of the user.

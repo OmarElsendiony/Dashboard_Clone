@@ -1,0 +1,362 @@
+{
+  "1": {
+    "scope_change_id": "1",
+    "project_id": "35",
+    "description": "**Scope Change Request:** Extend API to support mobile clients\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "3",
+    "approver_id": "48",
+    "status": "rejected",
+    "submitted_at": "2026-02-01T11:03:14"
+  },
+  "2": {
+    "scope_change_id": "2",
+    "project_id": "23",
+    "description": "**Scope Change Request:** Add multi-region deployment capability\n\n**Justification:** Competitive analysis shows this is becoming a market standard.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "54",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-03T08:07:57"
+  },
+  "3": {
+    "scope_change_id": "3",
+    "project_id": "17",
+    "description": "**Scope Change Request:** Extend API to support mobile clients\n\n**Justification:** Technical architecture review identified this as beneficial.\n\n**Impact Analysis:** Estimated additional effort: 2-3 sprints.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "19",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-07T12:06:46"
+  },
+  "4": {
+    "scope_change_id": "4",
+    "project_id": "36",
+    "description": "**Scope Change Request:** Add support for bulk operations\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Estimated additional effort: 2-3 sprints.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "5",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-24T23:36:43"
+  },
+  "5": {
+    "scope_change_id": "5",
+    "project_id": "1",
+    "description": "**Scope Change Request:** Extend API to support mobile clients\n\n**Justification:** Competitive analysis shows this is becoming a market standard.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "28",
+    "approver_id": "30",
+    "status": "rejected",
+    "submitted_at": "2026-01-23T04:12:28"
+  },
+  "6": {
+    "scope_change_id": "6",
+    "project_id": "6",
+    "description": "**Scope Change Request:** Add support for additional payment methods\n\n**Justification:** Technical architecture review identified this as beneficial.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "59",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-30T04:42:17"
+  },
+  "7": {
+    "scope_change_id": "7",
+    "project_id": "29",
+    "description": "**Scope Change Request:** Add support for bulk operations\n\n**Justification:** Competitive analysis shows this is becoming a market standard.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "25",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-01T09:59:40"
+  },
+  "8": {
+    "scope_change_id": "8",
+    "project_id": "40",
+    "description": "**Scope Change Request:** Expand user authentication options\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "23",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-29T03:32:19"
+  },
+  "9": {
+    "scope_change_id": "9",
+    "project_id": "16",
+    "description": "**Scope Change Request:** Add support for bulk operations\n\n**Justification:** Internal stakeholders have prioritized this requirement.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "24",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-28T16:05:49"
+  },
+  "10": {
+    "scope_change_id": "10",
+    "project_id": "4",
+    "description": "**Scope Change Request:** Include additional compliance requirements\n\n**Justification:** Competitive analysis shows this is becoming a market standard.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "73",
+    "approver_id": "37",
+    "status": "approved",
+    "submitted_at": "2026-02-09T20:37:30"
+  },
+  "11": {
+    "scope_change_id": "11",
+    "project_id": "4",
+    "description": "**Scope Change Request:** Extend API to support mobile clients\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "73",
+    "approver_id": "37",
+    "status": "rejected",
+    "submitted_at": "2026-01-22T07:41:28"
+  },
+  "12": {
+    "scope_change_id": "12",
+    "project_id": "16",
+    "description": "**Scope Change Request:** Extend API to support mobile clients\n\n**Justification:** Internal stakeholders have prioritized this requirement.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "24",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-31T09:51:07"
+  },
+  "13": {
+    "scope_change_id": "13",
+    "project_id": "21",
+    "description": "**Scope Change Request:** Expand user authentication options\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "25",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-06T17:46:39"
+  },
+  "14": {
+    "scope_change_id": "14",
+    "project_id": "35",
+    "description": "**Scope Change Request:** Extend API to support mobile clients\n\n**Justification:** Regulatory changes require this addition.\n\n**Impact Analysis:** Estimated additional effort: 2-3 sprints.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "55",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-09T14:08:04"
+  },
+  "15": {
+    "scope_change_id": "15",
+    "project_id": "16",
+    "description": "**Scope Change Request:** Expand user authentication options\n\n**Justification:** Technical architecture review identified this as beneficial.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "56",
+    "approver_id": "24",
+    "status": "approved",
+    "submitted_at": "2026-02-07T23:20:56"
+  },
+  "16": {
+    "scope_change_id": "16",
+    "project_id": "35",
+    "description": "**Scope Change Request:** Add multi-region deployment capability\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Estimated additional effort: 2-3 sprints.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "48",
+    "approver_id": "70",
+    "status": "rejected",
+    "submitted_at": "2026-02-03T08:01:24"
+  },
+  "17": {
+    "scope_change_id": "17",
+    "project_id": "38",
+    "description": "**Scope Change Request:** Add multi-region deployment capability\n\n**Justification:** Internal stakeholders have prioritized this requirement.\n\n**Impact Analysis:** Estimated additional effort: 2-3 sprints.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "59",
+    "approver_id": "25",
+    "status": "rejected",
+    "submitted_at": "2026-02-04T08:06:40"
+  },
+  "18": {
+    "scope_change_id": "18",
+    "project_id": "3",
+    "description": "**Scope Change Request:** Add multi-region deployment capability\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "6",
+    "approver_id": "23",
+    "status": "rejected",
+    "submitted_at": "2026-01-29T14:26:37"
+  },
+  "19": {
+    "scope_change_id": "19",
+    "project_id": "35",
+    "description": "**Scope Change Request:** Expand user authentication options\n\n**Justification:** Regulatory changes require this addition.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "70",
+    "approver_id": "3",
+    "status": "rejected",
+    "submitted_at": "2026-02-01T05:55:45"
+  },
+  "20": {
+    "scope_change_id": "20",
+    "project_id": "41",
+    "description": "**Scope Change Request:** Include additional compliance requirements\n\n**Justification:** Internal stakeholders have prioritized this requirement.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "29",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-26T22:54:50"
+  },
+  "21": {
+    "scope_change_id": "21",
+    "project_id": "35",
+    "description": "**Scope Change Request:** Add multi-region deployment capability\n\n**Justification:** Internal stakeholders have prioritized this requirement.\n\n**Impact Analysis:** Estimated additional effort: 2-3 sprints.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "48",
+    "approver_id": "30",
+    "status": "approved",
+    "submitted_at": "2026-01-28T15:47:18"
+  },
+  "22": {
+    "scope_change_id": "22",
+    "project_id": "21",
+    "description": "**Scope Change Request:** Include additional compliance requirements\n\n**Justification:** Technical architecture review identified this as beneficial.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "58",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-30T07:32:06"
+  },
+  "23": {
+    "scope_change_id": "23",
+    "project_id": "6",
+    "description": "**Scope Change Request:** Include additional compliance requirements\n\n**Justification:** Regulatory changes require this addition.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "33",
+    "approver_id": "30",
+    "status": "rejected",
+    "submitted_at": "2026-01-27T02:45:38"
+  },
+  "24": {
+    "scope_change_id": "24",
+    "project_id": "39",
+    "description": "**Scope Change Request:** Expand user authentication options\n\n**Justification:** Technical architecture review identified this as beneficial.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "25",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-03T19:54:23"
+  },
+  "25": {
+    "scope_change_id": "25",
+    "project_id": "16",
+    "description": "**Scope Change Request:** Include real-time analytics dashboard\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "61",
+    "approver_id": "18",
+    "status": "approved",
+    "submitted_at": "2026-01-27T07:54:54"
+  },
+  "26": {
+    "scope_change_id": "26",
+    "project_id": "9",
+    "description": "**Scope Change Request:** Add support for additional payment methods\n\n**Justification:** Internal stakeholders have prioritized this requirement.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "27",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-08T21:30:53"
+  },
+  "27": {
+    "scope_change_id": "27",
+    "project_id": "13",
+    "description": "**Scope Change Request:** Expand user authentication options\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "62",
+    "approver_id": "23",
+    "status": "rejected",
+    "submitted_at": "2026-01-31T22:26:26"
+  },
+  "28": {
+    "scope_change_id": "28",
+    "project_id": "17",
+    "description": "**Scope Change Request:** Include real-time analytics dashboard\n\n**Justification:** Competitive analysis shows this is becoming a market standard.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "19",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-24T01:39:06"
+  },
+  "29": {
+    "scope_change_id": "29",
+    "project_id": "33",
+    "description": "**Scope Change Request:** Add support for bulk operations\n\n**Justification:** Regulatory changes require this addition.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "58",
+    "approver_id": "6",
+    "status": "approved",
+    "submitted_at": "2026-01-25T08:52:46"
+  },
+  "30": {
+    "scope_change_id": "30",
+    "project_id": "3",
+    "description": "**Scope Change Request:** Expand user authentication options\n\n**Justification:** Competitive analysis shows this is becoming a market standard.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "23",
+    "approver_id": "3",
+    "status": "approved",
+    "submitted_at": "2026-02-04T23:16:57"
+  },
+  "31": {
+    "scope_change_id": "31",
+    "project_id": "3",
+    "description": "**Scope Change Request:** Expand user authentication options\n\n**Justification:** Technical architecture review identified this as beneficial.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "3",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-07T08:39:32"
+  },
+  "32": {
+    "scope_change_id": "32",
+    "project_id": "35",
+    "description": "**Scope Change Request:** Add support for bulk operations\n\n**Justification:** Internal stakeholders have prioritized this requirement.\n\n**Impact Analysis:** Minimal impact on current timeline with resource adjustment.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "55",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-02T10:25:42"
+  },
+  "33": {
+    "scope_change_id": "33",
+    "project_id": "6",
+    "description": "**Scope Change Request:** Include additional compliance requirements\n\n**Justification:** Technical architecture review identified this as beneficial.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "59",
+    "approver_id": "30",
+    "status": "rejected",
+    "submitted_at": "2026-02-05T08:21:05"
+  },
+  "34": {
+    "scope_change_id": "34",
+    "project_id": "25",
+    "description": "**Scope Change Request:** Extend API to support mobile clients\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** Estimated additional effort: 2-3 sprints.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "55",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-06T00:05:45"
+  },
+  "35": {
+    "scope_change_id": "35",
+    "project_id": "7",
+    "description": "**Scope Change Request:** Include additional compliance requirements\n\n**Justification:** Competitive analysis shows this is becoming a market standard.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "28",
+    "approver_id": "51",
+    "status": "rejected",
+    "submitted_at": "2026-01-23T15:14:37"
+  },
+  "36": {
+    "scope_change_id": "36",
+    "project_id": "22",
+    "description": "**Scope Change Request:** Extend API to support mobile clients\n\n**Justification:** Regulatory changes require this addition.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "59",
+    "approver_id": "44",
+    "status": "approved",
+    "submitted_at": "2026-02-04T15:13:37"
+  },
+  "37": {
+    "scope_change_id": "37",
+    "project_id": "26",
+    "description": "**Scope Change Request:** Extend data retention period\n\n**Justification:** Technical architecture review identified this as beneficial.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "44",
+    "approver_id": "29",
+    "status": "rejected",
+    "submitted_at": "2026-02-06T13:41:17"
+  },
+  "38": {
+    "scope_change_id": "38",
+    "project_id": "8",
+    "description": "**Scope Change Request:** Add support for additional payment methods\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "22",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-28T03:48:52"
+  },
+  "39": {
+    "scope_change_id": "39",
+    "project_id": "3",
+    "description": "**Scope Change Request:** Include real-time analytics dashboard\n\n**Justification:** Customer feedback indicates strong demand for this capability.\n\n**Impact Analysis:** May require timeline extension of 2-4 weeks.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "69",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-01-26T22:30:35"
+  },
+  "40": {
+    "scope_change_id": "40",
+    "project_id": "11",
+    "description": "**Scope Change Request:** Add support for bulk operations\n\n**Justification:** Competitive analysis shows this is becoming a market standard.\n\n**Impact Analysis:** Can be parallelized with existing work streams.\n\n**Dependencies:** Requires coordination with platform team and architecture review. No external vendor dependencies identified.\n\n**Risks:** Potential impact on current sprint commitments. Resource allocation needs to be evaluated.\n\n**Recommendation:** Pending technical feasibility assessment and stakeholder alignment.",
+    "requestor_id": "9",
+    "approver_id": null,
+    "status": "pending_decision",
+    "submitted_at": "2026-02-09T19:52:36"
+  }
+}

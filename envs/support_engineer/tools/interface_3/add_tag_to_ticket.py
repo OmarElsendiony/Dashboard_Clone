@@ -55,34 +55,28 @@ class AddTagToTicket(Tool):
         if not ticket_details:
             return json.dumps({"error": f"Ticket with number '{ticket_number}' not found"})
 
-        tag_id = None
-        for tid, tag_info in tags.items():
-            if tag_info.get("tag_name") == str(tag):
-                tag_id = tid
-                break
-
-        if not tag_id:
-            return json.dumps({"error": f"Tag with name '{tag}' not found"})
-
-        if not ticket_tags:
-            new_key = "1"
-        else:
-            new_key = str(max(int(k) for k in ticket_tags.keys()) + 1)
-
-        new_ticket_tag = {
-            "ticket_id": str(ticket_id),
-            "tag_id": int(tag_id),
+        # Create new tag in tags table
+        new_tag_id = str(max(int(k) for k in tags.keys()) + 1) if tags else "1"
+        tags[new_tag_id] = {
+            "tag_name": str(tag),
             "tag_type": str(tag_type),
         }
+        data["tags"] = tags
 
-        ticket_tags[new_key] = new_ticket_tag
+        # Link tag to ticket in ticket_tags
+        new_key = str(max(int(k) for k in ticket_tags.keys()) + 1) if ticket_tags else "1"
+        ticket_tags[new_key] = {
+            "ticket_id": str(ticket_id),
+            "tag_id": int(new_tag_id),
+        }
+        data["ticket_tags"] = ticket_tags
 
         return json.dumps({
             "success": True,
             "ticket_tag": {
                 "ticket_id": str(ticket_id),
                 "ticket_number": str(ticket_details["ticket_number"]),
-                "tag_id": int(tag_id),
+                "tag_id": int(new_tag_id),
                 "tag_name": str(tag),
                 "tag_type": str(tag_type),
             },

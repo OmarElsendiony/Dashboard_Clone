@@ -1,7 +1,6 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 from tau_bench.envs.tool import Tool
-
 
 class MakePullRequests(Tool):
     @staticmethod
@@ -14,6 +13,7 @@ class MakePullRequests(Tool):
         ticket_id: str,
         author_id: str,
         target_branch: Optional[str] = "main",
+        file_paths: Optional[List[str]] = None,
     ) -> str:
         if not isinstance(data, dict):
             return json.dumps({"success": False, "error": "Invalid data format"})
@@ -36,6 +36,9 @@ class MakePullRequests(Tool):
         if not author_id:
             return json.dumps({"success": False, "error": "Missing Argument: 'author_id' is required."})
 
+        if file_paths is not None and not isinstance(file_paths, list):
+            return json.dumps({"success": False, "error": "Invalid Argument: 'file_paths' must be a list of strings."})
+
         repository_id = str(repository_id).strip()
         source_branch = str(source_branch).strip()
         target_branch = str(target_branch).strip() if target_branch else "main"
@@ -49,6 +52,20 @@ class MakePullRequests(Tool):
         files_db = data.get("files", {})
         tickets = data.get("tickets", {})
 
+        target_ticket = tickets[ticket_id]
+        ticket_number = str(target_ticket.get("ticket_number", ""))
+
+        for pr in pull_requests.values():
+            if isinstance(pr, dict):
+                if (str(pr.get("repository_id")) == repository_id and
+                    str(pr.get("source_branch_name")) == source_branch and
+                    str(pr.get("status")).lower() == "open"):
+                    return json.dumps({
+                        "success": False,
+                        "error": "Duplicate PR Detected",
+                        "message": f"An open pull request for branch '{source_branch}' already exists in repository '{repository_id}'."
+                    })
+
         branch_id = None
         for b in branches.values():
             if isinstance(b, dict):
@@ -56,36 +73,58 @@ class MakePullRequests(Tool):
                     branch_id = str(b.get("branch_id"))
                     break
 
-        detected_files = []
-        if branch_id:
-            for f in files_db.values():
-                if isinstance(f, dict):
-                    if str(f.get("branch_id")) == branch_id:
-                        detected_files.append(str(f.get("file_name")))
+        if not branch_id:
+            return json.dumps({
+                "success": False,
+                "error": f"Not Found Error: source_branch '{source_branch}' not found in repository '{repository_id}'."
+            })
 
-        ticket = tickets.get(ticket_id, {})
-        ticket_number = ticket.get("ticket_number", ticket_id)
-        gate_traceability = f"Closes {ticket_number}" in description
+        timestamp = "2026-02-02 23:59:00"
+
+        if file_paths:
+            max_file_id = 0
+            for k in files_db.keys():
+                try:
+                    num = int(str(k))
+                    if num > max_file_id: max_file_id = num
+                except ValueError:
+                    continue
+
+            for path in file_paths:
+                max_file_id += 1
+                new_f_id = str(max_file_id)
+                files_db[new_f_id] = {
+                    "file_id": new_f_id,
+                    "branch_id": branch_id,
+                    "repository_id": repository_id,
+                    "file_name": str(path),
+                    "created_at": timestamp
+                }
+
+        detected_files = []
+        for f in files_db.values():
+            if isinstance(f, dict):
+                if str(f.get("branch_id")) == branch_id:
+                    detected_files.append(str(f.get("file_name")))
+
+        gate_traceability = f"Closes {ticket_id}" in description
 
         gate_coverage = False
-        for f in detected_files:
-            fname = f.lower()
-            if "test" in fname or "spec" in fname:
+        for fname in detected_files:
+            if "test" in fname.lower() or "spec" in fname.lower():
                 gate_coverage = True
                 break
 
         try:
             numeric_keys = [int(k) for k in pull_requests.keys() if str(k).isdigit()]
-            new_id = str(max(numeric_keys) + 1) if numeric_keys else "1"
+            new_pr_id = str(max(numeric_keys) + 1) if numeric_keys else "1"
         except ValueError:
-            new_id = str(len(pull_requests) + 1)
-
-        timestamp = "2026-02-02 23:59:00"
+            new_pr_id = str(len(pull_requests) + 1)
 
         new_pr = {
-            "pull_request_id": new_id,
+            "pull_request_id": new_pr_id,
             "repository_id": repository_id,
-            "pull_request_number": int(new_id),
+            "pull_request_number": int(new_pr_id),
             "title": title,
             "description": description,
             "source_branch_name": source_branch,
@@ -105,9 +144,9 @@ class MakePullRequests(Tool):
             "updated_at": timestamp
         }
 
-        pull_requests[new_id] = new_pr
+        pull_requests[new_pr_id] = new_pr
 
-        msg = f"Pull Request #{new_id} created with {len(detected_files)} files."
+        msg = f"Pull Request #{new_pr_id} created with {len(detected_files)} files."
         if not gate_traceability:
             msg += f" WARNING: Traceability Gate Failed (Description missing 'Closes {ticket_number}')."
         if not gate_coverage:
@@ -126,10 +165,10 @@ class MakePullRequests(Tool):
             "function": {
                 "name": "make_pull_requests",
                 "description": (
-                    " Opens a new Pull Request (PR) from a working branch into a target branch.\n"
+                    "Opens a new Pull Request (PR) from a working branch into a target branch and commits associated files.\n"
                     " Purpose: Submits code for review and automatically runs validation gates. It checks for strict traceability by looking for 'Closes [Ticket_Number]' in the description, and verifies test coverage by scanning the files associated with the source branch.\n"
                     " When to use: Use this tool in the 'Validate and Submit Pull Requests' step after code has been committed to a branch and needs to be merged to resolve a support ticket.\n"
-                    " Returns: Returns a JSON string containing a success boolean, the newly created pull request dictionary object, and a message indicating the status of the Traceability and Test Coverage gates."
+                    " Returns: Returns a JSON string containing a success boolean, the newly created pull request dictionary object, and a message indicating the status of the Traceability and Test Coverage gates. Fails if the source branch does not exist."
                 ),
                 "parameters": {
                     "type": "object",
@@ -140,7 +179,7 @@ class MakePullRequests(Tool):
                         },
                         "source_branch": {
                             "type": "string",
-                            "description": "The name of the branch containing the code changes (e.g., 'fix/TKT-001-fix-bug')."
+                            "description": "The name of the branch containing the code changes (e.g., 'fix/TKT-001'). MUST exist in the branches table."
                         },
                         "title": {
                             "type": "string",
@@ -148,7 +187,7 @@ class MakePullRequests(Tool):
                         },
                         "description": {
                             "type": "string",
-                            "description": "The detailed description of the PR. MUST contain the exact text 'Closes [Ticket_Number]' (e.g. 'Closes TKT-001634') to pass the Traceability Gate."
+                            "description": "The detailed description of the PR. MUST contain the exact text 'Closes [Ticket ID]' to pass the Traceability Gate."
                         },
                         "ticket_id": {
                             "type": "string",
@@ -161,6 +200,11 @@ class MakePullRequests(Tool):
                         "target_branch": {
                             "type": "string",
                             "description": "The branch to merge into. Defaults to 'main'."
+                        },
+                        "file_paths": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "description": "A list of file paths to simulate committing to this branch (e.g., ['src/app.py', 'tests/test_app.py']). Include a test file to pass the Coverage Gate."
                         }
                     },
                     "required": [

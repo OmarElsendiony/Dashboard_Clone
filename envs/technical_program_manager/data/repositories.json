@@ -1,0 +1,452 @@
+{
+  "1": {
+    "repository_id": "1",
+    "repository_name": "co21-ml",
+    "description": "Repository for co21-ml",
+    "default_branch": "main",
+    "project_id": "21",
+    "created_at": "2025-12-30T12:37:33",
+    "updated_at": "2026-01-15T20:39:33"
+  },
+  "2": {
+    "repository_id": "2",
+    "repository_name": "io31-backend",
+    "description": "Repository for io31-backend",
+    "default_branch": "main",
+    "project_id": "31",
+    "created_at": "2025-12-01T19:05:37",
+    "updated_at": "2025-12-04T01:55:37"
+  },
+  "3": {
+    "repository_id": "3",
+    "repository_name": "io31-backend-1",
+    "description": "Repository for io31-backend-1",
+    "default_branch": "main",
+    "project_id": "31",
+    "created_at": "2025-12-14T20:05:36",
+    "updated_at": "2025-12-16T21:12:36"
+  },
+  "4": {
+    "repository_id": "4",
+    "repository_name": "at24-ml",
+    "description": "Repository for at24-ml",
+    "default_branch": "main",
+    "project_id": "24",
+    "created_at": "2025-11-29T07:22:37",
+    "updated_at": "2025-12-12T05:48:37"
+  },
+  "5": {
+    "repository_id": "5",
+    "repository_name": "pm19-mobile",
+    "description": "Repository for pm19-mobile",
+    "default_branch": "main",
+    "project_id": "19",
+    "created_at": "2025-12-14T12:44:47",
+    "updated_at": "2025-12-14T19:06:47"
+  },
+  "6": {
+    "repository_id": "6",
+    "repository_name": "sm35-frontend",
+    "description": "Repository for sm35-frontend",
+    "default_branch": "main",
+    "project_id": "35",
+    "created_at": "2025-12-01T20:49:28",
+    "updated_at": "2025-12-06T19:25:28"
+  },
+  "7": {
+    "repository_id": "7",
+    "repository_name": "im41-frontend",
+    "description": "Repository for im41-frontend",
+    "default_branch": "main",
+    "project_id": "41",
+    "created_at": "2025-11-17T16:01:25",
+    "updated_at": "2025-11-26T09:52:25"
+  },
+  "8": {
+    "repository_id": "8",
+    "repository_name": "im6-frontend",
+    "description": "Repository for im6-frontend",
+    "default_branch": "main",
+    "project_id": "6",
+    "created_at": "2025-12-16T20:46:49",
+    "updated_at": "2025-12-19T05:28:49"
+  },
+  "9": {
+    "repository_id": "9",
+    "repository_name": "pm19-ml",
+    "description": "Repository for pm19-ml",
+    "default_branch": "main",
+    "project_id": "19",
+    "created_at": "2025-12-20T00:12:36",
+    "updated_at": "2025-12-21T00:13:36"
+  },
+  "10": {
+    "repository_id": "10",
+    "repository_name": "cm40-backend",
+    "description": "Repository for cm40-backend",
+    "default_branch": "main",
+    "project_id": "40",
+    "created_at": "2025-12-08T20:20:06",
+    "updated_at": "2025-12-15T03:18:06"
+  },
+  "11": {
+    "repository_id": "11",
+    "repository_name": "ce16-ml",
+    "description": "Repository for ce16-ml",
+    "default_branch": "main",
+    "project_id": "16",
+    "created_at": "2025-12-08T13:50:01",
+    "updated_at": "2025-12-18T08:44:01"
+  },
+  "12": {
+    "repository_id": "12",
+    "repository_name": "co27-ml",
+    "description": "Repository for co27-ml",
+    "default_branch": "main",
+    "project_id": "27",
+    "created_at": "2025-11-18T08:21:52",
+    "updated_at": "2025-12-03T01:43:52"
+  },
+  "13": {
+    "repository_id": "13",
+    "repository_name": "so25-data",
+    "description": "Repository for so25-data",
+    "default_branch": "main",
+    "project_id": "25",
+    "created_at": "2025-12-18T07:16:28",
+    "updated_at": "2025-12-18T20:36:28"
+  },
+  "14": {
+    "repository_id": "14",
+    "repository_name": "co27-backend",
+    "description": "Repository for co27-backend",
+    "default_branch": "main",
+    "project_id": "27",
+    "created_at": "2026-01-02T14:43:40",
+    "updated_at": "2026-01-08T06:32:40"
+  },
+  "15": {
+    "repository_id": "15",
+    "repository_name": "co21-data",
+    "description": "Repository for co21-data",
+    "default_branch": "main",
+    "project_id": "21",
+    "created_at": "2025-11-30T05:12:35",
+    "updated_at": "2025-12-23T14:53:35"
+  },
+  "16": {
+    "repository_id": "16",
+    "repository_name": "so25-infra",
+    "description": "Repository for so25-infra",
+    "default_branch": "main",
+    "project_id": "25",
+    "created_at": "2025-11-15T10:46:25",
+    "updated_at": "2025-11-17T12:08:25"
+  },
+  "17": {
+    "repository_id": "17",
+    "repository_name": "at24-backend",
+    "description": "Repository for at24-backend",
+    "default_branch": "main",
+    "project_id": "24",
+    "created_at": "2025-12-30T05:53:31",
+    "updated_at": "2026-01-01T12:58:31"
+  },
+  "18": {
+    "repository_id": "18",
+    "repository_name": "si9-backend",
+    "description": "Repository for si9-backend",
+    "default_branch": "main",
+    "project_id": "9",
+    "created_at": "2025-11-27T10:21:39",
+    "updated_at": "2025-12-08T23:08:39"
+  },
+  "19": {
+    "repository_id": "19",
+    "repository_name": "pp5-backend",
+    "description": "Repository for pp5-backend",
+    "default_branch": "main",
+    "project_id": "5",
+    "created_at": "2025-11-27T07:19:53",
+    "updated_at": "2025-12-10T09:25:53"
+  },
+  "20": {
+    "repository_id": "20",
+    "repository_name": "wt20-frontend",
+    "description": "Repository for wt20-frontend",
+    "default_branch": "main",
+    "project_id": "20",
+    "created_at": "2026-01-12T23:04:40",
+    "updated_at": "2026-01-17T07:24:40"
+  },
+  "21": {
+    "repository_id": "21",
+    "repository_name": "at24-frontend",
+    "description": "Repository for at24-frontend",
+    "default_branch": "main",
+    "project_id": "24",
+    "created_at": "2025-12-13T19:30:40",
+    "updated_at": "2025-12-21T19:18:40"
+  },
+  "22": {
+    "repository_id": "22",
+    "repository_name": "dp29-data",
+    "description": "Repository for dp29-data",
+    "default_branch": "main",
+    "project_id": "29",
+    "created_at": "2026-01-13T12:11:16",
+    "updated_at": "2026-01-23T21:33:16"
+  },
+  "23": {
+    "repository_id": "23",
+    "repository_name": "so25-data-1",
+    "description": "Repository for so25-data-1",
+    "default_branch": "main",
+    "project_id": "25",
+    "created_at": "2025-12-11T10:50:28",
+    "updated_at": "2025-12-19T05:38:28"
+  },
+  "24": {
+    "repository_id": "24",
+    "repository_name": "mo4-backend",
+    "description": "Repository for mo4-backend",
+    "default_branch": "main",
+    "project_id": "4",
+    "created_at": "2025-12-23T05:09:20",
+    "updated_at": "2025-12-23T08:16:20"
+  },
+  "25": {
+    "repository_id": "25",
+    "repository_name": "io26-data",
+    "description": "Repository for io26-data",
+    "default_branch": "main",
+    "project_id": "26",
+    "created_at": "2025-12-29T06:36:19",
+    "updated_at": "2026-01-01T00:20:19"
+  },
+  "26": {
+    "repository_id": "26",
+    "repository_name": "io26-frontend",
+    "description": "Repository for io26-frontend",
+    "default_branch": "main",
+    "project_id": "26",
+    "created_at": "2025-12-19T20:34:18",
+    "updated_at": "2025-12-31T20:08:18"
+  },
+  "27": {
+    "repository_id": "27",
+    "repository_name": "im28-ml",
+    "description": "Repository for im28-ml",
+    "default_branch": "main",
+    "project_id": "28",
+    "created_at": "2025-11-21T05:24:39",
+    "updated_at": "2025-11-23T02:28:39"
+  },
+  "28": {
+    "repository_id": "28",
+    "repository_name": "at24-ml-1",
+    "description": "Repository for at24-ml-1",
+    "default_branch": "main",
+    "project_id": "24",
+    "created_at": "2026-01-11T06:04:05",
+    "updated_at": "2026-01-17T17:02:05"
+  },
+  "29": {
+    "repository_id": "29",
+    "repository_name": "dm34-ml",
+    "description": "Repository for dm34-ml",
+    "default_branch": "main",
+    "project_id": "34",
+    "created_at": "2025-11-18T21:24:54",
+    "updated_at": "2025-11-30T03:33:54"
+  },
+  "30": {
+    "repository_id": "30",
+    "repository_name": "im6-data",
+    "description": "Repository for im6-data",
+    "default_branch": "main",
+    "project_id": "6",
+    "created_at": "2025-12-03T22:20:34",
+    "updated_at": "2025-12-19T01:45:34"
+  },
+  "31": {
+    "repository_id": "31",
+    "repository_name": "im28-infra",
+    "description": "Repository for im28-infra",
+    "default_branch": "main",
+    "project_id": "28",
+    "created_at": "2025-12-27T04:57:24",
+    "updated_at": "2025-12-27T12:51:24"
+  },
+  "32": {
+    "repository_id": "32",
+    "repository_name": "cm40-frontend",
+    "description": "Repository for cm40-frontend",
+    "default_branch": "main",
+    "project_id": "40",
+    "created_at": "2025-12-10T23:51:56",
+    "updated_at": "2025-12-23T13:30:56"
+  },
+  "33": {
+    "repository_id": "33",
+    "repository_name": "so8-infra",
+    "description": "Repository for so8-infra",
+    "default_branch": "main",
+    "project_id": "8",
+    "created_at": "2026-01-13T18:04:20",
+    "updated_at": "2026-01-18T14:32:20"
+  },
+  "34": {
+    "repository_id": "34",
+    "repository_name": "mt38-data",
+    "description": "Repository for mt38-data",
+    "default_branch": "main",
+    "project_id": "38",
+    "created_at": "2026-01-11T01:14:35",
+    "updated_at": "2026-01-17T16:56:35"
+  },
+  "35": {
+    "repository_id": "35",
+    "repository_name": "so8-mobile",
+    "description": "Repository for so8-mobile",
+    "default_branch": "main",
+    "project_id": "8",
+    "created_at": "2026-01-03T08:00:31",
+    "updated_at": "2026-01-04T13:53:31"
+  },
+  "36": {
+    "repository_id": "36",
+    "repository_name": "ce16-api",
+    "description": "Repository for ce16-api",
+    "default_branch": "main",
+    "project_id": "16",
+    "created_at": "2025-12-04T22:13:15",
+    "updated_at": "2025-12-06T03:41:15"
+  },
+  "37": {
+    "repository_id": "37",
+    "repository_name": "co10-api",
+    "description": "Repository for co10-api",
+    "default_branch": "main",
+    "project_id": "10",
+    "created_at": "2025-12-21T20:50:13",
+    "updated_at": "2025-12-23T10:50:13"
+  },
+  "38": {
+    "repository_id": "38",
+    "repository_name": "se2-backend",
+    "description": "Repository for se2-backend",
+    "default_branch": "main",
+    "project_id": "2",
+    "created_at": "2025-12-06T09:14:01",
+    "updated_at": "2025-12-19T11:44:01"
+  },
+  "39": {
+    "repository_id": "39",
+    "repository_name": "pc22-api",
+    "description": "Repository for pc22-api",
+    "default_branch": "main",
+    "project_id": "22",
+    "created_at": "2026-01-03T14:25:35",
+    "updated_at": "2026-01-09T13:01:35"
+  },
+  "40": {
+    "repository_id": "40",
+    "repository_name": "mi30-api",
+    "description": "Repository for mi30-api",
+    "default_branch": "main",
+    "project_id": "30",
+    "created_at": "2025-11-26T06:25:11",
+    "updated_at": "2025-12-07T09:02:11"
+  },
+  "41": {
+    "repository_id": "41",
+    "repository_name": "ac37-frontend",
+    "description": "Repository for ac37-frontend",
+    "default_branch": "main",
+    "project_id": "37",
+    "created_at": "2025-12-15T12:39:36",
+    "updated_at": "2026-01-01T02:26:36"
+  },
+  "42": {
+    "repository_id": "42",
+    "repository_name": "at24-ml-2",
+    "description": "Repository for at24-ml-2",
+    "default_branch": "main",
+    "project_id": "24",
+    "created_at": "2025-12-30T08:44:50",
+    "updated_at": "2026-01-03T07:35:50"
+  },
+  "43": {
+    "repository_id": "43",
+    "repository_name": "ac37-infra",
+    "description": "Repository for ac37-infra",
+    "default_branch": "main",
+    "project_id": "37",
+    "created_at": "2025-12-03T08:26:23",
+    "updated_at": "2025-12-07T07:23:23"
+  },
+  "44": {
+    "repository_id": "44",
+    "repository_name": "io26-mobile",
+    "description": "Repository for io26-mobile",
+    "default_branch": "main",
+    "project_id": "26",
+    "created_at": "2026-01-11T07:19:34",
+    "updated_at": "2026-01-13T05:23:34"
+  },
+  "45": {
+    "repository_id": "45",
+    "repository_name": "cm40-mobile",
+    "description": "Repository for cm40-mobile",
+    "default_branch": "main",
+    "project_id": "40",
+    "created_at": "2025-11-29T22:07:20",
+    "updated_at": "2025-12-10T11:57:20"
+  },
+  "46": {
+    "repository_id": "46",
+    "repository_name": "im28-frontend",
+    "description": "Repository for im28-frontend",
+    "default_branch": "main",
+    "project_id": "28",
+    "created_at": "2026-01-11T17:36:08",
+    "updated_at": "2026-01-12T19:34:08"
+  },
+  "47": {
+    "repository_id": "47",
+    "repository_name": "mi30-frontend",
+    "description": "Repository for mi30-frontend",
+    "default_branch": "main",
+    "project_id": "30",
+    "created_at": "2025-12-22T16:44:30",
+    "updated_at": "2026-01-14T14:04:30"
+  },
+  "48": {
+    "repository_id": "48",
+    "repository_name": "pm19-api",
+    "description": "Repository for pm19-api",
+    "default_branch": "main",
+    "project_id": "19",
+    "created_at": "2025-12-02T03:50:52",
+    "updated_at": "2025-12-15T02:04:52"
+  },
+  "49": {
+    "repository_id": "49",
+    "repository_name": "st17-mobile",
+    "description": "Repository for st17-mobile",
+    "default_branch": "main",
+    "project_id": "17",
+    "created_at": "2025-11-23T23:21:45",
+    "updated_at": "2025-12-05T20:13:45"
+  },
+  "50": {
+    "repository_id": "50",
+    "repository_name": "im41-backend",
+    "description": "Repository for im41-backend",
+    "default_branch": "main",
+    "project_id": "41",
+    "created_at": "2025-12-07T07:28:17",
+    "updated_at": "2025-12-13T12:21:17"
+  }
+}

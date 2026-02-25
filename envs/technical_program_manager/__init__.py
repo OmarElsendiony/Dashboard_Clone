@@ -1,0 +1,3 @@
+# Copyright Sierra
+
+from tau_bench.envs.technical_program_manager.env import MockTechnicalProgramManagerDomainEnv as MockTechnicalProgramManagerDomainEnv

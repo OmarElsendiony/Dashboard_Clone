@@ -1,0 +1,297 @@
+{
+  "1": {
+    "upstream_service_id": "4",
+    "downstream_service_id": "16",
+    "dependency_type": "database"
+  },
+  "2": {
+    "upstream_service_id": "5",
+    "downstream_service_id": "3",
+    "dependency_type": "database"
+  },
+  "3": {
+    "upstream_service_id": "22",
+    "downstream_service_id": "5",
+    "dependency_type": "messagequeue"
+  },
+  "4": {
+    "upstream_service_id": "33",
+    "downstream_service_id": "16",
+    "dependency_type": "database"
+  },
+  "5": {
+    "upstream_service_id": "18",
+    "downstream_service_id": "33",
+    "dependency_type": "api"
+  },
+  "6": {
+    "upstream_service_id": "14",
+    "downstream_service_id": "36",
+    "dependency_type": "api"
+  },
+  "7": {
+    "upstream_service_id": "9",
+    "downstream_service_id": "38",
+    "dependency_type": "api"
+  },
+  "8": {
+    "upstream_service_id": "37",
+    "downstream_service_id": "31",
+    "dependency_type": "api"
+  },
+  "9": {
+    "upstream_service_id": "16",
+    "downstream_service_id": "32",
+    "dependency_type": "database"
+  },
+  "10": {
+    "upstream_service_id": "27",
+    "downstream_service_id": "13",
+    "dependency_type": "api"
+  },
+  "11": {
+    "upstream_service_id": "7",
+    "downstream_service_id": "8",
+    "dependency_type": "messagequeue"
+  },
+  "12": {
+    "upstream_service_id": "28",
+    "downstream_service_id": "23",
+    "dependency_type": "messagequeue"
+  },
+  "13": {
+    "upstream_service_id": "28",
+    "downstream_service_id": "27",
+    "dependency_type": "api"
+  },
+  "14": {
+    "upstream_service_id": "30",
+    "downstream_service_id": "4",
+    "dependency_type": "messagequeue"
+  },
+  "15": {
+    "upstream_service_id": "7",
+    "downstream_service_id": "4",
+    "dependency_type": "api"
+  },
+  "16": {
+    "upstream_service_id": "26",
+    "downstream_service_id": "22",
+    "dependency_type": "api"
+  },
+  "17": {
+    "upstream_service_id": "7",
+    "downstream_service_id": "17",
+    "dependency_type": "api"
+  },
+  "18": {
+    "upstream_service_id": "13",
+    "downstream_service_id": "14",
+    "dependency_type": "messagequeue"
+  },
+  "19": {
+    "upstream_service_id": "35",
+    "downstream_service_id": "29",
+    "dependency_type": "messagequeue"
+  },
+  "20": {
+    "upstream_service_id": "9",
+    "downstream_service_id": "29",
+    "dependency_type": "api"
+  },
+  "21": {
+    "upstream_service_id": "12",
+    "downstream_service_id": "19",
+    "dependency_type": "api"
+  },
+  "22": {
+    "upstream_service_id": "30",
+    "downstream_service_id": "16",
+    "dependency_type": "api"
+  },
+  "23": {
+    "upstream_service_id": "5",
+    "downstream_service_id": "30",
+    "dependency_type": "api"
+  },
+  "24": {
+    "upstream_service_id": "36",
+    "downstream_service_id": "7",
+    "dependency_type": "database"
+  },
+  "25": {
+    "upstream_service_id": "4",
+    "downstream_service_id": "36",
+    "dependency_type": "api"
+  },
+  "26": {
+    "upstream_service_id": "1",
+    "downstream_service_id": "7",
+    "dependency_type": "messagequeue"
+  },
+  "27": {
+    "upstream_service_id": "16",
+    "downstream_service_id": "11",
+    "dependency_type": "api"
+  },
+  "28": {
+    "upstream_service_id": "27",
+    "downstream_service_id": "33",
+    "dependency_type": "database"
+  },
+  "29": {
+    "upstream_service_id": "31",
+    "downstream_service_id": "14",
+    "dependency_type": "messagequeue"
+  },
+  "30": {
+    "upstream_service_id": "26",
+    "downstream_service_id": "4",
+    "dependency_type": "database"
+  },
+  "31": {
+    "upstream_service_id": "11",
+    "downstream_service_id": "26",
+    "dependency_type": "api"
+  },
+  "32": {
+    "upstream_service_id": "1",
+    "downstream_service_id": "26",
+    "dependency_type": "messagequeue"
+  },
+  "33": {
+    "upstream_service_id": "17",
+    "downstream_service_id": "31",
+    "dependency_type": "api"
+  },
+  "34": {
+    "upstream_service_id": "19",
+    "downstream_service_id": "29",
+    "dependency_type": "messagequeue"
+  },
+  "35": {
+    "upstream_service_id": "36",
+    "downstream_service_id": "32",
+    "dependency_type": "messagequeue"
+  },
+  "36": {
+    "upstream_service_id": "10",
+    "downstream_service_id": "14",
+    "dependency_type": "messagequeue"
+  },
+  "37": {
+    "upstream_service_id": "19",
+    "downstream_service_id": "14",
+    "dependency_type": "database"
+  },
+  "38": {
+    "upstream_service_id": "4",
+    "downstream_service_id": "39",
+    "dependency_type": "api"
+  },
+  "39": {
+    "upstream_service_id": "35",
+    "downstream_service_id": "4",
+    "dependency_type": "database"
+  },
+  "40": {
+    "upstream_service_id": "21",
+    "downstream_service_id": "4",
+    "dependency_type": "database"
+  },
+  "41": {
+    "upstream_service_id": "31",
+    "downstream_service_id": "34",
+    "dependency_type": "api"
+  },
+  "42": {
+    "upstream_service_id": "34",
+    "downstream_service_id": "11",
+    "dependency_type": "api"
+  },
+  "43": {
+    "upstream_service_id": "4",
+    "downstream_service_id": "34",
+    "dependency_type": "api"
+  },
+  "44": {
+    "upstream_service_id": "6",
+    "downstream_service_id": "13",
+    "dependency_type": "messagequeue"
+  },
+  "45": {
+    "upstream_service_id": "5",
+    "downstream_service_id": "40",
+    "dependency_type": "database"
+  },
+  "46": {
+    "upstream_service_id": "5",
+    "downstream_service_id": "17",
+    "dependency_type": "database"
+  },
+  "47": {
+    "upstream_service_id": "26",
+    "downstream_service_id": "8",
+    "dependency_type": "database"
+  },
+  "48": {
+    "upstream_service_id": "37",
+    "downstream_service_id": "16",
+    "dependency_type": "database"
+  },
+  "49": {
+    "upstream_service_id": "38",
+    "downstream_service_id": "40",
+    "dependency_type": "database"
+  },
+  "50": {
+    "upstream_service_id": "3",
+    "downstream_service_id": "7",
+    "dependency_type": "messagequeue"
+  },
+  "51": {
+    "upstream_service_id": "27",
+    "downstream_service_id": "39",
+    "dependency_type": "api"
+  },
+  "52": {
+    "upstream_service_id": "37",
+    "downstream_service_id": "34",
+    "dependency_type": "messagequeue"
+  },
+  "53": {
+    "upstream_service_id": "21",
+    "downstream_service_id": "17",
+    "dependency_type": "messagequeue"
+  },
+  "54": {
+    "upstream_service_id": "14",
+    "downstream_service_id": "22",
+    "dependency_type": "messagequeue"
+  },
+  "55": {
+    "upstream_service_id": "16",
+    "downstream_service_id": "18",
+    "dependency_type": "api"
+  },
+  "56": {
+    "upstream_service_id": "26",
+    "downstream_service_id": "9",
+    "dependency_type": "api"
+  },
+  "57": {
+    "upstream_service_id": "20",
+    "downstream_service_id": "31",
+    "dependency_type": "database"
+  },
+  "58": {
+    "upstream_service_id": "21",
+    "downstream_service_id": "5",
+    "dependency_type": "messagequeue"
+  },
+  "59": {
+    "upstream_service_id": "1",
+    "downstream_service_id": "31",
+    "dependency_type": "database"
+  }
+}
