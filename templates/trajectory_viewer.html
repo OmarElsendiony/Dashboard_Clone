@@ -970,6 +970,8 @@
         function visualizeData(data) {
             if (data.hasOwnProperty("response_data")) {
                 trialsData = data['response_data']['results'];
+            } else if (data.hasOwnProperty("results")) {
+                trialsData = data['results'];
             } else if (Array.isArray(data)) {
                 trialsData = data;
             } else {
