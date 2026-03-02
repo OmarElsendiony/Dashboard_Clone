@@ -1,0 +1,84 @@
+You are given a database schema in dbdiagram.io format. Your task is to produce a YAML file that describes **schema-level traversal clusters** — not instance data.
+
+### Rules
+
+**1. Identify root tables**
+Root tables have no foreign key that points to another table that would "own" them. These become cluster roots. Standalone lookup tables (e.g. `tags`, `statuses`) with no meaningful parent are roots only if they have traversal children — otherwise omit them entirely and handle them via `ref_only` embedding.
+
+**2. Traversal direction**
+Always parent → child via the **child's FK**. Never follow a FK upward (child → parent is a lookup, not a traversal).
+
+**3. For each child node, output:**
+- `table`: child table name
+- `foreign_key`: the column **in the child table** pointing to the parent
+- `references`: `parent_table.column` being pointed at
+- `role`: *(optional)* semantic label when the same table appears more than once under the same parent
+- `ref_only`: FK columns in this table that point elsewhere **for lookup only**
+- `children`: next level of traversal, or `[]` to stop
+
+**4. One canonical path per table — strictly enforced**
+Every table must appear as a traversal child in **exactly one place**. If a table is reachable via two different FK paths, pick the more semantically primary one and demote all others to `ref_only`.
+
+**5. Subset rule**
+If a tree is fully contained inside a larger tree, do NOT list it as a separate cluster.
+
+**6. Self-referencing tables**
+List the table as its own child with an appropriate `role` label. Mark the reverse FK direction as `ref_only`. The self-referencing branch does **not** drive the cluster signature — the deepest non-cyclic descendant path determines the signature. The self-ref still appears in the data under `related` for entries that have it.
+
+**7. What belongs in `ref_only`**
+A FK column belongs in `ref_only` if it points to:
+- A root table (e.g. `users`, `services`)
+- A table already covered as a `children` traversal elsewhere
+- A pure lookup/enum table with no traversal children (e.g. `tags`, `labels`)
+- Any second/third FK path to a table that already has a canonical path (rule 4)
+
+Common examples: `created_by`, `updated_by`, `author_id`, `assignee_user_id`, `owner_id`, `label_id`, `approver_id`
+
+**8. Junction / bridge tables**
+Appear as a child of one side only — pick the semantically dominant owner. Mark the other side's FK as `ref_only`.
+
+**9. Standalone lookup tables**
+Do NOT list them as cluster roots with empty children. Let them be embedded inline via `ref_only` on the junction table that references them.
+
+**10. Detached rows**
+A row in a child table may exist without being connected to any root row (e.g. a `channel` with no matching `project_id`). These are **not orphans** if their table has traversal children defined — they are detached roots of their own subtree and will be collected into the same cluster file at runtime under a `detached` key.
+
+When authoring the YAML, ask: *"Could rows in this child table exist independently of the root?"* If yes, note it — downstream tooling will handle detached collection automatically. A row is only a true **orphan** if it is a pure leaf with no schema children AND was never reached via any FK reference.
+
+---
+
+### Output format
+
+```yaml
+clusters:
+  - root:
+      table: <root_table_name>
+    children:
+      - table: <child_table>
+        foreign_key: <fk_column_in_child>
+        references: <parent_table.parent_column>
+        ref_only:
+          - column: <fk_column>
+            references: <other_table.column>
+        children:
+          - table: ...
+            children: []
+```
+
+---
+
+### Self-check before outputting
+
+Before writing the final YAML, verify:
+- [ ] Every table appears as a `children` entry in exactly one place
+- [ ] No table is both a cluster root and a traversal child
+- [ ] Standalone lookup tables with no traversal children are omitted as roots
+- [ ] Every FK that points back to a root table is under `ref_only`, not `children`
+- [ ] Self-referencing tables use `role` labels and the signature follows the deepest non-cyclic path
+- [ ] Junction tables appear under one side only
+- [ ] For each child table with its own `children`, consider whether its rows could exist detached from the root
+
+---
+
+Now apply these rules to the following schema and produce the YAML:
+{schema}

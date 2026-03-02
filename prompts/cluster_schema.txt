@@ -1,0 +1,39 @@
+You are given a database schema in dbdiagram.io format. Your task is to produce a YAML file that describes **schema-level traversal clusters** — not instance data.
+
+**Rules for building the YAML:**
+
+1. Identify **root tables**: tables that have no meaningful parent (i.e., no foreign key pointing to another table that would own them). These become cluster roots.
+2. For each root, recursively find all child tables reachable via foreign keys where the child holds the FK pointing back to the parent. This is the traversal direction: **parent → child via child's FK**.
+3. For each child node, output:
+   - `table`: the child table name
+   - `foreign_key`: the column **in the child table** that references the parent
+   - `references`: `parent_table.column` being pointed at
+   - `role`: (optional) semantic label when the same FK column appears more than once on the same parent (e.g. `upstream` vs `downstream` for self-referencing tables)
+   - `ref_only`: a list of FK columns in this table that point to other tables **for lookup only** — they are NOT traversal paths because those tables are already roots or covered in another cluster
+   - `children`: the next level of traversal, or `[]` to stop
+4. **Subset rule**: if a tree is fully contained inside a larger tree, do NOT list it as a separate cluster — it will be reached during traversal of the superset.
+5. Self-referencing tables (a table with a FK to itself) should list themselves as a child with the appropriate `role`.
+6. Junction/bridge tables (many-to-many) should appear as a child of one side only — pick the side that is more semantically the "owner". Mark the other side FK as `ref_only`.
+7. Columns that are pure lookup references to users or other root entities (e.g. `created_by`, `author_id`, `assignee_user_id`) must go under `ref_only`, not under `children`.
+
+**Output format:**
+```yaml
+clusters:
+  - root:
+      table: <root_table_name>
+    children:
+      - table: <child_table>
+        foreign_key: <fk_column_in_child>
+        references: <parent_table.parent_column>
+        ref_only:
+          - column: <fk_column>
+            references: <other_table.column>
+        children:
+          - table: ...
+            ...
+            children: []
+```
+
+Now apply these rules to the following schema and produce the YAML:
+
+`[PASTE SCHEMA HERE]`

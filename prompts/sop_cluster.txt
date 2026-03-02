@@ -1,0 +1,41 @@
+Here's the prompt:
+
+---
+
+You are given a policy document and a database cluster summary. Your task is to map each policy section to the cluster indices that contain the data needed to test or simulate that section.
+
+### Policy Document
+
+```
+{policy}
+```
+
+### Cluster Summary
+
+```json
+{summary_json}
+```
+
+### Instructions
+
+For each section/headline in the policy document:
+
+1. Read what data entities the section operates on (e.g. tasks, subtasks, incidents, channels, risks, pull requests, documents, pages, users)
+2. Match those entities to the clusters in the summary by looking at the `signature` field — the signature shows which tables are present in that cluster
+3. Output a JSON array where each element is:
+
+```json
+{
+  "section": "<section number and title>",
+  "reason": "<one sentence explaining which entities from the section map to which cluster signatures>",
+  "indices": [<list of cluster_type_id integers>]
+}
+```
+
+### Rules
+
+- Use only the information in the policy and the cluster summary. Do not infer or assume table relationships beyond what the signatures show.
+- A section maps to a cluster if ANY entity the section touches appears in that cluster's signature.
+- If a section operates on entities not present in any cluster (e.g. pure messaging actions with no data retrieval), set `"indices": []` and explain in `"reason"`.
+- If a section could apply to multiple clusters, include all of them.
+- Output only the JSON array. No preamble, no explanation outside the JSON.
