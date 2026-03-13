@@ -60,15 +60,23 @@ class SubmitPullRequestReview(Tool):
                 )
 
         else:
+            # Find all PRs matching the pull_request_number
             pull_request_number = int(pull_request_number)
-            for p in pull_requests.values():
+            matching_prs = []
+            
+            for pr_id, p in pull_requests.items():
                 if p.get("pull_request_number") == pull_request_number:
-                    pr = p
-                    break
-            if not pr:
+                    matching_prs.append((pr_id, p))
+            
+            if not matching_prs:
                 return json.dumps(
                     {"error": f"Pull request with number {pull_request_number} not found"}
                 )
+            
+            # Get the PR with the highest ID (most recent)
+            # Sort by PR ID (assuming higher ID = more recent)
+            matching_prs.sort(key=lambda x: int(x[0]), reverse=True)
+            pr = matching_prs[0][1]  # Get the PR object from the first tuple
 
         pr_status = pr.get("status")
         if pr_status not in ("open", "draft"):
